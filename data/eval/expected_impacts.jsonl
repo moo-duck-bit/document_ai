@@ -1,0 +1,36 @@
+{
+  "case_id": "req6_login_policy_change",
+  "expected_changed_req_ids": ["Req. 6"],
+  "expected_linked_security_ids": ["IA-04", "IA-06", "IA-07", "SI-06"],
+  "expected_linked_test_ids": [],
+  "expected_design_ids": [],
+  "expected_linked_documents": ["spec_requirements", "report_security_verification"],
+  "clarification_needed": false
+}
+{
+  "case_id": "req6_nl_missing_description",
+  "expected_changed_req_ids": [],
+  "expected_linked_security_ids": [],
+  "expected_linked_test_ids": [],
+  "expected_design_ids": [],
+  "expected_linked_documents": [],
+  "clarification_needed": true
+}
+{
+  "case_id": "req6_nl_with_description",
+  "expected_changed_req_ids": ["Req. 6"],
+  "expected_linked_security_ids": ["IA-04", "IA-06", "IA-07", "SI-06"],
+  "expected_linked_test_ids": [],
+  "expected_design_ids": [],
+  "expected_linked_documents": ["spec_requirements", "report_security_verification"],
+  "clarification_needed": false
+}
+{
+  "case_id": "fr02_stt_tc_link",
+  "expected_changed_req_ids": ["FR-02"],
+  "expected_linked_security_ids": [],
+  "expected_linked_test_ids": ["TC-02"],
+  "expected_design_ids": [],
+  "expected_linked_documents": ["spec_requirements", "test_cases"],
+  "clarification_needed": false
+}

@@ -1,0 +1,291 @@
+{
+  "source": "C:\\Users\\hsh71\\OneDrive\\Desktop\\SKKU\\fighting\\document_AI\\data\\examples\\ec_sw\\spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+  "requirements": [
+    {
+      "req_id": "Req. 1",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 2",
+      "description": "회원가입 과정에서 인가되지 않은 사용 금지 및 사용 기록 감사 가능성을 사용자에게 안내해야 한다.\n직접 식별정보는 저장 및 제공 목적에 따라 인증 및 권한 기반 접근 통제를 통해 보호하며, 권한 없는 사용자가 해당 정보만으로 사용자를 식별할 수 없도록 관리되어야 한다."
+    },
+    {
+      "req_id": "Req. 3",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 4",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 5",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 6",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 7",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 8",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 9",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 10",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 11",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 12",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 13",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 14",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 15",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 16",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 17",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 18",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 100",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 101",
+      "description": "최소 권한 원칙을 적용하여 사용자에게 필요한 범위 내에서만 시스템 접근을 허용하고, 무단 접근 및 데이터 유출을 방지하기 위함이다."
+    },
+    {
+      "req_id": "Req. 102",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 103",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 104",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 105",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 106",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 107",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 108",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 109",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 110",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 200",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 201",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 202",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 203",
+      "description": "처방받은 환자를 시스템에 등록하고, 등록된 환자의 정보에 접근할 수 있도록 하기 위함이다."
+    },
+    {
+      "req_id": "Req. 204",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 205",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 206",
+      "description": ""
+    },
+    {
+      "req_id": "Req. 207",
+      "description": ""
+    }
+  ],
+  "traceability": [
+    {
+      "requirement": "IA-01",
+      "linked_reqs": "Req. 2, Req. 102, Req.201"
+    },
+    {
+      "requirement": "IA-02",
+      "linked_reqs": "Req.2, Req.102, Req.202"
+    },
+    {
+      "requirement": "IA-03",
+      "linked_reqs": "Req.2, Req.100, Req.102, Req.202, Req.203"
+    },
+    {
+      "requirement": "IA-04",
+      "linked_reqs": "Req.2, Req.5, Req.6, Req.12, Req.100, Req.102, Req.201, Req.202"
+    },
+    {
+      "requirement": "IA-05",
+      "linked_reqs": "Req.2, Req.102, Req.202"
+    },
+    {
+      "requirement": "IA-06",
+      "linked_reqs": "Req.2, Req.6, Req.102, Req.201"
+    },
+    {
+      "requirement": "IA-07",
+      "linked_reqs": "Req.6, Req.102, Req.105, Req.201"
+    },
+    {
+      "requirement": "IA-08",
+      "linked_reqs": "Req.2, Req.201"
+    },
+    {
+      "requirement": "UC-01",
+      "linked_reqs": "Req.101, Req.109, Req.110, Req.201, Req.204"
+    },
+    {
+      "requirement": "UC-02",
+      "linked_reqs": "N/A"
+    },
+    {
+      "requirement": "UC-03",
+      "linked_reqs": "Req.12, Req.102, Req.206"
+    },
+    {
+      "requirement": "UC-04",
+      "linked_reqs": "Req.100, Req.101, Req.102, Req.103, Req.105, Req.110"
+    },
+    {
+      "requirement": "UC-05",
+      "linked_reqs": "Req.103"
+    },
+    {
+      "requirement": "UC-06",
+      "linked_reqs": "Req.103"
+    },
+    {
+      "requirement": "UC-07",
+      "linked_reqs": "Req.103, Req.110"
+    },
+    {
+      "requirement": "SI-01",
+      "linked_reqs": "Req.5, Req.104, Req.205"
+    },
+    {
+      "requirement": "SI-02",
+      "linked_reqs": "Req.1"
+    },
+    {
+      "requirement": "SI-03",
+      "linked_reqs": "Req.5, Req.104, Req.206, Req.207, Req.208"
+    },
+    {
+      "requirement": "SI-04",
+      "linked_reqs": "Req.1"
+    },
+    {
+      "requirement": "SI-05",
+      "linked_reqs": "Req.2, Req.14, Req.15, Req.202, Req.203, Req.207"
+    },
+    {
+      "requirement": "SI-06",
+      "linked_reqs": "Req.4, Req.6, Req.7, Req.208"
+    },
+    {
+      "requirement": "SI-07",
+      "linked_reqs": "Req.4, Req.6, Req.7, Req.208"
+    },
+    {
+      "requirement": "SI-08",
+      "linked_reqs": "Req.1"
+    },
+    {
+      "requirement": "SI-09",
+      "linked_reqs": "Req.1"
+    },
+    {
+      "requirement": "SI-10",
+      "linked_reqs": "N/A"
+    },
+    {
+      "requirement": "SI-11",
+      "linked_reqs": "N/A"
+    },
+    {
+      "requirement": "DC-01",
+      "linked_reqs": "Req.2, Req.5, Req.6, Req.12, Req.15, Req.18, Req.104, Req.109, Req.205"
+    },
+    {
+      "requirement": "DC-02",
+      "linked_reqs": "Req.2"
+    },
+    {
+      "requirement": "DC-03",
+      "linked_reqs": "Req.2, Req.5, Req.100, Req.102, Req.104, Req.205"
+    },
+    {
+      "requirement": "RA-01",
+      "linked_reqs": "Req.105"
+    },
+    {
+      "requirement": "RA-02",
+      "linked_reqs": "Req.106"
+    },
+    {
+      "requirement": "RA-03",
+      "linked_reqs": "Req.106"
+    },
+    {
+      "requirement": "RA-04",
+      "linked_reqs": "Req.5, Req.104, Req.105, Req.205"
+    },
+    {
+      "requirement": "RA-05",
+      "linked_reqs": "Req.5, Req.104, Req.205"
+    }
+  ]
+}

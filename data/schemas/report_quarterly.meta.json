@@ -1,0 +1,22 @@
+{
+  "template_id": "report_quarterly",
+  "display_name": "분기 업무 보고서",
+  "document_family": "report",
+  "format": "docx",
+  "required_facts": [
+    "report_title",
+    "author_org",
+    "report_period",
+    "department"
+  ],
+  "optional_facts": [
+    "author_name",
+    "approver_name"
+  ],
+  "free_text_fields": [
+    "executive_summary",
+    "achievements",
+    "issues",
+    "next_quarter_plan"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "case_dir": "data\\cases\\mindrium_xa",
+  "change_id": "chg-20260702-6ca5c5",
+  "dry_run": true,
+  "mode": "dry-run",
+  "method": "harness",
+  "agents": {
+    "requirement": {
+      "data": {
+        "req_ids": [],
+        "confirmed": false,
+        "clarifying_questions": [
+          "변경할 요구사항 설명(description)을 입력해 주세요."
+        ]
+      }
+    }
+  },
+  "impact": {
+    "changed_req_ids": [],
+    "linked_security_ids": [],
+    "linked_test_ids": [],
+    "documents": {}
+  },
+  "review": {
+    "status": "ok",
+    "issues": []
+  }
+}

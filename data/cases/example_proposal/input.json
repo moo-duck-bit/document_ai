@@ -1,0 +1,25 @@
+{
+  "case_id": "example_proposal_001",
+  "template_id": "proposal_it",
+  "case_type": "제안서",
+  "document_subtype": "IT용역",
+  "facts": {
+    "client_name": "○○공공기관",
+    "project_title": "AI 문서 자동화 플랫폼 구축",
+    "budget_krw": 80000000,
+    "period_start": "2026-07-01",
+    "period_end": "2026-12-31",
+    "vendor_name": "주식회사 예시",
+    "contact_name": "홍길동",
+    "contact_email": "hong@example.com"
+  },
+  "free_text_hints": {
+    "background": "기관 내 보고서·제안서 작성에 수개월 소요, 양식 불일치 문제",
+    "scope_summary": "완성 문서 학습 기반 DOCX 자동 작성 PoC, RAG 보조",
+    "differentiators": "국문 DOCX 특화, 케이스 기반 few-shot, human-in-the-loop"
+  },
+  "source_documents": [],
+  "intake_channel": "manual_example",
+  "confirmed": true,
+  "confirmed_at": "2026-06-30"
+}

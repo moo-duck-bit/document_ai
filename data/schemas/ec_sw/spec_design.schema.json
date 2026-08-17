@@ -1,0 +1,326 @@
+{
+  "template_id": "spec_design",
+  "format": "docx",
+  "blank_path": "data/templates/ec_sw/template_mddr.docx",
+  "filled_example_path": "data/examples/ec_sw/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+  "stats": {
+    "field_count": 25,
+    "repeating_entity_count": 0,
+    "blank_blocks": 56,
+    "filled_blocks": 15
+  },
+  "fields": [
+    {
+      "field_id": "paragraph_0",
+      "label": "paragraph_0",
+      "type": "free_text",
+      "location": {
+        "type": "paragraph",
+        "paragraph_index": 0
+      },
+      "blank_value": "소프트웨어 설계 명세서",
+      "example_value": "Software Design Specification"
+    },
+    {
+      "field_id": "승인자",
+      "label": "승인자",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 0,
+        "row": 1,
+        "col": 4
+      },
+      "blank_value": "",
+      "example_value": "2025.02.07"
+    },
+    {
+      "field_id": "검토자",
+      "label": "검토자",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 0,
+        "row": 2,
+        "col": 4
+      },
+      "blank_value": "",
+      "example_value": "2025.02.07"
+    },
+    {
+      "field_id": "작성자",
+      "label": "작성자",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 0,
+        "row": 3,
+        "col": 4
+      },
+      "blank_value": "",
+      "example_value": "2025.02.07"
+    },
+    {
+      "field_id": "개정번호",
+      "label": "개정번호",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 0,
+        "col": 1
+      },
+      "blank_value": "개정일자",
+      "example_value": "Mindrium"
+    },
+    {
+      "field_id": "개정번호_0_2",
+      "label": "개정번호",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 0,
+        "col": 2
+      },
+      "blank_value": "개정내용",
+      "example_value": "Mindrium"
+    },
+    {
+      "field_id": "개정번호_0_3",
+      "label": "개정번호",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 0,
+        "col": 3
+      },
+      "blank_value": "작성자",
+      "example_value": "Mindrium"
+    },
+    {
+      "field_id": "0",
+      "label": "0",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 1,
+        "col": 1
+      },
+      "blank_value": "",
+      "example_value": "E06070.01"
+    },
+    {
+      "field_id": "0_1_2",
+      "label": "0",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 1,
+        "col": 2
+      },
+      "blank_value": "제정",
+      "example_value": "E06070.01"
+    },
+    {
+      "field_id": "0_1_3",
+      "label": "0",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 1,
+        "col": 3
+      },
+      "blank_value": "",
+      "example_value": "E06070.01"
+    },
+    {
+      "field_id": "table1_r3_c1",
+      "label": null,
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 3,
+        "col": 1
+      },
+      "blank_value": "",
+      "example_value": "Mindrium-app"
+    },
+    {
+      "field_id": "table1_r3_c2",
+      "label": null,
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 3,
+        "col": 2
+      },
+      "blank_value": "",
+      "example_value": "Mindrium-server"
+    },
+    {
+      "field_id": "table1_r3_c3",
+      "label": null,
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 3,
+        "col": 3
+      },
+      "blank_value": "",
+      "example_value": "Mindrium-dashboard"
+    },
+    {
+      "field_id": "table1_r4_c1",
+      "label": null,
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 4,
+        "col": 1
+      },
+      "blank_value": "",
+      "example_value": "2.1.1"
+    },
+    {
+      "field_id": "table1_r4_c2",
+      "label": null,
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 4,
+        "col": 2
+      },
+      "blank_value": "",
+      "example_value": "2.1.1"
+    },
+    {
+      "field_id": "table1_r4_c3",
+      "label": null,
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 4,
+        "col": 3
+      },
+      "blank_value": "",
+      "example_value": "2.1.1"
+    },
+    {
+      "field_id": "table1_r5_c1",
+      "label": null,
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 5,
+        "col": 1
+      },
+      "blank_value": "",
+      "example_value": "B"
+    },
+    {
+      "field_id": "table1_r5_c2",
+      "label": null,
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 5,
+        "col": 2
+      },
+      "blank_value": "",
+      "example_value": "B"
+    },
+    {
+      "field_id": "table1_r5_c3",
+      "label": null,
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 5,
+        "col": 3
+      },
+      "blank_value": "",
+      "example_value": "B"
+    },
+    {
+      "field_id": "paragraph_2",
+      "label": "paragraph_2",
+      "type": "free_text",
+      "location": {
+        "type": "paragraph",
+        "paragraph_index": 2
+      },
+      "blank_value": "목차",
+      "example_value": "IEC 62304:2015 CSV Medical device software – Software life cycle processes"
+    },
+    {
+      "field_id": "paragraph_3",
+      "label": "paragraph_3",
+      "type": "free_text",
+      "location": {
+        "type": "paragraph",
+        "paragraph_index": 3
+      },
+      "blank_value": "개요",
+      "example_value": "ISO 14971:2019 Medical devices – Application of risk management to medical devices"
+    },
+    {
+      "field_id": "paragraph_5",
+      "label": "paragraph_5",
+      "type": "free_text",
+      "location": {
+        "type": "paragraph",
+        "paragraph_index": 5
+      },
+      "blank_value": ".",
+      "example_value": "그림 1. 사용 사례 다이어그램"
+    },
+    {
+      "field_id": "paragraph_6",
+      "label": "paragraph_6",
+      "type": "free_text",
+      "location": {
+        "type": "paragraph",
+        "paragraph_index": 6
+      },
+      "blank_value": "범위",
+      "example_value": "전체 시스템의 개요는 그림 1의 다이어그램과 같다. 환자는 모바일 애플리케이션을 통해 인지행동치료를 수행한다. 모바일 애플리케이션은 서버와 통신하면서 환자에게 제공할 치료에 대한 데이터를 전달받고, 사용자의 치료 수행 결과 데이터는 서버로 전송된다. 서버에 쌓인 데이터는 환자에게 맞춤형 치료를 제공하는 데 사용되며, 다른 한편으로 의사가 환자의 상태를 모니터링하는 데 사용된다."
+    },
+    {
+      "field_id": "paragraph_8",
+      "label": "paragraph_8",
+      "type": "free_text",
+      "location": {
+        "type": "paragraph",
+        "paragraph_index": 8
+      },
+      "blank_value": "식별",
+      "example_value": "운영 버전은 공식 앱스토어를 통한 배포 버전을 기준으로 관리하며, 배포 전 서명 및 무결성 검증 절차를 수행하도록 설계한다."
+    },
+    {
+      "field_id": "paragraph_9",
+      "label": "paragraph_9",
+      "type": "free_text",
+      "location": {
+        "type": "paragraph",
+        "paragraph_index": 9
+      },
+      "blank_value": "참조문서",
+      "example_value": "HTML5, SCSS, TypeScript)"
+    }
+  ],
+  "repeating_entities": []
+}

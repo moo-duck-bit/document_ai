@@ -1,0 +1,516 @@
+{
+  "template_id": "spec_requirements",
+  "format": "docx",
+  "blank_path": "data/templates/ec_sw/template_mdsr.docx",
+  "filled_example_path": "data/examples/ec_sw/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+  "stats": {
+    "field_count": 11,
+    "repeating_entity_count": 2,
+    "blank_blocks": 47,
+    "filled_blocks": 49
+  },
+  "fields": [
+    {
+      "field_id": "0",
+      "label": "0",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 0,
+        "row": 1,
+        "col": 4
+      },
+      "blank_value": "",
+      "example_value": "2025.02.07"
+    },
+    {
+      "field_id": "table0_r2_c4",
+      "label": null,
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 0,
+        "row": 2,
+        "col": 4
+      },
+      "blank_value": "",
+      "example_value": "2025.02.07"
+    },
+    {
+      "field_id": "table0_r3_c4",
+      "label": null,
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 0,
+        "row": 3,
+        "col": 4
+      },
+      "blank_value": "",
+      "example_value": "2025.02.07"
+    },
+    {
+      "field_id": "모델명",
+      "label": "모델명",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 1,
+        "row": 1,
+        "col": 1
+      },
+      "blank_value": "Mindrium",
+      "example_value": "2026.02.07"
+    },
+    {
+      "field_id": "paragraph_2",
+      "label": "paragraph_2",
+      "type": "free_text",
+      "location": {
+        "type": "paragraph",
+        "paragraph_index": 2
+      },
+      "blank_value": "XX-XX-XXXX)",
+      "example_value": "ISO 14971:2019 Medical devices – Application of risk management to medical devices"
+    },
+    {
+      "field_id": "Code_language",
+      "label": "Code language",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 2,
+        "row": 1,
+        "col": 1
+      },
+      "blank_value": "",
+      "example_value": "Dart/Flutter"
+    },
+    {
+      "field_id": "Platform",
+      "label": "Platform",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 2,
+        "row": 2,
+        "col": 1
+      },
+      "blank_value": "",
+      "example_value": "Android Studio, X code"
+    },
+    {
+      "field_id": "Editor",
+      "label": "Editor",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 2,
+        "row": 3,
+        "col": 1
+      },
+      "blank_value": "",
+      "example_value": "Microsoft VS Code"
+    },
+    {
+      "field_id": "Editor_3_1",
+      "label": "Editor",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 3,
+        "row": 3,
+        "col": 1
+      },
+      "blank_value": "",
+      "example_value": "회원가입 과정에서 인가되지 않은 사용 금지 및 사용 기록 감사 가능성을 사용자에게 안내해야 한다.\n직접 식별정보는 저장 및 제공 목적에 따라 인증 및 권한 기반 접근 통제를 통해 보호하며, 권한 없는 사용자가 해당 정보만으로 사용자를 식별할 수 없도록 관리되어야 한다."
+    },
+    {
+      "field_id": "table21_r2_c1",
+      "label": null,
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 21,
+        "row": 2,
+        "col": 1
+      },
+      "blank_value": "",
+      "example_value": "최소 권한 원칙을 적용하여 사용자에게 필요한 범위 내에서만 시스템 접근을 허용하고, 무단 접근 및 데이터 유출을 방지하기 위함이다."
+    },
+    {
+      "field_id": "table34_r2_c1",
+      "label": null,
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 34,
+        "row": 2,
+        "col": 1
+      },
+      "blank_value": "",
+      "example_value": "처방받은 환자를 시스템에 등록하고, 등록된 환자의 정보에 접근할 수 있도록 하기 위함이다."
+    }
+  ],
+  "repeating_entities": [
+    {
+      "entity": "requirement",
+      "table_index": 38,
+      "example_ids": [
+        "Req. 207"
+      ],
+      "rows": 4,
+      "cols": 2,
+      "sample_header": [
+        "Req. 207",
+        ""
+      ]
+    },
+    {
+      "entity": "extra_table",
+      "table_index": 39,
+      "rows": 37,
+      "sample_first_row": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "req_id": "Req. 1",
+      "table_index": 7,
+      "row": 0,
+      "cells": [
+        "Req. 1",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 2",
+      "table_index": 8,
+      "row": 0,
+      "cells": [
+        "Req. 2",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 3",
+      "table_index": 9,
+      "row": 0,
+      "cells": [
+        "Req. 3",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 4",
+      "table_index": 10,
+      "row": 0,
+      "cells": [
+        "Req. 4",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 5",
+      "table_index": 11,
+      "row": 0,
+      "cells": [
+        "Req. 5",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 6",
+      "table_index": 12,
+      "row": 0,
+      "cells": [
+        "Req. 6",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 7",
+      "table_index": 13,
+      "row": 0,
+      "cells": [
+        "Req. 7",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 8",
+      "table_index": 14,
+      "row": 0,
+      "cells": [
+        "Req. 8",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 9",
+      "table_index": 15,
+      "row": 0,
+      "cells": [
+        "Req. 9",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 10",
+      "table_index": 16,
+      "row": 0,
+      "cells": [
+        "Req. 10",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 11",
+      "table_index": 17,
+      "row": 0,
+      "cells": [
+        "Req. 11",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 12",
+      "table_index": 18,
+      "row": 0,
+      "cells": [
+        "Req. 12",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 13",
+      "table_index": 19,
+      "row": 0,
+      "cells": [
+        "Req. 13",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 14",
+      "table_index": 20,
+      "row": 0,
+      "cells": [
+        "Req. 14",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 15",
+      "table_index": 21,
+      "row": 0,
+      "cells": [
+        "Req. 15",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 16",
+      "table_index": 22,
+      "row": 0,
+      "cells": [
+        "Req. 16",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 17",
+      "table_index": 23,
+      "row": 0,
+      "cells": [
+        "Req. 17",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 18",
+      "table_index": 24,
+      "row": 0,
+      "cells": [
+        "Req. 18",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 100",
+      "table_index": 25,
+      "row": 0,
+      "cells": [
+        "Req. 100",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 101",
+      "table_index": 26,
+      "row": 0,
+      "cells": [
+        "Req. 101",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 102",
+      "table_index": 27,
+      "row": 0,
+      "cells": [
+        "Req. 102",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 103",
+      "table_index": 28,
+      "row": 0,
+      "cells": [
+        "Req. 103",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 104",
+      "table_index": 29,
+      "row": 0,
+      "cells": [
+        "Req. 104",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 105",
+      "table_index": 30,
+      "row": 0,
+      "cells": [
+        "Req. 105",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 106",
+      "table_index": 31,
+      "row": 0,
+      "cells": [
+        "Req. 106",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 107",
+      "table_index": 32,
+      "row": 0,
+      "cells": [
+        "Req. 107",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 108",
+      "table_index": 33,
+      "row": 0,
+      "cells": [
+        "Req. 108",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 109",
+      "table_index": 34,
+      "row": 0,
+      "cells": [
+        "Req. 109",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 110",
+      "table_index": 35,
+      "row": 0,
+      "cells": [
+        "Req. 110",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 200",
+      "table_index": 36,
+      "row": 0,
+      "cells": [
+        "Req. 200",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 201",
+      "table_index": 37,
+      "row": 0,
+      "cells": [
+        "Req. 201",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 202",
+      "table_index": 38,
+      "row": 0,
+      "cells": [
+        "Req. 202",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 203",
+      "table_index": 39,
+      "row": 0,
+      "cells": [
+        "Req. 203",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 204",
+      "table_index": 40,
+      "row": 0,
+      "cells": [
+        "Req. 204",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 205",
+      "table_index": 41,
+      "row": 0,
+      "cells": [
+        "Req. 205",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 206",
+      "table_index": 42,
+      "row": 0,
+      "cells": [
+        "Req. 206",
+        ""
+      ]
+    },
+    {
+      "req_id": "Req. 207",
+      "table_index": 43,
+      "row": 0,
+      "cells": [
+        "Req. 207",
+        ""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "case_id": "req6_login_policy_change",
+  "case_path": "data/cases/mindrium_xa",
+  "change": {
+    "change_id": "eval-req6-structured",
+    "requirement_changes": [
+      {
+        "id": "Req. 6",
+        "description": "로그인 제한 정책을 강화한다. 연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다."
+      }
+    ]
+  },
+  "input_type": "structured",
+  "method": "harness"
+}
+{
+  "case_id": "req6_nl_missing_description",
+  "case_path": "data/cases/mindrium_xa",
+  "request": "Req. 6 변경해줘",
+  "input_type": "natural_language",
+  "method": "harness"
+}
+{
+  "case_id": "req6_nl_with_description",
+  "case_path": "data/cases/mindrium_xa",
+  "request": "Req. 6: 로그인 제한 정책 강화. 연속 실패 시 계정 잠금.",
+  "input_type": "natural_language",
+  "method": "harness"
+}
+{
+  "case_id": "fr02_stt_tc_link",
+  "case_path": "data/cases/stt_srs",
+  "change": {
+    "change_id": "eval-fr02-structured",
+    "requirement_changes": [
+      {
+        "req_id": "FR-02",
+        "description": "한국어·영어·일본어 STT 지원, 정확도 92% 목표"
+      }
+    ]
+  },
+  "input_type": "structured",
+  "method": "harness"
+}

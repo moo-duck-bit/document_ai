@@ -1,0 +1,2 @@
+{"case_id": "golden_001", "template_id": "contract_service", "field_id": "party_a_name", "expected_value": "주식회사 A", "input_facts": {"party_a_name": "주식회사 A", "party_b_name": "주식회사 B", "contract_amount": "50000000"}}
+{"case_id": "golden_001", "template_id": "contract_service", "field_id": "contract_amount", "expected_value": "50,000,000원", "input_facts": {"party_a_name": "주식회사 A", "party_b_name": "주식회사 B", "contract_amount": "50000000"}}

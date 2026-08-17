@@ -1,0 +1,2 @@
+{"id": "q001", "question": "문서의 주요 목적은 무엇인가?", "expected_doc": "sample.pdf", "expected_pages": [1], "reference_answer": "(샘플 문서 작성 후 채울 것)", "tags": ["general", "korean"]}
+{"id": "q002", "question": "표에 나온 수치 합계는?", "expected_doc": "sample_with_table.pdf", "expected_pages": [2], "reference_answer": "(샘플 문서 작성 후 채울 것)", "tags": ["table", "korean"]}

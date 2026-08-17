@@ -1,0 +1,6 @@
+JM COLLECTION MDSR verify_completeness (post-build)
+issues=0 residual=0
+
+Issues:
+
+Residual:

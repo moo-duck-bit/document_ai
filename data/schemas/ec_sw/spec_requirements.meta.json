@@ -1,0 +1,31 @@
+{
+  "template_id": "spec_requirements",
+  "display_name": "EC-SW-MDSR 소프트웨어 요구사항 명세서",
+  "document_family": "spec",
+  "doc_code_pattern": "EC-SW-MDSR({product_code})",
+  "format": "docx",
+  "standards": ["IEC 62304:2015"],
+  "structure": {
+    "primary": "table",
+    "table_count_approx": 45,
+    "row_pattern": "Req. {req_number}"
+  },
+  "required_facts": [
+    "product_name",
+    "product_code",
+    "document_version",
+    "document_date"
+  ],
+  "repeating_entities": [
+    {
+      "entity": "requirement",
+      "id_pattern": "Req. {n}",
+      "fields": ["req_id", "req_title", "req_description", "priority", "source"]
+    }
+  ],
+  "free_text_fields": ["system_overview"],
+  "related_templates": ["spec_design", "report_security_verification"],
+  "example_path": "data/examples/ec_sw/spec_mdsr_*.docx",
+  "template_path": "data/templates/ec_sw/template_mdsr.docx",
+  "blank_template_available": true,
+}

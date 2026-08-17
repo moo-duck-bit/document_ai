@@ -1,0 +1,512 @@
+{
+  "case_dir": "data\\cases\\mindrium_xa",
+  "change_id": "eval-req6-structured",
+  "summary": null,
+  "mode": "dry-run",
+  "dry_run": true,
+  "pipeline": [
+    {
+      "agent_id": "requirement",
+      "status": "ok",
+      "data": {
+        "change_id": "eval-req6-structured",
+        "summary": null,
+        "req_ids": [
+          "Req. 6"
+        ],
+        "requirement_changes": [
+          {
+            "req_id": "Req. 6",
+            "description": "로그인 제한 정책을 강화한다. 연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다.",
+            "purpose": null,
+            "criteria": null
+          }
+        ],
+        "confidence": null,
+        "clarifying_questions": [],
+        "confirmed": true
+      },
+      "issues": []
+    },
+    {
+      "agent_id": "traceability",
+      "status": "ok",
+      "data": {
+        "changed_req_ids": [
+          "Req. 6"
+        ],
+        "linked_security_ids": [
+          "DC-01",
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06",
+          "SI-07"
+        ],
+        "linked_test_ids": [],
+        "linked_design_req_ids": [],
+        "xxcs_security_req_ids": [
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06",
+          "SI-07"
+        ],
+        "document_set_hint": "ec_sw",
+        "documents": {
+          "spec_requirements": {
+            "action": "patch",
+            "req_ids": [
+              "Req. 6"
+            ]
+          },
+          "spec_design": {
+            "action": "skip",
+            "req_ids": [],
+            "reason": "MDDR / design blocks not indexed"
+          },
+          "report_security_verification": {
+            "action": "patch",
+            "security_req_ids": [
+              "IA-04",
+              "IA-06",
+              "IA-07",
+              "SI-06",
+              "SI-07"
+            ]
+          },
+          "test_cases": {
+            "action": "skip",
+            "test_ids": [],
+            "reason": "SRS RTM — update linked test cases (TC-xx) manually or via test spec DOCX when available"
+          }
+        },
+        "impact": {
+          "changed_req_ids": [
+            "Req. 6"
+          ],
+          "linked_downstream_ids": [
+            "DC-01",
+            "IA-04",
+            "IA-06",
+            "IA-07",
+            "SI-06",
+            "SI-07"
+          ],
+          "linked_security_ids": [
+            "DC-01",
+            "IA-04",
+            "IA-06",
+            "IA-07",
+            "SI-06",
+            "SI-07"
+          ],
+          "linked_test_ids": [],
+          "document_set_hint": "ec_sw",
+          "documents": {
+            "spec_requirements": {
+              "action": "patch",
+              "req_ids": [
+                "Req. 6"
+              ]
+            },
+            "spec_design": {
+              "action": "skip",
+              "req_ids": [],
+              "reason": "MDDR / design blocks not indexed"
+            },
+            "report_security_verification": {
+              "action": "patch",
+              "security_req_ids": [
+                "IA-04",
+                "IA-06",
+                "IA-07",
+                "SI-06",
+                "SI-07"
+              ]
+            },
+            "test_cases": {
+              "action": "skip",
+              "test_ids": [],
+              "reason": "SRS RTM — update linked test cases (TC-xx) manually or via test spec DOCX when available"
+            }
+          }
+        }
+      },
+      "issues": []
+    },
+    {
+      "agent_id": "design",
+      "status": "ok",
+      "data": {
+        "linked_design_req_ids": [],
+        "indexed_req_ids": [],
+        "patch_candidates": [],
+        "mddr_action": "skip"
+      },
+      "issues": []
+    },
+    {
+      "agent_id": "test",
+      "status": "ok",
+      "data": {
+        "linked_test_ids": [],
+        "xxcs_security_req_ids": [
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06",
+          "SI-07"
+        ],
+        "xxcs_patch_candidates": [
+          {
+            "req_id": "IA-04",
+            "has_security_tests_json": false,
+            "review_only": true
+          },
+          {
+            "req_id": "IA-06",
+            "has_security_tests_json": false,
+            "review_only": true
+          },
+          {
+            "req_id": "IA-07",
+            "has_security_tests_json": false,
+            "review_only": true
+          },
+          {
+            "req_id": "SI-06",
+            "has_security_tests_json": false,
+            "review_only": true
+          },
+          {
+            "req_id": "SI-07",
+            "has_security_tests_json": false,
+            "review_only": true
+          }
+        ],
+        "rtm_review_candidates": [],
+        "xxcs_action": "patch",
+        "test_case_action": "skip",
+        "output_path": "data\\cases\\mindrium_xa\\output_xxcs.docx"
+      },
+      "issues": []
+    },
+    {
+      "agent_id": "document_review",
+      "status": "warning",
+      "data": {
+        "issue_count": 1,
+        "checks_run": [
+          "requirement_descriptions",
+          "requirements_json_membership",
+          "traceability_downstream",
+          "design_patch_readiness",
+          "security_tests_readiness"
+        ]
+      },
+      "issues": [
+        "XXCS patch planned but security_tests.json is missing"
+      ]
+    }
+  ],
+  "agents": {
+    "requirement": {
+      "agent_id": "requirement",
+      "status": "ok",
+      "data": {
+        "change_id": "eval-req6-structured",
+        "summary": null,
+        "req_ids": [
+          "Req. 6"
+        ],
+        "requirement_changes": [
+          {
+            "req_id": "Req. 6",
+            "description": "로그인 제한 정책을 강화한다. 연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다.",
+            "purpose": null,
+            "criteria": null
+          }
+        ],
+        "confidence": null,
+        "clarifying_questions": [],
+        "confirmed": true
+      },
+      "issues": []
+    },
+    "traceability": {
+      "agent_id": "traceability",
+      "status": "ok",
+      "data": {
+        "changed_req_ids": [
+          "Req. 6"
+        ],
+        "linked_security_ids": [
+          "DC-01",
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06",
+          "SI-07"
+        ],
+        "linked_test_ids": [],
+        "linked_design_req_ids": [],
+        "xxcs_security_req_ids": [
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06",
+          "SI-07"
+        ],
+        "document_set_hint": "ec_sw",
+        "documents": {
+          "spec_requirements": {
+            "action": "patch",
+            "req_ids": [
+              "Req. 6"
+            ]
+          },
+          "spec_design": {
+            "action": "skip",
+            "req_ids": [],
+            "reason": "MDDR / design blocks not indexed"
+          },
+          "report_security_verification": {
+            "action": "patch",
+            "security_req_ids": [
+              "IA-04",
+              "IA-06",
+              "IA-07",
+              "SI-06",
+              "SI-07"
+            ]
+          },
+          "test_cases": {
+            "action": "skip",
+            "test_ids": [],
+            "reason": "SRS RTM — update linked test cases (TC-xx) manually or via test spec DOCX when available"
+          }
+        },
+        "impact": {
+          "changed_req_ids": [
+            "Req. 6"
+          ],
+          "linked_downstream_ids": [
+            "DC-01",
+            "IA-04",
+            "IA-06",
+            "IA-07",
+            "SI-06",
+            "SI-07"
+          ],
+          "linked_security_ids": [
+            "DC-01",
+            "IA-04",
+            "IA-06",
+            "IA-07",
+            "SI-06",
+            "SI-07"
+          ],
+          "linked_test_ids": [],
+          "document_set_hint": "ec_sw",
+          "documents": {
+            "spec_requirements": {
+              "action": "patch",
+              "req_ids": [
+                "Req. 6"
+              ]
+            },
+            "spec_design": {
+              "action": "skip",
+              "req_ids": [],
+              "reason": "MDDR / design blocks not indexed"
+            },
+            "report_security_verification": {
+              "action": "patch",
+              "security_req_ids": [
+                "IA-04",
+                "IA-06",
+                "IA-07",
+                "SI-06",
+                "SI-07"
+              ]
+            },
+            "test_cases": {
+              "action": "skip",
+              "test_ids": [],
+              "reason": "SRS RTM — update linked test cases (TC-xx) manually or via test spec DOCX when available"
+            }
+          }
+        }
+      },
+      "issues": []
+    },
+    "design": {
+      "agent_id": "design",
+      "status": "ok",
+      "data": {
+        "linked_design_req_ids": [],
+        "indexed_req_ids": [],
+        "patch_candidates": [],
+        "mddr_action": "skip"
+      },
+      "issues": []
+    },
+    "test": {
+      "agent_id": "test",
+      "status": "ok",
+      "data": {
+        "linked_test_ids": [],
+        "xxcs_security_req_ids": [
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06",
+          "SI-07"
+        ],
+        "xxcs_patch_candidates": [
+          {
+            "req_id": "IA-04",
+            "has_security_tests_json": false,
+            "review_only": true
+          },
+          {
+            "req_id": "IA-06",
+            "has_security_tests_json": false,
+            "review_only": true
+          },
+          {
+            "req_id": "IA-07",
+            "has_security_tests_json": false,
+            "review_only": true
+          },
+          {
+            "req_id": "SI-06",
+            "has_security_tests_json": false,
+            "review_only": true
+          },
+          {
+            "req_id": "SI-07",
+            "has_security_tests_json": false,
+            "review_only": true
+          }
+        ],
+        "rtm_review_candidates": [],
+        "xxcs_action": "patch",
+        "test_case_action": "skip",
+        "output_path": "data\\cases\\mindrium_xa\\output_xxcs.docx"
+      },
+      "issues": []
+    },
+    "document_review": {
+      "agent_id": "document_review",
+      "status": "warning",
+      "data": {
+        "issue_count": 1,
+        "checks_run": [
+          "requirement_descriptions",
+          "requirements_json_membership",
+          "traceability_downstream",
+          "design_patch_readiness",
+          "security_tests_readiness"
+        ]
+      },
+      "issues": [
+        "XXCS patch planned but security_tests.json is missing"
+      ]
+    }
+  },
+  "impact": {
+    "changed_req_ids": [
+      "Req. 6"
+    ],
+    "linked_downstream_ids": [
+      "DC-01",
+      "IA-04",
+      "IA-06",
+      "IA-07",
+      "SI-06",
+      "SI-07"
+    ],
+    "linked_security_ids": [
+      "DC-01",
+      "IA-04",
+      "IA-06",
+      "IA-07",
+      "SI-06",
+      "SI-07"
+    ],
+    "linked_test_ids": [],
+    "document_set_hint": "ec_sw",
+    "documents": {
+      "spec_requirements": {
+        "action": "patch",
+        "req_ids": [
+          "Req. 6"
+        ]
+      },
+      "spec_design": {
+        "action": "skip",
+        "req_ids": [],
+        "reason": "MDDR / design blocks not indexed"
+      },
+      "report_security_verification": {
+        "action": "patch",
+        "security_req_ids": [
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06",
+          "SI-07"
+        ]
+      },
+      "test_cases": {
+        "action": "skip",
+        "test_ids": [],
+        "reason": "SRS RTM — update linked test cases (TC-xx) manually or via test spec DOCX when available"
+      }
+    }
+  },
+  "outputs": {
+    "spec_requirements": "data\\cases\\mindrium_xa\\output_mdsr.docx",
+    "spec_design": "data\\cases\\mindrium_xa\\output_mddr.docx",
+    "report_security_verification": "data\\cases\\mindrium_xa\\output_xxcs.docx"
+  },
+  "design_patch_candidates": [],
+  "test_patch_candidates": [
+    {
+      "req_id": "IA-04",
+      "has_security_tests_json": false,
+      "review_only": true
+    },
+    {
+      "req_id": "IA-06",
+      "has_security_tests_json": false,
+      "review_only": true
+    },
+    {
+      "req_id": "IA-07",
+      "has_security_tests_json": false,
+      "review_only": true
+    },
+    {
+      "req_id": "SI-06",
+      "has_security_tests_json": false,
+      "review_only": true
+    },
+    {
+      "req_id": "SI-07",
+      "has_security_tests_json": false,
+      "review_only": true
+    }
+  ],
+  "review": {
+    "status": "warning",
+    "issues": [
+      "XXCS patch planned but security_tests.json is missing"
+    ]
+  },
+  "patches": {},
+  "impact_report": "data\\eval\\results\\reports\\req6_login_policy_change_impact_report.json",
+  "method": "harness"
+}

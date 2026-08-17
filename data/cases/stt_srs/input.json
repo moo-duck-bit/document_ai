@@ -1,0 +1,43 @@
+{
+  "case_id": "stt_srs",
+  "document_set": "ieee_srs",
+  "product_name": "STT Meeting Transcription Service",
+  "product_code": "STT",
+  "domain": "speech_to_text",
+  "standards": [
+    "IEEE 830-1998",
+    "ISO/IEC/IEEE 29148:2018"
+  ],
+  "templates_in_set": [
+    "spec_requirements"
+  ],
+  "facts": {
+    "product_name": "STT Meeting Transcription Service",
+    "model_name": "STT Cloud",
+    "software_name": "STT Meeting Transcription Service",
+    "product_code": "STT",
+    "document_version": "1.0",
+    "author_org": "Example Corp",
+    "code_language": "Python",
+    "platform": "AWS (EC2, S3, RDS)",
+    "editor": "VS Code",
+    "approval_date": "2026.03.15",
+    "deployment": "AWS Cloud",
+    "max_file_size_mb": "100",
+    "stt_engine": "Google Speech API or Kaldi",
+    "database": "PostgreSQL 14",
+    "storage": "AWS S3",
+    "auth": "JWT"
+  },
+  "free_text_hints": {
+    "system_overview": "Client → API Gateway → STT Engine → DB → File Storage. STT Engine은 Python(PyTorch) 기반.",
+    "architecture_narrative": "웹/모바일 클라이언트가 REST API(JSON)로 오디오를 업로드하고 STT 결과를 받는다.",
+    "constraints": "파일 최대 100MB, HTTPS TLS 1.2+, 개인정보보호법 준수, 무료 플랜 하루 10회 제한"
+  },
+  "source_documents": [
+    "data/cases/stt_srs/source_srs.md"
+  ],
+  "intake_channel": "srs_markdown_import",
+  "confirmed": true,
+  "confirmed_at": "2026-06-30"
+}

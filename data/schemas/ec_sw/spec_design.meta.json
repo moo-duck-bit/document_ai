@@ -1,0 +1,33 @@
+{
+  "template_id": "spec_design",
+  "display_name": "EC-SW-MDDR 소프트웨어 설계 명세서",
+  "document_family": "spec",
+  "doc_code_pattern": "EC-SW-MDDR({product_code})",
+  "format": "docx",
+  "standards": ["IEC 62304:2015", "ISO 14971:2019"],
+  "structure": {
+    "primary": "mixed",
+    "table_count_approx": 3,
+    "sections": ["시스템 개요", "아키텍처", "모듈 설계", "Req. 대응"]
+  },
+  "required_facts": [
+    "product_name",
+    "product_code",
+    "document_version",
+    "document_date",
+    "platform_ios",
+    "platform_android"
+  ],
+  "repeating_entities": [
+    {
+      "entity": "design_item",
+      "links_to": "Req. {n}",
+      "fields": ["req_id", "design_description", "component", "interfaces"]
+    }
+  ],
+  "free_text_fields": ["system_overview", "architecture_narrative"],
+  "related_templates": ["spec_requirements", "report_security_verification"],
+  "example_path": "data/examples/ec_sw/spec_mddr_*.docx",
+  "template_path": "data/templates/ec_sw/template_mddr.docx",
+  "blank_template_available": true,
+}

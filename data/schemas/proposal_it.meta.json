@@ -1,0 +1,25 @@
+{
+  "template_id": "proposal_it",
+  "display_name": "IT 용역 제안서",
+  "document_family": "proposal",
+  "format": "docx",
+  "required_facts": [
+    "client_name",
+    "project_title",
+    "budget_krw",
+    "period_start",
+    "period_end",
+    "vendor_name"
+  ],
+  "optional_facts": [
+    "contact_name",
+    "contact_email"
+  ],
+  "free_text_fields": [
+    "background",
+    "scope_summary",
+    "methodology",
+    "schedule",
+    "differentiators"
+  ]
+}

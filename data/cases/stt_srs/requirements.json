@@ -1,0 +1,107 @@
+{
+  "source": "data/cases/stt_srs/source_srs.md",
+  "document_set": "ieee_srs",
+  "metadata": {
+    "case_id": "stt_srs",
+    "product": "STT Meeting Transcription Service",
+    "standard": "IEEE 830 / ISO/IEC/IEEE 29148"
+  },
+  "requirements": [
+    {
+      "req_id": "FR-01",
+      "category": "functional",
+      "description": "사용자는 mp3, wav 파일을 업로드할 수 있어야 한다.",
+      "priority": "Must",
+      "notes": "최대 100MB"
+    },
+    {
+      "req_id": "FR-02",
+      "category": "functional",
+      "description": "시스템은 업로드된 오디오 파일을 STT 엔진을 통해 변환해야 한다.",
+      "priority": "Must",
+      "notes": "한국어/영어 지원"
+    },
+    {
+      "req_id": "FR-03",
+      "category": "functional",
+      "description": "변환된 텍스트는 사용자가 다운로드 가능해야 한다.",
+      "priority": "Must",
+      "notes": "txt, docx"
+    },
+    {
+      "req_id": "FR-04",
+      "category": "functional",
+      "description": "실패 시 사용자에게 에러 메시지를 반환해야 한다.",
+      "priority": "Must",
+      "notes": "HTTP 상태 코드"
+    },
+    {
+      "req_id": "FR-05",
+      "category": "functional",
+      "description": "관리자는 웹 대시보드를 통해 시스템 로그를 조회할 수 있어야 한다.",
+      "priority": "Should",
+      "notes": "보안 인증 필요"
+    },
+    {
+      "req_id": "NFR-01",
+      "category": "non_functional",
+      "description": "평균 응답 속도 2초 이내",
+      "criteria": "1분 길이 파일 기준",
+      "notes": ""
+    },
+    {
+      "req_id": "NFR-02",
+      "category": "non_functional",
+      "description": "동시 접속 처리 100명 이상",
+      "criteria": "Auto Scaling",
+      "notes": ""
+    },
+    {
+      "req_id": "NFR-03",
+      "category": "non_functional",
+      "description": "데이터 전송 보안 HTTPS",
+      "criteria": "TLS 1.2 이상",
+      "notes": ""
+    },
+    {
+      "req_id": "NFR-04",
+      "category": "non_functional",
+      "description": "데이터 저장 보안 AES-256",
+      "criteria": "AES-256 암호화",
+      "notes": "사용자 데이터"
+    },
+    {
+      "req_id": "NFR-05",
+      "category": "non_functional",
+      "description": "가용성 99.9% SLA",
+      "criteria": "클라우드 환경",
+      "notes": ""
+    }
+  ],
+  "traceability": [
+    {
+      "requirement": "FR-01",
+      "linked_reqs": "TC-01",
+      "link_type": "test_case",
+      "description": "mp3 업로드 성공 테스트"
+    },
+    {
+      "requirement": "FR-02",
+      "linked_reqs": "TC-02",
+      "link_type": "test_case",
+      "description": "한국어/영어 변환 정확도 90% 이상 검증"
+    },
+    {
+      "requirement": "NFR-01",
+      "linked_reqs": "TC-05",
+      "link_type": "test_case",
+      "description": "1분 파일 변환 2초 이내 응답 확인"
+    },
+    {
+      "requirement": "NFR-03",
+      "linked_reqs": "TC-07",
+      "link_type": "test_case",
+      "description": "HTTPS 통신 암호화 적용 여부 확인"
+    }
+  ]
+}

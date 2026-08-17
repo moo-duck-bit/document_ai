@@ -1,0 +1,42 @@
+{
+  "template_id": "report_security_verification",
+  "display_name": "EC-SW-XXCS 소프트웨어 보안 검증 보고서",
+  "document_family": "report",
+  "doc_code_pattern": "EC-SW-XXCS({product_code})",
+  "format": "docx",
+  "standards": ["사이버보안 요구사항 (IA/UC/SI)"],
+  "structure": {
+    "primary": "table",
+    "table_count_approx": 37,
+    "sections": ["결재", "요구사항 체크리스트", "시험결과"],
+    "requirement_prefixes": ["IA", "UC", "SI"]
+  },
+  "required_facts": [
+    "product_name",
+    "product_code",
+    "document_version",
+    "document_date",
+    "author_org"
+  ],
+  "repeating_entities": [
+    {
+      "entity": "security_requirement",
+      "id_pattern": "{prefix}-{nn}",
+      "fields": [
+        "security_req_id",
+        "security_req_title",
+        "applies_to_device",
+        "compliance_method",
+        "test_result",
+        "test_applied",
+        "test_notes"
+      ]
+    }
+  ],
+  "free_text_fields": [],
+  "related_templates": ["spec_requirements", "spec_design"],
+  "example_path": "data/examples/ec_sw/report_xxcs_*.docx",
+  "template_path": null,
+  "blank_template_available": false,
+  "blank_template_strategy": "Derive skeleton from filled XXCS (strip test cells) or clone IA-01 table block; bulk fill via CSV",
+}

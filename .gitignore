@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.egg-info/
+.pytest_cache/
+
+# Data (large / sensitive)
+data/samples/
+data/processed/
+data/chroma/
+*.pdf
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Office temp / probe outputs
+~$*.docx
+**/_*.docx
+**/build.log
+**/mdsr_diff_report.txt
+**/mdsr_diff_report.json
+**/impact_report.json
+
+# Vendored third-party harness (Apache-2.0, separate upstream project)
+ai-engineering-harness/
+
+# Real customer deliverables — do NOT publish (see data/examples/ec_sw/README.md)
+data/examples/ec_sw/*.docx
+data/cases/**/*.docx
+
+# xxcs "skeleton" still carries all 92 embedded images from the source report
+data/templates/ec_sw/template_xxcs_skeleton.docx

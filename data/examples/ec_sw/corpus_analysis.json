@@ -1,0 +1,593 @@
+{
+  "report_security_verification": {
+    "short_id": "report_xxcs",
+    "template_id": "report_security_verification",
+    "doc_code": "EC-SW-XXCS(XA)",
+    "display_name": "EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서",
+    "dest_path": "data/examples/ec_sw/report_xxcs_EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서.docx",
+    "file": "report_xxcs_EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서.docx",
+    "size_kb": 24663.9,
+    "meta": {
+      "title": "Word Document",
+      "author": "",
+      "subject": ""
+    },
+    "paragraph_count": 37,
+    "table_count": 37,
+    "headings": [],
+    "headings_total": 0,
+    "tables": [
+      {
+        "idx": 1,
+        "rows": 21,
+        "cols": 9,
+        "header": [
+          "소프트웨어 보안 검증 보고서",
+          "소프트웨어 보안 검증 보고서",
+          "소프트웨어 보안 검증 보고서",
+          "소프트웨어 보안 검증 보고서",
+          "결재",
+          "작 성"
+        ]
+      },
+      {
+        "idx": 5,
+        "rows": 36,
+        "cols": 6,
+        "header": [
+          "사이버보안 요구사항",
+          "사이버보안 요구사항",
+          "사이버보안 요구사항",
+          "사이버보안 요구사항",
+          "해당기기 적용여부",
+          "적합성 입증 방법"
+        ]
+      },
+      {
+        "idx": 10,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          "-"
+        ]
+      },
+      {
+        "idx": 14,
+        "rows": 5,
+        "cols": 5,
+        "header": [
+          "시험결과",
+          "적용",
+          "만족",
+          "비고",
+          "관리에 의한 타인 계정 관리는 제품 범위 외(IA-02 예외)"
+        ]
+      },
+      {
+        "idx": 17,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          "LDAP·관리자 UI를 통한 타인 식별정보 관리는 제품 범위 외."
+        ]
+      },
+      {
+        "idx": 20,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          "90일 경과 시 변경 권장(SnackBar) 만 제공. 강제 변경·로그인"
+        ]
+      },
+      {
+        "idx": 23,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          ""
+        ]
+      },
+      {
+        "idx": 26,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          ""
+        ]
+      },
+      {
+        "idx": 29,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          ""
+        ]
+      },
+      {
+        "idx": 32,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          "시스템 사용 알림은 회원가입 화면에 표시. 로그인 화면에는 동일 문구 미"
+        ]
+      },
+      {
+        "idx": 35,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          ""
+        ]
+      },
+      {
+        "idx": 38,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "N/A",
+          "비고",
+          "본 제품은 모바일 코드 실행을 허용하지 않으므로 미적용"
+        ]
+      },
+      {
+        "idx": 41,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          "사용자 로그아웃 기반 세션 종료 기능 적"
+        ]
+      },
+      {
+        "idx": 44,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          ""
+        ]
+      },
+      {
+        "idx": 47,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          ""
+        ]
+      },
+      {
+        "idx": 50,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          ""
+        ]
+      },
+      {
+        "idx": 53,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          ""
+        ]
+      },
+      {
+        "idx": 56,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          ""
+        ]
+      },
+      {
+        "idx": 59,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          "앱 내 악성코드 탐지·제거 엔진은 미구현. Android OS 샌드박스·"
+        ]
+      },
+      {
+        "idx": 62,
+        "rows": 5,
+        "cols": 4,
+        "header": [
+          "시험결과",
+          "적용",
+          "비고",
+          ""
+        ]
+      }
+    ],
+    "cover_lines": [
+      "<요구사항 체크리스트>",
+      "<시험결과>",
+      "IA-01. 사용자 식별 및 인증",
+      "IA-02. 계정 관리",
+      "IA-03. 식별정보 관리",
+      "IA-04. 인증정보 관리",
+      "IA-05. 비밀번호 강도 설정",
+      "IA-06. 인증정보에 대한 피드백",
+      "IA-07. 연속적인 로그인 시도 실패 시 로그인 제한",
+      "IA-08. 시스템 사용 알림 메시지",
+      "UC-01. 권한 부여",
+      "UC-02. 모바일 코드 사용 통제",
+      "UC-03. 세션 잠금",
+      "UC-04. 감사기록 생성",
+      "UC-05. 감사 처리 실패 대응",
+      "UC-06. 타임스탬프",
+      "UC-07. 부인 방지",
+      "SI-01. 통신에 대한 무결성 보장",
+      "SI-02. 악성코드로부터 보호",
+      "SI-03. 보안 기능 검증"
+    ],
+    "paragraphs_sample": [
+      "<요구사항 체크리스트>",
+      "<시험결과>",
+      "IA-01. 사용자 식별 및 인증",
+      "IA-02. 계정 관리",
+      "IA-03. 식별정보 관리",
+      "IA-04. 인증정보 관리",
+      "IA-05. 비밀번호 강도 설정",
+      "IA-06. 인증정보에 대한 피드백",
+      "IA-07. 연속적인 로그인 시도 실패 시 로그인 제한",
+      "IA-08. 시스템 사용 알림 메시지",
+      "UC-01. 권한 부여",
+      "UC-02. 모바일 코드 사용 통제",
+      "UC-03. 세션 잠금",
+      "UC-04. 감사기록 생성",
+      "UC-05. 감사 처리 실패 대응"
+    ],
+    "placeholder_like": [],
+    "full_text_chars": 664
+  },
+  "spec_design": {
+    "short_id": "spec_mddr",
+    "template_id": "spec_design",
+    "doc_code": "EC-SW-MDDR(XA)",
+    "display_name": "EC-SW-MDDR(XA) 소프트웨어 설계 명세서",
+    "dest_path": "data/examples/ec_sw/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+    "file": "spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+    "size_kb": 2568.5,
+    "meta": {
+      "title": "Word Document",
+      "author": "",
+      "subject": ""
+    },
+    "paragraph_count": 12,
+    "table_count": 3,
+    "headings": [],
+    "headings_total": 0,
+    "tables": [
+      {
+        "idx": 20,
+        "rows": 4,
+        "cols": 5,
+        "header": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "idx": 24,
+        "rows": 4,
+        "cols": 4,
+        "header": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "idx": 37,
+        "rows": 7,
+        "cols": 4,
+        "header": [
+          "",
+          "Mindrium",
+          "Mindrium",
+          "Mindrium"
+        ]
+      }
+    ],
+    "cover_lines": [
+      "Software Design Specification",
+      "Mindrium",
+      "IEC 62304:2015 CSV Medical device software – Software life cycle processes",
+      "ISO 14971:2019 Medical devices – Application of risk management to medical devices",
+      "시스템 개요",
+      "그림 1. 사용 사례 다이어그램",
+      "전체 시스템의 개요는 그림 1의 다이어그램과 같다. 환자는 모바일 애플리케이션을 통해 인지행동치료를 수행한다. 모바일 애플리케이션은 서버와 통신하면서 환자에게 제공할 치료에 대한 데이터를 전달받고, 사용자의 치료 수행 결과 데이터는 서버로 전송된다. 서버에 쌓인 데이터는 환자에게 맞춤형 치료를 제공하는 데 사용되며, 다른 한편으로 의사가 환자의 상태를 모니터링하는 데 사용된다.",
+      "iOS 15.6 15.6",
+      "운영 버전은 공식 앱스토어를 통한 배포 버전을 기준으로 관리하며, 배포 전 서명 및 무결성 검증 절차를 수행하도록 설계한다.",
+      "Req. 109",
+      "HTML5, SCSS, TypeScript)",
+      "Next.jslayout"
+    ],
+    "paragraphs_sample": [
+      "Software Design Specification",
+      "Mindrium",
+      "IEC 62304:2015 CSV Medical device software – Software life cycle processes",
+      "ISO 14971:2019 Medical devices – Application of risk management to medical devices",
+      "시스템 개요",
+      "그림 1. 사용 사례 다이어그램",
+      "전체 시스템의 개요는 그림 1의 다이어그램과 같다. 환자는 모바일 애플리케이션을 통해 인지행동치료를 수행한다. 모바일 애플리케이션은 서버와 통신하면서 환자에게 제공할 치료에 대한 데이터를 전달받고, 사용자의 치료 수행 결과 데이터는 서버로 전송된다. 서버에 쌓인 데이터",
+      "iOS 15.6 15.6",
+      "운영 버전은 공식 앱스토어를 통한 배포 버전을 기준으로 관리하며, 배포 전 서명 및 무결성 검증 절차를 수행하도록 설계한다.",
+      "Req. 109",
+      "HTML5, SCSS, TypeScript)",
+      "Next.jslayout"
+    ],
+    "placeholder_like": [],
+    "full_text_chars": 555
+  },
+  "spec_requirements": {
+    "short_id": "spec_mdsr",
+    "template_id": "spec_requirements",
+    "doc_code": "EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+    "display_name": "EC-SW-MDSR(XA)_소프트웨어_요구사항명세서",
+    "dest_path": "data/examples/ec_sw/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+    "file": "spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+    "size_kb": 1922.5,
+    "meta": {
+      "title": "Word Document",
+      "author": "",
+      "subject": ""
+    },
+    "paragraph_count": 4,
+    "table_count": 45,
+    "headings": [],
+    "headings_total": 0,
+    "tables": [
+      {
+        "idx": 23,
+        "rows": 4,
+        "cols": 5,
+        "header": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "idx": 27,
+        "rows": 4,
+        "cols": 4,
+        "header": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "idx": 40,
+        "rows": 6,
+        "cols": 4,
+        "header": [
+          "",
+          "Mindrium",
+          "Mindrium",
+          "Mindrium"
+        ]
+      },
+      {
+        "idx": 54,
+        "rows": 7,
+        "cols": 2,
+        "header": [
+          "",
+          ""
+        ]
+      },
+      {
+        "idx": 131,
+        "rows": 4,
+        "cols": 2,
+        "header": [
+          "",
+          ""
+        ]
+      },
+      {
+        "idx": 134,
+        "rows": 3,
+        "cols": 2,
+        "header": [
+          "",
+          ""
+        ]
+      },
+      {
+        "idx": 137,
+        "rows": 3,
+        "cols": 2,
+        "header": [
+          "",
+          ""
+        ]
+      },
+      {
+        "idx": 162,
+        "rows": 4,
+        "cols": 2,
+        "header": [
+          "Req. 1",
+          ""
+        ]
+      },
+      {
+        "idx": 164,
+        "rows": 4,
+        "cols": 2,
+        "header": [
+          "Req. 2",
+          ""
+        ]
+      },
+      {
+        "idx": 166,
+        "rows": 4,
+        "cols": 2,
+        "header": [
+          "Req. 3",
+          ""
+        ]
+      },
+      {
+        "idx": 168,
+        "rows": 4,
+        "cols": 2,
+        "header": [
+          "Req. 4",
+          ""
+        ]
+      },
+      {
+        "idx": 170,
+        "rows": 4,
+        "cols": 2,
+        "header": [
+          "Req. 5",
+          ""
+        ]
+      },
+      {
+        "idx": 172,
+        "rows": 4,
+        "cols": 2,
+        "header": [
+          "Req. 6",
+          ""
+        ]
+      },
+      {
+        "idx": 174,
+        "rows": 4,
+        "cols": 2,
+        "header": [
+          "Req. 7",
+          ""
+        ]
+      },
+      {
+        "idx": 176,
+        "rows": 4,
+        "cols": 2,
+        "header": [
+          "Req. 8",
+          ""
+        ]
+      },
+      {
+        "idx": 178,
+        "rows": 4,
+        "cols": 2,
+        "header": [
+          "Req. 9",
+          ""
+        ]
+      },
+      {
+        "idx": 180,
+        "rows": 4,
+        "cols": 2,
+        "header": [
+          "Req. 10",
+          ""
+        ]
+      },
+      {
+        "idx": 182,
+        "rows": 4,
+        "cols": 2,
+        "header": [
+          "Req. 11",
+          ""
+        ]
+      },
+      {
+        "idx": 184,
+        "rows": 4,
+        "cols": 2,
+        "header": [
+          "Req. 12",
+          ""
+        ]
+      },
+      {
+        "idx": 186,
+        "rows": 4,
+        "cols": 2,
+        "header": [
+          "Req. 13",
+          ""
+        ]
+      }
+    ],
+    "cover_lines": [
+      "Software Requirement Specification",
+      "Mindrium",
+      "IEC 62304:2015 CSV Medical device software – Software life cycle processes",
+      "ISO 14971:2019 Medical devices – Application of risk management to medical devices"
+    ],
+    "paragraphs_sample": [
+      "Software Requirement Specification",
+      "Mindrium",
+      "IEC 62304:2015 CSV Medical device software – Software life cycle processes",
+      "ISO 14971:2019 Medical devices – Application of risk management to medical devices"
+    ],
+    "placeholder_like": [],
+    "full_text_chars": 198
+  }
+}

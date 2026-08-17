@@ -1,0 +1,180 @@
+{
+  "summary": {
+    "changed_req_id_detection_accuracy": 1.0,
+    "linked_security_id_recall": 1.0,
+    "linked_test_id_recall": 1.0,
+    "linked_design_id_recall": 1.0,
+    "linked_document_recall": 1.0,
+    "false_positive_rate": 0.1111111111111111,
+    "clarification_needed_accuracy": 1.0,
+    "patch_success_rate": 1.0
+  },
+  "case_count": 4,
+  "cases": [
+    {
+      "case_id": "req6_login_policy_change",
+      "changed_req_id_detection_accuracy": 1.0,
+      "linked_security_id_recall": 1.0,
+      "linked_test_id_recall": 1.0,
+      "linked_design_id_recall": 1.0,
+      "linked_document_recall": 1.0,
+      "false_positive_rate": 0.2222222222222222,
+      "clarification_needed_accuracy": 1.0,
+      "patch_success_rate": 1.0,
+      "details": {
+        "predicted_changed_req_ids": [
+          "Req. 6"
+        ],
+        "expected_changed_req_ids": [
+          "Req. 6"
+        ],
+        "predicted_linked_security_ids": [
+          "DC-01",
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06",
+          "SI-07"
+        ],
+        "expected_linked_security_ids": [
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06"
+        ],
+        "predicted_linked_test_ids": [],
+        "expected_linked_test_ids": [],
+        "predicted_design_ids": [],
+        "expected_design_ids": [],
+        "predicted_linked_documents": [
+          "report_security_verification",
+          "spec_requirements"
+        ],
+        "expected_linked_documents": [
+          "report_security_verification",
+          "spec_requirements"
+        ],
+        "predicted_clarification_needed": false,
+        "expected_clarification_needed": false,
+        "patch_success": true
+      }
+    },
+    {
+      "case_id": "req6_nl_missing_description",
+      "changed_req_id_detection_accuracy": 1.0,
+      "linked_security_id_recall": 1.0,
+      "linked_test_id_recall": 1.0,
+      "linked_design_id_recall": 1.0,
+      "linked_document_recall": 1.0,
+      "false_positive_rate": 0.0,
+      "clarification_needed_accuracy": 1.0,
+      "patch_success_rate": 1.0,
+      "details": {
+        "predicted_changed_req_ids": [],
+        "expected_changed_req_ids": [],
+        "predicted_linked_security_ids": [],
+        "expected_linked_security_ids": [],
+        "predicted_linked_test_ids": [],
+        "expected_linked_test_ids": [],
+        "predicted_design_ids": [],
+        "expected_design_ids": [],
+        "predicted_linked_documents": [],
+        "expected_linked_documents": [],
+        "predicted_clarification_needed": true,
+        "expected_clarification_needed": true,
+        "patch_success": true
+      }
+    },
+    {
+      "case_id": "req6_nl_with_description",
+      "changed_req_id_detection_accuracy": 1.0,
+      "linked_security_id_recall": 1.0,
+      "linked_test_id_recall": 1.0,
+      "linked_design_id_recall": 1.0,
+      "linked_document_recall": 1.0,
+      "false_positive_rate": 0.2222222222222222,
+      "clarification_needed_accuracy": 1.0,
+      "patch_success_rate": 1.0,
+      "details": {
+        "predicted_changed_req_ids": [
+          "Req. 6"
+        ],
+        "expected_changed_req_ids": [
+          "Req. 6"
+        ],
+        "predicted_linked_security_ids": [
+          "DC-01",
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06",
+          "SI-07"
+        ],
+        "expected_linked_security_ids": [
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06"
+        ],
+        "predicted_linked_test_ids": [],
+        "expected_linked_test_ids": [],
+        "predicted_design_ids": [],
+        "expected_design_ids": [],
+        "predicted_linked_documents": [
+          "report_security_verification",
+          "spec_requirements"
+        ],
+        "expected_linked_documents": [
+          "report_security_verification",
+          "spec_requirements"
+        ],
+        "predicted_clarification_needed": false,
+        "expected_clarification_needed": false,
+        "patch_success": true
+      }
+    },
+    {
+      "case_id": "fr02_stt_tc_link",
+      "changed_req_id_detection_accuracy": 1.0,
+      "linked_security_id_recall": 1.0,
+      "linked_test_id_recall": 1.0,
+      "linked_design_id_recall": 1.0,
+      "linked_document_recall": 1.0,
+      "false_positive_rate": 0.0,
+      "clarification_needed_accuracy": 1.0,
+      "patch_success_rate": 1.0,
+      "details": {
+        "predicted_changed_req_ids": [
+          "FR-02"
+        ],
+        "expected_changed_req_ids": [
+          "FR-02"
+        ],
+        "predicted_linked_security_ids": [
+          "TC-02"
+        ],
+        "expected_linked_security_ids": [],
+        "predicted_linked_test_ids": [
+          "TC-02"
+        ],
+        "expected_linked_test_ids": [
+          "TC-02"
+        ],
+        "predicted_design_ids": [],
+        "expected_design_ids": [],
+        "predicted_linked_documents": [
+          "spec_requirements",
+          "test_cases"
+        ],
+        "expected_linked_documents": [
+          "spec_requirements",
+          "test_cases"
+        ],
+        "predicted_clarification_needed": false,
+        "expected_clarification_needed": false,
+        "patch_success": true
+      }
+    }
+  ],
+  "errors": []
+}

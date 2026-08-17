@@ -1,0 +1,140 @@
+{
+  "paragraphs": [
+    "Software Design Specification",
+    "PCI DSS v4.0 Payment Card Industry Data Security Standard",
+    "개인정보보호법 (대한민국) / OWASP ASVS v4.0 Application Security Verification Standard",
+    "EC-SW-MDDR(JM) JM COLLECTION 소프트웨어 설계명세서",
+    "Ver 1.0 / 문서번호 JM-SDS-2026-001",
+    "JM COLLECTION은 패션·잡화 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 JM-web, 주문·결제 API JM-api, 운영 백오피스 JM-admin으로 구성되며 상품 탐색·장바구니·주문·PG 결제·배송·반품·CS·프로모션 기능을 제공한다.",
+    "React SPA + Node.js 마이크로서비스 + PostgreSQL/Redis/S3/CloudFront 아키텍처를 따른다. 결제 토큰화, 개인정보·결제 데이터 암호화, RBAC, OWASP Top 10 대응을 설계에 반영한다.",
+    "본 문서는 JM COLLECTION 소프트웨어의 아키텍처·컴포넌트·요구사항별 설계 사항을 정의한다."
+  ],
+  "overview": {
+    "purpose": "JM COLLECTION 온라인 쇼핑몰 소프트웨어의 내부 구조, 모듈, 인터페이스, 데이터 모델 및 보안·비기능 설계를 명세하여 개발·시험·운영의 기준을 제공한다.",
+    "users": [
+      "일반 고객(회원·비회원): JM-web을 통해 상품 탐색, 주문, 결제, 배송 조회, 반품/환불, 1:1 문의를 수행한다.",
+      "운영자·CS·물류 담당자: JM-admin을 통해 상품·재고·주문·프로모션·회원·문의를 관리한다.",
+      "시스템 연동: PG사, SMS/이메일 게이트웨이, 택배사 배송 추적 API와 연동한다."
+    ],
+    "system": "JM-web → API Gateway → JM-api(회원/카탈로그/주문/결제/알림 서비스) → PostgreSQL·Redis·S3. JM-admin은 내부 VPC에서 JM-api 관리 API를 호출한다. 외부 PG·알림·배송 API는 secrets manager 키와 TLS 상호인증으로 연동한다."
+  },
+  "approval": {
+    "date": "2026.03.20",
+    "people": {
+      "승인자": {
+        "name": "김준호",
+        "title": "대표이사"
+      },
+      "검토자": {
+        "name": "이서연",
+        "title": "보안책임자(CISO)"
+      },
+      "작성자": {
+        "name": "박민재",
+        "title": "SI팀장"
+      }
+    }
+  },
+  "revision": {
+    "number": "0",
+    "date": "2026.03.20",
+    "summary": "JM COLLECTION 쇼핑몰 설계명세서 최초 제정",
+    "author": "박민재"
+  },
+  "product_matrix": [
+    [
+      "제품명",
+      "JM COLLECTION",
+      "JM COLLECTION",
+      "JM COLLECTION"
+    ],
+    [
+      "모델명",
+      "JM-MALL-001",
+      "JM-MALL-001",
+      "JM-MALL-001"
+    ],
+    [
+      "소프트웨어명",
+      "고객몰",
+      "API 서버",
+      "운영 백오피스"
+    ],
+    [
+      "소프트웨어명",
+      "JM-web",
+      "JM-api",
+      "JM-admin"
+    ],
+    [
+      "안전성 등급",
+      "A",
+      "A",
+      "A"
+    ],
+    [
+      "제조자",
+      "JM COLLECTION Co., Ltd.",
+      "JM COLLECTION Co., Ltd.",
+      "JM COLLECTION Co., Ltd."
+    ]
+  ],
+  "component_detail_rows": [
+    [
+      "",
+      "JM-web",
+      "JM-api",
+      "JM-admin"
+    ],
+    [
+      "버전",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0"
+    ],
+    [
+      "Code language",
+      "TypeScript / React 18",
+      "TypeScript / Node.js 20",
+      "TypeScript / React 18"
+    ],
+    [
+      "Platform",
+      "AWS CloudFront, S3",
+      "AWS ECS, RDS PostgreSQL",
+      "AWS ECS (VPC)"
+    ],
+    [
+      "Editor",
+      "VS Code",
+      "VS Code",
+      "VS Code"
+    ],
+    [
+      "운영 환경",
+      "AWS Cloud (ECS, RDS, Redis, S3, CloudFront)",
+      "동일",
+      "동일"
+    ]
+  ],
+  "tech_stacks": [
+    {
+      "header": "JM-web (고객몰)",
+      "code_language": "TypeScript / React 18",
+      "platform": "AWS CloudFront, S3 (정적 호스팅)",
+      "editor": "VS Code"
+    },
+    {
+      "header": "JM-api (주문·결제·회원 API)",
+      "code_language": "TypeScript / Node.js 20 LTS",
+      "platform": "AWS ECS Fargate, API Gateway, RDS PostgreSQL, ElastiCache Redis",
+      "editor": "VS Code"
+    },
+    {
+      "header": "JM-admin (운영 백오피스)",
+      "code_language": "TypeScript / React 18",
+      "platform": "AWS ECS (내부 VPC), RBAC, MFA",
+      "editor": "VS Code"
+    }
+  ]
+}

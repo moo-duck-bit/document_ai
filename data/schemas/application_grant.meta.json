@@ -1,0 +1,21 @@
+{
+  "template_id": "application_grant",
+  "display_name": "과제/지원 신청서",
+  "document_family": "application",
+  "format": "docx",
+  "required_facts": [
+    "applicant_name",
+    "applicant_org",
+    "application_date",
+    "program_name"
+  ],
+  "optional_facts": [
+    "applicant_id",
+    "requested_amount_krw"
+  ],
+  "free_text_fields": [
+    "project_summary",
+    "expected_outcomes",
+    "budget_justification"
+  ]
+}
