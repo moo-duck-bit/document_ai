@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://document-ai.local/schemas/security_test_execution.schema.json",
+  "title": "SecurityTestExecution",
+  "description": "External or human-provided security test execution results for XXCS import.",
+  "type": "object",
+  "required": ["case_id", "execution_id", "executed_at", "executor", "results"],
+  "additionalProperties": true,
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "execution_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^exec-[A-Za-z0-9._-]+$"
+    },
+    "executed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "synthetic": {
+      "type": "boolean",
+      "description": "When true, marks sample/synthetic execution data (not real test evidence)."
+    },
+    "executor": {
+      "type": "object",
+      "required": ["type", "name"],
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["human", "script", "external_tool"]
+        },
+        "name": { "type": "string" },
+        "version": { "type": "string" }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "target": { "type": "string" },
+        "base_url": { "type": "string" },
+        "host": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "results": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/executionResult"
+      }
+    }
+  },
+  "$defs": {
+    "executionResult": {
+      "type": "object",
+      "required": ["security_test_id", "status"],
+      "additionalProperties": true,
+      "properties": {
+        "security_test_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": ["PASS", "FAIL", "NOT_EXECUTED", "NOT_APPLICABLE", "REVIEW_REQUIRED"]
+        },
+        "actual_result": { "type": "string" },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidenceItem"
+          }
+        },
+        "executed_at": { "type": "string", "format": "date-time" },
+        "executor_note": { "type": "string" }
+      }
+    },
+    "evidenceItem": {
+      "type": "object",
+      "required": ["type"],
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["text", "file", "url", "log", "screenshot", "command_output"]
+        },
+        "path": { "type": "string" },
+        "description": { "type": "string" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "content": { "type": "string", "description": "Inline text evidence (not copied into DOCX verbatim)." }
+      }
+    }
+  }
+}

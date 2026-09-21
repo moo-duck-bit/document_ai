@@ -1,0 +1,114 @@
+{
+  "case_id": "lab_ec_sw",
+  "execution_id": "exec-20260718-runner-synthetic-001",
+  "reviewer": {
+    "name": "",
+    "role": ""
+  },
+  "reviewed_at": "2026-07-17T16:09:16Z",
+  "overall_status": "test_fixture_verified",
+  "synthetic_acknowledged": true,
+  "verification_scope": "fixture_only",
+  "note": "Synthetic demonstration package. Do not promote to human-approved execution gold.",
+  "test_reviews": [
+    {
+      "security_test_id": "SI-01",
+      "plan_security_test_id": "SI-01-T01",
+      "execution_status": "PASS",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": false,
+      "evidence_confirmed": false,
+      "evidence_hash_verified": false,
+      "selected_for_report": false,
+      "note": "SYNTHETIC fixture — not for real gold"
+    },
+    {
+      "security_test_id": "SI-02",
+      "plan_security_test_id": "SI-02-T01",
+      "execution_status": "FAIL",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": false,
+      "evidence_confirmed": false,
+      "evidence_hash_verified": false,
+      "selected_for_report": false,
+      "note": "SYNTHETIC fixture — not for real gold"
+    },
+    {
+      "security_test_id": "SI-03",
+      "plan_security_test_id": "SI-03-T01",
+      "execution_status": "PASS",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": false,
+      "evidence_confirmed": false,
+      "evidence_hash_verified": false,
+      "selected_for_report": false,
+      "note": "SYNTHETIC fixture — not for real gold"
+    },
+    {
+      "security_test_id": "SI-04",
+      "plan_security_test_id": "SI-04-T01",
+      "execution_status": "FAIL",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": false,
+      "evidence_confirmed": false,
+      "evidence_hash_verified": false,
+      "selected_for_report": false,
+      "note": "SYNTHETIC fixture — not for real gold"
+    },
+    {
+      "security_test_id": "SI-05",
+      "plan_security_test_id": "SI-05-T01",
+      "execution_status": "REVIEW_REQUIRED",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": false,
+      "evidence_confirmed": false,
+      "evidence_hash_verified": false,
+      "selected_for_report": false,
+      "note": "SYNTHETIC fixture — not for real gold"
+    },
+    {
+      "security_test_id": "SI-06",
+      "plan_security_test_id": "SI-06-T01",
+      "execution_status": "PASS",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": false,
+      "evidence_confirmed": false,
+      "evidence_hash_verified": false,
+      "selected_for_report": false,
+      "note": "SYNTHETIC fixture — not for real gold"
+    },
+    {
+      "security_test_id": "SI-07",
+      "plan_security_test_id": "SI-07-T01",
+      "execution_status": "FAIL",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": false,
+      "evidence_confirmed": false,
+      "evidence_hash_verified": false,
+      "selected_for_report": false,
+      "note": "SYNTHETIC fixture — not for real gold"
+    },
+    {
+      "security_test_id": "SI-08",
+      "plan_security_test_id": "SI-08-T01",
+      "execution_status": "PASS",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": false,
+      "evidence_confirmed": false,
+      "evidence_hash_verified": false,
+      "selected_for_report": false,
+      "note": "SYNTHETIC fixture — not for real gold"
+    },
+    {
+      "security_test_id": "SI-09",
+      "plan_security_test_id": "SI-09-T01",
+      "execution_status": "REVIEW_REQUIRED",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": false,
+      "evidence_confirmed": false,
+      "evidence_hash_verified": false,
+      "selected_for_report": false,
+      "note": "SYNTHETIC fixture — not for real gold"
+    }
+  ]
+}

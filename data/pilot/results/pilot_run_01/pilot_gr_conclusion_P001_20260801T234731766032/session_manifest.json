@@ -1,0 +1,17 @@
+{
+  "pilot_run_id": "pilot_run_01",
+  "case_id": "pr01_gr_03",
+  "session_id": "pilot_gr_conclusion_P001_20260801T234731766032",
+  "participant_id": "P001",
+  "domain": "general_report",
+  "scenario_id": "pilot_gr_conclusion",
+  "document_paths": [
+    "data/pilot/real_user_document_pilot/scenarios/fixtures/general_report/report_pilot_base.docx"
+  ],
+  "change_request": "결론에 권고사항과 향후 계획을 추가한다.",
+  "writer_enabled": false,
+  "expected_review_scope": [
+    "결론"
+  ],
+  "created_at": "2026-08-01T23:47:33Z"
+}

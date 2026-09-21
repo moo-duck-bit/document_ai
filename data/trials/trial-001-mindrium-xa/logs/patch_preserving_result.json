@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "mdsr_path": "data\\trials\\trial-001-mindrium-xa\\generated_patch_preserving\\output_mdsr.docx",
+  "mddr_path": "data\\trials\\trial-001-mindrium-xa\\generated_patch_preserving\\output_mddr.docx",
+  "mdsr_patched_req_ids": [
+    "Req. 6"
+  ],
+  "mddr_strategy": "no_automatic_design_patch",
+  "mddr_sha256_matches_reference": true,
+  "validation": {
+    "mdsr_text_diffs": [
+      {
+        "location": "t:12/r:1/c:1",
+        "before": "",
+        "after": "연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다.\n잠금 해제는 관리자 승인 또는 일정 시간 경과 후 자동 해제 중 하나를 지원해야 한다."
+      }
+    ],
+    "mdsr_unexpected_diffs": [],
+    "mdsr_unexpected_diff_count": 0,
+    "mdsr_ooxml_before": {
+      "drawing_like": 2,
+      "sectPr": 1,
+      "tbl": 46,
+      "p": 889
+    },
+    "mdsr_ooxml_after": {
+      "drawing_like": 2,
+      "sectPr": 1,
+      "tbl": 46,
+      "p": 889
+    },
+    "mdsr_styles_before": 58,
+    "mdsr_styles_after": 58,
+    "mdsr_size_before_copy": 1968688,
+    "mdsr_size_after_patch": 1968231,
+    "mdsr_reference_size": 1968688,
+    "mddr_reference_size": 2630162,
+    "mddr_output_size": 2630162,
+    "mdsr_sha256": "e7761b5cda6a7929493abea200b35fecd88a089639c3e8d46c1a97e6cc995cf7",
+    "mddr_sha256": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf",
+    "mddr_reference_sha256": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf",
+    "contamination_mdsr": [],
+    "contamination_mddr": [],
+    "xxcs_in_output_dir": false
+  },
+  "errors": [],
+  "warnings": []
+}

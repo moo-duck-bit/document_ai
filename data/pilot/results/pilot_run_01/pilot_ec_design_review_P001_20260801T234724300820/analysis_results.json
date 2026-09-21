@@ -1,0 +1,50 @@
+{
+  "status": "COMPLETED",
+  "metadata": {
+    "analysis": {
+      "engine": "ec_sw_mdtm_observational",
+      "impacted_documents": [
+        "MDTM_PILOT_BASE"
+      ]
+    }
+  },
+  "n_review_items": 1,
+  "workflow_ref": {
+    "workflow_id": "pilot_ec_sw_20260801T234724Z",
+    "root": "data/pilot/real_user_document_pilot/sessions/pilot_ec_design_review_P001_20260801T234724300820/output/_workflow",
+    "documents": [
+      {
+        "document_id": "MDTM_PILOT_BASE",
+        "source_document_id": "MDTM_PILOT_BASE",
+        "filename": "mdtm_pilot_base.docx",
+        "role": "traceability",
+        "path": "data/pilot/real_user_document_pilot/sessions/pilot_ec_design_review_P001_20260801T234724300820/output/_workflow/pilot_ec_sw_20260801T234724Z/input/mdtm_pilot_base.docx",
+        "copy_path": "data/pilot/real_user_document_pilot/sessions/pilot_ec_design_review_P001_20260801T234724300820/output/_workflow/pilot_ec_sw_20260801T234724Z/copies/mdtm_pilot_base.docx",
+        "user_hints": null,
+        "canonical_document_id": "EC_SW_MDTM",
+        "short_id": "MDTM",
+        "document_type": "MDTM",
+        "document_role": "traceability",
+        "domain_pack_id": "ec_sw_v1",
+        "template_id": "ec_sw_mdtm",
+        "identity_status": "AUTO_SELECTED",
+        "identity_auto_selected": true,
+        "identity_score": 120.25,
+        "identity_reasons": [
+          "filename_hint:MDTM",
+          "filename_role_hint",
+          "heading_or_title",
+          "req_with_design_or_test_same_row",
+          "requirement_id_density",
+          "traceability_matrix_structure",
+          "tier1_mdtm_structure",
+          "auto_selected_strong_evidence"
+        ],
+        "routing_status": "ROUTED",
+        "selected_pack_id": "ec_sw_v1",
+        "recommended_document_set": "ec_sw",
+        "registry_document_id": "MDTM"
+      }
+    ]
+  }
+}

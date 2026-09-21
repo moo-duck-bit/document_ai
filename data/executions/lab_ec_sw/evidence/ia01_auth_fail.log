@@ -1,0 +1,6 @@
+SYNTHETIC SAMPLE — NOT A REAL SECURITY TEST RESULT
+[2026-07-17T10:15:00Z] IA-01-T01 login brute-force simulation
+Attempt 1: invalid credentials -> 401
+Attempt 2: invalid credentials -> 401
+Attempt 3: account lockout triggered -> 423
+Expected lockout policy: FAIL (synthetic negative test fixture)

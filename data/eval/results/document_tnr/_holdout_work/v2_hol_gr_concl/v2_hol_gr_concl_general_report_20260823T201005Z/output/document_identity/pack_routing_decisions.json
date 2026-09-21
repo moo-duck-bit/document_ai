@@ -1,0 +1,28 @@
+[
+  {
+    "routing_id": "route_1ac1536e6d",
+    "source_document_id": "REPORT_STD",
+    "selected_pack_id": "generic_document_v1",
+    "candidate_pack_ids": [
+      "generic_document_v1"
+    ],
+    "routing_status": "ROUTED",
+    "score": 53.95,
+    "score_margin": 53.95,
+    "reason_codes": [
+      "filename_hint:REPORT",
+      "filename_role_hint",
+      "heading_or_title",
+      "report_heading_concepts",
+      "insufficient_margin_or_tier",
+      "explicit_user_pack"
+    ],
+    "human_review_required": false,
+    "actual_pack_invoked": "generic_document_v1",
+    "metadata": {
+      "routing_mode": "explicit",
+      "identity_status": "REVIEW_REQUIRED",
+      "document_set_hint": "general_report"
+    }
+  }
+]

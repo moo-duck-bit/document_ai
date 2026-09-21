@@ -1,0 +1,10 @@
+{
+  "banner_grabbed": false,
+  "bytes_received": 0,
+  "bytes_sent": 0,
+  "check": "port_connectivity_check",
+  "connected": true,
+  "elapsed_ms": 2,
+  "host": "fixture.example.com",
+  "port": 443
+}

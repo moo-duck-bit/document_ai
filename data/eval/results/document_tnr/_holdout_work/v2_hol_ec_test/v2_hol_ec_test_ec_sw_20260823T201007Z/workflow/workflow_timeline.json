@@ -1,0 +1,58 @@
+{
+  "timeline": [
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "CREATED",
+      "event": "created",
+      "detail": "document_set=ec_sw;routing_mode=explicit"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "UPLOADED",
+      "event": "uploaded",
+      "detail": "files=1"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "ANALYZING",
+      "event": "analysis_started",
+      "detail": ""
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "REVIEW_READY",
+      "event": "analysis_completed",
+      "detail": "impacted=0"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "WAITING_APPROVAL",
+      "event": "waiting_approval",
+      "detail": ""
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "WAITING_APPROVAL",
+      "event": "approval_updated",
+      "detail": "approved=2"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "WRITING",
+      "event": "writer_started",
+      "detail": "enable_write=False"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "VALIDATING",
+      "event": "writer_completed",
+      "detail": "applied=0"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "COMPLETED",
+      "event": "completed",
+      "detail": ""
+    }
+  ]
+}

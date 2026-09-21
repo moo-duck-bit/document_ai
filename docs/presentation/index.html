@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document AI v2 Pilot</title>
+  <style>
+    :root { --bg:#0f1720; --fg:#e8eef5; --muted:#9aa7b5; --accent:#6cb6ff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:"Segoe UI","Malgun Gothic",sans-serif; background:var(--bg); color:var(--fg); }
+    .slide { min-height:100vh; padding:8vh 10vw; display:none; flex-direction:column; justify-content:center; }
+    .slide.active { display:flex; }
+    h1 { font-size:clamp(1.8rem,4vw,3rem); margin:0 0 1rem; }
+    h2 { color:var(--accent); font-size:1rem; letter-spacing:.06em; text-transform:uppercase; margin:0 0 .75rem; }
+    ul { font-size:clamp(1.05rem,2vw,1.35rem); line-height:1.55; color:var(--muted); }
+    li { margin:.35rem 0; }
+    .nav { position:fixed; bottom:1rem; right:1rem; display:flex; gap:.5rem; }
+    .nav button { background:#1c2a3a; color:var(--fg); border:1px solid #334; border-radius:8px; padding:.5rem .9rem; cursor:pointer; }
+    .counter { position:fixed; bottom:1.2rem; left:1rem; color:var(--muted); font-size:.85rem; }
+    code, pre { color:#c6e0ff; }
+    table { border-collapse:collapse; color:var(--muted); }
+    td, th { border:1px solid #334; padding:.4rem .7rem; text-align:left; }
+  </style>
+</head>
+<body>
+  <section class="slide active"><h2>1 · Problem</h2><h1>문서는 바뀌는데<br/>수정은 위험하다</h1><ul><li>한 줄 변경 → 여러 표·섹션 영향</li><li>자동 수정은 원본 손상 위험</li><li>필요: 찾기 → 보여주기 → 승인 → 복사본만</li></ul></section>
+  <section class="slide"><h2>2 · Product</h2><h1>Document AI v2</h1><ul><li>Generic Template Engine + Domain Packs</li><li>Controlled Writer (승인 게이트)</li><li>오늘: 실제 사용자 Pilot 제품</li></ul></section>
+  <section class="slide"><h2>3 · Architecture</h2><h1>Pilot → Workflow → Pack → Writer</h1><ul><li>EC-SW · General Report · Business Proposal</li><li>Identity / Assisted routing</li><li>Unresolved locator → no write</li></ul></section>
+  <section class="slide"><h2>4 · Workflow</h2><h1>6 steps</h1><ul><li>Upload · Routing · Change Request</li><li>Analysis · Review · Result</li></ul></section>
+  <section class="slide"><h2>5 · Demo</h2><h1>세 가지 라이브</h1><table><tr><th>EC-SW</th><td>Req.11</td></tr><tr><th>Report</th><td>방법론</td></tr><tr><th>Proposal</th><td>예산</td></tr></table></section>
+  <section class="slide"><h2>6 · Benchmark</h2><h1>Holdout F1 0.956</h1><ul><li>E2E 0.957 · False Patch 0 · Unsafe 0</li><li>Original Preservation 1.000</li><li>Pilot에서 튜닝하지 않음</li></ul></section>
+  <section class="slide"><h2>7 · Pilot</h2><h1>/pilot-v2</h1><ul><li>12 demo scenarios · flagship runner</li><li>Human Review × 10</li><li>Guide · Checklist · Release notes</li></ul></section>
+  <section class="slide"><h2>8 · Safety</h2><h1>원본 무변경</h1><ul><li>승인 없는 Writer 금지</li><li>Path escape / wrong session 차단</li><li>Fingerprint match 필수</li></ul></section>
+  <section class="slide"><h2>9 · Next</h2><h1>READY_FOR_PILOT_RELEASE</h1><ul><li>참가자 실측 · Writer 텍스트 적용(게이트 유지)</li><li>MDVP 검토 · LLM/KG는 장기</li></ul></section>
+
+  <div class="counter" id="c">1 / 9</div>
+  <div class="nav">
+    <button type="button" id="prev">←</button>
+    <button type="button" id="next">→</button>
+  </div>
+  <script>
+    const slides = [...document.querySelectorAll(".slide")];
+    let i = 0;
+    function show(n) {
+      i = Math.max(0, Math.min(slides.length - 1, n));
+      slides.forEach((s, idx) => s.classList.toggle("active", idx === i));
+      document.getElementById("c").textContent = `${i + 1} / ${slides.length}`;
+    }
+    document.getElementById("prev").onclick = () => show(i - 1);
+    document.getElementById("next").onclick = () => show(i + 1);
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight" || e.key === " ") show(i + 1);
+      if (e.key === "ArrowLeft") show(i - 1);
+    });
+  </script>
+</body>
+</html>

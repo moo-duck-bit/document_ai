@@ -1,0 +1,28 @@
+{
+  "case_id": "v2_hol_gr_concl",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "결론 권고사항 수정",
+  "split": "holdout",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_std.docx",
+      "filename": "report_std.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_STD"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "holdout"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "a190a6fac7baab6153c27e2f77227adf66383fbc8cd4f2e458743cca1b00994b",
+  "sanitization_status": "N/A"
+}

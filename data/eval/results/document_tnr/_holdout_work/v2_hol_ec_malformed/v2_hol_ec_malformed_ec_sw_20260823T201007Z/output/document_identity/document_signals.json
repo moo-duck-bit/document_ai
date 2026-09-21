@@ -1,0 +1,191 @@
+[
+  {
+    "signal_id": "fn_b1421df0",
+    "document_source_id": "MDTM_BASE",
+    "signal_type": "FILENAME_TOKEN",
+    "signal_value": "mdtm_base.docx",
+    "normalized_value": "MDTM",
+    "confidence": 0.45,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "filename_hint:MDTM",
+      "filename_not_sufficient_alone"
+    ],
+    "independent_group": "filename"
+  },
+  {
+    "signal_id": "fnrole_5a58248c",
+    "document_source_id": "MDTM_BASE",
+    "signal_type": "DOCUMENT_ROLE_HINT",
+    "signal_value": "traceability",
+    "normalized_value": "traceability",
+    "confidence": 0.4,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "filename_role_hint"
+    ],
+    "independent_group": "filename"
+  },
+  {
+    "signal_id": "fmt_d0630222",
+    "document_source_id": "MDTM_BASE",
+    "signal_type": "FILE_FORMAT",
+    "signal_value": ".docx",
+    "normalized_value": "docx",
+    "confidence": 0.2,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "file_format"
+    ],
+    "independent_group": "format"
+  },
+  {
+    "signal_id": "hd_1c56e19e",
+    "document_source_id": "MDTM_BASE",
+    "signal_type": "DOCUMENT_TITLE",
+    "signal_value": "Traceability Matrix",
+    "normalized_value": "traceability matrix",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 0
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "tbln_fb14700f",
+    "document_source_id": "MDTM_BASE",
+    "signal_type": "TEMPLATE_STRUCTURE",
+    "signal_value": "tables:1",
+    "normalized_value": "1",
+    "confidence": 0.35,
+    "source": "structure",
+    "source_locator": {},
+    "reason_codes": [
+      "table_count"
+    ],
+    "independent_group": "structure"
+  },
+  {
+    "signal_id": "th_e89a04f9",
+    "document_source_id": "MDTM_BASE",
+    "signal_type": "TABLE_HEADER",
+    "signal_value": "requirement design test note",
+    "normalized_value": "requirement design test note",
+    "confidence": 0.55,
+    "source": "structure",
+    "source_locator": {
+      "table_index": 0
+    },
+    "reason_codes": [
+      "table_header"
+    ],
+    "independent_group": "table_header"
+  },
+  {
+    "signal_id": "idrow_7fd2db91",
+    "document_source_id": "MDTM_BASE",
+    "signal_type": "IDENTIFIER_PATTERN",
+    "signal_value": "Req. 10,5.1.1,TC-10,5.1.1",
+    "normalized_value": "trace_row",
+    "confidence": 0.85,
+    "source": "identifiers",
+    "source_locator": {
+      "table_index": 0,
+      "row_index": 1
+    },
+    "reason_codes": [
+      "req_with_design_or_test_same_row",
+      "mdtm_strong_evidence"
+    ],
+    "independent_group": "identifier_structure"
+  },
+  {
+    "signal_id": "idrow_a02cf053",
+    "document_source_id": "MDTM_BASE",
+    "signal_type": "IDENTIFIER_PATTERN",
+    "signal_value": "Req. 11,5.1.2,TC-11,5.1.2",
+    "normalized_value": "trace_row",
+    "confidence": 0.85,
+    "source": "identifiers",
+    "source_locator": {
+      "table_index": 0,
+      "row_index": 2
+    },
+    "reason_codes": [
+      "req_with_design_or_test_same_row",
+      "mdtm_strong_evidence"
+    ],
+    "independent_group": "identifier_structure"
+  },
+  {
+    "signal_id": "idrow_70934097",
+    "document_source_id": "MDTM_BASE",
+    "signal_type": "IDENTIFIER_PATTERN",
+    "signal_value": "Req. 12,5.1.3,TC-12,5.1.3",
+    "normalized_value": "trace_row",
+    "confidence": 0.85,
+    "source": "identifiers",
+    "source_locator": {
+      "table_index": 0,
+      "row_index": 3
+    },
+    "reason_codes": [
+      "req_with_design_or_test_same_row",
+      "mdtm_strong_evidence"
+    ],
+    "independent_group": "identifier_structure"
+  },
+  {
+    "signal_id": "idrow_abac91b6",
+    "document_source_id": "MDTM_BASE",
+    "signal_type": "IDENTIFIER_PATTERN",
+    "signal_value": "Req. 101,6.0.1,TC-101,6.0.1",
+    "normalized_value": "trace_row",
+    "confidence": 0.85,
+    "source": "identifiers",
+    "source_locator": {
+      "table_index": 0,
+      "row_index": 4
+    },
+    "reason_codes": [
+      "req_with_design_or_test_same_row",
+      "mdtm_strong_evidence"
+    ],
+    "independent_group": "identifier_structure"
+  },
+  {
+    "signal_id": "reqc_19737955",
+    "document_source_id": "MDTM_BASE",
+    "signal_type": "IDENTIFIER_PATTERN",
+    "signal_value": "requirement_count:4",
+    "normalized_value": "REQUIREMENT",
+    "confidence": 0.6000000000000001,
+    "source": "identifiers",
+    "source_locator": {},
+    "reason_codes": [
+      "requirement_id_density"
+    ],
+    "independent_group": "identifier_density"
+  },
+  {
+    "signal_id": "mtx_1e2a6ef9",
+    "document_source_id": "MDTM_BASE",
+    "signal_type": "TEMPLATE_STRUCTURE",
+    "signal_value": "traceability_matrix",
+    "normalized_value": "MDTM",
+    "confidence": 0.8,
+    "source": "structure",
+    "source_locator": {},
+    "reason_codes": [
+      "traceability_matrix_structure"
+    ],
+    "independent_group": "structure"
+  }
+]

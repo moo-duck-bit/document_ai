@@ -1,0 +1,16 @@
+[
+  {
+    "raw_text": "Req. 101",
+    "canonical_id": "Req. 101",
+    "status": "VALID_EXACT",
+    "span": [
+      0,
+      8
+    ],
+    "reason_codes": [
+      "REQ_ID_EXACT"
+    ],
+    "confidence": 1.0,
+    "source": "change_request"
+  }
+]

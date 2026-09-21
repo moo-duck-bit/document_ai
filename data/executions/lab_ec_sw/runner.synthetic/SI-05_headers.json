@@ -1,0 +1,5 @@
+{
+  "check": "http_header_check",
+  "error": "synthetic timeout",
+  "error_type": "TimeoutError"
+}

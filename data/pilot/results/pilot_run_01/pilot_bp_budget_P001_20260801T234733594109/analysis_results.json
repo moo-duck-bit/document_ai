@@ -1,0 +1,47 @@
+{
+  "status": "COMPLETED",
+  "metadata": {
+    "analysis": {
+      "engine": "business_proposal_pack",
+      "impacted_documents": [
+        "PROPOSAL_PILOT_BASE"
+      ]
+    }
+  },
+  "n_review_items": 8,
+  "workflow_ref": {
+    "workflow_id": "pilot_business_proposal_20260801T234734Z",
+    "root": "data/pilot/real_user_document_pilot/sessions/pilot_bp_budget_P001_20260801T234733594109/output/_workflow",
+    "documents": [
+      {
+        "document_id": "PROPOSAL_PILOT_BASE",
+        "source_document_id": "PROPOSAL_PILOT_BASE",
+        "filename": "proposal_pilot_base.docx",
+        "role": "business_proposal",
+        "path": "data/pilot/real_user_document_pilot/sessions/pilot_bp_budget_P001_20260801T234733594109/output/_workflow/pilot_business_proposal_20260801T234734Z/input/proposal_pilot_base.docx",
+        "copy_path": "data/pilot/real_user_document_pilot/sessions/pilot_bp_budget_P001_20260801T234733594109/output/_workflow/pilot_business_proposal_20260801T234734Z/copies/proposal_pilot_base.docx",
+        "user_hints": null,
+        "canonical_document_id": "GENERIC_BUSINESS_PROPOSAL",
+        "short_id": "PROPOSAL",
+        "document_type": "BUSINESS_PROPOSAL",
+        "document_role": "business_proposal",
+        "domain_pack_id": "generic_document_v1",
+        "template_id": "business_proposal_v1",
+        "identity_status": "REVIEW_REQUIRED",
+        "identity_auto_selected": false,
+        "identity_score": 51.65,
+        "identity_reasons": [
+          "filename_hint:PROPOSAL",
+          "filename_role_hint",
+          "heading_or_title",
+          "proposal_heading_concepts",
+          "insufficient_margin_or_tier"
+        ],
+        "routing_status": "ROUTED",
+        "selected_pack_id": "generic_document_v1",
+        "recommended_document_set": "business_proposal",
+        "registry_document_id": "PROPOSAL"
+      }
+    ]
+  }
+}

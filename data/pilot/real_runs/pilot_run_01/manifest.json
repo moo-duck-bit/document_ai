@@ -1,0 +1,110 @@
+{
+  "pilot_run_id": "pilot_run_01",
+  "participant_id": "P001",
+  "created_at": "2026-08-02T00:00:00Z",
+  "writer_enabled": false,
+  "controlled_writer_env": false,
+  "routing_mode": "assisted",
+  "note": "First real-user pilot execution. Engine/Ranking/Benchmark/Domain Pack untouched. Writer OFF dry-run.",
+  "cases": [
+    {
+      "case_id": "pr01_ec_01",
+      "domain": "ec_sw",
+      "scenario_id": "pilot_ec_req_single",
+      "document_paths": [
+        "data/pilot/real_user_document_pilot/scenarios/fixtures/ec_sw/mdtm_pilot_base.docx"
+      ],
+      "change_request": "Req. 11 기능 설명을 갱신하고 관련 추적성 행을 검토한다.",
+      "expected_review_scope": ["Req. 11 row", "traceability"],
+      "writer_enabled": false
+    },
+    {
+      "case_id": "pr01_ec_02",
+      "domain": "ec_sw",
+      "scenario_id": "pilot_ec_design_review",
+      "document_paths": [
+        "data/pilot/real_user_document_pilot/scenarios/fixtures/ec_sw/mdtm_pilot_base.docx"
+      ],
+      "change_request": "Req. 10과 Req. 12의 설계 연계를 함께 갱신한다.",
+      "expected_review_scope": ["Req. 10 row", "Req. 12 row"],
+      "writer_enabled": false
+    },
+    {
+      "case_id": "pr01_ec_03",
+      "domain": "ec_sw",
+      "scenario_id": "pilot_ec_semantic",
+      "document_paths": [
+        "data/pilot/real_user_document_pilot/scenarios/fixtures/ec_sw/mdtm_pilot_base.docx"
+      ],
+      "change_request": "사용자 인증 정책 강화가 필요하니 관련 요구/설계를 찾아 검토한다.",
+      "expected_review_scope": ["semantic candidates", "REVIEW_REQUIRED"],
+      "writer_enabled": false
+    },
+    {
+      "case_id": "pr01_gr_01",
+      "domain": "general_report",
+      "scenario_id": "pilot_gr_methodology",
+      "document_paths": [
+        "data/pilot/real_user_document_pilot/scenarios/fixtures/general_report/report_pilot_base.docx"
+      ],
+      "change_request": "방법론 섹션에 데이터 출처를 보강한다.",
+      "expected_review_scope": ["방법론"],
+      "writer_enabled": false
+    },
+    {
+      "case_id": "pr01_gr_02",
+      "domain": "general_report",
+      "scenario_id": "pilot_gr_schedule_table",
+      "document_paths": [
+        "data/pilot/real_user_document_pilot/scenarios/fixtures/general_report/report_pilot_schedule.docx"
+      ],
+      "change_request": "일정 표의 2026-Q4 항목을 수정한다.",
+      "expected_review_scope": ["일정 표"],
+      "writer_enabled": false
+    },
+    {
+      "case_id": "pr01_gr_03",
+      "domain": "general_report",
+      "scenario_id": "pilot_gr_conclusion",
+      "document_paths": [
+        "data/pilot/real_user_document_pilot/scenarios/fixtures/general_report/report_pilot_base.docx"
+      ],
+      "change_request": "결론에 권고사항과 향후 계획을 추가한다.",
+      "expected_review_scope": ["결론"],
+      "writer_enabled": false
+    },
+    {
+      "case_id": "pr01_bp_01",
+      "domain": "business_proposal",
+      "scenario_id": "pilot_bp_budget",
+      "document_paths": [
+        "data/pilot/real_user_document_pilot/scenarios/fixtures/business_proposal/proposal_pilot_base.docx"
+      ],
+      "change_request": "예산 표의 인건비 합계 항목을 수정한다.",
+      "expected_review_scope": ["예산 표"],
+      "writer_enabled": false
+    },
+    {
+      "case_id": "pr01_bp_02",
+      "domain": "business_proposal",
+      "scenario_id": "pilot_bp_schedule",
+      "document_paths": [
+        "data/pilot/real_user_document_pilot/scenarios/fixtures/business_proposal/proposal_pilot_base.docx"
+      ],
+      "change_request": "수행 일정을 2026-Q4로 조정한다.",
+      "expected_review_scope": ["수행 일정"],
+      "writer_enabled": false
+    },
+    {
+      "case_id": "pr01_bp_03",
+      "domain": "business_proposal",
+      "scenario_id": "pilot_bp_risk",
+      "document_paths": [
+        "data/pilot/real_user_document_pilot/scenarios/fixtures/business_proposal/proposal_pilot_base.docx"
+      ],
+      "change_request": "위험 대응 방안 문단을 보강한다.",
+      "expected_review_scope": ["위험관리"],
+      "writer_enabled": false
+    }
+  ]
+}

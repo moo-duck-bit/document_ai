@@ -1,0 +1,521 @@
+{
+  "case_id": "lab_ec_sw",
+  "case_dir": "data\\cases\\lab_ec_sw",
+  "project_type": "real_ec_sw_lab",
+  "display_name": "JM COLLECTION (Lab EC-SW Project)",
+  "status": "PASS",
+  "harness": {
+    "ok": true,
+    "report": {
+      "case_dir": "data\\cases\\lab_ec_sw",
+      "mode": "harness_generate",
+      "ok": true,
+      "steps": {
+        "intake": {
+          "case_id": "lab_ec_sw",
+          "confirmed": true
+        },
+        "retrieval": {
+          "indexed_cases": 3,
+          "hits": [
+            {
+              "case_id": "jm_collection",
+              "case_dir": "data\\cases\\jm_collection",
+              "score": 62.36497912066489,
+              "metadata": {
+                "domain": "ecommerce_b2c",
+                "product_name": "JM COLLECTION",
+                "templates_in_set": [
+                  "spec_requirements",
+                  "spec_design",
+                  "report_security_verification"
+                ]
+              }
+            }
+          ]
+        },
+        "fact_builder": {
+          "payload_keys": [
+            "requirements.json",
+            "design_items.json",
+            "design_content.json",
+            "mdsr_content.json",
+            "mddr_content.json",
+            "security_tests.json"
+          ]
+        },
+        "form_fill": {
+          "generated": [
+            "requirements.json",
+            "design_items.json",
+            "design_content.json",
+            "mdsr_content.json",
+            "mddr_content.json",
+            "security_tests.json"
+          ]
+        },
+        "materialize": {
+          "written": [
+            "requirements.json",
+            "design_items.json",
+            "design_content.json",
+            "mdsr_content.json",
+            "mddr_content.json",
+            "security_tests.json"
+          ]
+        },
+        "render": {
+          "case": "data\\cases\\lab_ec_sw",
+          "documents": {
+            "spec_requirements": {
+              "applied": [
+                "mdsr_full"
+              ],
+              "skipped": [],
+              "requirements": {
+                "sanitized": {
+                  "paragraphs": 18,
+                  "table_cells": 0
+                },
+                "signature_dates": true,
+                "cover_signature": true,
+                "approval": true,
+                "layout": {
+                  "cover_product_line": 1,
+                  "standards_filled": 2,
+                  "document_codes_filled": 2,
+                  "narrative_filled": 3
+                },
+                "paragraphs": 8,
+                "revision": true,
+                "product_matrix": true,
+                "component_detail": true,
+                "tech_stacks": 4,
+                "product_overview": {
+                  "filled": 9
+                },
+                "unique_requirements": {
+                  "filled": 43
+                },
+                "requirements": {
+                  "req_tables_removed": [
+                    "Req. 111"
+                  ],
+                  "req_tables_added": [
+                    "Req. 15",
+                    "Req. 16",
+                    "Req. 17",
+                    "Req. 18",
+                    "Req. 205",
+                    "Req. 206",
+                    "Req. 207"
+                  ],
+                  "req_descriptions_filled": [
+                    "Req. 1",
+                    "Req. 2",
+                    "Req. 3",
+                    "Req. 4",
+                    "Req. 5",
+                    "Req. 6",
+                    "Req. 7",
+                    "Req. 8",
+                    "Req. 9",
+                    "Req. 10",
+                    "Req. 11",
+                    "Req. 12",
+                    "Req. 13",
+                    "Req. 14",
+                    "Req. 100",
+                    "Req. 101",
+                    "Req. 102",
+                    "Req. 103",
+                    "Req. 104",
+                    "Req. 105",
+                    "Req. 106",
+                    "Req. 107",
+                    "Req. 108",
+                    "Req. 109",
+                    "Req. 110",
+                    "Req. 200",
+                    "Req. 201",
+                    "Req. 202",
+                    "Req. 203",
+                    "Req. 204",
+                    "Req. 15",
+                    "Req. 16",
+                    "Req. 17",
+                    "Req. 18",
+                    "Req. 205",
+                    "Req. 206",
+                    "Req. 207"
+                  ],
+                  "traceability_rows_filled": 35,
+                  "total_req_ids": 37
+                },
+                "traceability": 34,
+                "review_pass_1": {
+                  "issue_count": 0,
+                  "residual_count": 0,
+                  "issues": [],
+                  "residual": [],
+                  "requirements_expected": 37
+                },
+                "review_passes_completed": 1
+              },
+              "design_items": {},
+              "output": "data\\cases\\lab_ec_sw\\output_mdsr.docx"
+            },
+            "spec_design": {
+              "applied": [
+                "mddr_full"
+              ],
+              "skipped": [],
+              "requirements": {
+                "mdsr_content": {
+                  "sanitized": {
+                    "paragraphs": 3,
+                    "table_cells": 0
+                  },
+                  "signature_dates": false,
+                  "cover_signature": false,
+                  "approval": true,
+                  "layout": {
+                    "cover_product_line": 1,
+                    "standards_filled": 2,
+                    "document_codes_filled": 0,
+                    "narrative_filled": 0
+                  },
+                  "paragraphs": 3,
+                  "paragraph_overrides": 9,
+                  "revision": true,
+                  "product_matrix": true,
+                  "component_detail": false,
+                  "tech_stacks": 0
+                },
+                "residual_sections": {
+                  "sections": 6
+                },
+                "schema_applied": [
+                  "승인자",
+                  "검토자",
+                  "작성자"
+                ],
+                "schema_skipped": [
+                  "paragraph_0",
+                  "개정번호",
+                  "개정번호_0_2",
+                  "개정번호_0_3",
+                  "0",
+                  "0_1_2",
+                  "0_1_3",
+                  "table1_r3_c1",
+                  "table1_r3_c2",
+                  "table1_r3_c3",
+                  "table1_r4_c1",
+                  "table1_r4_c2",
+                  "table1_r4_c3",
+                  "table1_r5_c1",
+                  "table1_r5_c2",
+                  "table1_r5_c3",
+                  "paragraph_2",
+                  "paragraph_3",
+                  "paragraph_5",
+                  "paragraph_6",
+                  "paragraph_8",
+                  "paragraph_9"
+                ],
+                "design_items": {
+                  "req_ids_filled": [
+                    "Req. 1",
+                    "Req. 2",
+                    "Req. 3",
+                    "Req. 4",
+                    "Req. 5",
+                    "Req. 6",
+                    "Req. 7",
+                    "Req. 8",
+                    "Req. 9",
+                    "Req. 10",
+                    "Req. 11",
+                    "Req. 12",
+                    "Req. 13",
+                    "Req. 14",
+                    "Req. 15",
+                    "Req. 16",
+                    "Req. 17",
+                    "Req. 18",
+                    "Req. 100",
+                    "Req. 101",
+                    "Req. 102",
+                    "Req. 103",
+                    "Req. 104",
+                    "Req. 105",
+                    "Req. 106",
+                    "Req. 107",
+                    "Req. 108",
+                    "Req. 109",
+                    "Req. 110",
+                    "Req. 111",
+                    "Req. 200",
+                    "Req. 201",
+                    "Req. 202",
+                    "Req. 203",
+                    "Req. 204",
+                    "Req. 205",
+                    "Req. 206",
+                    "Req. 207"
+                  ],
+                  "total_items": 38
+                },
+                "design_consolidated": 0,
+                "design_thin_filled": 2,
+                "paragraph_overrides": 9,
+                "review_pass_1": {
+                  "issue_count": 0,
+                  "residual_count": 0,
+                  "issues": [],
+                  "residual": [],
+                  "design_items_expected": 38,
+                  "design_blocks_filled": 38,
+                  "req_tables_filled": 38
+                },
+                "review_passes_completed": 1
+              },
+              "design_items": {
+                "req_ids_filled": [
+                  "Req. 1",
+                  "Req. 2",
+                  "Req. 3",
+                  "Req. 4",
+                  "Req. 5",
+                  "Req. 6",
+                  "Req. 7",
+                  "Req. 8",
+                  "Req. 9",
+                  "Req. 10",
+                  "Req. 11",
+                  "Req. 12",
+                  "Req. 13",
+                  "Req. 14",
+                  "Req. 15",
+                  "Req. 16",
+                  "Req. 17",
+                  "Req. 18",
+                  "Req. 100",
+                  "Req. 101",
+                  "Req. 102",
+                  "Req. 103",
+                  "Req. 104",
+                  "Req. 105",
+                  "Req. 106",
+                  "Req. 107",
+                  "Req. 108",
+                  "Req. 109",
+                  "Req. 110",
+                  "Req. 111",
+                  "Req. 200",
+                  "Req. 201",
+                  "Req. 202",
+                  "Req. 203",
+                  "Req. 204",
+                  "Req. 205",
+                  "Req. 206",
+                  "Req. 207"
+                ],
+                "total_items": 38
+              },
+              "output": "data\\cases\\lab_ec_sw\\output_mddr.docx"
+            },
+            "report_security_verification": {
+              "applied": [
+                "모델명"
+              ],
+              "security_tests": {
+                "tables_filled": 35,
+                "cells_filled": 70,
+                "req_ids_in_payload": 34,
+                "req_ids_filled": [
+                  "DC-01",
+                  "DC-02",
+                  "DC-03",
+                  "IA-01",
+                  "IA-02",
+                  "IA-03",
+                  "IA-04",
+                  "IA-05",
+                  "IA-06",
+                  "IA-07",
+                  "IA-08",
+                  "RA-01",
+                  "RA-02",
+                  "RA-03",
+                  "RA-04",
+                  "RA-05",
+                  "SI-01",
+                  "SI-02",
+                  "SI-03",
+                  "SI-04",
+                  "SI-05",
+                  "SI-06",
+                  "SI-07",
+                  "SI-08",
+                  "SI-09",
+                  "SI-10",
+                  "SI-11",
+                  "UC-01",
+                  "UC-02",
+                  "UC-03",
+                  "UC-04",
+                  "UC-05",
+                  "UC-06",
+                  "UC-07"
+                ],
+                "missing_tables": []
+              },
+              "review": {
+                "issue_count": 0,
+                "residual_count": 0,
+                "issues": [],
+                "residual": [],
+                "security_ids_expected": 34,
+                "security_ids_found": 34,
+                "tables_with_content": 35,
+                "missing_security_ids": []
+              },
+              "output": "data\\cases\\lab_ec_sw\\output_xxcs.docx"
+            }
+          }
+        },
+        "review": {
+          "case": "data\\cases\\lab_ec_sw",
+          "mdsr": {
+            "mindrium_hits": 0,
+            "review": {
+              "issue_count": 0,
+              "residual_count": 0,
+              "issues": [],
+              "residual": [],
+              "requirements_expected": 37
+            }
+          },
+          "mddr": {
+            "review": {
+              "issue_count": 0,
+              "residual_count": 0,
+              "issues": [],
+              "residual": [],
+              "design_items_expected": 38,
+              "design_blocks_filled": 38,
+              "req_tables_filled": 38
+            }
+          },
+          "ok": true,
+          "xxcs": {
+            "review": {
+              "issue_count": 0,
+              "residual_count": 0,
+              "issues": [],
+              "residual": [],
+              "security_ids_expected": 34,
+              "security_ids_found": 34,
+              "tables_with_content": 35,
+              "missing_security_ids": []
+            },
+            "present": true
+          }
+        },
+        "evaluation": {
+          "case": "data\\cases\\lab_ec_sw",
+          "passed": true,
+          "metrics": {
+            "mdsr_issues": 0,
+            "mdsr_residual": 0,
+            "mddr_issues": 0,
+            "design_blocks_filled": 38
+          },
+          "review": {
+            "case": "data\\cases\\lab_ec_sw",
+            "mdsr": {
+              "mindrium_hits": 0,
+              "review": {
+                "issue_count": 0,
+                "residual_count": 0,
+                "issues": [],
+                "residual": [],
+                "requirements_expected": 37
+              }
+            },
+            "mddr": {
+              "review": {
+                "issue_count": 0,
+                "residual_count": 0,
+                "issues": [],
+                "residual": [],
+                "design_items_expected": 38,
+                "design_blocks_filled": 38,
+                "req_tables_filled": 38
+              }
+            },
+            "ok": true,
+            "xxcs": {
+              "review": {
+                "issue_count": 0,
+                "residual_count": 0,
+                "issues": [],
+                "residual": [],
+                "security_ids_expected": 34,
+                "security_ids_found": 34,
+                "tables_with_content": 35,
+                "missing_security_ids": []
+              },
+              "present": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "quality": {
+    "status": "PASS",
+    "scores": {
+      "structure": 100.0,
+      "terminology": 100.0,
+      "completeness": 100.0,
+      "consistency": 100.0,
+      "traceability": 100.0,
+      "residual_text": 84.0,
+      "overall": 96.8
+    },
+    "report_path": "data\\cases\\lab_ec_sw\\quality_report.md"
+  },
+  "validation": {
+    "status": "PASS",
+    "scores": {
+      "overall": 90.5,
+      "docx_overall": 89.7,
+      "mdsr": 100.0,
+      "mddr": 92.0,
+      "xxcs": 77.1,
+      "semantic": 95.0
+    },
+    "report_paths": {
+      "markdown": "data\\cases\\lab_ec_sw\\validation_report.md",
+      "json": "data\\cases\\lab_ec_sw\\validation_report.json",
+      "human_review_checklist": "data\\cases\\lab_ec_sw\\human_review_checklist.md"
+    },
+    "gold_paths": {
+      "mdsr": "data\\gold\\mdsr\\lab_ec_sw.docx",
+      "mddr": "data\\gold\\mddr\\lab_ec_sw.docx"
+    }
+  },
+  "expectations": {
+    "min_quality_overall": 85,
+    "min_validation_overall": 70,
+    "require_harness_ok": true
+  },
+  "checks": {
+    "harness_ok": true,
+    "quality_pass": true,
+    "validation_pass": true
+  }
+}

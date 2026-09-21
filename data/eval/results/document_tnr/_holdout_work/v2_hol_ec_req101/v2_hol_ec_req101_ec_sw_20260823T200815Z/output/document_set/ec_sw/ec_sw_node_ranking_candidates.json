@@ -1,0 +1,33 @@
+[
+  {
+    "node_id": "ec_sw_v1.mdtm.table_00.row_0004.7ea5ab0d5d",
+    "status": "PATCH_CANDIDATE",
+    "rank_tier": 0,
+    "final_score": 166.25,
+    "score_components": {
+      "primary_identifier_exact": 20.0,
+      "secondary_identifier_exact": 0.0,
+      "normalized_identifier": 0.0,
+      "stable_base_match": 15.0,
+      "instance_match": 10.0,
+      "row_local_semantic": 1.25,
+      "structural_match": 0.0,
+      "template_alignment": 0.0,
+      "context_support": 0.0,
+      "ambiguity_penalty": -0.0,
+      "neighbor_penalty": -0.0,
+      "duplicate_penalty": -0.0,
+      "tier_base": 120.0
+    },
+    "reason_codes": [
+      "PRIMARY_IDENTIFIER_EXACT",
+      "RANK_TIER_0",
+      "STABLE_BASE_AND_INSTANCE"
+    ],
+    "table_index": 0,
+    "row_index": 4,
+    "stable_node_id_base": "stablev2.table_row.cda6dea751fdc367",
+    "stable_base_match": true,
+    "rank": 1
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "trial_id": "trial-synthetic-001",
+  "document_types": [
+    "MDSR",
+    "MDDR",
+    "XXCS"
+  ],
+  "copied_generated": [
+    "data/trials/trial-synthetic-001/review/output_mdsr.docx",
+    "data/trials/trial-synthetic-001/review/output_mddr.docx",
+    "data/trials/trial-synthetic-001/review/output_xxcs.docx"
+  ],
+  "templates": [
+    "human_revision_record.template.json",
+    "error_annotations.template.json",
+    "reviewer_instructions.md",
+    "review_checklist.md"
+  ]
+}

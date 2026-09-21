@@ -1,0 +1,78 @@
+{
+  "version": "1.0",
+  "case_dir": "data/cases/mindrium_xa",
+  "change": "data/cases/mindrium_xa/changes/req6_update.json",
+  "samples_dir": "data/ops/samples",
+  "scenarios": {
+    "document_change": {
+      "request_id": "bench-document",
+      "goal": null,
+      "sample_dir": null
+    },
+    "operation_analysis": {
+      "request_id": "bench-operation",
+      "change": "GPU 서버 Docker 로그 장애 분석",
+      "case_dir": "data/ops"
+    },
+    "hybrid_workflow": {
+      "request_id": "bench-hybrid",
+      "goal": "Req 변경 후 GPU 서버 장애 로그 분석",
+      "sample_dir": "data/ops/samples"
+    },
+    "self_improvement": {
+      "request_id": "bench-improve"
+    }
+  },
+  "planner_expectations": {
+    "document_change": {
+      "intent": "document_change",
+      "workflow_template": "document_workflow",
+      "hybrid": false
+    },
+    "hybrid_workflow": {
+      "intent": "document_change",
+      "workflow_template": "hybrid_workflow",
+      "hybrid": true
+    },
+    "operation_analysis": {
+      "intent": "operation_analysis",
+      "workflow_template": "operation_workflow",
+      "hybrid": false
+    }
+  },
+  "document_expectations": {
+    "expected_changed_req_ids": ["Req. 6"],
+    "expected_linked_security_ids": ["IA-04", "IA-06", "IA-07", "SI-06"],
+    "expected_linked_test_ids": [],
+    "expected_design_ids": [],
+    "expected_linked_documents": ["spec_requirements", "report_security_verification"]
+  },
+  "operation_expectations": {
+    "expected_severity": "critical",
+    "min_incident_count": 5,
+    "expected_incident_keywords": [
+      "out-of-memory",
+      "oom",
+      "cuda",
+      "restart",
+      "disk",
+      "gpu",
+      "xid"
+    ],
+    "min_log_event_types": ["oom", "cuda_error", "nvidia_xid", "restart_loop"]
+  },
+  "memory_expectations": {
+    "required_artifacts": [
+      "knowledge_graph.json",
+      "events.jsonl",
+      "reasoning/index.jsonl",
+      "tasks/index.jsonl",
+      "evaluations/index.jsonl"
+    ],
+    "max_orphan_nodes": 20
+  },
+  "collaboration_expectations": {
+    "min_proposal_count": 10,
+    "min_agents": 5
+  }
+}

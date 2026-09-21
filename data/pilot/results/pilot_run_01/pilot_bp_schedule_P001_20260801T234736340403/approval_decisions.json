@@ -1,0 +1,53 @@
+{
+  "decisions": [
+    {
+      "item_id": "business_proposal_v1.schedule",
+      "decision": "HOLD"
+    },
+    {
+      "item_id": "PROPOSAL_PILOT_BASE.p0001",
+      "decision": "HOLD"
+    },
+    {
+      "item_id": "PROPOSAL_PILOT_BASE.p0002",
+      "decision": "HOLD"
+    },
+    {
+      "item_id": "BP-TBL-table_00",
+      "decision": "HOLD"
+    },
+    {
+      "item_id": "business_proposal_v1.execution_plan",
+      "decision": "HOLD"
+    },
+    {
+      "item_id": "PROPOSAL_PILOT_BASE.p0008",
+      "decision": "HOLD"
+    },
+    {
+      "item_id": "PROPOSAL_PILOT_BASE.p0009",
+      "decision": "HOLD"
+    },
+    {
+      "item_id": "PROPOSAL_PILOT_BASE.p0003",
+      "decision": "HOLD"
+    },
+    {
+      "item_id": "BP-TBL-heading_0004",
+      "decision": "HOLD"
+    },
+    {
+      "item_id": "BP-TBL-heading_0005",
+      "decision": "HOLD"
+    }
+  ],
+  "agreement": {
+    "human_document_agreement": true,
+    "human_node_agreement": true,
+    "proposal_accepted": false,
+    "n_approve": 0,
+    "n_hold": 10,
+    "n_reject": 0,
+    "n_items": 10
+  }
+}

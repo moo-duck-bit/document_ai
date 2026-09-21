@@ -1,0 +1,42 @@
+{
+  "trial_id": "trial-001-mindrium-xa",
+  "status": "checked",
+  "files": [
+    {
+      "path": "data/trials/trial-001-mindrium-xa/input/change_request.txt",
+      "name": "change_request.txt",
+      "sha256": "7222f19c96868c74a59e59c05d662c840b42f03014cd69a690bc329575e4c697",
+      "size_bytes": 213
+    },
+    {
+      "path": "data/trials/trial-001-mindrium-xa/input/design_content.json",
+      "name": "design_content.json",
+      "sha256": "a4939c2ea7e57cbd7c45981f703d17188ee00da75825b7c38a21bf55ec1bcace",
+      "size_bytes": 1723
+    },
+    {
+      "path": "data/trials/trial-001-mindrium-xa/input/input.json",
+      "name": "input.json",
+      "sha256": "a3654108057203ad8128f7ac5cf31da225c45436e01c2fc467818a4e36c89f95",
+      "size_bytes": 1407
+    },
+    {
+      "path": "data/trials/trial-001-mindrium-xa/input/README_INPUTS.md",
+      "name": "README_INPUTS.md",
+      "sha256": "830d77dbda1f1fb349c44834852ee00fa49e106b85e8f6e36b4eec2ca1b4a6e4",
+      "size_bytes": 246
+    },
+    {
+      "path": "data/trials/trial-001-mindrium-xa/input/requirements.json",
+      "name": "requirements.json",
+      "sha256": "c782e73f110452fb68fb9ebb0341968f0e26ad7a91d97c485edfcf8fab1ef7a8",
+      "size_bytes": 6636
+    }
+  ],
+  "check": {
+    "ok": true,
+    "findings": [],
+    "warnings": []
+  },
+  "synthetic": false
+}

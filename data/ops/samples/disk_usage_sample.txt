@@ -1,0 +1,7 @@
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p2  1.8T  1.8T     0 100% /
+tmpfs            64G  4.0G   60G   7% /dev/shm
+/dev/nvme0n1p1  511M  6.1M  505M   2% /boot/efi
+
+df: /mnt/lab-share: No space left on device
+write error: disk full on /var/log/training

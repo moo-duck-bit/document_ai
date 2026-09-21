@@ -1,0 +1,71 @@
+{
+  "evidence": [
+    {
+      "description": "TLS negotiation and certificate metadata",
+      "path": "runner.synthetic/SI-01_tls.json",
+      "sha256": "412c0dce8cc6cee3abe8a6f13080a37f0923d9a4b839a36ed4a64d95da8852ad",
+      "type": "file"
+    },
+    {
+      "description": "TLS negotiation and certificate metadata",
+      "path": "runner.synthetic/SI-02_tls.json",
+      "sha256": "cac7210e6d237a6ed46ca5349a87f954ad481322b8ae8daf577e1d13d8505ac6",
+      "type": "file"
+    },
+    {
+      "description": "Sanitized HTTP security header metadata",
+      "path": "runner.synthetic/SI-03_headers.json",
+      "sha256": "4439012ab21adadebb8ce7618a9c047467b918716cba865a5642b314c7a7b71f",
+      "type": "file"
+    },
+    {
+      "description": "Sanitized HTTP security header metadata",
+      "path": "runner.synthetic/SI-04_headers.json",
+      "sha256": "8530a81422b273f1fe25a77cc8926ad2f9164f13a58edb9689854352b096e19f",
+      "type": "file"
+    },
+    {
+      "description": "HTTP header check error metadata",
+      "path": "runner.synthetic/SI-05_headers.json",
+      "sha256": "fb7ff9c9dade8773482eda220dbcfb8d4d1650f89d705b288df764a2eb06d6f8",
+      "type": "file"
+    },
+    {
+      "description": "Sanitized API health metadata and body hash",
+      "path": "runner.synthetic/SI-06_api_health.json",
+      "sha256": "e0c3a436f767b42b6382e6aa4169ff80399c9c26c8d9ecf66740d2239a69dd5c",
+      "type": "file"
+    },
+    {
+      "description": "Sanitized API health metadata and body hash",
+      "path": "runner.synthetic/SI-07_api_health.json",
+      "sha256": "e9fc05b1f3cd3b0b8c0631e62ba9246e4bbf29e26893dffa4f554c17c30d0524",
+      "type": "file"
+    },
+    {
+      "description": "Single-port TCP connectivity metadata",
+      "path": "runner.synthetic/SI-08_port.json",
+      "sha256": "e872d9fc2c7d896d7c0983e582539a1665f1715eec7d869ddd3824c070dcdf13",
+      "type": "file"
+    },
+    {
+      "description": "Port connectivity error metadata",
+      "path": "runner.synthetic/SI-09_port.json",
+      "sha256": "e669b2637694642c35e6bb1f5006bd8167cd96e359a71a63531b1b37cdb7a2be",
+      "type": "file"
+    }
+  ],
+  "execution_id": "exec-20260718-runner-synthetic-001",
+  "metrics": {
+    "configured_check_count": 9,
+    "evidence_generated_count": 9,
+    "executed_check_count": 9,
+    "execution_duration_ms": 656,
+    "fail_count": 3,
+    "not_applicable_count": 0,
+    "not_executed_count": 0,
+    "pass_count": 4,
+    "review_required_count": 2,
+    "runner_error_count": 2
+  }
+}

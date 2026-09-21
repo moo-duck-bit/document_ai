@@ -1,0 +1,25 @@
+{
+  "expected_impact_used": false,
+  "traces": [],
+  "summary": {
+    "PATCHED": 0,
+    "SKIPPED_WITH_REASON": 0,
+    "NEEDS_REVIEW": 0
+  },
+  "patch_report": {
+    "mdsr_out": "data/user_scenarios/scenario-001/output/documents/updated_MDSR.docx",
+    "mddr_out": "data/user_scenarios/scenario-001/output/documents/updated_MDDR.docx",
+    "mdsr_sha256": "b439817a46de4114339d4ff46cca8615501b2393ea98957aacf7a99dbc7d862a",
+    "mddr_sha256": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf",
+    "ref_mdsr_sha256": "cd70f942ab8534c22887782b61d2319fd026e61f97744bde8f985c6484a3652d",
+    "ref_mddr_sha256": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf",
+    "mdsr_patched_req_ids": [],
+    "mdsr_skipped": [],
+    "mddr_patched_req_ids": [],
+    "mddr_unchanged_vs_ref": true
+  },
+  "diffs": {
+    "mdsr": {},
+    "mddr": {}
+  }
+}

@@ -1,0 +1,1164 @@
+{
+  "created_at": "2026-07-22T21:51:30Z",
+  "stage": "B3_impact_judgment",
+  "source_retrieval": "hybrid top_k (+ focus complements if absent from top_k)",
+  "expected_impact_used_in_judgment": false,
+  "rule": "theme overlap + lex/sem scores; same Req ID alone is insufficient",
+  "decisions": [
+    {
+      "candidate_id": "Req. 105",
+      "document": "MDDR",
+      "judgment": "IMPACTED",
+      "reason": "CR lockout policy aligns with block lock/limit cues (shared=['계정 잠금', '로그인 실패', '연속', '잠금'], lock_policy=True); lex=0.490 sem=0.435. Not judged by ID alone (id=Req. 105).",
+      "evidence": [
+        "감사",
+        "감사 기록",
+        "계정 잠금",
+        "로그",
+        "로그인",
+        "로그인 실패",
+        "연속",
+        "이벤트",
+        "잠금"
+      ],
+      "evidence_snippet": "API 요청 과다 방지 및 IP 차단 로그인 API는 연속된 인증 실패 횟수를 추적하고, 임계치를 초과한 계정에 대해 일정 시간 로그인 시도를 제한하도록 설계한다. 로그인 실패 및 계정 잠금 이벤트는 감사 기록으로 저장할 수 있도록 설계한다.",
+      "scores": {
+        "lexical": 0.49,
+        "semantic": 0.435211
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "임계",
+            "제한"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "auth_generic": [
+            "인증",
+            "로그인"
+          ]
+        },
+        "shared": {
+          "lock": [
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "잠금"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "로그",
+            "이벤트"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        }
+      },
+      "retrieval_rank": 1,
+      "source_locator": "block_kind=paragraph;block_index=213",
+      "title": "API 요청 과다 방지 및 IP 차단"
+    },
+    {
+      "candidate_id": "Req. 103",
+      "document": "MDSR",
+      "judgment": "IMPACTED",
+      "reason": "CR requires audit of lock/unlock events; block is audit-primary ('감사 기록 생성 및 관리') covering login auth events ['감사', '감사 기록', '로그', '이벤트'] — scope-extension candidate; lex=0.327 sem=0.145.",
+      "evidence": [
+        "감사",
+        "감사 기록",
+        "로그",
+        "로그인",
+        "사용자",
+        "이벤트"
+      ],
+      "evidence_snippet": "감사 기록 생성 및 관리 설명 서버는 주요 보안 이벤트에 대한 감사기록을 생성하고 관리해야 한다. 목적 로그인 등 보안 관련 이벤트를 추적하여 비인가 접근 및 이상 행위 발생 시 원인 분석 및 대응이 가능록 하기 위함이다. 기준 로그인 성공 및 실패 이력은 감사 기록으로 생성되어야 한다. 의료진에 의한 환자 등록 이력은 감사기록으로 생성되어야 한다. 감사기록에는 발생 일시, 사용자 식별자, ",
+      "scores": {
+        "lexical": 0.32697,
+        "semantic": 0.144504
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "audit": [
+            "감사",
+            "감사기록",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "사용자"
+          ],
+          "auth_generic": [
+            "인증",
+            "로그인"
+          ]
+        },
+        "shared": {
+          "audit": [
+            "감사",
+            "감사 기록",
+            "로그",
+            "이벤트"
+          ],
+          "ux": [
+            "사용자"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        }
+      },
+      "retrieval_rank": 2,
+      "source_locator": "ooxml_req_block:22",
+      "title": "감사 기록 생성 및 관리"
+    },
+    {
+      "candidate_id": "Req. 103",
+      "document": "MDDR",
+      "judgment": "IMPACTED",
+      "reason": "CR requires audit of lock/unlock events; block is audit-primary ('감사 기록 생성 및 관리') covering login auth events ['감사', '감사 기록', '로그'] — scope-extension candidate; lex=0.305 sem=0.152.",
+      "evidence": [
+        "감사",
+        "감사 기록",
+        "로그",
+        "로그인",
+        "사용자"
+      ],
+      "evidence_snippet": "감사 기록 생성 및 관리 로그인 성공, 실패, 의료진 환자 등록에 대해 감사 기록을 audit.log 파일에 JSON형식으로 저장하도록 설계한다. 감사 록 대상은 로그인 성공 여부, 의료진 환자 등록으로 한다. 감사 기록 저장 실패 시 stderr에 경고를 출력하고, 로그인·환자 등록 등 본 요청 처리는 중단하지 않도록 설계한다. 감사 기록 조회 API는 제공하지 않으며, 조회·보존은 운영 ",
+      "scores": {
+        "lexical": 0.305478,
+        "semantic": 0.15164
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "audit": [
+            "감사",
+            "감사 기록",
+            "로그"
+          ],
+          "ux": [
+            "사용자"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "shared": {
+          "audit": [
+            "감사",
+            "감사 기록",
+            "로그"
+          ],
+          "ux": [
+            "사용자"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        }
+      },
+      "retrieval_rank": 3,
+      "source_locator": "block_kind=paragraph;block_index=199",
+      "title": "감사 기록 생성 및 관리"
+    },
+    {
+      "candidate_id": "Req. 101",
+      "document": "MDSR",
+      "judgment": "NOT_IMPACTED",
+      "reason": "Access-control-primary block ('권한에 따른 API 접근 통제') with incidental auth/audit overlap ['감사', '감사 기록', '로그', '로그인', '사용자', '이벤트']; no lockout-policy cues; lex=0.292 sem=0.133.",
+      "evidence": [
+        "감사",
+        "감사 기록",
+        "로그",
+        "로그인",
+        "사용자",
+        "이벤트"
+      ],
+      "evidence_snippet": "권한에 따른 API 접근 통제 설명 서버는 인증된 사용자에 대해 권한 기반 접근 제어를 적용해야 하며, 사용자 역할 및 데이터 소유 관계에 따라 접근 가능한 API 및 데이터 범위를 제한해야 한다. 목적 최소 권한 원칙을 적용하여 사용자에게 필요한 범위 내에서만 시스템 접근을 허용하고, 무단 접근 및 데이터 유출을 방지하기 위함이다. 기준 보호 대상 API는 인증된 사용자만 접근할 수 있어야",
+      "scores": {
+        "lexical": 0.292399,
+        "semantic": 0.133009
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "lock": [
+            "제한"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "사용자",
+            "오류"
+          ],
+          "auth_generic": [
+            "인증",
+            "토큰",
+            "권한",
+            "로그인"
+          ]
+        },
+        "shared": {
+          "audit": [
+            "감사",
+            "감사 기록",
+            "로그",
+            "이벤트"
+          ],
+          "ux": [
+            "사용자"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        }
+      },
+      "retrieval_rank": 4,
+      "source_locator": "ooxml_req_block:20",
+      "title": "권한에 따른 API 접근 통제"
+    },
+    {
+      "candidate_id": "Req. 6",
+      "document": "MDSR",
+      "judgment": "IMPACTED",
+      "reason": "CR lockout policy aligns with block lock/limit cues (shared=['로그인 실패'], lock_policy=True); lex=0.316 sem=0.114. Not judged by ID alone (id=Req. 6).",
+      "evidence": [
+        "로그",
+        "로그인",
+        "로그인 실패",
+        "사용자",
+        "안내",
+        "알림",
+        "재시도"
+      ],
+      "evidence_snippet": "서버와의 통신 중 인증 관련 에러 발생 시 사용자 안내 설명 모바일 애플리케이션은 서버와의 통신 과정에서 인증 관련 에러가 발생할 경우 사용자에게 이를 명확하게 알리고, 정상적인 애플리케이션 사용을 위한 구체적인 안내를 제공해야 한다. 이러한 에러는 로그인 실패, 세션 만료, 권한 부족 등 다양한 인증 문제를 포함할 수 있다. 에러 메시지는 사용자가 문제를 이해하고 적절한 조치를 취할 수 있",
+      "scores": {
+        "lexical": 0.316128,
+        "semantic": 0.113937
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "lock": [
+            "로그인 실패",
+            "제한"
+          ],
+          "audit": [
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도",
+            "오류",
+            "에러",
+            "메시지"
+          ],
+          "auth_generic": [
+            "인증",
+            "토큰",
+            "세션",
+            "권한",
+            "로그인"
+          ]
+        },
+        "shared": {
+          "lock": [
+            "로그인 실패"
+          ],
+          "audit": [
+            "로그"
+          ],
+          "ux": [
+            "사용자",
+            "안내",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        }
+      },
+      "retrieval_rank": 5,
+      "source_locator": "ooxml_req_block:6",
+      "title": "서버와의 통신 중 인증 관련 에러 발생 시 사용자 안내"
+    },
+    {
+      "candidate_id": "Req. 110",
+      "document": "MDSR",
+      "judgment": "NOT_IMPACTED",
+      "reason": "Only generic auth/audit/UX overlap ['감사', '감사 기록', '사용자'] without lockout-policy cues in the block; lex=0.270 sem=0.104.",
+      "evidence": [
+        "감사",
+        "감사 기록",
+        "사용자"
+      ],
+      "evidence_snippet": "대시보드 데이터 제공 API 설명 서버는 대시보드의 요청에 응답하여 사용자의 출석 정보, 수행 기록을 조회할 수 있는 API를 제공해야 한다. 이 API는 대시보드에서 사용자 관리와 관련된 다양한 분석 및 보고 기능을 실행할 수 있게 하는 데 필요한 데이터에 접근할 수 있도록 설계되어야 한다. 목적 대시보드를 통한 사용자의 출석 및 치료 진행 상황을 제공하여 관리자 및 의료 전문가가 사용자의",
+      "scores": {
+        "lexical": 0.269822,
+        "semantic": 0.103607
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "audit": [
+            "감사",
+            "감사 기록"
+          ],
+          "ux": [
+            "사용자"
+          ]
+        },
+        "shared": {
+          "audit": [
+            "감사",
+            "감사 기록"
+          ],
+          "ux": [
+            "사용자"
+          ]
+        }
+      },
+      "retrieval_rank": 6,
+      "source_locator": "ooxml_req_block:29",
+      "title": "대시보드 데이터 제공 API"
+    },
+    {
+      "candidate_id": "Req. 102",
+      "document": "MDDR",
+      "judgment": "NOT_IMPACTED",
+      "reason": "Only generic auth/audit/UX overlap ['감사', '감사 기록', '로그', '로그인', '사용자'] without lockout-policy cues in the block; lex=0.254 sem=0.110.",
+      "evidence": [
+        "감사",
+        "감사 기록",
+        "로그",
+        "로그인",
+        "사용자"
+      ],
+      "evidence_snippet": "서버 인증 및 토큰 관리 메커니즘 서버는 사용자 로그인 요청 시 인증 정보를 검증하도록 설계한다. 인증 성공 시 사용자 식별정보 및 권한정보를 포함한 인증 토큰을 발급하도록 설계한다. 인증 토큰 및 갱신 토큰의 유효기간을 분리 관리하도록 설계한다. 로그아웃 및 비밀번호 변경 시 기존 인증 상태를 무효화하도록 설계한다. 인증 실패 및 토큰 검증 실패 이력은 감사 기록으로 저장하도록 설계한다.",
+      "scores": {
+        "lexical": 0.253598,
+        "semantic": 0.110425
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "audit": [
+            "감사",
+            "감사 기록",
+            "로그"
+          ],
+          "ux": [
+            "사용자"
+          ],
+          "auth_generic": [
+            "인증",
+            "토큰",
+            "권한",
+            "로그인"
+          ]
+        },
+        "shared": {
+          "audit": [
+            "감사",
+            "감사 기록",
+            "로그"
+          ],
+          "ux": [
+            "사용자"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        }
+      },
+      "retrieval_rank": 7,
+      "source_locator": "block_kind=paragraph;block_index=193",
+      "title": "서버 인증 및 토큰 관리 메커니즘"
+    },
+    {
+      "candidate_id": "Req. 105",
+      "document": "MDSR",
+      "judgment": "IMPACTED",
+      "reason": "CR lockout policy aligns with block lock/limit cues (shared=[], lock_policy=True); lex=0.197 sem=0.104. Not judged by ID alone (id=Req. 105).",
+      "evidence": [
+        "로그",
+        "로그인",
+        "사용자"
+      ],
+      "evidence_snippet": "API 요청 과다 방지 및 IP 차단 설명 서버는 과도한 API 요청 또는 비정상적인 접근 시도를 탐지하고, 설정된 정책에 따라 요청 제한 또는 접근 차단을 수행해야 한다.  목적 서비스 거부 공격(DoS), 무차별 대입 공격 및 비정상 트래픽으로부터 시스템 자원을 보호하고 정상 사용자의 서비스 이용 안정성을 확보하기 위함이다. 기준 서버는 일정 시간 내 과도한 요청 발생 시 요청을 제한해야",
+      "scores": {
+        "lexical": 0.19748,
+        "semantic": 0.103604
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "lock": [
+            "임계",
+            "제한"
+          ],
+          "audit": [
+            "로그"
+          ],
+          "ux": [
+            "사용자"
+          ],
+          "auth_generic": [
+            "인증",
+            "토큰",
+            "로그인"
+          ]
+        },
+        "shared": {
+          "audit": [
+            "로그"
+          ],
+          "ux": [
+            "사용자"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        }
+      },
+      "retrieval_rank": 8,
+      "source_locator": "ooxml_req_block:24",
+      "title": "API 요청 과다 방지 및 IP 차단"
+    },
+    {
+      "candidate_id": "Req. 2",
+      "document": "MDSR",
+      "judgment": "NOT_IMPACTED",
+      "reason": "Only generic auth/audit/UX overlap ['감사', '로그', '사용자', '안내'] without lockout-policy cues in the block; lex=0.216 sem=0.088.",
+      "evidence": [
+        "감사",
+        "로그",
+        "사용자",
+        "안내"
+      ],
+      "evidence_snippet": "사용자 등록 및 식별 지원 설명 모바일 애플리케이션은 사용자 등록을 지원해야 한다. 사용자는 의료진으로부터 부여받은 마인드리움 코드를 입력하여 회원가입을 진행할 수 있으며, 동일 이메일로 중복 계정 생성은 차단되어야 한다. 사용자 인증정보는 안전한 저장소에 저장되어야 한다. 목적 사용자 등록 및 식별을 통해 개인화된 치료 프로그램을 제공하고, 사용자의 개인정보 보호와 애플리케이션 사용 편의를",
+      "scores": {
+        "lexical": 0.216335,
+        "semantic": 0.08787
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "audit": [
+            "감사",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자"
+          ],
+          "auth_generic": [
+            "인증",
+            "토큰",
+            "권한"
+          ]
+        },
+        "shared": {
+          "audit": [
+            "감사",
+            "로그"
+          ],
+          "ux": [
+            "사용자",
+            "안내"
+          ]
+        }
+      },
+      "retrieval_rank": 9,
+      "source_locator": "ooxml_req_block:2",
+      "title": "사용자 등록 및 식별 지원"
+    },
+    {
+      "candidate_id": "Req. 102",
+      "document": "MDSR",
+      "judgment": "NOT_IMPACTED",
+      "reason": "Only generic auth/audit/UX overlap ['로그', '로그인', '사용자', '안내'] without lockout-policy cues in the block; lex=0.220 sem=0.071.",
+      "evidence": [
+        "로그",
+        "로그인",
+        "사용자",
+        "안내"
+      ],
+      "evidence_snippet": "서버 인증 및 토큰 관리 메커니즘 설명 서버는 모바일 애플리케이션 및 대시보드 사용자의 인증정보를 검증하고, 인증된 사용자에게 서비스 접근을 위한 인증 토큰을 발급 및 검증해야 한다. 목적 인증된 사용자만 서비스에 접근할 수 있도록 하고, 토큰 기반 인증을 통해 사용자 세션을 안전하게 유지 및 종료하기 위함이다. 기준 서버는 사용자 로그인 요청 시 입력된 식별정보와 인증정보의 유효성을 검증해",
+      "scores": {
+        "lexical": 0.220206,
+        "semantic": 0.071276
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "lock": [
+            "제한"
+          ],
+          "audit": [
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자"
+          ],
+          "auth_generic": [
+            "인증",
+            "토큰",
+            "세션",
+            "로그인"
+          ]
+        },
+        "shared": {
+          "audit": [
+            "로그"
+          ],
+          "ux": [
+            "사용자",
+            "안내"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        }
+      },
+      "retrieval_rank": 10,
+      "source_locator": "ooxml_req_block:21",
+      "title": "서버 인증 및 토큰 관리 메커니즘"
+    },
+    {
+      "candidate_id": "Req. 101",
+      "document": "MDDR",
+      "judgment": "NOT_IMPACTED",
+      "reason": "Access-control-primary block ('권한에 따른 API 접근 통제') with incidental auth/audit overlap ['감사', '감사 기록', '사용자', '이벤트']; no lockout-policy cues; lex=0.199 sem=0.081.",
+      "evidence": [
+        "감사",
+        "감사 기록",
+        "사용자",
+        "이벤트"
+      ],
+      "evidence_snippet": "권한에 따른 API 접근 통제 서버는 보호 대상 API 요청에 대해 Authorization Bearer 토큰을 검증하고, 인증되지 않은 요청을 거부하도록 설계한다. 인증된 사용자라도 역할과 데이터 소유 관계에 따라 접근 가능한 API 및 데이터 범위를 제한한다. 의료진은 본인이 등록하거나 배정받은 환자의 정보만 조회할 수 있으며, 환자는 본인의 모바일 애플리케이션 사용 데이터에만 접근할 수",
+      "scores": {
+        "lexical": 0.199134,
+        "semantic": 0.081252
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "lock": [
+            "제한"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트"
+          ],
+          "ux": [
+            "사용자"
+          ],
+          "auth_generic": [
+            "인증",
+            "토큰",
+            "권한"
+          ]
+        },
+        "shared": {
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트"
+          ],
+          "ux": [
+            "사용자"
+          ]
+        }
+      },
+      "retrieval_rank": 11,
+      "source_locator": "block_kind=paragraph;block_index=190",
+      "title": "권한에 따른 API 접근 통제"
+    },
+    {
+      "candidate_id": "Req. 100",
+      "document": "MDSR",
+      "judgment": "NOT_IMPACTED",
+      "reason": "Only generic auth/audit/UX overlap ['감사', '감사 기록'] without lockout-policy cues in the block; lex=0.219 sem=0.068.",
+      "evidence": [
+        "감사",
+        "감사 기록"
+      ],
+      "evidence_snippet": "인증 코드의 안전한 저장 및 관리 설명 서버는 의료진이 환자를 등록할 때 마인드리움 코드를 생성해야 하며, 해당 코드는 환자가 모바일 애플리케이션 회원가입 시 등록 여부를 확인하기 위한 1회성 등록 코드로 사용된다. 마인드리움 코드는 대시보드에서 인가된 의료진이 환자 등록 상태 확인을 위해 조회할 수 있으며, 회원가입에 사용된 이후에는 재사용할 수 없도록 사용 상태가 관리되어야 한다. 목적 ",
+      "scores": {
+        "lexical": 0.219453,
+        "semantic": 0.067832
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "audit": [
+            "감사",
+            "감사 기록"
+          ],
+          "auth_generic": [
+            "인증"
+          ]
+        },
+        "shared": {
+          "audit": [
+            "감사",
+            "감사 기록"
+          ]
+        }
+      },
+      "retrieval_rank": 12,
+      "source_locator": "ooxml_req_block:19",
+      "title": "인증 코드의 안전한 저장 및 관리"
+    },
+    {
+      "candidate_id": "Req. 6",
+      "document": "MDDR",
+      "judgment": "IMPACTED",
+      "reason": "CR lockout policy aligns with block lock/limit cues (shared=['로그인 실패'], lock_policy=True); lex=0.150 sem=0.103. Not judged by ID alone (id=Req. 6).",
+      "evidence": [
+        "로그",
+        "로그인",
+        "로그인 실패",
+        "사용자",
+        "안내"
+      ],
+      "evidence_snippet": "서버와의 통신 중 인증 관련 에러 발생 시 사용자 안내 로그인 실패, 세션 만료, 권한 부족 등 인증 오류 발생 시 사용자에게 일반화된 오류 메시지를 제공하도록 설계한다. 인증 토큰 만료 시 갱신 토큰을 사용하여 접근 토큰을 재발급하도록 설계한다. 토큰 재발급 실패 또는 인증 상태를 복구할 수 없는 경우 저장된 인증 정보를 삭제하고 재로그인을 유도하도록 설계한다. 인증 오류 메시지에는 인증 ",
+      "scores": {
+        "lexical": 0.149924,
+        "semantic": 0.102501
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "lock": [
+            "로그인 실패",
+            "제한"
+          ],
+          "audit": [
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "오류",
+            "에러",
+            "메시지"
+          ],
+          "auth_generic": [
+            "인증",
+            "토큰",
+            "세션",
+            "권한",
+            "로그인"
+          ]
+        },
+        "shared": {
+          "lock": [
+            "로그인 실패"
+          ],
+          "audit": [
+            "로그"
+          ],
+          "ux": [
+            "사용자",
+            "안내"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        }
+      },
+      "retrieval_rank": 13,
+      "source_locator": "block_kind=paragraph;block_index=93",
+      "title": "서버와의 통신 중 인증 관련 에러 발생 시 사용자 안내"
+    },
+    {
+      "candidate_id": "Req. 2",
+      "document": "MDDR",
+      "judgment": "NOT_IMPACTED",
+      "reason": "Only generic auth/audit/UX overlap ['감사', '로그', '사용자', '안내', '알림'] without lockout-policy cues in the block; lex=0.221 sem=0.051.",
+      "evidence": [
+        "감사",
+        "로그",
+        "사용자",
+        "안내",
+        "알림"
+      ],
+      "evidence_snippet": "사용자 등록 및 식별 지원 사용자가 마인드리움 코드, 이메일, 이름, 전화번호 및 비밀번호를 입력하면 서버의 회원가입 API를 통해 유효성 검증 후 계정을 생성하도록 설계한다. 마인드리움 코드는 회원가입 시 1회만 사용할 수 있도록 서버에서 검증하며, 동일 이메일 계정의 중복 생성을 차단하도록 설계한다. 비밀번호 입력 필드는 TextField의 obscureText 속성을 적용하여 기본적으로",
+      "scores": {
+        "lexical": 0.220613,
+        "semantic": 0.050787
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "audit": [
+            "감사",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "메시지"
+          ],
+          "auth_generic": [
+            "인증",
+            "토큰",
+            "권한"
+          ]
+        },
+        "shared": {
+          "audit": [
+            "감사",
+            "로그"
+          ],
+          "ux": [
+            "사용자",
+            "안내",
+            "알림"
+          ]
+        }
+      },
+      "retrieval_rank": 14,
+      "source_locator": "block_kind=paragraph;block_index=69",
+      "title": "사용자 등록 및 식별 지원"
+    },
+    {
+      "candidate_id": "Req. 206",
+      "document": "MDSR",
+      "judgment": "NOT_IMPACTED",
+      "reason": "Only generic auth/audit/UX overlap ['로그', '로그인', '사용자'] without lockout-policy cues in the block; lex=0.149 sem=0.093.",
+      "evidence": [
+        "로그",
+        "로그인",
+        "사용자"
+      ],
+      "evidence_snippet": "세션 관리 설명 대시보드는 사용자 인증 상태를 유지하기 위한 세션 관리 기능을 제공해야 하며, 일정 시간 동안 활동이 없을 경우 자동으로 세션을 종료해야 한다. 목적 장시간 미사용 상태에서 발생할 수 있는 비인가 접근을 방지하고 사용자 인증 상태를 안전하게 유지하기 위함이다. 기준 인증된 사용자의 세션은 일정 시간 동안 활동이 없을 경우 자동으로 만료되어야 한다. 세션 만료 시 사용자는 재로",
+      "scores": {
+        "lexical": 0.149483,
+        "semantic": 0.092832
+      },
+      "theme_hits": {
+        "cr": {
+          "lock": [
+            "잠금",
+            "계정 잠금",
+            "로그인 실패",
+            "연속",
+            "자동 해제",
+            "해제"
+          ],
+          "audit": [
+            "감사",
+            "감사 기록",
+            "이벤트",
+            "로그"
+          ],
+          "ux": [
+            "안내",
+            "사용자",
+            "알림",
+            "재시도"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        },
+        "block": {
+          "audit": [
+            "로그"
+          ],
+          "ux": [
+            "사용자"
+          ],
+          "auth_generic": [
+            "인증",
+            "토큰",
+            "세션",
+            "로그인"
+          ]
+        },
+        "shared": {
+          "audit": [
+            "로그"
+          ],
+          "ux": [
+            "사용자"
+          ],
+          "auth_generic": [
+            "로그인"
+          ]
+        }
+      },
+      "retrieval_rank": 15,
+      "source_locator": "ooxml_req_block:36",
+      "title": "세션 관리"
+    }
+  ],
+  "summary": {
+    "IMPACTED": 6,
+    "NOT_IMPACTED": 9,
+    "UNCERTAIN": 0
+  }
+}

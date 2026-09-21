@@ -1,0 +1,43 @@
+{
+  "document_set": "ec_sw",
+  "product": "Mindrium XA",
+  "documents": [
+    {
+      "short_id": "spec_mdsr",
+      "role": "requirements",
+      "path": "data/examples/ec_sw/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+      "doc_code": "EC-SW-MDSR",
+      "status": "registered",
+      "priority": 10,
+      "enabled": true
+    },
+    {
+      "short_id": "spec_mddr",
+      "role": "design",
+      "path": "data/examples/ec_sw/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+      "doc_code": "EC-SW-MDDR",
+      "status": "registered",
+      "priority": 20,
+      "enabled": true
+    },
+    {
+      "short_id": "report_xxcs",
+      "role": "security_verification_report",
+      "path": "data/examples/ec_sw/report_xxcs_EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서.docx",
+      "doc_code": "EC-SW-XXCS",
+      "status": "registered",
+      "priority": 30,
+      "enabled": true
+    },
+    {
+      "short_id": "matrix_mdtm",
+      "role": "traceability_matrix",
+      "path": "data/eval/document_set_benchmark_v2/fixtures/ec_sw/mdtm_base.docx",
+      "doc_code": "EC-SW-MDTM",
+      "status": "registered",
+      "priority": 1,
+      "enabled": true
+    }
+  ],
+  "expansion_order": ["matrix_mdtm", "spec_mdsr", "spec_mddr", "report_xxcs"]
+}

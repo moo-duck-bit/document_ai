@@ -1,0 +1,25 @@
+{
+  "decisions": [
+    {
+      "item_id": "REPORT_PILOT_BASE.p0002",
+      "decision": "HOLD"
+    },
+    {
+      "item_id": "REPORT_PILOT_BASE.p0003",
+      "decision": "HOLD"
+    },
+    {
+      "item_id": "general_report_v1.methodology",
+      "decision": "HOLD"
+    }
+  ],
+  "agreement": {
+    "human_document_agreement": true,
+    "human_node_agreement": true,
+    "proposal_accepted": false,
+    "n_approve": 0,
+    "n_hold": 3,
+    "n_reject": 0,
+    "n_items": 3
+  }
+}

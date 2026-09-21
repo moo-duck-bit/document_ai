@@ -1,0 +1,23 @@
+{
+  "case_id": "ec_sw_design_id_only",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "설계 ID 4.2.2 관련 추적성 검토",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/MDTM.docx",
+      "filename": "MDTM.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM"
+  ],
+  "expected_status": "SAFE_FAILURE",
+  "tags": [
+    "semantic_only"
+  ],
+  "difficulty": "hard",
+  "notes": "Design-id only; workflow CR may under-match",
+  "source_type": "fixture"
+}

@@ -1,0 +1,16 @@
+{
+  "case_id": "hospital_reservation",
+  "reviewer_id": "",
+  "reviewed_at": "",
+  "mdsr_status": "pending",
+  "mddr_status": "pending",
+  "terminology_score": null,
+  "requirement_correctness_score": null,
+  "design_correctness_score": null,
+  "traceability_score": null,
+  "regulatory_appropriateness_score": null,
+  "issues": [],
+  "required_changes": [],
+  "approval_decision": "pending",
+  "reviewer_comment": ""
+}

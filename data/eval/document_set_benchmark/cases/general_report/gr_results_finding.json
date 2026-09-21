@@ -1,0 +1,23 @@
+{
+  "case_id": "gr_results_finding",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "결과 핵심 발견 문구 수정",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_base.docx",
+      "filename": "report_base.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_BASE"
+  ],
+  "expected_status": "PARTIAL",
+  "tags": [
+    "writer_update"
+  ],
+  "difficulty": "easy",
+  "notes": "Results section",
+  "source_type": "fixture"
+}

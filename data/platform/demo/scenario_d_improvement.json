@@ -1,0 +1,36 @@
+{
+  "case_id": "mindrium_xa",
+  "correlation_id": null,
+  "failure_patterns": [],
+  "retry_candidates": [],
+  "planner_recommendations": [],
+  "harness_recommendations": [],
+  "workflow_recommendations": [],
+  "strategy_recommendations": [
+    {
+      "category": "strategy",
+      "action": "consider_parallel",
+      "reason": "No recent failures detected; independent harness steps may run in parallel",
+      "confidence": 0.55,
+      "metadata": {
+        "execution_strategy": "parallel"
+      }
+    }
+  ],
+  "knowledge_context": {
+    "available": true,
+    "case_id": "mindrium_xa",
+    "node_count": 73,
+    "edge_count": 204
+  },
+  "memory_summary": {
+    "evaluation_count": 2,
+    "failed_evaluation_count": 0,
+    "workflow_count": 2,
+    "failed_workflow_count": 0,
+    "event_count": 20,
+    "runtime_failed_count": 0,
+    "reasoning_trace_count": 2,
+    "failed_reasoning_count": 0
+  }
+}

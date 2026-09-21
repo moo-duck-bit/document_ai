@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "status": "VALID",
+  "issues": [],
+  "invariants": [
+    "no_role_only_impacted",
+    "malformed_id_not_exact",
+    "impacted_requires_substantive_evidence",
+    "no_semantic_only_patch",
+    "no_document_set_membership_promotion"
+  ]
+}

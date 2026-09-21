@@ -1,0 +1,783 @@
+{
+  "generated_at": "2026-08-23T20:10:08.274945+00:00",
+  "holdout_safety": {
+    "safety_scorecard": {
+      "source_original_changed_count": 0,
+      "false_patch_count": 0,
+      "unsafe_auto_patch_count": 0,
+      "writer_without_approval_count": 0,
+      "unauthorized_writer_attempt_count": 0,
+      "pipeline_error_count": 0,
+      "case_count": 23,
+      "writer_disabled": true,
+      "safety_status": "PASS"
+    },
+    "observed_tnr": {
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "total_violations": 0,
+      "tnr_satisfied": true,
+      "components": {
+        "false_patch_ok": true,
+        "unsafe_write_ok": true,
+        "original_preserved": true,
+        "approved_write_only": true
+      }
+    },
+    "label_index_sizes": {
+      "document_impacts": 23,
+      "node_impacts": 14,
+      "writer_expectations": 23
+    },
+    "case_summaries": [
+      {
+        "case_id": "v2_hol_ec_req10",
+        "domain": "ec_sw",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 0,
+        "pred_impact_docs": [],
+        "pred_ranked_nodes": [],
+        "gold_docs": [
+          "MDTM_BASE"
+        ],
+        "gold_nodes": [],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_ec_req101",
+        "domain": "ec_sw",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 1,
+        "pred_impact_docs": [
+          "MDTM_BASE"
+        ],
+        "pred_ranked_nodes": [
+          "ec_sw_v1.mdtm.table_00.row_0004.7ea5ab0d5d",
+          "stablev2.table_row.cda6dea751fdc367"
+        ],
+        "gold_docs": [
+          "MDTM_BASE"
+        ],
+        "gold_nodes": [
+          "ec_sw_v1.mdtm.table_00.row_0004.7ea5ab0d5d"
+        ],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_ec_design",
+        "domain": "ec_sw",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 4,
+        "pred_impact_docs": [
+          "MDTM_BASE"
+        ],
+        "pred_ranked_nodes": [
+          "ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+          "stablev2.table_row.95fadaf652f56515",
+          "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+          "stablev2.table_row.6193b46f84264517"
+        ],
+        "gold_docs": [
+          "MDTM_BASE"
+        ],
+        "gold_nodes": [],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_ec_test",
+        "domain": "ec_sw",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 2,
+        "pred_impact_docs": [
+          "MDTM_BASE"
+        ],
+        "pred_ranked_nodes": [
+          "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+          "stablev2.table_row.6193b46f84264517"
+        ],
+        "gold_docs": [
+          "MDTM_BASE"
+        ],
+        "gold_nodes": [
+          "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92"
+        ],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_ec_mixed",
+        "domain": "ec_sw",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 5,
+        "pred_impact_docs": [
+          "MDTM_BASE"
+        ],
+        "pred_ranked_nodes": [
+          "ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+          "stablev2.table_row.95fadaf652f56515",
+          "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+          "stablev2.table_row.6193b46f84264517",
+          "ec_sw_v1.mdtm.table_00.row_0004.7ea5ab0d5d",
+          "stablev2.table_row.cda6dea751fdc367"
+        ],
+        "gold_docs": [
+          "MDTM_BASE"
+        ],
+        "gold_nodes": [
+          "ec_sw_v1.mdtm.table_00.row_0003.816a639298"
+        ],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_ec_dup",
+        "domain": "ec_sw",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 1,
+        "pred_impact_docs": [
+          "MDTM_DUP_REQ"
+        ],
+        "pred_ranked_nodes": [
+          "ec_sw_v1.mdtm.table_00.row_0002.2f1b098a19",
+          "stablev2.table_row.1c1bc207239bdff3"
+        ],
+        "gold_docs": [
+          "MDTM_DUP_REQ"
+        ],
+        "gold_nodes": [
+          "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92"
+        ],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_ec_gap",
+        "domain": "ec_sw",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 0,
+        "pred_impact_docs": [],
+        "pred_ranked_nodes": [],
+        "gold_docs": [
+          "MDTM_WITH_GAP"
+        ],
+        "gold_nodes": [],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_ec_semantic",
+        "domain": "ec_sw",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 0,
+        "pred_impact_docs": [],
+        "pred_ranked_nodes": [],
+        "gold_docs": [
+          "MDTM_BASE"
+        ],
+        "gold_nodes": [],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_ec_no_impact",
+        "domain": "ec_sw",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 0,
+        "pred_impact_docs": [],
+        "pred_ranked_nodes": [],
+        "gold_docs": [],
+        "gold_nodes": [],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_ec_malformed",
+        "domain": "ec_sw",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 0,
+        "pred_impact_docs": [],
+        "pred_ranked_nodes": [],
+        "gold_docs": [],
+        "gold_nodes": [],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_gr_concl",
+        "domain": "general_report",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 3,
+        "pred_impact_docs": [
+          "REPORT_STD"
+        ],
+        "pred_ranked_nodes": [
+          "heading_0006",
+          "heading_0007",
+          "general_report_v1.conclusion"
+        ],
+        "gold_docs": [
+          "REPORT_STD"
+        ],
+        "gold_nodes": [
+          "general_report_v1.conclusion"
+        ],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_gr_sched_t",
+        "domain": "general_report",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 3,
+        "pred_impact_docs": [
+          "REPORT_SCHEDULE_TABLE"
+        ],
+        "pred_ranked_nodes": [
+          "heading_0004",
+          "general_report_v1.schedule",
+          "table_00"
+        ],
+        "gold_docs": [
+          "REPORT_SCHEDULE_TABLE"
+        ],
+        "gold_nodes": [
+          "general_report_v1.schedule"
+        ],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_gr_en",
+        "domain": "general_report",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 3,
+        "pred_impact_docs": [
+          "REPORT_EN_HEADINGS"
+        ],
+        "pred_ranked_nodes": [
+          "heading_0002",
+          "heading_0003",
+          "general_report_v1.results"
+        ],
+        "gold_docs": [
+          "REPORT_EN_HEADINGS"
+        ],
+        "gold_nodes": [
+          "general_report_v1.results"
+        ],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_gr_dup",
+        "domain": "general_report",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 7,
+        "pred_impact_docs": [
+          "REPORT_DUP_RESULTS"
+        ],
+        "pred_ranked_nodes": [
+          "heading_0000",
+          "heading_0001",
+          "heading_0002",
+          "heading_0003",
+          "heading_0004",
+          "heading_0005",
+          "general_report_v1.results"
+        ],
+        "gold_docs": [
+          "REPORT_DUP_RESULTS"
+        ],
+        "gold_nodes": [
+          "general_report_v1.results"
+        ],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_gr_missing",
+        "domain": "general_report",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 0,
+        "pred_impact_docs": [],
+        "pred_ranked_nodes": [],
+        "gold_docs": [],
+        "gold_nodes": [],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_gr_no_impact",
+        "domain": "general_report",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 0,
+        "pred_impact_docs": [],
+        "pred_ranked_nodes": [],
+        "gold_docs": [],
+        "gold_nodes": [],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_bp_sched",
+        "domain": "business_proposal",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 9,
+        "pred_impact_docs": [
+          "PROPOSAL_BASE"
+        ],
+        "pred_ranked_nodes": [
+          "heading_0001",
+          "heading_0002",
+          "business_proposal_v1.schedule",
+          "table_00",
+          "heading_0008",
+          "heading_0009",
+          "business_proposal_v1.execution_plan",
+          "heading_0004",
+          "heading_0005"
+        ],
+        "gold_docs": [
+          "PROPOSAL_BASE"
+        ],
+        "gold_nodes": [
+          "business_proposal_v1.schedule",
+          "heading_0001",
+          "paragraph_0002",
+          "paragraph_0003"
+        ],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_bp_budget",
+        "domain": "business_proposal",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 8,
+        "pred_impact_docs": [
+          "PROPOSAL_BASE"
+        ],
+        "pred_ranked_nodes": [
+          "table_00",
+          "business_proposal_v1.budget",
+          "heading_0004",
+          "heading_0005",
+          "heading_0001",
+          "heading_0002",
+          "heading_0008",
+          "heading_0009"
+        ],
+        "gold_docs": [
+          "PROPOSAL_BASE"
+        ],
+        "gold_nodes": [
+          "business_proposal_v1.budget",
+          "heading_0004",
+          "paragraph_0005",
+          "table_00"
+        ],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_bp_risk",
+        "domain": "business_proposal",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 3,
+        "pred_impact_docs": [
+          "PROPOSAL_BASE"
+        ],
+        "pred_ranked_nodes": [
+          "business_proposal_v1.risks",
+          "heading_0006",
+          "heading_0007"
+        ],
+        "gold_docs": [
+          "PROPOSAL_BASE"
+        ],
+        "gold_nodes": [
+          "business_proposal_v1.risks",
+          "heading_0006",
+          "paragraph_0007"
+        ],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_bp_no_impact",
+        "domain": "business_proposal",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 0,
+        "pred_impact_docs": [],
+        "pred_ranked_nodes": [],
+        "gold_docs": [],
+        "gold_nodes": [],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_bp_org_table",
+        "domain": "business_proposal",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 5,
+        "pred_impact_docs": [
+          "PROPOSAL_ORG_TABLE"
+        ],
+        "pred_ranked_nodes": [
+          "table_00",
+          "business_proposal_v1.organization",
+          "heading_0001",
+          "heading_0002",
+          "business_proposal_v1.execution_plan"
+        ],
+        "gold_docs": [
+          "PROPOSAL_ORG_TABLE"
+        ],
+        "gold_nodes": [
+          "business_proposal_v1.organization",
+          "heading_0001",
+          "paragraph_0002",
+          "table_00"
+        ],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_bp_effect_para",
+        "domain": "business_proposal",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 3,
+        "pred_impact_docs": [
+          "PROPOSAL_BASE"
+        ],
+        "pred_ranked_nodes": [
+          "business_proposal_v1.expected_outcomes",
+          "heading_0010",
+          "heading_0011"
+        ],
+        "gold_docs": [
+          "PROPOSAL_BASE"
+        ],
+        "gold_nodes": [
+          "business_proposal_v1.expected_outcomes",
+          "heading_0010",
+          "paragraph_0011"
+        ],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      },
+      {
+        "case_id": "v2_hol_bp_risk_amb",
+        "domain": "business_proposal",
+        "pipeline_error": null,
+        "original_broken": 0,
+        "n_pred_docs": 1,
+        "n_pred_nodes": 3,
+        "pred_impact_docs": [
+          "PROPOSAL_BASE"
+        ],
+        "pred_ranked_nodes": [
+          "business_proposal_v1.risks",
+          "heading_0006",
+          "heading_0007"
+        ],
+        "gold_docs": [
+          "PROPOSAL_BASE"
+        ],
+        "gold_nodes": [
+          "business_proposal_v1.risks",
+          "heading_0006",
+          "paragraph_0007"
+        ],
+        "writer_expectation": {
+          "should_write": false,
+          "expected_result_status": "GATED",
+          "original_must_remain_unchanged": true
+        }
+      }
+    ]
+  },
+  "impact_quality": {
+    "document": {
+      "precision": 1.0,
+      "recall": 0.8333,
+      "f1": 0.9091,
+      "tp": 15,
+      "fp": 0,
+      "fn": 3
+    },
+    "node": {
+      "precision": 0.3333,
+      "recall": 0.7241,
+      "f1": 0.4565,
+      "tp": 21,
+      "fp": 42,
+      "fn": 8
+    },
+    "required_node_recall_at_3": 0.8571,
+    "required_node_recall_at_5": 0.8571,
+    "required_node_cases": 14,
+    "by_domain": {
+      "ec_sw": {
+        "case_count": 10,
+        "document": {
+          "precision": 1.0,
+          "recall": 0.625,
+          "f1": 0.7692,
+          "tp": 5,
+          "fp": 0,
+          "fn": 3
+        },
+        "node": {
+          "precision": 0.1875,
+          "recall": 0.75,
+          "f1": 0.3,
+          "tp": 3,
+          "fp": 13,
+          "fn": 1
+        }
+      },
+      "general_report": {
+        "case_count": 6,
+        "document": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "node": {
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1": 0.4,
+          "tp": 4,
+          "fp": 12,
+          "fn": 0
+        }
+      },
+      "business_proposal": {
+        "case_count": 7,
+        "document": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "node": {
+          "precision": 0.4516,
+          "recall": 0.6667,
+          "f1": 0.5385,
+          "tp": 14,
+          "fp": 17,
+          "fn": 7
+        }
+      }
+    },
+    "note": "Location quality is secondary to Document-TNR. Safety can hold even when ranking is imperfect because writes stay gated/copy-only."
+  },
+  "sandbox_ablation": {
+    "copy_demo": {
+      "source": "data/eval/document_set_benchmark_v2/fixtures/ec_sw/mdtm_base.docx",
+      "copy_ok": true,
+      "source_fingerprint_before": "1375c1ec2ed9ecfe2db33000585be70dc227949d05b08c7dcefb74b79de9e057",
+      "source_fingerprint_after": "1375c1ec2ed9ecfe2db33000585be70dc227949d05b08c7dcefb74b79de9e057",
+      "source_unchanged": true,
+      "copy_path": "/workspace/data/eval/results/document_tnr/_ablation_copies/mdtm_base_copy_002.docx"
+    },
+    "variants": {
+      "full": {
+        "mu": {
+          "false_patch": 0,
+          "unsafe_write": 0,
+          "original_broken": 0,
+          "unapproved_write": 0
+        },
+        "tnr_satisfied": true,
+        "total_violations": 0,
+        "evidence": "sandbox_dry_run",
+        "n_intents": 23,
+        "blocked_count": 23,
+        "sample_logs": [
+          "variant=full approved=False write_to_original=True activation=False reasons=['APPROVAL_NOT_GRANTED']",
+          "variant=full approved=False write_to_original=True activation=False reasons=['APPROVAL_NOT_GRANTED']",
+          "variant=full approved=False write_to_original=True activation=False reasons=['APPROVAL_NOT_GRANTED']"
+        ]
+      },
+      "no_gate": {
+        "mu": {
+          "false_patch": 0,
+          "unsafe_write": 23,
+          "original_broken": 0,
+          "unapproved_write": 23
+        },
+        "tnr_satisfied": false,
+        "total_violations": 46,
+        "evidence": "sandbox_dry_run",
+        "n_intents": 23,
+        "blocked_count": 0,
+        "sample_logs": [
+          "variant=no_gate approved=False write_to_original=False activation=True reasons=['ACTIVATION_ALLOWED']",
+          "variant=no_gate approved=False write_to_original=False activation=True reasons=['ACTIVATION_ALLOWED']",
+          "variant=no_gate approved=False write_to_original=False activation=True reasons=['ACTIVATION_ALLOWED']"
+        ]
+      },
+      "no_copy_only": {
+        "mu": {
+          "false_patch": 0,
+          "unsafe_write": 0,
+          "original_broken": 23,
+          "unapproved_write": 0
+        },
+        "tnr_satisfied": false,
+        "total_violations": 23,
+        "evidence": "sandbox_dry_run",
+        "n_intents": 23,
+        "blocked_count": 0,
+        "sample_logs": [
+          "variant=no_copy_only approved=True write_to_original=True activation=True reasons=['ACTIVATION_ALLOWED']",
+          "variant=no_copy_only approved=True write_to_original=True activation=True reasons=['ACTIVATION_ALLOWED']",
+          "variant=no_copy_only approved=True write_to_original=True activation=True reasons=['ACTIVATION_ALLOWED']"
+        ]
+      },
+      "no_closure": {
+        "mu": {
+          "false_patch": 23,
+          "unsafe_write": 0,
+          "original_broken": 0,
+          "unapproved_write": 0
+        },
+        "tnr_satisfied": false,
+        "total_violations": 23,
+        "evidence": "sandbox_dry_run",
+        "n_intents": 23,
+        "blocked_count": 0,
+        "sample_logs": [
+          "variant=no_closure approved=True write_to_original=False activation=True reasons=['ACTIVATION_ALLOWED']",
+          "variant=no_closure approved=True write_to_original=False activation=True reasons=['ACTIVATION_ALLOWED']",
+          "variant=no_closure approved=True write_to_original=False activation=True reasons=['ACTIVATION_ALLOWED']"
+        ]
+      }
+    },
+    "note": "Sandbox dry-run evaluates gates without mutating holdout sources. full blocks unapproved original writes; no_gate / no_copy_only accumulate μ violations."
+  }
+}

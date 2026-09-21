@@ -1,0 +1,33 @@
+{
+  "case_id": "hospital_reservation",
+  "document_set": "ec_sw",
+  "domain": "hospital_reservation",
+  "templates_in_set": [
+    "spec_requirements",
+    "spec_design",
+    "report_security_verification"
+  ],
+  "facts": {
+    "product_name": "Hospital Reservation System",
+    "model_name": "HRS-Clinic-001",
+    "product_code": "HRS",
+    "document_version": "1.0",
+    "author_org": "Sample Medical IT Co., Ltd.",
+    "code_language": "TypeScript / Node.js, React",
+    "platform": "AWS (ECS, RDS PostgreSQL, S3)",
+    "approval_date": "2026.07.09"
+  },
+  "standards": [
+    "개인정보보호법 (대한민국)",
+    "OWASP ASVS v4.0 Application Security Verification Standard",
+    "의료기기법 및 의료기기 소프트웨어 가이드라인 (참고)"
+  ],
+  "free_text_hints": {
+    "system_overview": "Hospital Reservation System은 병원 예약·접수·스케줄 관리 소프트웨어이다.",
+    "architecture_narrative": "환자 포털, REST API, 병원 운영 콘솔 3계층 구조이며 EMR·수납 시스템 연동을 지원한다."
+  },
+  "source_documents": [],
+  "intake_channel": "harness_minimal_input",
+  "confirmed": true,
+  "confirmed_at": "2026-07-09"
+}

@@ -1,0 +1,28 @@
+{
+  "source": "data/schemas/ec_sw/spec_design.schema.json (example_value bootstrap)",
+  "template_id": "spec_design",
+  "fields": {
+    "paragraph_0": "Software Design Specification",
+    "승인자": "2025.02.07",
+    "검토자": "2025.02.07",
+    "작성자": "2025.02.07",
+    "0": "E06070.01",
+    "0_1_2": "E06070.01",
+    "0_1_3": "E06070.01",
+    "table1_r3_c1": "Mindrium-app",
+    "table1_r3_c2": "Mindrium-server",
+    "table1_r3_c3": "Mindrium-dashboard",
+    "table1_r4_c1": "2.1.1",
+    "table1_r4_c2": "2.1.1",
+    "table1_r4_c3": "2.1.1",
+    "table1_r5_c1": "B",
+    "table1_r5_c2": "B",
+    "table1_r5_c3": "B",
+    "paragraph_2": "IEC 62304:2015 CSV Medical device software – Software life cycle processes",
+    "paragraph_3": "ISO 14971:2019 Medical devices – Application of risk management to medical devices",
+    "paragraph_5": "그림 1. 사용 사례 다이어그램",
+    "paragraph_6": "전체 시스템의 개요는 그림 1의 다이어그램과 같다. 환자는 모바일 애플리케이션을 통해 인지행동치료를 수행한다. 모바일 애플리케이션은 서버와 통신하면서 환자에게 제공할 치료에 대한 데이터를 전달받고, 사용자의 치료 수행 결과 데이터는 서버로 전송된다. 서버에 쌓인 데이터는 환자에게 맞춤형 치료를 제공하는 데 사용되며, 다른 한편으로 의사가 환자의 상태를 모니터링하는 데 사용된다.",
+    "paragraph_8": "운영 버전은 공식 앱스토어를 통한 배포 버전을 기준으로 관리하며, 배포 전 서명 및 무결성 검증 절차를 수행하도록 설계한다.",
+    "paragraph_9": "HTML5, SCSS, TypeScript)"
+  }
+}

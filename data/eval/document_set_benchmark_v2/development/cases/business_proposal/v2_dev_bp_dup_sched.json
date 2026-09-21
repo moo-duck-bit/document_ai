@@ -1,0 +1,28 @@
+{
+  "case_id": "v2_dev_bp_dup_sched",
+  "domain": "business_proposal",
+  "document_set_id": "business_proposal",
+  "change_request": "일정 섹션 중복 정리",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/business_proposal/proposal_dup_schedule.docx",
+      "filename": "proposal_dup_schedule.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "PROPOSAL_DUP_SCHEDULE"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "duplicate_schedule"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "591d585bcc5c1a16a434f905aff2398de1857581f956984625ccd21f2b1499eb",
+  "sanitization_status": "N/A"
+}

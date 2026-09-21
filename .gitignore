@@ -29,12 +29,26 @@ Thumbs.db
 **/mdsr_diff_report.json
 **/impact_report.json
 
-# Vendored third-party harness (Apache-2.0, separate upstream project)
+# Small-A regulatory bench generated runs
+data/eval/regulatory_bench/**/runs/
+
+# ── 공개 저장소 제외 규칙 ──────────────────────────────────────────────
+
+# 서드파티 하네스 (Apache-2.0, 별개 업스트림 프로젝트)
 ai-engineering-harness/
 
-# Real customer deliverables — do NOT publish (see data/examples/ec_sw/README.md)
-data/examples/ec_sw/*.docx
-data/cases/**/*.docx
+# DOCX 전면 제외: 생성 산출물(build artifact)이며,
+# xxcs 계열은 원본 보안검증보고서의 임베디드 이미지 92개를 그대로 보유
+*.docx
 
-# xxcs "skeleton" still carries all 92 embedded images from the source report
-data/templates/ec_sw/template_xxcs_skeleton.docx
+# 예외 1 — 빈 EC-SW 양식 (임베디드 콘텐츠 0개, 파이프라인 입력)
+!data/templates/ec_sw/template_mdsr.docx
+!data/templates/ec_sw/template_mddr.docx
+
+# 예외 2 — 합성 테스트 픽스처 (테스트가 실제로 읽음)
+!data/eval/document_set_benchmark_v2/fixtures/**/*.docx
+
+# 루트에 남은 CLI 실행 산출물 (--out 으로 재생성 가능)
+/runtime_result.json
+/incident_report.json
+/improvement_feedback.json

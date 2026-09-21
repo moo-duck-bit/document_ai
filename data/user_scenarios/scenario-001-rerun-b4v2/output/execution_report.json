@@ -1,0 +1,119 @@
+{
+  "created_at": "2026-07-23T10:55:42Z",
+  "scenario_id": "scenario-001-rerun-b4v2",
+  "stage": "user_scenario_runner",
+  "expected_impact_used": false,
+  "target_req_ids_injected": false,
+  "inputs": {
+    "change_request": "data/user_scenarios/scenario-001-rerun-b4v2/input/change_request.txt",
+    "mdsr": "data/user_scenarios/scenario-001-rerun-b4v2/input/reference/MDSR.docx",
+    "mddr": "data/user_scenarios/scenario-001-rerun-b4v2/input/reference/MDDR.docx",
+    "mdsr_sha256_before": "cd70f942ab8534c22887782b61d2319fd026e61f97744bde8f985c6484a3652d",
+    "mddr_sha256_before": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf"
+  },
+  "status": "COMPLETED_NEEDS_REVIEW",
+  "errors": [],
+  "warnings": [],
+  "limitations": [
+    "B3/B4 theme heuristics were validated primarily on auth/lockout-family CRs",
+    "Semantic channel is TF-IDF cosine (not dense embedding)",
+    "Auto-patch only when B4 CONSISTENT + allow_auto_patch"
+  ],
+  "outputs": {
+    "updated_mdsr": "data/user_scenarios/scenario-001-rerun-b4v2/output/documents/updated_MDSR.docx",
+    "updated_mddr": "data/user_scenarios/scenario-001-rerun-b4v2/output/documents/updated_MDDR.docx",
+    "trace_dir": "data/user_scenarios/scenario-001-rerun-b4v2/output/trace",
+    "review_dir": "data/user_scenarios/scenario-001-rerun-b4v2/output/review"
+  },
+  "summaries": {
+    "retrieval_top": [
+      {
+        "rank": 1,
+        "id": "Req. 203",
+        "document": "MDSR",
+        "hybrid_score": 1.0
+      },
+      {
+        "rank": 2,
+        "id": "Req. 204",
+        "document": "MDSR",
+        "hybrid_score": 0.670597
+      },
+      {
+        "rank": 3,
+        "id": "Req. 100",
+        "document": "MDSR",
+        "hybrid_score": 0.65911
+      },
+      {
+        "rank": 4,
+        "id": "Req. 11",
+        "document": "MDDR",
+        "hybrid_score": 0.630896
+      },
+      {
+        "rank": 5,
+        "id": "Req. 17",
+        "document": "MDDR",
+        "hybrid_score": 0.630114
+      },
+      {
+        "rank": 6,
+        "id": "Req. 204",
+        "document": "MDDR",
+        "hybrid_score": 0.582793
+      },
+      {
+        "rank": 7,
+        "id": "Req. 110",
+        "document": "MDSR",
+        "hybrid_score": 0.51179
+      },
+      {
+        "rank": 8,
+        "id": "Req. 108",
+        "document": "MDSR",
+        "hybrid_score": 0.509933
+      }
+    ],
+    "impact": {
+      "IMPACTED": 6,
+      "NOT_IMPACTED": 8,
+      "UNCERTAIN": 1
+    },
+    "consistency": {
+      "CONSISTENT": 4,
+      "CONFLICT": 0,
+      "NEEDS_REVIEW": 0
+    },
+    "propagation": {
+      "PATCHED": 1,
+      "SKIPPED_WITH_REASON": 3,
+      "NEEDS_REVIEW": 0
+    },
+    "mdsr_patched_req_ids": [
+      "Req. 203",
+      "Req. 204",
+      "Req. 100",
+      "Req. 110"
+    ],
+    "mddr_patched_req_ids": [
+      "Req. 100"
+    ]
+  },
+  "review_flags": {
+    "NEW_REQUIREMENT_CANDIDATE": false,
+    "new_requirement_reason": "",
+    "new_requirement_proposal_path": null,
+    "conflicts": [],
+    "needs_review_consistency": [],
+    "uncertain_impact": [
+      {
+        "id": "Req. 2",
+        "doc": "MDSR",
+        "change_type": "NEW_REQUIREMENT_CANDIDATE"
+      }
+    ]
+  },
+  "input_hashes_unchanged": true
+}

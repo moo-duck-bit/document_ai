@@ -193,7 +193,7 @@
 }
 ```
 
-## Error Analysis
+## Runtime Error Analysis
 
 - No runtime errors during evaluation.
 

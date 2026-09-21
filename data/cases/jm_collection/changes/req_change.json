@@ -1,0 +1,24 @@
+{
+  "change_id": "jm-req6-search-enhancement",
+  "summary": "Req. 6 상품 검색 — 자동완성·오타 허용·응답 시간 강화",
+  "sync_design_from_requirement": true,
+  "update_design_items_json": true,
+  "intake": {
+    "channel": "manual",
+    "raw_request": "Req. 6: 검색 95 percentile 1.5초 목표, 자동완성(최근·인기 키워드) 및 fuzzy match 지원",
+    "parsed_req_ids": ["Req. 6"],
+    "parsed_security_ids": [],
+    "confidence": 1.0,
+    "clarifying_questions": [],
+    "confirmed": true
+  },
+  "requirement_changes": [
+    {
+      "req_id": "Req. 6",
+      "description": "키워드 검색, 카테고리·가격·색상·사이즈·브랜드 필터 및 정렬(인기, 신상, 가격순)을 지원해야 한다. 검색 입력 시 최근 검색어·인기 키워드 자동완성을 제공하고, 오타 1~2자에 대해 fuzzy match로 결과를 보완해야 한다. 검색 결과는 1.5초 이내(95 percentile) 응답을 목표로 하며, 결과 없음 시 대안 상품을 제안할 수 있어야 한다.",
+      "purpose": "빠른 검색·자동완성·오타 허용으로 상품 발견률과 구매 전환을 높이기 위함이다.",
+      "criteria": "자동완성·fuzzy match·필터·정렬 1.5초 이내(95p) 및 0건 대안 제안 검증",
+      "design_description": "검색은 OpenSearch(또는 PostgreSQL FTS)에 상품명·브랜드·태그를 색인하고, `GET /search/suggest`로 최근·인기 키워드 자동완성을 제공한다. 본 검색 `GET /search?q=&filters=`는 fuzzy(Levenshtein 1~2)와 facet sort를 지원하며 Redis 캐시(60s)로 인기 쿼리를 가속한다. 95 percentile 1.5초는 API autoscaling·쿼리 limit·suggest 캐시로 달성하고, 0건 시 `recommended_products` API로 대안 상품을 반환한다."
+    }
+  ]
+}

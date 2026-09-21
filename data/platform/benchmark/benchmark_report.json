@@ -1,0 +1,235 @@
+{
+  "version": "1.0",
+  "run_id": "bench-4c1276e8093f",
+  "case_dir": "data\\platform\\benchmark\\work\\bench-4c1276e8093f\\case",
+  "scenarios_run": [
+    "document_change",
+    "operation_analysis",
+    "hybrid_workflow",
+    "self_improvement"
+  ],
+  "overall_score": 0.9848,
+  "category_scores": {
+    "planner": 1.0,
+    "runtime": 1.0,
+    "document": 0.8933333333333333,
+    "operation": 1.0,
+    "memory": 1.0,
+    "improvement": 1.0,
+    "collaboration": 1.0
+  },
+  "planner_metrics": {
+    "intent_accuracy": 1.0,
+    "workflow_template_accuracy": 1.0,
+    "hybrid_accuracy": 1.0,
+    "planner_accuracy": 1.0
+  },
+  "runtime_metrics": {
+    "workflow_success_rate": 1.0,
+    "task_success_rate": 1.0,
+    "avg_execution_latency_ms": 298.39,
+    "memory_generation_rate": 0.6667,
+    "scenario_count": 3
+  },
+  "document_metrics": {
+    "impact_precision": 0.8333333333333333,
+    "impact_recall": 1.0,
+    "impact_f1": 0.8933333333333333,
+    "changed_req_f1": 1.0,
+    "linked_security_f1": 0.8,
+    "linked_document_f1": 0.6666666666666666,
+    "details": {
+      "predicted_changed_req_ids": [
+        "Req. 6"
+      ],
+      "expected_changed_req_ids": [
+        "Req. 6"
+      ],
+      "predicted_linked_security_ids": [
+        "DC-01",
+        "IA-04",
+        "IA-06",
+        "IA-07",
+        "SI-06",
+        "SI-07"
+      ],
+      "expected_linked_security_ids": [
+        "IA-04",
+        "IA-06",
+        "IA-07",
+        "SI-06"
+      ],
+      "predicted_linked_documents": [
+        "report_security_verification",
+        "spec_design",
+        "spec_requirements",
+        "test_cases"
+      ],
+      "expected_linked_documents": [
+        "report_security_verification",
+        "spec_requirements"
+      ]
+    }
+  },
+  "operation_metrics": {
+    "incident_count": 11,
+    "incident_detection_precision": 0.8181818181818182,
+    "incident_detection_recall": 1.0,
+    "false_positive_incidents": 2,
+    "severity_match": 1.0,
+    "log_event_type_recall": 1.0,
+    "detected_log_event_types": [
+      "cuda_error",
+      "disk_full",
+      "nvidia_xid",
+      "oom",
+      "permission_denied",
+      "restart_loop"
+    ]
+  },
+  "memory_metrics": {
+    "memory_generation_rate": 1.0,
+    "artifact_checks": {
+      "knowledge_graph.json": true,
+      "events.jsonl": true,
+      "reasoning/index.jsonl": true,
+      "tasks/index.jsonl": true,
+      "evaluations/index.jsonl": true
+    },
+    "orphan_node_count": 0,
+    "reasoning_step_count": 5,
+    "trace_completeness": 1.0
+  },
+  "improvement_metrics": {
+    "recommendation_generation_rate": 1.0,
+    "retry_candidate_generation_rate": 0.0,
+    "strategy_recommendation_generation_rate": 1.0,
+    "failure_pattern_count": 0
+  },
+  "collaboration_metrics": {
+    "proposal_count": 12.0,
+    "conflict_count": 1.33,
+    "consensus_confidence": 0.8925,
+    "review_approval_rate": 1.0
+  },
+  "scenario_details": {
+    "planner": [
+      {
+        "intent_accuracy": 1.0,
+        "workflow_template_accuracy": 1.0,
+        "hybrid_accuracy": 1.0,
+        "planner_accuracy": 1.0,
+        "actual": {
+          "intent": "document_change",
+          "workflow_template": "document_workflow",
+          "hybrid": false
+        },
+        "expected": {
+          "intent": "document_change",
+          "workflow_template": "document_workflow",
+          "hybrid": false
+        }
+      },
+      {
+        "intent_accuracy": 1.0,
+        "workflow_template_accuracy": 1.0,
+        "hybrid_accuracy": 1.0,
+        "planner_accuracy": 1.0,
+        "actual": {
+          "intent": "operation_analysis",
+          "workflow_template": "operation_workflow",
+          "hybrid": false
+        },
+        "expected": {
+          "intent": "operation_analysis",
+          "workflow_template": "operation_workflow",
+          "hybrid": false
+        }
+      },
+      {
+        "intent_accuracy": 1.0,
+        "workflow_template_accuracy": 1.0,
+        "hybrid_accuracy": 1.0,
+        "planner_accuracy": 1.0,
+        "actual": {
+          "intent": "document_change",
+          "workflow_template": "hybrid_workflow",
+          "hybrid": true
+        },
+        "expected": {
+          "intent": "document_change",
+          "workflow_template": "hybrid_workflow",
+          "hybrid": true
+        }
+      }
+    ],
+    "runtime": [
+      {
+        "workflow_success_rate": 1.0,
+        "task_success_rate": 1.0,
+        "task_count": 1,
+        "execution_latency_ms": 495.61,
+        "memory_generated": true,
+        "workflow_id": "wf-tg-bench-document",
+        "evaluation_id": "eval-6260f3153cde"
+      },
+      {
+        "workflow_success_rate": 1.0,
+        "task_success_rate": 1.0,
+        "task_count": 1,
+        "execution_latency_ms": 3.38,
+        "memory_generated": false,
+        "workflow_id": "",
+        "evaluation_id": ""
+      },
+      {
+        "workflow_success_rate": 1.0,
+        "task_success_rate": 1.0,
+        "task_count": 2,
+        "execution_latency_ms": 396.19,
+        "memory_generated": true,
+        "workflow_id": "wf-tg-bench-hybrid",
+        "evaluation_id": "eval-0faba4cd7b50"
+      }
+    ],
+    "collaboration": [
+      {
+        "proposal_count": 12,
+        "proposal_count_met": true,
+        "agent_count": 5,
+        "agent_count_met": true,
+        "conflict_count": 0,
+        "consensus_confidence": 0.8925000000000001,
+        "review_approval_rate": 1.0,
+        "review_status": "approved"
+      },
+      {
+        "proposal_count": 12,
+        "proposal_count_met": true,
+        "agent_count": 5,
+        "agent_count_met": true,
+        "conflict_count": 2,
+        "consensus_confidence": 0.8925000000000001,
+        "review_approval_rate": 1.0,
+        "review_status": "approved"
+      },
+      {
+        "proposal_count": 12,
+        "proposal_count_met": true,
+        "agent_count": 5,
+        "agent_count_met": true,
+        "conflict_count": 2,
+        "consensus_confidence": 0.8925000000000001,
+        "review_approval_rate": 1.0,
+        "review_status": "approved"
+      }
+    ]
+  },
+  "regression": {
+    "baseline_available": false,
+    "regression_count": 0,
+    "regressions": [],
+    "improvements": [],
+    "passed": true
+  }
+}

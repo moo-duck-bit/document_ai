@@ -1,0 +1,83 @@
+[
+  {
+    "decision_id": "idec_382454e1c9da",
+    "source_document_id": "REPORT_DUP_RESULTS",
+    "canonical_document_id": "GENERIC_GENERAL_REPORT",
+    "short_id": "REPORT",
+    "document_type": "GENERAL_REPORT",
+    "document_role": "general_report",
+    "domain_pack_id": "generic_document_v1",
+    "template_id": "general_report_v1",
+    "decision_status": "REVIEW_REQUIRED",
+    "top_score": 55.05,
+    "second_score": 0.0,
+    "score_margin": 55.05,
+    "rank_tier": 3,
+    "reason_codes": [
+      "filename_hint:REPORT",
+      "filename_role_hint",
+      "heading_or_title",
+      "report_heading_concepts",
+      "insufficient_margin_or_tier"
+    ],
+    "evidence": [
+      {
+        "signal_id": "fn_3cce43cf",
+        "type": "FILENAME_TOKEN",
+        "value": "report_dup_results.docx"
+      },
+      {
+        "signal_id": "fnrole_38b21ba7",
+        "type": "DOCUMENT_ROLE_HINT",
+        "value": "general_report"
+      },
+      {
+        "signal_id": "fmt_85e1ed77",
+        "type": "FILE_FORMAT",
+        "value": ".docx"
+      },
+      {
+        "signal_id": "hd_09fc7765",
+        "type": "DOCUMENT_TITLE",
+        "value": "결과"
+      },
+      {
+        "signal_id": "hd_32359d5f",
+        "type": "HEADING_TEXT",
+        "value": "결과 본문 내용입니다."
+      },
+      {
+        "signal_id": "hd_b1906a75",
+        "type": "HEADING_TEXT",
+        "value": "세부 결과"
+      },
+      {
+        "signal_id": "hd_d79d3d36",
+        "type": "HEADING_TEXT",
+        "value": "세부 결과 본문 내용입니다."
+      },
+      {
+        "signal_id": "hd_0781cdf2",
+        "type": "HEADING_TEXT",
+        "value": "결과"
+      },
+      {
+        "signal_id": "hd_f1269048",
+        "type": "HEADING_TEXT",
+        "value": "결과 본문 내용입니다."
+      },
+      {
+        "signal_id": "concept_47d293b5",
+        "type": "CONTENT_CONCEPT",
+        "value": "general_report"
+      }
+    ],
+    "human_review_required": true,
+    "auto_selected": false,
+    "metadata": {
+      "temporary_source_id": "REPORT_DUP_RESULTS",
+      "canonical_id_deterministic": true,
+      "filename_only": false
+    }
+  }
+]

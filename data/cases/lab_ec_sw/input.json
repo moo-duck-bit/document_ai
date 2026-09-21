@@ -1,0 +1,40 @@
+{
+  "case_id": "lab_ec_sw",
+  "document_set": "ec_sw",
+  "product_name": "JM COLLECTION",
+  "product_code": "JM",
+  "domain": "ecommerce_b2c",
+  "standards": [
+    "PCI DSS v4.0 Payment Card Industry Data Security Standard",
+    "개인정보보호법 (대한민국)",
+    "OWASP ASVS v4.0 Application Security Verification Standard"
+  ],
+  "templates_in_set": [
+    "spec_requirements",
+    "spec_design",
+    "report_security_verification"
+  ],
+  "facts": {
+    "product_name": "JM COLLECTION",
+    "model_name": "JM COLLECTION Mall",
+    "software_name": "JM COLLECTION",
+    "product_code": "JM",
+    "document_version": "1.0",
+    "author_org": "JM COLLECTION Co., Ltd.",
+    "code_language": "TypeScript / Node.js, React",
+    "platform": "AWS (ECS, RDS PostgreSQL, S3, CloudFront)",
+    "editor": "VS Code",
+    "approval_date": "2026.03.20"
+  },
+  "free_text_hints": {
+    "system_overview": "JM COLLECTION은 패션·잡화 B2C 온라인 쇼핑몰이다. 고객은 웹/모바일에서 상품을 탐색·주문·결제하고, 관리자는 백오피스에서 상품·재고·주문·프로모션을 운영한다.",
+    "architecture_narrative": "React SPA → API Gateway → Node.js 마이크로서비스 → PostgreSQL / Redis / S3. PG 토큰화 결제, OWASP 보안 가이드라인 준수."
+  },
+  "source_documents": [
+    "data/cases/jm_collection/output_mdsr.docx",
+    "data/cases/jm_collection/output_mddr.docx"
+  ],
+  "intake_channel": "real_project",
+  "confirmed": true,
+  "confirmed_at": "2026-07-10"
+}

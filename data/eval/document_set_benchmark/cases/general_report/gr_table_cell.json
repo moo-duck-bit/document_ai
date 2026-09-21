@@ -1,0 +1,23 @@
+{
+  "case_id": "gr_table_cell",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "결과 표 만족도 값 수정",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_table.docx",
+      "filename": "report_table.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_TABLE"
+  ],
+  "expected_status": "PARTIAL",
+  "tags": [
+    "writer_update"
+  ],
+  "difficulty": "medium",
+  "notes": "Table cell style request",
+  "source_type": "fixture"
+}

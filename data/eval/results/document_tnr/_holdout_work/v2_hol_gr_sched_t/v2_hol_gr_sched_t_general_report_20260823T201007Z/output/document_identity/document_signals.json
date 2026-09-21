@@ -1,0 +1,183 @@
+[
+  {
+    "signal_id": "fn_cabc989b",
+    "document_source_id": "REPORT_SCHEDULE_TABLE",
+    "signal_type": "FILENAME_TOKEN",
+    "signal_value": "report_schedule_table.docx",
+    "normalized_value": "REPORT",
+    "confidence": 0.45,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "filename_hint:REPORT",
+      "filename_not_sufficient_alone"
+    ],
+    "independent_group": "filename"
+  },
+  {
+    "signal_id": "fnrole_5cfcbed8",
+    "document_source_id": "REPORT_SCHEDULE_TABLE",
+    "signal_type": "DOCUMENT_ROLE_HINT",
+    "signal_value": "general_report",
+    "normalized_value": "general_report",
+    "confidence": 0.4,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "filename_role_hint"
+    ],
+    "independent_group": "filename"
+  },
+  {
+    "signal_id": "fmt_1daa3b53",
+    "document_source_id": "REPORT_SCHEDULE_TABLE",
+    "signal_type": "FILE_FORMAT",
+    "signal_value": ".docx",
+    "normalized_value": "docx",
+    "confidence": 0.2,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "file_format"
+    ],
+    "independent_group": "format"
+  },
+  {
+    "signal_id": "hd_51a724cd",
+    "document_source_id": "REPORT_SCHEDULE_TABLE",
+    "signal_type": "DOCUMENT_TITLE",
+    "signal_value": "배경",
+    "normalized_value": "배경",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 0
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_91d5f910",
+    "document_source_id": "REPORT_SCHEDULE_TABLE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "배경 본문 내용입니다.",
+    "normalized_value": "배경 본문 내용입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 1
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_4586e341",
+    "document_source_id": "REPORT_SCHEDULE_TABLE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "목표",
+    "normalized_value": "목표",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 2
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_e7135bc8",
+    "document_source_id": "REPORT_SCHEDULE_TABLE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "목표 본문 내용입니다.",
+    "normalized_value": "목표 본문 내용입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 3
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_dbafe0b6",
+    "document_source_id": "REPORT_SCHEDULE_TABLE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "일정",
+    "normalized_value": "일정",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 4
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "concept_47d293b5",
+    "document_source_id": "REPORT_SCHEDULE_TABLE",
+    "signal_type": "CONTENT_CONCEPT",
+    "signal_value": "general_report",
+    "normalized_value": "general_report",
+    "confidence": 0.6,
+    "source": "content",
+    "source_locator": {},
+    "reason_codes": [
+      "report_heading_concepts"
+    ],
+    "independent_group": "template_structure"
+  },
+  {
+    "signal_id": "concept_22bf2bf3",
+    "document_source_id": "REPORT_SCHEDULE_TABLE",
+    "signal_type": "CONTENT_CONCEPT",
+    "signal_value": "business_proposal",
+    "normalized_value": "business_proposal",
+    "confidence": 0.6,
+    "source": "content",
+    "source_locator": {},
+    "reason_codes": [
+      "proposal_heading_concepts"
+    ],
+    "independent_group": "template_structure"
+  },
+  {
+    "signal_id": "tbln_fb14700f",
+    "document_source_id": "REPORT_SCHEDULE_TABLE",
+    "signal_type": "TEMPLATE_STRUCTURE",
+    "signal_value": "tables:1",
+    "normalized_value": "1",
+    "confidence": 0.35,
+    "source": "structure",
+    "source_locator": {},
+    "reason_codes": [
+      "table_count"
+    ],
+    "independent_group": "structure"
+  },
+  {
+    "signal_id": "th_c68e025e",
+    "document_source_id": "REPORT_SCHEDULE_TABLE",
+    "signal_type": "TABLE_HEADER",
+    "signal_value": "단계 기간",
+    "normalized_value": "단계 기간",
+    "confidence": 0.55,
+    "source": "structure",
+    "source_locator": {
+      "table_index": 0
+    },
+    "reason_codes": [
+      "table_header"
+    ],
+    "independent_group": "table_header"
+  }
+]

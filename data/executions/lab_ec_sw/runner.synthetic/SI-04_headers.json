@@ -1,0 +1,40 @@
+{
+  "check": "http_header_check",
+  "elapsed_ms": 1,
+  "expected": {
+    "frame_protection_required": false,
+    "headers": {
+      "content-security-policy": {
+        "required": false
+      },
+      "strict-transport-security": {
+        "required": true
+      }
+    },
+    "status_codes": [
+      200
+    ]
+  },
+  "failures": [
+    "missing required header: strict-transport-security"
+  ],
+  "findings": [
+    "optional header missing: content-security-policy",
+    "optional header missing: referrer-policy",
+    "missing X-Frame-Options or CSP frame-ancestors"
+  ],
+  "headers": {
+    "X-Content-Type-Options": "nosniff"
+  },
+  "method": "GET",
+  "redirect_chain": [],
+  "response": {
+    "body_stored": false,
+    "bytes_observed": 0,
+    "content_type": "",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "truncated": false
+  },
+  "status": 200,
+  "url": "https://fixture.example.com"
+}

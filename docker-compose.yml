@@ -1,0 +1,17 @@
+services:
+  pilot-ui:
+    build: .
+    image: document-ai-pilot-ui:latest
+    container_name: document-ai-pilot-ui
+    ports:
+      # host:container — 외부 접속은 호스트 IP:8765
+      - "8765:8765"
+    environment:
+      PILOT_HOST: "0.0.0.0"
+      PILOT_PORT: "8765"
+    volumes:
+      # Pilot 실행 결과 유지
+      - ./data/user_scenarios/_pilot:/app/data/user_scenarios/_pilot
+      # 데모용 시나리오 입력 (읽기 전용 권장)
+      - ./data/user_scenarios:/app/data/user_scenarios:rw
+    restart: unless-stopped

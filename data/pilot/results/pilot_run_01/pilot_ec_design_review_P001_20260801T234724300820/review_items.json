@@ -1,0 +1,21 @@
+[
+  {
+    "item_id": "MC-0001",
+    "document_id": "MDTM_PILOT_BASE",
+    "kind": "PATCH_CANDIDATE",
+    "node_id": "ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+    "display_name": "ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+    "reason_codes": [
+      "exact_requirement_id_match"
+    ],
+    "reason_text_ko": "검토가 필요한 항목입니다 (사유 코드: exact_requirement_id_match).",
+    "evidence": [
+      "requirement_id:Req. 12"
+    ],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  }
+]

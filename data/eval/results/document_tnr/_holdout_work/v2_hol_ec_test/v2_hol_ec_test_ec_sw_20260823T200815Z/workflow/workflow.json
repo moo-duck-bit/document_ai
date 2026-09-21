@@ -1,0 +1,714 @@
+{
+  "workflow_id": "v2_hol_ec_test_ec_sw_20260823T200815Z",
+  "document_set": "ec_sw",
+  "state": "COMPLETED",
+  "change_request": "시험 TC-11 검토",
+  "created_at": "2026-08-23T20:08:15Z",
+  "updated_at": "2026-08-23T20:08:15Z",
+  "documents": [
+    {
+      "document_id": "MDTM_BASE",
+      "source_document_id": "MDTM_BASE",
+      "filename": "mdtm_base.docx",
+      "role": "traceability",
+      "path": "data/eval/results/document_tnr/_holdout_work/v2_hol_ec_test/v2_hol_ec_test_ec_sw_20260823T200815Z/input/mdtm_base.docx",
+      "copy_path": "data/eval/results/document_tnr/_holdout_work/v2_hol_ec_test/v2_hol_ec_test_ec_sw_20260823T200815Z/copies/mdtm_base.docx",
+      "user_hints": null,
+      "canonical_document_id": "EC_SW_MDTM",
+      "short_id": "MDTM",
+      "document_type": "MDTM",
+      "document_role": "traceability",
+      "domain_pack_id": "ec_sw_v1",
+      "template_id": "ec_sw_mdtm",
+      "identity_status": "AUTO_SELECTED",
+      "identity_auto_selected": true,
+      "identity_score": 136.45,
+      "identity_reasons": [
+        "filename_hint:MDTM",
+        "filename_role_hint",
+        "heading_or_title",
+        "req_with_design_or_test_same_row",
+        "requirement_id_density",
+        "traceability_matrix_structure",
+        "tier1_mdtm_structure",
+        "auto_selected_strong_evidence"
+      ],
+      "routing_status": "ROUTED",
+      "selected_pack_id": "ec_sw_v1",
+      "recommended_document_set": "ec_sw",
+      "registry_document_id": "MDTM"
+    }
+  ],
+  "impacted_documents": [],
+  "review_required": [
+    {
+      "candidate_id": "MC-0000",
+      "node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+      "document_id": "MDTM_BASE",
+      "status": "REVIEW_REQUIRED",
+      "matched_requirement_ids": [],
+      "evidence": [
+        "test:TC-11"
+      ],
+      "reason_codes": [
+        "exact_test_id_match"
+      ],
+      "human_review_required": true,
+      "patch_preview": null,
+      "metadata": {
+        "display_name": "Req. 11",
+        "design_hits": [],
+        "test_hits": [
+          "TC-11"
+        ],
+        "overlap": 166.25,
+        "row_text": "Req. 11 | 5.1.2 | TC-11 | ",
+        "row_requirement_ids": [
+          "Req. 11"
+        ],
+        "row_design_ids": [
+          "5.1.2"
+        ],
+        "row_test_ids": [
+          "TC-11",
+          "5.1.2"
+        ],
+        "identifier_origins": {
+          "requirement:Req. 11": "LOCAL_CELL",
+          "design:5.1.2": "LOCAL_CELL",
+          "test:TC-11": "LOCAL_CELL",
+          "test:5.1.2": "LOCAL_CELL"
+        },
+        "table_index": 0,
+        "row_index": 2,
+        "source_identifiers": {
+          "requirement_ids": [
+            "Req. 11"
+          ],
+          "design_ids": [
+            "5.1.2"
+          ],
+          "test_ids": [
+            "TC-11",
+            "5.1.2"
+          ]
+        },
+        "evidence_scopes": [
+          "ROW_LOCAL",
+          "CELL_LOCAL"
+        ],
+        "legacy_node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+        "stable_node_id": "stablev2.table_row.6193b46f84264517",
+        "stable_node_id_base": "stablev2.table_row.6193b46f84264517",
+        "stable_node_id_v1": "stable.table_row.5fcf631b80569318",
+        "stable_node_id_v2": "stablev2.table_row.6193b46f84264517",
+        "instance_signature": "",
+        "duplicate_instance_key": null,
+        "identity_status": "STABLE",
+        "identifier_values": [
+          "Req. 11",
+          "5.1.2",
+          "TC-11"
+        ],
+        "logical_identity_resolved": true,
+        "writer_executable": false,
+        "identifier_match": {
+          "candidate_node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+          "query_requirement_ids": [],
+          "query_design_ids": [],
+          "query_test_ids": [
+            "TC-11"
+          ],
+          "row_requirement_ids": [
+            "Req. 11"
+          ],
+          "row_design_ids": [
+            "5.1.2"
+          ],
+          "row_test_ids": [
+            "TC-11",
+            "5.1.2"
+          ],
+          "exact_requirement_matches": [],
+          "exact_design_matches": [],
+          "exact_test_matches": [
+            "TC-11"
+          ],
+          "normalized_requirement_matches": [],
+          "normalized_design_matches": [],
+          "normalized_test_matches": [],
+          "mismatched_identifier_types": [],
+          "identifier_match_score": 12.0,
+          "primary_identifier_match": true,
+          "secondary_identifier_match": false,
+          "reason_codes": [
+            "PRIMARY_IDENTIFIER_EXACT",
+            "RANK_TIER_0",
+            "STABLE_BASE_AND_INSTANCE"
+          ],
+          "evidence_scope": "ROW_LOCAL",
+          "identifier_origins": {
+            "requirement:Req. 11": "LOCAL_CELL",
+            "design:5.1.2": "LOCAL_CELL",
+            "test:TC-11": "LOCAL_CELL",
+            "test:5.1.2": "LOCAL_CELL"
+          }
+        },
+        "rank_tier": 0,
+        "final_score": 166.25,
+        "rank": 1,
+        "score_components": {
+          "primary_identifier_exact": 20.0,
+          "secondary_identifier_exact": 0.0,
+          "normalized_identifier": 0.0,
+          "stable_base_match": 15.0,
+          "instance_match": 10.0,
+          "row_local_semantic": 1.25,
+          "structural_match": 0.0,
+          "template_alignment": 0.0,
+          "context_support": 0.0,
+          "ambiguity_penalty": -0.0,
+          "neighbor_penalty": -0.0,
+          "duplicate_penalty": -0.0,
+          "tier_base": 120.0
+        }
+      }
+    },
+    {
+      "candidate_id": "MC-0000",
+      "node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+      "document_id": "MDTM_BASE",
+      "status": "REVIEW_REQUIRED",
+      "matched_requirement_ids": [],
+      "evidence": [
+        "test:TC-11"
+      ],
+      "reason_codes": [
+        "exact_test_id_match"
+      ],
+      "human_review_required": true,
+      "patch_preview": null,
+      "metadata": {
+        "display_name": "Req. 11",
+        "design_hits": [],
+        "test_hits": [
+          "TC-11"
+        ],
+        "overlap": 166.25,
+        "row_text": "Req. 11 | 5.1.2 | TC-11 | ",
+        "row_requirement_ids": [
+          "Req. 11"
+        ],
+        "row_design_ids": [
+          "5.1.2"
+        ],
+        "row_test_ids": [
+          "TC-11",
+          "5.1.2"
+        ],
+        "identifier_origins": {
+          "requirement:Req. 11": "LOCAL_CELL",
+          "design:5.1.2": "LOCAL_CELL",
+          "test:TC-11": "LOCAL_CELL",
+          "test:5.1.2": "LOCAL_CELL"
+        },
+        "table_index": 0,
+        "row_index": 2,
+        "source_identifiers": {
+          "requirement_ids": [
+            "Req. 11"
+          ],
+          "design_ids": [
+            "5.1.2"
+          ],
+          "test_ids": [
+            "TC-11",
+            "5.1.2"
+          ]
+        },
+        "evidence_scopes": [
+          "ROW_LOCAL",
+          "CELL_LOCAL"
+        ],
+        "legacy_node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+        "stable_node_id": "stablev2.table_row.6193b46f84264517",
+        "stable_node_id_base": "stablev2.table_row.6193b46f84264517",
+        "stable_node_id_v1": "stable.table_row.5fcf631b80569318",
+        "stable_node_id_v2": "stablev2.table_row.6193b46f84264517",
+        "instance_signature": "",
+        "duplicate_instance_key": null,
+        "identity_status": "STABLE",
+        "identifier_values": [
+          "Req. 11",
+          "5.1.2",
+          "TC-11"
+        ],
+        "logical_identity_resolved": true,
+        "writer_executable": false,
+        "identifier_match": {
+          "candidate_node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+          "query_requirement_ids": [],
+          "query_design_ids": [],
+          "query_test_ids": [
+            "TC-11"
+          ],
+          "row_requirement_ids": [
+            "Req. 11"
+          ],
+          "row_design_ids": [
+            "5.1.2"
+          ],
+          "row_test_ids": [
+            "TC-11",
+            "5.1.2"
+          ],
+          "exact_requirement_matches": [],
+          "exact_design_matches": [],
+          "exact_test_matches": [
+            "TC-11"
+          ],
+          "normalized_requirement_matches": [],
+          "normalized_design_matches": [],
+          "normalized_test_matches": [],
+          "mismatched_identifier_types": [],
+          "identifier_match_score": 12.0,
+          "primary_identifier_match": true,
+          "secondary_identifier_match": false,
+          "reason_codes": [
+            "PRIMARY_IDENTIFIER_EXACT",
+            "RANK_TIER_0",
+            "STABLE_BASE_AND_INSTANCE"
+          ],
+          "evidence_scope": "ROW_LOCAL",
+          "identifier_origins": {
+            "requirement:Req. 11": "LOCAL_CELL",
+            "design:5.1.2": "LOCAL_CELL",
+            "test:TC-11": "LOCAL_CELL",
+            "test:5.1.2": "LOCAL_CELL"
+          }
+        },
+        "rank_tier": 0,
+        "final_score": 166.25,
+        "rank": 1,
+        "score_components": {
+          "primary_identifier_exact": 20.0,
+          "secondary_identifier_exact": 0.0,
+          "normalized_identifier": 0.0,
+          "stable_base_match": 15.0,
+          "instance_match": 10.0,
+          "row_local_semantic": 1.25,
+          "structural_match": 0.0,
+          "template_alignment": 0.0,
+          "context_support": 0.0,
+          "ambiguity_penalty": -0.0,
+          "neighbor_penalty": -0.0,
+          "duplicate_penalty": -0.0,
+          "tier_base": 120.0
+        }
+      }
+    }
+  ],
+  "patch_candidates": [],
+  "approvals": [
+    {
+      "item_id": "MC-0000",
+      "document_id": "MDTM_BASE",
+      "node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:08:15Z"
+    },
+    {
+      "item_id": "MC-0000",
+      "document_id": "MDTM_BASE",
+      "node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:08:15Z"
+    }
+  ],
+  "writer_result": {
+    "status": "COMPLETED_PREVIEW",
+    "applied": 0,
+    "skipped": 2,
+    "rejected": 0,
+    "blocked": 0,
+    "enable_write": false,
+    "details": [
+      {
+        "item_id": "MC-0000",
+        "document_id": "MDTM_BASE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "MC-0000",
+        "document_id": "MDTM_BASE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      }
+    ],
+    "by_document": {
+      "MDTM_BASE": {
+        "applied": 0,
+        "rejected": 0,
+        "blocked": 0,
+        "skipped": 2,
+        "pending": 0
+      }
+    },
+    "controlled_writer_invoked": false
+  },
+  "validation": {
+    "status": "VALID",
+    "ok": true,
+    "issues": [],
+    "warnings": [],
+    "checks": {
+      "valid_state": true,
+      "terminal_state_immutable": true,
+      "no_duplicate_terminal_event": true,
+      "no_duplicate_document_id": true,
+      "no_duplicate_filename": true,
+      "writer_not_invoked_without_gate": true
+    },
+    "can_transition_sample": {
+      "UPLOADED->ANALYZING": true,
+      "COMPLETED->WRITING": false
+    }
+  },
+  "timeline": [
+    {
+      "at": "2026-08-23T20:08:15Z",
+      "state": "CREATED",
+      "event": "created",
+      "detail": "document_set=ec_sw;routing_mode=explicit"
+    },
+    {
+      "at": "2026-08-23T20:08:15Z",
+      "state": "UPLOADED",
+      "event": "uploaded",
+      "detail": "files=1"
+    },
+    {
+      "at": "2026-08-23T20:08:15Z",
+      "state": "ANALYZING",
+      "event": "analysis_started",
+      "detail": ""
+    },
+    {
+      "at": "2026-08-23T20:08:15Z",
+      "state": "REVIEW_READY",
+      "event": "analysis_completed",
+      "detail": "impacted=0"
+    },
+    {
+      "at": "2026-08-23T20:08:15Z",
+      "state": "WAITING_APPROVAL",
+      "event": "waiting_approval",
+      "detail": ""
+    },
+    {
+      "at": "2026-08-23T20:08:15Z",
+      "state": "WAITING_APPROVAL",
+      "event": "approval_updated",
+      "detail": "approved=2"
+    },
+    {
+      "at": "2026-08-23T20:08:15Z",
+      "state": "WRITING",
+      "event": "writer_started",
+      "detail": "enable_write=False"
+    },
+    {
+      "at": "2026-08-23T20:08:15Z",
+      "state": "VALIDATING",
+      "event": "writer_completed",
+      "detail": "applied=0"
+    },
+    {
+      "at": "2026-08-23T20:08:15Z",
+      "state": "COMPLETED",
+      "event": "completed",
+      "detail": ""
+    }
+  ],
+  "result_rows": [
+    {
+      "document_id": "MDTM_BASE",
+      "status": "APPROVED_PENDING_WRITE",
+      "review": "Y",
+      "applied": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "validation": "PASS",
+      "diff_available": false,
+      "download": "data/eval/results/document_tnr/_holdout_work/v2_hol_ec_test/v2_hol_ec_test_ec_sw_20260823T200815Z/copies/mdtm_base.docx",
+      "skipped": 2,
+      "pending": 0
+    }
+  ],
+  "errors": [],
+  "metadata": {
+    "legacy_pair_untouched": true,
+    "writer_enabled_default": false,
+    "document_routing_mode": "explicit",
+    "requested_document_set": "ec_sw",
+    "identity_summary": {
+      "ok": true,
+      "per_document": [
+        {
+          "ok": true,
+          "checks": {
+            "no_filename_only_auto_route": true,
+            "canonical_id_deterministic": true,
+            "temporary_and_canonical_id_separated": true,
+            "conflict_requires_review": true,
+            "routed_pack_matches_decision": true,
+            "wrong_route_never_writes": true
+          },
+          "reasons": [],
+          "invariants": [
+            "no_filename_only_auto_route",
+            "canonical_id_deterministic",
+            "temporary_and_canonical_id_separated",
+            "conflict_requires_review",
+            "routed_pack_matches_decision",
+            "wrong_route_never_writes"
+          ]
+        }
+      ]
+    },
+    "needs_identity_confirmation": false,
+    "identity_decisions": [
+      {
+        "decision_id": "idec_68105be29062",
+        "source_document_id": "MDTM_BASE",
+        "canonical_document_id": "EC_SW_MDTM",
+        "short_id": "MDTM",
+        "document_type": "MDTM",
+        "document_role": "traceability",
+        "domain_pack_id": "ec_sw_v1",
+        "template_id": "ec_sw_mdtm",
+        "decision_status": "AUTO_SELECTED",
+        "top_score": 136.45,
+        "second_score": 51.3,
+        "score_margin": 85.15,
+        "rank_tier": 1,
+        "reason_codes": [
+          "filename_hint:MDTM",
+          "filename_role_hint",
+          "heading_or_title",
+          "req_with_design_or_test_same_row",
+          "requirement_id_density",
+          "traceability_matrix_structure",
+          "tier1_mdtm_structure",
+          "auto_selected_strong_evidence"
+        ],
+        "evidence": [
+          {
+            "signal_id": "fn_b1421df0",
+            "type": "FILENAME_TOKEN",
+            "value": "mdtm_base.docx"
+          },
+          {
+            "signal_id": "fnrole_5a58248c",
+            "type": "DOCUMENT_ROLE_HINT",
+            "value": "traceability"
+          },
+          {
+            "signal_id": "fmt_d0630222",
+            "type": "FILE_FORMAT",
+            "value": ".docx"
+          },
+          {
+            "signal_id": "hd_1c56e19e",
+            "type": "DOCUMENT_TITLE",
+            "value": "Traceability Matrix"
+          },
+          {
+            "signal_id": "tbln_fb14700f",
+            "type": "TEMPLATE_STRUCTURE",
+            "value": "tables:1"
+          },
+          {
+            "signal_id": "th_e89a04f9",
+            "type": "TABLE_HEADER",
+            "value": "requirement design test note"
+          },
+          {
+            "signal_id": "idrow_7fd2db91",
+            "type": "IDENTIFIER_PATTERN",
+            "value": "Req. 10,5.1.1,TC-10,5.1.1"
+          },
+          {
+            "signal_id": "idrow_a02cf053",
+            "type": "IDENTIFIER_PATTERN",
+            "value": "Req. 11,5.1.2,TC-11,5.1.2"
+          },
+          {
+            "signal_id": "idrow_70934097",
+            "type": "IDENTIFIER_PATTERN",
+            "value": "Req. 12,5.1.3,TC-12,5.1.3"
+          },
+          {
+            "signal_id": "idrow_abac91b6",
+            "type": "IDENTIFIER_PATTERN",
+            "value": "Req. 101,6.0.1,TC-101,6.0.1"
+          },
+          {
+            "signal_id": "reqc_19737955",
+            "type": "IDENTIFIER_PATTERN",
+            "value": "requirement_count:4"
+          },
+          {
+            "signal_id": "mtx_1e2a6ef9",
+            "type": "TEMPLATE_STRUCTURE",
+            "value": "traceability_matrix"
+          }
+        ],
+        "human_review_required": false,
+        "auto_selected": true,
+        "metadata": {
+          "temporary_source_id": "MDTM_BASE",
+          "canonical_id_deterministic": true,
+          "filename_only": false
+        }
+      }
+    ],
+    "pack_routings": [
+      {
+        "routing_id": "route_62bb7730de",
+        "source_document_id": "MDTM_BASE",
+        "selected_pack_id": "ec_sw_v1",
+        "candidate_pack_ids": [
+          "ec_sw_v1"
+        ],
+        "routing_status": "ROUTED",
+        "score": 136.45,
+        "score_margin": 136.45,
+        "reason_codes": [
+          "filename_hint:MDTM",
+          "filename_role_hint",
+          "heading_or_title",
+          "req_with_design_or_test_same_row",
+          "requirement_id_density",
+          "traceability_matrix_structure",
+          "explicit_user_pack"
+        ],
+        "human_review_required": false,
+        "actual_pack_invoked": "ec_sw_v1",
+        "metadata": {
+          "routing_mode": "explicit",
+          "identity_status": "AUTO_SELECTED",
+          "document_set_hint": "ec_sw"
+        }
+      }
+    ],
+    "analysis": {
+      "engine": "ec_sw_mdtm_observational",
+      "ok": true,
+      "note": null
+    },
+    "document_impact_decisions": [
+      {
+        "document_id": "MDTM_BASE",
+        "predicted_status": "REVIEW_REQUIRED",
+        "substantive_evidence_count": 2,
+        "role_evidence_count": 2,
+        "exact_identifier_count": 0,
+        "normalized_identifier_count": 0,
+        "semantic_evidence_count": 2,
+        "malformed_identifier_count": 0,
+        "reason_codes": [
+          "semantic_only_review",
+          "no_semantic_only_patch"
+        ],
+        "source_stages": [
+          "catalog_role",
+          "mdtm_change_poc",
+          "upload"
+        ],
+        "top_evidence": [
+          {
+            "document_id": "MDTM_BASE",
+            "document_role": "traceability",
+            "evidence_type": "SEMANTIC_SECTION_MATCH",
+            "evidence_value": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+            "source_stage": "mdtm_change_poc",
+            "source_node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+            "confidence": 0.55,
+            "independent_group": "review:ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+            "reason_codes": [
+              "exact_test_id_match"
+            ],
+            "supports_impacted": false,
+            "supports_review": true
+          },
+          {
+            "document_id": "MDTM_BASE",
+            "document_role": "traceability",
+            "evidence_type": "SEMANTIC_SECTION_MATCH",
+            "evidence_value": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+            "source_stage": "mdtm_change_poc",
+            "source_node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+            "confidence": 0.55,
+            "independent_group": "review:ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+            "reason_codes": [
+              "exact_test_id_match"
+            ],
+            "supports_impacted": false,
+            "supports_review": true
+          },
+          {
+            "document_id": "MDTM_BASE",
+            "document_role": "traceability",
+            "evidence_type": "ROLE_COMPATIBILITY",
+            "evidence_value": "traceability",
+            "source_stage": "catalog_role",
+            "source_node_id": null,
+            "confidence": 0.2,
+            "independent_group": "role",
+            "reason_codes": [
+              "role_compatible"
+            ],
+            "supports_impacted": false,
+            "supports_review": false
+          },
+          {
+            "document_id": "MDTM_BASE",
+            "document_role": "traceability",
+            "evidence_type": "DOCUMENT_PRESENCE",
+            "evidence_value": "mdtm_base.docx",
+            "source_stage": "upload",
+            "source_node_id": null,
+            "confidence": 0.1,
+            "independent_group": "presence",
+            "reason_codes": [
+              "document_uploaded"
+            ],
+            "supports_impacted": false,
+            "supports_review": false
+          }
+        ],
+        "human_review_required": true
+      }
+    ],
+    "identifier_analysis": [
+      {
+        "raw_text": "",
+        "canonical_id": null,
+        "status": "NOT_FOUND",
+        "span": [
+          0,
+          0
+        ],
+        "reason_codes": [
+          "REQ_ID_NOT_FOUND"
+        ],
+        "confidence": 0.0,
+        "source": "change_request"
+      }
+    ]
+  }
+}

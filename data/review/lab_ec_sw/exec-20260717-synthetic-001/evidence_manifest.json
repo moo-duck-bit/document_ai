@@ -1,0 +1,28 @@
+[
+  {
+    "security_test_id": "SI-01",
+    "type": "command_output",
+    "path": "evidence/si01_tls_check.txt",
+    "description": "SYNTHETIC openssl TLS handshake output",
+    "sha256": "a7423b04a6ff8f6de7a5a1a1299c9a6e40856804e2546eb83135b0f72f2d6ae3",
+    "exists": true,
+    "resolved_path": "data/executions/lab_ec_sw/evidence/si01_tls_check.txt"
+  },
+  {
+    "security_test_id": "IA-01-T01",
+    "type": "log",
+    "path": "evidence/ia01_auth_fail.log",
+    "description": "SYNTHETIC authentication failure log",
+    "sha256": "4c379b732898de2298ad5b9223d45835c07b27b78f142d434a4e1ee54843991d",
+    "exists": true,
+    "resolved_path": "data/executions/lab_ec_sw/evidence/ia01_auth_fail.log"
+  },
+  {
+    "security_test_id": "DC-01",
+    "type": "text",
+    "path": "",
+    "description": "inline review note",
+    "sha256": null,
+    "exists": false
+  }
+]

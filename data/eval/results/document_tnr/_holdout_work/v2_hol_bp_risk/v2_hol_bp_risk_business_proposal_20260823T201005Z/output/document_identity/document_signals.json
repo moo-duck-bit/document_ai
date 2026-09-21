@@ -1,0 +1,281 @@
+[
+  {
+    "signal_id": "fn_3eee49c6",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "FILENAME_TOKEN",
+    "signal_value": "proposal_base.docx",
+    "normalized_value": "PROPOSAL",
+    "confidence": 0.45,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "filename_hint:PROPOSAL",
+      "filename_not_sufficient_alone"
+    ],
+    "independent_group": "filename"
+  },
+  {
+    "signal_id": "fnrole_61c412f1",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "DOCUMENT_ROLE_HINT",
+    "signal_value": "business_proposal",
+    "normalized_value": "business_proposal",
+    "confidence": 0.4,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "filename_role_hint"
+    ],
+    "independent_group": "filename"
+  },
+  {
+    "signal_id": "fmt_219843f0",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "FILE_FORMAT",
+    "signal_value": ".docx",
+    "normalized_value": "docx",
+    "confidence": 0.2,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "file_format"
+    ],
+    "independent_group": "format"
+  },
+  {
+    "signal_id": "hd_ca4bdd52",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "DOCUMENT_TITLE",
+    "signal_value": "사업 제안서",
+    "normalized_value": "사업 제안서",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 0
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_0bc2477a",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "실행 일정",
+    "normalized_value": "실행 일정",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 1
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_ec49007c",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "실행 일정에 대한 설명입니다.",
+    "normalized_value": "실행 일정에 대한 설명입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 2
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_aac04395",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "2026-Q3 착수, 2026-Q4 완료",
+    "normalized_value": "2026-q3 착수, 2026-q4 완료",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 3
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_7e7bb3a4",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "예산",
+    "normalized_value": "예산",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 4
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_1290585c",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "예산에 대한 설명입니다.",
+    "normalized_value": "예산에 대한 설명입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 5
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_68a26d45",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "위험 관리",
+    "normalized_value": "위험 관리",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 6
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_4c6b5438",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "위험 관리에 대한 설명입니다.",
+    "normalized_value": "위험 관리에 대한 설명입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 7
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_6a31c93a",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "수행 조직",
+    "normalized_value": "수행 조직",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 8
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_441b7b45",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "수행 조직에 대한 설명입니다.",
+    "normalized_value": "수행 조직에 대한 설명입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 9
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_6e2e6248",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "기대 효과",
+    "normalized_value": "기대 효과",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 10
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_099ff287",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "기대 효과에 대한 설명입니다.",
+    "normalized_value": "기대 효과에 대한 설명입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 11
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "concept_22bf2bf3",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "CONTENT_CONCEPT",
+    "signal_value": "business_proposal",
+    "normalized_value": "business_proposal",
+    "confidence": 0.6,
+    "source": "content",
+    "source_locator": {},
+    "reason_codes": [
+      "proposal_heading_concepts"
+    ],
+    "independent_group": "template_structure"
+  },
+  {
+    "signal_id": "tbln_fb14700f",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "TEMPLATE_STRUCTURE",
+    "signal_value": "tables:1",
+    "normalized_value": "1",
+    "confidence": 0.35,
+    "source": "structure",
+    "source_locator": {},
+    "reason_codes": [
+      "table_count"
+    ],
+    "independent_group": "structure"
+  },
+  {
+    "signal_id": "th_2221124d",
+    "document_source_id": "PROPOSAL_BASE",
+    "signal_type": "TABLE_HEADER",
+    "signal_value": "항목 금액",
+    "normalized_value": "항목 금액",
+    "confidence": 0.55,
+    "source": "structure",
+    "source_locator": {
+      "table_index": 0
+    },
+    "reason_codes": [
+      "table_header"
+    ],
+    "independent_group": "table_header"
+  }
+]

@@ -1,0 +1,137 @@
+{
+  "trial_id": "trial-001-mindrium-xa",
+  "case_id": "mindrium_xa",
+  "case_dir": "data/cases/mindrium_xa",
+  "trial_type": "change_update",
+  "system_version": "v0.5-document-harness",
+  "system_commit": "d73fc18",
+  "document_types": [
+    "MDSR",
+    "MDDR"
+  ],
+  "domain": "",
+  "started_at": "2026-07-17T22:11:03Z",
+  "input_cutoff": "2026-07-17T22:11:21Z",
+  "human_baseline_available": false,
+  "reviewer_count": 1,
+  "status": "pre_human_review_ready",
+  "data_leakage_checked": true,
+  "synthetic": false,
+  "frozen": {
+    "baseline_system_version": "v0.5-document-harness",
+    "baseline_commit": "d73fc18",
+    "git": {
+      "commit": "d73fc18225c2d47f63d17aa4d27b2fb180814a07",
+      "commit_short": "d73fc18",
+      "branch": "feature/evaluation-foundation-trial1",
+      "describe": "v0.5-document-harness-dirty",
+      "tags_at_head": [
+        "v0.5-document-harness"
+      ],
+      "dirty": true,
+      "status_porcelain": [
+        "M data/cases/mindrium_xa/changes/request_req6.txt",
+        " M data/eval/harness_benchmark/harness_benchmark_report.json",
+        " M data/eval/harness_benchmark/harness_benchmark_report.md",
+        " M src/document_ai/cli.py",
+        " M src/document_ai/learn/docx_io.py",
+        " M src/document_ai/render/xxcs.py",
+        " M tests/test_mddr_design_quality.py",
+        " M tests/test_xxcs_pipeline.py",
+        "?? data/evaluation/",
+        "?? data/trials/",
+        "?? docs/draft_change_input_quality.md",
+        "?? docs/evaluation_foundation_architecture.md",
+        "?? docs/evaluation_foundation_sprint_report.md",
+        "?? docs/examples/",
+        "?? docs/interim_presentation_plan.md",
+        "?? docs/interim_presentation_prep.md",
+        "?? docs/real_world_trial_data_leakage_policy.md",
+        "?? docs/real_world_trial_metrics.md",
+        "?? docs/real_world_trial_protocol.md",
+        "?? docs/trial1_artifacts_artifacts.md",
+        "?? docs/trial1_case_decision_mindrium.md",
+        "?? docs/trial1_execution_checklist.md",
+        "?? docs/trial1_execution_commands.md",
+        "?? docs/trial1_execution_guide.md",
+        "?? docs/trial1_preflight_checklist.md",
+        "?? docs/trial1_preparation_sprint_report.md",
+        "?? docs/trial1_required_inputs.md",
+        "?? docs/trial1_result_analysis_plan.md",
+        "?? reports/",
+        "?? schemas/trial_error_annotation.schema.json",
+        "?? schemas/trial_manifest.schema.json",
+        "?? scripts/run_trial001_mindrium.py",
+        "?? src/document_ai/trial/",
+        "?? tests/test_trial_foundation.py",
+        "?? tests/test_xxcs_determinism.py"
+      ],
+      "collected_at": "2026-07-17T22:11:03Z"
+    },
+    "environment": {
+      "python_version": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+      "platform": "Windows-10-10.0.22631-SP0",
+      "cwd": ".",
+      "project_root": ".",
+      "env_markers": {
+        "CI": "",
+        "VIRTUAL_ENV": ""
+      },
+      "collected_at": "2026-07-17T22:11:03Z"
+    },
+    "version_warnings": []
+  },
+  "baseline_metrics_snapshot": {
+    "sources": [
+      "data/eval/harness_benchmark/harness_benchmark_report.json",
+      "data/cases/lab_ec_sw/e2e_validation_report.json"
+    ],
+    "harness_benchmark": {
+      "overall_score": 90.0,
+      "cases_run": 4,
+      "passed": 4,
+      "train": {
+        "cases_run": 3,
+        "passed": 3,
+        "warning": 0,
+        "failed": 0,
+        "overall_score": 88.5
+      },
+      "holdout": {
+        "cases_run": 1,
+        "passed": 1,
+        "warning": 0,
+        "failed": 0,
+        "overall_score": 94.3
+      },
+      "path": "data/eval/harness_benchmark/harness_benchmark_report.json"
+    },
+    "lab_ec_sw_e2e": {
+      "status": "PASS",
+      "quality_overall": 96.8,
+      "validation_overall": 90.5,
+      "path": "data/cases/lab_ec_sw/e2e_validation_report.json"
+    }
+  },
+  "paths": {
+    "input": "data/trials/trial-001-mindrium-xa/input",
+    "reference": "data/trials/trial-001-mindrium-xa/reference",
+    "generated": "data/trials/trial-001-mindrium-xa/generated",
+    "human_revised": "data/trials/trial-001-mindrium-xa/human_revised",
+    "diff": "data/trials/trial-001-mindrium-xa/diff",
+    "review": "data/trials/trial-001-mindrium-xa/review",
+    "metrics": "data/trials/trial-001-mindrium-xa/metrics",
+    "reports": "data/trials/trial-001-mindrium-xa/reports",
+    "presentation": "data/trials/trial-001-mindrium-xa/presentation",
+    "workdir": "data/trials/trial-001-mindrium-xa/workdir"
+  },
+  "data_leakage_clean": true,
+  "generated_at": "2026-07-17T22:11:21Z",
+  "change_scenario": {
+    "req_id": "Req. 6",
+    "nature": "update_fill_empty_table_description",
+    "prepared_cr": true,
+    "change_request": "input/change_request.txt"
+  },
+  "pre_human_review_ready": true
+}

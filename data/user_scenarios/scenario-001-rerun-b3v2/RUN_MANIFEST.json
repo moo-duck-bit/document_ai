@@ -1,0 +1,55 @@
+{
+  "rerun_id": "scenario-001-rerun-b3v2",
+  "baseline_scenario": "scenario-001",
+  "baseline_result": "PARTIAL",
+  "baseline_freeze_path": "data/user_scenarios/scenario-001/",
+  "b3v2_commit_sha": "c4b98aa4f2c2a79bb2f4b76161a39a5c92b78e33",
+  "changed_component": "B3 Impact Judgment + NEW_REQUIREMENT fallback",
+  "b4_b5_unchanged": true,
+  "expected_impact_used": false,
+  "created_at_setup": "2026-07-23T02:40:19Z",
+  "input_hashes": {
+    "change_request.txt": "e69f0522ad6a78c6d66134ca0e2617ea1ff88f3e756e8b9842c9a8efb19f00f1",
+    "MDSR.docx": "cd70f942ab8534c22887782b61d2319fd026e61f97744bde8f985c6484a3652d",
+    "MDDR.docx": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf"
+  },
+  "baseline_freeze_hashes_pre_rerun": {
+    "input/change_request.txt": "e69f0522ad6a78c6d66134ca0e2617ea1ff88f3e756e8b9842c9a8efb19f00f1",
+    "input/reference/MDSR.docx": "cd70f942ab8534c22887782b61d2319fd026e61f97744bde8f985c6484a3652d",
+    "input/reference/MDDR.docx": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf",
+    "output/execution_report.json": "629e3ec913c590fe71b7e1d250048cd53efc417331b0342bbf14fb86affdb4d9",
+    "output/trace/retrieval_candidates.json": "bea9e58ce562e7bfea5443b92a8360125fb411bc6c2bff92c719d06a3d6061f8",
+    "output/trace/impact_judgments.json": "435786cdd15700f59fa6633c8dc6bfaa64cdb507705ed030cac4cd540e202368",
+    "output/trace/consistency_decisions.json": "1484dc47794b380a1e86b03abe27d0e217475cf34de42235d4f7aaa07a30d6fd",
+    "output/trace/propagation_trace.json": "78f7f58e676a6962d1c96329532fe2acc232becb2e234244e921922feaeea699",
+    "output/review/CHANGE_SUMMARY.md": "7b491c2ffa3737861455537833575016304a883ea0d777490b6efb4435c950c0",
+    "output/review/REVIEW_REQUIRED.md": "7259f1e54d61c602279cb37d4551a924fc52efde7f0b6f52f8fa355cdcfe5534",
+    "output/review/PATCH_DIFF.md": "104e5927a69322f4eb8575c501195fedf3994921cb084fcf748aef8d309e87b6",
+    "output/documents/updated_MDSR.docx": "b439817a46de4114339d4ff46cca8615501b2393ea98957aacf7a99dbc7d862a",
+    "output/documents/updated_MDDR.docx": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf"
+  },
+  "notes": [
+    "Frozen scenario-001 output not used as input or gold for ranking",
+    "Same CR and Mindrium source docs as baseline"
+  ],
+  "executed_at": "2026-07-23T02:41:42Z",
+  "execution_status": "COMPLETED_NEEDS_REVIEW",
+  "overall_evaluation": "PARTIAL",
+  "b3_summary": {
+    "IMPACTED": 6,
+    "NOT_IMPACTED": 8,
+    "UNCERTAIN": 1
+  },
+  "b4_summary": {
+    "CONSISTENT": 0,
+    "CONFLICT": 0,
+    "NEEDS_REVIEW": 4
+  },
+  "b5_summary": {
+    "PATCHED": 0,
+    "SKIPPED_WITH_REASON": 0,
+    "NEEDS_REVIEW": 4
+  },
+  "new_requirement_proposal_emitted": false,
+  "retrieval_identical_to_baseline": true
+}

@@ -1,0 +1,25 @@
+{"case_id": "ec_sw_exact_req_single", "document_id": "MDTM", "gold_status": "IMPACTED", "review_notes": "Exact Req. 2 single row gold PATCH"}
+{"case_id": "ec_sw_exact_req_multi_mention", "document_id": "MDTM", "gold_status": "IMPACTED", "review_notes": "Same Req mentioned twice still one row"}
+{"case_id": "ec_sw_multi_req_ids", "document_id": "MDTM", "gold_status": "IMPACTED", "review_notes": "Two exact req patches"}
+{"case_id": "ec_sw_design_id_only", "document_id": "MDTM", "gold_status": "REVIEW_REQUIRED", "review_notes": "Design-id only; workflow CR may under-match"}
+{"case_id": "ec_sw_test_id_only", "document_id": "MDTM", "gold_status": "REVIEW_REQUIRED", "review_notes": "Test-id only via CR text"}
+{"case_id": "ec_sw_semantic_only", "document_id": "MDTM", "gold_status": "REVIEW_REQUIRED", "review_notes": "No Req ID; semantic review expected"}
+{"case_id": "ec_sw_duplicate_req_row", "document_id": "MDTM", "gold_status": "IMPACTED", "review_notes": "Corpus has unique Req.2; exact patch"}
+{"case_id": "ec_sw_missing_identifier", "document_id": "MDTM", "gold_status": "UNRELATED", "review_notes": "Missing identifier"}
+{"case_id": "ec_sw_empty_row_context", "document_id": "MDTM", "gold_status": "UNRELATED", "review_notes": "Empty-row style request"}
+{"case_id": "ec_sw_no_impact", "document_id": "MDTM", "gold_status": "UNRELATED", "review_notes": "No-impact marketing phrase"}
+{"case_id": "ec_sw_ambiguous_request", "document_id": "MDTM", "gold_status": "UNRELATED", "review_notes": "Ambiguous; acceptable UNRELATED or REVIEW", "acceptable_alternatives": ["REVIEW_REQUIRED"]}
+{"case_id": "ec_sw_writer_blocked_review", "document_id": "MDTM", "gold_status": "IMPACTED", "review_notes": "Writer must remain gated"}
+{"case_id": "ec_sw_bad_req_format", "document_id": "MDTM", "gold_status": "UNRELATED", "review_notes": "Bad Req format should not false-patch"}
+{"case_id": "ec_sw_mdtm_only_multi_doc", "document_id": "MDTM", "gold_status": "IMPACTED", "review_notes": "MDTM IMPACTED; MDSR stub UNRELATED"}
+{"case_id": "ec_sw_mdtm_only_multi_doc", "document_id": "MDSR_STUB", "gold_status": "UNRELATED", "review_notes": "MDTM IMPACTED; MDSR stub UNRELATED"}
+{"case_id": "ec_sw_req101_exact", "document_id": "MDTM", "gold_status": "IMPACTED", "review_notes": "Exact Req. 101"}
+{"case_id": "gr_methodology_source", "document_id": "REPORT_BASE", "gold_status": "REVIEW_REQUIRED", "review_notes": "Methodology section token overlap"}
+{"case_id": "gr_results_finding", "document_id": "REPORT_BASE", "gold_status": "REVIEW_REQUIRED", "review_notes": "Results section"}
+{"case_id": "gr_conclusion_recommendation", "document_id": "REPORT_BASE", "gold_status": "REVIEW_REQUIRED", "review_notes": "Conclusion recommendation"}
+{"case_id": "gr_schedule_table", "document_id": "REPORT_BASE", "gold_status": "REVIEW_REQUIRED", "review_notes": "Schedule section"}
+{"case_id": "gr_duplicate_heading", "document_id": "REPORT_DUP_HEADING", "gold_status": "REVIEW_REQUIRED", "review_notes": "Duplicate heading fixture"}
+{"case_id": "gr_missing_section", "document_id": "REPORT_BASE", "gold_status": "UNRELATED", "review_notes": "Nonexistent section"}
+{"case_id": "gr_semantic_similar", "document_id": "REPORT_BASE", "gold_status": "REVIEW_REQUIRED", "review_notes": "Semantic similar to summary/results", "acceptable_alternatives": ["UNRELATED"]}
+{"case_id": "gr_no_impact", "document_id": "REPORT_BASE", "gold_status": "UNRELATED", "review_notes": "No impact"}
+{"case_id": "gr_table_cell", "document_id": "REPORT_TABLE", "gold_status": "REVIEW_REQUIRED", "review_notes": "Table cell style request"}

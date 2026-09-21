@@ -1,0 +1,183 @@
+[
+  {
+    "item_id": "business_proposal_v1.schedule",
+    "document_id": "PROPOSAL_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "business_proposal_v1.schedule",
+    "display_name": "일정",
+    "reason_codes": [
+      "aligned_template_section_eval_candidate",
+      "template_document_aligned"
+    ],
+    "reason_text_ko": "검토가 필요한 항목입니다 (사유 코드: aligned_template_section_eval_candidate). 검토가 필요한 항목입니다 (사유 코드: template_document_aligned).",
+    "evidence": [],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "PROPOSAL_PILOT_BASE.p0001",
+    "document_id": "PROPOSAL_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "heading_0001",
+    "display_name": "실행 일정",
+    "reason_codes": [
+      "paragraph_concept_match"
+    ],
+    "reason_text_ko": "요청 의미와 문서 문단 주제가 일치합니다.",
+    "evidence": [],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "PROPOSAL_PILOT_BASE.p0002",
+    "document_id": "PROPOSAL_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "heading_0002",
+    "display_name": "실행 일정에 대한 설명입니다.",
+    "reason_codes": [
+      "paragraph_concept_match"
+    ],
+    "reason_text_ko": "요청 의미와 문서 문단 주제가 일치합니다.",
+    "evidence": [],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "BP-TBL-table_00",
+    "document_id": "PROPOSAL_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "table_00",
+    "display_name": "항목 금액",
+    "reason_codes": [
+      "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+      "budget_table_structure",
+      "proposal_table_ambiguous"
+    ],
+    "reason_text_ko": "검토가 필요한 항목입니다 (사유 코드: PATCH_FORBIDDEN_PROPOSAL_TABLE). 검토가 필요한 항목입니다 (사유 코드: budget_table_structure). 검토가 필요한 항목입니다 (사유 코드: proposal_table_ambiguous).",
+    "evidence": [],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "business_proposal_v1.execution_plan",
+    "document_id": "PROPOSAL_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "business_proposal_v1.execution_plan",
+    "display_name": "수행 계획",
+    "reason_codes": [
+      "aligned_template_section_eval_candidate"
+    ],
+    "reason_text_ko": "검토가 필요한 항목입니다 (사유 코드: aligned_template_section_eval_candidate).",
+    "evidence": [],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "PROPOSAL_PILOT_BASE.p0008",
+    "document_id": "PROPOSAL_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "heading_0008",
+    "display_name": "수행 조직",
+    "reason_codes": [
+      "paragraph_concept_match"
+    ],
+    "reason_text_ko": "요청 의미와 문서 문단 주제가 일치합니다.",
+    "evidence": [
+      "수행"
+    ],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "PROPOSAL_PILOT_BASE.p0009",
+    "document_id": "PROPOSAL_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "heading_0009",
+    "display_name": "수행 조직에 대한 설명입니다.",
+    "reason_codes": [
+      "paragraph_concept_match"
+    ],
+    "reason_text_ko": "요청 의미와 문서 문단 주제가 일치합니다.",
+    "evidence": [
+      "수행"
+    ],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "PROPOSAL_PILOT_BASE.p0003",
+    "document_id": "PROPOSAL_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "heading_0003",
+    "display_name": "2026-Q3 착수, 2026-Q4 완료",
+    "reason_codes": [
+      "paragraph_concept_match"
+    ],
+    "reason_text_ko": "요청 의미와 문서 문단 주제가 일치합니다.",
+    "evidence": [
+      "2026"
+    ],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "BP-TBL-heading_0004",
+    "document_id": "PROPOSAL_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "heading_0004",
+    "display_name": "예산",
+    "reason_codes": [
+      "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+      "proposal_table_ambiguous"
+    ],
+    "reason_text_ko": "검토가 필요한 항목입니다 (사유 코드: PATCH_FORBIDDEN_PROPOSAL_TABLE). 검토가 필요한 항목입니다 (사유 코드: proposal_table_ambiguous).",
+    "evidence": [],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "BP-TBL-heading_0005",
+    "document_id": "PROPOSAL_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "heading_0005",
+    "display_name": "예산에 대한 설명입니다.",
+    "reason_codes": [
+      "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+      "proposal_table_ambiguous"
+    ],
+    "reason_text_ko": "검토가 필요한 항목입니다 (사유 코드: PATCH_FORBIDDEN_PROPOSAL_TABLE). 검토가 필요한 항목입니다 (사유 코드: proposal_table_ambiguous).",
+    "evidence": [],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  }
+]

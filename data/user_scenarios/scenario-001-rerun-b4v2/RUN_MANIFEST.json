@@ -1,0 +1,45 @@
+{
+  "rerun_id": "scenario-001-rerun-b4v2",
+  "baseline_scenario_path": "data/user_scenarios/scenario-001/",
+  "b3v2_rerun_path": "data/user_scenarios/scenario-001-rerun-b3v2/",
+  "baseline_result": "PARTIAL",
+  "b3v2_rerun_result": "PARTIAL",
+  "current_commit_sha": "bb528ce27d3ccff53b876b8faf50107874c24eda",
+  "changed_component": "B4 Consistency Gate",
+  "b3_unchanged": true,
+  "b5_unchanged": true,
+  "expected_impact_used": false,
+  "created_at_setup": "2026-07-23T10:55:00Z",
+  "executed_at": "2026-07-23T10:55:30Z",
+  "execution_status": "COMPLETED_NEEDS_REVIEW",
+  "overall_evaluation": "PARTIAL",
+  "input_hashes": {
+    "change_request.txt": "e69f0522ad6a78c6d66134ca0e2617ea1ff88f3e756e8b9842c9a8efb19f00f1",
+    "MDSR.docx": "cd70f942ab8534c22887782b61d2319fd026e61f97744bde8f985c6484a3652d",
+    "MDDR.docx": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf"
+  },
+  "retrieval_identical_to_b3v2_rerun": true,
+  "b3_identical_to_b3v2_rerun": true,
+  "b3_summary": {
+    "IMPACTED": 6,
+    "NOT_IMPACTED": 8,
+    "UNCERTAIN": 1
+  },
+  "b4_summary": {
+    "CONSISTENT": 4,
+    "CONFLICT": 0,
+    "NEEDS_REVIEW": 0
+  },
+  "b5_summary": {
+    "PATCHED": 1,
+    "SKIPPED_WITH_REASON": 3,
+    "NEEDS_REVIEW": 0
+  },
+  "mdsr_patched_req_ids": ["Req. 203", "Req. 204", "Req. 100", "Req. 110"],
+  "mddr_patched_req_ids": ["Req. 100"],
+  "notes": [
+    "Frozen baseline and B3v2 outputs not used as gold/retrieval input",
+    "Same CR and Mindrium source docs as baseline",
+    "B5 code unchanged; observed downstream effects only"
+  ]
+}

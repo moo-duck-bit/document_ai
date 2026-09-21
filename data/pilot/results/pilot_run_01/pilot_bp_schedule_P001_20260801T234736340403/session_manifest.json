@@ -1,0 +1,17 @@
+{
+  "pilot_run_id": "pilot_run_01",
+  "case_id": "pr01_bp_02",
+  "session_id": "pilot_bp_schedule_P001_20260801T234736340403",
+  "participant_id": "P001",
+  "domain": "business_proposal",
+  "scenario_id": "pilot_bp_schedule",
+  "document_paths": [
+    "data/pilot/real_user_document_pilot/scenarios/fixtures/business_proposal/proposal_pilot_base.docx"
+  ],
+  "change_request": "수행 일정을 2026-Q4로 조정한다.",
+  "writer_enabled": false,
+  "expected_review_scope": [
+    "수행 일정"
+  ],
+  "created_at": "2026-08-01T23:47:38Z"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "candidate_id": "icand_382454e1c9",
+    "source_document_id": "REPORT_DUP_RESULTS",
+    "canonical_document_id": "GENERIC_GENERAL_REPORT",
+    "short_id": "REPORT",
+    "document_type": "GENERAL_REPORT",
+    "document_role": "general_report",
+    "domain_pack_id": "generic_document_v1",
+    "template_id": "general_report_v1",
+    "score": 55.05,
+    "rank": 1,
+    "rank_tier": 3,
+    "status": "CANDIDATE",
+    "reason_codes": [
+      "filename_hint:REPORT",
+      "filename_role_hint",
+      "heading_or_title",
+      "report_heading_concepts"
+    ],
+    "evidence_ids": [
+      "fn_3cce43cf",
+      "fnrole_38b21ba7",
+      "hd_09fc7765",
+      "hd_32359d5f",
+      "hd_b1906a75",
+      "hd_d79d3d36",
+      "hd_0781cdf2",
+      "hd_f1269048",
+      "concept_47d293b5"
+    ],
+    "conflicts": [],
+    "metadata": {
+      "profile": "REPORT"
+    }
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "MDSR": {
+    "unchanged_paragraph_ratio": null,
+    "modified_paragraph_ratio": null,
+    "added_paragraph_ratio": null,
+    "deleted_paragraph_ratio": null,
+    "unchanged_table_cell_ratio": null,
+    "modified_table_cell_ratio": null,
+    "document_level_edit_burden_score": null,
+    "status": "SKIPPED"
+  },
+  "MDDR": {
+    "unchanged_paragraph_ratio": null,
+    "modified_paragraph_ratio": null,
+    "added_paragraph_ratio": null,
+    "deleted_paragraph_ratio": null,
+    "unchanged_table_cell_ratio": null,
+    "modified_table_cell_ratio": null,
+    "document_level_edit_burden_score": null,
+    "status": "SKIPPED"
+  },
+  "XXCS": {
+    "unchanged_paragraph_ratio": null,
+    "modified_paragraph_ratio": null,
+    "added_paragraph_ratio": null,
+    "deleted_paragraph_ratio": null,
+    "unchanged_table_cell_ratio": null,
+    "modified_table_cell_ratio": null,
+    "document_level_edit_burden_score": null,
+    "status": "SKIPPED"
+  }
+}

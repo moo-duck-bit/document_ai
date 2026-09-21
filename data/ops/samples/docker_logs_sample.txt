@@ -1,0 +1,7 @@
+2026-07-02T14:10:22.118Z INFO  Starting training job lab-trainer epoch=42
+2026-07-02T14:15:03.442Z WARN  GPU memory usage above 90%
+2026-07-02T14:18:55.901Z ERROR torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 GiB
+2026-07-02T14:18:56.002Z ERROR Training worker crashed with CUDA error: an illegal memory access was encountered
+2026-07-02T14:19:01.331Z INFO  Back-off restarting failed container data-pipeline
+2026-07-02T14:19:01.332Z WARN  restart loop detected for data-pipeline
+2026-07-02T14:20:10.004Z ERROR permission denied while trying to connect to the docker API at unix:///var/run/docker.sock

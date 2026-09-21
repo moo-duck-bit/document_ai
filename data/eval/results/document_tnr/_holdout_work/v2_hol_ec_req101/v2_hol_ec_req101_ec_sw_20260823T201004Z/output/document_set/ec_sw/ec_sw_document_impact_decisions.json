@@ -1,0 +1,69 @@
+[
+  {
+    "document_id": "MDTM_BASE",
+    "predicted_status": "IMPACTED",
+    "substantive_evidence_count": 1,
+    "role_evidence_count": 2,
+    "exact_identifier_count": 1,
+    "normalized_identifier_count": 0,
+    "semantic_evidence_count": 0,
+    "malformed_identifier_count": 0,
+    "reason_codes": [
+      "exact_or_normalized_identifier_match",
+      "impacted_requires_substantive_evidence"
+    ],
+    "source_stages": [
+      "catalog_role",
+      "mdtm_change_poc",
+      "upload"
+    ],
+    "top_evidence": [
+      {
+        "document_id": "MDTM_BASE",
+        "document_role": "traceability",
+        "evidence_type": "EXACT_IDENTIFIER_MATCH",
+        "evidence_value": "Req. 101",
+        "source_stage": "mdtm_change_poc",
+        "source_node_id": "ec_sw_v1.mdtm.table_00.row_0004.7ea5ab0d5d",
+        "confidence": 0.95,
+        "independent_group": "node:ec_sw_v1.mdtm.table_00.row_0004.7ea5ab0d5d",
+        "reason_codes": [
+          "exact_requirement_id_match"
+        ],
+        "supports_impacted": true,
+        "supports_review": false
+      },
+      {
+        "document_id": "MDTM_BASE",
+        "document_role": "traceability",
+        "evidence_type": "ROLE_COMPATIBILITY",
+        "evidence_value": "traceability",
+        "source_stage": "catalog_role",
+        "source_node_id": null,
+        "confidence": 0.2,
+        "independent_group": "role",
+        "reason_codes": [
+          "role_compatible"
+        ],
+        "supports_impacted": false,
+        "supports_review": false
+      },
+      {
+        "document_id": "MDTM_BASE",
+        "document_role": "traceability",
+        "evidence_type": "DOCUMENT_PRESENCE",
+        "evidence_value": "mdtm_base.docx",
+        "source_stage": "upload",
+        "source_node_id": null,
+        "confidence": 0.1,
+        "independent_group": "presence",
+        "reason_codes": [
+          "document_uploaded"
+        ],
+        "supports_impacted": false,
+        "supports_review": false
+      }
+    ],
+    "human_review_required": false
+  }
+]

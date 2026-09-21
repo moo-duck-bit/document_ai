@@ -1,0 +1,55 @@
+{
+  "workflow_id": "v2_hol_bp_risk_business_proposal_20260823T201005Z",
+  "document_set": "business_proposal",
+  "state": "COMPLETED",
+  "documents": [
+    {
+      "document_id": "PROPOSAL_BASE",
+      "filename": "proposal_base.docx",
+      "role": "business_proposal"
+    }
+  ],
+  "impacted_documents": [
+    "PROPOSAL_BASE"
+  ],
+  "review_required_count": 3,
+  "patch_candidate_count": 0,
+  "writer_result": {
+    "status": "COMPLETED_PREVIEW",
+    "applied": 0,
+    "skipped": 3
+  },
+  "validation": {
+    "status": "VALID",
+    "ok": true,
+    "issues": [],
+    "warnings": [],
+    "checks": {
+      "valid_state": true,
+      "terminal_state_immutable": true,
+      "no_duplicate_terminal_event": true,
+      "no_duplicate_document_id": true,
+      "no_duplicate_filename": true,
+      "writer_not_invoked_without_gate": true
+    },
+    "can_transition_sample": {
+      "UPLOADED->ANALYZING": true,
+      "COMPLETED->WRITING": false
+    }
+  },
+  "result_rows": [
+    {
+      "document_id": "PROPOSAL_BASE",
+      "status": "APPROVED_PENDING_WRITE",
+      "review": "Y",
+      "applied": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "validation": "PASS",
+      "diff_available": false,
+      "download": "data/eval/results/document_tnr/_holdout_work/v2_hol_bp_risk/v2_hol_bp_risk_business_proposal_20260823T201005Z/copies/proposal_base.docx",
+      "skipped": 3,
+      "pending": 0
+    }
+  ]
+}

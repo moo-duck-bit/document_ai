@@ -1,0 +1,4 @@
+SYNTHETIC SAMPLE — NOT A REAL SECURITY TEST RESULT
+Case: lab_ec_sw | Test: SI-01-T01
+Command: openssl s_client -connect api.jm-collection.example:443 -tls1_2
+Result: TLS 1.2 handshake succeeded; certificate chain validated (synthetic fixture).

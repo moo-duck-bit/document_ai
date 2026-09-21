@@ -1,0 +1,23 @@
+{
+  "case_id": "ec_sw_bad_req_format",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "REQ2 형식 오류 식별자",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/MDTM.docx",
+      "filename": "MDTM.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "ambiguous"
+  ],
+  "difficulty": "medium",
+  "notes": "Bad Req format should not false-patch",
+  "source_type": "fixture"
+}

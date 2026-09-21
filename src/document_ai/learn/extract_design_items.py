@@ -8,14 +8,52 @@ from typing import Any
 from docx.table import Table
 from docx.text.paragraph import Paragraph
 
+from document_ai.learn.docx_io import iter_blocks, load_document, paragraph_deep_text, table_matrix
+from document_ai.learn.extract_requirements import _req_id_sort_key
 from document_ai.learn.req_ids import normalize_requirement_id as normalize_req_id
-from document_ai.learn.docx_io import iter_blocks, load_document, table_matrix
-from document_ai.learn.extract_requirements import _req_id_sort_key
-from document_ai.learn.extract_requirements import _req_id_sort_key
 from document_ai.render.requirements import _req_id_from_table
 
-REQ_PARAGRAPH = re.compile(r"^Req\.\s*(\d+)\.?\s*(.*)$", re.IGNORECASE)
+# Optional section number prefix: "4.2.1 Req. 1", "5.2.3. Req. 102"
+REQ_HEADING = re.compile(
+    r"^(?:(\d+(?:\.\d+)*)\.?\s+)?Req\.\s*(\d+)\.?\s*(.*)$",
+    re.IGNORECASE,
+)
 DESIGN_LABELS = ("목적", "기준", "설명", "component", "interface", "interfaces")
+
+
+def _design_text_from_item(item: dict[str, Any]) -> str:
+    """Unified design body for coverage / similarity (suffix + description + fields)."""
+    parts: list[str] = []
+    suffix = (item.get("title_suffix") or "").strip()
+    desc = (item.get("design_description") or "").strip()
+    if suffix:
+        parts.append(suffix)
+    if desc and desc != suffix:
+        parts.append(desc)
+    for value in (item.get("fields") or {}).values():
+        text = str(value).strip()
+        if text and text not in parts:
+            parts.append(text)
+    return "\n".join(parts).strip()
+
+
+def _parse_req_heading(text: str) -> tuple[str | None, str, str]:
+    """Return (req_id, section_prefix, same_line_suffix) from a Req heading line."""
+    first_line = text.split("\n", 1)[0].strip()
+    match = REQ_HEADING.match(first_line)
+    if not match:
+        return None, "", ""
+    section = (match.group(1) or "").strip()
+    req_id = normalize_req_id(f"Req. {match.group(2)}")
+    suffix = (match.group(3) or "").strip()
+    return req_id, section, suffix
+
+
+def _body_from_paragraph(text: str) -> str:
+    """Body after first line when Req heading and design share one paragraph."""
+    if "\n" not in text:
+        return ""
+    return text.split("\n", 1)[1].strip()
 
 
 def _design_fields_from_matrix(matrix: list[list[str]]) -> tuple[str, dict[str, str]]:
@@ -42,10 +80,33 @@ def _design_fields_from_matrix(matrix: list[list[str]]) -> tuple[str, dict[str, 
     return design_description, fields
 
 
-def _item_from_req_table(table: Table, block_index: int) -> dict[str, Any] | None:
-    req_id = _req_id_from_table(table)
-    if not req_id:
+def _normalize_table_req_id(raw: str | None) -> str | None:
+    if not raw:
         return None
+    return normalize_req_id(raw) or normalize_req_id(raw.split("\n", 1)[0])
+
+
+def _item_from_req_table(table: Table, block_index: int) -> dict[str, Any] | None:
+    raw = _req_id_from_table(table)
+    req_id = _normalize_table_req_id(raw)
+    if not req_id:
+        # Cell may contain "4.2.1 Req. 1" or multi-line heading
+        header = table.rows[0].cells[0].text.strip() if table.rows else ""
+        req_id, _, same_line = _parse_req_heading(header)
+        if not req_id:
+            return None
+        matrix = table_matrix(table)
+        design_description, fields = _design_fields_from_matrix(matrix)
+        if same_line and not design_description:
+            design_description = same_line
+        return {
+            "req_id": req_id,
+            "block_kind": "table",
+            "block_index": block_index,
+            "design_description": design_description,
+            "fields": fields,
+        }
+
     matrix = table_matrix(table)
     design_description, fields = _design_fields_from_matrix(matrix)
     return {
@@ -62,13 +123,21 @@ def _flush_paragraph_item(
     heading_index: int,
     title_suffix: str,
     content_parts: list[str],
+    *,
+    section_prefix: str = "",
 ) -> dict[str, Any]:
+    body = "\n".join(part for part in content_parts if part and str(part).strip()).strip()
+    # Promote same-line / first-paragraph body into design_description
+    if not body and title_suffix:
+        body = title_suffix
+        title_suffix = ""
     return {
         "req_id": req_id,
         "block_kind": "paragraph",
         "block_index": heading_index,
+        "section_prefix": section_prefix,
         "title_suffix": title_suffix.strip(),
-        "design_description": "\n".join(content_parts).strip(),
+        "design_description": body,
         "fields": {},
     }
 
@@ -81,20 +150,31 @@ def extract_design_items_docx(path: Path) -> dict[str, Any]:
     current_req: str | None = None
     current_heading_index = -1
     current_title_suffix = ""
+    current_section = ""
     current_parts: list[str] = []
 
     def flush_paragraph() -> None:
-        nonlocal current_req, current_heading_index, current_title_suffix, current_parts
+        nonlocal current_req, current_heading_index, current_title_suffix, current_parts, current_section
         if not current_req or current_req in seen:
             current_req = None
             current_parts = []
+            current_title_suffix = ""
+            current_section = ""
             return
-        item = _flush_paragraph_item(current_req, current_heading_index, current_title_suffix, current_parts)
-        if item["design_description"] or item["title_suffix"]:
+        item = _flush_paragraph_item(
+            current_req,
+            current_heading_index,
+            current_title_suffix,
+            current_parts,
+            section_prefix=current_section,
+        )
+        if _design_text_from_item(item) or item.get("title_suffix"):
             items.append(item)
             seen.add(current_req)
         current_req = None
         current_parts = []
+        current_title_suffix = ""
+        current_section = ""
 
     for block_index, block in enumerate(iter_blocks(doc)):
         if isinstance(block, Table):
@@ -115,16 +195,20 @@ def extract_design_items_docx(path: Path) -> dict[str, Any]:
         if not isinstance(block, Paragraph):
             continue
 
-        text = block.text.strip()
+        text = paragraph_deep_text(block) or block.text.strip()
         if not text:
             continue
 
-        match = REQ_PARAGRAPH.match(text)
-        if match:
+        req_id, section, same_line_suffix = _parse_req_heading(text)
+        if req_id:
             flush_paragraph()
-            current_req = normalize_req_id(f"Req. {match.group(1)}")
+            current_req = req_id
             current_heading_index = block_index
-            current_title_suffix = match.group(2).strip()
+            current_section = section
+            current_title_suffix = same_line_suffix
+            same_para_body = _body_from_paragraph(text)
+            current_parts = [same_para_body] if same_para_body else []
+            # Same-line short title with no newline body stays as title_suffix
             continue
 
         if current_req:

@@ -1,0 +1,93 @@
+[
+  {
+    "decision_id": "idec_ddf64eb1d690",
+    "source_document_id": "PROPOSAL_BASE",
+    "canonical_document_id": "GENERIC_BUSINESS_PROPOSAL",
+    "short_id": "PROPOSAL",
+    "document_type": "BUSINESS_PROPOSAL",
+    "document_role": "business_proposal",
+    "domain_pack_id": "generic_document_v1",
+    "template_id": "business_proposal_v1",
+    "decision_status": "REVIEW_REQUIRED",
+    "top_score": 51.65,
+    "second_score": 0.0,
+    "score_margin": 51.65,
+    "rank_tier": 3,
+    "reason_codes": [
+      "filename_hint:PROPOSAL",
+      "filename_role_hint",
+      "heading_or_title",
+      "proposal_heading_concepts",
+      "insufficient_margin_or_tier"
+    ],
+    "evidence": [
+      {
+        "signal_id": "fn_3eee49c6",
+        "type": "FILENAME_TOKEN",
+        "value": "proposal_base.docx"
+      },
+      {
+        "signal_id": "fnrole_61c412f1",
+        "type": "DOCUMENT_ROLE_HINT",
+        "value": "business_proposal"
+      },
+      {
+        "signal_id": "fmt_219843f0",
+        "type": "FILE_FORMAT",
+        "value": ".docx"
+      },
+      {
+        "signal_id": "hd_ca4bdd52",
+        "type": "DOCUMENT_TITLE",
+        "value": "사업 제안서"
+      },
+      {
+        "signal_id": "hd_0bc2477a",
+        "type": "HEADING_TEXT",
+        "value": "실행 일정"
+      },
+      {
+        "signal_id": "hd_ec49007c",
+        "type": "HEADING_TEXT",
+        "value": "실행 일정에 대한 설명입니다."
+      },
+      {
+        "signal_id": "hd_aac04395",
+        "type": "HEADING_TEXT",
+        "value": "2026-Q3 착수, 2026-Q4 완료"
+      },
+      {
+        "signal_id": "hd_7e7bb3a4",
+        "type": "HEADING_TEXT",
+        "value": "예산"
+      },
+      {
+        "signal_id": "hd_1290585c",
+        "type": "HEADING_TEXT",
+        "value": "예산에 대한 설명입니다."
+      },
+      {
+        "signal_id": "hd_68a26d45",
+        "type": "HEADING_TEXT",
+        "value": "위험 관리"
+      },
+      {
+        "signal_id": "hd_4c6b5438",
+        "type": "HEADING_TEXT",
+        "value": "위험 관리에 대한 설명입니다."
+      },
+      {
+        "signal_id": "hd_6a31c93a",
+        "type": "HEADING_TEXT",
+        "value": "수행 조직"
+      }
+    ],
+    "human_review_required": true,
+    "auto_selected": false,
+    "metadata": {
+      "temporary_source_id": "PROPOSAL_BASE",
+      "canonical_id_deterministic": true,
+      "filename_only": false
+    }
+  }
+]

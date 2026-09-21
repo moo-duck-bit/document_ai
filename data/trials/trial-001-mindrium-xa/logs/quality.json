@@ -1,0 +1,1868 @@
+{
+  "case": "data\\trials\\trial-001-mindrium-xa\\workdir\\case",
+  "domain": "medical_device_software",
+  "product_name": "Mindrium",
+  "status": "FAIL",
+  "scores": {
+    "structure": 36.0,
+    "terminology": 100.0,
+    "completeness": 78.4,
+    "consistency": 0.0,
+    "traceability": 100.0,
+    "residual_text": 0.0,
+    "overall": 52.9
+  },
+  "findings": [
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[10]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION Co., Ltd."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[11]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION Co., Ltd."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[12]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION Co., Ltd."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[13]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION Co., Ltd."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[14]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION Co., Ltd."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[15]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION Co., Ltd."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[44]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "EC-SW-MDSR(JM) JM COLLECTION 소프트웨어 요구사항명세서"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[46]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION은 패션·잡화 전문 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영·CS 백오피스(JM-admin)로 구성된다. 회원·비"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[48]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "본 문서는 JM COLLECTION 소프트웨어의 기능·보안·비기능 요구사항과 PCI DSS·OWASP ASVS·개인정보보호법 추적성 매트릭스를 정의한다."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[49]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION은 패션·잡화 전문 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영·CS 백오피스(JM-admin)로 구성된다. 회원·비"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[51]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "본 문서는 JM COLLECTION 소프트웨어의 기능·보안·비기능 요구사항과 PCI DSS·OWASP ASVS·개인정보보호법 추적성 매트릭스를 정의한다."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[52]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION은 패션·잡화 전문 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영·CS 백오피스(JM-admin)로 구성된다. 회원·비"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[54]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "본 문서는 JM COLLECTION 소프트웨어의 기능·보안·비기능 요구사항과 PCI DSS·OWASP ASVS·개인정보보호법 추적성 매트릭스를 정의한다."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[55]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION은 패션·잡화 전문 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영·CS 백오피스(JM-admin)로 구성된다. 회원·비"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[57]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION은 B2C 패션·잡화 온라인 쇼핑몰 소프트웨어로, 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영 백오피스(JM-admin)가 REST API와 이벤트 기반으"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[58]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "본 문서는 JM COLLECTION 소프트웨어의 기능·보안·비기능 요구사항과 PCI DSS·OWASP ASVS·개인정보보호법 추적성 매트릭스를 정의한다."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[60]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION은 패션·잡화 전문 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영·CS 백오피스(JM-admin)로 구성된다. 회원·비"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[62]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-web(React SPA, CloudFront/S3), JM-api(Node.js 마이크로서비스, ECS/RDS/Redis), JM-admin(React SPA, 내부 VPC), PostgreSQL·Redis·"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[63]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-web(React SPA, CloudFront/S3), JM-api(Node.js 마이크로서비스, ECS/RDS/Redis), JM-admin(React SPA, 내부 VPC), PostgreSQL·Redis·"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[64]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-web(React SPA, CloudFront/S3), JM-api(Node.js 마이크로서비스, ECS/RDS/Redis), JM-admin(React SPA, 내부 VPC), PostgreSQL·Redis·"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[65]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "그림 1. JM COLLECTION 소프트웨어 상호 관계도"
+    },
+    {
+      "category": "figure_table",
+      "severity": "warning",
+      "location": "paragraph[65]",
+      "message": "Figure/table placeholder (figure_placeholder)",
+      "auto_fixable": false,
+      "excerpt": "그림 1. JM COLLECTION 소프트웨어 상호 관계도"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[66]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "본 문서는 JM COLLECTION 소프트웨어의 기능·보안·비기능 요구사항과 PCI DSS·OWASP ASVS·개인정보보호법 추적성 매트릭스를 정의한다."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[68]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION은 패션·잡화 전문 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영·CS 백오피스(JM-admin)로 구성된다. 회원·비"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[70]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-web 사용자는 일반 소비자(회원·비회원)이다. JM-admin 사용자는 JM COLLECTION 운영·CS·물류 담당자이며 RBAC 역할(관리자·상품·주문·CS)에 따라 접근 권한이 부여된다."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[71]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-web 사용자는 일반 소비자(회원·비회원)이다. JM-admin 사용자는 JM COLLECTION 운영·CS·물류 담당자이며 RBAC 역할(관리자·상품·주문·CS)에 따라 접근 권한이 부여된다."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[72]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "본 문서는 JM COLLECTION 소프트웨어의 기능·보안·비기능 요구사항과 PCI DSS·OWASP ASVS·개인정보보호법 추적성 매트릭스를 정의한다."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[117]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "주문·결제·배송 상태는 JM-admin 대시보드에서 실시간 조회 가능해야 한다."
+    },
+    {
+      "category": "figure_table",
+      "severity": "warning",
+      "location": "paragraph[181]",
+      "message": "Figure/table placeholder (table_placeholder)",
+      "auto_fixable": false,
+      "excerpt": "PCI DSS v4.0 및 OWASP ASVS v4.0 기본 원칙과 [표3. 사이버 보안 요구사항]을 충족하여야 하며, 카드 데이터 보호·접근 통제·취약점 관리·침해 대응 요구사항은 본 문서 및 추적성 매트릭스에 따"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[1] r1c2",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION 쇼핑몰 요구사항명세서 최초 제정"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r0c1",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r0c2",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r0c3",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r1c1",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-MALL-001"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r1c2",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-MALL-001"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r1c3",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-MALL-001"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r3c1",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-web"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r3c2",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-api"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r3c3",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-admin"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r5c1",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION Co., Ltd."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r5c2",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION Co., Ltd."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r5c3",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION Co., Ltd."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[3] r0c1",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-web (고객몰)"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[4] r0c1",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-api (주문·결제·회원 API)"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[5] r0c1",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-admin (운영 백오피스)"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[35] r0c1",
+      "message": "Residual reference text (mindrium_residual)",
+      "auto_fixable": true,
+      "excerpt": "처방받은 환자를 시스템에 등록하고, 등록된 환자의 정보에 접근할 수 있도록 하기 위함이다"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[35] r1c1",
+      "message": "Residual reference text (mindrium_residual)",
+      "auto_fixable": true,
+      "excerpt": "처방받은 환자를 시스템에 등록하고, 등록된 환자의 정보에 접근할 수 있도록 하기 위함이다."
+    },
+    {
+      "category": "duplicate_paragraph",
+      "severity": "warning",
+      "location": "document",
+      "message": "Duplicate paragraph appears 6 times",
+      "auto_fixable": false,
+      "excerpt": "jm collection은 패션·잡화 전문 b2c 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(jm-web), 주문·결제·재고 api(jm-api), 운영·cs 백오피스(jm-admin)로 구성된다. 회원·비"
+    },
+    {
+      "category": "duplicate_paragraph",
+      "severity": "warning",
+      "location": "document",
+      "message": "Duplicate paragraph appears 6 times",
+      "auto_fixable": false,
+      "excerpt": "시스템은 react spa + node.js(typescript) 마이크로서비스 + postgresql/redis/s3/cloudfront 아키텍처를 따른다. 결제는 pg사 토큰화 연동, 개인정보·결제 데이터는 ae"
+    },
+    {
+      "category": "duplicate_paragraph",
+      "severity": "warning",
+      "location": "document",
+      "message": "Duplicate paragraph appears 6 times",
+      "auto_fixable": false,
+      "excerpt": "본 문서는 jm collection 소프트웨어의 기능·보안·비기능 요구사항과 pci dss·owasp asvs·개인정보보호법 추적성 매트릭스를 정의한다."
+    },
+    {
+      "category": "duplicate_paragraph",
+      "severity": "warning",
+      "location": "document",
+      "message": "Duplicate paragraph appears 3 times",
+      "auto_fixable": false,
+      "excerpt": "jm-web(react spa, cloudfront/s3), jm-api(node.js 마이크로서비스, ecs/rds/redis), jm-admin(react spa, 내부 vpc), postgresql·redis·"
+    },
+    {
+      "category": "duplicate_paragraph",
+      "severity": "warning",
+      "location": "document",
+      "message": "Duplicate paragraph appears 2 times",
+      "auto_fixable": false,
+      "excerpt": "jm-web 사용자는 일반 소비자(회원·비회원)이다. jm-admin 사용자는 jm collection 운영·cs·물류 담당자이며 rbac 역할(관리자·상품·주문·cs)에 따라 접근 권한이 부여된다."
+    },
+    {
+      "category": "duplicate_paragraph",
+      "severity": "warning",
+      "location": "document",
+      "message": "Duplicate paragraph appears 2 times",
+      "auto_fixable": false,
+      "excerpt": "규제: pci dss v4.0, 개인정보보호법, owasp asvs v4.0. 하드웨어: html5 지원 브라우저 및 https 네트워크. 운영: aws ap-northeast-2 리전, rds multi-az, c"
+    },
+    {
+      "category": "duplicate_paragraph",
+      "severity": "warning",
+      "location": "document",
+      "message": "Duplicate paragraph appears 2 times",
+      "auto_fixable": false,
+      "excerpt": "pg사·택배사·이메일/sms 게이트웨이 api 가용, aws 인프라 sla, 고객 단말 tls 1.2+ 지원, 운영자 mfa 등록 완료를 전제한다."
+    },
+    {
+      "category": "duplicate_paragraph",
+      "severity": "warning",
+      "location": "document",
+      "message": "Duplicate paragraph appears 4 times",
+      "auto_fixable": false,
+      "excerpt": "가용성 99.9% 목표, 주문·결제 api p95 500ms 이내, 결제·개인정보 aes-256 저장, 감사 로그 1년 보존, owasp top 10 대응, rbac·세션 타임아웃·비밀번호 정책 적용."
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 1: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 3: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 4: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 5: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 7: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 8: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 9: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 10: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 11: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 12: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 13: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 14: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 15: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 16: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 17: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "structure",
+      "severity": "fail",
+      "location": "structure",
+      "message": "Req. 18: no description/purpose filled",
+      "auto_fixable": true,
+      "excerpt": ""
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[9]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION Co., Ltd."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[30]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION 온라인 쇼핑몰 소프트웨어의 내부 구조, 모듈, 인터페이스, 데이터 모델 및 보안·비기능 설계를 명세하여 개발·시험·운영의 기준을 제공한다."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[31]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "전체 시스템 개요는 그림 1과 같다. 고객은 JM-web(React SPA)에서 상품을 탐색·주문·결제하고, JM-api(Node.js)가 회원·상품·주문·결제·배송 API를 제공한다. 운영자는 JM-admin에서 "
+    },
+    {
+      "category": "figure_table",
+      "severity": "warning",
+      "location": "paragraph[31]",
+      "message": "Figure/table placeholder (figure_placeholder)",
+      "auto_fixable": false,
+      "excerpt": "전체 시스템 개요는 그림 1과 같다. 고객은 JM-web(React SPA)에서 상품을 탐색·주문·결제하고, JM-api(Node.js)가 회원·상품·주문·결제·배송 API를 제공한다. 운영자는 JM-admin에서 "
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[33]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "본 문서는 JM COLLECTION 온라인 쇼핑몰 소프트웨어(JM-web, JM-api, JM-admin)에 적용된다."
+    },
+    {
+      "category": "placeholder",
+      "severity": "fail",
+      "location": "paragraph[41]",
+      "message": "Placeholder detected (placeholder_xxxx)",
+      "auto_fixable": true,
+      "excerpt": "소프트웨어 개발 계획서 (XX-XX-XXXX)"
+    },
+    {
+      "category": "placeholder",
+      "severity": "fail",
+      "location": "paragraph[42]",
+      "message": "Placeholder detected (placeholder_xxxx)",
+      "auto_fixable": true,
+      "excerpt": "소프트웨어 요구사항명세서 (XX-XX-XXXX)"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[46]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION B2C 쇼핑몰의 회원·상품·주문·결제·배송·프로모션·운영 기능을 모듈 단위로 설계하고, PG·알림·배송 API 연동 및 보안 통제를 구현하기 위한 설계 기준을 제공한다."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[52]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "Figure 1. JM COLLECTION 시스템 구성도"
+    },
+    {
+      "category": "figure_table",
+      "severity": "warning",
+      "location": "paragraph[52]",
+      "message": "Figure/table placeholder (figure_placeholder)",
+      "auto_fixable": false,
+      "excerpt": "Figure 1. JM COLLECTION 시스템 구성도"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[54]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-web (고객몰 SPA)"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[56]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "Figure 2. JM-web 주요 화면"
+    },
+    {
+      "category": "figure_table",
+      "severity": "warning",
+      "location": "paragraph[56]",
+      "message": "Figure/table placeholder (figure_placeholder)",
+      "auto_fixable": false,
+      "excerpt": "Figure 2. JM-web 주요 화면"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[59]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "Req. 1\nJM COLLECTION은 3계층 구조(JM-web / JM-api / JM-admin)로 설계한다. JM-web은 React 18 SPA로 상품·주문·마이페이지 UI를 제공하고, JM-api는 Node"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[60]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "Req. 2\n회원가입 플로우는 약관·개인정보·마케팅 동의 체크박스를 순차 검증한다. JM-api `POST /members/signup`에서 동의 이력(terms_version, privacy_version, mar"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[61]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "Req. 3\n인증은 Local(email/password), SMS OTP, OAuth 2.0(카카오·네이버·Google) 전략 패턴으로 구현한다. JM-api AuthService가 JWT access(15분) +"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[63]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "Req. 5\n상품 카탈로그는 `categories`(3-depth), `products`, `product_skus` 스키마로 모델링한다. JM-admin에서 기획전·베스트·신상 노출 슬롯을 `merchandisin"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[65]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "Req. 7\n상품 상세는 JM-web PDP 컴포넌트(ProductGallery, OptionPicker, PriceBlock)로 구성한다. JM-api `GET /products/{id}`는 images[], op"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[66]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "Req. 8\n장바구니는 `cart_items(member_id|session_id, sku_id, qty)`로 저장한다. 비회원은 HttpOnly session cookie, 회원은 DB 영구 저장; 로그인 시 me"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[70]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-api (백엔드 서버)"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[72]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "Figure 3. JM-api 서버 구조"
+    },
+    {
+      "category": "figure_table",
+      "severity": "warning",
+      "location": "paragraph[72]",
+      "message": "Figure/table placeholder (figure_placeholder)",
+      "auto_fixable": false,
+      "excerpt": "Figure 3. JM-api 서버 구조"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[80]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "Figure 4. JM-admin 운영 화면"
+    },
+    {
+      "category": "figure_table",
+      "severity": "warning",
+      "location": "paragraph[80]",
+      "message": "Figure/table placeholder (figure_placeholder)",
+      "auto_fixable": false,
+      "excerpt": "Figure 4. JM-admin 운영 화면"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[87]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "Req. 12\n취소·반품·교환은 `return_requests` 워크플로로 모델링한다. 배송 전 취소는 재고 복원 + PG void, 수령 후 7일 이내 반품은 CS 승인 후 환불 API를 호출한다. 상태(접수→수거"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[88]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "Req. 13\nCS 모듈은 FAQ·공지(`boards`), 1:1 문의(`inquiries`)로 구성한다. JM-api는 문의 등록 시 ticket_id를 발급하고, JM-admin 답변 시 webhook으로 알림 "
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "paragraph[93]",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "Req. 18\n리뷰는 `reviews(order_item_id, rating, body, photos[])`로 저장하고 구매 확정 후에만 작성 가능하다. 신고 시 moderation queue로 이동, JM-admi"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[1] r1c2",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION 쇼핑몰 설계명세서 최초 제정"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r0c1",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r0c2",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r0c3",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r1c1",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-MALL-001"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r1c2",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-MALL-001"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r1c3",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-MALL-001"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r3c1",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-web"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r3c2",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-api"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r3c3",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM-admin"
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r5c1",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION Co., Ltd."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r5c2",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION Co., Ltd."
+    },
+    {
+      "category": "mindrium",
+      "severity": "fail",
+      "location": "table[2] r5c3",
+      "message": "Residual reference text (mindrium_brand)",
+      "auto_fixable": true,
+      "excerpt": "JM COLLECTION Co., Ltd."
+    }
+  ],
+  "documents": {
+    "mdsr": {
+      "document": "data\\trials\\trial-001-mindrium-xa\\workdir\\case\\output_mdsr.docx",
+      "template": "spec_requirements",
+      "findings": [
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[10]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION Co., Ltd."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[11]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION Co., Ltd."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[12]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION Co., Ltd."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[13]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION Co., Ltd."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[14]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION Co., Ltd."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[15]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION Co., Ltd."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[44]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "EC-SW-MDSR(JM) JM COLLECTION 소프트웨어 요구사항명세서"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[46]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION은 패션·잡화 전문 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영·CS 백오피스(JM-admin)로 구성된다. 회원·비"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[48]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "본 문서는 JM COLLECTION 소프트웨어의 기능·보안·비기능 요구사항과 PCI DSS·OWASP ASVS·개인정보보호법 추적성 매트릭스를 정의한다."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[49]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION은 패션·잡화 전문 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영·CS 백오피스(JM-admin)로 구성된다. 회원·비"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[51]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "본 문서는 JM COLLECTION 소프트웨어의 기능·보안·비기능 요구사항과 PCI DSS·OWASP ASVS·개인정보보호법 추적성 매트릭스를 정의한다."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[52]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION은 패션·잡화 전문 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영·CS 백오피스(JM-admin)로 구성된다. 회원·비"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[54]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "본 문서는 JM COLLECTION 소프트웨어의 기능·보안·비기능 요구사항과 PCI DSS·OWASP ASVS·개인정보보호법 추적성 매트릭스를 정의한다."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[55]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION은 패션·잡화 전문 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영·CS 백오피스(JM-admin)로 구성된다. 회원·비"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[57]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION은 B2C 패션·잡화 온라인 쇼핑몰 소프트웨어로, 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영 백오피스(JM-admin)가 REST API와 이벤트 기반으"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[58]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "본 문서는 JM COLLECTION 소프트웨어의 기능·보안·비기능 요구사항과 PCI DSS·OWASP ASVS·개인정보보호법 추적성 매트릭스를 정의한다."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[60]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION은 패션·잡화 전문 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영·CS 백오피스(JM-admin)로 구성된다. 회원·비"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[62]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-web(React SPA, CloudFront/S3), JM-api(Node.js 마이크로서비스, ECS/RDS/Redis), JM-admin(React SPA, 내부 VPC), PostgreSQL·Redis·"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[63]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-web(React SPA, CloudFront/S3), JM-api(Node.js 마이크로서비스, ECS/RDS/Redis), JM-admin(React SPA, 내부 VPC), PostgreSQL·Redis·"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[64]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-web(React SPA, CloudFront/S3), JM-api(Node.js 마이크로서비스, ECS/RDS/Redis), JM-admin(React SPA, 내부 VPC), PostgreSQL·Redis·"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[65]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "그림 1. JM COLLECTION 소프트웨어 상호 관계도"
+        },
+        {
+          "category": "figure_table",
+          "severity": "warning",
+          "location": "paragraph[65]",
+          "message": "Figure/table placeholder (figure_placeholder)",
+          "auto_fixable": false,
+          "excerpt": "그림 1. JM COLLECTION 소프트웨어 상호 관계도"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[66]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "본 문서는 JM COLLECTION 소프트웨어의 기능·보안·비기능 요구사항과 PCI DSS·OWASP ASVS·개인정보보호법 추적성 매트릭스를 정의한다."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[68]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION은 패션·잡화 전문 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영·CS 백오피스(JM-admin)로 구성된다. 회원·비"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[70]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-web 사용자는 일반 소비자(회원·비회원)이다. JM-admin 사용자는 JM COLLECTION 운영·CS·물류 담당자이며 RBAC 역할(관리자·상품·주문·CS)에 따라 접근 권한이 부여된다."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[71]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-web 사용자는 일반 소비자(회원·비회원)이다. JM-admin 사용자는 JM COLLECTION 운영·CS·물류 담당자이며 RBAC 역할(관리자·상품·주문·CS)에 따라 접근 권한이 부여된다."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[72]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "본 문서는 JM COLLECTION 소프트웨어의 기능·보안·비기능 요구사항과 PCI DSS·OWASP ASVS·개인정보보호법 추적성 매트릭스를 정의한다."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[117]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "주문·결제·배송 상태는 JM-admin 대시보드에서 실시간 조회 가능해야 한다."
+        },
+        {
+          "category": "figure_table",
+          "severity": "warning",
+          "location": "paragraph[181]",
+          "message": "Figure/table placeholder (table_placeholder)",
+          "auto_fixable": false,
+          "excerpt": "PCI DSS v4.0 및 OWASP ASVS v4.0 기본 원칙과 [표3. 사이버 보안 요구사항]을 충족하여야 하며, 카드 데이터 보호·접근 통제·취약점 관리·침해 대응 요구사항은 본 문서 및 추적성 매트릭스에 따"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[1] r1c2",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION 쇼핑몰 요구사항명세서 최초 제정"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r0c1",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r0c2",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r0c3",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r1c1",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-MALL-001"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r1c2",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-MALL-001"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r1c3",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-MALL-001"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r3c1",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-web"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r3c2",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-api"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r3c3",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-admin"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r5c1",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION Co., Ltd."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r5c2",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION Co., Ltd."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r5c3",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION Co., Ltd."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[3] r0c1",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-web (고객몰)"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[4] r0c1",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-api (주문·결제·회원 API)"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[5] r0c1",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-admin (운영 백오피스)"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[35] r0c1",
+          "message": "Residual reference text (mindrium_residual)",
+          "auto_fixable": true,
+          "excerpt": "처방받은 환자를 시스템에 등록하고, 등록된 환자의 정보에 접근할 수 있도록 하기 위함이다"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[35] r1c1",
+          "message": "Residual reference text (mindrium_residual)",
+          "auto_fixable": true,
+          "excerpt": "처방받은 환자를 시스템에 등록하고, 등록된 환자의 정보에 접근할 수 있도록 하기 위함이다."
+        },
+        {
+          "category": "duplicate_paragraph",
+          "severity": "warning",
+          "location": "document",
+          "message": "Duplicate paragraph appears 6 times",
+          "auto_fixable": false,
+          "excerpt": "jm collection은 패션·잡화 전문 b2c 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(jm-web), 주문·결제·재고 api(jm-api), 운영·cs 백오피스(jm-admin)로 구성된다. 회원·비"
+        },
+        {
+          "category": "duplicate_paragraph",
+          "severity": "warning",
+          "location": "document",
+          "message": "Duplicate paragraph appears 6 times",
+          "auto_fixable": false,
+          "excerpt": "시스템은 react spa + node.js(typescript) 마이크로서비스 + postgresql/redis/s3/cloudfront 아키텍처를 따른다. 결제는 pg사 토큰화 연동, 개인정보·결제 데이터는 ae"
+        },
+        {
+          "category": "duplicate_paragraph",
+          "severity": "warning",
+          "location": "document",
+          "message": "Duplicate paragraph appears 6 times",
+          "auto_fixable": false,
+          "excerpt": "본 문서는 jm collection 소프트웨어의 기능·보안·비기능 요구사항과 pci dss·owasp asvs·개인정보보호법 추적성 매트릭스를 정의한다."
+        },
+        {
+          "category": "duplicate_paragraph",
+          "severity": "warning",
+          "location": "document",
+          "message": "Duplicate paragraph appears 3 times",
+          "auto_fixable": false,
+          "excerpt": "jm-web(react spa, cloudfront/s3), jm-api(node.js 마이크로서비스, ecs/rds/redis), jm-admin(react spa, 내부 vpc), postgresql·redis·"
+        },
+        {
+          "category": "duplicate_paragraph",
+          "severity": "warning",
+          "location": "document",
+          "message": "Duplicate paragraph appears 2 times",
+          "auto_fixable": false,
+          "excerpt": "jm-web 사용자는 일반 소비자(회원·비회원)이다. jm-admin 사용자는 jm collection 운영·cs·물류 담당자이며 rbac 역할(관리자·상품·주문·cs)에 따라 접근 권한이 부여된다."
+        },
+        {
+          "category": "duplicate_paragraph",
+          "severity": "warning",
+          "location": "document",
+          "message": "Duplicate paragraph appears 2 times",
+          "auto_fixable": false,
+          "excerpt": "규제: pci dss v4.0, 개인정보보호법, owasp asvs v4.0. 하드웨어: html5 지원 브라우저 및 https 네트워크. 운영: aws ap-northeast-2 리전, rds multi-az, c"
+        },
+        {
+          "category": "duplicate_paragraph",
+          "severity": "warning",
+          "location": "document",
+          "message": "Duplicate paragraph appears 2 times",
+          "auto_fixable": false,
+          "excerpt": "pg사·택배사·이메일/sms 게이트웨이 api 가용, aws 인프라 sla, 고객 단말 tls 1.2+ 지원, 운영자 mfa 등록 완료를 전제한다."
+        },
+        {
+          "category": "duplicate_paragraph",
+          "severity": "warning",
+          "location": "document",
+          "message": "Duplicate paragraph appears 4 times",
+          "auto_fixable": false,
+          "excerpt": "가용성 99.9% 목표, 주문·결제 api p95 500ms 이내, 결제·개인정보 aes-256 저장, 감사 로그 1년 보존, owasp top 10 대응, rbac·세션 타임아웃·비밀번호 정책 적용."
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 1: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 3: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 4: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 5: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 7: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 8: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 9: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 10: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 11: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 12: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 13: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 14: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 15: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 16: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 17: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        },
+        {
+          "category": "structure",
+          "severity": "fail",
+          "location": "structure",
+          "message": "Req. 18: no description/purpose filled",
+          "auto_fixable": true,
+          "excerpt": ""
+        }
+      ],
+      "structure_review": {
+        "issue_count": 16,
+        "residual_count": 0,
+        "issues": [
+          "Req. 1: no description/purpose filled",
+          "Req. 3: no description/purpose filled",
+          "Req. 4: no description/purpose filled",
+          "Req. 5: no description/purpose filled",
+          "Req. 7: no description/purpose filled",
+          "Req. 8: no description/purpose filled",
+          "Req. 9: no description/purpose filled",
+          "Req. 10: no description/purpose filled",
+          "Req. 11: no description/purpose filled",
+          "Req. 12: no description/purpose filled",
+          "Req. 13: no description/purpose filled",
+          "Req. 14: no description/purpose filled",
+          "Req. 15: no description/purpose filled",
+          "Req. 16: no description/purpose filled",
+          "Req. 17: no description/purpose filled",
+          "Req. 18: no description/purpose filled"
+        ],
+        "residual": [],
+        "requirements_expected": 37
+      },
+      "paragraph_count": 183,
+      "table_count": 45
+    },
+    "mddr": {
+      "document": "data\\trials\\trial-001-mindrium-xa\\workdir\\case\\output_mddr.docx",
+      "template": "spec_design",
+      "findings": [
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[9]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION Co., Ltd."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[30]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION 온라인 쇼핑몰 소프트웨어의 내부 구조, 모듈, 인터페이스, 데이터 모델 및 보안·비기능 설계를 명세하여 개발·시험·운영의 기준을 제공한다."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[31]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "전체 시스템 개요는 그림 1과 같다. 고객은 JM-web(React SPA)에서 상품을 탐색·주문·결제하고, JM-api(Node.js)가 회원·상품·주문·결제·배송 API를 제공한다. 운영자는 JM-admin에서 "
+        },
+        {
+          "category": "figure_table",
+          "severity": "warning",
+          "location": "paragraph[31]",
+          "message": "Figure/table placeholder (figure_placeholder)",
+          "auto_fixable": false,
+          "excerpt": "전체 시스템 개요는 그림 1과 같다. 고객은 JM-web(React SPA)에서 상품을 탐색·주문·결제하고, JM-api(Node.js)가 회원·상품·주문·결제·배송 API를 제공한다. 운영자는 JM-admin에서 "
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[33]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "본 문서는 JM COLLECTION 온라인 쇼핑몰 소프트웨어(JM-web, JM-api, JM-admin)에 적용된다."
+        },
+        {
+          "category": "placeholder",
+          "severity": "fail",
+          "location": "paragraph[41]",
+          "message": "Placeholder detected (placeholder_xxxx)",
+          "auto_fixable": true,
+          "excerpt": "소프트웨어 개발 계획서 (XX-XX-XXXX)"
+        },
+        {
+          "category": "placeholder",
+          "severity": "fail",
+          "location": "paragraph[42]",
+          "message": "Placeholder detected (placeholder_xxxx)",
+          "auto_fixable": true,
+          "excerpt": "소프트웨어 요구사항명세서 (XX-XX-XXXX)"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[46]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION B2C 쇼핑몰의 회원·상품·주문·결제·배송·프로모션·운영 기능을 모듈 단위로 설계하고, PG·알림·배송 API 연동 및 보안 통제를 구현하기 위한 설계 기준을 제공한다."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[52]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "Figure 1. JM COLLECTION 시스템 구성도"
+        },
+        {
+          "category": "figure_table",
+          "severity": "warning",
+          "location": "paragraph[52]",
+          "message": "Figure/table placeholder (figure_placeholder)",
+          "auto_fixable": false,
+          "excerpt": "Figure 1. JM COLLECTION 시스템 구성도"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[54]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-web (고객몰 SPA)"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[56]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "Figure 2. JM-web 주요 화면"
+        },
+        {
+          "category": "figure_table",
+          "severity": "warning",
+          "location": "paragraph[56]",
+          "message": "Figure/table placeholder (figure_placeholder)",
+          "auto_fixable": false,
+          "excerpt": "Figure 2. JM-web 주요 화면"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[59]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "Req. 1\nJM COLLECTION은 3계층 구조(JM-web / JM-api / JM-admin)로 설계한다. JM-web은 React 18 SPA로 상품·주문·마이페이지 UI를 제공하고, JM-api는 Node"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[60]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "Req. 2\n회원가입 플로우는 약관·개인정보·마케팅 동의 체크박스를 순차 검증한다. JM-api `POST /members/signup`에서 동의 이력(terms_version, privacy_version, mar"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[61]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "Req. 3\n인증은 Local(email/password), SMS OTP, OAuth 2.0(카카오·네이버·Google) 전략 패턴으로 구현한다. JM-api AuthService가 JWT access(15분) +"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[63]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "Req. 5\n상품 카탈로그는 `categories`(3-depth), `products`, `product_skus` 스키마로 모델링한다. JM-admin에서 기획전·베스트·신상 노출 슬롯을 `merchandisin"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[65]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "Req. 7\n상품 상세는 JM-web PDP 컴포넌트(ProductGallery, OptionPicker, PriceBlock)로 구성한다. JM-api `GET /products/{id}`는 images[], op"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[66]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "Req. 8\n장바구니는 `cart_items(member_id|session_id, sku_id, qty)`로 저장한다. 비회원은 HttpOnly session cookie, 회원은 DB 영구 저장; 로그인 시 me"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[70]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-api (백엔드 서버)"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[72]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "Figure 3. JM-api 서버 구조"
+        },
+        {
+          "category": "figure_table",
+          "severity": "warning",
+          "location": "paragraph[72]",
+          "message": "Figure/table placeholder (figure_placeholder)",
+          "auto_fixable": false,
+          "excerpt": "Figure 3. JM-api 서버 구조"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[80]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "Figure 4. JM-admin 운영 화면"
+        },
+        {
+          "category": "figure_table",
+          "severity": "warning",
+          "location": "paragraph[80]",
+          "message": "Figure/table placeholder (figure_placeholder)",
+          "auto_fixable": false,
+          "excerpt": "Figure 4. JM-admin 운영 화면"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[87]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "Req. 12\n취소·반품·교환은 `return_requests` 워크플로로 모델링한다. 배송 전 취소는 재고 복원 + PG void, 수령 후 7일 이내 반품은 CS 승인 후 환불 API를 호출한다. 상태(접수→수거"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[88]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "Req. 13\nCS 모듈은 FAQ·공지(`boards`), 1:1 문의(`inquiries`)로 구성한다. JM-api는 문의 등록 시 ticket_id를 발급하고, JM-admin 답변 시 webhook으로 알림 "
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "paragraph[93]",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "Req. 18\n리뷰는 `reviews(order_item_id, rating, body, photos[])`로 저장하고 구매 확정 후에만 작성 가능하다. 신고 시 moderation queue로 이동, JM-admi"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[1] r1c2",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION 쇼핑몰 설계명세서 최초 제정"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r0c1",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r0c2",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r0c3",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r1c1",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-MALL-001"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r1c2",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-MALL-001"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r1c3",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-MALL-001"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r3c1",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-web"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r3c2",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-api"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r3c3",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM-admin"
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r5c1",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION Co., Ltd."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r5c2",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION Co., Ltd."
+        },
+        {
+          "category": "mindrium",
+          "severity": "fail",
+          "location": "table[2] r5c3",
+          "message": "Residual reference text (mindrium_brand)",
+          "auto_fixable": true,
+          "excerpt": "JM COLLECTION Co., Ltd."
+        }
+      ],
+      "structure_review": {
+        "issue_count": 0,
+        "residual_count": 0,
+        "issues": [],
+        "residual": [],
+        "design_items_expected": 38,
+        "design_blocks_filled": 38,
+        "req_tables_filled": 38
+      },
+      "paragraph_count": 108,
+      "table_count": 3
+    },
+    "xxcs": {
+      "document": "data\\trials\\trial-001-mindrium-xa\\workdir\\case\\output_xxcs.docx",
+      "template": "report_security_verification",
+      "findings": [],
+      "structure_review": {
+        "issue_count": 0,
+        "residual_count": 0,
+        "issues": [],
+        "residual": [],
+        "security_ids_expected": 26,
+        "security_ids_found": 34,
+        "tables_with_content": 26,
+        "missing_security_ids": []
+      },
+      "paragraph_count": 81,
+      "table_count": 37
+    }
+  },
+  "comparison": {
+    "comparisons": {},
+    "aggregate": {}
+  },
+  "auto_fixable_count": 96,
+  "human_review_count": 15,
+  "report_path": "data\\trials\\trial-001-mindrium-xa\\workdir\\case\\quality_report.md"
+}

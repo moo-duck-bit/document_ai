@@ -1,0 +1,29 @@
+{
+  "case_id": "v2_dev_ec_tbl_nocap",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "Req. 11 추적성 행 갱신",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/mdtm_no_caption.docx",
+      "filename": "mdtm_no_caption.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM_NO_CAPTION"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "table_structure",
+    "caption_removal"
+  ],
+  "difficulty": "medium",
+  "notes": "caption removal metamorphic",
+  "source_type": "GENERATED",
+  "transformation": "table_caption_removal",
+  "base_case_id": "v2_dev_ec_req11_exact",
+  "fixture_fingerprint": "1de66cc3d547ef218541dd4e02af8c1074284e8747bbfc7421914737438fcdcb",
+  "sanitization_status": "N/A"
+}

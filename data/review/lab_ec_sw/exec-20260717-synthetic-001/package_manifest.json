@@ -1,0 +1,15 @@
+{
+  "case_id": "lab_ec_sw",
+  "execution_id": "exec-20260717-synthetic-001",
+  "synthetic": true,
+  "created_at": "2026-07-17T15:31:47Z",
+  "files": [
+    "reviewer_instructions.md",
+    "execution_summary.md",
+    "execution_review_checklist.md",
+    "execution_review.template.json",
+    "evidence_manifest.json",
+    "package_manifest.json"
+  ],
+  "overlay_accepted_execution_id": "exec-20260717-synthetic-001"
+}

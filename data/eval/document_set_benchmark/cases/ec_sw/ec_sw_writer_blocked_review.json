@@ -1,0 +1,24 @@
+{
+  "case_id": "ec_sw_writer_blocked_review",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "Req. 2 자동 반영 금지 검토 필요",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/MDTM.docx",
+      "filename": "MDTM.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM"
+  ],
+  "expected_status": "PARTIAL",
+  "tags": [
+    "writer_blocked",
+    "writer_update"
+  ],
+  "difficulty": "medium",
+  "notes": "Writer must remain gated",
+  "source_type": "fixture"
+}

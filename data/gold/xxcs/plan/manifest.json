@@ -1,0 +1,10 @@
+{
+  "entries": [
+    {
+      "case_id": "lab_ec_sw",
+      "gold_type": "plan",
+      "synthetic": false,
+      "note": "Use independent plan gold / case gold_xxcs.docx for plan validation"
+    }
+  ]
+}

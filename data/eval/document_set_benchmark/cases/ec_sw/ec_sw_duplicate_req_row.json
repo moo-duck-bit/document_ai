@@ -1,0 +1,23 @@
+{
+  "case_id": "ec_sw_duplicate_req_row",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "Req. 2 중복 행 가능성 검토",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/MDTM.docx",
+      "filename": "MDTM.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM"
+  ],
+  "expected_status": "PARTIAL",
+  "tags": [
+    "duplicate_reference"
+  ],
+  "difficulty": "medium",
+  "notes": "Corpus has unique Req.2; exact patch",
+  "source_type": "fixture"
+}

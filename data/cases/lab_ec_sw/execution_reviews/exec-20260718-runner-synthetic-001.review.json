@@ -1,0 +1,156 @@
+{
+  "case_id": "lab_ec_sw",
+  "execution_id": "exec-20260718-runner-synthetic-001",
+  "reviewer": {
+    "name": "Document AI Fixture Reviewer",
+    "role": "pipeline_test"
+  },
+  "reviewed_at": "2026-07-17T16:12:00Z",
+  "overall_status": "test_fixture_verified",
+  "synthetic_acknowledged": true,
+  "verification_scope": "fixture_only",
+  "note": "Read-only runner fixture output verified for pipeline compatibility only. Not real execution gold.",
+  "test_reviews": [
+    {
+      "security_test_id": "SI-01",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": true,
+      "evidence_confirmed": true,
+      "evidence_hash_verified": true,
+      "selected_for_report": false,
+      "note": "Synthetic TLS PASS fixture"
+    },
+    {
+      "security_test_id": "SI-02",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": true,
+      "evidence_confirmed": true,
+      "evidence_hash_verified": true,
+      "selected_for_report": false,
+      "note": "Synthetic TLS version FAIL fixture"
+    },
+    {
+      "security_test_id": "SI-03",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": true,
+      "evidence_confirmed": true,
+      "evidence_hash_verified": true,
+      "selected_for_report": false,
+      "note": "Synthetic header PASS fixture"
+    },
+    {
+      "security_test_id": "SI-04",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": true,
+      "evidence_confirmed": true,
+      "evidence_hash_verified": true,
+      "selected_for_report": false,
+      "note": "Synthetic HSTS missing FAIL fixture"
+    },
+    {
+      "security_test_id": "SI-05",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": true,
+      "evidence_confirmed": true,
+      "evidence_hash_verified": true,
+      "selected_for_report": false,
+      "note": "Synthetic timeout REVIEW_REQUIRED fixture"
+    },
+    {
+      "security_test_id": "SI-06",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": true,
+      "evidence_confirmed": true,
+      "evidence_hash_verified": true,
+      "selected_for_report": false,
+      "note": "Synthetic API health PASS fixture"
+    },
+    {
+      "security_test_id": "SI-07",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": true,
+      "evidence_confirmed": true,
+      "evidence_hash_verified": true,
+      "selected_for_report": false,
+      "note": "Synthetic unexpected status FAIL fixture"
+    },
+    {
+      "security_test_id": "SI-08",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": true,
+      "evidence_confirmed": true,
+      "evidence_hash_verified": true,
+      "selected_for_report": false,
+      "note": "Synthetic single-port connectivity PASS fixture"
+    },
+    {
+      "security_test_id": "SI-09",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": true,
+      "evidence_confirmed": true,
+      "evidence_hash_verified": true,
+      "selected_for_report": false,
+      "note": "Synthetic port timeout REVIEW_REQUIRED fixture"
+    }
+  ],
+  "imported_at": "2026-07-17T16:10:34Z",
+  "source_review_file": "data\\review\\lab_ec_sw\\exec-20260718-runner-synthetic-001\\execution_review.json",
+  "synthetic": true,
+  "hash_warnings": [],
+  "audit": [
+    {
+      "security_test_id": "SI-01-T01",
+      "execution_id": "exec-20260718-runner-synthetic-001",
+      "review_status": "test_fixture_verified",
+      "selected_for_report": false
+    },
+    {
+      "security_test_id": "SI-02-T01",
+      "execution_id": "exec-20260718-runner-synthetic-001",
+      "review_status": "test_fixture_verified",
+      "selected_for_report": false
+    },
+    {
+      "security_test_id": "SI-03-T01",
+      "execution_id": "exec-20260718-runner-synthetic-001",
+      "review_status": "test_fixture_verified",
+      "selected_for_report": false
+    },
+    {
+      "security_test_id": "SI-04-T01",
+      "execution_id": "exec-20260718-runner-synthetic-001",
+      "review_status": "test_fixture_verified",
+      "selected_for_report": false
+    },
+    {
+      "security_test_id": "SI-05-T01",
+      "execution_id": "exec-20260718-runner-synthetic-001",
+      "review_status": "test_fixture_verified",
+      "selected_for_report": false
+    },
+    {
+      "security_test_id": "SI-06-T01",
+      "execution_id": "exec-20260718-runner-synthetic-001",
+      "review_status": "test_fixture_verified",
+      "selected_for_report": false
+    },
+    {
+      "security_test_id": "SI-07-T01",
+      "execution_id": "exec-20260718-runner-synthetic-001",
+      "review_status": "test_fixture_verified",
+      "selected_for_report": false
+    },
+    {
+      "security_test_id": "SI-08-T01",
+      "execution_id": "exec-20260718-runner-synthetic-001",
+      "review_status": "test_fixture_verified",
+      "selected_for_report": false
+    },
+    {
+      "security_test_id": "SI-09-T01",
+      "execution_id": "exec-20260718-runner-synthetic-001",
+      "review_status": "test_fixture_verified",
+      "selected_for_report": false
+    }
+  ]
+}

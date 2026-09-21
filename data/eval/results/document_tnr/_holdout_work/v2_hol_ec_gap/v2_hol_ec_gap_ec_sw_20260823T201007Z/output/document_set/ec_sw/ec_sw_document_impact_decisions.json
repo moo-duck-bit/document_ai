@@ -1,0 +1,53 @@
+[
+  {
+    "document_id": "MDTM_WITH_GAP",
+    "predicted_status": "UNRELATED",
+    "substantive_evidence_count": 0,
+    "role_evidence_count": 2,
+    "exact_identifier_count": 0,
+    "normalized_identifier_count": 0,
+    "semantic_evidence_count": 0,
+    "malformed_identifier_count": 0,
+    "reason_codes": [
+      "role_or_presence_only",
+      "no_role_only_impacted"
+    ],
+    "source_stages": [
+      "catalog_role",
+      "upload"
+    ],
+    "top_evidence": [
+      {
+        "document_id": "MDTM_WITH_GAP",
+        "document_role": "traceability",
+        "evidence_type": "ROLE_COMPATIBILITY",
+        "evidence_value": "traceability",
+        "source_stage": "catalog_role",
+        "source_node_id": null,
+        "confidence": 0.2,
+        "independent_group": "role",
+        "reason_codes": [
+          "role_compatible"
+        ],
+        "supports_impacted": false,
+        "supports_review": false
+      },
+      {
+        "document_id": "MDTM_WITH_GAP",
+        "document_role": "traceability",
+        "evidence_type": "DOCUMENT_PRESENCE",
+        "evidence_value": "mdtm_with_gap.docx",
+        "source_stage": "upload",
+        "source_node_id": null,
+        "confidence": 0.1,
+        "independent_group": "presence",
+        "reason_codes": [
+          "document_uploaded"
+        ],
+        "supports_impacted": false,
+        "supports_review": false
+      }
+    ],
+    "human_review_required": false
+  }
+]

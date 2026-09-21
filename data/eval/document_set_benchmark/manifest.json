@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "name": "document_set_benchmark_v1",
+    "version": "1.0",
+    "case_count": 24,
+    "template_sections": [
+      "document",
+      "executive_summary",
+      "background",
+      "objectives",
+      "methodology",
+      "results",
+      "discussion",
+      "conclusion",
+      "references",
+      "appendix"
+    ]
+  },
+  "cases": [
+    "cases/ec_sw/ec_sw_exact_req_single.json",
+    "cases/ec_sw/ec_sw_exact_req_multi_mention.json",
+    "cases/ec_sw/ec_sw_multi_req_ids.json",
+    "cases/ec_sw/ec_sw_design_id_only.json",
+    "cases/ec_sw/ec_sw_test_id_only.json",
+    "cases/ec_sw/ec_sw_semantic_only.json",
+    "cases/ec_sw/ec_sw_duplicate_req_row.json",
+    "cases/ec_sw/ec_sw_missing_identifier.json",
+    "cases/ec_sw/ec_sw_empty_row_context.json",
+    "cases/ec_sw/ec_sw_no_impact.json",
+    "cases/ec_sw/ec_sw_ambiguous_request.json",
+    "cases/ec_sw/ec_sw_writer_blocked_review.json",
+    "cases/ec_sw/ec_sw_bad_req_format.json",
+    "cases/ec_sw/ec_sw_mdtm_only_multi_doc.json",
+    "cases/ec_sw/ec_sw_req101_exact.json",
+    "cases/general_report/gr_methodology_source.json",
+    "cases/general_report/gr_results_finding.json",
+    "cases/general_report/gr_conclusion_recommendation.json",
+    "cases/general_report/gr_schedule_table.json",
+    "cases/general_report/gr_duplicate_heading.json",
+    "cases/general_report/gr_missing_section.json",
+    "cases/general_report/gr_semantic_similar.json",
+    "cases/general_report/gr_no_impact.json",
+    "cases/general_report/gr_table_cell.json"
+  ]
+}

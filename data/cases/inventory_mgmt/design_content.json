@@ -1,0 +1,17 @@
+{
+  "source": "scripts/build_jm_collection_mddr.py",
+  "template_id": "spec_design",
+  "fields": {
+    "승인자": "2026.03.20",
+    "검토자": "2026.03.20",
+    "작성자": "2026.03.20"
+  },
+  "document_title": "EC-SW-MDDR(IMS) Inventory Management System 소프트웨어 설계명세서",
+  "document_title_sdp": "EC-SW-SDP(IMS) Inventory Management System 소프트웨어 개발 계획서",
+  "document_version_line": "Ver 1.0 / 문서번호 IMS-SRS-10",
+  "cover_product_line": "Acme Logistics Co., Ltd.",
+  "revision": {
+    "date": "2026.07.09",
+    "summary": "Inventory Management System 설계명세서 최초 제정"
+  }
+}

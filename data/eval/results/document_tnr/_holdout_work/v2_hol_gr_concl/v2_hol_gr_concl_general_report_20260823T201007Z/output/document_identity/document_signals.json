@@ -1,0 +1,187 @@
+[
+  {
+    "signal_id": "fn_f0a612e4",
+    "document_source_id": "REPORT_STD",
+    "signal_type": "FILENAME_TOKEN",
+    "signal_value": "report_std.docx",
+    "normalized_value": "REPORT",
+    "confidence": 0.45,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "filename_hint:REPORT",
+      "filename_not_sufficient_alone"
+    ],
+    "independent_group": "filename"
+  },
+  {
+    "signal_id": "fnrole_9e3912b4",
+    "document_source_id": "REPORT_STD",
+    "signal_type": "DOCUMENT_ROLE_HINT",
+    "signal_value": "general_report",
+    "normalized_value": "general_report",
+    "confidence": 0.4,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "filename_role_hint"
+    ],
+    "independent_group": "filename"
+  },
+  {
+    "signal_id": "fmt_279be324",
+    "document_source_id": "REPORT_STD",
+    "signal_type": "FILE_FORMAT",
+    "signal_value": ".docx",
+    "normalized_value": "docx",
+    "confidence": 0.2,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "file_format"
+    ],
+    "independent_group": "format"
+  },
+  {
+    "signal_id": "hd_38f1bf1d",
+    "document_source_id": "REPORT_STD",
+    "signal_type": "DOCUMENT_TITLE",
+    "signal_value": "요약",
+    "normalized_value": "요약",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 0
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_047c8b3d",
+    "document_source_id": "REPORT_STD",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "요약 본문 내용입니다.",
+    "normalized_value": "요약 본문 내용입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 1
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_186d0b63",
+    "document_source_id": "REPORT_STD",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "방법론",
+    "normalized_value": "방법론",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 2
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_725f1702",
+    "document_source_id": "REPORT_STD",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "방법론 본문 내용입니다.",
+    "normalized_value": "방법론 본문 내용입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 3
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_0781cdf2",
+    "document_source_id": "REPORT_STD",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "결과",
+    "normalized_value": "결과",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 4
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_f1269048",
+    "document_source_id": "REPORT_STD",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "결과 본문 내용입니다.",
+    "normalized_value": "결과 본문 내용입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 5
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_0cf95c36",
+    "document_source_id": "REPORT_STD",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "결론",
+    "normalized_value": "결론",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 6
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_e7637305",
+    "document_source_id": "REPORT_STD",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "결론 본문 내용입니다.",
+    "normalized_value": "결론 본문 내용입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 7
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "concept_47d293b5",
+    "document_source_id": "REPORT_STD",
+    "signal_type": "CONTENT_CONCEPT",
+    "signal_value": "general_report",
+    "normalized_value": "general_report",
+    "confidence": 0.6,
+    "source": "content",
+    "source_locator": {},
+    "reason_codes": [
+      "report_heading_concepts"
+    ],
+    "independent_group": "template_structure"
+  }
+]

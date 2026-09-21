@@ -1,0 +1,29 @@
+{
+  "raw_change_request": "결과 중복 헤딩 정리",
+  "canonical_concepts": [
+    "RESULTS"
+  ],
+  "requested_operation": "REVIEW",
+  "requested_node_roles": [
+    "PARAGRAPH_BODY",
+    "DOCUMENT_HEADING",
+    "TEMPLATE_SECTION",
+    "SECTION_CONTAINER"
+  ],
+  "target_section_concepts": [
+    "RESULTS"
+  ],
+  "intent_label": "SECTION_UPDATE",
+  "table_intent": false,
+  "list_intent": false,
+  "add_intent": false,
+  "update_intent": false,
+  "delete_intent": false,
+  "document_level": false,
+  "ambiguity": false,
+  "confidence": 0.7,
+  "reason_codes": [
+    "op_review_default",
+    "intent:SECTION_UPDATE"
+  ]
+}

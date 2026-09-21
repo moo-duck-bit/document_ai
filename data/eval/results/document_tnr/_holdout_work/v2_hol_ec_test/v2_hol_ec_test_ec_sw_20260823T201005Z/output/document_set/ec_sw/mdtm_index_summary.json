@@ -1,0 +1,15 @@
+{
+  "document_id": "MDTM",
+  "source_path": "/workspace/data/eval/document_set_benchmark_v2/fixtures/ec_sw/mdtm_base.docx",
+  "primary_table_index": 0,
+  "row_node_count": 3,
+  "requirement_id_mentions": 3,
+  "rows_with_requirement_ids": 3,
+  "rows_with_design_ids": 3,
+  "rows_with_test_ids": 3,
+  "relation_hint_count": 3,
+  "status": "OK",
+  "stable_node_count": 3,
+  "legacy_to_stable_count": 3,
+  "identity_version": "stable_node_identity_v2"
+}

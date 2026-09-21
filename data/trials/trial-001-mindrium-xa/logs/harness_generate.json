@@ -1,0 +1,589 @@
+{
+  "case_dir": "data\\trials\\trial-001-mindrium-xa\\workdir\\case",
+  "mode": "harness_generate",
+  "ok": false,
+  "steps": {
+    "intake": {
+      "case_id": "mindrium_xa",
+      "confirmed": true
+    },
+    "retrieval": {
+      "indexed_cases": 3,
+      "hits": [
+        {
+          "case_id": "jm_collection",
+          "case_dir": "data\\cases\\jm_collection",
+          "score": 4.789837863891787,
+          "metadata": {
+            "domain": "ecommerce_b2c",
+            "product_name": "JM COLLECTION",
+            "templates_in_set": [
+              "spec_requirements",
+              "spec_design",
+              "report_security_verification"
+            ]
+          }
+        }
+      ]
+    },
+    "fact_builder": {
+      "payload_keys": [
+        "requirements.json",
+        "design_content.json",
+        "design_items.json",
+        "mdsr_content.json",
+        "mddr_content.json",
+        "security_tests.json"
+      ]
+    },
+    "form_fill": {
+      "generated": [
+        "requirements.json",
+        "design_content.json",
+        "design_items.json",
+        "mdsr_content.json",
+        "mddr_content.json",
+        "security_tests.json"
+      ]
+    },
+    "materialize": {
+      "written": [
+        "design_items.json",
+        "mdsr_content.json",
+        "mddr_content.json",
+        "security_tests.json"
+      ]
+    },
+    "render": {
+      "case": "data\\trials\\trial-001-mindrium-xa\\workdir\\case",
+      "documents": {
+        "spec_requirements": {
+          "applied": [
+            "mdsr_full"
+          ],
+          "skipped": [],
+          "requirements": {
+            "sanitized": {
+              "paragraphs": 18,
+              "table_cells": 0
+            },
+            "signature_dates": true,
+            "cover_signature": true,
+            "approval": true,
+            "layout": {
+              "cover_product_line": 1,
+              "standards_filled": 2,
+              "document_codes_filled": 2,
+              "narrative_filled": 3
+            },
+            "paragraphs": 8,
+            "revision": true,
+            "product_matrix": true,
+            "component_detail": true,
+            "tech_stacks": 4,
+            "product_overview": {
+              "filled": 9
+            },
+            "unique_requirements": {
+              "filled": 43
+            },
+            "requirements": {
+              "req_tables_removed": [
+                "Req. 111"
+              ],
+              "req_tables_added": [
+                "Req. 15",
+                "Req. 16",
+                "Req. 17",
+                "Req. 18",
+                "Req. 205",
+                "Req. 206",
+                "Req. 207"
+              ],
+              "req_descriptions_filled": [
+                "Req. 2",
+                "Req. 6",
+                "Req. 100",
+                "Req. 101",
+                "Req. 102",
+                "Req. 103",
+                "Req. 104",
+                "Req. 105",
+                "Req. 106",
+                "Req. 107",
+                "Req. 108",
+                "Req. 109",
+                "Req. 110",
+                "Req. 200",
+                "Req. 201",
+                "Req. 202",
+                "Req. 203",
+                "Req. 204",
+                "Req. 205",
+                "Req. 206",
+                "Req. 207"
+              ],
+              "traceability_rows_filled": 34,
+              "total_req_ids": 37
+            },
+            "traceability": 34,
+            "review_pass_1": {
+              "issue_count": 16,
+              "residual_count": 0,
+              "issues": [
+                "Req. 1: no description/purpose filled",
+                "Req. 3: no description/purpose filled",
+                "Req. 4: no description/purpose filled",
+                "Req. 5: no description/purpose filled",
+                "Req. 7: no description/purpose filled",
+                "Req. 8: no description/purpose filled",
+                "Req. 9: no description/purpose filled",
+                "Req. 10: no description/purpose filled",
+                "Req. 11: no description/purpose filled",
+                "Req. 12: no description/purpose filled",
+                "Req. 13: no description/purpose filled",
+                "Req. 14: no description/purpose filled",
+                "Req. 15: no description/purpose filled",
+                "Req. 16: no description/purpose filled",
+                "Req. 17: no description/purpose filled",
+                "Req. 18: no description/purpose filled"
+              ],
+              "residual": [],
+              "requirements_expected": 37
+            },
+            "review_pass_2": {
+              "issue_count": 16,
+              "residual_count": 0,
+              "issues": [
+                "Req. 1: no description/purpose filled",
+                "Req. 3: no description/purpose filled",
+                "Req. 4: no description/purpose filled",
+                "Req. 5: no description/purpose filled",
+                "Req. 7: no description/purpose filled",
+                "Req. 8: no description/purpose filled",
+                "Req. 9: no description/purpose filled",
+                "Req. 10: no description/purpose filled",
+                "Req. 11: no description/purpose filled",
+                "Req. 12: no description/purpose filled",
+                "Req. 13: no description/purpose filled",
+                "Req. 14: no description/purpose filled",
+                "Req. 15: no description/purpose filled",
+                "Req. 16: no description/purpose filled",
+                "Req. 17: no description/purpose filled",
+                "Req. 18: no description/purpose filled"
+              ],
+              "residual": [],
+              "requirements_expected": 37
+            },
+            "review_pass_3": {
+              "issue_count": 16,
+              "residual_count": 0,
+              "issues": [
+                "Req. 1: no description/purpose filled",
+                "Req. 3: no description/purpose filled",
+                "Req. 4: no description/purpose filled",
+                "Req. 5: no description/purpose filled",
+                "Req. 7: no description/purpose filled",
+                "Req. 8: no description/purpose filled",
+                "Req. 9: no description/purpose filled",
+                "Req. 10: no description/purpose filled",
+                "Req. 11: no description/purpose filled",
+                "Req. 12: no description/purpose filled",
+                "Req. 13: no description/purpose filled",
+                "Req. 14: no description/purpose filled",
+                "Req. 15: no description/purpose filled",
+                "Req. 16: no description/purpose filled",
+                "Req. 17: no description/purpose filled",
+                "Req. 18: no description/purpose filled"
+              ],
+              "residual": [],
+              "requirements_expected": 37
+            },
+            "review_pass_4": {
+              "issue_count": 16,
+              "residual_count": 0,
+              "issues": [
+                "Req. 1: no description/purpose filled",
+                "Req. 3: no description/purpose filled",
+                "Req. 4: no description/purpose filled",
+                "Req. 5: no description/purpose filled",
+                "Req. 7: no description/purpose filled",
+                "Req. 8: no description/purpose filled",
+                "Req. 9: no description/purpose filled",
+                "Req. 10: no description/purpose filled",
+                "Req. 11: no description/purpose filled",
+                "Req. 12: no description/purpose filled",
+                "Req. 13: no description/purpose filled",
+                "Req. 14: no description/purpose filled",
+                "Req. 15: no description/purpose filled",
+                "Req. 16: no description/purpose filled",
+                "Req. 17: no description/purpose filled",
+                "Req. 18: no description/purpose filled"
+              ],
+              "residual": [],
+              "requirements_expected": 37
+            },
+            "review_pass_5": {
+              "issue_count": 16,
+              "residual_count": 0,
+              "issues": [
+                "Req. 1: no description/purpose filled",
+                "Req. 3: no description/purpose filled",
+                "Req. 4: no description/purpose filled",
+                "Req. 5: no description/purpose filled",
+                "Req. 7: no description/purpose filled",
+                "Req. 8: no description/purpose filled",
+                "Req. 9: no description/purpose filled",
+                "Req. 10: no description/purpose filled",
+                "Req. 11: no description/purpose filled",
+                "Req. 12: no description/purpose filled",
+                "Req. 13: no description/purpose filled",
+                "Req. 14: no description/purpose filled",
+                "Req. 15: no description/purpose filled",
+                "Req. 16: no description/purpose filled",
+                "Req. 17: no description/purpose filled",
+                "Req. 18: no description/purpose filled"
+              ],
+              "residual": [],
+              "requirements_expected": 37
+            },
+            "review_passes_completed": 5
+          },
+          "design_items": {},
+          "output": "data\\trials\\trial-001-mindrium-xa\\workdir\\case\\output_mdsr.docx"
+        },
+        "spec_design": {
+          "applied": [
+            "mddr_full"
+          ],
+          "skipped": [],
+          "requirements": {
+            "mdsr_content": {
+              "sanitized": {
+                "paragraphs": 3,
+                "table_cells": 0
+              },
+              "signature_dates": false,
+              "cover_signature": false,
+              "approval": true,
+              "layout": {
+                "cover_product_line": 1,
+                "standards_filled": 2,
+                "document_codes_filled": 0,
+                "narrative_filled": 0
+              },
+              "paragraphs": 3,
+              "paragraph_overrides": 9,
+              "revision": true,
+              "product_matrix": true,
+              "component_detail": false,
+              "tech_stacks": 0
+            },
+            "residual_sections": {
+              "sections": 6
+            },
+            "schema_applied": [
+              "승인자",
+              "검토자",
+              "작성자"
+            ],
+            "schema_skipped": [
+              "paragraph_0",
+              "개정번호",
+              "개정번호_0_2",
+              "개정번호_0_3",
+              "0",
+              "0_1_2",
+              "0_1_3",
+              "table1_r3_c1",
+              "table1_r3_c2",
+              "table1_r3_c3",
+              "table1_r4_c1",
+              "table1_r4_c2",
+              "table1_r4_c3",
+              "table1_r5_c1",
+              "table1_r5_c2",
+              "table1_r5_c3",
+              "paragraph_2",
+              "paragraph_3",
+              "paragraph_5",
+              "paragraph_6",
+              "paragraph_8",
+              "paragraph_9"
+            ],
+            "design_items": {
+              "req_ids_filled": [
+                "Req. 1",
+                "Req. 2",
+                "Req. 3",
+                "Req. 4",
+                "Req. 5",
+                "Req. 6",
+                "Req. 7",
+                "Req. 8",
+                "Req. 9",
+                "Req. 10",
+                "Req. 11",
+                "Req. 12",
+                "Req. 13",
+                "Req. 14",
+                "Req. 15",
+                "Req. 16",
+                "Req. 17",
+                "Req. 18",
+                "Req. 100",
+                "Req. 101",
+                "Req. 102",
+                "Req. 103",
+                "Req. 104",
+                "Req. 105",
+                "Req. 106",
+                "Req. 107",
+                "Req. 108",
+                "Req. 109",
+                "Req. 110",
+                "Req. 111",
+                "Req. 200",
+                "Req. 201",
+                "Req. 202",
+                "Req. 203",
+                "Req. 204",
+                "Req. 205",
+                "Req. 206",
+                "Req. 207"
+              ],
+              "total_items": 38
+            },
+            "design_consolidated": 0,
+            "design_thin_filled": 2,
+            "paragraph_overrides": 9,
+            "review_pass_1": {
+              "issue_count": 0,
+              "residual_count": 0,
+              "issues": [],
+              "residual": [],
+              "design_items_expected": 38,
+              "design_blocks_filled": 38,
+              "req_tables_filled": 38
+            },
+            "review_passes_completed": 1
+          },
+          "design_items": {
+            "req_ids_filled": [
+              "Req. 1",
+              "Req. 2",
+              "Req. 3",
+              "Req. 4",
+              "Req. 5",
+              "Req. 6",
+              "Req. 7",
+              "Req. 8",
+              "Req. 9",
+              "Req. 10",
+              "Req. 11",
+              "Req. 12",
+              "Req. 13",
+              "Req. 14",
+              "Req. 15",
+              "Req. 16",
+              "Req. 17",
+              "Req. 18",
+              "Req. 100",
+              "Req. 101",
+              "Req. 102",
+              "Req. 103",
+              "Req. 104",
+              "Req. 105",
+              "Req. 106",
+              "Req. 107",
+              "Req. 108",
+              "Req. 109",
+              "Req. 110",
+              "Req. 111",
+              "Req. 200",
+              "Req. 201",
+              "Req. 202",
+              "Req. 203",
+              "Req. 204",
+              "Req. 205",
+              "Req. 206",
+              "Req. 207"
+            ],
+            "total_items": 38
+          },
+          "output": "data\\trials\\trial-001-mindrium-xa\\workdir\\case\\output_mddr.docx"
+        },
+        "report_security_verification": {
+          "applied": [
+            "모델명"
+          ],
+          "security_tests": {
+            "tables_filled": 26,
+            "cells_filled": 104,
+            "req_ids_in_payload": 26,
+            "req_ids_filled": [
+              "IA-01",
+              "IA-02",
+              "IA-03",
+              "IA-04",
+              "IA-05",
+              "IA-06",
+              "IA-07",
+              "IA-08",
+              "SI-01",
+              "SI-02",
+              "SI-03",
+              "SI-04",
+              "SI-05",
+              "SI-06",
+              "SI-07",
+              "SI-08",
+              "SI-09",
+              "SI-10",
+              "SI-11",
+              "UC-01",
+              "UC-02",
+              "UC-03",
+              "UC-04",
+              "UC-05",
+              "UC-06",
+              "UC-07"
+            ],
+            "missing_tables": []
+          },
+          "review": {
+            "issue_count": 0,
+            "residual_count": 0,
+            "issues": [],
+            "residual": [],
+            "security_ids_expected": 26,
+            "security_ids_found": 34,
+            "tables_with_content": 26,
+            "missing_security_ids": []
+          },
+          "output": "data\\trials\\trial-001-mindrium-xa\\workdir\\case\\output_xxcs.docx"
+        }
+      }
+    },
+    "review": {
+      "case": "data\\trials\\trial-001-mindrium-xa\\workdir\\case",
+      "mdsr": {
+        "mindrium_hits": 0,
+        "review": {
+          "issue_count": 16,
+          "residual_count": 0,
+          "issues": [
+            "Req. 1: no description/purpose filled",
+            "Req. 3: no description/purpose filled",
+            "Req. 4: no description/purpose filled",
+            "Req. 5: no description/purpose filled",
+            "Req. 7: no description/purpose filled",
+            "Req. 8: no description/purpose filled",
+            "Req. 9: no description/purpose filled",
+            "Req. 10: no description/purpose filled",
+            "Req. 11: no description/purpose filled",
+            "Req. 12: no description/purpose filled",
+            "Req. 13: no description/purpose filled",
+            "Req. 14: no description/purpose filled",
+            "Req. 15: no description/purpose filled",
+            "Req. 16: no description/purpose filled",
+            "Req. 17: no description/purpose filled",
+            "Req. 18: no description/purpose filled"
+          ],
+          "residual": [],
+          "requirements_expected": 37
+        }
+      },
+      "mddr": {
+        "review": {
+          "issue_count": 0,
+          "residual_count": 0,
+          "issues": [],
+          "residual": [],
+          "design_items_expected": 38,
+          "design_blocks_filled": 38,
+          "req_tables_filled": 38
+        }
+      },
+      "ok": false,
+      "xxcs": {
+        "review": {
+          "issue_count": 0,
+          "residual_count": 0,
+          "issues": [],
+          "residual": [],
+          "security_ids_expected": 26,
+          "security_ids_found": 34,
+          "tables_with_content": 26,
+          "missing_security_ids": []
+        },
+        "present": true
+      }
+    },
+    "evaluation": {
+      "case": "data\\trials\\trial-001-mindrium-xa\\workdir\\case",
+      "passed": false,
+      "metrics": {
+        "mdsr_issues": 16,
+        "mdsr_residual": 0,
+        "mddr_issues": 0,
+        "design_blocks_filled": 38
+      },
+      "review": {
+        "case": "data\\trials\\trial-001-mindrium-xa\\workdir\\case",
+        "mdsr": {
+          "mindrium_hits": 0,
+          "review": {
+            "issue_count": 16,
+            "residual_count": 0,
+            "issues": [
+              "Req. 1: no description/purpose filled",
+              "Req. 3: no description/purpose filled",
+              "Req. 4: no description/purpose filled",
+              "Req. 5: no description/purpose filled",
+              "Req. 7: no description/purpose filled",
+              "Req. 8: no description/purpose filled",
+              "Req. 9: no description/purpose filled",
+              "Req. 10: no description/purpose filled",
+              "Req. 11: no description/purpose filled",
+              "Req. 12: no description/purpose filled",
+              "Req. 13: no description/purpose filled",
+              "Req. 14: no description/purpose filled",
+              "Req. 15: no description/purpose filled",
+              "Req. 16: no description/purpose filled",
+              "Req. 17: no description/purpose filled",
+              "Req. 18: no description/purpose filled"
+            ],
+            "residual": [],
+            "requirements_expected": 37
+          }
+        },
+        "mddr": {
+          "review": {
+            "issue_count": 0,
+            "residual_count": 0,
+            "issues": [],
+            "residual": [],
+            "design_items_expected": 38,
+            "design_blocks_filled": 38,
+            "req_tables_filled": 38
+          }
+        },
+        "ok": false,
+        "xxcs": {
+          "review": {
+            "issue_count": 0,
+            "residual_count": 0,
+            "issues": [],
+            "residual": [],
+            "security_ids_expected": 26,
+            "security_ids_found": 34,
+            "tables_with_content": 26,
+            "missing_security_ids": []
+          },
+          "present": true
+        }
+      }
+    }
+  }
+}

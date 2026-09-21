@@ -1,0 +1,48 @@
+{
+  "cases": {
+    "lab_ec_sw": {
+      "status": "PASS",
+      "scores": {
+        "overall": 90.5,
+        "docx_overall": 89.7,
+        "mdsr": 100.0,
+        "mddr": 92.0,
+        "xxcs": 77.1,
+        "semantic": 95.0
+      }
+    },
+    "inventory_mgmt": {
+      "status": "PASS",
+      "scores": {
+        "overall": 95.8,
+        "docx_overall": 96.0,
+        "mdsr": 100.0,
+        "mddr": 92.0,
+        "xxcs": null,
+        "semantic": 95.0
+      }
+    },
+    "hospital_reservation": {
+      "status": "PASS",
+      "scores": {
+        "overall": 93.3,
+        "docx_overall": 93.0,
+        "mdsr": 94.0,
+        "mddr": 92.0,
+        "xxcs": null,
+        "semantic": 95.0
+      }
+    },
+    "jm_collection": {
+      "status": "PASS",
+      "scores": {
+        "overall": 87.5,
+        "docx_overall": 86.2,
+        "mdsr": 100.0,
+        "mddr": 92.0,
+        "xxcs": 66.7,
+        "semantic": 95.0
+      }
+    }
+  }
+}

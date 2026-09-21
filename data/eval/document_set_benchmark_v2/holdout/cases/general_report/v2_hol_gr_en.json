@@ -1,0 +1,29 @@
+{
+  "case_id": "v2_hol_gr_en",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "Results section update",
+  "split": "holdout",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_en_headings.docx",
+      "filename": "report_en_headings.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_EN_HEADINGS"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "holdout",
+    "en"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "4e57e8eeac369d8d73fbc01ee531ac312fb1dc8ee5413e3a08da22fa2ae4371c",
+  "sanitization_status": "N/A"
+}

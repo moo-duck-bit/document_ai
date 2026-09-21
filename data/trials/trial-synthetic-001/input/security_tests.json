@@ -1,0 +1,1189 @@
+{
+  "source": "harness/form_fill synthesized from MDSR traceability",
+  "tests": [
+    {
+      "req_id": "IA-01",
+      "security_test_id": "IA-01-T01",
+      "security_category": "IA",
+      "title": "사용자 식별 및 인증",
+      "requirement": "IA-01",
+      "linked_req_ids": [
+        "Req. 2",
+        "Req. 3",
+        "Req. 102",
+        "Req. 201"
+      ],
+      "linked_design_ids": [
+        "Req. 2",
+        "Req. 3",
+        "Req. 102",
+        "Req. 201"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION IA-01(사용자 식별 및 인증) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION IA-01(사용자 식별 및 인증) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 2, Req. 3, Req. 102, Req. 201\nlinked_design_ids: Req. 2, Req. 3, Req. 102, Req. 201\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 2, Req. 3, Req. 102, Req. 201",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "IA-02",
+      "security_test_id": "IA-02-T01",
+      "security_category": "IA",
+      "title": "계정 관리",
+      "requirement": "IA-02",
+      "linked_req_ids": [
+        "Req. 2",
+        "Req. 3",
+        "Req. 102",
+        "Req. 202"
+      ],
+      "linked_design_ids": [
+        "Req. 2",
+        "Req. 3",
+        "Req. 102",
+        "Req. 202"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION IA-02(계정 관리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION IA-02(계정 관리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 2, Req. 3, Req. 102, Req. 202\nlinked_design_ids: Req. 2, Req. 3, Req. 102, Req. 202\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 2, Req. 3, Req. 102, Req. 202",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "IA-03",
+      "security_test_id": "IA-03-T01",
+      "security_category": "IA",
+      "title": "식별정보 관리",
+      "requirement": "IA-03",
+      "linked_req_ids": [
+        "Req. 2",
+        "Req. 100",
+        "Req. 102",
+        "Req. 207"
+      ],
+      "linked_design_ids": [
+        "Req. 2",
+        "Req. 100",
+        "Req. 102",
+        "Req. 207"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION IA-03(식별정보 관리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION IA-03(식별정보 관리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 2, Req. 100, Req. 102, Req. 207\nlinked_design_ids: Req. 2, Req. 100, Req. 102, Req. 207\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 2, Req. 100, Req. 102, Req. 207",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "IA-04",
+      "security_test_id": "IA-04-T01",
+      "security_category": "IA",
+      "title": "인증정보 관리",
+      "requirement": "IA-04",
+      "linked_req_ids": [
+        "Req. 3",
+        "Req. 4",
+        "Req. 102",
+        "Req. 105",
+        "Req. 205"
+      ],
+      "linked_design_ids": [
+        "Req. 3",
+        "Req. 4",
+        "Req. 102",
+        "Req. 105",
+        "Req. 205"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION IA-04(인증정보 관리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION IA-04(인증정보 관리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 3, Req. 4, Req. 102, Req. 105, Req. 205\nlinked_design_ids: Req. 3, Req. 4, Req. 102, Req. 105, Req. 205\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 3, Req. 4, Req. 102, Req. 105, Req. 205",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "IA-05",
+      "security_test_id": "IA-05-T01",
+      "security_category": "IA",
+      "title": "비밀번호 강도 설정",
+      "requirement": "IA-05",
+      "linked_req_ids": [
+        "Req. 4",
+        "Req. 102",
+        "Req. 202"
+      ],
+      "linked_design_ids": [
+        "Req. 4",
+        "Req. 102",
+        "Req. 202"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION IA-05(비밀번호 강도 설정) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION IA-05(비밀번호 강도 설정) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 4, Req. 102, Req. 202\nlinked_design_ids: Req. 4, Req. 102, Req. 202\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 4, Req. 102, Req. 202",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "IA-06",
+      "security_test_id": "IA-06-T01",
+      "security_category": "IA",
+      "title": "인증정보에 대한 피드백",
+      "requirement": "IA-06",
+      "linked_req_ids": [
+        "Req. 4",
+        "Req. 102",
+        "Req. 201"
+      ],
+      "linked_design_ids": [
+        "Req. 4",
+        "Req. 102",
+        "Req. 201"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION IA-06(인증정보에 대한 피드백) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION IA-06(인증정보에 대한 피드백) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 4, Req. 102, Req. 201\nlinked_design_ids: Req. 4, Req. 102, Req. 201\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 4, Req. 102, Req. 201",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "IA-07",
+      "security_test_id": "IA-07-T01",
+      "security_category": "IA",
+      "title": "연속적인 로그인 시도 실패 시 로그인 제한",
+      "requirement": "IA-07",
+      "linked_req_ids": [
+        "Req. 4",
+        "Req. 105",
+        "Req. 201"
+      ],
+      "linked_design_ids": [
+        "Req. 4",
+        "Req. 105",
+        "Req. 201"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION IA-07(연속적인 로그인 시도 실패 시 로그인 제한) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION IA-07(연속적인 로그인 시도 실패 시 로그인 제한) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 4, Req. 105, Req. 201\nlinked_design_ids: Req. 4, Req. 105, Req. 201\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 4, Req. 105, Req. 201",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "IA-08",
+      "security_test_id": "IA-08-T01",
+      "security_category": "IA",
+      "title": "시스템 사용 알림 메시지",
+      "requirement": "IA-08",
+      "linked_req_ids": [
+        "Req. 2",
+        "Req. 14",
+        "Req. 201"
+      ],
+      "linked_design_ids": [
+        "Req. 2",
+        "Req. 14",
+        "Req. 201"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION IA-08(시스템 사용 알림 메시지) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION IA-08(시스템 사용 알림 메시지) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 2, Req. 14, Req. 201\nlinked_design_ids: Req. 2, Req. 14, Req. 201\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 2, Req. 14, Req. 201",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "UC-01",
+      "security_test_id": "UC-01-T01",
+      "security_category": "UC",
+      "title": "권한 부여",
+      "requirement": "UC-01",
+      "linked_req_ids": [
+        "Req. 101",
+        "Req. 110",
+        "Req. 204"
+      ],
+      "linked_design_ids": [
+        "Req. 101",
+        "Req. 110",
+        "Req. 204"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION UC-01(권한 부여) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION UC-01(권한 부여) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 101, Req. 110, Req. 204\nlinked_design_ids: Req. 101, Req. 110, Req. 204\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 101, Req. 110, Req. 204",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "UC-02",
+      "security_test_id": "UC-02-T01",
+      "security_category": "UC",
+      "title": "모바일 코드 사용 통제",
+      "requirement": "UC-02",
+      "linked_req_ids": [],
+      "linked_design_ids": [],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION UC-02(모바일 코드 사용 통제) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_APPLICABLE",
+      "execution_status": "not_applicable",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION UC-02(모바일 코드 사용 통제) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "비해당",
+      "notes": "linked_reqs: N/A\nlinked_design_ids: N/A\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "UC-03",
+      "security_test_id": "UC-03-T01",
+      "security_category": "UC",
+      "title": "세션 잠금",
+      "requirement": "UC-03",
+      "linked_req_ids": [
+        "Req. 102",
+        "Req. 206"
+      ],
+      "linked_design_ids": [
+        "Req. 102",
+        "Req. 206"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION UC-03(세션 잠금) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION UC-03(세션 잠금) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 102, Req. 206\nlinked_design_ids: Req. 102, Req. 206\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 102, Req. 206",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "UC-04",
+      "security_test_id": "UC-04-T01",
+      "security_category": "UC",
+      "title": "감사기록 생성",
+      "requirement": "UC-04",
+      "linked_req_ids": [
+        "Req. 100",
+        "Req. 103",
+        "Req. 110"
+      ],
+      "linked_design_ids": [
+        "Req. 100",
+        "Req. 103",
+        "Req. 110"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION UC-04(감사기록 생성) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION UC-04(감사기록 생성) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 100, Req. 103, Req. 110\nlinked_design_ids: Req. 100, Req. 103, Req. 110\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 100, Req. 103, Req. 110",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "UC-05",
+      "security_test_id": "UC-05-T01",
+      "security_category": "UC",
+      "title": "감사 처리 실패 대응",
+      "requirement": "UC-05",
+      "linked_req_ids": [
+        "Req. 103",
+        "Req. 107"
+      ],
+      "linked_design_ids": [
+        "Req. 103",
+        "Req. 107"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION UC-05(감사 처리 실패 대응) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION UC-05(감사 처리 실패 대응) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 103, Req. 107\nlinked_design_ids: Req. 103, Req. 107\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 103, Req. 107",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "UC-06",
+      "security_test_id": "UC-06-T01",
+      "security_category": "UC",
+      "title": "타임스탬프",
+      "requirement": "UC-06",
+      "linked_req_ids": [
+        "Req. 103"
+      ],
+      "linked_design_ids": [
+        "Req. 103"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION UC-06(타임스탬프) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION UC-06(타임스탬프) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 103\nlinked_design_ids: Req. 103\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 103",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "UC-07",
+      "security_test_id": "UC-07-T01",
+      "security_category": "UC",
+      "title": "부인 방지",
+      "requirement": "UC-07",
+      "linked_req_ids": [
+        "Req. 103",
+        "Req. 110"
+      ],
+      "linked_design_ids": [
+        "Req. 103",
+        "Req. 110"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION UC-07(부인 방지) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION UC-07(부인 방지) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 103, Req. 110\nlinked_design_ids: Req. 103, Req. 110\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 103, Req. 110",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "SI-01",
+      "security_test_id": "SI-01-T01",
+      "security_category": "SI",
+      "title": "통신에 대한 무결성 보장",
+      "requirement": "SI-01",
+      "linked_req_ids": [
+        "Req. 104",
+        "Req. 205"
+      ],
+      "linked_design_ids": [
+        "Req. 104",
+        "Req. 205"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION SI-01(통신에 대한 무결성 보장) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION SI-01(통신에 대한 무결성 보장) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 104, Req. 205\nlinked_design_ids: Req. 104, Req. 205\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 104, Req. 205",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "SI-02",
+      "security_test_id": "SI-02-T01",
+      "security_category": "SI",
+      "title": "악성코드로부터 보호",
+      "requirement": "SI-02",
+      "linked_req_ids": [
+        "Req. 106",
+        "Req. 109"
+      ],
+      "linked_design_ids": [
+        "Req. 106",
+        "Req. 109"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION SI-02(악성코드로부터 보호) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION SI-02(악성코드로부터 보호) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 106, Req. 109\nlinked_design_ids: Req. 106, Req. 109\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 106, Req. 109",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "SI-03",
+      "security_test_id": "SI-03-T01",
+      "security_category": "SI",
+      "title": "보안 기능 검증",
+      "requirement": "SI-03",
+      "linked_req_ids": [
+        "Req. 106",
+        "Req. 109",
+        "Req. 205"
+      ],
+      "linked_design_ids": [
+        "Req. 106",
+        "Req. 109",
+        "Req. 205"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION SI-03(보안 기능 검증) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION SI-03(보안 기능 검증) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 106, Req. 109, Req. 205\nlinked_design_ids: Req. 106, Req. 109, Req. 205\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 106, Req. 109, Req. 205",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "SI-04",
+      "security_test_id": "SI-04-T01",
+      "security_category": "SI",
+      "title": "입력값 검증",
+      "requirement": "SI-04",
+      "linked_req_ids": [
+        "Req. 1"
+      ],
+      "linked_design_ids": [
+        "Req. 1"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION SI-04(입력값 검증) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION SI-04(입력값 검증) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 1\nlinked_design_ids: Req. 1\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 1",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "SI-05",
+      "security_test_id": "SI-05-T01",
+      "security_category": "SI",
+      "title": "오류 처리",
+      "requirement": "SI-05",
+      "linked_req_ids": [
+        "Req. 2",
+        "Req. 14",
+        "Req. 100",
+        "Req. 207"
+      ],
+      "linked_design_ids": [
+        "Req. 2",
+        "Req. 14",
+        "Req. 100",
+        "Req. 207"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION SI-05(오류 처리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION SI-05(오류 처리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 2, Req. 14, Req. 100, Req. 207\nlinked_design_ids: Req. 2, Req. 14, Req. 100, Req. 207\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 2, Req. 14, Req. 100, Req. 207",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "SI-06",
+      "security_test_id": "SI-06-T01",
+      "security_category": "SI",
+      "title": "메모리 관리",
+      "requirement": "SI-06",
+      "linked_req_ids": [
+        "Req. 6",
+        "Req. 7",
+        "Req. 106"
+      ],
+      "linked_design_ids": [
+        "Req. 6",
+        "Req. 7",
+        "Req. 106"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION SI-06(메모리 관리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION SI-06(메모리 관리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 6, Req. 7, Req. 106\nlinked_design_ids: Req. 6, Req. 7, Req. 106\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 6, Req. 7, Req. 106",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "SI-07",
+      "security_test_id": "SI-07-T01",
+      "security_category": "SI",
+      "title": "설정 관리",
+      "requirement": "SI-07",
+      "linked_req_ids": [
+        "Req. 8",
+        "Req. 9",
+        "Req. 106"
+      ],
+      "linked_design_ids": [
+        "Req. 8",
+        "Req. 9",
+        "Req. 106"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION SI-07(설정 관리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION SI-07(설정 관리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 8, Req. 9, Req. 106\nlinked_design_ids: Req. 8, Req. 9, Req. 106\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 8, Req. 9, Req. 106",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "SI-08",
+      "security_test_id": "SI-08-T01",
+      "security_category": "SI",
+      "title": "자원 관리",
+      "requirement": "SI-08",
+      "linked_req_ids": [
+        "Req. 1"
+      ],
+      "linked_design_ids": [
+        "Req. 1"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION SI-08(자원 관리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION SI-08(자원 관리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 1\nlinked_design_ids: Req. 1\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 1",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "SI-09",
+      "security_test_id": "SI-09-T01",
+      "security_category": "SI",
+      "title": "시스템 무결성 보장",
+      "requirement": "SI-09",
+      "linked_req_ids": [
+        "Req. 1"
+      ],
+      "linked_design_ids": [
+        "Req. 1"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION SI-09(시스템 무결성 보장) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION SI-09(시스템 무결성 보장) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 1\nlinked_design_ids: Req. 1\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 1",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "SI-10",
+      "security_test_id": "SI-10-T01",
+      "security_category": "SI",
+      "title": "보호 메커니즘 우회 방지",
+      "requirement": "SI-10",
+      "linked_req_ids": [],
+      "linked_design_ids": [],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION SI-10(보호 메커니즘 우회 방지) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_APPLICABLE",
+      "execution_status": "not_applicable",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION SI-10(보호 메커니즘 우회 방지) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "비해당",
+      "notes": "linked_reqs: N/A\nlinked_design_ids: N/A\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "SI-11",
+      "security_test_id": "SI-11-T01",
+      "security_category": "SI",
+      "title": "보안 기능 접근 통제",
+      "requirement": "SI-11",
+      "linked_req_ids": [],
+      "linked_design_ids": [],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION SI-11(보안 기능 접근 통제) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_APPLICABLE",
+      "execution_status": "not_applicable",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION SI-11(보안 기능 접근 통제) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "비해당",
+      "notes": "linked_reqs: N/A\nlinked_design_ids: N/A\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "DC-01",
+      "security_test_id": "DC-01-T01",
+      "security_category": "DC",
+      "title": "데이터 기밀성",
+      "requirement": "DC-01",
+      "linked_req_ids": [
+        "Req. 10",
+        "Req. 11",
+        "Req. 12",
+        "Req. 104",
+        "Req. 108"
+      ],
+      "linked_design_ids": [
+        "Req. 10",
+        "Req. 11",
+        "Req. 12",
+        "Req. 104",
+        "Req. 108"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION DC-01(데이터 기밀성) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION DC-01(데이터 기밀성) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 10, Req. 11, Req. 12, Req. 104, Req. 108\nlinked_design_ids: Req. 10, Req. 11, Req. 12, Req. 104, Req. 108\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 10, Req. 11, Req. 12, Req. 104, Req. 108",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "DC-02",
+      "security_test_id": "DC-02-T01",
+      "security_category": "DC",
+      "title": "데이터 무결성",
+      "requirement": "DC-02",
+      "linked_req_ids": [
+        "Req. 2",
+        "Req. 3"
+      ],
+      "linked_design_ids": [
+        "Req. 2",
+        "Req. 3"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION DC-02(데이터 무결성) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION DC-02(데이터 무결성) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 2, Req. 3\nlinked_design_ids: Req. 2, Req. 3\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 2, Req. 3",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "DC-03",
+      "security_test_id": "DC-03-T01",
+      "security_category": "DC",
+      "title": "데이터 가용성",
+      "requirement": "DC-03",
+      "linked_req_ids": [
+        "Req. 100",
+        "Req. 102",
+        "Req. 104",
+        "Req. 205"
+      ],
+      "linked_design_ids": [
+        "Req. 100",
+        "Req. 102",
+        "Req. 104",
+        "Req. 205"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION DC-03(데이터 가용성) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION DC-03(데이터 가용성) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 100, Req. 102, Req. 104, Req. 205\nlinked_design_ids: Req. 100, Req. 102, Req. 104, Req. 205\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 100, Req. 102, Req. 104, Req. 205",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "RA-01",
+      "security_test_id": "RA-01-T01",
+      "security_category": "RA",
+      "title": "DoS 공격 방어",
+      "requirement": "RA-01",
+      "linked_req_ids": [
+        "Req. 105"
+      ],
+      "linked_design_ids": [
+        "Req. 105"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION RA-01(DoS 공격 방어) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION RA-01(DoS 공격 방어) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 105\nlinked_design_ids: Req. 105\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 105",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "RA-02",
+      "security_test_id": "RA-02-T01",
+      "security_category": "RA",
+      "title": "자원 관리",
+      "requirement": "RA-02",
+      "linked_req_ids": [
+        "Req. 107"
+      ],
+      "linked_design_ids": [
+        "Req. 107"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION RA-02(자원 관리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION RA-02(자원 관리) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 107\nlinked_design_ids: Req. 107\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 107",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "RA-03",
+      "security_test_id": "RA-03-T01",
+      "security_category": "RA",
+      "title": "시스템 백업",
+      "requirement": "RA-03",
+      "linked_req_ids": [
+        "Req. 107"
+      ],
+      "linked_design_ids": [
+        "Req. 107"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION RA-03(시스템 백업) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION RA-03(시스템 백업) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 107\nlinked_design_ids: Req. 107\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 107",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "RA-04",
+      "security_test_id": "RA-04-T01",
+      "security_category": "RA",
+      "title": "통신 보호",
+      "requirement": "RA-04",
+      "linked_req_ids": [
+        "Req. 104",
+        "Req. 205"
+      ],
+      "linked_design_ids": [
+        "Req. 104",
+        "Req. 205"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION RA-04(통신 보호) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION RA-04(통신 보호) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 104, Req. 205\nlinked_design_ids: Req. 104, Req. 205\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 104, Req. 205",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    },
+    {
+      "req_id": "RA-05",
+      "security_test_id": "RA-05-T01",
+      "security_category": "RA",
+      "title": "네트워크 보호",
+      "requirement": "RA-05",
+      "linked_req_ids": [
+        "Req. 104",
+        "Req. 205"
+      ],
+      "linked_design_ids": [
+        "Req. 104",
+        "Req. 205"
+      ],
+      "test_method": "document_review_and_static_analysis",
+      "test_procedure": "JM COLLECTION RA-05(네트워크 보호) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.",
+      "expected_result": "연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.",
+      "actual_result": "NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "satisfaction": "NOT_EXECUTED",
+      "execution_status": "not_executed",
+      "evidence": "NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.",
+      "reviewer_note": "자동 생성 시험 계획이다. 실제 시험 수행 후 actual_result/evidence를 갱신해야 한다.",
+      "test_result": "시험방법: document_review_and_static_analysis\n절차: JM COLLECTION RA-05(네트워크 보호) 보안 요구사항에 대해 산출물 검토, 요구사항-설계 추적성 확인, 정적 점검 계획을 작성한다.\n예상결과: 연결된 요구사항과 설계 블록이 식별되고, 실제 시험 수행 전 검토 항목이 명확해야 한다.\n실제결과: NOT_EXECUTED - 실제 시험 결과는 아직 수집되지 않았으며 human/security review에서 보완한다.",
+      "applied": "planned",
+      "notes": "linked_reqs: Req. 104, Req. 205\nlinked_design_ids: Req. 104, Req. 205\nevidence: NOT_COLLECTED - 자동 생성 단계에서는 시험 증적을 첨부하지 않는다.\nsource: rule_generated_plan",
+      "linked_reqs": "Req. 104, Req. 205",
+      "provenance": {
+        "source": "rule_generated_plan",
+        "linked_design_rule": "security linked_req_ids intersect MDDR design req_id",
+        "execution_truth": "not a real test execution"
+      }
+    }
+  ],
+  "security_req_ids": [
+    "IA-01",
+    "IA-02",
+    "IA-03",
+    "IA-04",
+    "IA-05",
+    "IA-06",
+    "IA-07",
+    "IA-08",
+    "UC-01",
+    "UC-02",
+    "UC-03",
+    "UC-04",
+    "UC-05",
+    "UC-06",
+    "UC-07",
+    "SI-01",
+    "SI-02",
+    "SI-03",
+    "SI-04",
+    "SI-05",
+    "SI-06",
+    "SI-07",
+    "SI-08",
+    "SI-09",
+    "SI-10",
+    "SI-11",
+    "DC-01",
+    "DC-02",
+    "DC-03",
+    "RA-01",
+    "RA-02",
+    "RA-03",
+    "RA-04",
+    "RA-05"
+  ],
+  "linked_design_ids": [
+    "Req. 1",
+    "Req. 2",
+    "Req. 3",
+    "Req. 4",
+    "Req. 5",
+    "Req. 6",
+    "Req. 7",
+    "Req. 8",
+    "Req. 9",
+    "Req. 10",
+    "Req. 11",
+    "Req. 12",
+    "Req. 13",
+    "Req. 14",
+    "Req. 15",
+    "Req. 16",
+    "Req. 17",
+    "Req. 18",
+    "Req. 100",
+    "Req. 101",
+    "Req. 102",
+    "Req. 103",
+    "Req. 104",
+    "Req. 105",
+    "Req. 106",
+    "Req. 107",
+    "Req. 108",
+    "Req. 109",
+    "Req. 110",
+    "Req. 111",
+    "Req. 200",
+    "Req. 201",
+    "Req. 202",
+    "Req. 203",
+    "Req. 204",
+    "Req. 205",
+    "Req. 206",
+    "Req. 207"
+  ],
+  "seed_source": "harness/form_fill adapted from data\\examples\\ec_sw\\report_xxcs_EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서.docx",
+  "model_version": "xxcs-security-test-v2"
+}

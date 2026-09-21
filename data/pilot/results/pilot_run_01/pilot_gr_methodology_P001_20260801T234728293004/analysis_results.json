@@ -1,0 +1,47 @@
+{
+  "status": "COMPLETED",
+  "metadata": {
+    "analysis": {
+      "engine": "generic_template_sections",
+      "impacted_documents": [
+        "REPORT_PILOT_BASE"
+      ]
+    }
+  },
+  "n_review_items": 3,
+  "workflow_ref": {
+    "workflow_id": "pilot_general_report_20260801T234728Z",
+    "root": "data/pilot/real_user_document_pilot/sessions/pilot_gr_methodology_P001_20260801T234728293004/output/_workflow",
+    "documents": [
+      {
+        "document_id": "REPORT_PILOT_BASE",
+        "source_document_id": "REPORT_PILOT_BASE",
+        "filename": "report_pilot_base.docx",
+        "role": "general_report",
+        "path": "data/pilot/real_user_document_pilot/sessions/pilot_gr_methodology_P001_20260801T234728293004/output/_workflow/pilot_general_report_20260801T234728Z/input/report_pilot_base.docx",
+        "copy_path": "data/pilot/real_user_document_pilot/sessions/pilot_gr_methodology_P001_20260801T234728293004/output/_workflow/pilot_general_report_20260801T234728Z/copies/report_pilot_base.docx",
+        "user_hints": null,
+        "canonical_document_id": "GENERIC_GENERAL_REPORT",
+        "short_id": "REPORT",
+        "document_type": "GENERAL_REPORT",
+        "document_role": "general_report",
+        "domain_pack_id": "generic_document_v1",
+        "template_id": "general_report_v1",
+        "identity_status": "REVIEW_REQUIRED",
+        "identity_auto_selected": false,
+        "identity_score": 53.95,
+        "identity_reasons": [
+          "filename_hint:REPORT",
+          "filename_role_hint",
+          "heading_or_title",
+          "report_heading_concepts",
+          "insufficient_margin_or_tier"
+        ],
+        "routing_status": "ROUTED",
+        "selected_pack_id": "generic_document_v1",
+        "recommended_document_set": "general_report",
+        "registry_document_id": "REPORT"
+      }
+    ]
+  }
+}

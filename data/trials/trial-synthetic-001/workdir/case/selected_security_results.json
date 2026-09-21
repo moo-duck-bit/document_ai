@@ -1,0 +1,10 @@
+{
+  "case_id": "lab_ec_sw",
+  "model_version": "selected-security-results-v1",
+  "updated_at": "2026-07-17T16:10:34Z",
+  "allow_synthetic_demo": false,
+  "ambiguous_test_ids": [],
+  "results_by_test": {},
+  "synthetic_selected_count": 0,
+  "real_selected_count": 0
+}

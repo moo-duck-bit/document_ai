@@ -1,0 +1,30 @@
+{
+  "case_id": "v2_dev_gr_schedule_para",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "Schedule timeline update 2026-Q4",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_schedule_para.docx",
+      "filename": "report_schedule_para.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_SCHEDULE_PARA"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "schedule",
+    "paragraph",
+    "heading_en"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "f1fcb60fe06a9c6b49f4a87a0489f534885fb2ae58e4990490db89734cca63c9",
+  "sanitization_status": "N/A"
+}

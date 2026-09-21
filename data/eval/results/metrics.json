@@ -176,5 +176,11 @@
       }
     }
   ],
-  "errors": []
+  "skipped_cases": [],
+  "skipped_count": 0,
+  "error_cases": [],
+  "error_count": 0,
+  "orphan_expected_cases": [],
+  "orphan_expected_count": 0,
+  "runtime_errors": []
 }

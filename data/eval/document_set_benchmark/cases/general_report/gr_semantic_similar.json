@@ -1,0 +1,23 @@
+{
+  "case_id": "gr_semantic_similar",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "성과 요약과 유사한 핵심 내용 보강",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_base.docx",
+      "filename": "report_base.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_BASE"
+  ],
+  "expected_status": "PARTIAL",
+  "tags": [
+    "semantic_only"
+  ],
+  "difficulty": "hard",
+  "notes": "Semantic similar to summary/results",
+  "source_type": "fixture"
+}

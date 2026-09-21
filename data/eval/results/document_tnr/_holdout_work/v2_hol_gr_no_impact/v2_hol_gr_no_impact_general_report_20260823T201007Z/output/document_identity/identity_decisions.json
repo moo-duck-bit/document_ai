@@ -1,0 +1,93 @@
+[
+  {
+    "decision_id": "idec_7c1a8226e6a9",
+    "source_document_id": "REPORT_STD",
+    "canonical_document_id": "GENERIC_GENERAL_REPORT",
+    "short_id": "REPORT",
+    "document_type": "GENERAL_REPORT",
+    "document_role": "general_report",
+    "domain_pack_id": "generic_document_v1",
+    "template_id": "general_report_v1",
+    "decision_status": "REVIEW_REQUIRED",
+    "top_score": 53.95,
+    "second_score": 0.0,
+    "score_margin": 53.95,
+    "rank_tier": 3,
+    "reason_codes": [
+      "filename_hint:REPORT",
+      "filename_role_hint",
+      "heading_or_title",
+      "report_heading_concepts",
+      "insufficient_margin_or_tier"
+    ],
+    "evidence": [
+      {
+        "signal_id": "fn_f0a612e4",
+        "type": "FILENAME_TOKEN",
+        "value": "report_std.docx"
+      },
+      {
+        "signal_id": "fnrole_9e3912b4",
+        "type": "DOCUMENT_ROLE_HINT",
+        "value": "general_report"
+      },
+      {
+        "signal_id": "fmt_279be324",
+        "type": "FILE_FORMAT",
+        "value": ".docx"
+      },
+      {
+        "signal_id": "hd_38f1bf1d",
+        "type": "DOCUMENT_TITLE",
+        "value": "요약"
+      },
+      {
+        "signal_id": "hd_047c8b3d",
+        "type": "HEADING_TEXT",
+        "value": "요약 본문 내용입니다."
+      },
+      {
+        "signal_id": "hd_186d0b63",
+        "type": "HEADING_TEXT",
+        "value": "방법론"
+      },
+      {
+        "signal_id": "hd_725f1702",
+        "type": "HEADING_TEXT",
+        "value": "방법론 본문 내용입니다."
+      },
+      {
+        "signal_id": "hd_0781cdf2",
+        "type": "HEADING_TEXT",
+        "value": "결과"
+      },
+      {
+        "signal_id": "hd_f1269048",
+        "type": "HEADING_TEXT",
+        "value": "결과 본문 내용입니다."
+      },
+      {
+        "signal_id": "hd_0cf95c36",
+        "type": "HEADING_TEXT",
+        "value": "결론"
+      },
+      {
+        "signal_id": "hd_e7637305",
+        "type": "HEADING_TEXT",
+        "value": "결론 본문 내용입니다."
+      },
+      {
+        "signal_id": "concept_47d293b5",
+        "type": "CONTENT_CONCEPT",
+        "value": "general_report"
+      }
+    ],
+    "human_review_required": true,
+    "auto_selected": false,
+    "metadata": {
+      "temporary_source_id": "REPORT_STD",
+      "canonical_id_deterministic": true,
+      "filename_only": false
+    }
+  }
+]

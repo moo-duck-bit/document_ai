@@ -1,0 +1,24 @@
+{
+  "trial_id": "trial-synthetic-001",
+  "error_types": [
+    "FACT_ERROR",
+    "MISSING_CONTENT",
+    "UNSUPPORTED_ASSUMPTION",
+    "TRACEABILITY_ERROR",
+    "FORMAT_ERROR",
+    "TERMINOLOGY_ERROR",
+    "STYLE_EDIT",
+    "REDUNDANT_CONTENT",
+    "INCONSISTENT_CONTENT",
+    "WRONG_SECTION",
+    "NO_CHANGE_REQUIRED"
+  ],
+  "severities": [
+    "critical",
+    "major",
+    "minor",
+    "style"
+  ],
+  "annotations": [],
+  "note": "Set verified=true only after human confirmation. Auto candidates remain unverified."
+}

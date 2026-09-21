@@ -1,0 +1,1028 @@
+{
+  "case": "data\\cases\\hospital_reservation",
+  "case_id": "hospital_reservation",
+  "domain": "hospital_reservation",
+  "product_name": "Hospital Reservation System",
+  "status": "PASS",
+  "scores": {
+    "overall": 93.3,
+    "docx_overall": 93.0,
+    "mdsr": 94.0,
+    "mddr": 92.0,
+    "xxcs": null,
+    "semantic": 95.0
+  },
+  "metrics": {
+    "section_coverage": 1.0,
+    "paragraph_similarity": 1.0,
+    "requirement_count_match": 1.0,
+    "requirement_text_similarity": 1.0,
+    "requirement_completeness": 1.0,
+    "traceability_coverage": 1.0,
+    "traceability_row_match": 1.0,
+    "residual_placeholder_count": 1.0,
+    "domain_mismatch_count": 1.0,
+    "gold_requirement_count": 37,
+    "generated_requirement_count": 37,
+    "missing_in_generated": [],
+    "extra_in_generated": [],
+    "per_requirement": [
+      {
+        "req_id": "Req. 1",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 278,
+        "gold_len": 278
+      },
+      {
+        "req_id": "Req. 2",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 207,
+        "gold_len": 207
+      },
+      {
+        "req_id": "Req. 3",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 189,
+        "gold_len": 189
+      },
+      {
+        "req_id": "Req. 4",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 172,
+        "gold_len": 172
+      },
+      {
+        "req_id": "Req. 5",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 171,
+        "gold_len": 171
+      },
+      {
+        "req_id": "Req. 6",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 294,
+        "gold_len": 294
+      },
+      {
+        "req_id": "Req. 7",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 183,
+        "gold_len": 183
+      },
+      {
+        "req_id": "Req. 8",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 158,
+        "gold_len": 158
+      },
+      {
+        "req_id": "Req. 9",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 197,
+        "gold_len": 197
+      },
+      {
+        "req_id": "Req. 10",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 196,
+        "gold_len": 196
+      },
+      {
+        "req_id": "Req. 11",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 193,
+        "gold_len": 193
+      },
+      {
+        "req_id": "Req. 12",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 174,
+        "gold_len": 174
+      },
+      {
+        "req_id": "Req. 13",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 118,
+        "gold_len": 118
+      },
+      {
+        "req_id": "Req. 14",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 161,
+        "gold_len": 161
+      },
+      {
+        "req_id": "Req. 15",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 155,
+        "gold_len": 155
+      },
+      {
+        "req_id": "Req. 16",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 162,
+        "gold_len": 162
+      },
+      {
+        "req_id": "Req. 17",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 159,
+        "gold_len": 159
+      },
+      {
+        "req_id": "Req. 18",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 140,
+        "gold_len": 140
+      },
+      {
+        "req_id": "Req. 100",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 165,
+        "gold_len": 165
+      },
+      {
+        "req_id": "Req. 101",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 161,
+        "gold_len": 161
+      },
+      {
+        "req_id": "Req. 102",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 198,
+        "gold_len": 198
+      },
+      {
+        "req_id": "Req. 103",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 165,
+        "gold_len": 165
+      },
+      {
+        "req_id": "Req. 104",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 161,
+        "gold_len": 161
+      },
+      {
+        "req_id": "Req. 105",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 186,
+        "gold_len": 186
+      },
+      {
+        "req_id": "Req. 106",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 179,
+        "gold_len": 179
+      },
+      {
+        "req_id": "Req. 107",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 146,
+        "gold_len": 146
+      },
+      {
+        "req_id": "Req. 108",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 180,
+        "gold_len": 180
+      },
+      {
+        "req_id": "Req. 109",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 156,
+        "gold_len": 156
+      },
+      {
+        "req_id": "Req. 110",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 133,
+        "gold_len": 133
+      },
+      {
+        "req_id": "Req. 200",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 150,
+        "gold_len": 150
+      },
+      {
+        "req_id": "Req. 201",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 147,
+        "gold_len": 147
+      },
+      {
+        "req_id": "Req. 202",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 156,
+        "gold_len": 156
+      },
+      {
+        "req_id": "Req. 203",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 150,
+        "gold_len": 150
+      },
+      {
+        "req_id": "Req. 204",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 144,
+        "gold_len": 144
+      },
+      {
+        "req_id": "Req. 205",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 137,
+        "gold_len": 137
+      },
+      {
+        "req_id": "Req. 206",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 137,
+        "gold_len": 137
+      },
+      {
+        "req_id": "Req. 207",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 172,
+        "gold_len": 172
+      }
+    ],
+    "gold_traceability_coverage": 1.0,
+    "gold_traceability_count": 34,
+    "generated_traceability_count": 34,
+    "linked_req_mismatches": [],
+    "design_block_coverage": 1.0,
+    "design_block_content_fill_rate": 1.0,
+    "design_block_count_match": 1.0,
+    "design_block_text_similarity": 1.0,
+    "gold_design_block_count": 38,
+    "generated_design_block_count": 38,
+    "matched_design_block_count": 38,
+    "semantic_requirement_id_coverage": 1.0,
+    "semantic_design_id_coverage": 1.0,
+    "semantic_requirement_text_similarity": 1.0,
+    "semantic_design_text_similarity": 1.0,
+    "semantic_section_coverage": 0.0,
+    "semantic_traceability_coverage": 1.0,
+    "semantic_product_name_match": 1.0,
+    "semantic_overall": 95.0
+  },
+  "mdsr": {
+    "label": "mdsr",
+    "generated": "data\\cases\\hospital_reservation\\output_mdsr.docx",
+    "gold": "data\\gold\\mdsr\\hospital_reservation.docx",
+    "score": 94.0,
+    "metrics": {
+      "section_coverage": 1.0,
+      "paragraph_similarity": 1.0,
+      "requirement_count_match": 1.0,
+      "requirement_text_similarity": 1.0,
+      "requirement_completeness": 1.0,
+      "traceability_coverage": 1.0,
+      "traceability_row_match": 1.0,
+      "residual_placeholder_count": 0,
+      "domain_mismatch_count": 2,
+      "gold_requirement_count": 37,
+      "generated_requirement_count": 37,
+      "missing_in_generated": [],
+      "extra_in_generated": [],
+      "per_requirement": [
+        {
+          "req_id": "Req. 1",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 278,
+          "gold_len": 278
+        },
+        {
+          "req_id": "Req. 2",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 207,
+          "gold_len": 207
+        },
+        {
+          "req_id": "Req. 3",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 189,
+          "gold_len": 189
+        },
+        {
+          "req_id": "Req. 4",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 172,
+          "gold_len": 172
+        },
+        {
+          "req_id": "Req. 5",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 171,
+          "gold_len": 171
+        },
+        {
+          "req_id": "Req. 6",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 294,
+          "gold_len": 294
+        },
+        {
+          "req_id": "Req. 7",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 183,
+          "gold_len": 183
+        },
+        {
+          "req_id": "Req. 8",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 158,
+          "gold_len": 158
+        },
+        {
+          "req_id": "Req. 9",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 197,
+          "gold_len": 197
+        },
+        {
+          "req_id": "Req. 10",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 196,
+          "gold_len": 196
+        },
+        {
+          "req_id": "Req. 11",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 193,
+          "gold_len": 193
+        },
+        {
+          "req_id": "Req. 12",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 174,
+          "gold_len": 174
+        },
+        {
+          "req_id": "Req. 13",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 118,
+          "gold_len": 118
+        },
+        {
+          "req_id": "Req. 14",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 161,
+          "gold_len": 161
+        },
+        {
+          "req_id": "Req. 15",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 155,
+          "gold_len": 155
+        },
+        {
+          "req_id": "Req. 16",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 162,
+          "gold_len": 162
+        },
+        {
+          "req_id": "Req. 17",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 159,
+          "gold_len": 159
+        },
+        {
+          "req_id": "Req. 18",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 140,
+          "gold_len": 140
+        },
+        {
+          "req_id": "Req. 100",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 165,
+          "gold_len": 165
+        },
+        {
+          "req_id": "Req. 101",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 161,
+          "gold_len": 161
+        },
+        {
+          "req_id": "Req. 102",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 198,
+          "gold_len": 198
+        },
+        {
+          "req_id": "Req. 103",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 165,
+          "gold_len": 165
+        },
+        {
+          "req_id": "Req. 104",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 161,
+          "gold_len": 161
+        },
+        {
+          "req_id": "Req. 105",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 186,
+          "gold_len": 186
+        },
+        {
+          "req_id": "Req. 106",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 179,
+          "gold_len": 179
+        },
+        {
+          "req_id": "Req. 107",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 146,
+          "gold_len": 146
+        },
+        {
+          "req_id": "Req. 108",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 180,
+          "gold_len": 180
+        },
+        {
+          "req_id": "Req. 109",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 156,
+          "gold_len": 156
+        },
+        {
+          "req_id": "Req. 110",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 133,
+          "gold_len": 133
+        },
+        {
+          "req_id": "Req. 200",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 150,
+          "gold_len": 150
+        },
+        {
+          "req_id": "Req. 201",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 147,
+          "gold_len": 147
+        },
+        {
+          "req_id": "Req. 202",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 156,
+          "gold_len": 156
+        },
+        {
+          "req_id": "Req. 203",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 150,
+          "gold_len": 150
+        },
+        {
+          "req_id": "Req. 204",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 144,
+          "gold_len": 144
+        },
+        {
+          "req_id": "Req. 205",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 137,
+          "gold_len": 137
+        },
+        {
+          "req_id": "Req. 206",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 137,
+          "gold_len": 137
+        },
+        {
+          "req_id": "Req. 207",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 172,
+          "gold_len": 172
+        }
+      ],
+      "gold_traceability_coverage": 1.0,
+      "gold_traceability_count": 34,
+      "generated_traceability_count": 34,
+      "linked_req_mismatches": []
+    },
+    "sections": {
+      "section_coverage": 1.0,
+      "gold_section_count": 0,
+      "generated_section_count": 0,
+      "matched_section_count": 0,
+      "missing_in_generated": [],
+      "extra_in_generated": [],
+      "gold_sections": [],
+      "generated_sections": []
+    },
+    "requirements": {
+      "requirement_count_match": 1.0,
+      "gold_requirement_count": 37,
+      "generated_requirement_count": 37,
+      "requirement_text_similarity": 1.0,
+      "requirement_completeness": 1.0,
+      "missing_in_generated": [],
+      "extra_in_generated": [],
+      "per_requirement": [
+        {
+          "req_id": "Req. 1",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 278,
+          "gold_len": 278
+        },
+        {
+          "req_id": "Req. 2",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 207,
+          "gold_len": 207
+        },
+        {
+          "req_id": "Req. 3",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 189,
+          "gold_len": 189
+        },
+        {
+          "req_id": "Req. 4",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 172,
+          "gold_len": 172
+        },
+        {
+          "req_id": "Req. 5",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 171,
+          "gold_len": 171
+        },
+        {
+          "req_id": "Req. 6",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 294,
+          "gold_len": 294
+        },
+        {
+          "req_id": "Req. 7",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 183,
+          "gold_len": 183
+        },
+        {
+          "req_id": "Req. 8",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 158,
+          "gold_len": 158
+        },
+        {
+          "req_id": "Req. 9",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 197,
+          "gold_len": 197
+        },
+        {
+          "req_id": "Req. 10",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 196,
+          "gold_len": 196
+        },
+        {
+          "req_id": "Req. 11",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 193,
+          "gold_len": 193
+        },
+        {
+          "req_id": "Req. 12",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 174,
+          "gold_len": 174
+        },
+        {
+          "req_id": "Req. 13",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 118,
+          "gold_len": 118
+        },
+        {
+          "req_id": "Req. 14",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 161,
+          "gold_len": 161
+        },
+        {
+          "req_id": "Req. 15",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 155,
+          "gold_len": 155
+        },
+        {
+          "req_id": "Req. 16",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 162,
+          "gold_len": 162
+        },
+        {
+          "req_id": "Req. 17",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 159,
+          "gold_len": 159
+        },
+        {
+          "req_id": "Req. 18",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 140,
+          "gold_len": 140
+        },
+        {
+          "req_id": "Req. 100",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 165,
+          "gold_len": 165
+        },
+        {
+          "req_id": "Req. 101",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 161,
+          "gold_len": 161
+        },
+        {
+          "req_id": "Req. 102",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 198,
+          "gold_len": 198
+        },
+        {
+          "req_id": "Req. 103",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 165,
+          "gold_len": 165
+        },
+        {
+          "req_id": "Req. 104",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 161,
+          "gold_len": 161
+        },
+        {
+          "req_id": "Req. 105",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 186,
+          "gold_len": 186
+        },
+        {
+          "req_id": "Req. 106",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 179,
+          "gold_len": 179
+        },
+        {
+          "req_id": "Req. 107",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 146,
+          "gold_len": 146
+        },
+        {
+          "req_id": "Req. 108",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 180,
+          "gold_len": 180
+        },
+        {
+          "req_id": "Req. 109",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 156,
+          "gold_len": 156
+        },
+        {
+          "req_id": "Req. 110",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 133,
+          "gold_len": 133
+        },
+        {
+          "req_id": "Req. 200",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 150,
+          "gold_len": 150
+        },
+        {
+          "req_id": "Req. 201",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 147,
+          "gold_len": 147
+        },
+        {
+          "req_id": "Req. 202",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 156,
+          "gold_len": 156
+        },
+        {
+          "req_id": "Req. 203",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 150,
+          "gold_len": 150
+        },
+        {
+          "req_id": "Req. 204",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 144,
+          "gold_len": 144
+        },
+        {
+          "req_id": "Req. 205",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 137,
+          "gold_len": 137
+        },
+        {
+          "req_id": "Req. 206",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 137,
+          "gold_len": 137
+        },
+        {
+          "req_id": "Req. 207",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 172,
+          "gold_len": 172
+        }
+      ],
+      "high_risk": []
+    },
+    "traceability": {
+      "traceability_coverage": 1.0,
+      "gold_traceability_coverage": 1.0,
+      "traceability_row_match": 1.0,
+      "gold_traceability_count": 34,
+      "generated_traceability_count": 34,
+      "missing_in_generated": [],
+      "extra_in_generated": [],
+      "linked_req_mismatches": [],
+      "high_risk": []
+    },
+    "summary": {
+      "generated": "data\\cases\\hospital_reservation\\output_mdsr.docx",
+      "gold": "data\\gold\\mdsr\\hospital_reservation.docx",
+      "field_similarity": 1.0,
+      "paragraph_similarity": 1.0,
+      "requirement_counts": {
+        "generated": {
+          "filled": 37,
+          "total": 37
+        },
+        "gold": {
+          "filled": 37,
+          "total": 37
+        }
+      },
+      "requirement_count_match": 1.0,
+      "requirement_coverage": 1.0,
+      "traceability_counts": {
+        "generated": {
+          "filled": 34,
+          "total": 34
+        },
+        "gold": {
+          "filled": 34,
+          "total": 34
+        }
+      },
+      "traceability_coverage": 1.0,
+      "residual_placeholder_count": 0,
+      "domain_mismatch_count": 2
+    }
+  },
+  "mddr": {
+    "label": "mddr",
+    "generated": "data\\cases\\hospital_reservation\\output_mddr.docx",
+    "gold": "data\\gold\\mddr\\hospital_reservation.docx",
+    "score": 92.0,
+    "metrics": {
+      "section_coverage": 1.0,
+      "paragraph_similarity": 1.0,
+      "design_block_coverage": 1.0,
+      "requirement_count_match": 1.0,
+      "requirement_text_similarity": 1.0,
+      "residual_placeholder_count": 2,
+      "domain_mismatch_count": 0,
+      "design_block_content_fill_rate": 1.0,
+      "design_block_count_match": 1.0,
+      "design_block_text_similarity": 1.0,
+      "gold_design_block_count": 38,
+      "generated_design_block_count": 38,
+      "matched_design_block_count": 38,
+      "missing_in_generated": [],
+      "extra_in_generated": []
+    },
+    "sections": {
+      "section_coverage": 1.0,
+      "gold_section_count": 0,
+      "generated_section_count": 0,
+      "matched_section_count": 0,
+      "missing_in_generated": [],
+      "extra_in_generated": [],
+      "gold_sections": [],
+      "generated_sections": []
+    },
+    "design_blocks": {
+      "design_block_coverage": 1.0,
+      "design_block_content_fill_rate": 1.0,
+      "design_block_count_match": 1.0,
+      "design_block_text_similarity": 1.0,
+      "gold_design_block_count": 38,
+      "generated_design_block_count": 38,
+      "matched_design_block_count": 38,
+      "missing_in_generated": [],
+      "extra_in_generated": [],
+      "high_risk": []
+    },
+    "summary": {
+      "generated": "data\\cases\\hospital_reservation\\output_mddr.docx",
+      "gold": "data\\gold\\mddr\\hospital_reservation.docx",
+      "field_similarity": 1.0,
+      "paragraph_similarity": 1.0,
+      "requirement_counts": {
+        "generated": {
+          "filled": 0,
+          "total": 0
+        },
+        "gold": {
+          "filled": 0,
+          "total": 0
+        }
+      },
+      "requirement_count_match": 1.0,
+      "requirement_coverage": 1.0,
+      "traceability_counts": {
+        "generated": {
+          "filled": 0,
+          "total": 0
+        },
+        "gold": {
+          "filled": 0,
+          "total": 0
+        }
+      },
+      "traceability_coverage": 1.0,
+      "residual_placeholder_count": 2,
+      "domain_mismatch_count": 0
+    }
+  },
+  "xxcs": {},
+  "semantic": {
+    "semantic_requirement_id_coverage": 1.0,
+    "semantic_design_id_coverage": 1.0,
+    "semantic_requirement_text_similarity": 1.0,
+    "semantic_design_text_similarity": 1.0,
+    "semantic_section_coverage": 0.0,
+    "semantic_traceability_coverage": 1.0,
+    "semantic_product_name_match": 1.0,
+    "gold_requirement_count": 37,
+    "generated_requirement_count": 37,
+    "gold_design_count": 38,
+    "generated_design_count": 38,
+    "missing_requirement_ids": [],
+    "missing_design_ids": [],
+    "semantic_overall": 95.0
+  },
+  "high_risk_differences": [],
+  "generated_paths": {
+    "mdsr": "data\\cases\\hospital_reservation\\output_mdsr.docx",
+    "mddr": "data\\cases\\hospital_reservation\\output_mddr.docx",
+    "xxcs": null
+  },
+  "gold_paths": {
+    "mdsr": "data\\gold\\mdsr\\hospital_reservation.docx",
+    "mddr": "data\\gold\\mddr\\hospital_reservation.docx",
+    "xxcs": null,
+    "fields": "data\\gold\\fields\\hospital_reservation.gold_fields.json"
+  },
+  "human_review_checklist": [
+    "Replace remaining XX-XX-XXXX or placeholder tokens in generated documents.",
+    "Scan generated text for foreign domain terminology."
+  ]
+}

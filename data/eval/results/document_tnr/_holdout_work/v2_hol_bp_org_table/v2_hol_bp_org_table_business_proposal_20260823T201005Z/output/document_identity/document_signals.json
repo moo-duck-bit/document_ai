@@ -1,0 +1,137 @@
+[
+  {
+    "signal_id": "fn_bae6b95d",
+    "document_source_id": "PROPOSAL_ORG_TABLE",
+    "signal_type": "FILENAME_TOKEN",
+    "signal_value": "proposal_org_table.docx",
+    "normalized_value": "PROPOSAL",
+    "confidence": 0.45,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "filename_hint:PROPOSAL",
+      "filename_not_sufficient_alone"
+    ],
+    "independent_group": "filename"
+  },
+  {
+    "signal_id": "fnrole_c3212e6c",
+    "document_source_id": "PROPOSAL_ORG_TABLE",
+    "signal_type": "DOCUMENT_ROLE_HINT",
+    "signal_value": "business_proposal",
+    "normalized_value": "business_proposal",
+    "confidence": 0.4,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "filename_role_hint"
+    ],
+    "independent_group": "filename"
+  },
+  {
+    "signal_id": "fmt_fdd5c34d",
+    "document_source_id": "PROPOSAL_ORG_TABLE",
+    "signal_type": "FILE_FORMAT",
+    "signal_value": ".docx",
+    "normalized_value": "docx",
+    "confidence": 0.2,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "file_format"
+    ],
+    "independent_group": "format"
+  },
+  {
+    "signal_id": "hd_ca4bdd52",
+    "document_source_id": "PROPOSAL_ORG_TABLE",
+    "signal_type": "DOCUMENT_TITLE",
+    "signal_value": "사업 제안서",
+    "normalized_value": "사업 제안서",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 0
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_d85b8186",
+    "document_source_id": "PROPOSAL_ORG_TABLE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "수행 조직",
+    "normalized_value": "수행 조직",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 1
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_a119fc49",
+    "document_source_id": "PROPOSAL_ORG_TABLE",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "본 사업의 수행 조직 구성은 다음과 같습니다.",
+    "normalized_value": "본 사업의 수행 조직 구성은 다음과 같습니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 2
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "concept_22bf2bf3",
+    "document_source_id": "PROPOSAL_ORG_TABLE",
+    "signal_type": "CONTENT_CONCEPT",
+    "signal_value": "business_proposal",
+    "normalized_value": "business_proposal",
+    "confidence": 0.6,
+    "source": "content",
+    "source_locator": {},
+    "reason_codes": [
+      "proposal_heading_concepts"
+    ],
+    "independent_group": "template_structure"
+  },
+  {
+    "signal_id": "tbln_fb14700f",
+    "document_source_id": "PROPOSAL_ORG_TABLE",
+    "signal_type": "TEMPLATE_STRUCTURE",
+    "signal_value": "tables:1",
+    "normalized_value": "1",
+    "confidence": 0.35,
+    "source": "structure",
+    "source_locator": {},
+    "reason_codes": [
+      "table_count"
+    ],
+    "independent_group": "structure"
+  },
+  {
+    "signal_id": "th_6816104f",
+    "document_source_id": "PROPOSAL_ORG_TABLE",
+    "signal_type": "TABLE_HEADER",
+    "signal_value": "조직 역할 담당",
+    "normalized_value": "조직 역할 담당",
+    "confidence": 0.55,
+    "source": "structure",
+    "source_locator": {
+      "table_index": 0
+    },
+    "reason_codes": [
+      "table_header"
+    ],
+    "independent_group": "table_header"
+  }
+]

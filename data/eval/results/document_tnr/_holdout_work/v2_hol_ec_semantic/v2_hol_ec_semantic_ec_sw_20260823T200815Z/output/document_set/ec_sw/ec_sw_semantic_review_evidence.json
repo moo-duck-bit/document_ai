@@ -1,0 +1,113 @@
+[
+  {
+    "document_id": "MDTM_BASE",
+    "node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+    "matched_terms": [],
+    "normalized_query_terms": [
+      "강화",
+      "요청",
+      "접근통제"
+    ],
+    "normalized_node_terms": [
+      "11",
+      "req",
+      "tc"
+    ],
+    "token_overlap": 0.0,
+    "character_similarity": 0.0,
+    "heading_similarity": 0.0,
+    "semantic_score": 0.0,
+    "evidence_status": "NO_MATCH",
+    "reason_codes": [
+      "NO_EXACT_IDENTIFIER",
+      "PATCH_FORBIDDEN_SEMANTIC_ONLY"
+    ],
+    "supports_review": false,
+    "supports_patch": false,
+    "independent_group": "semantic:ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+    "score_components": {
+      "token_overlap": 0.0,
+      "character_similarity": 0.0,
+      "heading_similarity": 0.0,
+      "concept_overlap": 0.0,
+      "sparse_requirement_row_boost": 0.0
+    },
+    "canonical_concepts": [
+      "ACCESS_CONTROL"
+    ]
+  },
+  {
+    "document_id": "MDTM_BASE",
+    "node_id": "ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+    "matched_terms": [],
+    "normalized_query_terms": [
+      "강화",
+      "요청",
+      "접근통제"
+    ],
+    "normalized_node_terms": [
+      "12",
+      "req",
+      "tc"
+    ],
+    "token_overlap": 0.0,
+    "character_similarity": 0.0,
+    "heading_similarity": 0.0,
+    "semantic_score": 0.0,
+    "evidence_status": "NO_MATCH",
+    "reason_codes": [
+      "NO_EXACT_IDENTIFIER",
+      "PATCH_FORBIDDEN_SEMANTIC_ONLY"
+    ],
+    "supports_review": false,
+    "supports_patch": false,
+    "independent_group": "semantic:ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+    "score_components": {
+      "token_overlap": 0.0,
+      "character_similarity": 0.0,
+      "heading_similarity": 0.0,
+      "concept_overlap": 0.0,
+      "sparse_requirement_row_boost": 0.0
+    },
+    "canonical_concepts": [
+      "ACCESS_CONTROL"
+    ]
+  },
+  {
+    "document_id": "MDTM_BASE",
+    "node_id": "ec_sw_v1.mdtm.table_00.row_0004.7ea5ab0d5d",
+    "matched_terms": [],
+    "normalized_query_terms": [
+      "강화",
+      "요청",
+      "접근통제"
+    ],
+    "normalized_node_terms": [
+      "101",
+      "req",
+      "tc"
+    ],
+    "token_overlap": 0.0,
+    "character_similarity": 0.0,
+    "heading_similarity": 0.0,
+    "semantic_score": 0.0,
+    "evidence_status": "NO_MATCH",
+    "reason_codes": [
+      "NO_EXACT_IDENTIFIER",
+      "PATCH_FORBIDDEN_SEMANTIC_ONLY"
+    ],
+    "supports_review": false,
+    "supports_patch": false,
+    "independent_group": "semantic:ec_sw_v1.mdtm.table_00.row_0004.7ea5ab0d5d",
+    "score_components": {
+      "token_overlap": 0.0,
+      "character_similarity": 0.0,
+      "heading_similarity": 0.0,
+      "concept_overlap": 0.0,
+      "sparse_requirement_row_boost": 0.0
+    },
+    "canonical_concepts": [
+      "ACCESS_CONTROL"
+    ]
+  }
+]

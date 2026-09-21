@@ -1,0 +1,29 @@
+{
+  "case_id": "v2_dev_gr_schedule_list",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "추진 일정 목록 수정",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_schedule_list.docx",
+      "filename": "report_schedule_list.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_SCHEDULE_LIST"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "schedule",
+    "list"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "8f88f9a54d428dfcfcd156f025b3939ef78480cc4419d5c1e75bb8f7bb8df278",
+  "sanitization_status": "N/A"
+}

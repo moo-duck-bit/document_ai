@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "per_document": [
+    {
+      "ok": true,
+      "checks": {
+        "no_filename_only_auto_route": true,
+        "canonical_id_deterministic": true,
+        "temporary_and_canonical_id_separated": true,
+        "conflict_requires_review": true,
+        "routed_pack_matches_decision": true,
+        "wrong_route_never_writes": true
+      },
+      "reasons": [],
+      "invariants": [
+        "no_filename_only_auto_route",
+        "canonical_id_deterministic",
+        "temporary_and_canonical_id_separated",
+        "conflict_requires_review",
+        "routed_pack_matches_decision",
+        "wrong_route_never_writes"
+      ]
+    }
+  ]
+}

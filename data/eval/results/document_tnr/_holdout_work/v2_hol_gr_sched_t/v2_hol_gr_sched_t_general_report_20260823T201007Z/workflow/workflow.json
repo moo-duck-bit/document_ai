@@ -1,0 +1,1104 @@
+{
+  "workflow_id": "v2_hol_gr_sched_t_general_report_20260823T201007Z",
+  "document_set": "general_report",
+  "state": "COMPLETED",
+  "change_request": "일정 표 수정",
+  "created_at": "2026-08-23T20:10:07Z",
+  "updated_at": "2026-08-23T20:10:07Z",
+  "documents": [
+    {
+      "document_id": "REPORT_SCHEDULE_TABLE",
+      "source_document_id": "REPORT_SCHEDULE_TABLE",
+      "filename": "report_schedule_table.docx",
+      "role": "general_report",
+      "path": "data/eval/results/document_tnr/_holdout_work/v2_hol_gr_sched_t/v2_hol_gr_sched_t_general_report_20260823T201007Z/input/report_schedule_table.docx",
+      "copy_path": "data/eval/results/document_tnr/_holdout_work/v2_hol_gr_sched_t/v2_hol_gr_sched_t_general_report_20260823T201007Z/copies/report_schedule_table.docx",
+      "user_hints": null,
+      "canonical_document_id": "GENERIC_GENERAL_REPORT",
+      "short_id": "REPORT",
+      "document_type": "GENERAL_REPORT",
+      "document_role": "general_report",
+      "domain_pack_id": "generic_document_v1",
+      "template_id": "general_report_v1",
+      "identity_status": "REVIEW_REQUIRED",
+      "identity_auto_selected": false,
+      "identity_score": 26.048,
+      "identity_reasons": [
+        "filename_hint:REPORT",
+        "filename_role_hint",
+        "heading_or_title",
+        "report_heading_concepts",
+        "conflict_penalty",
+        "conflict_requires_review"
+      ],
+      "routing_status": "ROUTED",
+      "selected_pack_id": "generic_document_v1",
+      "recommended_document_set": "general_report",
+      "registry_document_id": "REPORT"
+    }
+  ],
+  "impacted_documents": [
+    "REPORT_SCHEDULE_TABLE"
+  ],
+  "review_required": [
+    {
+      "item_id": "REPORT_SCHEDULE_TABLE.p0004",
+      "document_id": "REPORT_SCHEDULE_TABLE",
+      "node_id": "heading_0004",
+      "status": "REVIEW_REQUIRED",
+      "display_name": "일정",
+      "evidence": [
+        "일정"
+      ],
+      "reason_codes": [
+        "paragraph_concept_match"
+      ],
+      "human_review_required": true,
+      "source_locator": {
+        "paragraph_index": 4
+      },
+      "source_stage": "document_paragraph",
+      "metadata": {
+        "supports_patch": false,
+        "target_exists": true,
+        "structural_role": "DOCUMENT_HEADING",
+        "physical": true,
+        "editable": true,
+        "virtual": false,
+        "canonical_concepts": [
+          "SCHEDULE"
+        ],
+        "content_specificity": 0.45,
+        "parent_section_id": null,
+        "direct_match": true,
+        "inherited_match": false,
+        "parent_context_match": 0.8,
+        "section_context": "SCHEDULE",
+        "writer_executable": false,
+        "alignment_confidence": 0.9,
+        "evaluation_equivalent": true,
+        "template_node_id": "general_report_v1.schedule",
+        "alignment_ids": [
+          "NA-0001"
+        ],
+        "rank_tier": 0,
+        "final_score": 227.28,
+        "score_components": {
+          "tier_base": 120.0,
+          "concept_match": 25.0,
+          "section_match": 10.0,
+          "heading_match": 8.0,
+          "node_role_match": 13.68,
+          "operation_role_match": 18.0,
+          "parent_context_match": 9.600000000000001,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 4.5,
+          "template_alignment_score": 13.5,
+          "physical_editability_score": 5.0,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.0
+        },
+        "structural_score_components": {
+          "candidate_node_id": "heading_0004",
+          "concept_match": 1.0,
+          "section_match": 1.0,
+          "heading_match": 1.0,
+          "node_role_match": 0.76,
+          "operation_role_match": 0.9,
+          "parent_context_match": 0.8,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 0.45,
+          "template_alignment_score": 0.9,
+          "physical_editability_score": 1.0,
+          "virtual_target_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "direct_child_match",
+            "eval_equivalent_alignment"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_0",
+          "direct_child_match",
+          "eval_equivalent_alignment",
+          "role_pref:DOCUMENT_HEADING",
+          "section_concept_hit"
+        ],
+        "overlap": 227.28,
+        "query_intent": "SCHEDULE_UPDATE",
+        "rank": 1,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "REPORT_SCHEDULE_TABLE",
+            "template_node_id": "general_report_v1.schedule",
+            "document_node_id": "heading_0004",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "schedule",
+            "source_locator": {
+              "paragraph_index": 4
+            },
+            "confidence": 0.9,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "schedule_family_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "REPORT_SCHEDULE_TABLE:schedule",
+            "document_id": "REPORT_SCHEDULE_TABLE",
+            "template_node_ids": [
+              "general_report_v1.schedule"
+            ],
+            "document_node_ids": [
+              "heading_0004"
+            ],
+            "section_id": "schedule",
+            "concepts": [
+              "SCHEDULE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "general_report_v1.schedule",
+      "document_id": "REPORT_SCHEDULE_TABLE",
+      "node_id": "general_report_v1.schedule",
+      "status": "REVIEW_REQUIRED",
+      "display_name": "일정",
+      "reason_codes": [
+        "aligned_template_section_eval_candidate",
+        "template_document_aligned"
+      ],
+      "human_review_required": true,
+      "source_stage": "generic_template_alignment",
+      "metadata": {
+        "structural_role": "TEMPLATE_SECTION",
+        "physical": false,
+        "editable": false,
+        "virtual": false,
+        "virtual_target": false,
+        "writer_executable": false,
+        "template_only": false,
+        "supports_patch": false,
+        "target_exists": true,
+        "canonical_concepts": [
+          "SCHEDULE"
+        ],
+        "alignment_confidence": 0.9,
+        "evaluation_equivalent": true,
+        "aligned_document_node_id": "heading_0004",
+        "content_specificity": 0.4,
+        "overlap": 182.11,
+        "final_score": 182.11,
+        "template_alignment": true,
+        "rank_tier": 1,
+        "score_components": {
+          "tier_base": 100.0,
+          "concept_match": 25.0,
+          "section_match": 10.0,
+          "heading_match": 0.0,
+          "node_role_match": 9.36,
+          "operation_role_match": 19.0,
+          "parent_context_match": 0.0,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 4.0,
+          "template_alignment_score": 13.5,
+          "physical_editability_score": 1.25,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.0
+        },
+        "structural_score_components": {
+          "candidate_node_id": "general_report_v1.schedule",
+          "concept_match": 1.0,
+          "section_match": 1.0,
+          "heading_match": 0.0,
+          "node_role_match": 0.52,
+          "operation_role_match": 0.95,
+          "parent_context_match": 0.0,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 0.4,
+          "template_alignment_score": 0.9,
+          "physical_editability_score": 0.25,
+          "virtual_target_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:TEMPLATE_SECTION",
+            "update_template_section_eval",
+            "eval_equivalent_alignment"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_1",
+          "eval_equivalent_alignment",
+          "exact_section_concept_template",
+          "role_pref:TEMPLATE_SECTION",
+          "section_concept_hit",
+          "update_template_section_eval"
+        ],
+        "query_intent": "SCHEDULE_UPDATE",
+        "rank": 2,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "REPORT_SCHEDULE_TABLE",
+            "template_node_id": "general_report_v1.schedule",
+            "document_node_id": "heading_0004",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "schedule",
+            "source_locator": {
+              "paragraph_index": 4
+            },
+            "confidence": 0.9,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "schedule_family_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "REPORT_SCHEDULE_TABLE:schedule",
+            "document_id": "REPORT_SCHEDULE_TABLE",
+            "template_node_ids": [
+              "general_report_v1.schedule"
+            ],
+            "document_node_ids": [
+              "heading_0004"
+            ],
+            "section_id": "schedule",
+            "concepts": [
+              "SCHEDULE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      },
+      "overlap": 1.25
+    },
+    {
+      "item_id": "SCH-table_00",
+      "candidate_id": "SCH-table_00",
+      "document_id": "REPORT_SCHEDULE_TABLE",
+      "node_id": "table_00",
+      "status": "REVIEW_REQUIRED",
+      "overlap": 0.7,
+      "display_name": "단계 기간",
+      "reason_codes": [
+        "PATCH_FORBIDDEN_TABLE_OR_SCHEDULE_ONLY",
+        "table_structure",
+        "time_unit_table",
+        "schedule_table_ambiguous"
+      ],
+      "human_review_required": true,
+      "metadata": {
+        "overlap": 147.05,
+        "evidence_type": "TABLE_STRUCTURE",
+        "supports_patch": false,
+        "canonical_concepts": [],
+        "structural_role": "TABLE",
+        "editable": true,
+        "physical": true,
+        "virtual": false,
+        "content_specificity": 0.7,
+        "reason_codes": [
+          "role_table"
+        ],
+        "writer_executable": false,
+        "rank_tier": 3,
+        "final_score": 147.05,
+        "score_components": {
+          "tier_base": 60.0,
+          "concept_match": 13.750000000000002,
+          "section_match": 5.5,
+          "heading_match": 0.0,
+          "node_role_match": 18.0,
+          "operation_role_match": 18.0,
+          "parent_context_match": 0.0,
+          "table_structure_match": 19.8,
+          "paragraph_specificity": 7.0,
+          "template_alignment_score": 0.0,
+          "physical_editability_score": 5.0,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.0
+        },
+        "structural_score_components": {
+          "candidate_node_id": "table_00",
+          "concept_match": 0.55,
+          "section_match": 0.55,
+          "heading_match": 0.0,
+          "node_role_match": 1.0,
+          "operation_role_match": 0.9,
+          "parent_context_match": 0.0,
+          "table_structure_match": 0.9,
+          "paragraph_specificity": 0.7,
+          "template_alignment_score": 0.0,
+          "physical_editability_score": 1.0,
+          "virtual_target_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "reason_codes": [
+            "generic_concept_hit",
+            "role_pref:TABLE",
+            "table_intent_table_role"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_3",
+          "generic_concept_hit",
+          "role_pref:TABLE",
+          "table_intent_table_role",
+          "table_structure"
+        ],
+        "query_intent": "SCHEDULE_UPDATE",
+        "rank": 3,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "REPORT_SCHEDULE_TABLE",
+            "template_node_id": "general_report_v1.schedule",
+            "document_node_id": "heading_0004",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "schedule",
+            "source_locator": {
+              "paragraph_index": 4
+            },
+            "confidence": 0.9,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "schedule_family_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "REPORT_SCHEDULE_TABLE:schedule",
+            "document_id": "REPORT_SCHEDULE_TABLE",
+            "template_node_ids": [
+              "general_report_v1.schedule"
+            ],
+            "document_node_ids": [
+              "heading_0004"
+            ],
+            "section_id": "schedule",
+            "concepts": [
+              "SCHEDULE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      },
+      "source_stage": "schedule_table_retrieval"
+    }
+  ],
+  "patch_candidates": [],
+  "approvals": [
+    {
+      "item_id": "REPORT_SCHEDULE_TABLE.p0004",
+      "document_id": "REPORT_SCHEDULE_TABLE",
+      "node_id": "heading_0004",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:07Z"
+    },
+    {
+      "item_id": "general_report_v1.schedule",
+      "document_id": "REPORT_SCHEDULE_TABLE",
+      "node_id": "general_report_v1.schedule",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:07Z"
+    },
+    {
+      "item_id": "SCH-table_00",
+      "document_id": "REPORT_SCHEDULE_TABLE",
+      "node_id": "table_00",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:07Z"
+    }
+  ],
+  "writer_result": {
+    "status": "COMPLETED_PREVIEW",
+    "applied": 0,
+    "skipped": 3,
+    "rejected": 0,
+    "blocked": 0,
+    "enable_write": false,
+    "details": [
+      {
+        "item_id": "REPORT_SCHEDULE_TABLE.p0004",
+        "document_id": "REPORT_SCHEDULE_TABLE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "general_report_v1.schedule",
+        "document_id": "REPORT_SCHEDULE_TABLE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "SCH-table_00",
+        "document_id": "REPORT_SCHEDULE_TABLE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      }
+    ],
+    "by_document": {
+      "REPORT_SCHEDULE_TABLE": {
+        "applied": 0,
+        "rejected": 0,
+        "blocked": 0,
+        "skipped": 3,
+        "pending": 0
+      }
+    },
+    "controlled_writer_invoked": false
+  },
+  "validation": {
+    "status": "VALID",
+    "ok": true,
+    "issues": [],
+    "warnings": [],
+    "checks": {
+      "valid_state": true,
+      "terminal_state_immutable": true,
+      "no_duplicate_terminal_event": true,
+      "no_duplicate_document_id": true,
+      "no_duplicate_filename": true,
+      "writer_not_invoked_without_gate": true
+    },
+    "can_transition_sample": {
+      "UPLOADED->ANALYZING": true,
+      "COMPLETED->WRITING": false
+    }
+  },
+  "timeline": [
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "CREATED",
+      "event": "created",
+      "detail": "document_set=general_report;routing_mode=explicit"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "UPLOADED",
+      "event": "uploaded",
+      "detail": "files=1"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "ANALYZING",
+      "event": "analysis_started",
+      "detail": ""
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "REVIEW_READY",
+      "event": "analysis_completed",
+      "detail": "impacted=1"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "WAITING_APPROVAL",
+      "event": "waiting_approval",
+      "detail": ""
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "WAITING_APPROVAL",
+      "event": "approval_updated",
+      "detail": "approved=3"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "WRITING",
+      "event": "writer_started",
+      "detail": "enable_write=False"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "VALIDATING",
+      "event": "writer_completed",
+      "detail": "applied=0"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "COMPLETED",
+      "event": "completed",
+      "detail": ""
+    }
+  ],
+  "result_rows": [
+    {
+      "document_id": "REPORT_SCHEDULE_TABLE",
+      "status": "APPROVED_PENDING_WRITE",
+      "review": "Y",
+      "applied": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "validation": "PASS",
+      "diff_available": false,
+      "download": "data/eval/results/document_tnr/_holdout_work/v2_hol_gr_sched_t/v2_hol_gr_sched_t_general_report_20260823T201007Z/copies/report_schedule_table.docx",
+      "skipped": 3,
+      "pending": 0
+    }
+  ],
+  "errors": [],
+  "metadata": {
+    "legacy_pair_untouched": true,
+    "writer_enabled_default": false,
+    "document_routing_mode": "explicit",
+    "requested_document_set": "general_report",
+    "identity_summary": {
+      "ok": true,
+      "per_document": [
+        {
+          "ok": true,
+          "checks": {
+            "no_filename_only_auto_route": true,
+            "canonical_id_deterministic": true,
+            "temporary_and_canonical_id_separated": true,
+            "conflict_requires_review": true,
+            "routed_pack_matches_decision": true,
+            "wrong_route_never_writes": true
+          },
+          "reasons": [],
+          "invariants": [
+            "no_filename_only_auto_route",
+            "canonical_id_deterministic",
+            "temporary_and_canonical_id_separated",
+            "conflict_requires_review",
+            "routed_pack_matches_decision",
+            "wrong_route_never_writes"
+          ]
+        }
+      ]
+    },
+    "needs_identity_confirmation": false,
+    "identity_decisions": [
+      {
+        "decision_id": "idec_5c5c20e0cd18",
+        "source_document_id": "REPORT_SCHEDULE_TABLE",
+        "canonical_document_id": "GENERIC_GENERAL_REPORT",
+        "short_id": "REPORT",
+        "document_type": "GENERAL_REPORT",
+        "document_role": "general_report",
+        "domain_pack_id": "generic_document_v1",
+        "template_id": "general_report_v1",
+        "decision_status": "REVIEW_REQUIRED",
+        "top_score": 26.048,
+        "second_score": 21.675,
+        "score_margin": 4.373,
+        "rank_tier": 3,
+        "reason_codes": [
+          "filename_hint:REPORT",
+          "filename_role_hint",
+          "heading_or_title",
+          "report_heading_concepts",
+          "conflict_penalty",
+          "conflict_requires_review"
+        ],
+        "evidence": [
+          {
+            "signal_id": "fn_cabc989b",
+            "type": "FILENAME_TOKEN",
+            "value": "report_schedule_table.docx"
+          },
+          {
+            "signal_id": "fnrole_5cfcbed8",
+            "type": "DOCUMENT_ROLE_HINT",
+            "value": "general_report"
+          },
+          {
+            "signal_id": "fmt_1daa3b53",
+            "type": "FILE_FORMAT",
+            "value": ".docx"
+          },
+          {
+            "signal_id": "hd_51a724cd",
+            "type": "DOCUMENT_TITLE",
+            "value": "배경"
+          },
+          {
+            "signal_id": "hd_91d5f910",
+            "type": "HEADING_TEXT",
+            "value": "배경 본문 내용입니다."
+          },
+          {
+            "signal_id": "hd_4586e341",
+            "type": "HEADING_TEXT",
+            "value": "목표"
+          },
+          {
+            "signal_id": "hd_e7135bc8",
+            "type": "HEADING_TEXT",
+            "value": "목표 본문 내용입니다."
+          },
+          {
+            "signal_id": "hd_dbafe0b6",
+            "type": "HEADING_TEXT",
+            "value": "일정"
+          },
+          {
+            "signal_id": "concept_47d293b5",
+            "type": "CONTENT_CONCEPT",
+            "value": "general_report"
+          },
+          {
+            "signal_id": "concept_22bf2bf3",
+            "type": "CONTENT_CONCEPT",
+            "value": "business_proposal"
+          },
+          {
+            "signal_id": "tbln_fb14700f",
+            "type": "TEMPLATE_STRUCTURE",
+            "value": "tables:1"
+          },
+          {
+            "signal_id": "th_c68e025e",
+            "type": "TABLE_HEADER",
+            "value": "단계 기간"
+          }
+        ],
+        "human_review_required": true,
+        "auto_selected": false,
+        "metadata": {
+          "temporary_source_id": "REPORT_SCHEDULE_TABLE",
+          "canonical_id_deterministic": true,
+          "filename_only": false
+        }
+      }
+    ],
+    "pack_routings": [
+      {
+        "routing_id": "route_cb7deba819",
+        "source_document_id": "REPORT_SCHEDULE_TABLE",
+        "selected_pack_id": "generic_document_v1",
+        "candidate_pack_ids": [
+          "generic_document_v1"
+        ],
+        "routing_status": "ROUTED",
+        "score": 26.048,
+        "score_margin": 26.048,
+        "reason_codes": [
+          "filename_hint:REPORT",
+          "filename_role_hint",
+          "heading_or_title",
+          "report_heading_concepts",
+          "conflict_penalty",
+          "conflict_requires_review",
+          "explicit_user_pack"
+        ],
+        "human_review_required": false,
+        "actual_pack_invoked": "generic_document_v1",
+        "metadata": {
+          "routing_mode": "explicit",
+          "identity_status": "REVIEW_REQUIRED",
+          "document_set_hint": "general_report"
+        }
+      }
+    ],
+    "analysis": {
+      "engine": "generic_template_sections",
+      "ok": true,
+      "note": "Generic packs: structural ranking + no-impact policy; auto PATCH disabled; virtual/template eval nodes not writer-executable."
+    },
+    "document_impact_decisions": [
+      {
+        "document_id": "REPORT_SCHEDULE_TABLE",
+        "predicted_status": "REVIEW_REQUIRED",
+        "substantive_evidence_count": 3,
+        "role_evidence_count": 2,
+        "exact_identifier_count": 0,
+        "normalized_identifier_count": 0,
+        "semantic_evidence_count": 0,
+        "malformed_identifier_count": 0,
+        "reason_codes": [
+          "substantive_review_evidence"
+        ],
+        "source_stages": [
+          "catalog",
+          "document_paragraph",
+          "generic_template_sections",
+          "schedule_table_retrieval",
+          "upload"
+        ],
+        "top_evidence": [
+          {
+            "evidence_type": "EXACT_HEADING_MATCH",
+            "evidence_value": "일정",
+            "node_id": "heading_0004",
+            "confidence": 0.7,
+            "source_stage": "document_paragraph",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "paragraph_concept_match"
+            ]
+          },
+          {
+            "evidence_type": "STRUCTURAL_BLOCK_MATCH",
+            "evidence_value": "일정",
+            "node_id": "heading_0004",
+            "confidence": 0.7,
+            "source_stage": "schedule_table_retrieval",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "PATCH_FORBIDDEN_TABLE_OR_SCHEDULE_ONLY",
+              "schedule_concept_heading",
+              "schedule_table_ambiguous"
+            ]
+          },
+          {
+            "evidence_type": "TABLE_HEADER_MATCH",
+            "evidence_value": "단계 기간",
+            "node_id": "table_00",
+            "confidence": 0.7,
+            "source_stage": "schedule_table_retrieval",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "PATCH_FORBIDDEN_TABLE_OR_SCHEDULE_ONLY",
+              "table_structure",
+              "time_unit_table",
+              "schedule_table_ambiguous"
+            ]
+          }
+        ],
+        "human_review_required": true,
+        "target_status": "EXISTS_EXACT",
+        "validation": {
+          "no_presence_only_impacted": true,
+          "no_template_compatibility_only_impacted": true,
+          "impacted_requires_specific_node_or_addable_target": true,
+          "missing_unsupported_not_impacted": true,
+          "unrelated_request_not_reviewed_without_evidence": true
+        }
+      }
+    ],
+    "node_alignments": [
+      {
+        "alignment_id": "NA-0001",
+        "document_id": "REPORT_SCHEDULE_TABLE",
+        "template_node_id": "general_report_v1.schedule",
+        "document_node_id": "heading_0004",
+        "alignment_type": "HEADING_TO_SECTION",
+        "section_id": "schedule",
+        "source_locator": {
+          "paragraph_index": 4
+        },
+        "confidence": 0.9,
+        "reason_codes": [
+          "concept_or_token_bridge",
+          "schedule_family_bridge",
+          "section_name_hit",
+          "shared_canonical_concept"
+        ],
+        "equivalent_for_evaluation": true,
+        "equivalent_for_patch": false
+      }
+    ],
+    "structural_equivalence_groups": [
+      {
+        "group_id": "REPORT_SCHEDULE_TABLE:schedule",
+        "document_id": "REPORT_SCHEDULE_TABLE",
+        "template_node_ids": [
+          "general_report_v1.schedule"
+        ],
+        "document_node_ids": [
+          "heading_0004"
+        ],
+        "section_id": "schedule",
+        "concepts": [
+          "SCHEDULE"
+        ],
+        "evaluation_equivalent": true,
+        "patch_equivalent": false,
+        "reason_codes": [
+          "structural_equivalence"
+        ]
+      }
+    ],
+    "generic_query_intent": {
+      "raw_change_request": "일정 표 수정",
+      "canonical_concepts": [
+        "REQUIREMENT_INTENT",
+        "SCHEDULE",
+        "TABLE"
+      ],
+      "requested_operation": "UPDATE",
+      "requested_node_roles": [
+        "TABLE",
+        "TABLE_CELL",
+        "DOCUMENT_HEADING",
+        "PARAGRAPH_BODY"
+      ],
+      "target_section_concepts": [
+        "SCHEDULE"
+      ],
+      "intent_label": "SCHEDULE_UPDATE",
+      "table_intent": true,
+      "list_intent": false,
+      "add_intent": false,
+      "update_intent": true,
+      "delete_intent": false,
+      "document_level": false,
+      "ambiguity": false,
+      "confidence": 0.8999999999999999,
+      "reason_codes": [
+        "op_update",
+        "intent:SCHEDULE_UPDATE"
+      ]
+    },
+    "generic_ranking": {
+      "query_intent": {
+        "raw_change_request": "일정 표 수정",
+        "canonical_concepts": [
+          "REQUIREMENT_INTENT",
+          "SCHEDULE",
+          "TABLE"
+        ],
+        "requested_operation": "UPDATE",
+        "requested_node_roles": [
+          "TABLE",
+          "TABLE_CELL",
+          "DOCUMENT_HEADING",
+          "PARAGRAPH_BODY"
+        ],
+        "target_section_concepts": [
+          "SCHEDULE"
+        ],
+        "intent_label": "SCHEDULE_UPDATE",
+        "table_intent": true,
+        "list_intent": false,
+        "add_intent": false,
+        "update_intent": true,
+        "delete_intent": false,
+        "document_level": false,
+        "ambiguity": false,
+        "confidence": 0.8999999999999999,
+        "reason_codes": [
+          "op_update",
+          "intent:SCHEDULE_UPDATE"
+        ]
+      },
+      "structural_match_matrix": [
+        {
+          "candidate_node_id": "heading_0004",
+          "concept_match": 1.0,
+          "section_match": 1.0,
+          "heading_match": 1.0,
+          "node_role_match": 0.76,
+          "operation_role_match": 0.9,
+          "parent_context_match": 0.8,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 0.45,
+          "template_alignment_score": 0.9,
+          "physical_editability_score": 1.0,
+          "virtual_target_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "direct_child_match",
+            "eval_equivalent_alignment"
+          ]
+        },
+        {
+          "candidate_node_id": "table_00",
+          "concept_match": 0.55,
+          "section_match": 0.55,
+          "heading_match": 0.0,
+          "node_role_match": 1.0,
+          "operation_role_match": 0.9,
+          "parent_context_match": 0.0,
+          "table_structure_match": 0.9,
+          "paragraph_specificity": 0.7,
+          "template_alignment_score": 0.0,
+          "physical_editability_score": 1.0,
+          "virtual_target_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "reason_codes": [
+            "generic_concept_hit",
+            "role_pref:TABLE",
+            "table_intent_table_role"
+          ]
+        },
+        {
+          "candidate_node_id": "general_report_v1.schedule",
+          "concept_match": 1.0,
+          "section_match": 1.0,
+          "heading_match": 0.0,
+          "node_role_match": 0.52,
+          "operation_role_match": 0.95,
+          "parent_context_match": 0.0,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 0.4,
+          "template_alignment_score": 0.9,
+          "physical_editability_score": 0.25,
+          "virtual_target_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:TEMPLATE_SECTION",
+            "update_template_section_eval",
+            "eval_equivalent_alignment"
+          ]
+        }
+      ],
+      "ranking_results": {
+        "ranked_node_ids": [
+          "heading_0004",
+          "general_report_v1.schedule",
+          "table_00"
+        ],
+        "n_ranked": 3
+      },
+      "ranking_candidates": [
+        {
+          "node_id": "heading_0004",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 0,
+          "final_score": 227.28,
+          "structural_role": "DOCUMENT_HEADING",
+          "score_components": {
+            "tier_base": 120.0,
+            "concept_match": 25.0,
+            "section_match": 10.0,
+            "heading_match": 8.0,
+            "node_role_match": 13.68,
+            "operation_role_match": 18.0,
+            "parent_context_match": 9.600000000000001,
+            "table_structure_match": 0.0,
+            "paragraph_specificity": 4.5,
+            "template_alignment_score": 13.5,
+            "physical_editability_score": 5.0,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.0
+          },
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "direct_child_match",
+            "eval_equivalent_alignment",
+            "RANK_TIER_0"
+          ],
+          "rank": 1
+        },
+        {
+          "node_id": "general_report_v1.schedule",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 1,
+          "final_score": 182.11,
+          "structural_role": "TEMPLATE_SECTION",
+          "score_components": {
+            "tier_base": 100.0,
+            "concept_match": 25.0,
+            "section_match": 10.0,
+            "heading_match": 0.0,
+            "node_role_match": 9.36,
+            "operation_role_match": 19.0,
+            "parent_context_match": 0.0,
+            "table_structure_match": 0.0,
+            "paragraph_specificity": 4.0,
+            "template_alignment_score": 13.5,
+            "physical_editability_score": 1.25,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.0
+          },
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:TEMPLATE_SECTION",
+            "update_template_section_eval",
+            "eval_equivalent_alignment",
+            "RANK_TIER_1",
+            "exact_section_concept_template"
+          ],
+          "rank": 2
+        },
+        {
+          "node_id": "table_00",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 3,
+          "final_score": 147.05,
+          "structural_role": "TABLE",
+          "score_components": {
+            "tier_base": 60.0,
+            "concept_match": 13.750000000000002,
+            "section_match": 5.5,
+            "heading_match": 0.0,
+            "node_role_match": 18.0,
+            "operation_role_match": 18.0,
+            "parent_context_match": 0.0,
+            "table_structure_match": 19.8,
+            "paragraph_specificity": 7.0,
+            "template_alignment_score": 0.0,
+            "physical_editability_score": 5.0,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.0
+          },
+          "reason_codes": [
+            "generic_concept_hit",
+            "role_pref:TABLE",
+            "table_intent_table_role",
+            "RANK_TIER_3",
+            "table_structure"
+          ],
+          "rank": 3
+        }
+      ],
+      "validation": {
+        "operation_role_rank_consistent": true,
+        "virtual_target_only_for_add": true,
+        "table_intent_prefers_table_structure": true,
+        "generic_ranking_deterministic": true,
+        "issues": []
+      }
+    }
+  }
+}

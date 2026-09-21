@@ -1,0 +1,60 @@
+{
+  "rerun_id": "scenario-001-rerun-b5v2",
+  "source_scenario": "data/user_scenarios/scenario-001/",
+  "b3v2_rerun_path": "data/user_scenarios/scenario-001-rerun-b3v2/",
+  "b4v2_rerun_path": "data/user_scenarios/scenario-001-rerun-b4v2/",
+  "baseline_result": "PARTIAL",
+  "b3v2_result": "PARTIAL",
+  "b4v2_result": "PARTIAL",
+  "current_git_commit": "52c3af5a4ae045ec0efb79243975d1cda238e3dc",
+  "b3_version": "B3v2",
+  "b4_version": "B4v2",
+  "b5_version": "B5v2",
+  "changed_component": "B5v2",
+  "b3_unchanged": true,
+  "b4_unchanged": true,
+  "expected_impact_used": false,
+  "created_at_setup": "2026-07-24T19:35:00Z",
+  "executed_at": "2026-07-24T19:35:30Z",
+  "execution_status": "COMPLETED_NEEDS_REVIEW",
+  "overall_evaluation": "PARTIAL",
+  "input_hashes": {
+    "change_request.txt": "e69f0522ad6a78c6d66134ca0e2617ea1ff88f3e756e8b9842c9a8efb19f00f1",
+    "MDSR.docx": "cd70f942ab8534c22887782b61d2319fd026e61f97744bde8f985c6484a3652d",
+    "MDDR.docx": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf"
+  },
+  "retrieval_identical_to_b4v2": true,
+  "b3_identical_to_b4v2": true,
+  "b4_identical_to_b4v2": true,
+  "b3_summary": {
+    "IMPACTED": 6,
+    "NOT_IMPACTED": 8,
+    "UNCERTAIN": 1
+  },
+  "b4_summary": {
+    "CONSISTENT": 4,
+    "CONFLICT": 0,
+    "NEEDS_REVIEW": 0
+  },
+  "b5_summary": {
+    "PATCHED": 3,
+    "SKIPPED_WITH_REASON": 1,
+    "NEEDS_REVIEW": 0,
+    "propagation_decisions": {
+      "PATCH_EXISTING": 1,
+      "EXTEND_EXISTING": 2,
+      "NEW_DESIGN_CANDIDATE": 0,
+      "SKIP": 1,
+      "NEEDS_REVIEW": 0
+    }
+  },
+  "mdsr_patched_req_ids": ["Req. 204", "Req. 100", "Req. 110"],
+  "mddr_patched_req_ids": ["Req. 204", "Req. 100", "Req. 110"],
+  "req100_audit_theme_path_eliminated": true,
+  "req100_residual_false_propagation_via_extend": true,
+  "notes": [
+    "Frozen baseline/B3v2/B4v2 outputs not used as gold or retrieval input",
+    "Same CR and Mindrium source docs as baseline",
+    "Req.100 no longer aligned via 감사 theme; still EXTEND via weak CR content token overlap"
+  ]
+}

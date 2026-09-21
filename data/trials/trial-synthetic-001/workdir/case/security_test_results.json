@@ -1,0 +1,1080 @@
+{
+  "case_id": "lab_ec_sw",
+  "model_version": "security-test-results-v1",
+  "accepted_execution_id": "exec-20260718-runner-synthetic-001",
+  "executions": [
+    {
+      "execution_id": "exec-20260717-synthetic-001",
+      "executed_at": "2026-07-17T14:30:00Z",
+      "executor": {
+        "type": "script",
+        "name": "document-ai-synthetic-fixture",
+        "version": "1.0.0"
+      },
+      "environment": {
+        "target": "JM COLLECTION staging (synthetic)",
+        "base_url": "https://staging.jm-collection.example",
+        "host": "staging.jm-collection.example",
+        "notes": "SYNTHETIC SAMPLE — for Document Harness integration testing only. Not real penetration test output."
+      },
+      "synthetic": true,
+      "source_file": "executions\\exec-20260717-synthetic-001.json",
+      "imported_at": "2026-07-17T15:04:34Z",
+      "result_count": 4
+    },
+    {
+      "execution_id": "exec-20260718-runner-synthetic-001",
+      "executed_at": "2026-07-17T16:08:10Z",
+      "executor": {
+        "type": "script",
+        "name": "document-ai-security-runner",
+        "version": "0.1.0"
+      },
+      "environment": {
+        "target": "synthetic_fixture",
+        "base_url": "https://fixture.example.com",
+        "host": "fixture.example.com",
+        "notes": "Synthetic fixture execution; no network requests performed."
+      },
+      "synthetic": true,
+      "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+      "imported_at": "2026-07-17T16:09:03Z",
+      "result_count": 9
+    }
+  ],
+  "results_by_test": {
+    "SI-01-T01": {
+      "security_test_id": "SI-01-T01",
+      "req_id": "SI-01",
+      "history": [
+        {
+          "execution_id": "exec-20260717-synthetic-001",
+          "executed_at": "2026-07-17T14:31:00Z",
+          "status": "PASS",
+          "actual_result": "TLS 1.2+ enforced on API gateway; certificate chain validated (synthetic PASS).",
+          "evidence": [
+            {
+              "type": "command_output",
+              "path": "data/executions/lab_ec_sw/evidence/si01_tls_check.txt",
+              "description": "SYNTHETIC openssl TLS handshake output",
+              "resolved_path": "data\\executions\\lab_ec_sw\\evidence\\si01_tls_check.txt",
+              "sha256": "a7423b04a6ff8f6de7a5a1a1299c9a6e40856804e2546eb83135b0f72f2d6ae3"
+            }
+          ],
+          "executor_note": "Synthetic command_output evidence for SI-01 integration test.",
+          "executor": {
+            "type": "script",
+            "name": "document-ai-synthetic-fixture",
+            "version": "1.0.0"
+          },
+          "environment": {
+            "target": "JM COLLECTION staging (synthetic)",
+            "base_url": "https://staging.jm-collection.example",
+            "host": "staging.jm-collection.example",
+            "notes": "SYNTHETIC SAMPLE — for Document Harness integration testing only. Not real penetration test output."
+          },
+          "synthetic": true,
+          "review_status": "test_fixture_verified",
+          "has_evidence": true,
+          "source_file": "executions\\exec-20260717-synthetic-001.json",
+          "imported_at": "2026-07-17T15:04:34Z",
+          "reviewer": {
+            "name": "Document AI Fixture Reviewer",
+            "role": "pipeline_test"
+          },
+          "reviewed_at": "2026-07-17T15:35:00Z",
+          "review_note": "SYNTHETIC fixture — not for real gold",
+          "verification_scope": "fixture_only",
+          "selected_for_report": false,
+          "result_status_confirmed": true,
+          "evidence_confirmed": true,
+          "evidence_hash_verified": false,
+          "real_execution": false
+        },
+        {
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "executed_at": "2026-07-17T16:08:10Z",
+          "status": "PASS",
+          "actual_result": "TLS connection succeeded with TLSv1.3; certificate valid for 1263 days",
+          "evidence": [
+            {
+              "type": "file",
+              "path": "data/executions/lab_ec_sw/runner.synthetic/SI-01_tls.json",
+              "description": "TLS negotiation and certificate metadata",
+              "sha256": "412c0dce8cc6cee3abe8a6f13080a37f0923d9a4b839a36ed4a64d95da8852ad",
+              "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-01_tls.json"
+            }
+          ],
+          "executor_note": "duration_ms=31",
+          "executor": {
+            "type": "script",
+            "name": "document-ai-security-runner",
+            "version": "0.1.0"
+          },
+          "environment": {
+            "target": "synthetic_fixture",
+            "base_url": "https://fixture.example.com",
+            "host": "fixture.example.com",
+            "notes": "Synthetic fixture execution; no network requests performed."
+          },
+          "synthetic": true,
+          "review_status": "test_fixture_verified",
+          "has_evidence": true,
+          "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+          "imported_at": "2026-07-17T16:09:03Z",
+          "reviewer": {
+            "name": "Document AI Fixture Reviewer",
+            "role": "pipeline_test"
+          },
+          "reviewed_at": "2026-07-17T16:12:00Z",
+          "review_note": "Synthetic TLS PASS fixture",
+          "verification_scope": "fixture_only",
+          "selected_for_report": false,
+          "result_status_confirmed": true,
+          "evidence_confirmed": true,
+          "evidence_hash_verified": true,
+          "real_execution": false
+        }
+      ],
+      "accepted": {
+        "execution_id": "exec-20260718-runner-synthetic-001",
+        "executed_at": "2026-07-17T16:08:10Z",
+        "status": "PASS",
+        "actual_result": "TLS connection succeeded with TLSv1.3; certificate valid for 1263 days",
+        "evidence": [
+          {
+            "type": "file",
+            "path": "data/executions/lab_ec_sw/runner.synthetic/SI-01_tls.json",
+            "description": "TLS negotiation and certificate metadata",
+            "sha256": "412c0dce8cc6cee3abe8a6f13080a37f0923d9a4b839a36ed4a64d95da8852ad",
+            "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-01_tls.json"
+          }
+        ],
+        "executor_note": "duration_ms=31",
+        "executor": {
+          "type": "script",
+          "name": "document-ai-security-runner",
+          "version": "0.1.0"
+        },
+        "environment": {
+          "target": "synthetic_fixture",
+          "base_url": "https://fixture.example.com",
+          "host": "fixture.example.com",
+          "notes": "Synthetic fixture execution; no network requests performed."
+        },
+        "synthetic": true,
+        "review_status": "test_fixture_verified",
+        "has_evidence": true,
+        "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+        "imported_at": "2026-07-17T16:09:03Z",
+        "selected_for_report": false,
+        "real_execution": false
+      }
+    },
+    "IA-01-T01": {
+      "security_test_id": "IA-01-T01",
+      "req_id": "IA-01",
+      "history": [
+        {
+          "execution_id": "exec-20260717-synthetic-001",
+          "executed_at": "2026-07-17T14:32:00Z",
+          "status": "FAIL",
+          "actual_result": "Account lockout triggered after 3 failed attempts but notification email not sent (synthetic FAIL).",
+          "evidence": [
+            {
+              "type": "log",
+              "path": "data/executions/lab_ec_sw/evidence/ia01_auth_fail.log",
+              "description": "SYNTHETIC authentication failure log",
+              "resolved_path": "data\\executions\\lab_ec_sw\\evidence\\ia01_auth_fail.log",
+              "sha256": "4c379b732898de2298ad5b9223d45835c07b27b78f142d434a4e1ee54843991d"
+            }
+          ],
+          "executor_note": "Synthetic log evidence for IA-01 negative test.",
+          "executor": {
+            "type": "script",
+            "name": "document-ai-synthetic-fixture",
+            "version": "1.0.0"
+          },
+          "environment": {
+            "target": "JM COLLECTION staging (synthetic)",
+            "base_url": "https://staging.jm-collection.example",
+            "host": "staging.jm-collection.example",
+            "notes": "SYNTHETIC SAMPLE — for Document Harness integration testing only. Not real penetration test output."
+          },
+          "synthetic": true,
+          "review_status": "test_fixture_verified",
+          "has_evidence": true,
+          "source_file": "executions\\exec-20260717-synthetic-001.json",
+          "imported_at": "2026-07-17T15:04:34Z",
+          "reviewer": {
+            "name": "Document AI Fixture Reviewer",
+            "role": "pipeline_test"
+          },
+          "reviewed_at": "2026-07-17T15:35:00Z",
+          "review_note": "SYNTHETIC fixture — not for real gold",
+          "verification_scope": "fixture_only",
+          "selected_for_report": false,
+          "result_status_confirmed": true,
+          "evidence_confirmed": true,
+          "evidence_hash_verified": false,
+          "real_execution": false
+        }
+      ],
+      "accepted": {
+        "execution_id": "exec-20260717-synthetic-001",
+        "executed_at": "2026-07-17T14:32:00Z",
+        "status": "FAIL",
+        "actual_result": "Account lockout triggered after 3 failed attempts but notification email not sent (synthetic FAIL).",
+        "evidence": [
+          {
+            "type": "log",
+            "path": "data/executions/lab_ec_sw/evidence/ia01_auth_fail.log",
+            "description": "SYNTHETIC authentication failure log",
+            "resolved_path": "data\\executions\\lab_ec_sw\\evidence\\ia01_auth_fail.log",
+            "sha256": "4c379b732898de2298ad5b9223d45835c07b27b78f142d434a4e1ee54843991d"
+          }
+        ],
+        "executor_note": "Synthetic log evidence for IA-01 negative test.",
+        "executor": {
+          "type": "script",
+          "name": "document-ai-synthetic-fixture",
+          "version": "1.0.0"
+        },
+        "environment": {
+          "target": "JM COLLECTION staging (synthetic)",
+          "base_url": "https://staging.jm-collection.example",
+          "host": "staging.jm-collection.example",
+          "notes": "SYNTHETIC SAMPLE — for Document Harness integration testing only. Not real penetration test output."
+        },
+        "synthetic": true,
+        "review_status": "test_fixture_verified",
+        "has_evidence": true,
+        "source_file": "executions\\exec-20260717-synthetic-001.json",
+        "imported_at": "2026-07-17T15:04:34Z",
+        "selected_for_report": false,
+        "real_execution": false
+      }
+    },
+    "UC-01-T01": {
+      "security_test_id": "UC-01-T01",
+      "req_id": "UC-01",
+      "history": [
+        {
+          "execution_id": "exec-20260717-synthetic-001",
+          "executed_at": "2026-07-17T14:33:00Z",
+          "status": "NOT_EXECUTED",
+          "actual_result": "",
+          "evidence": [],
+          "executor_note": "Synthetic NOT_EXECUTED — should not overwrite any prior PASS/FAIL.",
+          "executor": {
+            "type": "script",
+            "name": "document-ai-synthetic-fixture",
+            "version": "1.0.0"
+          },
+          "environment": {
+            "target": "JM COLLECTION staging (synthetic)",
+            "base_url": "https://staging.jm-collection.example",
+            "host": "staging.jm-collection.example",
+            "notes": "SYNTHETIC SAMPLE — for Document Harness integration testing only. Not real penetration test output."
+          },
+          "synthetic": true,
+          "review_status": "test_fixture_verified",
+          "has_evidence": false,
+          "source_file": "executions\\exec-20260717-synthetic-001.json",
+          "imported_at": "2026-07-17T15:04:34Z",
+          "reviewer": {
+            "name": "Document AI Fixture Reviewer",
+            "role": "pipeline_test"
+          },
+          "reviewed_at": "2026-07-17T15:35:00Z",
+          "review_note": "SYNTHETIC fixture — not for real gold",
+          "verification_scope": "fixture_only",
+          "selected_for_report": false,
+          "result_status_confirmed": true,
+          "evidence_confirmed": false,
+          "evidence_hash_verified": false,
+          "real_execution": false
+        }
+      ],
+      "accepted": null
+    },
+    "DC-01-T01": {
+      "security_test_id": "DC-01-T01",
+      "req_id": "DC-01",
+      "history": [
+        {
+          "execution_id": "exec-20260717-synthetic-001",
+          "executed_at": "2026-07-17T14:34:00Z",
+          "status": "REVIEW_REQUIRED",
+          "actual_result": "Encryption-at-rest configuration partially documented; manual review needed (synthetic).",
+          "evidence": [
+            {
+              "type": "text",
+              "content": "SYNTHETIC: reviewer must verify RDS encryption settings before approval.",
+              "description": "inline review note"
+            }
+          ],
+          "executor_note": "Synthetic REVIEW_REQUIRED — must not auto-accept.",
+          "executor": {
+            "type": "script",
+            "name": "document-ai-synthetic-fixture",
+            "version": "1.0.0"
+          },
+          "environment": {
+            "target": "JM COLLECTION staging (synthetic)",
+            "base_url": "https://staging.jm-collection.example",
+            "host": "staging.jm-collection.example",
+            "notes": "SYNTHETIC SAMPLE — for Document Harness integration testing only. Not real penetration test output."
+          },
+          "synthetic": true,
+          "review_status": "test_fixture_verified",
+          "has_evidence": true,
+          "source_file": "executions\\exec-20260717-synthetic-001.json",
+          "imported_at": "2026-07-17T15:04:34Z",
+          "reviewer": {
+            "name": "Document AI Fixture Reviewer",
+            "role": "pipeline_test"
+          },
+          "reviewed_at": "2026-07-17T15:35:00Z",
+          "review_note": "SYNTHETIC fixture — REVIEW_REQUIRED resolved as fixture only",
+          "verification_scope": "fixture_only",
+          "selected_for_report": false,
+          "result_status_confirmed": true,
+          "evidence_confirmed": true,
+          "evidence_hash_verified": false,
+          "real_execution": false
+        }
+      ],
+      "accepted": null
+    },
+    "SI-02-T01": {
+      "security_test_id": "SI-02-T01",
+      "req_id": "SI-02",
+      "history": [
+        {
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "executed_at": "2026-07-17T16:08:10Z",
+          "status": "FAIL",
+          "actual_result": "TLSv1.0 is below required TLSv1.2",
+          "evidence": [
+            {
+              "type": "file",
+              "path": "data/executions/lab_ec_sw/runner.synthetic/SI-02_tls.json",
+              "description": "TLS negotiation and certificate metadata",
+              "sha256": "cac7210e6d237a6ed46ca5349a87f954ad481322b8ae8daf577e1d13d8505ac6",
+              "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-02_tls.json"
+            }
+          ],
+          "executor_note": "duration_ms=30",
+          "executor": {
+            "type": "script",
+            "name": "document-ai-security-runner",
+            "version": "0.1.0"
+          },
+          "environment": {
+            "target": "synthetic_fixture",
+            "base_url": "https://fixture.example.com",
+            "host": "fixture.example.com",
+            "notes": "Synthetic fixture execution; no network requests performed."
+          },
+          "synthetic": true,
+          "review_status": "test_fixture_verified",
+          "has_evidence": true,
+          "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+          "imported_at": "2026-07-17T16:09:03Z",
+          "reviewer": {
+            "name": "Document AI Fixture Reviewer",
+            "role": "pipeline_test"
+          },
+          "reviewed_at": "2026-07-17T16:12:00Z",
+          "review_note": "Synthetic TLS version FAIL fixture",
+          "verification_scope": "fixture_only",
+          "selected_for_report": false,
+          "result_status_confirmed": true,
+          "evidence_confirmed": true,
+          "evidence_hash_verified": true,
+          "real_execution": false
+        }
+      ],
+      "accepted": {
+        "execution_id": "exec-20260718-runner-synthetic-001",
+        "executed_at": "2026-07-17T16:08:10Z",
+        "status": "FAIL",
+        "actual_result": "TLSv1.0 is below required TLSv1.2",
+        "evidence": [
+          {
+            "type": "file",
+            "path": "data/executions/lab_ec_sw/runner.synthetic/SI-02_tls.json",
+            "description": "TLS negotiation and certificate metadata",
+            "sha256": "cac7210e6d237a6ed46ca5349a87f954ad481322b8ae8daf577e1d13d8505ac6",
+            "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-02_tls.json"
+          }
+        ],
+        "executor_note": "duration_ms=30",
+        "executor": {
+          "type": "script",
+          "name": "document-ai-security-runner",
+          "version": "0.1.0"
+        },
+        "environment": {
+          "target": "synthetic_fixture",
+          "base_url": "https://fixture.example.com",
+          "host": "fixture.example.com",
+          "notes": "Synthetic fixture execution; no network requests performed."
+        },
+        "synthetic": true,
+        "review_status": "test_fixture_verified",
+        "has_evidence": true,
+        "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+        "imported_at": "2026-07-17T16:09:03Z",
+        "selected_for_report": false,
+        "real_execution": false
+      }
+    },
+    "SI-03-T01": {
+      "security_test_id": "SI-03-T01",
+      "req_id": "SI-03",
+      "history": [
+        {
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "executed_at": "2026-07-17T16:08:10Z",
+          "status": "PASS",
+          "actual_result": "HTTP 200; required security headers satisfied",
+          "evidence": [
+            {
+              "type": "file",
+              "path": "data/executions/lab_ec_sw/runner.synthetic/SI-03_headers.json",
+              "description": "Sanitized HTTP security header metadata",
+              "sha256": "4439012ab21adadebb8ce7618a9c047467b918716cba865a5642b314c7a7b71f",
+              "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-03_headers.json"
+            }
+          ],
+          "executor_note": "duration_ms=141",
+          "executor": {
+            "type": "script",
+            "name": "document-ai-security-runner",
+            "version": "0.1.0"
+          },
+          "environment": {
+            "target": "synthetic_fixture",
+            "base_url": "https://fixture.example.com",
+            "host": "fixture.example.com",
+            "notes": "Synthetic fixture execution; no network requests performed."
+          },
+          "synthetic": true,
+          "review_status": "test_fixture_verified",
+          "has_evidence": true,
+          "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+          "imported_at": "2026-07-17T16:09:03Z",
+          "reviewer": {
+            "name": "Document AI Fixture Reviewer",
+            "role": "pipeline_test"
+          },
+          "reviewed_at": "2026-07-17T16:12:00Z",
+          "review_note": "Synthetic header PASS fixture",
+          "verification_scope": "fixture_only",
+          "selected_for_report": false,
+          "result_status_confirmed": true,
+          "evidence_confirmed": true,
+          "evidence_hash_verified": true,
+          "real_execution": false
+        }
+      ],
+      "accepted": {
+        "execution_id": "exec-20260718-runner-synthetic-001",
+        "executed_at": "2026-07-17T16:08:10Z",
+        "status": "PASS",
+        "actual_result": "HTTP 200; required security headers satisfied",
+        "evidence": [
+          {
+            "type": "file",
+            "path": "data/executions/lab_ec_sw/runner.synthetic/SI-03_headers.json",
+            "description": "Sanitized HTTP security header metadata",
+            "sha256": "4439012ab21adadebb8ce7618a9c047467b918716cba865a5642b314c7a7b71f",
+            "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-03_headers.json"
+          }
+        ],
+        "executor_note": "duration_ms=141",
+        "executor": {
+          "type": "script",
+          "name": "document-ai-security-runner",
+          "version": "0.1.0"
+        },
+        "environment": {
+          "target": "synthetic_fixture",
+          "base_url": "https://fixture.example.com",
+          "host": "fixture.example.com",
+          "notes": "Synthetic fixture execution; no network requests performed."
+        },
+        "synthetic": true,
+        "review_status": "test_fixture_verified",
+        "has_evidence": true,
+        "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+        "imported_at": "2026-07-17T16:09:03Z",
+        "selected_for_report": false,
+        "real_execution": false
+      }
+    },
+    "SI-04-T01": {
+      "security_test_id": "SI-04-T01",
+      "req_id": "SI-04",
+      "history": [
+        {
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "executed_at": "2026-07-17T16:08:10Z",
+          "status": "FAIL",
+          "actual_result": "missing required header: strict-transport-security; optional header missing: content-security-policy; optional header missing: referrer-policy; missing X-Frame-Options or CSP frame-ancestors",
+          "evidence": [
+            {
+              "type": "file",
+              "path": "data/executions/lab_ec_sw/runner.synthetic/SI-04_headers.json",
+              "description": "Sanitized HTTP security header metadata",
+              "sha256": "8530a81422b273f1fe25a77cc8926ad2f9164f13a58edb9689854352b096e19f",
+              "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-04_headers.json"
+            }
+          ],
+          "executor_note": "duration_ms=187",
+          "executor": {
+            "type": "script",
+            "name": "document-ai-security-runner",
+            "version": "0.1.0"
+          },
+          "environment": {
+            "target": "synthetic_fixture",
+            "base_url": "https://fixture.example.com",
+            "host": "fixture.example.com",
+            "notes": "Synthetic fixture execution; no network requests performed."
+          },
+          "synthetic": true,
+          "review_status": "test_fixture_verified",
+          "has_evidence": true,
+          "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+          "imported_at": "2026-07-17T16:09:03Z",
+          "reviewer": {
+            "name": "Document AI Fixture Reviewer",
+            "role": "pipeline_test"
+          },
+          "reviewed_at": "2026-07-17T16:12:00Z",
+          "review_note": "Synthetic HSTS missing FAIL fixture",
+          "verification_scope": "fixture_only",
+          "selected_for_report": false,
+          "result_status_confirmed": true,
+          "evidence_confirmed": true,
+          "evidence_hash_verified": true,
+          "real_execution": false
+        }
+      ],
+      "accepted": {
+        "execution_id": "exec-20260718-runner-synthetic-001",
+        "executed_at": "2026-07-17T16:08:10Z",
+        "status": "FAIL",
+        "actual_result": "missing required header: strict-transport-security; optional header missing: content-security-policy; optional header missing: referrer-policy; missing X-Frame-Options or CSP frame-ancestors",
+        "evidence": [
+          {
+            "type": "file",
+            "path": "data/executions/lab_ec_sw/runner.synthetic/SI-04_headers.json",
+            "description": "Sanitized HTTP security header metadata",
+            "sha256": "8530a81422b273f1fe25a77cc8926ad2f9164f13a58edb9689854352b096e19f",
+            "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-04_headers.json"
+          }
+        ],
+        "executor_note": "duration_ms=187",
+        "executor": {
+          "type": "script",
+          "name": "document-ai-security-runner",
+          "version": "0.1.0"
+        },
+        "environment": {
+          "target": "synthetic_fixture",
+          "base_url": "https://fixture.example.com",
+          "host": "fixture.example.com",
+          "notes": "Synthetic fixture execution; no network requests performed."
+        },
+        "synthetic": true,
+        "review_status": "test_fixture_verified",
+        "has_evidence": true,
+        "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+        "imported_at": "2026-07-17T16:09:03Z",
+        "selected_for_report": false,
+        "real_execution": false
+      }
+    },
+    "SI-05-T01": {
+      "security_test_id": "SI-05-T01",
+      "req_id": "SI-05",
+      "history": [
+        {
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "executed_at": "2026-07-17T16:08:10Z",
+          "status": "REVIEW_REQUIRED",
+          "actual_result": "HTTP header result uncertain: TimeoutError: synthetic timeout",
+          "evidence": [
+            {
+              "type": "file",
+              "path": "data/executions/lab_ec_sw/runner.synthetic/SI-05_headers.json",
+              "description": "HTTP header check error metadata",
+              "sha256": "fb7ff9c9dade8773482eda220dbcfb8d4d1650f89d705b288df764a2eb06d6f8",
+              "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-05_headers.json"
+            }
+          ],
+          "executor_note": "duration_ms=15; error=synthetic timeout",
+          "executor": {
+            "type": "script",
+            "name": "document-ai-security-runner",
+            "version": "0.1.0"
+          },
+          "environment": {
+            "target": "synthetic_fixture",
+            "base_url": "https://fixture.example.com",
+            "host": "fixture.example.com",
+            "notes": "Synthetic fixture execution; no network requests performed."
+          },
+          "synthetic": true,
+          "review_status": "test_fixture_verified",
+          "has_evidence": true,
+          "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+          "imported_at": "2026-07-17T16:09:03Z",
+          "reviewer": {
+            "name": "Document AI Fixture Reviewer",
+            "role": "pipeline_test"
+          },
+          "reviewed_at": "2026-07-17T16:12:00Z",
+          "review_note": "Synthetic timeout REVIEW_REQUIRED fixture",
+          "verification_scope": "fixture_only",
+          "selected_for_report": false,
+          "result_status_confirmed": true,
+          "evidence_confirmed": true,
+          "evidence_hash_verified": true,
+          "real_execution": false
+        }
+      ],
+      "accepted": null
+    },
+    "SI-06-T01": {
+      "security_test_id": "SI-06-T01",
+      "req_id": "SI-06",
+      "history": [
+        {
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "executed_at": "2026-07-17T16:08:10Z",
+          "status": "PASS",
+          "actual_result": "API health endpoint returned HTTP 200 in 25ms",
+          "evidence": [
+            {
+              "type": "file",
+              "path": "data/executions/lab_ec_sw/runner.synthetic/SI-06_api_health.json",
+              "description": "Sanitized API health metadata and body hash",
+              "sha256": "e0c3a436f767b42b6382e6aa4169ff80399c9c26c8d9ecf66740d2239a69dd5c",
+              "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-06_api_health.json"
+            }
+          ],
+          "executor_note": "duration_ms=63",
+          "executor": {
+            "type": "script",
+            "name": "document-ai-security-runner",
+            "version": "0.1.0"
+          },
+          "environment": {
+            "target": "synthetic_fixture",
+            "base_url": "https://fixture.example.com",
+            "host": "fixture.example.com",
+            "notes": "Synthetic fixture execution; no network requests performed."
+          },
+          "synthetic": true,
+          "review_status": "test_fixture_verified",
+          "has_evidence": true,
+          "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+          "imported_at": "2026-07-17T16:09:03Z",
+          "reviewer": {
+            "name": "Document AI Fixture Reviewer",
+            "role": "pipeline_test"
+          },
+          "reviewed_at": "2026-07-17T16:12:00Z",
+          "review_note": "Synthetic API health PASS fixture",
+          "verification_scope": "fixture_only",
+          "selected_for_report": false,
+          "result_status_confirmed": true,
+          "evidence_confirmed": true,
+          "evidence_hash_verified": true,
+          "real_execution": false
+        }
+      ],
+      "accepted": {
+        "execution_id": "exec-20260718-runner-synthetic-001",
+        "executed_at": "2026-07-17T16:08:10Z",
+        "status": "PASS",
+        "actual_result": "API health endpoint returned HTTP 200 in 25ms",
+        "evidence": [
+          {
+            "type": "file",
+            "path": "data/executions/lab_ec_sw/runner.synthetic/SI-06_api_health.json",
+            "description": "Sanitized API health metadata and body hash",
+            "sha256": "e0c3a436f767b42b6382e6aa4169ff80399c9c26c8d9ecf66740d2239a69dd5c",
+            "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-06_api_health.json"
+          }
+        ],
+        "executor_note": "duration_ms=63",
+        "executor": {
+          "type": "script",
+          "name": "document-ai-security-runner",
+          "version": "0.1.0"
+        },
+        "environment": {
+          "target": "synthetic_fixture",
+          "base_url": "https://fixture.example.com",
+          "host": "fixture.example.com",
+          "notes": "Synthetic fixture execution; no network requests performed."
+        },
+        "synthetic": true,
+        "review_status": "test_fixture_verified",
+        "has_evidence": true,
+        "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+        "imported_at": "2026-07-17T16:09:03Z",
+        "selected_for_report": false,
+        "real_execution": false
+      }
+    },
+    "SI-07-T01": {
+      "security_test_id": "SI-07-T01",
+      "req_id": "SI-07",
+      "history": [
+        {
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "executed_at": "2026-07-17T16:08:10Z",
+          "status": "FAIL",
+          "actual_result": "HTTP status 503 not in [200]",
+          "evidence": [
+            {
+              "type": "file",
+              "path": "data/executions/lab_ec_sw/runner.synthetic/SI-07_api_health.json",
+              "description": "Sanitized API health metadata and body hash",
+              "sha256": "e9fc05b1f3cd3b0b8c0631e62ba9246e4bbf29e26893dffa4f554c17c30d0524",
+              "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-07_api_health.json"
+            }
+          ],
+          "executor_note": "duration_ms=30",
+          "executor": {
+            "type": "script",
+            "name": "document-ai-security-runner",
+            "version": "0.1.0"
+          },
+          "environment": {
+            "target": "synthetic_fixture",
+            "base_url": "https://fixture.example.com",
+            "host": "fixture.example.com",
+            "notes": "Synthetic fixture execution; no network requests performed."
+          },
+          "synthetic": true,
+          "review_status": "test_fixture_verified",
+          "has_evidence": true,
+          "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+          "imported_at": "2026-07-17T16:09:03Z",
+          "reviewer": {
+            "name": "Document AI Fixture Reviewer",
+            "role": "pipeline_test"
+          },
+          "reviewed_at": "2026-07-17T16:12:00Z",
+          "review_note": "Synthetic unexpected status FAIL fixture",
+          "verification_scope": "fixture_only",
+          "selected_for_report": false,
+          "result_status_confirmed": true,
+          "evidence_confirmed": true,
+          "evidence_hash_verified": true,
+          "real_execution": false
+        }
+      ],
+      "accepted": {
+        "execution_id": "exec-20260718-runner-synthetic-001",
+        "executed_at": "2026-07-17T16:08:10Z",
+        "status": "FAIL",
+        "actual_result": "HTTP status 503 not in [200]",
+        "evidence": [
+          {
+            "type": "file",
+            "path": "data/executions/lab_ec_sw/runner.synthetic/SI-07_api_health.json",
+            "description": "Sanitized API health metadata and body hash",
+            "sha256": "e9fc05b1f3cd3b0b8c0631e62ba9246e4bbf29e26893dffa4f554c17c30d0524",
+            "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-07_api_health.json"
+          }
+        ],
+        "executor_note": "duration_ms=30",
+        "executor": {
+          "type": "script",
+          "name": "document-ai-security-runner",
+          "version": "0.1.0"
+        },
+        "environment": {
+          "target": "synthetic_fixture",
+          "base_url": "https://fixture.example.com",
+          "host": "fixture.example.com",
+          "notes": "Synthetic fixture execution; no network requests performed."
+        },
+        "synthetic": true,
+        "review_status": "test_fixture_verified",
+        "has_evidence": true,
+        "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+        "imported_at": "2026-07-17T16:09:03Z",
+        "selected_for_report": false,
+        "real_execution": false
+      }
+    },
+    "SI-08-T01": {
+      "security_test_id": "SI-08-T01",
+      "req_id": "SI-08",
+      "history": [
+        {
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "executed_at": "2026-07-17T16:08:10Z",
+          "status": "PASS",
+          "actual_result": "TCP connection to allowlisted fixture.example.com:443 succeeded; no data sent or read",
+          "evidence": [
+            {
+              "type": "file",
+              "path": "data/executions/lab_ec_sw/runner.synthetic/SI-08_port.json",
+              "description": "Single-port TCP connectivity metadata",
+              "sha256": "e872d9fc2c7d896d7c0983e582539a1665f1715eec7d869ddd3824c070dcdf13",
+              "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-08_port.json"
+            }
+          ],
+          "executor_note": "duration_ms=16",
+          "executor": {
+            "type": "script",
+            "name": "document-ai-security-runner",
+            "version": "0.1.0"
+          },
+          "environment": {
+            "target": "synthetic_fixture",
+            "base_url": "https://fixture.example.com",
+            "host": "fixture.example.com",
+            "notes": "Synthetic fixture execution; no network requests performed."
+          },
+          "synthetic": true,
+          "review_status": "test_fixture_verified",
+          "has_evidence": true,
+          "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+          "imported_at": "2026-07-17T16:09:03Z",
+          "reviewer": {
+            "name": "Document AI Fixture Reviewer",
+            "role": "pipeline_test"
+          },
+          "reviewed_at": "2026-07-17T16:12:00Z",
+          "review_note": "Synthetic single-port connectivity PASS fixture",
+          "verification_scope": "fixture_only",
+          "selected_for_report": false,
+          "result_status_confirmed": true,
+          "evidence_confirmed": true,
+          "evidence_hash_verified": true,
+          "real_execution": false
+        }
+      ],
+      "accepted": {
+        "execution_id": "exec-20260718-runner-synthetic-001",
+        "executed_at": "2026-07-17T16:08:10Z",
+        "status": "PASS",
+        "actual_result": "TCP connection to allowlisted fixture.example.com:443 succeeded; no data sent or read",
+        "evidence": [
+          {
+            "type": "file",
+            "path": "data/executions/lab_ec_sw/runner.synthetic/SI-08_port.json",
+            "description": "Single-port TCP connectivity metadata",
+            "sha256": "e872d9fc2c7d896d7c0983e582539a1665f1715eec7d869ddd3824c070dcdf13",
+            "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-08_port.json"
+          }
+        ],
+        "executor_note": "duration_ms=16",
+        "executor": {
+          "type": "script",
+          "name": "document-ai-security-runner",
+          "version": "0.1.0"
+        },
+        "environment": {
+          "target": "synthetic_fixture",
+          "base_url": "https://fixture.example.com",
+          "host": "fixture.example.com",
+          "notes": "Synthetic fixture execution; no network requests performed."
+        },
+        "synthetic": true,
+        "review_status": "test_fixture_verified",
+        "has_evidence": true,
+        "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+        "imported_at": "2026-07-17T16:09:03Z",
+        "selected_for_report": false,
+        "real_execution": false
+      }
+    },
+    "SI-09-T01": {
+      "security_test_id": "SI-09-T01",
+      "req_id": "SI-09",
+      "history": [
+        {
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "executed_at": "2026-07-17T16:08:10Z",
+          "status": "REVIEW_REQUIRED",
+          "actual_result": "TCP connectivity uncertain: TimeoutError: synthetic connection timeout",
+          "evidence": [
+            {
+              "type": "file",
+              "path": "data/executions/lab_ec_sw/runner.synthetic/SI-09_port.json",
+              "description": "Port connectivity error metadata",
+              "sha256": "e669b2637694642c35e6bb1f5006bd8167cd96e359a71a63531b1b37cdb7a2be",
+              "resolved_path": "data\\executions\\lab_ec_sw\\runner.synthetic\\SI-09_port.json"
+            }
+          ],
+          "executor_note": "duration_ms=16; error=synthetic connection timeout",
+          "executor": {
+            "type": "script",
+            "name": "document-ai-security-runner",
+            "version": "0.1.0"
+          },
+          "environment": {
+            "target": "synthetic_fixture",
+            "base_url": "https://fixture.example.com",
+            "host": "fixture.example.com",
+            "notes": "Synthetic fixture execution; no network requests performed."
+          },
+          "synthetic": true,
+          "review_status": "test_fixture_verified",
+          "has_evidence": true,
+          "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+          "imported_at": "2026-07-17T16:09:03Z",
+          "reviewer": {
+            "name": "Document AI Fixture Reviewer",
+            "role": "pipeline_test"
+          },
+          "reviewed_at": "2026-07-17T16:12:00Z",
+          "review_note": "Synthetic port timeout REVIEW_REQUIRED fixture",
+          "verification_scope": "fixture_only",
+          "selected_for_report": false,
+          "result_status_confirmed": true,
+          "evidence_confirmed": true,
+          "evidence_hash_verified": true,
+          "real_execution": false
+        }
+      ],
+      "accepted": null
+    }
+  },
+  "warnings": [],
+  "import_log": [
+    {
+      "execution_id": "exec-20260717-synthetic-001",
+      "imported_at": "2026-07-17T15:04:34Z",
+      "source": "data\\executions\\lab_ec_sw\\security_results.synthetic.json",
+      "results_imported": 4,
+      "warnings": 0
+    },
+    {
+      "execution_id": "exec-20260718-runner-synthetic-001",
+      "imported_at": "2026-07-17T16:09:03Z",
+      "source": "data\\executions\\lab_ec_sw\\runner.synthetic.json",
+      "results_imported": 9,
+      "warnings": 0
+    }
+  ],
+  "review_log": [
+    {
+      "execution_id": "exec-20260717-synthetic-001",
+      "reviewed_at": "2026-07-17T15:35:00Z",
+      "reviewer": {
+        "name": "Document AI Fixture Reviewer",
+        "role": "pipeline_test"
+      },
+      "overall_status": "test_fixture_verified",
+      "synthetic": true,
+      "hash_warnings": [],
+      "audit": [
+        {
+          "security_test_id": "SI-01-T01",
+          "execution_id": "exec-20260717-synthetic-001",
+          "review_status": "test_fixture_verified",
+          "selected_for_report": false
+        },
+        {
+          "security_test_id": "IA-01-T01",
+          "execution_id": "exec-20260717-synthetic-001",
+          "review_status": "test_fixture_verified",
+          "selected_for_report": false
+        },
+        {
+          "security_test_id": "UC-01-T01",
+          "execution_id": "exec-20260717-synthetic-001",
+          "review_status": "test_fixture_verified",
+          "selected_for_report": false
+        },
+        {
+          "security_test_id": "DC-01-T01",
+          "execution_id": "exec-20260717-synthetic-001",
+          "review_status": "test_fixture_verified",
+          "selected_for_report": false
+        }
+      ]
+    },
+    {
+      "execution_id": "exec-20260718-runner-synthetic-001",
+      "reviewed_at": "2026-07-17T16:12:00Z",
+      "reviewer": {
+        "name": "Document AI Fixture Reviewer",
+        "role": "pipeline_test"
+      },
+      "overall_status": "test_fixture_verified",
+      "synthetic": true,
+      "hash_warnings": [],
+      "audit": [
+        {
+          "security_test_id": "SI-01-T01",
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "review_status": "test_fixture_verified",
+          "selected_for_report": false
+        },
+        {
+          "security_test_id": "SI-02-T01",
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "review_status": "test_fixture_verified",
+          "selected_for_report": false
+        },
+        {
+          "security_test_id": "SI-03-T01",
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "review_status": "test_fixture_verified",
+          "selected_for_report": false
+        },
+        {
+          "security_test_id": "SI-04-T01",
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "review_status": "test_fixture_verified",
+          "selected_for_report": false
+        },
+        {
+          "security_test_id": "SI-05-T01",
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "review_status": "test_fixture_verified",
+          "selected_for_report": false
+        },
+        {
+          "security_test_id": "SI-06-T01",
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "review_status": "test_fixture_verified",
+          "selected_for_report": false
+        },
+        {
+          "security_test_id": "SI-07-T01",
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "review_status": "test_fixture_verified",
+          "selected_for_report": false
+        },
+        {
+          "security_test_id": "SI-08-T01",
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "review_status": "test_fixture_verified",
+          "selected_for_report": false
+        },
+        {
+          "security_test_id": "SI-09-T01",
+          "execution_id": "exec-20260718-runner-synthetic-001",
+          "review_status": "test_fixture_verified",
+          "selected_for_report": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "document_id": "MDTM_BASE",
+    "predicted_status": "REVIEW_REQUIRED",
+    "substantive_evidence_count": 4,
+    "role_evidence_count": 2,
+    "exact_identifier_count": 0,
+    "normalized_identifier_count": 0,
+    "semantic_evidence_count": 4,
+    "malformed_identifier_count": 0,
+    "reason_codes": [
+      "semantic_only_review",
+      "no_semantic_only_patch"
+    ],
+    "source_stages": [
+      "catalog_role",
+      "mdtm_change_poc",
+      "upload"
+    ],
+    "top_evidence": [
+      {
+        "document_id": "MDTM_BASE",
+        "document_role": "traceability",
+        "evidence_type": "SEMANTIC_SECTION_MATCH",
+        "evidence_value": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+        "source_stage": "mdtm_change_poc",
+        "source_node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+        "confidence": 0.55,
+        "independent_group": "review:ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+        "reason_codes": [
+          "semantic_or_lexical_overlap_only"
+        ],
+        "supports_impacted": false,
+        "supports_review": true
+      },
+      {
+        "document_id": "MDTM_BASE",
+        "document_role": "traceability",
+        "evidence_type": "SEMANTIC_SECTION_MATCH",
+        "evidence_value": "ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+        "source_stage": "mdtm_change_poc",
+        "source_node_id": "ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+        "confidence": 0.55,
+        "independent_group": "review:ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+        "reason_codes": [
+          "exact_design_id_match"
+        ],
+        "supports_impacted": false,
+        "supports_review": true
+      },
+      {
+        "document_id": "MDTM_BASE",
+        "document_role": "traceability",
+        "evidence_type": "SEMANTIC_SECTION_MATCH",
+        "evidence_value": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+        "source_stage": "mdtm_change_poc",
+        "source_node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+        "confidence": 0.55,
+        "independent_group": "review:ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+        "reason_codes": [
+          "semantic_or_lexical_overlap_only"
+        ],
+        "supports_impacted": false,
+        "supports_review": true
+      },
+      {
+        "document_id": "MDTM_BASE",
+        "document_role": "traceability",
+        "evidence_type": "SEMANTIC_SECTION_MATCH",
+        "evidence_value": "ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+        "source_stage": "mdtm_change_poc",
+        "source_node_id": "ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+        "confidence": 0.55,
+        "independent_group": "review:ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+        "reason_codes": [
+          "exact_design_id_match"
+        ],
+        "supports_impacted": false,
+        "supports_review": true
+      },
+      {
+        "document_id": "MDTM_BASE",
+        "document_role": "traceability",
+        "evidence_type": "ROLE_COMPATIBILITY",
+        "evidence_value": "traceability",
+        "source_stage": "catalog_role",
+        "source_node_id": null,
+        "confidence": 0.2,
+        "independent_group": "role",
+        "reason_codes": [
+          "role_compatible"
+        ],
+        "supports_impacted": false,
+        "supports_review": false
+      }
+    ],
+    "human_review_required": true
+  }
+]

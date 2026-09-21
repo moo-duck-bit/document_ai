@@ -1,0 +1,30 @@
+{
+  "total": 1,
+  "critical": 0,
+  "major": 1,
+  "minor": 0,
+  "bug_candidates": [
+    {
+      "session_id": "pilot_ec_semantic_P001_20260801T234726405728",
+      "domain": "ec_sw",
+      "document": "data/pilot/real_user_document_pilot/scenarios/fixtures/ec_sw/mdtm_pilot_base.docx",
+      "change_request": "사용자 인증 정책 강화가 필요하니 관련 요구/설계를 찾아 검토한다.",
+      "expected": [
+        "semantic candidates",
+        "REVIEW_REQUIRED"
+      ],
+      "actual": {
+        "n_review_items": 0,
+        "node_agreement": false,
+        "document_agreement": false,
+        "verdict": "PARTIAL"
+      },
+      "severity": "major",
+      "reproducibility": "high",
+      "screenshot_path": null,
+      "related_artifact": "data/pilot/results/pilot_run_01/pilot_ec_semantic_P001_20260801T234726405728/review_items.json",
+      "recommended_investigation": "Inspect locator/ranking candidates for this change request; do not tune holdout gold."
+    }
+  ],
+  "most_frequent_issue": "empty_or_weak_node_candidates"
+}

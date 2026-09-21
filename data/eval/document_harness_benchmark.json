@@ -1,0 +1,58 @@
+{
+  "version": "1.1",
+  "description": "Document Harness E2E benchmark — train / holdout splits with independent gold",
+  "cases": [
+    {
+      "case_id": "lab_ec_sw",
+      "case_dir": "data/cases/lab_ec_sw",
+      "project_type": "real_ec_sw_lab",
+      "split": "train",
+      "force_generate": false,
+      "gold_mdsr": "data/gold/mdsr/lab_ec_sw.docx",
+      "gold_mddr": "data/gold/mddr/lab_ec_sw.docx",
+      "expect": {
+        "min_quality_overall": 85,
+        "min_validation_overall": 70
+      }
+    },
+    {
+      "case_id": "inventory_mgmt",
+      "case_dir": "data/cases/inventory_mgmt",
+      "project_type": "harness_dummy",
+      "split": "train",
+      "skip_generate": true,
+      "gold_mdsr": "data/gold/mdsr/inventory_mgmt.docx",
+      "gold_mddr": "data/gold/mddr/inventory_mgmt.docx",
+      "expect": {
+        "min_quality_overall": 85,
+        "min_validation_overall": 70
+      }
+    },
+    {
+      "case_id": "hospital_reservation",
+      "case_dir": "data/cases/hospital_reservation",
+      "project_type": "harness_dummy",
+      "split": "holdout",
+      "skip_generate": true,
+      "gold_mdsr": "data/gold/mdsr/hospital_reservation.docx",
+      "gold_mddr": "data/gold/mddr/hospital_reservation.docx",
+      "expect": {
+        "min_quality_overall": 85,
+        "min_validation_overall": 70
+      }
+    },
+    {
+      "case_id": "jm_collection",
+      "case_dir": "data/cases/jm_collection",
+      "project_type": "reference_authoring",
+      "split": "train",
+      "skip_generate": true,
+      "gold_mdsr": "data/gold/mdsr/jm_collection.docx",
+      "gold_mddr": "data/gold/mddr/jm_collection.docx",
+      "expect": {
+        "min_quality_overall": 70,
+        "min_validation_overall": 85
+      }
+    }
+  ]
+}

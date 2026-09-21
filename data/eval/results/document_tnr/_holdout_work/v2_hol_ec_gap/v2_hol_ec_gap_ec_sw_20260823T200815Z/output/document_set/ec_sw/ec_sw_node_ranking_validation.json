@@ -1,0 +1,7 @@
+{
+  "primary_exact_ranked_before_non_exact": true,
+  "no_adjacent_row_exact_evidence": true,
+  "duplicate_rows_preserved": true,
+  "identity_rank_tier_consistent": true,
+  "issues": []
+}

@@ -1,0 +1,162 @@
+{
+  "cover_product_line": "Sample Medical IT Co., Ltd.",
+  "standards": [
+    "개인정보보호법 v4.0 Payment Card Industry Data Security Standard",
+    "개인정보보호법 (대한민국) / OWASP ASVS v4.0 Application Security Verification Standard"
+  ],
+  "paragraphs": [
+    "Software Design Specification",
+    "개인정보보호법 v4.0 Payment Card Industry Data Security Standard",
+    "개인정보보호법 (대한민국) / OWASP ASVS v4.0 Application Security Verification Standard",
+    "EC-SW-MDDR(HRS) Hospital Reservation System 소프트웨어 설계명세서",
+    "Ver 1.0 / 문서번호 HRS-SRS-10",
+    "Hospital Reservation System은 의료 서비스 병원 예약·접수 시스템 소프트웨어이다. 고객용 HRS-web, 예약 API HRS-api, 병원 운영 콘솔 HRS-admin으로 구성되며 진료과 조회·예약 신청·예약·수납 정산·방문 일정·취소·CS·환자 안내 기능을 제공한다.",
+    "React SPA + Node.js 마이크로서비스 + PostgreSQL/Redis/S3/CloudFront 아키텍처를 따른다. 수납 연동 토큰화, 개인정보·수납 데이터 암호화, RBAC, OWASP Top 10 대응을 설계에 반영한다.",
+    "본 문서는 Hospital Reservation System 소프트웨어의 아키텍처·컴포넌트·요구사항별 설계 사항을 정의한다."
+  ],
+  "overview": {
+    "purpose": "Hospital Reservation System 병원 예약·접수 시스템 소프트웨어의 내부 구조, 모듈, 인터페이스, 데이터 모델 및 보안·비기능 설계를 명세하여 개발·시험·운영의 기준을 제공한다.",
+    "scope": "본 문서는 Hospital Reservation System 병원 예약·접수 시스템 소프트웨어(HRS-web, HRS-api, HRS-admin)에 적용된다.",
+    "software_purpose": "Hospital Reservation System 병원 예약 시스템의 회원·진료과·예약·수납·진료일정·환자 안내·운영 기능을 모듈 단위로 설계하고, PG·알림·방문/진료 일정 API 연동 및 보안 통제를 구현하기 위한 설계 기준을 제공한다.",
+    "users": [
+      "일반 고객(환자·보호자): HRS-web을 통해 진료과 조회, 예약, 수납, 방문/진료 일정 조회, 예약 취소/변경, 1:1 문의를 수행한다.",
+      "운영자·CS·물류 담당자: HRS-admin을 통해 진료과·예약 슬롯·예약·환자 안내·회원·문의를 관리한다.",
+      "시스템 연동: 수납 시스템, SMS/이메일 게이트웨이, 진료 일정 연동 방문 일정 확인 API와 연동한다."
+    ],
+    "system": "HRS-web → API Gateway → HRS-api(회원/카탈로그/예약/수납/알림 서비스) → PostgreSQL·Redis·S3. HRS-admin은 내부 VPC에서 HRS-api 관리 API를 호출한다. 외부 PG·알림·방문/진료 일정 API는 secrets manager 키와 TLS 상호인증으로 연동한다."
+  },
+  "approval": {
+    "date": "2026.03.20",
+    "people": {
+      "승인자": {
+        "name": "김준호",
+        "title": "대표이사"
+      },
+      "검토자": {
+        "name": "이서연",
+        "title": "보안책임자(CISO)"
+      },
+      "작성자": {
+        "name": "박민재",
+        "title": "SI팀장"
+      }
+    }
+  },
+  "revision": {
+    "number": "0",
+    "date": "2026.03.20",
+    "summary": "Hospital Reservation System 병원 예약 시스템 설계명세서 최초 제정",
+    "author": "박민재"
+  },
+  "product_matrix": [
+    [
+      "제품명",
+      "Hospital Reservation System",
+      "Hospital Reservation System",
+      "Hospital Reservation System"
+    ],
+    [
+      "모델명",
+      "HRS-Clinic-001",
+      "HRS-Clinic-001",
+      "HRS-Clinic-001"
+    ],
+    [
+      "소프트웨어명",
+      "환자 포털",
+      "HRS-api",
+      "병원 운영 콘솔"
+    ],
+    [
+      "소프트웨어명",
+      "HRS-web",
+      "HRS-api",
+      "HRS-admin"
+    ],
+    [
+      "안전성 등급",
+      "A",
+      "A",
+      "A"
+    ],
+    [
+      "제조자",
+      "Sample Medical IT Co., Ltd.",
+      "Sample Medical IT Co., Ltd.",
+      "Sample Medical IT Co., Ltd."
+    ]
+  ],
+  "component_detail_rows": [
+    [
+      "",
+      "HRS-web",
+      "HRS-api",
+      "HRS-admin"
+    ],
+    [
+      "버전",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0"
+    ],
+    [
+      "Code language",
+      "TypeScript / React 18",
+      "TypeScript / Node.js 20",
+      "TypeScript / React 18"
+    ],
+    [
+      "Platform",
+      "AWS CloudFront, S3",
+      "AWS ECS, RDS PostgreSQL",
+      "AWS ECS (VPC)"
+    ],
+    [
+      "Editor",
+      "VS Code",
+      "VS Code",
+      "VS Code"
+    ],
+    [
+      "운영 환경",
+      "AWS Cloud (ECS, RDS, Redis, S3, CloudFront)",
+      "AWS ECS Fargate, RDS PostgreSQL, ElastiCache Redis",
+      "AWS ECS (내부 VPC)"
+    ]
+  ],
+  "paragraph_overrides": {
+    "31": "전체 시스템 개요는 그림 1과 같다. 고객은 HRS-web(React SPA)에서 진료과을 탐색·예약·수납하고, HRS-api(Node.js)가 회원·진료과·예약·수납·진료일정 API를 제공한다. 운영자는 HRS-admin에서 진료과·환자 안내·예약·CS를 관리한다.",
+    "34": "운영 버전은 Git tag + CI/CD(GitHub Actions) 파이프라인으로 ECS에 배포하며, blue/green 또는 rolling update로 무중단 배포를 수행한다. 배포 전 SAST/단위·통합 테스트·스테이징 검증을 거친다.",
+    "40": "TypeScript, React 18, Node.js 20 LTS, PostgreSQL 15, Redis 7, AWS ECS/RDS/S3/CloudFront",
+    "52": "Figure 1. Hospital Reservation System 시스템 구성도",
+    "54": "HRS-web (환자 포털 SPA)",
+    "56": "Figure 2. HRS-web 주요 화면",
+    "70": "HRS-api (백엔드 서버)",
+    "72": "Figure 3. HRS-api 서버 구조",
+    "80": "Figure 4. HRS-admin 운영 화면"
+  },
+  "tech_stacks": [
+    {
+      "header": "HRS-web (환자 포털)",
+      "code_language": "TypeScript / React 18",
+      "platform": "AWS CloudFront, S3 (정적 호스팅)",
+      "editor": "VS Code"
+    },
+    {
+      "header": "HRS-api (예약·수납·회원 API)",
+      "code_language": "TypeScript / Node.js 20 LTS",
+      "platform": "AWS ECS Fargate, API Gateway, RDS PostgreSQL, ElastiCache Redis",
+      "editor": "VS Code"
+    },
+    {
+      "header": "HRS-admin (병원 운영 콘솔)",
+      "code_language": "TypeScript / React 18",
+      "platform": "AWS ECS (내부 VPC), RBAC, MFA",
+      "editor": "VS Code"
+    }
+  ],
+  "document_title": "EC-SW-MDDR(HRS) Hospital Reservation System 소프트웨어 설계명세서",
+  "document_title_sdp": "EC-SW-SDP(HRS) Hospital Reservation System 소프트웨어 개발 계획서",
+  "document_version_line": "Ver 1.0 / 문서번호 HRS-SRS-10",
+  "domain": "hospital_reservation"
+}

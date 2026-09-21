@@ -1,0 +1,26 @@
+{
+  "check": "api_health_check",
+  "elapsed_ms": 20,
+  "expected": {
+    "content_type": "application/json",
+    "status_code": 200
+  },
+  "failures": [
+    "HTTP status 503 not in [200]"
+  ],
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "method": "GET",
+  "redirect_chain": [],
+  "response": {
+    "body_stored": false,
+    "bytes_observed": 22,
+    "content_type": "application/json",
+    "sha256": "0ee91ac4b89ffb2fc9a231bd982e437fd565e50c2c72c77b533f37e40857c6b7",
+    "truncated": false
+  },
+  "status": 503,
+  "uncertain": [],
+  "url": "https://fixture.example.com/health"
+}

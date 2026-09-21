@@ -1,0 +1,90 @@
+[
+  {
+    "candidate_id": "icand_68105be290",
+    "source_document_id": "MDTM_BASE",
+    "canonical_document_id": "EC_SW_MDTM",
+    "short_id": "MDTM",
+    "document_type": "MDTM",
+    "document_role": "traceability",
+    "domain_pack_id": "ec_sw_v1",
+    "template_id": "ec_sw_mdtm",
+    "score": 136.45,
+    "rank": 1,
+    "rank_tier": 1,
+    "status": "STRONG_CANDIDATE",
+    "reason_codes": [
+      "filename_hint:MDTM",
+      "filename_role_hint",
+      "heading_or_title",
+      "req_with_design_or_test_same_row",
+      "requirement_id_density",
+      "traceability_matrix_structure",
+      "tier1_mdtm_structure"
+    ],
+    "evidence_ids": [
+      "fn_b1421df0",
+      "fnrole_5a58248c",
+      "hd_1c56e19e",
+      "idrow_7fd2db91",
+      "idrow_a02cf053",
+      "idrow_70934097",
+      "idrow_abac91b6",
+      "reqc_19737955",
+      "mtx_1e2a6ef9"
+    ],
+    "conflicts": [],
+    "metadata": {
+      "profile": "MDTM"
+    }
+  },
+  {
+    "candidate_id": "icand_dfdf9ee1e9",
+    "source_document_id": "MDTM_BASE",
+    "canonical_document_id": "EC_SW_MDSR",
+    "short_id": "MDSR",
+    "document_type": "MDSR",
+    "document_role": "requirements",
+    "domain_pack_id": "ec_sw_v1",
+    "template_id": "ec_sw_mdsr",
+    "score": 51.3,
+    "rank": 2,
+    "rank_tier": 1,
+    "status": "STRONG_CANDIDATE",
+    "reason_codes": [
+      "table_header",
+      "requirement_id_density"
+    ],
+    "evidence_ids": [
+      "th_e89a04f9",
+      "reqc_19737955"
+    ],
+    "conflicts": [],
+    "metadata": {
+      "profile": "MDSR"
+    }
+  },
+  {
+    "candidate_id": "icand_094fb4c76d",
+    "source_document_id": "MDTM_BASE",
+    "canonical_document_id": "EC_SW_MDDR",
+    "short_id": "MDDR",
+    "document_type": "MDDR",
+    "document_role": "design",
+    "domain_pack_id": "ec_sw_v1",
+    "template_id": "ec_sw_mddr",
+    "score": 7.5,
+    "rank": 3,
+    "rank_tier": 4,
+    "status": "CANDIDATE",
+    "reason_codes": [
+      "table_header"
+    ],
+    "evidence_ids": [
+      "th_e89a04f9"
+    ],
+    "conflicts": [],
+    "metadata": {
+      "profile": "MDDR"
+    }
+  }
+]

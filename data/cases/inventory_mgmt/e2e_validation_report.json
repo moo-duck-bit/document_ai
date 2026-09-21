@@ -1,0 +1,54 @@
+{
+  "case_id": "inventory_mgmt",
+  "case_dir": "data\\cases\\inventory_mgmt",
+  "project_type": "ec_sw",
+  "display_name": "inventory_mgmt",
+  "status": "PASS",
+  "harness": {
+    "ok": true,
+    "report": {
+      "ok": true,
+      "skipped": true,
+      "reason": "outputs already present"
+    }
+  },
+  "quality": {
+    "status": "PASS",
+    "scores": {
+      "structure": 100.0,
+      "terminology": 100.0,
+      "completeness": 100.0,
+      "consistency": 100.0,
+      "traceability": 100.0,
+      "residual_text": 84.0,
+      "overall": 96.8
+    },
+    "report_path": "data\\cases\\inventory_mgmt\\quality_report.md"
+  },
+  "validation": {
+    "status": "PASS",
+    "scores": {
+      "overall": 95.8,
+      "docx_overall": 96.0,
+      "mdsr": 100.0,
+      "mddr": 92.0,
+      "xxcs": null,
+      "semantic": 95.0
+    },
+    "report_paths": {
+      "markdown": "data\\cases\\inventory_mgmt\\validation_report.md",
+      "json": "data\\cases\\inventory_mgmt\\validation_report.json",
+      "human_review_checklist": "data\\cases\\inventory_mgmt\\human_review_checklist.md"
+    },
+    "gold_paths": {
+      "mdsr": "data\\gold\\mdsr\\inventory_mgmt.docx",
+      "mddr": "data\\gold\\mddr\\inventory_mgmt.docx"
+    }
+  },
+  "expectations": {},
+  "checks": {
+    "harness_ok": true,
+    "quality_pass": true,
+    "validation_pass": true
+  }
+}

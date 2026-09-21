@@ -1,0 +1,53 @@
+{
+  "workflow_id": "v2_hol_ec_no_impact_ec_sw_20260823T201007Z",
+  "document_set": "ec_sw",
+  "state": "COMPLETED",
+  "documents": [
+    {
+      "document_id": "MDTM_BASE",
+      "filename": "mdtm_base.docx",
+      "role": "traceability"
+    }
+  ],
+  "impacted_documents": [],
+  "review_required_count": 0,
+  "patch_candidate_count": 0,
+  "writer_result": {
+    "status": "COMPLETED_PREVIEW",
+    "applied": 0,
+    "skipped": 0
+  },
+  "validation": {
+    "status": "VALID",
+    "ok": true,
+    "issues": [],
+    "warnings": [],
+    "checks": {
+      "valid_state": true,
+      "terminal_state_immutable": true,
+      "no_duplicate_terminal_event": true,
+      "no_duplicate_document_id": true,
+      "no_duplicate_filename": true,
+      "writer_not_invoked_without_gate": true
+    },
+    "can_transition_sample": {
+      "UPLOADED->ANALYZING": true,
+      "COMPLETED->WRITING": false
+    }
+  },
+  "result_rows": [
+    {
+      "document_id": "MDTM_BASE",
+      "status": "UNCHANGED",
+      "review": "N",
+      "applied": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "validation": "PASS",
+      "diff_available": false,
+      "download": "data/eval/results/document_tnr/_holdout_work/v2_hol_ec_no_impact/v2_hol_ec_no_impact_ec_sw_20260823T201007Z/copies/mdtm_base.docx",
+      "skipped": 0,
+      "pending": 0
+    }
+  ]
+}

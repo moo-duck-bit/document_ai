@@ -1,0 +1,378 @@
+{
+  "workflow_id": "v2_hol_ec_semantic_ec_sw_20260823T201007Z",
+  "document_set": "ec_sw",
+  "state": "COMPLETED",
+  "change_request": "접근통제 강화 요청",
+  "created_at": "2026-08-23T20:10:07Z",
+  "updated_at": "2026-08-23T20:10:07Z",
+  "documents": [
+    {
+      "document_id": "MDTM_BASE",
+      "source_document_id": "MDTM_BASE",
+      "filename": "mdtm_base.docx",
+      "role": "traceability",
+      "path": "data/eval/results/document_tnr/_holdout_work/v2_hol_ec_semantic/v2_hol_ec_semantic_ec_sw_20260823T201007Z/input/mdtm_base.docx",
+      "copy_path": "data/eval/results/document_tnr/_holdout_work/v2_hol_ec_semantic/v2_hol_ec_semantic_ec_sw_20260823T201007Z/copies/mdtm_base.docx",
+      "user_hints": null,
+      "canonical_document_id": "EC_SW_MDTM",
+      "short_id": "MDTM",
+      "document_type": "MDTM",
+      "document_role": "traceability",
+      "domain_pack_id": "ec_sw_v1",
+      "template_id": "ec_sw_mdtm",
+      "identity_status": "AUTO_SELECTED",
+      "identity_auto_selected": true,
+      "identity_score": 136.45,
+      "identity_reasons": [
+        "filename_hint:MDTM",
+        "filename_role_hint",
+        "heading_or_title",
+        "req_with_design_or_test_same_row",
+        "requirement_id_density",
+        "traceability_matrix_structure",
+        "tier1_mdtm_structure",
+        "auto_selected_strong_evidence"
+      ],
+      "routing_status": "ROUTED",
+      "selected_pack_id": "ec_sw_v1",
+      "recommended_document_set": "ec_sw",
+      "registry_document_id": "MDTM"
+    }
+  ],
+  "impacted_documents": [],
+  "review_required": [],
+  "patch_candidates": [],
+  "approvals": [],
+  "writer_result": {
+    "status": "COMPLETED_PREVIEW",
+    "applied": 0,
+    "skipped": 0,
+    "rejected": 0,
+    "blocked": 0,
+    "enable_write": false,
+    "details": [],
+    "by_document": {},
+    "controlled_writer_invoked": false
+  },
+  "validation": {
+    "status": "VALID",
+    "ok": true,
+    "issues": [],
+    "warnings": [],
+    "checks": {
+      "valid_state": true,
+      "terminal_state_immutable": true,
+      "no_duplicate_terminal_event": true,
+      "no_duplicate_document_id": true,
+      "no_duplicate_filename": true,
+      "writer_not_invoked_without_gate": true
+    },
+    "can_transition_sample": {
+      "UPLOADED->ANALYZING": true,
+      "COMPLETED->WRITING": false
+    }
+  },
+  "timeline": [
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "CREATED",
+      "event": "created",
+      "detail": "document_set=ec_sw;routing_mode=explicit"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "UPLOADED",
+      "event": "uploaded",
+      "detail": "files=1"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "ANALYZING",
+      "event": "analysis_started",
+      "detail": ""
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "REVIEW_READY",
+      "event": "analysis_completed",
+      "detail": "impacted=0"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "WAITING_APPROVAL",
+      "event": "waiting_approval",
+      "detail": ""
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "WAITING_APPROVAL",
+      "event": "approval_updated",
+      "detail": "approved=0"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "WRITING",
+      "event": "writer_started",
+      "detail": "enable_write=False"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "VALIDATING",
+      "event": "writer_completed",
+      "detail": "applied=0"
+    },
+    {
+      "at": "2026-08-23T20:10:07Z",
+      "state": "COMPLETED",
+      "event": "completed",
+      "detail": ""
+    }
+  ],
+  "result_rows": [
+    {
+      "document_id": "MDTM_BASE",
+      "status": "UNCHANGED",
+      "review": "N",
+      "applied": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "validation": "PASS",
+      "diff_available": false,
+      "download": "data/eval/results/document_tnr/_holdout_work/v2_hol_ec_semantic/v2_hol_ec_semantic_ec_sw_20260823T201007Z/copies/mdtm_base.docx",
+      "skipped": 0,
+      "pending": 0
+    }
+  ],
+  "errors": [],
+  "metadata": {
+    "legacy_pair_untouched": true,
+    "writer_enabled_default": false,
+    "document_routing_mode": "explicit",
+    "requested_document_set": "ec_sw",
+    "identity_summary": {
+      "ok": true,
+      "per_document": [
+        {
+          "ok": true,
+          "checks": {
+            "no_filename_only_auto_route": true,
+            "canonical_id_deterministic": true,
+            "temporary_and_canonical_id_separated": true,
+            "conflict_requires_review": true,
+            "routed_pack_matches_decision": true,
+            "wrong_route_never_writes": true
+          },
+          "reasons": [],
+          "invariants": [
+            "no_filename_only_auto_route",
+            "canonical_id_deterministic",
+            "temporary_and_canonical_id_separated",
+            "conflict_requires_review",
+            "routed_pack_matches_decision",
+            "wrong_route_never_writes"
+          ]
+        }
+      ]
+    },
+    "needs_identity_confirmation": false,
+    "identity_decisions": [
+      {
+        "decision_id": "idec_68105be29062",
+        "source_document_id": "MDTM_BASE",
+        "canonical_document_id": "EC_SW_MDTM",
+        "short_id": "MDTM",
+        "document_type": "MDTM",
+        "document_role": "traceability",
+        "domain_pack_id": "ec_sw_v1",
+        "template_id": "ec_sw_mdtm",
+        "decision_status": "AUTO_SELECTED",
+        "top_score": 136.45,
+        "second_score": 51.3,
+        "score_margin": 85.15,
+        "rank_tier": 1,
+        "reason_codes": [
+          "filename_hint:MDTM",
+          "filename_role_hint",
+          "heading_or_title",
+          "req_with_design_or_test_same_row",
+          "requirement_id_density",
+          "traceability_matrix_structure",
+          "tier1_mdtm_structure",
+          "auto_selected_strong_evidence"
+        ],
+        "evidence": [
+          {
+            "signal_id": "fn_b1421df0",
+            "type": "FILENAME_TOKEN",
+            "value": "mdtm_base.docx"
+          },
+          {
+            "signal_id": "fnrole_5a58248c",
+            "type": "DOCUMENT_ROLE_HINT",
+            "value": "traceability"
+          },
+          {
+            "signal_id": "fmt_d0630222",
+            "type": "FILE_FORMAT",
+            "value": ".docx"
+          },
+          {
+            "signal_id": "hd_1c56e19e",
+            "type": "DOCUMENT_TITLE",
+            "value": "Traceability Matrix"
+          },
+          {
+            "signal_id": "tbln_fb14700f",
+            "type": "TEMPLATE_STRUCTURE",
+            "value": "tables:1"
+          },
+          {
+            "signal_id": "th_e89a04f9",
+            "type": "TABLE_HEADER",
+            "value": "requirement design test note"
+          },
+          {
+            "signal_id": "idrow_7fd2db91",
+            "type": "IDENTIFIER_PATTERN",
+            "value": "Req. 10,5.1.1,TC-10,5.1.1"
+          },
+          {
+            "signal_id": "idrow_a02cf053",
+            "type": "IDENTIFIER_PATTERN",
+            "value": "Req. 11,5.1.2,TC-11,5.1.2"
+          },
+          {
+            "signal_id": "idrow_70934097",
+            "type": "IDENTIFIER_PATTERN",
+            "value": "Req. 12,5.1.3,TC-12,5.1.3"
+          },
+          {
+            "signal_id": "idrow_abac91b6",
+            "type": "IDENTIFIER_PATTERN",
+            "value": "Req. 101,6.0.1,TC-101,6.0.1"
+          },
+          {
+            "signal_id": "reqc_19737955",
+            "type": "IDENTIFIER_PATTERN",
+            "value": "requirement_count:4"
+          },
+          {
+            "signal_id": "mtx_1e2a6ef9",
+            "type": "TEMPLATE_STRUCTURE",
+            "value": "traceability_matrix"
+          }
+        ],
+        "human_review_required": false,
+        "auto_selected": true,
+        "metadata": {
+          "temporary_source_id": "MDTM_BASE",
+          "canonical_id_deterministic": true,
+          "filename_only": false
+        }
+      }
+    ],
+    "pack_routings": [
+      {
+        "routing_id": "route_62bb7730de",
+        "source_document_id": "MDTM_BASE",
+        "selected_pack_id": "ec_sw_v1",
+        "candidate_pack_ids": [
+          "ec_sw_v1"
+        ],
+        "routing_status": "ROUTED",
+        "score": 136.45,
+        "score_margin": 136.45,
+        "reason_codes": [
+          "filename_hint:MDTM",
+          "filename_role_hint",
+          "heading_or_title",
+          "req_with_design_or_test_same_row",
+          "requirement_id_density",
+          "traceability_matrix_structure",
+          "explicit_user_pack"
+        ],
+        "human_review_required": false,
+        "actual_pack_invoked": "ec_sw_v1",
+        "metadata": {
+          "routing_mode": "explicit",
+          "identity_status": "AUTO_SELECTED",
+          "document_set_hint": "ec_sw"
+        }
+      }
+    ],
+    "analysis": {
+      "engine": "ec_sw_mdtm_observational",
+      "ok": true,
+      "note": null
+    },
+    "document_impact_decisions": [
+      {
+        "document_id": "MDTM_BASE",
+        "predicted_status": "UNRELATED",
+        "substantive_evidence_count": 0,
+        "role_evidence_count": 2,
+        "exact_identifier_count": 0,
+        "normalized_identifier_count": 0,
+        "semantic_evidence_count": 0,
+        "malformed_identifier_count": 0,
+        "reason_codes": [
+          "role_or_presence_only",
+          "no_role_only_impacted"
+        ],
+        "source_stages": [
+          "catalog_role",
+          "upload"
+        ],
+        "top_evidence": [
+          {
+            "document_id": "MDTM_BASE",
+            "document_role": "traceability",
+            "evidence_type": "ROLE_COMPATIBILITY",
+            "evidence_value": "traceability",
+            "source_stage": "catalog_role",
+            "source_node_id": null,
+            "confidence": 0.2,
+            "independent_group": "role",
+            "reason_codes": [
+              "role_compatible"
+            ],
+            "supports_impacted": false,
+            "supports_review": false
+          },
+          {
+            "document_id": "MDTM_BASE",
+            "document_role": "traceability",
+            "evidence_type": "DOCUMENT_PRESENCE",
+            "evidence_value": "mdtm_base.docx",
+            "source_stage": "upload",
+            "source_node_id": null,
+            "confidence": 0.1,
+            "independent_group": "presence",
+            "reason_codes": [
+              "document_uploaded"
+            ],
+            "supports_impacted": false,
+            "supports_review": false
+          }
+        ],
+        "human_review_required": false
+      }
+    ],
+    "identifier_analysis": [
+      {
+        "raw_text": "",
+        "canonical_id": null,
+        "status": "NOT_FOUND",
+        "span": [
+          0,
+          0
+        ],
+        "reason_codes": [
+          "REQ_ID_NOT_FOUND"
+        ],
+        "confidence": 0.0,
+        "source": "change_request"
+      }
+    ]
+  }
+}

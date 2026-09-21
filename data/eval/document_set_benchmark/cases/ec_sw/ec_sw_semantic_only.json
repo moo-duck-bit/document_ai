@@ -1,0 +1,23 @@
+{
+  "case_id": "ec_sw_semantic_only",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "사용자 인증 및 접근통제 보안 요구 변경",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/MDTM.docx",
+      "filename": "MDTM.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM"
+  ],
+  "expected_status": "SAFE_FAILURE",
+  "tags": [
+    "semantic_only"
+  ],
+  "difficulty": "medium",
+  "notes": "No Req ID; semantic review expected",
+  "source_type": "fixture"
+}

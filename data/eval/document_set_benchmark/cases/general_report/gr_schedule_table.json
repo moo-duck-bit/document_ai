@@ -1,0 +1,23 @@
+{
+  "case_id": "gr_schedule_table",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "일정 표 수정 2026-Q4",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_base.docx",
+      "filename": "report_base.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_BASE"
+  ],
+  "expected_status": "PARTIAL",
+  "tags": [
+    "writer_update"
+  ],
+  "difficulty": "medium",
+  "notes": "Schedule section",
+  "source_type": "fixture"
+}

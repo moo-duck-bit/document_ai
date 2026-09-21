@@ -1,0 +1,155 @@
+[
+  {
+    "signal_id": "fn_407069df",
+    "document_source_id": "MDTM_DUP_REQ",
+    "signal_type": "FILENAME_TOKEN",
+    "signal_value": "mdtm_dup_req.docx",
+    "normalized_value": "MDTM",
+    "confidence": 0.45,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "filename_hint:MDTM",
+      "filename_not_sufficient_alone"
+    ],
+    "independent_group": "filename"
+  },
+  {
+    "signal_id": "fnrole_62d22011",
+    "document_source_id": "MDTM_DUP_REQ",
+    "signal_type": "DOCUMENT_ROLE_HINT",
+    "signal_value": "traceability",
+    "normalized_value": "traceability",
+    "confidence": 0.4,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "filename_role_hint"
+    ],
+    "independent_group": "filename"
+  },
+  {
+    "signal_id": "fmt_31342199",
+    "document_source_id": "MDTM_DUP_REQ",
+    "signal_type": "FILE_FORMAT",
+    "signal_value": ".docx",
+    "normalized_value": "docx",
+    "confidence": 0.2,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "file_format"
+    ],
+    "independent_group": "format"
+  },
+  {
+    "signal_id": "hd_6bc580f8",
+    "document_source_id": "MDTM_DUP_REQ",
+    "signal_type": "DOCUMENT_TITLE",
+    "signal_value": "MDTM Dup",
+    "normalized_value": "mdtm dup",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 0
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "tbln_fb14700f",
+    "document_source_id": "MDTM_DUP_REQ",
+    "signal_type": "TEMPLATE_STRUCTURE",
+    "signal_value": "tables:1",
+    "normalized_value": "1",
+    "confidence": 0.35,
+    "source": "structure",
+    "source_locator": {},
+    "reason_codes": [
+      "table_count"
+    ],
+    "independent_group": "structure"
+  },
+  {
+    "signal_id": "th_e89a04f9",
+    "document_source_id": "MDTM_DUP_REQ",
+    "signal_type": "TABLE_HEADER",
+    "signal_value": "requirement design test note",
+    "normalized_value": "requirement design test note",
+    "confidence": 0.55,
+    "source": "structure",
+    "source_locator": {
+      "table_index": 0
+    },
+    "reason_codes": [
+      "table_header"
+    ],
+    "independent_group": "table_header"
+  },
+  {
+    "signal_id": "idrow_46040a30",
+    "document_source_id": "MDTM_DUP_REQ",
+    "signal_type": "IDENTIFIER_PATTERN",
+    "signal_value": "Req. 11,5.1.2,TC-11,5.1.2",
+    "normalized_value": "trace_row",
+    "confidence": 0.85,
+    "source": "identifiers",
+    "source_locator": {
+      "table_index": 0,
+      "row_index": 1
+    },
+    "reason_codes": [
+      "req_with_design_or_test_same_row",
+      "mdtm_strong_evidence"
+    ],
+    "independent_group": "identifier_structure"
+  },
+  {
+    "signal_id": "idrow_a02cf053",
+    "document_source_id": "MDTM_DUP_REQ",
+    "signal_type": "IDENTIFIER_PATTERN",
+    "signal_value": "Req. 11,5.1,5.1",
+    "normalized_value": "trace_row",
+    "confidence": 0.85,
+    "source": "identifiers",
+    "source_locator": {
+      "table_index": 0,
+      "row_index": 2
+    },
+    "reason_codes": [
+      "req_with_design_or_test_same_row",
+      "mdtm_strong_evidence"
+    ],
+    "independent_group": "identifier_structure"
+  },
+  {
+    "signal_id": "reqc_a51f16d9",
+    "document_source_id": "MDTM_DUP_REQ",
+    "signal_type": "IDENTIFIER_PATTERN",
+    "signal_value": "requirement_count:2",
+    "normalized_value": "REQUIREMENT",
+    "confidence": 0.5,
+    "source": "identifiers",
+    "source_locator": {},
+    "reason_codes": [
+      "requirement_id_density"
+    ],
+    "independent_group": "identifier_density"
+  },
+  {
+    "signal_id": "mtx_1e2a6ef9",
+    "document_source_id": "MDTM_DUP_REQ",
+    "signal_type": "TEMPLATE_STRUCTURE",
+    "signal_value": "traceability_matrix",
+    "normalized_value": "MDTM",
+    "confidence": 0.8,
+    "source": "structure",
+    "source_locator": {},
+    "reason_codes": [
+      "traceability_matrix_structure"
+    ],
+    "independent_group": "structure"
+  }
+]

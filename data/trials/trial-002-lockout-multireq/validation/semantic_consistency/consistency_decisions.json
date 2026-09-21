@@ -1,0 +1,235 @@
+{
+  "created_at": "2026-07-22T22:03:21Z",
+  "stage": "B4_semantic_consistency_gate",
+  "source_b3": "data/trials/trial-002-lockout-multireq/validation/impact_judgment/decisions.json",
+  "expected_impact_used_in_gate": false,
+  "rule": "IMPACTED != auto-patch; CONSISTENT|CONFLICT|NEEDS_REVIEW with evidence",
+  "decisions": [
+    {
+      "req_id": "Req. 103",
+      "document": "MDSR",
+      "status": "CONSISTENT",
+      "reason": "CR audit-of-lockout events is a scope extension of an audit-primary requirement; no title/purpose role conflict detected.",
+      "conflict_evidence_spans": [
+        {
+          "field": "title",
+          "span": "감사 기록 생성 및 관리",
+          "note": "Audit-primary requirement"
+        },
+        {
+          "field": "criteria",
+          "span": "로그인 성공 및 실패 이력은 감사 기록으로 생성되어야 한다.\n의료진에 의한 환자 등록 이력은 감사기록으로 생성되어야 한다.\n감사기록에는 발생 일시, 사용자 식별자, 이벤트 유형, 요청 출처, 처리 결과를 포함해야 한다.\n감사기록은 파일 기반으로 저장하며, 저장 실패 시에도 인증·업무 처리 흐름은 중단하지 않아야 한다.\n감사기록의 조회·보존·접근 통제는 운영 절차로 관리한다.",
+          "note": "Existing audit coverage hits=['로그인 성공', '실패']; lock events missing=True"
+        },
+        {
+          "field": "change_request",
+          "span": "로그인 실패·계정 잠금·잠금 해제 이벤트는 감사 기록으로 남겨야 한다",
+          "note": "CR extends audit event scope — aligns with audit role, not a title conflict"
+        }
+      ],
+      "proposed_resolution_direction": "Extend criteria/description to include account-lock and unlock audit events; do not replace unrelated patient-registration audit clauses.",
+      "fields": {
+        "req_id": "Req. 103",
+        "document": "MDSR",
+        "title": "감사 기록 생성 및 관리",
+        "description": "서버는 주요 보안 이벤트에 대한 감사기록을 생성하고 관리해야 한다.",
+        "purpose": "로그인 등 보안 관련 이벤트를 추적하여 비인가 접근 및 이상 행위 발생 시 원인 분석 및 대응이 가능록 하기 위함이다.",
+        "criteria": "로그인 성공 및 실패 이력은 감사 기록으로 생성되어야 한다.\n의료진에 의한 환자 등록 이력은 감사기록으로 생성되어야 한다.\n감사기록에는 발생 일시, 사용자 식별자, 이벤트 유형, 요청 출처, 처리 결과를 포함해야 한다.\n감사기록은 파일 기반으로 저장하며, 저장 실패 시에도 인증·업무 처리 흐름은 중단하지 않아야 한다.\n감사기록의 조회·보존·접근 통제는 운영 절차로 관리한다.",
+        "constraints": "로그인 성공 및 실패 이력은 감사 기록으로 생성되어야 한다.\n의료진에 의한 환자 등록 이력은 감사기록으로 생성되어야 한다.\n감사기록에는 발생 일시, 사용자 식별자, 이벤트 유형, 요청 출처, 처리 결과를 포함해야 한다.\n감사기록은 파일 기반으로 저장하며, 저장 실패 시에도 인증·업무 처리 흐름은 중단하지 않아야 한다.\n감사기록의 조회·보존·접근 통제는 운영 절차로 관리한다.",
+        "traceability": [
+          "UC-04",
+          "UC-05",
+          "UC-06",
+          "UC-07"
+        ],
+        "body_full": "감사 기록 생성 및 관리\n설명\n서버는 주요 보안 이벤트에 대한 감사기록을 생성하고 관리해야 한다.\n목적\n로그인 등 보안 관련 이벤트를 추적하여 비인가 접근 및 이상 행위 발생 시 원인 분석 및 대응이 가능록 하기 위함이다.\n기준\n로그인 성공 및 실패 이력은 감사 기록으로 생성되어야 한다.\n의료진에 의한 환자 등록 이력은 감사기록으로 생성되어야 한다.\n감사기록에는 발생 일시, 사용자 식별자, 이벤트 유형, 요청 출처, 처리 결과를 포함해야 한다.\n감사기록은 파일 기반으로 저장하며, 저장 실패 시에도 인증·업무 처리 흐름은 중단하지 않아야 한다.\n감사기록의 조회·보존·접근 통제는 운영 절차로 관리한다."
+      },
+      "cr_themes": {
+        "policy": [
+          "계정 잠금",
+          "잠금",
+          "자동 해제",
+          "관리자 승인",
+          "연속 로그인 실패"
+        ],
+        "ux": [
+          "사용자",
+          "안내",
+          "알림",
+          "재시도"
+        ],
+        "audit": [
+          "감사",
+          "감사 기록",
+          "이벤트"
+        ],
+        "role": [
+          "audit"
+        ]
+      },
+      "allow_auto_patch": true,
+      "b3_judgment": "IMPACTED"
+    },
+    {
+      "req_id": "Req. 6",
+      "document": "MDSR",
+      "status": "CONFLICT",
+      "reason": "CR lockout-policy themes ['계정 잠금', '잠금', '자동 해제', '관리자 승인', '연속 로그인 실패'] conflict with existing UX-primary title/purpose for Req. 6. Applying CR text to description would reproduce Trial-1 internal semantic inconsistency (policy text under UX title).",
+      "conflict_evidence_spans": [
+        {
+          "field": "title",
+          "span": "서버와의 통신 중 인증 관련 에러 발생 시 사용자 안내",
+          "note": "Existing role is auth-error UX guidance"
+        },
+        {
+          "field": "purpose",
+          "span": "이 요구사항은 사용자가 인증 문제로 인해 혼란을 겪거나 애플리케이션 사용을 중단하지 않도록 하기 위함이다. 명확한 에러 메시지와 적절한 조치 안내를 통해 사용자 경험을 개선하고, 인증 정보 또는 내부 시스템 정보가 오류 메시지를 통해 노출되지 않도록 하기 위함이다.",
+          "note": "Purpose centers on user clarity / no sensitive leak — not lockout policy"
+        },
+        {
+          "field": "change_request",
+          "span": "연속 로그인 실패 시 계정을 잠그고… 관리자 승인 또는 … 자동 해제",
+          "note": "CR introduces account-lockout *policy* (admin unlock / auto unlock)"
+        },
+        {
+          "field": "criteria",
+          "span": "로그인 실패가 설정된 횟수 이상 발생한 경우, 애플리케이션은 사용자에게 로그인 제한 상태 및 재시도 방법을 안내해야 한다.",
+          "note": "Criteria already covers lock-state *guidance* (UX), not policy ownership"
+        }
+      ],
+      "proposed_resolution_direction": "Do NOT auto-patch description with lockout policy. Keep Req as UX owner; map policy changes to Req.105; optional UX-only criteria refine under human review.",
+      "fields": {
+        "req_id": "Req. 6",
+        "document": "MDSR",
+        "title": "서버와의 통신 중 인증 관련 에러 발생 시 사용자 안내",
+        "description": "모바일 애플리케이션은 서버와의 통신 과정에서 인증 관련 에러가 발생할 경우 사용자에게 이를 명확하게 알리고, 정상적인 애플리케이션 사용을 위한 구체적인 안내를 제공해야 한다. 이러한 에러는 로그인 실패, 세션 만료, 권한 부족 등 다양한 인증 문제를 포함할 수 있다. 에러 메시지는 사용자가 문제를 이해하고 적절한 조치를 취할 수 있도록 명확하고 이해하기 쉬운 언어로 제공되어야 한다.",
+        "purpose": "이 요구사항은 사용자가 인증 문제로 인해 혼란을 겪거나 애플리케이션 사용을 중단하지 않도록 하기 위함이다. 명확한 에러 메시지와 적절한 조치 안내를 통해 사용자 경험을 개선하고, 인증 정보 또는 내부 시스템 정보가 오류 메시지를 통해 노출되지 않도록 하기 위함이다.",
+        "criteria": "인증 관련 에러가 발생하면, 애플리케이션은 즉시 사용자에게 알림을 표시해야 한다.\n에러 메시지는 문제의 원인과 해결을 위한 추천 조치(예: 재로그인)를 포함해야 한다.\n인증 토큰이 만료된 경우, 애플리케이션은 갱신 토큰을 이용하여 접근 토큰을 재발급받을 수 있어야 한다.\n토큰 갱신에 실패하거나 인증 상태가 유효하지 않은 경우, 애플리케이션은 저장된 인증 정보를 삭제하고 사용자에게 재로그인을 안내해야 한다.\n인증 관련 오류 메시지는 내부 시스템 정보, 인증 토큰, 서버 응답 원문 등 민감 정보를 포함하지 않아야 한다.\n로그인 실패가 설정된 횟수 이상 발생한 경우, 애플리케이션은 사용자에게 로그인 제한 상태 및 재시도 방법을 안내해야 한다.",
+        "constraints": "인증 관련 에러가 발생하면, 애플리케이션은 즉시 사용자에게 알림을 표시해야 한다.\n에러 메시지는 문제의 원인과 해결을 위한 추천 조치(예: 재로그인)를 포함해야 한다.\n인증 토큰이 만료된 경우, 애플리케이션은 갱신 토큰을 이용하여 접근 토큰을 재발급받을 수 있어야 한다.\n토큰 갱신에 실패하거나 인증 상태가 유효하지 않은 경우, 애플리케이션은 저장된 인증 정보를 삭제하고 사용자에게 재로그인을 안내해야 한다.\n인증 관련 오류 메시지는 내부 시스템 정보, 인증 토큰, 서버 응답 원문 등 민감 정보를 포함하지 않아야 한다.\n로그인 실패가 설정된 횟수 이상 발생한 경우, 애플리케이션은 사용자에게 로그인 제한 상태 및 재시도 방법을 안내해야 한다.",
+        "traceability": [
+          "DC-01",
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06",
+          "SI-07"
+        ],
+        "body_full": "서버와의 통신 중 인증 관련 에러 발생 시 사용자 안내\n설명\n모바일 애플리케이션은 서버와의 통신 과정에서 인증 관련 에러가 발생할 경우 사용자에게 이를 명확하게 알리고, 정상적인 애플리케이션 사용을 위한 구체적인 안내를 제공해야 한다. 이러한 에러는 로그인 실패, 세션 만료, 권한 부족 등 다양한 인증 문제를 포함할 수 있다. 에러 메시지는 사용자가 문제를 이해하고 적절한 조치를 취할 수 있도록 명확하고 이해하기 쉬운 언어로 제공되어야 한다. \n목적\n이 요구사항은 사용자가 인증 문제로 인해 혼란을 겪거나 애플리케이션 사용을 중단하지 않도록 하기 위함이다. 명확한 에러 메시지와 적절한 조치 안내를 통해 사용자 경험을 개선하고, 인증 정보 또는 내부 시스템 정보가 오류 메시지를 통해 노출되지 않도록 하기 위함이다.\n기준\n인증 관련 에러가 발생하면, 애플리케이션은 즉시 사용자에게 알림을 표시해야 한다.\n에러 메시지는 문제의 원인과 해결을 위한 추천 조치(예: 재로그인)를 포함해야 한다.\n인증 토큰이 만료된 경우, 애플리케이션은 갱신 토큰을 이용하여 접근 토큰을 재발급받을 수 있어야 한다.\n토큰 갱신에 실패하거나 인증 상태가 유효하지 않은 경우, 애플리케이션은 저장된 인증 정보를 삭제하고 사용자에게 재로그인을 안내해야 한다.\n인증 관련 오류 메시지는 내부 시스템 정보, 인증 토큰, 서버 응답 원문 등 민감 정보를 포함하지 않아야 한다.\n로그인 실패가 설정된 횟수 이상 발생한 경우, 애플리케이션은 사용자에게 로그인 제한 상태 및 재시도 방법을 안내해야 한다."
+      },
+      "cr_themes": {
+        "policy": [
+          "계정 잠금",
+          "잠금",
+          "자동 해제",
+          "관리자 승인",
+          "연속 로그인 실패"
+        ],
+        "ux": [
+          "사용자",
+          "안내",
+          "알림",
+          "재시도"
+        ],
+        "audit": [
+          "감사",
+          "감사 기록",
+          "이벤트"
+        ],
+        "role": [
+          "ux"
+        ]
+      },
+      "allow_auto_patch": false,
+      "b3_judgment": "IMPACTED"
+    },
+    {
+      "req_id": "Req. 105",
+      "document": "MDSR",
+      "status": "CONSISTENT",
+      "reason": "CR lockout policy themes align with existing abuse-prevention / login-limit responsibility; no UX-title vs policy-body conflict (title IP framing is compatible extension, not hard conflict).",
+      "conflict_evidence_spans": [
+        {
+          "field": "title",
+          "span": "API 요청 과다 방지 및 IP 차단",
+          "note": "Policy/limit-oriented title"
+        },
+        {
+          "field": "description",
+          "span": "서버는 과도한 API 요청 또는 비정상적인 접근 시도를 탐지하고, 설정된 정책에 따라 요청 제한 또는 접근 차단을 수행해야 한다.",
+          "note": "Existing policy cues=['차단', '과다']"
+        },
+        {
+          "field": "change_request",
+          "span": "연속 로그인 실패 시 계정 잠금 / 자동 해제 / 관리자 승인",
+          "note": "CR strengthens login-failure lockout policy — same responsibility family"
+        },
+        {
+          "field": "title_vs_cr",
+          "span": "API 요청 과다 방지 및 IP 차단",
+          "note": "Title emphasizes IP/rate-limit; CR uses account-lock wording — same family, extend carefully"
+        }
+      ],
+      "proposed_resolution_direction": "Patch description/criteria to incorporate consecutive-failure account lockout and unlock policy without dropping existing DoS/IP controls.",
+      "fields": {
+        "req_id": "Req. 105",
+        "document": "MDSR",
+        "title": "API 요청 과다 방지 및 IP 차단",
+        "description": "서버는 과도한 API 요청 또는 비정상적인 접근 시도를 탐지하고, 설정된 정책에 따라 요청 제한 또는 접근 차단을 수행해야 한다.",
+        "purpose": "서비스 거부 공격(DoS), 무차별 대입 공격 및 비정상 트래픽으로부터 시스템 자원을 보호하고 정상 사용자의 서비스 이용 안정성을 확보하기 위함이다.",
+        "criteria": "서버는 일정 시간 내 과도한 요청 발생 시 요청을 제한해야 한다.\n요청 제한은 IP 주소, 사용자 계정 또는 인증 토큰 단위로 적용할 수 있어야 한다.\n로그인, 인증 관련 API에는 별도의 요청 제한 정책이 적용되어야 한다.\n설정된 임계치를 초과한 요청은 일정 시간 동안 차단되어야 한다.",
+        "constraints": "서버는 일정 시간 내 과도한 요청 발생 시 요청을 제한해야 한다.\n요청 제한은 IP 주소, 사용자 계정 또는 인증 토큰 단위로 적용할 수 있어야 한다.\n로그인, 인증 관련 API에는 별도의 요청 제한 정책이 적용되어야 한다.\n설정된 임계치를 초과한 요청은 일정 시간 동안 차단되어야 한다.",
+        "traceability": [
+          "IA-07",
+          "RA-01",
+          "RA-04",
+          "UC-04"
+        ],
+        "body_full": "API 요청 과다 방지 및 IP 차단\n설명\n서버는 과도한 API 요청 또는 비정상적인 접근 시도를 탐지하고, 설정된 정책에 따라 요청 제한 또는 접근 차단을 수행해야 한다. \n목적\n서비스 거부 공격(DoS), 무차별 대입 공격 및 비정상 트래픽으로부터 시스템 자원을 보호하고 정상 사용자의 서비스 이용 안정성을 확보하기 위함이다.\n기준\n서버는 일정 시간 내 과도한 요청 발생 시 요청을 제한해야 한다.\n요청 제한은 IP 주소, 사용자 계정 또는 인증 토큰 단위로 적용할 수 있어야 한다.\n로그인, 인증 관련 API에는 별도의 요청 제한 정책이 적용되어야 한다.\n설정된 임계치를 초과한 요청은 일정 시간 동안 차단되어야 한다."
+      },
+      "cr_themes": {
+        "policy": [
+          "계정 잠금",
+          "잠금",
+          "자동 해제",
+          "관리자 승인",
+          "연속 로그인 실패"
+        ],
+        "ux": [
+          "사용자",
+          "안내",
+          "알림",
+          "재시도"
+        ],
+        "audit": [
+          "감사",
+          "감사 기록",
+          "이벤트"
+        ],
+        "role": [
+          "policy"
+        ]
+      },
+      "allow_auto_patch": true,
+      "b3_judgment": "IMPACTED"
+    }
+  ],
+  "summary": {
+    "CONSISTENT": 2,
+    "CONFLICT": 1,
+    "NEEDS_REVIEW": 0
+  },
+  "focus": {
+    "Req. 103": {
+      "status": "CONSISTENT",
+      "allow_auto_patch": true
+    },
+    "Req. 6": {
+      "status": "CONFLICT",
+      "allow_auto_patch": false
+    },
+    "Req. 105": {
+      "status": "CONSISTENT",
+      "allow_auto_patch": true
+    }
+  }
+}

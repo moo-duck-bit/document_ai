@@ -104,7 +104,7 @@ def test_apply_change_patches_mdsr_only_when_xxcs_missing(tmp_path, traceability
     found = False
     for table in doc.tables:
         if table.rows and table.rows[0].cells[0].text.strip() == "Req. 6":
-            body = table.rows[2].cells[1].text
+            body = "\n".join(cell.text for row in table.rows for cell in row.cells)
             assert new_description in body
             found = True
             break

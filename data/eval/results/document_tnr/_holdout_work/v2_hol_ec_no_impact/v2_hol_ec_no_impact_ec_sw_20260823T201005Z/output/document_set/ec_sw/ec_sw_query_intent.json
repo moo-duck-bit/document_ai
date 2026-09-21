@@ -1,0 +1,19 @@
+{
+  "raw_change_request": "사내 행사 공지 문구",
+  "requirement_ids": [],
+  "design_ids": [],
+  "test_ids": [],
+  "identifier_status": "NONE",
+  "primary_identifier_type": "NONE",
+  "secondary_identifier_types": [],
+  "semantic_terms": [
+    "사내",
+    "행사",
+    "공지",
+    "문구"
+  ],
+  "ambiguity": false,
+  "reason_codes": [
+    "no_identifier"
+  ]
+}

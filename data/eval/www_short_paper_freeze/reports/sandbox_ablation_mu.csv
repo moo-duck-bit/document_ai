@@ -1,0 +1,5 @@
+variant,n,mu_zero_rate,mean_mu_sum,mean_false_patch,mean_unsafe_write,mean_original_broken,mean_unapproved_write,expected_hit_rate
+full,27,1.0,0.0,0.0,0.0,0.0,0.0,1.0
+no_gate,27,0.0,2.0,0.0,1.0,0.0,1.0,1.0
+no_copy_only,27,0.0,1.0,0.0,0.0,1.0,0.0,1.0
+no_closure,27,0.0,1.0,1.0,0.0,0.0,0.0,1.0

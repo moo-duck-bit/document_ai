@@ -1,0 +1,38 @@
+{
+  "plan_id": "plan-9b8f8197215f",
+  "intent": "knowledge_query",
+  "hybrid": false,
+  "workflow_template": "document_workflow",
+  "harness_sequence": [
+    "document"
+  ],
+  "task_graph": {
+    "graph_id": "tg-platform-plan",
+    "tasks": [
+      {
+        "task_id": "task-document-change-pipeline",
+        "name": "Run document change pipeline",
+        "harness": "document",
+        "action": "run_change_pipeline",
+        "state": "pending",
+        "dependencies": [],
+        "agent_assignment": "document_harness",
+        "metadata": {
+          "case_dir": "data\\cases\\mindrium_xa",
+          "dry_run": true,
+          "apply": false,
+          "planner_intent": "knowledge_query",
+          "workflow_template": "document_workflow",
+          "intent_action": "run_change_pipeline"
+        }
+      }
+    ],
+    "metadata": {
+      "mode": "change_request",
+      "workflow_template": "document_workflow",
+      "planner_intent": "knowledge_query"
+    }
+  },
+  "execution_strategy": "sequential",
+  "estimated_steps": 1
+}

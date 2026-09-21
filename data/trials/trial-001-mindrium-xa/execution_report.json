@@ -1,0 +1,534 @@
+{
+  "trial_id": "trial-001-mindrium-xa",
+  "started_at": "2026-07-17T22:11:03Z",
+  "phase": "implementation_validation",
+  "real_world_trial_complete": false,
+  "human_review_complete": false,
+  "notes": [
+    "Mindrium real corpus + prepared Req. 6 CR",
+    "update/fill of empty table description",
+    "No Ground Truth / Human Revised generated in this run"
+  ],
+  "source_hashes_before": {
+    "case/output_mdsr.docx": {
+      "path": "data\\cases\\mindrium_xa\\output_mdsr.docx",
+      "sha256": "652a4a98dee685b6411b39311432be7d4e71235f1fc83417f64235a598b3e629",
+      "size": 372105
+    },
+    "case/output_mddr.docx": {
+      "path": "data\\cases\\mindrium_xa\\output_mddr.docx",
+      "sha256": "426fa451e219074129282fe77e94f0aa23557c47a6c38f4d3d9c2781c2a05159",
+      "size": 210006
+    },
+    "case/requirements.json": {
+      "path": "data\\cases\\mindrium_xa\\requirements.json",
+      "sha256": "c782e73f110452fb68fb9ebb0341968f0e26ad7a91d97c485edfcf8fab1ef7a8",
+      "size": 6636
+    },
+    "case/input.json": {
+      "path": "data\\cases\\mindrium_xa\\input.json",
+      "sha256": "a3654108057203ad8128f7ac5cf31da225c45436e01c2fc467818a4e36c89f95",
+      "size": 1407
+    },
+    "case/changes/request_req6.txt": {
+      "path": "data\\cases\\mindrium_xa\\changes\\request_req6.txt",
+      "sha256": "7222f19c96868c74a59e59c05d662c840b42f03014cd69a690bc329575e4c697",
+      "size": 213
+    },
+    "examples/report_xxcs_EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서.docx": {
+      "path": "data\\examples\\ec_sw\\report_xxcs_EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서.docx",
+      "sha256": "c2b2a7621a8a8205a73f5401fc3fb538be4ea28197330ab244af68d54bff4b63",
+      "size": 25255815
+    },
+    "examples/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx": {
+      "path": "data\\examples\\ec_sw\\spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+      "sha256": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf",
+      "size": 2630162
+    },
+    "examples/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx": {
+      "path": "data\\examples\\ec_sw\\spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+      "sha256": "cd70f942ab8534c22887782b61d2319fd026e61f97744bde8f985c6484a3652d",
+      "size": 1968688
+    }
+  },
+  "trial_init": {
+    "ok": true,
+    "trial_dir": "data/trials/trial-001-mindrium-xa",
+    "document_types": [
+      "MDSR",
+      "MDDR"
+    ],
+    "version_warnings": []
+  },
+  "reference": {
+    "files": [
+      {
+        "kind": "MDSR",
+        "source": "data/examples/ec_sw/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+        "dest": "data/trials/trial-001-mindrium-xa/reference/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+        "sha256": "cd70f942ab8534c22887782b61d2319fd026e61f97744bde8f985c6484a3652d",
+        "size": 1968688
+      },
+      {
+        "kind": "MDDR",
+        "source": "data/examples/ec_sw/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+        "dest": "data/trials/trial-001-mindrium-xa/reference/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+        "sha256": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf",
+        "size": 2630162
+      },
+      {
+        "kind": "XXCS",
+        "source": "data/examples/ec_sw/report_xxcs_EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서.docx",
+        "dest": "data/trials/trial-001-mindrium-xa/reference/report_xxcs_EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서.docx",
+        "sha256": "c2b2a7621a8a8205a73f5401fc3fb538be4ea28197330ab244af68d54bff4b63",
+        "size": 25255815
+      }
+    ],
+    "versions_md": "data/trials/trial-001-mindrium-xa/reference/VERSIONS.md"
+  },
+  "input_files": [
+    "data/trials/trial-001-mindrium-xa/input/change_request.txt",
+    "data/trials/trial-001-mindrium-xa/input/design_content.json",
+    "data/trials/trial-001-mindrium-xa/input/input.json",
+    "data/trials/trial-001-mindrium-xa/input/README_INPUTS.md",
+    "data/trials/trial-001-mindrium-xa/input/requirements.json"
+  ],
+  "draft_change_dry_run": {
+    "ok": true,
+    "parsed_req_ids": [
+      "Req. 6"
+    ],
+    "confirmed": true,
+    "confidence": 0.9,
+    "clarifying_questions": [],
+    "description": "연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다.\n잠금 해제는 관리자 승인 또는 일정 시간 경과 후 자동 해제 중 하나를 지원해야 한다.",
+    "summary": "Req. 6 변경"
+  },
+  "trial_check_input": {
+    "ok": true,
+    "findings": [],
+    "warnings": [],
+    "data_leakage_clean": true
+  },
+  "change_json": {
+    "workdir_path": "data/trials/trial-001-mindrium-xa/workdir/case/changes/chg-20260718-4b8f6d.json",
+    "input_copy": "data/trials/trial-001-mindrium-xa/input/change_request.json",
+    "change_id": "chg-20260718-4b8f6d",
+    "requirement_changes": [
+      {
+        "req_id": "Req. 6",
+        "description": "연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다.\n잠금 해제는 관리자 승인 또는 일정 시간 경과 후 자동 해제 중 하나를 지원해야 한다."
+      }
+    ]
+  },
+  "impact": {
+    "change_id": "chg-20260718-4b8f6d",
+    "req_ids": [
+      "Req. 6"
+    ],
+    "security_ids": [
+      "IA-04",
+      "IA-06",
+      "IA-07",
+      "SI-06",
+      "SI-07"
+    ],
+    "design_ids": null,
+    "documents": {
+      "spec_requirements": {
+        "req_ids": [
+          "Req. 6"
+        ],
+        "security_req_ids": null,
+        "design_ids": null
+      },
+      "spec_design": {
+        "req_ids": [],
+        "security_req_ids": null,
+        "design_ids": null
+      },
+      "report_security_verification": {
+        "req_ids": null,
+        "security_req_ids": [
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06",
+          "SI-07"
+        ],
+        "design_ids": null
+      },
+      "test_cases": {
+        "req_ids": null,
+        "security_req_ids": null,
+        "design_ids": null
+      }
+    }
+  },
+  "apply_change": {
+    "elapsed_seconds": 0.246,
+    "patches": {
+      "spec_requirements": {
+        "path": "data\\trials\\trial-001-mindrium-xa\\workdir\\case\\output_mdsr.docx",
+        "req_ids_patched": [
+          "Req. 6"
+        ]
+      },
+      "report_security_verification": {
+        "skipped": true,
+        "reason": "Missing output_xxcs.docx",
+        "security_req_ids": [
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06",
+          "SI-07"
+        ]
+      },
+      "requirements_json": {
+        "updated_req_ids": [
+          "Req. 6"
+        ]
+      }
+    },
+    "impact_req_ids": null
+  },
+  "generation": {
+    "elapsed_seconds": 14.87,
+    "harness_ok": false,
+    "harness_summary": {
+      "ok": false
+    },
+    "quality": {
+      "status": "FAIL",
+      "scores": {
+        "structure": 36.0,
+        "terminology": 100.0,
+        "completeness": 78.4,
+        "consistency": 0.0,
+        "traceability": 100.0,
+        "residual_text": 0.0,
+        "overall": 52.9
+      }
+    },
+    "outputs": {
+      "MDSR": {
+        "path": "data/trials/trial-001-mindrium-xa/generated_clean_mindrium/output_mdsr.docx",
+        "sha256": "7f77399284518b28434b7c150ee94a2abade9ec07d509a0e4eef8a3929df3b5f",
+        "size": 293238
+      },
+      "MDDR": {
+        "path": "data/trials/trial-001-mindrium-xa/generated_clean_mindrium/output_mddr.docx",
+        "sha256": "64a407aeafc3281fe2b34f5fe3f7f48a177f0b5bba4418383783a2b3d696e634",
+        "size": 317585
+      },
+      "XXCS": {
+        "path": "data/trials/trial-001-mindrium-xa/generated_clean_mindrium/output_xxcs.docx",
+        "sha256": "185a0c0625ed4e6f3279facb363791949a8a646c7c186032f8af509b772cb782",
+        "size": 25237999
+      }
+    },
+    "xxcs_in_generation_scope": false,
+    "xxcs_note": "선언 document_types는 MDSR/MDDR. XXCS는 harness가 기회적으로 생성한 산출물이며 HR 시 선택 검토. 기준 생성본은 generated_clean_mindrium/.",
+    "retrieval_disabled": true,
+    "workdir": "data/trials/trial-001-mindrium-xa/workdir/case_noretrieval",
+    "canonical_dir": "data/trials/trial-001-mindrium-xa/generated_clean_mindrium"
+  },
+  "source_hashes_after": {
+    "case/output_mdsr.docx": {
+      "path": "data\\cases\\mindrium_xa\\output_mdsr.docx",
+      "sha256": "652a4a98dee685b6411b39311432be7d4e71235f1fc83417f64235a598b3e629",
+      "size": 372105
+    },
+    "case/output_mddr.docx": {
+      "path": "data\\cases\\mindrium_xa\\output_mddr.docx",
+      "sha256": "426fa451e219074129282fe77e94f0aa23557c47a6c38f4d3d9c2781c2a05159",
+      "size": 210006
+    },
+    "case/requirements.json": {
+      "path": "data\\cases\\mindrium_xa\\requirements.json",
+      "sha256": "c782e73f110452fb68fb9ebb0341968f0e26ad7a91d97c485edfcf8fab1ef7a8",
+      "size": 6636
+    },
+    "case/input.json": {
+      "path": "data\\cases\\mindrium_xa\\input.json",
+      "sha256": "a3654108057203ad8128f7ac5cf31da225c45436e01c2fc467818a4e36c89f95",
+      "size": 1407
+    },
+    "case/changes/request_req6.txt": {
+      "path": "data\\cases\\mindrium_xa\\changes\\request_req6.txt",
+      "sha256": "7222f19c96868c74a59e59c05d662c840b42f03014cd69a690bc329575e4c697",
+      "size": 213
+    },
+    "examples/report_xxcs_EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서.docx": {
+      "path": "data\\examples\\ec_sw\\report_xxcs_EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서.docx",
+      "sha256": "c2b2a7621a8a8205a73f5401fc3fb538be4ea28197330ab244af68d54bff4b63",
+      "size": 25255815
+    },
+    "examples/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx": {
+      "path": "data\\examples\\ec_sw\\spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+      "sha256": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf",
+      "size": 2630162
+    },
+    "examples/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx": {
+      "path": "data\\examples\\ec_sw\\spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+      "sha256": "cd70f942ab8534c22887782b61d2319fd026e61f97744bde8f985c6484a3652d",
+      "size": 1968688
+    }
+  },
+  "source_preserved": true,
+  "source_hash_drift": [],
+  "prepare_review": {
+    "ok": true,
+    "review_dir": "data/trials/trial-001-mindrium-xa/review"
+  },
+  "finished_at": "2026-07-17T22:11:21Z",
+  "elapsed_seconds_total": 18.735,
+  "status": "implementation_validation_failed",
+  "harness_ok_false_reason": "DocumentHarness review failed because 16 other Req descriptions remain empty (pre-existing sparse requirements.json), not because Req.6 fill failed.",
+  "req6_verification": {
+    "requirements_json_filled": true,
+    "mdsr_table_description_filled": true,
+    "mdsr_description_text": "연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다.\n잠금 해제는 관리자 승인 또는 일정 시간 경과 후 자동 해제 중 하나를 지원해야 한다.",
+    "extractor_bug_note": "extract_requirements_docx may report last label cell (기준); table_matrix 설명 row is authoritative"
+  },
+  "post_harness_reapply": {
+    "action": "reapply_change_after_harness_regenerate",
+    "reason": "Full harness.generate overwrote apply-patched MDSR; Req.6 extractor previously saw label-only text",
+    "change_path": "data/trials/trial-001-mindrium-xa/workdir/case/changes/chg-20260718-4b8f6d.json",
+    "req6_description_after_reapply": "기준",
+    "mdsr_sha256": "acbfae40e4be5c1a0f0aa0def8be8494a3728b1df94d98a49c3056b9298d0fde",
+    "mddr_sha256": "9cdb817bb28495f575116614c0b2fd85dd1c39a69d7789b50030c9b7d9768a15"
+  },
+  "contamination_finding": {
+    "issue": "1차 harness.generate retrieval이 jm_collection을 hit → JM COLLECTION 브랜딩 혼입",
+    "fix": "use_retrieval=False 재생성 → generated_clean_mindrium/",
+    "human_review_must_use": "data/trials/trial-001-mindrium-xa/generated_clean_mindrium",
+    "do_not_use_for_hr": "data/trials/trial-001-mindrium-xa/generated/ (오염·잠금 가능)"
+  },
+  "canonical_generated_dir": "data/trials/trial-001-mindrium-xa/generated_patch_preserving",
+  "pre_human_review_ready": false,
+  "invalid_for_hr": [
+    "data/trials/trial-001-mindrium-xa/generated",
+    "data/trials/trial-001-mindrium-xa/generated_clean_mindrium"
+  ],
+  "generation_strategy": "patch_preserving_reference_docx",
+  "patch_preserving": {
+    "ok": true,
+    "mdsr_path": "data\\trials\\trial-001-mindrium-xa\\generated_patch_preserving\\output_mdsr.docx",
+    "mddr_path": "data\\trials\\trial-001-mindrium-xa\\generated_patch_preserving\\output_mddr.docx",
+    "mdsr_patched_req_ids": [
+      "Req. 6"
+    ],
+    "mddr_strategy": "no_automatic_design_patch",
+    "mddr_sha256_matches_reference": true,
+    "validation": {
+      "mdsr_text_diffs": [
+        {
+          "location": "t:12/r:1/c:1",
+          "before": "",
+          "after": "연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다.\n잠금 해제는 관리자 승인 또는 일정 시간 경과 후 자동 해제 중 하나를 지원해야 한다."
+        }
+      ],
+      "mdsr_unexpected_diffs": [],
+      "mdsr_unexpected_diff_count": 0,
+      "mdsr_ooxml_before": {
+        "drawing_like": 2,
+        "sectPr": 1,
+        "tbl": 46,
+        "p": 889
+      },
+      "mdsr_ooxml_after": {
+        "drawing_like": 2,
+        "sectPr": 1,
+        "tbl": 46,
+        "p": 889
+      },
+      "mdsr_styles_before": 58,
+      "mdsr_styles_after": 58,
+      "mdsr_size_before_copy": 1968688,
+      "mdsr_size_after_patch": 1968231,
+      "mdsr_reference_size": 1968688,
+      "mddr_reference_size": 2630162,
+      "mddr_output_size": 2630162,
+      "mdsr_sha256": "e7761b5cda6a7929493abea200b35fecd88a089639c3e8d46c1a97e6cc995cf7",
+      "mddr_sha256": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf",
+      "mddr_reference_sha256": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf",
+      "contamination_mdsr": [],
+      "contamination_mddr": [],
+      "xxcs_in_output_dir": false
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "mddr_design_candidates_report_only": [],
+  "mddr_design_candidates_count": 0,
+  "visual_qa": {
+    "mdsr": {
+      "ok": true,
+      "engine": "win32com.Word",
+      "pages": 29,
+      "png_paths": [],
+      "skipped_reason": null,
+      "pdf_path": "data/trials/trial-001-mindrium-xa/logs/visual_qa/mdsr/output_mdsr.pdf",
+      "notes": "PDF render saved for visual QA. Per-page PNG export skipped (Word COM page bitmap export not configured)."
+    },
+    "mddr": {
+      "ok": true,
+      "engine": "win32com.Word",
+      "pages": 18,
+      "png_paths": [],
+      "skipped_reason": null,
+      "pdf_path": "data/trials/trial-001-mindrium-xa/logs/visual_qa/mddr/output_mddr.pdf",
+      "notes": "PDF render saved for visual QA. Per-page PNG export skipped (Word COM page bitmap export not configured)."
+    }
+  },
+  "reference_visual_qa": {
+    "mdsr": {
+      "ok": true,
+      "engine": "win32com.Word",
+      "pages": 29,
+      "png_paths": [],
+      "skipped_reason": null,
+      "pdf_path": "data/trials/trial-001-mindrium-xa/logs/visual_qa/reference_mdsr/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.pdf",
+      "notes": "PDF render saved for visual QA. Per-page PNG export skipped (Word COM page bitmap export not configured)."
+    },
+    "mddr": {
+      "ok": true,
+      "engine": "win32com.Word",
+      "pages": 18,
+      "png_paths": [],
+      "skipped_reason": null,
+      "pdf_path": "data/trials/trial-001-mindrium-xa/logs/visual_qa/reference_mddr/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.pdf",
+      "notes": "PDF render saved for visual QA. Per-page PNG export skipped (Word COM page bitmap export not configured)."
+    }
+  },
+  "patch_preserving_elapsed_seconds": 0.978,
+  "updated_at": "2026-07-18T06:36:21Z",
+  "failure_summary": null,
+  "label_diff_correction": {
+    "previous_allowed_two_diffs_meaning": "이전 실행은 빈 라벨 셀(r1c0='')에 '설명' 문자열을 새로 기입했고, 값 셀(r1c1)에 CR description을 기입했다. 즉 OOXML run 허상 diff가 아니라 실제 라벨 텍스트 변경이었다.",
+    "correction": "라벨 셀은 원본대로 공란 유지, description 값 셀만 수정하도록 preserve_patch 보정 후 재생성.",
+    "reference_r1c0": "",
+    "output_r1c0": "",
+    "reference_r1c1": "",
+    "output_r1c1": "연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다.\n잠금 해제는 관리자 승인 또는 일정 시간 경과 후 자동 해제 중 하나를 지원해야 한다."
+  },
+  "success_scope": {
+    "pass": [
+      "requirement_mapping",
+      "patch_preservation",
+      "source_preservation",
+      "document_preservation"
+    ],
+    "fail": [
+      "semantic_consistency",
+      "requirement_impact_detection",
+      "design_propagation"
+    ]
+  },
+  "canonical_hr_output": null,
+  "structural_probe_dir": "data/trials/trial-001-mindrium-xa/generated_patch_preserving",
+  "human_review_paths_note": "Optional HR against requirement-level/physical criteria only; semantic/multi-req out of Trial 1 scope",
+  "trial_framing": {
+    "type": "Implementation Validation",
+    "purpose": "Verify harness correctly modifies real documents"
+  },
+  "limitations_analysis": {
+    "document": "data/trials/trial-001-mindrium-xa/SEMANTIC_CONSISTENCY_ANALYSIS.md",
+    "search": "data/trials/trial-001-mindrium-xa/SEMANTIC_SEARCH_RESULTS.json",
+    "decision_report": "data/trials/trial-001-mindrium-xa/DECISION_REPORT.md",
+    "note": "FAIL root-cause analysis for Implementation Validation"
+  },
+  "review_artifact_paths": {
+    "canonical_mdsr": "data/trials/trial-001-mindrium-xa/generated_patch_preserving/output_mdsr.docx",
+    "canonical_mddr": "data/trials/trial-001-mindrium-xa/generated_patch_preserving/output_mddr.docx",
+    "reviewer_checklist": "data/trials/trial-001-mindrium-xa/review/HUMAN_REVIEW_CHECKLIST.md",
+    "human_revision_template": "data/trials/trial-001-mindrium-xa/review/human_revision_record.template.json",
+    "mdsr_reviewer_package": "data/trials/trial-001-mindrium-xa/review/MDSR_REVIEWER_PACKAGE.md",
+    "mddr_reviewer_package": "data/trials/trial-001-mindrium-xa/review/MDDR_REVIEWER_PACKAGE.md",
+    "generation_correction_report": "data/trials/trial-001-mindrium-xa/GENERATION_CORRECTION_REPORT.md",
+    "execution_report": "data/trials/trial-001-mindrium-xa/execution_report.json",
+    "final_trial_report_skeleton": "data/trials/trial-001-mindrium-xa/FINAL_TRIAL_REPORT.md",
+    "scope": "requirement_level_physical_only"
+  },
+  "trial_type": "implementation_validation",
+  "pass_items": [
+    {
+      "id": "requirement_mapping",
+      "label_ko": "요구사항 매핑",
+      "evidence": [
+        "자연어 변경요청(CR)이 Req.6으로 올바르게 매핑됨."
+      ]
+    },
+    {
+      "id": "patch_preservation",
+      "label_ko": "패치 보존",
+      "evidence": [
+        "원본 문서를 통째로 재생성하지 않고 패치를 적용함."
+      ]
+    },
+    {
+      "id": "source_preservation",
+      "label_ko": "원본 보존",
+      "evidence": [
+        "원본 DOCX가 보존됨.",
+        "원본 유지형(patch-in-place) 전략이 정상 수행됨."
+      ]
+    },
+    {
+      "id": "document_preservation",
+      "label_ko": "문서 구조 보존",
+      "evidence": [
+        "원본 구조와 서식이 유지됨."
+      ]
+    }
+  ],
+  "fail_items": [
+    {
+      "id": "semantic_consistency",
+      "label_ko": "의미적 일관성",
+      "root_cause": "설명 셀만 패치. 제목·목적·기준은 인증 오류 UX인데 CR은 계정 잠금 정책이라 의미 충돌.",
+      "improvement": "Trial 2: 의미 검색 + 일관성 게이트(다중 필드 갱신 또는 매핑 재선택)."
+    },
+    {
+      "id": "requirement_impact_detection",
+      "label_ko": "요구사항 영향 식별",
+      "root_cause": "Exact-ID 의존. 의미 검색·그래프 확장 부재(Req.105 누락).",
+      "improvement": "Trial 2: 검색 기반 후보 발견 + 그래프 확장."
+    },
+    {
+      "id": "design_propagation",
+      "label_ko": "설계 전파",
+      "root_cause": "MDDR 미패치. 설계 영향 미식별(식별되지 않음 ≠ 불필요).",
+      "improvement": "Trial 2: 검색된 MDDR 패치 또는 문서화 생략. 보존/전파 지표 분리."
+    }
+  ],
+  "reason": "Acceptance Criteria Not Met",
+  "overall_result": "FAILED",
+  "trial_1_freeze": true,
+  "pipeline_execution_evidence": "data/trials/trial-001-mindrium-xa/generated_patch_preserving",
+  "root_cause_summary": [
+    "Exact-ID 의존",
+    "의미 검색 부재",
+    "그래프 확장 부재"
+  ],
+  "trial_2_goal": [
+    "검색 보강 의미 검색",
+    "영향 후보 발견",
+    "요구사항 간 영향 분석",
+    "설계 문서 전파",
+    "검증 문서 전파",
+    "재검증"
+  ],
+  "trial_2_acceptance_criteria": [
+    "Req.105가 영향 후보로 검색·포함됨",
+    "의미적 일관성 검증을 통과함",
+    "갱신된 요구사항 필드 간 모순이 없음",
+    "MDDR이 올바르게 패치됨 또는 문서화된 사유와 함께 명시적으로 생략됨",
+    "문서 간 전파 추적(trace)이 생성됨"
+  ],
+  "trial_type_ko": "구현 검증",
+  "pipeline_execution_evidence_note": "Pipeline execution evidence only. 수정·재실행 금지.",
+  "status_fields_note": "canonical: overall_result, reason, trial_1_freeze, status. success_scope = PASS/FAIL id lists only (no duplicated overall status). trial_framing = type/purpose only (no duplicated result)."
+}

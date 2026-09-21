@@ -1,0 +1,10 @@
+{
+  "case_id": "case_001",
+  "mdsr": "/workspace/data/eval/regulatory_bench/case_001/input/MDSR_v1.docx",
+  "mddr": "/workspace/data/eval/regulatory_bench/case_001/input/MDDR_v1.docx",
+  "fingerprints": "/workspace/data/eval/regulatory_bench/case_001/fp/originals.sha256",
+  "sha256": {
+    "input/MDSR_v1.docx": "58a488a1b65f16184ee9a537c7149b51ed7e2eda4dc46cd5b622b36c57d04578",
+    "input/MDDR_v1.docx": "0c26b6752d2cb0e2a9a76cc376a22be33fef88b7c8da30f040326d919d970e78"
+  }
+}

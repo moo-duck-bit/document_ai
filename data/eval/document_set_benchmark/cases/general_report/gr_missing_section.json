@@ -1,0 +1,23 @@
+{
+  "case_id": "gr_missing_section",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "존재하지 않는 부록Z 섹션 수정",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_base.docx",
+      "filename": "report_base.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_BASE"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "no_impact"
+  ],
+  "difficulty": "medium",
+  "notes": "Nonexistent section",
+  "source_type": "fixture"
+}

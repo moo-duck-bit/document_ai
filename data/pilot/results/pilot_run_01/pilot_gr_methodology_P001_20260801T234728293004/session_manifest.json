@@ -1,0 +1,17 @@
+{
+  "pilot_run_id": "pilot_run_01",
+  "case_id": "pr01_gr_01",
+  "session_id": "pilot_gr_methodology_P001_20260801T234728293004",
+  "participant_id": "P001",
+  "domain": "general_report",
+  "scenario_id": "pilot_gr_methodology",
+  "document_paths": [
+    "data/pilot/real_user_document_pilot/scenarios/fixtures/general_report/report_pilot_base.docx"
+  ],
+  "change_request": "방법론 섹션에 데이터 출처를 보강한다.",
+  "writer_enabled": false,
+  "expected_review_scope": [
+    "방법론"
+  ],
+  "created_at": "2026-08-01T23:47:30Z"
+}

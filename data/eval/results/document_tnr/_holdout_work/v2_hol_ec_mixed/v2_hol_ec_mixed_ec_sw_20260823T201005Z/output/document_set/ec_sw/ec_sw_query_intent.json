@@ -1,0 +1,27 @@
+{
+  "raw_change_request": "Req. 12 및 TC-12 연계",
+  "requirement_ids": [
+    "Req. 12"
+  ],
+  "design_ids": [],
+  "test_ids": [
+    "TC-12"
+  ],
+  "identifier_status": "MIXED",
+  "primary_identifier_type": "REQUIREMENT",
+  "secondary_identifier_types": [
+    "TEST"
+  ],
+  "semantic_terms": [
+    "req",
+    "12",
+    "tc",
+    "12",
+    "연계"
+  ],
+  "ambiguity": true,
+  "reason_codes": [
+    "mixed_with_primary_hint",
+    "primary_requirement"
+  ]
+}

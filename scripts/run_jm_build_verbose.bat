@@ -1,6 +1,6 @@
 @echo off
 setlocal
-set ROOT=c:\Users\hsh71\OneDrive\Desktop\SKKU\fighting\document_AI
+set ROOT=%~dp0..
 set OUT=%TEMP%\jm_build_status.txt
 echo START %DATE% %TIME% > "%OUT%"
 cd /d "%ROOT%"

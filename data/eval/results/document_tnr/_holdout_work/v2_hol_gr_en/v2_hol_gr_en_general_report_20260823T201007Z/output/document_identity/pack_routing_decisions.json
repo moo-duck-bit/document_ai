@@ -1,0 +1,29 @@
+[
+  {
+    "routing_id": "route_5a7fcf2b33",
+    "source_document_id": "REPORT_EN_HEADINGS",
+    "selected_pack_id": "generic_document_v1",
+    "candidate_pack_ids": [
+      "generic_document_v1"
+    ],
+    "routing_status": "ROUTED",
+    "score": 26.048,
+    "score_margin": 26.048,
+    "reason_codes": [
+      "filename_hint:REPORT",
+      "filename_role_hint",
+      "heading_or_title",
+      "report_heading_concepts",
+      "conflict_penalty",
+      "conflict_requires_review",
+      "explicit_user_pack"
+    ],
+    "human_review_required": false,
+    "actual_pack_invoked": "generic_document_v1",
+    "metadata": {
+      "routing_mode": "explicit",
+      "identity_status": "REVIEW_REQUIRED",
+      "document_set_hint": "general_report"
+    }
+  }
+]

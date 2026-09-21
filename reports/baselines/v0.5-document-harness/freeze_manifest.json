@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "baseline_dir": "reports/baselines/v0.5-document-harness",
+  "system_version": "v0.5-document-harness",
+  "system_commit": "d73fc18",
+  "copied": [
+    "reports/baselines/v0.5-document-harness/benchmark.json",
+    "reports/baselines/v0.5-document-harness/benchmark.md",
+    "reports/baselines/v0.5-document-harness/case_results/lab_ec_sw/validation_report.json",
+    "reports/baselines/v0.5-document-harness/case_results/lab_ec_sw/validation_report.md",
+    "reports/baselines/v0.5-document-harness/case_results/lab_ec_sw/quality_report.md",
+    "reports/baselines/v0.5-document-harness/case_results/lab_ec_sw/e2e_validation_report.json",
+    "reports/baselines/v0.5-document-harness/case_results/inventory_mgmt/validation_report.json",
+    "reports/baselines/v0.5-document-harness/case_results/inventory_mgmt/validation_report.md",
+    "reports/baselines/v0.5-document-harness/case_results/inventory_mgmt/quality_report.md",
+    "reports/baselines/v0.5-document-harness/case_results/inventory_mgmt/e2e_validation_report.json",
+    "reports/baselines/v0.5-document-harness/case_results/hospital_reservation/validation_report.json",
+    "reports/baselines/v0.5-document-harness/case_results/hospital_reservation/validation_report.md",
+    "reports/baselines/v0.5-document-harness/case_results/hospital_reservation/quality_report.md",
+    "reports/baselines/v0.5-document-harness/case_results/hospital_reservation/e2e_validation_report.json",
+    "reports/baselines/v0.5-document-harness/case_results/jm_collection/validation_report.json",
+    "reports/baselines/v0.5-document-harness/case_results/jm_collection/validation_report.md",
+    "reports/baselines/v0.5-document-harness/case_results/jm_collection/quality_report.md",
+    "reports/baselines/v0.5-document-harness/case_results/jm_collection/e2e_validation_report.json"
+  ],
+  "warnings": [],
+  "pytest": "deferred (v0.5 claimed 297 passed)",
+  "git": {
+    "commit": "d73fc18225c2d47f63d17aa4d27b2fb180814a07",
+    "commit_short": "d73fc18",
+    "branch": "feature/evaluation-foundation-trial1",
+    "describe": "v0.5-document-harness-dirty",
+    "tags_at_head": [
+      "v0.5-document-harness"
+    ],
+    "dirty": true,
+    "status_porcelain": [
+      "M src/document_ai/cli.py",
+      "?? data/evaluation/",
+      "?? docs/evaluation_foundation_architecture.md",
+      "?? docs/interim_presentation_plan.md",
+      "?? docs/real_world_trial_data_leakage_policy.md",
+      "?? docs/real_world_trial_metrics.md",
+      "?? docs/real_world_trial_protocol.md",
+      "?? docs/trial1_execution_guide.md",
+      "?? docs/trial1_required_inputs.md",
+      "?? schemas/trial_error_annotation.schema.json",
+      "?? schemas/trial_manifest.schema.json",
+      "?? src/document_ai/trial/",
+      "?? tests/test_trial_foundation.py"
+    ],
+    "collected_at": "2026-07-17T17:12:46Z"
+  }
+}

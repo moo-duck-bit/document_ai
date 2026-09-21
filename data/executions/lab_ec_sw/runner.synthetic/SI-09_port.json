@@ -1,0 +1,10 @@
+{
+  "banner_grabbed": false,
+  "bytes_received": 0,
+  "bytes_sent": 0,
+  "check": "port_connectivity_check",
+  "error": "synthetic connection timeout",
+  "error_type": "TimeoutError",
+  "host": "fixture.example.com",
+  "port": 443
+}

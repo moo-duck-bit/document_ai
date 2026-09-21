@@ -1,0 +1,14 @@
+[
+  {
+    "source_document_id": "REPORT_EN_HEADINGS",
+    "reason_codes": [
+      "filename_hint:REPORT",
+      "filename_role_hint",
+      "heading_or_title",
+      "report_heading_concepts",
+      "conflict_penalty",
+      "conflict_requires_review"
+    ],
+    "decision_status": "REVIEW_REQUIRED"
+  }
+]

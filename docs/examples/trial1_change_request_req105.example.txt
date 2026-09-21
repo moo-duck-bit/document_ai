@@ -1,0 +1,6 @@
+# Historical / Not used in Trial 1 (lab_ec_sw Req.105 example)
+# Trial 1 uses: data/cases/mindrium_xa/changes/request_req6.txt
+
+Req. 105:
+로그인·API 엔드포인트에 rate limiting을 적용하여 brute force 및 DDoS를 완화해야 한다. Platform과 App 모두 연속 로그인 실패 5회 시 30분 계정 잠금을 적용해야 한다. 관리자는 잠금 계정을 해제할 수 있어야 하며, 잠금 및 해제 이벤트는 감사 로그로 기록하고 관리자 화면에 잠금 상태를 표시해야 한다.
+

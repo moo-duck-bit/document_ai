@@ -1,0 +1,6 @@
+{
+  "stable_base_excludes_document_id": true,
+  "writer_executable_from_stable_only": false,
+  "identity_version": "stable_node_identity_v2",
+  "n_stable_v2": 3
+}

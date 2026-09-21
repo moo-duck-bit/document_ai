@@ -1,0 +1,91 @@
+{
+  "trial_id": "trial-synthetic-001",
+  "generated_at": "2026-07-17T17:13:23Z",
+  "duration_seconds": 9.694,
+  "duration_minutes": 0.1616,
+  "synthetic": true,
+  "source_case_dir": "data/cases/lab_ec_sw",
+  "work_case_dir": "data/trials/trial-synthetic-001/workdir/case",
+  "source_case_output_hashes": {
+    "output_mdsr.docx": "991e1fb9c635e4cccd67baebe941ac4e7663d8cc607f7f06eeb4ec19bbf3aea3",
+    "output_mddr.docx": "c4538ab261b88d669e58ce8b8399ebc18c83bb834f7ce86b55aa0c3738301a92",
+    "output_xxcs.docx": "70f5f66430a607eb605aefb0f3782727c31e9257d20412081b30759f3a777362"
+  },
+  "outputs": {
+    "MDSR": "data/trials/trial-synthetic-001/generated/output_mdsr.docx",
+    "MDDR": "data/trials/trial-synthetic-001/generated/output_mddr.docx",
+    "XXCS": "data/trials/trial-synthetic-001/generated/output_xxcs.docx"
+  },
+  "harness": {
+    "ok": true,
+    "skipped": true,
+    "reason": "using isolated copy of existing outputs (no overwrite of source case)",
+    "force_generate": false
+  },
+  "quality": {
+    "status": "PASS",
+    "scores": {
+      "structure": 100.0,
+      "terminology": 100.0,
+      "completeness": 100.0,
+      "consistency": 100.0,
+      "traceability": 100.0,
+      "residual_text": 84.0,
+      "overall": 96.8
+    }
+  },
+  "validation": {
+    "status": "PASS",
+    "scores": {
+      "overall": 90.5,
+      "docx_overall": 89.7,
+      "mdsr": 100.0,
+      "mddr": 92.0,
+      "xxcs": 77.1,
+      "semantic": 95.0
+    }
+  },
+  "git": {
+    "commit": "d73fc18225c2d47f63d17aa4d27b2fb180814a07",
+    "commit_short": "d73fc18",
+    "branch": "feature/evaluation-foundation-trial1",
+    "describe": "v0.5-document-harness-dirty",
+    "tags_at_head": [
+      "v0.5-document-harness"
+    ],
+    "dirty": true,
+    "status_porcelain": [
+      "M src/document_ai/cli.py",
+      "?? data/evaluation/",
+      "?? data/trials/",
+      "?? docs/evaluation_foundation_architecture.md",
+      "?? docs/interim_presentation_plan.md",
+      "?? docs/real_world_trial_data_leakage_policy.md",
+      "?? docs/real_world_trial_metrics.md",
+      "?? docs/real_world_trial_protocol.md",
+      "?? docs/trial1_execution_guide.md",
+      "?? docs/trial1_required_inputs.md",
+      "?? reports/",
+      "?? schemas/trial_error_annotation.schema.json",
+      "?? schemas/trial_manifest.schema.json",
+      "?? src/document_ai/trial/",
+      "?? tests/test_trial_foundation.py"
+    ],
+    "collected_at": "2026-07-17T17:13:23Z"
+  },
+  "environment": {
+    "python_version": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "cwd": ".",
+    "project_root": ".",
+    "env_markers": {
+      "CI": "",
+      "VIRTUAL_ENV": ""
+    },
+    "collected_at": "2026-07-17T17:13:23Z"
+  },
+  "commands": [
+    "trial-generate (isolated workdir copy; source case outputs not written)"
+  ],
+  "overwrite_source_case": false
+}

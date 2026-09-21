@@ -1,0 +1,5 @@
+INVALID_FOR_HR
+Reason: full harness regenerate / skeleton output; not patch-in-place of Mindrium reference.
+Do not use for Human Review.
+Canonical candidate after correction: data/trials/trial-001-mindrium-xa/generated_patch_preserving
+marked_at: 2026-07-18T01:57:05Z

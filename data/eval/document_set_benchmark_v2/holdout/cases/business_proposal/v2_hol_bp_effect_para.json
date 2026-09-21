@@ -1,0 +1,29 @@
+{
+  "case_id": "v2_hol_bp_effect_para",
+  "domain": "business_proposal",
+  "document_set_id": "business_proposal",
+  "change_request": "기대효과 문단 수정",
+  "split": "holdout",
+  "input_documents": [
+    {
+      "path": "fixtures/business_proposal/proposal_base.docx",
+      "filename": "proposal_base.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "PROPOSAL_BASE"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "effect_para",
+    "holdout"
+  ],
+  "difficulty": "medium",
+  "notes": "cycle6_business_proposal_node_gold",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "26b6d41c612dcc196bb137538f5ada67c2b25743b4fdf6d24af3ed18b5ddf0a5",
+  "sanitization_status": "N/A"
+}

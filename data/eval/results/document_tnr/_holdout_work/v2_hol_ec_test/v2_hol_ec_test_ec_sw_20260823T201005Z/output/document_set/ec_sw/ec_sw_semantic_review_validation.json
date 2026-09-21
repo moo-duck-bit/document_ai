@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "issues": [],
+  "invariants": [
+    "no_semantic_only_patch",
+    "review_requires_substantive_evidence"
+  ]
+}

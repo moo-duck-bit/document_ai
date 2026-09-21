@@ -1,0 +1,31 @@
+{
+  "raw_change_request": "위험 관리 완화책",
+  "canonical_concepts": [
+    "RISK"
+  ],
+  "requested_operation": "REVIEW",
+  "requested_node_roles": [
+    "RISK_SECTION",
+    "PROPOSAL_SECTION",
+    "PARAGRAPH_BODY",
+    "DOCUMENT_HEADING"
+  ],
+  "target_section_concepts": [
+    "RISK",
+    "RISK"
+  ],
+  "intent_label": "RISK_UPDATE",
+  "table_intent": false,
+  "list_intent": false,
+  "add_intent": false,
+  "update_intent": false,
+  "delete_intent": false,
+  "document_level": false,
+  "ambiguity": false,
+  "confidence": 0.7,
+  "reason_codes": [
+    "op_review_default",
+    "intent_risk",
+    "intent:RISK_UPDATE"
+  ]
+}

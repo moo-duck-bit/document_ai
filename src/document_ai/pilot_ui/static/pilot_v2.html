@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document AI Pilot — 실제 문서 검증</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>Document AI Pilot</h1>
+      <p class="sub">실제 문서 업로드 → 유형 확인 → 변경 요청 → 검토·승인 → 복사본 결과</p>
+    </div>
+    <div class="header-links">
+      <a class="badge" href="/workflow">워크플로 UI</a>
+      <span class="badge ok-badge">원본 무변경 · 승인 후 복사만 저장</span>
+    </div>
+  </header>
+
+  <div class="progress-wrap" aria-label="진행 단계">
+    <div class="progress-bar" id="progress-bar" style="width: 16.6%"></div>
+    <ol class="progress-steps" id="wizard-tabs">
+      <li><button type="button" class="tab active" data-step="1">1. 업로드</button></li>
+      <li><button type="button" class="tab" data-step="2">2. 문서 유형</button></li>
+      <li><button type="button" class="tab" data-step="3">3. 변경 요청</button></li>
+      <li><button type="button" class="tab" data-step="4">4. 분석</button></li>
+      <li><button type="button" class="tab" data-step="5">5. 검토·승인</button></li>
+      <li><button type="button" class="tab" data-step="6">6. 결과</button></li>
+    </ol>
+  </div>
+
+  <main>
+    <section class="panel active" id="step-1">
+      <h2>1. 문서 업로드</h2>
+      <p class="hint">데모 시나리오를 고르거나, 본인 문서(.docx)를 올리세요. 업로드 시 <strong>세션 전용 복사본</strong>만 사용하며 원본 경로는 건드리지 않습니다.</p>
+
+      <label>데모 시나리오 (권장)
+        <select id="scenario_id">
+          <option value="">직접 업로드</option>
+        </select>
+      </label>
+      <p id="scenario-desc" class="hint callout"></p>
+
+      <label>문서 유형 (Domain Pack)
+        <select id="document_set">
+          <option value="ec_sw">EC-SW (요구사항·설계·추적성)</option>
+          <option value="general_report">일반 보고서</option>
+          <option value="business_proposal">사업 제안서</option>
+        </select>
+      </label>
+
+      <label>참가자 ID (비우면 익명 P001 형식 자동 부여)
+        <input id="participant_id" placeholder="예: P001" autocomplete="off" />
+      </label>
+
+      <label>파일 (.docx, 여러 개 가능 · 시나리오 선택 시 생략 가능)
+        <input type="file" id="files" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" multiple />
+      </label>
+
+      <div class="row actions">
+        <button type="button" id="btn-create-session">세션 만들고 업로드</button>
+      </div>
+      <p id="create-status" class="status"></p>
+      <div id="upload-summary" class="summary-grid" hidden></div>
+    </section>
+
+    <section class="panel" id="step-2">
+      <h2>2. 문서 유형 · Domain Pack 확인</h2>
+      <p class="hint">시스템이 문서 종류와 Domain Pack을 추천합니다. 확신이 낮으면 <strong>추천 확인</strong>을 눌러 주세요.</p>
+      <p>세션: <code id="session-id-2">-</code></p>
+
+      <label>확인 방식
+        <select id="routing_mode">
+          <option value="assisted" selected>추천 후 사용자 확인 (권장)</option>
+          <option value="auto">자동 확정</option>
+          <option value="explicit">위에서 고른 문서 유형 고정</option>
+        </select>
+      </label>
+
+      <div class="row actions">
+        <button type="button" id="btn-resolve-identity">유형 분석 실행</button>
+        <button type="button" id="btn-confirm-identity" class="secondary" disabled>추천대로 확정</button>
+        <button type="button" id="btn-to-step3" class="secondary">다음: 변경 요청</button>
+      </div>
+      <div id="identity-summary" class="summary-grid"></div>
+      <details class="raw-toggle">
+        <summary>상세 JSON</summary>
+        <pre id="identity-out" class="box tall"></pre>
+      </details>
+    </section>
+
+    <section class="panel" id="step-3">
+      <h2>3. 변경 요청</h2>
+      <p class="hint">무엇을 바꾸고 싶은지 자연어로 적습니다. 시나리오를 골랐다면 이미 채워져 있습니다.</p>
+      <label>변경 요청
+        <textarea id="change_request" rows="6" placeholder="예: Req. 11 추적성 행을 갱신해 주세요"></textarea>
+      </label>
+      <p class="hint">참고: 변경 요청 문구는 세션 생성 시 저장됩니다. 크게 바꾸려면 새 세션을 만드세요.</p>
+      <div class="row actions">
+        <button type="button" id="btn-to-step4">다음: 분석 실행</button>
+      </div>
+    </section>
+
+    <section class="panel" id="step-4">
+      <h2>4. 영향 분석</h2>
+      <p class="hint">영향 문서·Node 후보·검토(REVIEW)·차단(BLOCKED)을 계산합니다. 엔진은 읽기 전용으로 동작합니다.</p>
+      <div class="row actions">
+        <button type="button" id="btn-analyze">분석 실행</button>
+        <button type="button" id="btn-to-step5" class="secondary">다음: 검토</button>
+      </div>
+      <div id="analyze-summary" class="summary-grid"></div>
+      <details class="raw-toggle">
+        <summary>상세 JSON</summary>
+        <pre id="analyze-out" class="box tall"></pre>
+      </details>
+    </section>
+
+    <section class="panel" id="step-5">
+      <h2>5. 항목별 검토 · 승인</h2>
+      <p class="hint">
+        <span class="pill approve">승인</span> = 이 변경을 적용해도 됨 ·
+        <span class="pill reject">거절</span> = 적용 안 함 ·
+        <span class="pill hold">보류</span> = 나중에 결정
+      </p>
+      <p class="hint warn">명시적으로 <strong>승인</strong>한 항목만 이후 복사본 Writer 대상이 됩니다.</p>
+
+      <div id="review-items" class="list"></div>
+      <div class="row actions">
+        <button type="button" id="btn-save-decisions">결정 저장</button>
+      </div>
+      <pre id="decisions-out" class="box"></pre>
+
+      <h3>복사본 저장 (Writer · 게이트됨)</h3>
+      <p class="hint">서버에 <code>CONTROLLED_WRITER_ENABLED=true</code>가 설정된 경우에만 실제로 복사됩니다.</p>
+      <div class="row actions">
+        <label class="check"><input type="checkbox" id="enable_write" /> 복사본 저장 허용</label>
+        <button type="button" id="btn-run-writer" class="secondary">승인 항목만 복사본 생성</button>
+      </div>
+      <pre id="writer-out" class="box tall"></pre>
+      <div class="row actions">
+        <button type="button" id="btn-to-step6">다음: 결과 · 평가</button>
+      </div>
+    </section>
+
+    <section class="panel" id="step-6">
+      <h2>6. 결과 · 다운로드 · 사용성 평가</h2>
+      <div class="row actions">
+        <button type="button" id="btn-result">결과 새로고침</button>
+      </div>
+      <div id="result-summary" class="summary-grid"></div>
+      <div id="download-links" class="download-list"></div>
+      <details class="raw-toggle">
+        <summary>상세 JSON</summary>
+        <pre id="result-out" class="box tall"></pre>
+      </details>
+
+      <h3>사용성 평가 (1–5점 × 10항)</h3>
+      <div class="row">
+        <label>1. 변경 요청 이해도
+          <input type="number" id="score_understanding" min="1" max="5" value="3" />
+        </label>
+        <label>2. 영향 문서 적절성
+          <input type="number" id="score_document_impact" min="1" max="5" value="3" />
+        </label>
+      </div>
+      <div class="row">
+        <label>3. Node 위치 정확성
+          <input type="number" id="score_node_accuracy" min="1" max="5" value="3" />
+        </label>
+        <label>4. 제안 변경 정확성
+          <input type="number" id="score_proposal_accuracy" min="1" max="5" value="3" />
+        </label>
+      </div>
+      <div class="row">
+        <label>5. REVIEW 사유 납득도
+          <input type="number" id="score_review_reason" min="1" max="5" value="3" />
+        </label>
+        <label>6. Diff 이해도
+          <input type="number" id="score_diff_readability" min="1" max="5" value="3" />
+        </label>
+      </div>
+      <div class="row">
+        <label>7. 불필요한 변경 없음
+          <input type="number" id="score_no_unnecessary_change" min="1" max="5" value="3" />
+        </label>
+        <label>8. 문서 형식 보존
+          <input type="number" id="score_format_preservation" min="1" max="5" value="3" />
+        </label>
+      </div>
+      <div class="row">
+        <label>9. 결과 신뢰도
+          <input type="number" id="score_trust" min="1" max="5" value="3" />
+        </label>
+        <label>10. 전체 사용 편의성
+          <input type="number" id="score_usability" min="1" max="5" value="3" />
+        </label>
+      </div>
+      <label>종합 판정
+        <select id="hr_verdict">
+          <option value="PASS">PASS (사용 가능)</option>
+          <option value="PARTIAL">PARTIAL (부분 사용)</option>
+          <option value="FAIL">FAIL (사용 어려움)</option>
+          <option value="PENDING" selected>PENDING (미평가)</option>
+        </select>
+      </label>
+      <label>자유 의견
+        <textarea id="hr_comments" rows="4" placeholder="잘된 점, 잘못 찾은 위치, 누락, 불필요한 REVIEW 등"></textarea>
+      </label>
+      <button type="button" id="btn-save-human-review">평가 저장 · 세션 완료</button>
+      <p id="hr-status" class="status"></p>
+    </section>
+  </main>
+
+  <footer>
+    Document AI Pilot v2 — 세션별 격리 · 승인 없는 쓰기 금지 · 원본 파일은 수정되지 않습니다.
+    가이드: <code>docs/pilot/REAL_USER_PILOT_GUIDE.md</code>
+  </footer>
+
+  <script src="/static/pilot_v2.js"></script>
+</body>
+</html>

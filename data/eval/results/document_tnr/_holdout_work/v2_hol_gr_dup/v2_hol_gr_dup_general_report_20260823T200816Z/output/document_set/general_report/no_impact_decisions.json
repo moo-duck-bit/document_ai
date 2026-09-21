@@ -1,0 +1,85 @@
+[
+  {
+    "document_id": "REPORT_DUP_RESULTS",
+    "status": "REVIEW_REQUIRED",
+    "reason_codes": [
+      "substantive_review_evidence"
+    ],
+    "substantive_evidence_count": 6,
+    "human_review_required": true,
+    "target_status": "EXISTS_EXACT",
+    "top_evidence": [
+      {
+        "evidence_type": "EXACT_HEADING_MATCH",
+        "evidence_value": "결과",
+        "node_id": "heading_0000",
+        "confidence": 0.7,
+        "source_stage": "document_paragraph",
+        "supports_impacted": false,
+        "supports_review": true,
+        "reason_codes": [
+          "paragraph_concept_match"
+        ]
+      },
+      {
+        "evidence_type": "EXACT_HEADING_MATCH",
+        "evidence_value": "결과 본문 내용입니다.",
+        "node_id": "heading_0001",
+        "confidence": 0.7,
+        "source_stage": "document_paragraph",
+        "supports_impacted": false,
+        "supports_review": true,
+        "reason_codes": [
+          "paragraph_concept_match"
+        ]
+      },
+      {
+        "evidence_type": "EXACT_HEADING_MATCH",
+        "evidence_value": "세부 결과",
+        "node_id": "heading_0002",
+        "confidence": 0.7,
+        "source_stage": "document_paragraph",
+        "supports_impacted": false,
+        "supports_review": true,
+        "reason_codes": [
+          "paragraph_concept_match"
+        ]
+      },
+      {
+        "evidence_type": "EXACT_HEADING_MATCH",
+        "evidence_value": "세부 결과 본문 내용입니다.",
+        "node_id": "heading_0003",
+        "confidence": 0.7,
+        "source_stage": "document_paragraph",
+        "supports_impacted": false,
+        "supports_review": true,
+        "reason_codes": [
+          "paragraph_concept_match"
+        ]
+      },
+      {
+        "evidence_type": "EXACT_HEADING_MATCH",
+        "evidence_value": "결과",
+        "node_id": "heading_0004",
+        "confidence": 0.7,
+        "source_stage": "document_paragraph",
+        "supports_impacted": false,
+        "supports_review": true,
+        "reason_codes": [
+          "paragraph_concept_match"
+        ]
+      }
+    ],
+    "virtual_targets": [],
+    "validation": {
+      "no_presence_only_impacted": true,
+      "no_template_compatibility_only_impacted": true,
+      "impacted_requires_specific_node_or_addable_target": true,
+      "missing_unsupported_not_impacted": true,
+      "unrelated_request_not_reviewed_without_evidence": true
+    },
+    "metadata": {
+      "policy": "generic_no_impact_v1"
+    }
+  }
+]

@@ -1,0 +1,1009 @@
+{
+  "source": "harness/form_fill adapted from data\\examples\\ec_sw\\report_xxcs_EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서.docx",
+  "tests": [
+    {
+      "req_id": "IA-01",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 2, Req. 3, Req. 102, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-01",
+      "test_result": "앱을 설치하고, 시험용 계정으로 회원가입 후 로그인을 순서대로 수행한다.\n로그인 성공 시 홈(또는 튜토리얼) 화면으로 진입하는지 확인한다.\n설정에서 로그아웃 후, 동일 계정으로 재로그인한다.\n잘못된 비밀번호로 로그인을 시도하고, 인증 실패 시 로그인 화면에 머무르며 안내가 표시되는지 확인한다.",
+      "applied": "앱을 설치하고, 시험용 계정으로 회원가입 후 로그인을 순서대로 수행한다.\n로그인 성공 시 홈(또는 튜토리얼) 화면으로 진입하는지 확인한다.\n설정에서 로그아웃 후, 동일 계정으로 재로그인한다.\n잘못된 비밀번호로 로그인을 시도하고, 인증 실패 시 로그인 화면에 머무르며 안내가 표시되는지 확인한다.",
+      "notes": "앱을 설치하고, 시험용 계정으로 회원가입 후 로그인을 순서대로 수행한다.\n로그인 성공 시 홈(또는 튜토리얼) 화면으로 진입하는지 확인한다.\n설정에서 로그아웃 후, 동일 계정으로 재로그인한다.\n잘못된 비밀번호로 로그인을 시도하고, 인증 실패 시 로그인 화면에 머무르며 안내가 표시되는지 확인한다.",
+      "linked_reqs": "Req. 2, Req. 3, Req. 102, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-01",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 2, Req. 3, Req. 102, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-01",
+      "test_result": "이메일·비밀번호 기반 사용자 식별 및 인증이 구현되어 있음을 확인\n\n정상 계정으로 로그인 시 서비스 주 화면으로 진입함을 확인\n\n정상 로그인 시, 인증 화면\n\n\n잘못된 인증정보 입력 시 로그인이 거부 및 인증 실패 안내가 표시되며 보호 화면에 진입하지 않음",
+      "applied": "이메일·비밀번호 기반 사용자 식별 및 인증이 구현되어 있음을 확인\n\n정상 계정으로 로그인 시 서비스 주 화면으로 진입함을 확인\n\n정상 로그인 시, 인증 화면\n\n\n잘못된 인증정보 입력 시 로그인이 거부 및 인증 실패 안내가 표시되며 보호 화면에 진입하지 않음",
+      "notes": "이메일·비밀번호 기반 사용자 식별 및 인증이 구현되어 있음을 확인\n\n정상 계정으로 로그인 시 서비스 주 화면으로 진입함을 확인\n\n정상 로그인 시, 인증 화면\n\n\n잘못된 인증정보 입력 시 로그인이 거부 및 인증 실패 안내가 표시되며 보호 화면에 진입하지 않음",
+      "linked_reqs": "Req. 2, Req. 3, Req. 102, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-02",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "satisfaction": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 2, Req. 3, Req. 102, Req. 202",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8"
+    },
+    {
+      "req_id": "IA-02",
+      "test_result": "회원가입을 수행하고, 계정 관리 화면에서 본인 정보를 확인한다.\n설정 - 계정 관리에서 본인 이메일, 이름 조회를 확인한다.\n계정 관리에서 비밀번호 변경 후 재로그인을 확인힌다.\n계정 관리에서 회원 탈퇴를 완료하고, 동일 계정 재로그인이 거부되는지 확인한다.",
+      "applied": "회원가입을 수행하고, 계정 관리 화면에서 본인 정보를 확인한다.\n설정 - 계정 관리에서 본인 이메일, 이름 조회를 확인한다.\n계정 관리에서 비밀번호 변경 후 재로그인을 확인힌다.\n계정 관리에서 회원 탈퇴를 완료하고, 동일 계정 재로그인이 거부되는지 확인한다.",
+      "satisfaction": "회원가입을 수행하고, 계정 관리 화면에서 본인 정보를 확인한다.\n설정 - 계정 관리에서 본인 이메일, 이름 조회를 확인한다.\n계정 관리에서 비밀번호 변경 후 재로그인을 확인힌다.\n계정 관리에서 회원 탈퇴를 완료하고, 동일 계정 재로그인이 거부되는지 확인한다.",
+      "notes": "회원가입을 수행하고, 계정 관리 화면에서 본인 정보를 확인한다.\n설정 - 계정 관리에서 본인 이메일, 이름 조회를 확인한다.\n계정 관리에서 비밀번호 변경 후 재로그인을 확인힌다.\n계정 관리에서 회원 탈퇴를 완료하고, 동일 계정 재로그인이 거부되는지 확인한다.",
+      "linked_reqs": "Req. 2, Req. 3, Req. 102, Req. 202",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8"
+    },
+    {
+      "req_id": "IA-02",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "satisfaction": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 2, Req. 3, Req. 102, Req. 202",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8"
+    },
+    {
+      "req_id": "IA-02",
+      "test_result": "사용자 본인 계정 생성(회원가입) 화면 및 회원가입 API 성공 및 계정 생성\n\n\n계정관리에서 본인 정보를 조회함. \n\n본인 계정 관리(비밀번호 변경) UI\n\n\n변경된 비밀번호로 로그인 성공\n\n변경된 비밀번호로 로그인 후 토큰 획득\n\n\n회원 탈퇴 시도\n\n회원 탈퇴 성공\n\n\n탈퇴 후 계정 비활성화 및 재로그인 차단",
+      "applied": "사용자 본인 계정 생성(회원가입) 화면 및 회원가입 API 성공 및 계정 생성\n\n\n계정관리에서 본인 정보를 조회함. \n\n본인 계정 관리(비밀번호 변경) UI\n\n\n변경된 비밀번호로 로그인 성공\n\n변경된 비밀번호로 로그인 후 토큰 획득\n\n\n회원 탈퇴 시도\n\n회원 탈퇴 성공\n\n\n탈퇴 후 계정 비활성화 및 재로그인 차단",
+      "satisfaction": "사용자 본인 계정 생성(회원가입) 화면 및 회원가입 API 성공 및 계정 생성\n\n\n계정관리에서 본인 정보를 조회함. \n\n본인 계정 관리(비밀번호 변경) UI\n\n\n변경된 비밀번호로 로그인 성공\n\n변경된 비밀번호로 로그인 후 토큰 획득\n\n\n회원 탈퇴 시도\n\n회원 탈퇴 성공\n\n\n탈퇴 후 계정 비활성화 및 재로그인 차단",
+      "notes": "사용자 본인 계정 생성(회원가입) 화면 및 회원가입 API 성공 및 계정 생성\n\n\n계정관리에서 본인 정보를 조회함. \n\n본인 계정 관리(비밀번호 변경) UI\n\n\n변경된 비밀번호로 로그인 성공\n\n변경된 비밀번호로 로그인 후 토큰 획득\n\n\n회원 탈퇴 시도\n\n회원 탈퇴 성공\n\n\n탈퇴 후 계정 비활성화 및 재로그인 차단",
+      "linked_reqs": "Req. 2, Req. 3, Req. 102, Req. 202",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8"
+    },
+    {
+      "req_id": "IA-03",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 2, Req. 100, Req. 102, Req. 207",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-03",
+      "test_result": "서비스 내부에서 본인 이메일, 이름 등 식별정보가 1계정 1건으로 조회되는지 확인한다.\n이미 등록된 이메일로 회원가입을 재시도하고, 중복 가입이 거부되며 안내가 표시되는지 확인한다.\n타인 식별정보 생성, 변경, 조회 기능이 없음을 확인한다.",
+      "applied": "서비스 내부에서 본인 이메일, 이름 등 식별정보가 1계정 1건으로 조회되는지 확인한다.\n이미 등록된 이메일로 회원가입을 재시도하고, 중복 가입이 거부되며 안내가 표시되는지 확인한다.\n타인 식별정보 생성, 변경, 조회 기능이 없음을 확인한다.",
+      "notes": "서비스 내부에서 본인 이메일, 이름 등 식별정보가 1계정 1건으로 조회되는지 확인한다.\n이미 등록된 이메일로 회원가입을 재시도하고, 중복 가입이 거부되며 안내가 표시되는지 확인한다.\n타인 식별정보 생성, 변경, 조회 기능이 없음을 확인한다.",
+      "linked_reqs": "Req. 2, Req. 100, Req. 102, Req. 207",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-03",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 2, Req. 100, Req. 102, Req. 207",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-03",
+      "test_result": "DB 내부 식별자와 서비스 식별자로 유일하고 모호하지 않게 관리되고 있음을 확인 \n\n\n동일한 이메일을 가진 계정이 중복 생성될 수 없도록 식별정보의 유일성이 강제되고 있음을 확인\n\n\n로그인 후 본인 식별정보 API 응답 확인\n\n\n동일 이메일의 중복 가입이 차단됨을 확인.",
+      "applied": "DB 내부 식별자와 서비스 식별자로 유일하고 모호하지 않게 관리되고 있음을 확인 \n\n\n동일한 이메일을 가진 계정이 중복 생성될 수 없도록 식별정보의 유일성이 강제되고 있음을 확인\n\n\n로그인 후 본인 식별정보 API 응답 확인\n\n\n동일 이메일의 중복 가입이 차단됨을 확인.",
+      "notes": "DB 내부 식별자와 서비스 식별자로 유일하고 모호하지 않게 관리되고 있음을 확인 \n\n\n동일한 이메일을 가진 계정이 중복 생성될 수 없도록 식별정보의 유일성이 강제되고 있음을 확인\n\n\n로그인 후 본인 식별정보 API 응답 확인\n\n\n동일 이메일의 중복 가입이 차단됨을 확인.",
+      "linked_reqs": "Req. 2, Req. 100, Req. 102, Req. 207",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-04",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 3, Req. 4, Req. 102, Req. 105, Req. 205",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-04",
+      "test_result": "회원가입, 비밀번호 변경 시 비밀번호 정책 위반 입력 시 필드 오류가 표시되는지 확인한다.\n설정 - 계정 관리 - 비밀번호 변경 후 재로그인이 되는지 확인한다.\n테스트용 계정의 비밀번호 최종 변경일을 90일 이전으로 설정한 뒤 로그인하여, 변경 권장 SnackBar가 표시되는지 확인한다.",
+      "applied": "회원가입, 비밀번호 변경 시 비밀번호 정책 위반 입력 시 필드 오류가 표시되는지 확인한다.\n설정 - 계정 관리 - 비밀번호 변경 후 재로그인이 되는지 확인한다.\n테스트용 계정의 비밀번호 최종 변경일을 90일 이전으로 설정한 뒤 로그인하여, 변경 권장 SnackBar가 표시되는지 확인한다.",
+      "notes": "회원가입, 비밀번호 변경 시 비밀번호 정책 위반 입력 시 필드 오류가 표시되는지 확인한다.\n설정 - 계정 관리 - 비밀번호 변경 후 재로그인이 되는지 확인한다.\n테스트용 계정의 비밀번호 최종 변경일을 90일 이전으로 설정한 뒤 로그인하여, 변경 권장 SnackBar가 표시되는지 확인한다.",
+      "linked_reqs": "Req. 3, Req. 4, Req. 102, Req. 105, Req. 205",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-04",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 3, Req. 4, Req. 102, Req. 105, Req. 205",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-04",
+      "test_result": "비밀번호 8~20자, 영문·숫자·특수문자 각 1자 이상 요구가 적용됨을 확인\n\n사용자가 계정 관리에서 본인 비밀번호를 변경함을 확인\n\n \n사용가 본인 비밀번호 변경 성공 확인\n\n90일 이상 미변경 시 비밀번호 변경 권장 SnackBar가 표시됨을 확인",
+      "applied": "비밀번호 8~20자, 영문·숫자·특수문자 각 1자 이상 요구가 적용됨을 확인\n\n사용자가 계정 관리에서 본인 비밀번호를 변경함을 확인\n\n \n사용가 본인 비밀번호 변경 성공 확인\n\n90일 이상 미변경 시 비밀번호 변경 권장 SnackBar가 표시됨을 확인",
+      "notes": "비밀번호 8~20자, 영문·숫자·특수문자 각 1자 이상 요구가 적용됨을 확인\n\n사용자가 계정 관리에서 본인 비밀번호를 변경함을 확인\n\n \n사용가 본인 비밀번호 변경 성공 확인\n\n90일 이상 미변경 시 비밀번호 변경 권장 SnackBar가 표시됨을 확인",
+      "linked_reqs": "Req. 3, Req. 4, Req. 102, Req. 105, Req. 205",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-05",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 4, Req. 102, Req. 202",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-05",
+      "test_result": "회원가입/비밀번호 변경 시 규칙(영문+숫자+특수문자, 길이) 강제 여부 확인한다.\n규칙 충족 비밀번호로 가입이 허용됨을 확인한다.\n규칙 위반 비밀번호 입력 시 거부 여부 확인한다.\n규칙 충족 새 비밀번호로 변경이 완료됨을 확인한다.",
+      "applied": "회원가입/비밀번호 변경 시 규칙(영문+숫자+특수문자, 길이) 강제 여부 확인한다.\n규칙 충족 비밀번호로 가입이 허용됨을 확인한다.\n규칙 위반 비밀번호 입력 시 거부 여부 확인한다.\n규칙 충족 새 비밀번호로 변경이 완료됨을 확인한다.",
+      "notes": "회원가입/비밀번호 변경 시 규칙(영문+숫자+특수문자, 길이) 강제 여부 확인한다.\n규칙 충족 비밀번호로 가입이 허용됨을 확인한다.\n규칙 위반 비밀번호 입력 시 거부 여부 확인한다.\n규칙 충족 새 비밀번호로 변경이 완료됨을 확인한다.",
+      "linked_reqs": "Req. 4, Req. 102, Req. 202",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-05",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 4, Req. 102, Req. 202",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-05",
+      "test_result": "회원가입 시 규칙 강제 여부 확인\n\n비밀번호 변경 시 강제성 여부 확인\n\n\n위 스크린샷에서 보이는것 처럼 필드/스낵바에서 비밀번호에 대한 정책 오류 시 가입 불가하며, API에선 422에러와 detail에 정책 메세지를 표시함.",
+      "applied": "회원가입 시 규칙 강제 여부 확인\n\n비밀번호 변경 시 강제성 여부 확인\n\n\n위 스크린샷에서 보이는것 처럼 필드/스낵바에서 비밀번호에 대한 정책 오류 시 가입 불가하며, API에선 422에러와 detail에 정책 메세지를 표시함.",
+      "notes": "회원가입 시 규칙 강제 여부 확인\n\n비밀번호 변경 시 강제성 여부 확인\n\n\n위 스크린샷에서 보이는것 처럼 필드/스낵바에서 비밀번호에 대한 정책 오류 시 가입 불가하며, API에선 422에러와 detail에 정책 메세지를 표시함.",
+      "linked_reqs": "Req. 4, Req. 102, Req. 202",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-06",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 4, Req. 102, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-06",
+      "test_result": "로그인 화면에서 비밀번호 입력 시 마스킹처리되는지 확인한다.\n존재하는 계정에 잘못된 비밀번호를 입력하여 로그인 실패 안내를 확인한다.\n존재하지 않는 이메일로 로그인을 시도하여 안내 메시지를 확인한다.",
+      "applied": "로그인 화면에서 비밀번호 입력 시 마스킹처리되는지 확인한다.\n존재하는 계정에 잘못된 비밀번호를 입력하여 로그인 실패 안내를 확인한다.\n존재하지 않는 이메일로 로그인을 시도하여 안내 메시지를 확인한다.",
+      "notes": "로그인 화면에서 비밀번호 입력 시 마스킹처리되는지 확인한다.\n존재하는 계정에 잘못된 비밀번호를 입력하여 로그인 실패 안내를 확인한다.\n존재하지 않는 이메일로 로그인을 시도하여 안내 메시지를 확인한다.",
+      "linked_reqs": "Req. 4, Req. 102, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-06",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 4, Req. 102, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-06",
+      "test_result": "비밀번호 입력란이 마스킹 처리됨을 확인 및 인증 실패 시 메세지 확인\n\n\n존재·미존재 계정 모두 동일 유형의 실패 메시지가 표시됨을 확인",
+      "applied": "비밀번호 입력란이 마스킹 처리됨을 확인 및 인증 실패 시 메세지 확인\n\n\n존재·미존재 계정 모두 동일 유형의 실패 메시지가 표시됨을 확인",
+      "notes": "비밀번호 입력란이 마스킹 처리됨을 확인 및 인증 실패 시 메세지 확인\n\n\n존재·미존재 계정 모두 동일 유형의 실패 메시지가 표시됨을 확인",
+      "linked_reqs": "Req. 4, Req. 102, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-07",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 4, Req. 105, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-07",
+      "test_result": "테스트용 계정으로 잘못된 비밀번호 로그인을 연속적으로 시도한다.\n일정횟수 시도 이후 안내메세지가 표시되는지 확인한다.\n잠금 중 정상 비밀번호로도 로그인이 거부되는지 확인한다.",
+      "applied": "테스트용 계정으로 잘못된 비밀번호 로그인을 연속적으로 시도한다.\n일정횟수 시도 이후 안내메세지가 표시되는지 확인한다.\n잠금 중 정상 비밀번호로도 로그인이 거부되는지 확인한다.",
+      "notes": "테스트용 계정으로 잘못된 비밀번호 로그인을 연속적으로 시도한다.\n일정횟수 시도 이후 안내메세지가 표시되는지 확인한다.\n잠금 중 정상 비밀번호로도 로그인이 거부되는지 확인한다.",
+      "linked_reqs": "Req. 4, Req. 105, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-07",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 4, Req. 105, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-07",
+      "test_result": "연속 5회 로그인 실패 시 계정 잠금 안내가 표시됨을 확인\n\n잠금 기간 중 로그인이 거부됨을 확인\n\n\n연속 실패 임계치 도달 테스트 결과 15분간 로그인이 차단됨을 확인",
+      "applied": "연속 5회 로그인 실패 시 계정 잠금 안내가 표시됨을 확인\n\n잠금 기간 중 로그인이 거부됨을 확인\n\n\n연속 실패 임계치 도달 테스트 결과 15분간 로그인이 차단됨을 확인",
+      "notes": "연속 5회 로그인 실패 시 계정 잠금 안내가 표시됨을 확인\n\n잠금 기간 중 로그인이 거부됨을 확인\n\n\n연속 실패 임계치 도달 테스트 결과 15분간 로그인이 차단됨을 확인",
+      "linked_reqs": "Req. 4, Req. 105, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-08",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 2, Req. 14, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-08",
+      "test_result": "회원가입 화면에서 시스템 사용 알림 문구가 표시되는지 확인한다.\n알림 문구에 인가된 사용자만 이용 가능, 무단 접근 금지 내용이 포함되는지 확인한다.",
+      "applied": "회원가입 화면에서 시스템 사용 알림 문구가 표시되는지 확인한다.\n알림 문구에 인가된 사용자만 이용 가능, 무단 접근 금지 내용이 포함되는지 확인한다.",
+      "notes": "회원가입 화면에서 시스템 사용 알림 문구가 표시되는지 확인한다.\n알림 문구에 인가된 사용자만 이용 가능, 무단 접근 금지 내용이 포함되는지 확인한다.",
+      "linked_reqs": "Req. 2, Req. 14, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-08",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 2, Req. 14, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "IA-08",
+      "test_result": "회원가입 화면에 시스템 사용 알림이 표시됨을 확인",
+      "applied": "회원가입 화면에 시스템 사용 알림이 표시됨을 확인",
+      "notes": "회원가입 화면에 시스템 사용 알림이 표시됨을 확인",
+      "linked_reqs": "Req. 2, Req. 14, Req. 201",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-01",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 101, Req. 110, Req. 204",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-01",
+      "test_result": "사용자 계정으로 로그인 후, 설정 메뉴 전체를 확인하여 타 사용자에 대한 권한 부여, 변경 또는 관리자 전용 메뉴(사용자 관리, 권한 관리 등)가 없음을 확인한다.\n로그인 후 홈,교육,기록,설정 등 환자용 기능에 접근 가능함을 확인한다.\n설정 - 계정 관리에서 본인 계정 정보만 조회,변경 가능하고, 타인 계정에 대한 권한 관리 UI가 없음을 확인한다.",
+      "applied": "사용자 계정으로 로그인 후, 설정 메뉴 전체를 확인하여 타 사용자에 대한 권한 부여, 변경 또는 관리자 전용 메뉴(사용자 관리, 권한 관리 등)가 없음을 확인한다.\n로그인 후 홈,교육,기록,설정 등 환자용 기능에 접근 가능함을 확인한다.\n설정 - 계정 관리에서 본인 계정 정보만 조회,변경 가능하고, 타인 계정에 대한 권한 관리 UI가 없음을 확인한다.",
+      "notes": "사용자 계정으로 로그인 후, 설정 메뉴 전체를 확인하여 타 사용자에 대한 권한 부여, 변경 또는 관리자 전용 메뉴(사용자 관리, 권한 관리 등)가 없음을 확인한다.\n로그인 후 홈,교육,기록,설정 등 환자용 기능에 접근 가능함을 확인한다.\n설정 - 계정 관리에서 본인 계정 정보만 조회,변경 가능하고, 타인 계정에 대한 권한 관리 UI가 없음을 확인한다.",
+      "linked_reqs": "Req. 101, Req. 110, Req. 204",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-01",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 101, Req. 110, Req. 204",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-01",
+      "test_result": "앱 내 관리자 권한 부여 메뉴가 제공되지 않음을 확인\n\n\n계정 관리에서 본인 계정 정보만 조회, 변경 가능함을 확인",
+      "applied": "앱 내 관리자 권한 부여 메뉴가 제공되지 않음을 확인\n\n\n계정 관리에서 본인 계정 정보만 조회, 변경 가능함을 확인",
+      "notes": "앱 내 관리자 권한 부여 메뉴가 제공되지 않음을 확인\n\n\n계정 관리에서 본인 계정 정보만 조회, 변경 가능함을 확인",
+      "linked_reqs": "Req. 101, Req. 110, Req. 204",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-02",
+      "test_result": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "N/A",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "UC-02",
+      "test_result": "해당 없음",
+      "notes": "해당 없음",
+      "linked_reqs": "N/A",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "UC-02",
+      "test_result": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "N/A",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "UC-02",
+      "test_result": "해당 없음",
+      "notes": "해당 없음",
+      "linked_reqs": "N/A",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "UC-03",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 102, Req. 206",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-03",
+      "test_result": "사용자 계정으로 로그인하여, 설정 - 로그아웃을 수행하고, 로그인 화면으로 이동되는지 확인한다.\n로그아웃 직후 앱을 완전 종료했다가 다시 실행하고, 로그인 없이 서비스 화면에 진입하지 않는지 확인한다.",
+      "applied": "사용자 계정으로 로그인하여, 설정 - 로그아웃을 수행하고, 로그인 화면으로 이동되는지 확인한다.\n로그아웃 직후 앱을 완전 종료했다가 다시 실행하고, 로그인 없이 서비스 화면에 진입하지 않는지 확인한다.",
+      "notes": "사용자 계정으로 로그인하여, 설정 - 로그아웃을 수행하고, 로그인 화면으로 이동되는지 확인한다.\n로그아웃 직후 앱을 완전 종료했다가 다시 실행하고, 로그인 없이 서비스 화면에 진입하지 않는지 확인한다.",
+      "linked_reqs": "Req. 102, Req. 206",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-03",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 102, Req. 206",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-03",
+      "test_result": "사용자에 의한 세션 종료(로그아웃) 기능이 구현되어 있음을 확인.\n\n\n로그아웃 수행 후 UI\n\n\n로그아웃 수행 시 인증 세션이 종료되고 로그인 화면으로 전환되며, 로그아웃 직후 보호 화면(홈 등)에 접근할 수 없음을 확인.\n\n\n비활성 기간 경과 후 자동 잠금 화면은 미구현이나, 사용자 로그아웃에 의한 세션 종료 기능 확인",
+      "applied": "사용자에 의한 세션 종료(로그아웃) 기능이 구현되어 있음을 확인.\n\n\n로그아웃 수행 후 UI\n\n\n로그아웃 수행 시 인증 세션이 종료되고 로그인 화면으로 전환되며, 로그아웃 직후 보호 화면(홈 등)에 접근할 수 없음을 확인.\n\n\n비활성 기간 경과 후 자동 잠금 화면은 미구현이나, 사용자 로그아웃에 의한 세션 종료 기능 확인",
+      "notes": "사용자에 의한 세션 종료(로그아웃) 기능이 구현되어 있음을 확인.\n\n\n로그아웃 수행 후 UI\n\n\n로그아웃 수행 시 인증 세션이 종료되고 로그인 화면으로 전환되며, 로그아웃 직후 보호 화면(홈 등)에 접근할 수 없음을 확인.\n\n\n비활성 기간 경과 후 자동 잠금 화면은 미구현이나, 사용자 로그아웃에 의한 세션 종료 기능 확인",
+      "linked_reqs": "Req. 102, Req. 206",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-04",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 100, Req. 103, Req. 110",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-04",
+      "test_result": "감사기록 생성 대상 이벤트를 선정한다. (로그인 성공/실패)\n시험 계정으로 정상 로그인 1회를 수행한다.\n잘못된 비밀번호를 입력하여 로그인 실패 1회를 수행한다.\n각 이벤트 발생 후 감사로그가 생성되는지 확인한다.\n생성된 감사로그에 사용자 식별값, 이벤트 유형, 이벤트 결과가 포함되는지 확인한다.",
+      "applied": "감사기록 생성 대상 이벤트를 선정한다. (로그인 성공/실패)\n시험 계정으로 정상 로그인 1회를 수행한다.\n잘못된 비밀번호를 입력하여 로그인 실패 1회를 수행한다.\n각 이벤트 발생 후 감사로그가 생성되는지 확인한다.\n생성된 감사로그에 사용자 식별값, 이벤트 유형, 이벤트 결과가 포함되는지 확인한다.",
+      "notes": "감사기록 생성 대상 이벤트를 선정한다. (로그인 성공/실패)\n시험 계정으로 정상 로그인 1회를 수행한다.\n잘못된 비밀번호를 입력하여 로그인 실패 1회를 수행한다.\n각 이벤트 발생 후 감사로그가 생성되는지 확인한다.\n생성된 감사로그에 사용자 식별값, 이벤트 유형, 이벤트 결과가 포함되는지 확인한다.",
+      "linked_reqs": "Req. 100, Req. 103, Req. 110",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-04",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 100, Req. 103, Req. 110",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-04",
+      "test_result": "로그인 성공 이벤트 발생 시 감사기록 생성\n\n\n로그인 성공 감사기록 생성 확인 \n\n\n로그인 실패 이벤트 감사기록 생성 여부\n\n\n로그인 실패 감사기록 생성 확인",
+      "applied": "로그인 성공 이벤트 발생 시 감사기록 생성\n\n\n로그인 성공 감사기록 생성 확인 \n\n\n로그인 실패 이벤트 감사기록 생성 여부\n\n\n로그인 실패 감사기록 생성 확인",
+      "notes": "로그인 성공 이벤트 발생 시 감사기록 생성\n\n\n로그인 성공 감사기록 생성 확인 \n\n\n로그인 실패 이벤트 감사기록 생성 여부\n\n\n로그인 실패 감사기록 생성 확인",
+      "linked_reqs": "Req. 100, Req. 103, Req. 110",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-05",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 103, Req. 107",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-05",
+      "test_result": "감사로그 저장 실패 상황을 재현하기 위해 감사로그 저장 경로를 존재하지 않는 디렉터리로 변경한다.\n시험 계정으로 정상 로그인 1회를 수행한다.\n감사로그 저장 실패가 발생하는지 확인한다.\n감사로그 저장 실패 시 경고 메시지 또는 대체 로그(fallback log)가 생성되는지 확인한다.\n감사로그 저장 실패 상황에서도 로그인 기능이 정상적으로 동작하는지 확인한다.\n시험 종료 후 감사로그 저장 경로를 정상 경로로 원상복구한다.",
+      "applied": "감사로그 저장 실패 상황을 재현하기 위해 감사로그 저장 경로를 존재하지 않는 디렉터리로 변경한다.\n시험 계정으로 정상 로그인 1회를 수행한다.\n감사로그 저장 실패가 발생하는지 확인한다.\n감사로그 저장 실패 시 경고 메시지 또는 대체 로그(fallback log)가 생성되는지 확인한다.\n감사로그 저장 실패 상황에서도 로그인 기능이 정상적으로 동작하는지 확인한다.\n시험 종료 후 감사로그 저장 경로를 정상 경로로 원상복구한다.",
+      "notes": "감사로그 저장 실패 상황을 재현하기 위해 감사로그 저장 경로를 존재하지 않는 디렉터리로 변경한다.\n시험 계정으로 정상 로그인 1회를 수행한다.\n감사로그 저장 실패가 발생하는지 확인한다.\n감사로그 저장 실패 시 경고 메시지 또는 대체 로그(fallback log)가 생성되는지 확인한다.\n감사로그 저장 실패 상황에서도 로그인 기능이 정상적으로 동작하는지 확인한다.\n시험 종료 후 감사로그 저장 경로를 정상 경로로 원상복구한다.",
+      "linked_reqs": "Req. 103, Req. 107",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-05",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 103, Req. 107",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-05",
+      "test_result": "로그인 실패시 감사기록 생성 확인\n\n\n감사 처리 실패시 로그인 기능 정상 동작 확인",
+      "applied": "로그인 실패시 감사기록 생성 확인\n\n\n감사 처리 실패시 로그인 기능 정상 동작 확인",
+      "notes": "로그인 실패시 감사기록 생성 확인\n\n\n감사 처리 실패시 로그인 기능 정상 동작 확인",
+      "linked_reqs": "Req. 103, Req. 107",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-06",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 103",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-06",
+      "test_result": "감사기록 1건 이상을 조회한다.\n생성된 감사기록에 타임스탬프 필드가 존재하는지 확인한다.\n타임스탬프 값에 날짜와 시간이 모두 포함되어 있는지 확인한다. (예: YYYY-MM-DD HH:MM:SS 또는 이에 준하는 datetime 형식)",
+      "applied": "감사기록 1건 이상을 조회한다.\n생성된 감사기록에 타임스탬프 필드가 존재하는지 확인한다.\n타임스탬프 값에 날짜와 시간이 모두 포함되어 있는지 확인한다. (예: YYYY-MM-DD HH:MM:SS 또는 이에 준하는 datetime 형식)",
+      "notes": "감사기록 1건 이상을 조회한다.\n생성된 감사기록에 타임스탬프 필드가 존재하는지 확인한다.\n타임스탬프 값에 날짜와 시간이 모두 포함되어 있는지 확인한다. (예: YYYY-MM-DD HH:MM:SS 또는 이에 준하는 datetime 형식)",
+      "linked_reqs": "Req. 103",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-06",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 103",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-06",
+      "test_result": "로그인 성공시 감사 기록에 타임스탬프에 시간정보가 포함되어 있는것을 확인",
+      "applied": "로그인 성공시 감사 기록에 타임스탬프에 시간정보가 포함되어 있는것을 확인",
+      "notes": "로그인 성공시 감사 기록에 타임스탬프에 시간정보가 포함되어 있는것을 확인",
+      "linked_reqs": "Req. 103",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-07",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 103, Req. 110",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-07",
+      "test_result": "1. 로그인 이벤트(성공/실패)를 발생시킨다.\n2. 생성된 감사로그를 조회한다.\n3. 감사로그에 사용자 식별값, 이벤트 유형, 이벤트 결과, 타임스탬프가 포함되는지 확인한다.\n4. 생성된 감사로그를 통해 어떤 계정이 어떤 결과의 로그인을 수행했는지 추적 가능한지 확인한다.",
+      "applied": "1. 로그인 이벤트(성공/실패)를 발생시킨다.\n2. 생성된 감사로그를 조회한다.\n3. 감사로그에 사용자 식별값, 이벤트 유형, 이벤트 결과, 타임스탬프가 포함되는지 확인한다.\n4. 생성된 감사로그를 통해 어떤 계정이 어떤 결과의 로그인을 수행했는지 추적 가능한지 확인한다.",
+      "notes": "1. 로그인 이벤트(성공/실패)를 발생시킨다.\n2. 생성된 감사로그를 조회한다.\n3. 감사로그에 사용자 식별값, 이벤트 유형, 이벤트 결과, 타임스탬프가 포함되는지 확인한다.\n4. 생성된 감사로그를 통해 어떤 계정이 어떤 결과의 로그인을 수행했는지 추적 가능한지 확인한다.",
+      "linked_reqs": "Req. 103, Req. 110",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-07",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 103, Req. 110",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "UC-07",
+      "test_result": "로그인 성공 감사기록 생성시 사용자 식별 정보, 이벤트 유형, 이벤트 결과 확인\n\n\n로그인 실패 감사기록 생성시 사용자 식별 정보, 이벤트 유형, 이벤트 결과 확인",
+      "applied": "로그인 성공 감사기록 생성시 사용자 식별 정보, 이벤트 유형, 이벤트 결과 확인\n\n\n로그인 실패 감사기록 생성시 사용자 식별 정보, 이벤트 유형, 이벤트 결과 확인",
+      "notes": "로그인 성공 감사기록 생성시 사용자 식별 정보, 이벤트 유형, 이벤트 결과 확인\n\n\n로그인 실패 감사기록 생성시 사용자 식별 정보, 이벤트 유형, 이벤트 결과 확인",
+      "linked_reqs": "Req. 103, Req. 110",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-01",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 104, Req. 205",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-01",
+      "test_result": "서비스 도메인에 접속한다.\nHTTP 접속 시 HTTPS로 자동 전환되는지 확인한다.\n브라우저 및 curl 명령을 이용하여 HTTPS 연결 여부를 확인한다.\nTLS 프로토콜 및 서버 인증서 적용 여부를 확인한다.",
+      "applied": "서비스 도메인에 접속한다.\nHTTP 접속 시 HTTPS로 자동 전환되는지 확인한다.\n브라우저 및 curl 명령을 이용하여 HTTPS 연결 여부를 확인한다.\nTLS 프로토콜 및 서버 인증서 적용 여부를 확인한다.",
+      "notes": "서비스 도메인에 접속한다.\nHTTP 접속 시 HTTPS로 자동 전환되는지 확인한다.\n브라우저 및 curl 명령을 이용하여 HTTPS 연결 여부를 확인한다.\nTLS 프로토콜 및 서버 인증서 적용 여부를 확인한다.",
+      "linked_reqs": "Req. 104, Req. 205",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-01",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 104, Req. 205",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-01",
+      "test_result": "HTTP 접속 시 HTTPS로 자동 전환(307 Redirect)되는 것을 확인\n\nTLS Handshake가 정상적으로 수행되며 서버 인증서 검증이 정상적으로 수행되는 것을 확인",
+      "applied": "HTTP 접속 시 HTTPS로 자동 전환(307 Redirect)되는 것을 확인\n\nTLS Handshake가 정상적으로 수행되며 서버 인증서 검증이 정상적으로 수행되는 것을 확인",
+      "notes": "HTTP 접속 시 HTTPS로 자동 전환(307 Redirect)되는 것을 확인\n\nTLS Handshake가 정상적으로 수행되며 서버 인증서 검증이 정상적으로 수행되는 것을 확인",
+      "linked_reqs": "Req. 104, Req. 205",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-02",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 106, Req. 109",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-02",
+      "test_result": "앱 기능을 검토하여, 외부 실행 파일(APK 등) 다운로드, 설치 기능 및 임의 소프트웨어 실행 기능이 제공되지 않는지 확인한다.\n'AndroidManifest.xml'파일을 검토하여, 임의 앱 설치 등과 관련된 위험 권한(‘REQUEST_INSTALL_PACKAGES’ 등)이 선언되지 않았는지 확인한다.\n설계,소스를 검토하여, 서드파티 라이브러리가 빌드 시점에 고정되어 배포되고, 런타임 동적 코드 로드를 수행하지 않는지 확인한다.\n위치 선택 등 WebView 사용 기능이 지도 등 제한된 용도로만 제공되는지 확인한다.\n릴리스 APK에 디지털 서명이 적용되어 있는지 확인한다.",
+      "applied": "앱 기능을 검토하여, 외부 실행 파일(APK 등) 다운로드, 설치 기능 및 임의 소프트웨어 실행 기능이 제공되지 않는지 확인한다.\n'AndroidManifest.xml'파일을 검토하여, 임의 앱 설치 등과 관련된 위험 권한(‘REQUEST_INSTALL_PACKAGES’ 등)이 선언되지 않았는지 확인한다.\n설계,소스를 검토하여, 서드파티 라이브러리가 빌드 시점에 고정되어 배포되고, 런타임 동적 코드 로드를 수행하지 않는지 확인한다.\n위치 선택 등 WebView 사용 기능이 지도 등 제한된 용도로만 제공되는지 확인한다.\n릴리스 APK에 디지털 서명이 적용되어 있는지 확인한다.",
+      "notes": "앱 기능을 검토하여, 외부 실행 파일(APK 등) 다운로드, 설치 기능 및 임의 소프트웨어 실행 기능이 제공되지 않는지 확인한다.\n'AndroidManifest.xml'파일을 검토하여, 임의 앱 설치 등과 관련된 위험 권한(‘REQUEST_INSTALL_PACKAGES’ 등)이 선언되지 않았는지 확인한다.\n설계,소스를 검토하여, 서드파티 라이브러리가 빌드 시점에 고정되어 배포되고, 런타임 동적 코드 로드를 수행하지 않는지 확인한다.\n위치 선택 등 WebView 사용 기능이 지도 등 제한된 용도로만 제공되는지 확인한다.\n릴리스 APK에 디지털 서명이 적용되어 있는지 확인한다.",
+      "linked_reqs": "Req. 106, Req. 109",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-02",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 106, Req. 109",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-02",
+      "test_result": "외부 설치 파일 설치 및 임의 소프트웨어 실행 기능 미제공 확인\n\n\n임의 앱 설치 등 위험 권한 미선언 확인\n\nWebView를 위치 지도 등 제한 용도로만 사용\n\n\n릴리스 APK에 디지털 서명이 적용되어 있음을 확인",
+      "applied": "외부 설치 파일 설치 및 임의 소프트웨어 실행 기능 미제공 확인\n\n\n임의 앱 설치 등 위험 권한 미선언 확인\n\nWebView를 위치 지도 등 제한 용도로만 사용\n\n\n릴리스 APK에 디지털 서명이 적용되어 있음을 확인",
+      "notes": "외부 설치 파일 설치 및 임의 소프트웨어 실행 기능 미제공 확인\n\n\n임의 앱 설치 등 위험 권한 미선언 확인\n\nWebView를 위치 지도 등 제한 용도로만 사용\n\n\n릴리스 APK에 디지털 서명이 적용되어 있음을 확인",
+      "linked_reqs": "Req. 106, Req. 109",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-03",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 106, Req. 109, Req. 205",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-03",
+      "test_result": "잘못된 비밀번호로 로그인을 시도하여, 인증이 거부되고 보호 화면에 진입하지 않는지 확인한다.\n로그인 후 로그아웃하고 앱을 완전 종료·재실행하여, 로그인 없이 보호 화면에 진입하지 않는지 확인한다.\n시험 전용 계정으로 연속 로그인 실패를 수행하여, 정책 도달 시 계정 잠금 안내가 표시되는지 확인한다.",
+      "applied": "잘못된 비밀번호로 로그인을 시도하여, 인증이 거부되고 보호 화면에 진입하지 않는지 확인한다.\n로그인 후 로그아웃하고 앱을 완전 종료·재실행하여, 로그인 없이 보호 화면에 진입하지 않는지 확인한다.\n시험 전용 계정으로 연속 로그인 실패를 수행하여, 정책 도달 시 계정 잠금 안내가 표시되는지 확인한다.",
+      "notes": "잘못된 비밀번호로 로그인을 시도하여, 인증이 거부되고 보호 화면에 진입하지 않는지 확인한다.\n로그인 후 로그아웃하고 앱을 완전 종료·재실행하여, 로그인 없이 보호 화면에 진입하지 않는지 확인한다.\n시험 전용 계정으로 연속 로그인 실패를 수행하여, 정책 도달 시 계정 잠금 안내가 표시되는지 확인한다.",
+      "linked_reqs": "Req. 106, Req. 109, Req. 205",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-03",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 106, Req. 109, Req. 205",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-03",
+      "test_result": "잘못된 비밀번호 입력 시 로그인이 거부되고 보호 화면에 진입하지 않음을 확인\n\n\n로그아웃 후 앱 재실행 시 로그인 화면이 표시되고, 무인증 상태에서 보호 화면에 진입하지 않음을 확인\n\n연속 로그인 실패 시 ‘잠시 후 다시 시도해주세요’ 등 계정 잠금 안내가 표시됨을 확인",
+      "applied": "잘못된 비밀번호 입력 시 로그인이 거부되고 보호 화면에 진입하지 않음을 확인\n\n\n로그아웃 후 앱 재실행 시 로그인 화면이 표시되고, 무인증 상태에서 보호 화면에 진입하지 않음을 확인\n\n연속 로그인 실패 시 ‘잠시 후 다시 시도해주세요’ 등 계정 잠금 안내가 표시됨을 확인",
+      "notes": "잘못된 비밀번호 입력 시 로그인이 거부되고 보호 화면에 진입하지 않음을 확인\n\n\n로그아웃 후 앱 재실행 시 로그인 화면이 표시되고, 무인증 상태에서 보호 화면에 진입하지 않음을 확인\n\n연속 로그인 실패 시 ‘잠시 후 다시 시도해주세요’ 등 계정 잠금 안내가 표시됨을 확인",
+      "linked_reqs": "Req. 106, Req. 109, Req. 205",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-04",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 1",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-04",
+      "test_result": "릴리스 APK에 디지털 서명이 적용되어 있는지 확인한다.\n앱이 빌드 시 고정된 바이너리·자산으로 배포되며, 런타임에 소프트웨어 구성을 임의 변경·로드하지 않는지 확인한다.\n앱 단독으로는 운영 파일 변경 탐지 기능을 구현하지 않으며, 배포물 무결성은 APK 서명 및 고정 빌드로 대응함을 확인한다.",
+      "applied": "릴리스 APK에 디지털 서명이 적용되어 있는지 확인한다.\n앱이 빌드 시 고정된 바이너리·자산으로 배포되며, 런타임에 소프트웨어 구성을 임의 변경·로드하지 않는지 확인한다.\n앱 단독으로는 운영 파일 변경 탐지 기능을 구현하지 않으며, 배포물 무결성은 APK 서명 및 고정 빌드로 대응함을 확인한다.",
+      "notes": "릴리스 APK에 디지털 서명이 적용되어 있는지 확인한다.\n앱이 빌드 시 고정된 바이너리·자산으로 배포되며, 런타임에 소프트웨어 구성을 임의 변경·로드하지 않는지 확인한다.\n앱 단독으로는 운영 파일 변경 탐지 기능을 구현하지 않으며, 배포물 무결성은 APK 서명 및 고정 빌드로 대응함을 확인한다.",
+      "linked_reqs": "Req. 1",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-04",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 1",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-04",
+      "test_result": "릴리스 APK 무결성(서명) 확인\n\n비행기 모드 등 오프라인에서 번들 콘텐츠 동작 확인",
+      "applied": "릴리스 APK 무결성(서명) 확인\n\n비행기 모드 등 오프라인에서 번들 콘텐츠 동작 확인",
+      "notes": "릴리스 APK 무결성(서명) 확인\n\n비행기 모드 등 오프라인에서 번들 콘텐츠 동작 확인",
+      "linked_reqs": "Req. 1",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-05",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 2, Req. 14, Req. 100, Req. 207",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-05",
+      "test_result": "회원가입 화면에서 잘못된 이메일 형식(예: abc) 입력 시 필드 오류가 표시되는지 확인한다.\n전화번호 형식 위반(예: 12345) 입력 시 필드 오류가 표시되는지 확인한다.\n비밀번호 정책 위반(예: 12345678) 입력 시 필드 오류가 표시되는지 확인한다.\n마인드리움 코드 미입력 시 필드 오류가 표시되는지 확인한다.\n로그인 화면에서 이메일·비밀번호 미입력 시 안내가 표시되는지 확인한다.",
+      "applied": "회원가입 화면에서 잘못된 이메일 형식(예: abc) 입력 시 필드 오류가 표시되는지 확인한다.\n전화번호 형식 위반(예: 12345) 입력 시 필드 오류가 표시되는지 확인한다.\n비밀번호 정책 위반(예: 12345678) 입력 시 필드 오류가 표시되는지 확인한다.\n마인드리움 코드 미입력 시 필드 오류가 표시되는지 확인한다.\n로그인 화면에서 이메일·비밀번호 미입력 시 안내가 표시되는지 확인한다.",
+      "notes": "회원가입 화면에서 잘못된 이메일 형식(예: abc) 입력 시 필드 오류가 표시되는지 확인한다.\n전화번호 형식 위반(예: 12345) 입력 시 필드 오류가 표시되는지 확인한다.\n비밀번호 정책 위반(예: 12345678) 입력 시 필드 오류가 표시되는지 확인한다.\n마인드리움 코드 미입력 시 필드 오류가 표시되는지 확인한다.\n로그인 화면에서 이메일·비밀번호 미입력 시 안내가 표시되는지 확인한다.",
+      "linked_reqs": "Req. 2, Req. 14, Req. 100, Req. 207",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-05",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 2, Req. 14, Req. 100, Req. 207",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-05",
+      "test_result": "회원가입 화면에서 이메일, 전화번호, 비밀번호, 마인드리움 코드에 대해 클라이언트 입력값 검증이 수행됨을 확인\n\n로그인 화면에서 필수 입력값 누락 시 안내 메시지가 표시됨을 확인\n\n로그인 화면에서 이메일·비밀번호 미입력 시 안내가 표시 확인",
+      "applied": "회원가입 화면에서 이메일, 전화번호, 비밀번호, 마인드리움 코드에 대해 클라이언트 입력값 검증이 수행됨을 확인\n\n로그인 화면에서 필수 입력값 누락 시 안내 메시지가 표시됨을 확인\n\n로그인 화면에서 이메일·비밀번호 미입력 시 안내가 표시 확인",
+      "notes": "회원가입 화면에서 이메일, 전화번호, 비밀번호, 마인드리움 코드에 대해 클라이언트 입력값 검증이 수행됨을 확인\n\n로그인 화면에서 필수 입력값 누락 시 안내 메시지가 표시됨을 확인\n\n로그인 화면에서 이메일·비밀번호 미입력 시 안내가 표시 확인",
+      "linked_reqs": "Req. 2, Req. 14, Req. 100, Req. 207",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-06",
+      "test_result": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 6, Req. 7, Req. 106",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "SI-06",
+      "test_result": "해당 없음",
+      "notes": "해당 없음",
+      "linked_reqs": "Req. 6, Req. 7, Req. 106",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "SI-06",
+      "test_result": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 6, Req. 7, Req. 106",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "SI-06",
+      "test_result": "해당 없음",
+      "notes": "해당 없음",
+      "linked_reqs": "Req. 6, Req. 7, Req. 106",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "SI-07",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 8, Req. 9, Req. 106",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-07",
+      "test_result": "로그인 기능을 오류 처리 검증 대상으로 선정한다.\n존재하는 계정에 대해 잘못된 비밀번호를 입력하여 로그인 실패 상황을 발생시킨다.\n해당 요청에 대해 백엔드 로그에서 비밀번호 불일치 관련 처리 여부를 확인하고, 사용자 UI에는 로그인 실패 메시지만 표시되는지 확인한다.\n존재하지 않는 계정에 대해 로그인 요청을 수행한다.\n해당 요청에 대해 백엔드 로그 출력 여부를 확인하고, 사용자 UI에는 로그인 실패 메시지만 표시되는지 확인한다.\n두 경우 모두 사용자 UI에 표시되는 메시지가 동일하거나 구체적인 실패 원인을 유추할 수 없는 일반적인 형태인지 확인한다.",
+      "applied": "로그인 기능을 오류 처리 검증 대상으로 선정한다.\n존재하는 계정에 대해 잘못된 비밀번호를 입력하여 로그인 실패 상황을 발생시킨다.\n해당 요청에 대해 백엔드 로그에서 비밀번호 불일치 관련 처리 여부를 확인하고, 사용자 UI에는 로그인 실패 메시지만 표시되는지 확인한다.\n존재하지 않는 계정에 대해 로그인 요청을 수행한다.\n해당 요청에 대해 백엔드 로그 출력 여부를 확인하고, 사용자 UI에는 로그인 실패 메시지만 표시되는지 확인한다.\n두 경우 모두 사용자 UI에 표시되는 메시지가 동일하거나 구체적인 실패 원인을 유추할 수 없는 일반적인 형태인지 확인한다.",
+      "notes": "로그인 기능을 오류 처리 검증 대상으로 선정한다.\n존재하는 계정에 대해 잘못된 비밀번호를 입력하여 로그인 실패 상황을 발생시킨다.\n해당 요청에 대해 백엔드 로그에서 비밀번호 불일치 관련 처리 여부를 확인하고, 사용자 UI에는 로그인 실패 메시지만 표시되는지 확인한다.\n존재하지 않는 계정에 대해 로그인 요청을 수행한다.\n해당 요청에 대해 백엔드 로그 출력 여부를 확인하고, 사용자 UI에는 로그인 실패 메시지만 표시되는지 확인한다.\n두 경우 모두 사용자 UI에 표시되는 메시지가 동일하거나 구체적인 실패 원인을 유추할 수 없는 일반적인 형태인지 확인한다.",
+      "linked_reqs": "Req. 8, Req. 9, Req. 106",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-07",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 8, Req. 9, Req. 106",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-07",
+      "test_result": "잘못된 비밀번호 입력 시 에러 로그 확인\n\n\n잘못된 비밀번호 입력 시 사용자 UI 화면\n\n\n존재 하지 않는 계정 입력 시 에러 로그 확인\n\n존재하지 않는 계정 입력 시 사용자 UI 화면",
+      "applied": "잘못된 비밀번호 입력 시 에러 로그 확인\n\n\n잘못된 비밀번호 입력 시 사용자 UI 화면\n\n\n존재 하지 않는 계정 입력 시 에러 로그 확인\n\n존재하지 않는 계정 입력 시 사용자 UI 화면",
+      "notes": "잘못된 비밀번호 입력 시 에러 로그 확인\n\n\n잘못된 비밀번호 입력 시 사용자 UI 화면\n\n\n존재 하지 않는 계정 입력 시 에러 로그 확인\n\n존재하지 않는 계정 입력 시 사용자 UI 화면",
+      "linked_reqs": "Req. 8, Req. 9, Req. 106",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-08",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 1",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-08",
+      "test_result": "기존 버전 앱이 설치된 시험 단말에 상위 버전 APK를 설치한다.\n업데이트 후 앱 실행 및 버전 변경 여부를 확인한다.\n업데이트 후 로그인 등 주요 기능이 정상 동작하는지 확인한다.",
+      "applied": "기존 버전 앱이 설치된 시험 단말에 상위 버전 APK를 설치한다.\n업데이트 후 앱 실행 및 버전 변경 여부를 확인한다.\n업데이트 후 로그인 등 주요 기능이 정상 동작하는지 확인한다.",
+      "notes": "기존 버전 앱이 설치된 시험 단말에 상위 버전 APK를 설치한다.\n업데이트 후 앱 실행 및 버전 변경 여부를 확인한다.\n업데이트 후 로그인 등 주요 기능이 정상 동작하는지 확인한다.",
+      "linked_reqs": "Req. 1",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-08",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 1",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-08",
+      "test_result": "기존 버전 앱(2.0.0)이 설치된 시험 단말에서 상위 버전 APK로 업데이트가 가능함을 확인하였다.\n\n기존 앱 버전 확인 (v2.0.0)\n\n\n기존 앱(2.0.0)에서 업데이트(2.1.1) 가능 확인\n\n업데이트 후 앱(2.1.1)이 정상적으로 설치됨을 확인",
+      "applied": "기존 버전 앱(2.0.0)이 설치된 시험 단말에서 상위 버전 APK로 업데이트가 가능함을 확인하였다.\n\n기존 앱 버전 확인 (v2.0.0)\n\n\n기존 앱(2.0.0)에서 업데이트(2.1.1) 가능 확인\n\n업데이트 후 앱(2.1.1)이 정상적으로 설치됨을 확인",
+      "notes": "기존 버전 앱(2.0.0)이 설치된 시험 단말에서 상위 버전 APK로 업데이트가 가능함을 확인하였다.\n\n기존 앱 버전 확인 (v2.0.0)\n\n\n기존 앱(2.0.0)에서 업데이트(2.1.1) 가능 확인\n\n업데이트 후 앱(2.1.1)이 정상적으로 설치됨을 확인",
+      "linked_reqs": "Req. 1",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-09",
+      "test_result": "시험방법",
+      "applied": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "Req. 1",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-09",
+      "test_result": "업데이트용 APK 파일의 서명 적용 여부를 확인한다.\n서명된 APK를 기존 앱 위에 설치하여 업데이트 가능 여부를 확인한다.\n업데이트 후 앱이 정상 실행되는지 확인한다.",
+      "applied": "업데이트용 APK 파일의 서명 적용 여부를 확인한다.\n서명된 APK를 기존 앱 위에 설치하여 업데이트 가능 여부를 확인한다.\n업데이트 후 앱이 정상 실행되는지 확인한다.",
+      "notes": "업데이트용 APK 파일의 서명 적용 여부를 확인한다.\n서명된 APK를 기존 앱 위에 설치하여 업데이트 가능 여부를 확인한다.\n업데이트 후 앱이 정상 실행되는지 확인한다.",
+      "linked_reqs": "Req. 1",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-09",
+      "test_result": "확인결과",
+      "applied": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "Req. 1",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-09",
+      "test_result": "업데이트용 APK(2.1.1) 파일에 디지털 서명이 적용되어 있음을 확인\n\n\n서명된 APK는 기존 앱 위에 정상적으로 업데이트 설치되었으며, 업데이트 후 앱이 정상 실행됨을 확인하여 업데이트 파일의 진본성 및 무결성이 유지됨을 확인",
+      "applied": "업데이트용 APK(2.1.1) 파일에 디지털 서명이 적용되어 있음을 확인\n\n\n서명된 APK는 기존 앱 위에 정상적으로 업데이트 설치되었으며, 업데이트 후 앱이 정상 실행됨을 확인하여 업데이트 파일의 진본성 및 무결성이 유지됨을 확인",
+      "notes": "업데이트용 APK(2.1.1) 파일에 디지털 서명이 적용되어 있음을 확인\n\n\n서명된 APK는 기존 앱 위에 정상적으로 업데이트 설치되었으며, 업데이트 후 앱이 정상 실행됨을 확인하여 업데이트 파일의 진본성 및 무결성이 유지됨을 확인",
+      "linked_reqs": "Req. 1",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족"
+    },
+    {
+      "req_id": "SI-10",
+      "test_result": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "N/A",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "SI-10",
+      "test_result": "해당 없음",
+      "notes": "해당 없음",
+      "linked_reqs": "N/A",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "SI-10",
+      "test_result": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "N/A",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "SI-10",
+      "test_result": "해당 없음",
+      "notes": "해당 없음",
+      "linked_reqs": "N/A",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "SI-11",
+      "test_result": "시험방법",
+      "notes": "시험방법",
+      "linked_reqs": "N/A",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "SI-11",
+      "test_result": "해당 없음",
+      "notes": "해당 없음",
+      "linked_reqs": "N/A",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "SI-11",
+      "test_result": "확인결과",
+      "notes": "확인결과",
+      "linked_reqs": "N/A",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    },
+    {
+      "req_id": "SI-11",
+      "test_result": "해당 없음",
+      "notes": "해당 없음",
+      "linked_reqs": "N/A",
+      "linked_design_ids": "Req. 1, Req. 2, Req. 3, Req. 4, Req. 5, Req. 6, Req. 7, Req. 8",
+      "satisfaction": "만족",
+      "applied": "해당"
+    }
+  ],
+  "security_req_ids": [
+    "IA-01",
+    "IA-02",
+    "IA-03",
+    "IA-04",
+    "IA-05",
+    "IA-06",
+    "IA-07",
+    "IA-08",
+    "SI-01",
+    "SI-02",
+    "SI-03",
+    "SI-04",
+    "SI-05",
+    "SI-06",
+    "SI-07",
+    "SI-08",
+    "SI-09",
+    "SI-10",
+    "SI-11",
+    "UC-01",
+    "UC-02",
+    "UC-03",
+    "UC-04",
+    "UC-05",
+    "UC-06",
+    "UC-07"
+  ],
+  "linked_design_ids": [
+    "Req. 1",
+    "Req. 2",
+    "Req. 3",
+    "Req. 4",
+    "Req. 5",
+    "Req. 6",
+    "Req. 7",
+    "Req. 8",
+    "Req. 9",
+    "Req. 10",
+    "Req. 11",
+    "Req. 12",
+    "Req. 13",
+    "Req. 14",
+    "Req. 15",
+    "Req. 16",
+    "Req. 17",
+    "Req. 18",
+    "Req. 100",
+    "Req. 101",
+    "Req. 102",
+    "Req. 103",
+    "Req. 104",
+    "Req. 105",
+    "Req. 106",
+    "Req. 107",
+    "Req. 108",
+    "Req. 109",
+    "Req. 110",
+    "Req. 111",
+    "Req. 200",
+    "Req. 201",
+    "Req. 202",
+    "Req. 203",
+    "Req. 204",
+    "Req. 205",
+    "Req. 206",
+    "Req. 207"
+  ]
+}

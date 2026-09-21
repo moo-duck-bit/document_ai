@@ -2,27 +2,8 @@
   "source": "scripts/build_jm_collection_mddr.py",
   "template_id": "spec_design",
   "fields": {
-    "paragraph_0": "Software Design Specification",
     "승인자": "2026.03.20",
     "검토자": "2026.03.20",
-    "작성자": "2026.03.20",
-    "0": "0",
-    "0_1_2": "2026.03.20",
-    "0_1_3": "박민재",
-    "table1_r3_c1": "JM-web",
-    "table1_r3_c2": "JM-api",
-    "table1_r3_c3": "JM-admin",
-    "table1_r4_c1": "1.0.0",
-    "table1_r4_c2": "1.0.0",
-    "table1_r4_c3": "1.0.0",
-    "table1_r5_c1": "A",
-    "table1_r5_c2": "A",
-    "table1_r5_c3": "A",
-    "paragraph_2": "PCI DSS v4.0 Payment Card Industry Data Security Standard",
-    "paragraph_3": "개인정보보호법 (대한민국) / OWASP ASVS v4.0 Application Security Verification Standard",
-    "paragraph_5": "Figure 1. JM COLLECTION 시스템 구성도",
-    "paragraph_6": "전체 시스템 개요는 그림 1과 같다. 고객은 JM-web(React SPA)에서 상품을 탐색·주문·결제하고, JM-api(Node.js)가 회원·상품·주문·결제·배송 API를 제공한다. 운영자는 JM-admin에서 상품·프로모션·주문·CS를 관리한다. 데이터는 PostgreSQL(OLTP), Redis(세션·장바구니), S3(이미지·정적 자산)에 저장되며 CloudFront CDN으로 전 세계 사용자에게 배포된다.",
-    "paragraph_8": "운영 버전은 Git tag + CI/CD(GitHub Actions) 파이프라인으로 ECS에 배포하며, blue/green 또는 rolling update로 무중단 배포를 수행한다. 배포 전 SAST/단위·통합 테스트·스테이징 검증을 거친다.",
-    "paragraph_9": "TypeScript, React 18, Node.js 20 LTS, PostgreSQL 15, Redis 7, AWS ECS/RDS/S3/CloudFront"
+    "작성자": "2026.03.20"
   }
 }

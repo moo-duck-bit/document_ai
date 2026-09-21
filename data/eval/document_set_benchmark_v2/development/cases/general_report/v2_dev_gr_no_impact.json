@@ -1,0 +1,28 @@
+{
+  "case_id": "v2_dev_gr_no_impact",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "표지 디자인 색상 변경",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_std.docx",
+      "filename": "report_std.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_STD"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "no_impact"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "a190a6fac7baab6153c27e2f77227adf66383fbc8cd4f2e458743cca1b00994b",
+  "sanitization_status": "N/A"
+}

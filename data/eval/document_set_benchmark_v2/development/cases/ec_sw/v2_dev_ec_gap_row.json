@@ -1,0 +1,28 @@
+{
+  "case_id": "v2_dev_ec_gap_row",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "Req. 11 갱신",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/mdtm_with_gap.docx",
+      "filename": "mdtm_with_gap.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM_WITH_GAP"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "empty_row"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "a98b103c29b8a2eb422f3ce2622f67344ae0f1ff0113a51604ae75e778688904",
+  "sanitization_status": "N/A"
+}

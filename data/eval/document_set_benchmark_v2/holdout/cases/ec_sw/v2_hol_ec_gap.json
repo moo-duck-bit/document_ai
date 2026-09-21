@@ -1,0 +1,29 @@
+{
+  "case_id": "v2_hol_ec_gap",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "Req. 10 갱신",
+  "split": "holdout",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/mdtm_with_gap.docx",
+      "filename": "mdtm_with_gap.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM_WITH_GAP"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "gap",
+    "holdout"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "a98b103c29b8a2eb422f3ce2622f67344ae0f1ff0113a51604ae75e778688904",
+  "sanitization_status": "N/A"
+}

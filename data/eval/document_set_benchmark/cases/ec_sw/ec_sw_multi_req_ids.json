@@ -1,0 +1,24 @@
+{
+  "case_id": "ec_sw_multi_req_ids",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "Req. 1과 Req. 3을 동시에 수정",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/MDTM.docx",
+      "filename": "MDTM.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM"
+  ],
+  "expected_status": "PARTIAL",
+  "tags": [
+    "exact_id",
+    "multi_document"
+  ],
+  "difficulty": "medium",
+  "notes": "Two exact req patches",
+  "source_type": "fixture"
+}

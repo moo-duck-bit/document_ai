@@ -1,0 +1,57 @@
+{
+  "evaluation_id": "eval-0faba4cd7b50",
+  "correlation_id": "corr-bench-hybrid",
+  "workflow_id": "wf-tg-bench-hybrid",
+  "reasoning_id": "rsn-2c30e41154a7",
+  "case_id": "case",
+  "status": "completed",
+  "started_at": "2026-07-03T09:13:03.393875+00:00",
+  "completed_at": "2026-07-03T09:13:03.406441+00:00",
+  "metrics": {
+    "workflow_completed": true,
+    "task_success_rate": 1.0,
+    "issue_count": 1,
+    "has_review_issues": true,
+    "has_runtime_error": false,
+    "event_count": 12,
+    "reasoning_step_count": 9
+  },
+  "review_summary": {
+    "status": "warning",
+    "issues": [
+      "XXCS patch planned but security_tests.json is missing"
+    ]
+  },
+  "issue_count": 1,
+  "task_summary": {
+    "tasks": {
+      "task-document-change-pipeline": "COMPLETED",
+      "task-operation-incident-analysis": "COMPLETED"
+    },
+    "completed_count": 2,
+    "total_count": 2,
+    "success_rate": 1.0
+  },
+  "event_refs": [
+    "evt-f1b627baf104",
+    "evt-60ab78f565b1",
+    "evt-1424d516ac2b",
+    "evt-868cf9a913f3",
+    "evt-e3a7d751749a",
+    "evt-3bf943171be1",
+    "evt-58cc899cb7ea",
+    "evt-bf48eeea94e5",
+    "evt-017202e16bb0",
+    "evt-38ddbb5ee8e7",
+    "evt-12df9994420a",
+    "evt-b943470931f5"
+  ],
+  "knowledge_refs": [
+    "data\\platform\\benchmark\\work\\bench-4c1276e8093f\\case\\knowledge_graph.json",
+    "req:Req. 6",
+    "query:Req. 6"
+  ],
+  "metadata": {
+    "change_id": "chg-req6-login-limit"
+  }
+}

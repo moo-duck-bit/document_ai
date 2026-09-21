@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-07-22T21:40:36Z",
+  "mdsr_path": "data/trials/trial-002-lockout-multireq/reference/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+  "mddr_path": "data/trials/trial-002-lockout-multireq/reference/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+  "mdsr_block_count": 38,
+  "mddr_block_count": 38,
+  "total_blocks": 76,
+  "focus_present_in_index": {
+    "Req. 6": true,
+    "Req. 103": true,
+    "Req. 105": true
+  },
+  "traceability_source": "data/cases/mindrium_xa/requirements.json"
+}

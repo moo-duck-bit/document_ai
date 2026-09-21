@@ -1,5 +1,6 @@
 """Analyze EC-SW completed DOCX corpus and copy to data/examples/ec_sw/."""
 import json
+import os
 import re
 import shutil
 from pathlib import Path
@@ -9,7 +10,7 @@ from docx.oxml.ns import qn
 from docx.table import Table
 from docx.text.paragraph import Paragraph
 
-DESKTOP = Path(r"c:\Users\hsh71\OneDrive\Desktop")
+DESKTOP = Path(os.environ.get("EC_SW_SRC_DIR") or Path.home() / "Desktop")
 PROJECT = Path(__file__).resolve().parents[1]
 BASE = PROJECT / "data" / "examples" / "ec_sw"
 BASE.mkdir(parents=True, exist_ok=True)

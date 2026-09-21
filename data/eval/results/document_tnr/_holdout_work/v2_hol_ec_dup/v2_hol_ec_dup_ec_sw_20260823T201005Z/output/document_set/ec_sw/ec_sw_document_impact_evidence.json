@@ -1,0 +1,49 @@
+{
+  "MDTM_DUP_REQ": [
+    {
+      "document_id": "MDTM_DUP_REQ",
+      "document_role": "traceability",
+      "evidence_type": "DOCUMENT_PRESENCE",
+      "evidence_value": "mdtm_dup_req.docx",
+      "source_stage": "upload",
+      "source_node_id": null,
+      "confidence": 0.1,
+      "independent_group": "presence",
+      "reason_codes": [
+        "document_uploaded"
+      ],
+      "supports_impacted": false,
+      "supports_review": false
+    },
+    {
+      "document_id": "MDTM_DUP_REQ",
+      "document_role": "traceability",
+      "evidence_type": "ROLE_COMPATIBILITY",
+      "evidence_value": "traceability",
+      "source_stage": "catalog_role",
+      "source_node_id": null,
+      "confidence": 0.2,
+      "independent_group": "role",
+      "reason_codes": [
+        "role_compatible"
+      ],
+      "supports_impacted": false,
+      "supports_review": false
+    },
+    {
+      "document_id": "MDTM_DUP_REQ",
+      "document_role": "traceability",
+      "evidence_type": "EXACT_IDENTIFIER_MATCH",
+      "evidence_value": "Req. 11",
+      "source_stage": "mdtm_change_poc",
+      "source_node_id": "ec_sw_v1.mdtm.table_00.row_0002.2f1b098a19",
+      "confidence": 0.95,
+      "independent_group": "node:ec_sw_v1.mdtm.table_00.row_0002.2f1b098a19",
+      "reason_codes": [
+        "exact_requirement_id_match"
+      ],
+      "supports_impacted": true,
+      "supports_review": false
+    }
+  ]
+}

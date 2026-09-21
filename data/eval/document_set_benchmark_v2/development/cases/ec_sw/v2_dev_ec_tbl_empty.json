@@ -1,0 +1,29 @@
+{
+  "case_id": "v2_dev_ec_tbl_empty",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "Req. 11 추적성 행 갱신",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/mdtm_with_gap.docx",
+      "filename": "mdtm_with_gap.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM_WITH_GAP"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "table_structure",
+    "empty_row"
+  ],
+  "difficulty": "medium",
+  "notes": "empty row metamorphic",
+  "source_type": "GENERATED",
+  "transformation": "table_empty_row",
+  "base_case_id": "v2_dev_ec_req11_exact",
+  "fixture_fingerprint": "a98b103c29b8a2eb422f3ce2622f67344ae0f1ff0113a51604ae75e778688904",
+  "sanitization_status": "N/A"
+}

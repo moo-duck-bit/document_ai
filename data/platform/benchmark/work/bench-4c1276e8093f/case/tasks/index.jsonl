@@ -1,0 +1,4 @@
+{"workflow_id": "wf-tg-bench-document", "correlation_id": "corr-bench-document", "case_id": "case", "task_graph_id": "tg-bench-document", "status": "PENDING", "started_at": "2026-07-03T09:13:02.475705+00:00", "completed_at": ""}
+{"workflow_id": "wf-tg-bench-document", "correlation_id": "corr-bench-document", "case_id": "case", "task_graph_id": "tg-bench-document", "status": "COMPLETED", "started_at": "2026-07-03T09:13:02.475705+00:00", "completed_at": "2026-07-03T09:13:02.903350+00:00"}
+{"workflow_id": "wf-tg-bench-hybrid", "correlation_id": "corr-bench-hybrid", "case_id": "case", "task_graph_id": "tg-bench-hybrid", "status": "PENDING", "started_at": "2026-07-03T09:13:03.024508+00:00", "completed_at": ""}
+{"workflow_id": "wf-tg-bench-hybrid", "correlation_id": "corr-bench-hybrid", "case_id": "case", "task_graph_id": "tg-bench-hybrid", "status": "COMPLETED", "started_at": "2026-07-03T09:13:03.024508+00:00", "completed_at": "2026-07-03T09:13:03.362343+00:00"}

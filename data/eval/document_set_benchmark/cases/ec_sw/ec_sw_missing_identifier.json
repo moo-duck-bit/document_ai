@@ -1,0 +1,23 @@
+{
+  "case_id": "ec_sw_missing_identifier",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "요구사항 식별자 없이 행 내용만 변경 요청",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/MDTM.docx",
+      "filename": "MDTM.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM"
+  ],
+  "expected_status": "SAFE_FAILURE",
+  "tags": [
+    "ambiguous"
+  ],
+  "difficulty": "hard",
+  "notes": "Missing identifier",
+  "source_type": "fixture"
+}

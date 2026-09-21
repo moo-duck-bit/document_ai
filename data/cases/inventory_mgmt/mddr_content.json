@@ -1,0 +1,161 @@
+{
+  "cover_product_line": "Acme Logistics Co., Ltd.",
+  "standards": [
+    "ISO 27001 v4.0 Payment Card Industry Data Security Standard",
+    "개인정보보호법 (대한민국) / OWASP ASVS v4.0 Application Security Verification Standard"
+  ],
+  "paragraphs": [
+    "Software Design Specification",
+    "ISO 27001 v4.0 Payment Card Industry Data Security Standard",
+    "개인정보보호법 (대한민국) / OWASP ASVS v4.0 Application Security Verification Standard",
+    "EC-SW-MDDR(IMS) Inventory Management System 소프트웨어 설계명세서",
+    "Ver 1.0 / 문서번호 IMS-SRS-10",
+    "Inventory Management System은 물류·유통 B2B 창고 재고관리 시스템 소프트웨어이다. 고객용 IMS-web, 입출고 API IMS-api, 운영 콘솔 IMS-admin으로 구성되며 입고·출고·재고조정·발주·출고/납품·반품·CS·할인 정책 기능을 제공한다.",
+    "React SPA + Node.js 마이크로서비스 + PostgreSQL/Redis/S3/CloudFront 아키텍처를 따른다. ERP 연동 토큰화, 개인정보·ERP 정산 데이터 암호화, RBAC, OWASP Top 10 대응을 설계에 반영한다.",
+    "본 문서는 Inventory Management System 소프트웨어의 아키텍처·컴포넌트·요구사항별 설계 사항을 정의한다."
+  ],
+  "overview": {
+    "purpose": "Inventory Management System 온라인 재고관리 시스템 소프트웨어의 내부 구조, 모듈, 인터페이스, 데이터 모델 및 보안·비기능 설계를 명세하여 개발·시험·운영의 기준을 제공한다.",
+    "scope": "본 문서는 Inventory Management System 온라인 재고관리 시스템 소프트웨어(IMS-web, IMS-api, IMS-admin)에 적용된다.",
+    "software_purpose": "Inventory Management System B2B 재고관리 시스템의 회원·품목·입출고·ERP정산·납품·할인 정책·운영 기능을 모듈 단위로 설계하고, PG·알림·출고/납품 API 연동 및 보안 통제를 구현하기 위한 설계 기준을 제공한다.",
+    "users": [
+      "일반 고객(내부 사용자·거래처): IMS-web을 통해 품목 조회, 입출고 요청, ERP 정산, 출고/납품 조회, 반품 입고, 1:1 문의를 수행한다.",
+      "운영자·CS·물류 담당자: IMS-admin을 통해 품목·재고·입출고 요청·할인 정책·회원·문의를 관리한다.",
+      "시스템 연동: ERP 시스템, SMS/이메일 게이트웨이, 운송사 출고/납품 추적 API와 연동한다."
+    ],
+    "system": "IMS-web → API Gateway → IMS-api(회원/카탈로그/입출고 요청/ERP 정산/알림 서비스) → PostgreSQL·Redis·S3. IMS-admin은 내부 VPC에서 IMS-api 관리 API를 호출한다. 외부 PG·알림·출고/납품 API는 secrets manager 키와 TLS 상호인증으로 연동한다."
+  },
+  "approval": {
+    "date": "2026.03.20",
+    "people": {
+      "승인자": {
+        "name": "김준호",
+        "title": "대표이사"
+      },
+      "검토자": {
+        "name": "이서연",
+        "title": "보안책임자(CISO)"
+      },
+      "작성자": {
+        "name": "박민재",
+        "title": "SI팀장"
+      }
+    }
+  },
+  "revision": {
+    "number": "0",
+    "date": "2026.03.20",
+    "summary": "Inventory Management System 재고관리 시스템 설계명세서 최초 제정",
+    "author": "박민재"
+  },
+  "product_matrix": [
+    [
+      "제품명",
+      "Inventory Management System",
+      "Inventory Management System",
+      "Inventory Management System"
+    ],
+    [
+      "모델명",
+      "IMS-Warehouse-001",
+      "IMS-Warehouse-001",
+      "IMS-Warehouse-001"
+    ],
+    [
+      "소프트웨어명",
+      "웹 포털",
+      "IMS-api",
+      "운영 콘솔"
+    ],
+    [
+      "소프트웨어명",
+      "IMS-web",
+      "IMS-api",
+      "IMS-admin"
+    ],
+    [
+      "안전성 등급",
+      "A",
+      "A",
+      "A"
+    ],
+    [
+      "제조자",
+      "Inventory Management System Co., Ltd.",
+      "Inventory Management System Co., Ltd.",
+      "Inventory Management System Co., Ltd."
+    ]
+  ],
+  "component_detail_rows": [
+    [
+      "",
+      "IMS-web",
+      "IMS-api",
+      "IMS-admin"
+    ],
+    [
+      "버전",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0"
+    ],
+    [
+      "Code language",
+      "TypeScript / React 18",
+      "TypeScript / Node.js 20",
+      "TypeScript / React 18"
+    ],
+    [
+      "Platform",
+      "AWS CloudFront, S3",
+      "AWS ECS, RDS PostgreSQL",
+      "AWS ECS (VPC)"
+    ],
+    [
+      "Editor",
+      "VS Code",
+      "VS Code",
+      "VS Code"
+    ],
+    [
+      "운영 환경",
+      "AWS Cloud (ECS, RDS, Redis, S3, CloudFront)",
+      "AWS ECS Fargate, RDS PostgreSQL, ElastiCache Redis",
+      "AWS ECS (내부 VPC)"
+    ]
+  ],
+  "paragraph_overrides": {
+    "31": "전체 시스템 개요는 그림 1과 같다. 고객은 IMS-web(React SPA)에서 품목을 탐색·입출고·ERP정산하고, IMS-api(Node.js)가 회원·품목·입출고·ERP정산·납품 API를 제공한다. 운영자는 IMS-admin에서 품목·할인 정책·입출고 요청·CS를 관리한다.",
+    "34": "운영 버전은 Git tag + CI/CD(GitHub Actions) 파이프라인으로 ECS에 배포하며, blue/green 또는 rolling update로 무중단 배포를 수행한다. 배포 전 SAST/단위·통합 테스트·스테이징 검증을 거친다.",
+    "40": "TypeScript, React 18, Node.js 20 LTS, PostgreSQL 15, Redis 7, AWS ECS/RDS/S3/CloudFront",
+    "52": "Figure 1. Inventory Management System 시스템 구성도",
+    "54": "IMS-web (웹 포털 SPA)",
+    "56": "Figure 2. IMS-web 주요 화면",
+    "70": "IMS-api (백엔드 서버)",
+    "72": "Figure 3. IMS-api 서버 구조",
+    "80": "Figure 4. IMS-admin 운영 화면"
+  },
+  "tech_stacks": [
+    {
+      "header": "IMS-web (웹 포털)",
+      "code_language": "TypeScript / React 18",
+      "platform": "AWS CloudFront, S3 (정적 호스팅)",
+      "editor": "VS Code"
+    },
+    {
+      "header": "IMS-api (입출고·ERP정산·회원 API)",
+      "code_language": "TypeScript / Node.js 20 LTS",
+      "platform": "AWS ECS Fargate, API Gateway, RDS PostgreSQL, ElastiCache Redis",
+      "editor": "VS Code"
+    },
+    {
+      "header": "IMS-admin (운영 콘솔)",
+      "code_language": "TypeScript / React 18",
+      "platform": "AWS ECS (내부 VPC), RBAC, MFA",
+      "editor": "VS Code"
+    }
+  ],
+  "document_title": "EC-SW-MDDR(IMS) Inventory Management System 소프트웨어 설계명세서",
+  "document_title_sdp": "EC-SW-SDP(IMS) Inventory Management System 소프트웨어 개발 계획서",
+  "document_version_line": "Ver 1.0 / 문서번호 IMS-SRS-10"
+}

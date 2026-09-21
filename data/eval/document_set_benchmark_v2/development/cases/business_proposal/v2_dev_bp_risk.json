@@ -1,0 +1,28 @@
+{
+  "case_id": "v2_dev_bp_risk",
+  "domain": "business_proposal",
+  "document_set_id": "business_proposal",
+  "change_request": "위험 관리 항목 추가",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/business_proposal/proposal_base.docx",
+      "filename": "proposal_base.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "PROPOSAL_BASE"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "risk"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "26b6d41c612dcc196bb137538f5ada67c2b25743b4fdf6d24af3ed18b5ddf0a5",
+  "sanitization_status": "N/A"
+}

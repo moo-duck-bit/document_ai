@@ -1,0 +1,30 @@
+[
+  {
+    "document_id": "MDTM",
+    "node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+    "table_index": 0,
+    "row_index": 2,
+    "column_index": 3,
+    "original_text": "",
+    "proposed_text": "[CR] Req. 11 impact — review traceability",
+    "operation": "UPDATE",
+    "reason_codes": [
+      "exact_requirement_id_match"
+    ],
+    "human_review_required": false,
+    "source_identifiers": {
+      "requirement_ids": [
+        "Req. 11"
+      ],
+      "design_ids": [
+        "5.1.2"
+      ],
+      "test_ids": [
+        "TC-11",
+        "5.1.2"
+      ]
+    },
+    "row_wide_replacement": false,
+    "generated_id": false
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "case_id": "v2_dev_ec_tbl_reorder",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "Req. 11 추적성 행 갱신",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/mdtm_cols_dtr.docx",
+      "filename": "mdtm_cols_dtr.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM_COLS_DTR"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "table_structure",
+    "column_reorder"
+  ],
+  "difficulty": "medium",
+  "notes": "table column reorder metamorphic",
+  "source_type": "GENERATED",
+  "transformation": "table_column_reorder",
+  "base_case_id": "v2_dev_ec_req11_exact",
+  "fixture_fingerprint": "797e15373d8c3b5c9c1f2c5310bd3d39a49206569a81fc2fb5fc758fd2144c2e",
+  "sanitization_status": "N/A"
+}

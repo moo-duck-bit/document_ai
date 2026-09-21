@@ -1,0 +1,59 @@
+[
+  {
+    "item_id": "REPORT_PILOT_SCHEDULE.p0008",
+    "document_id": "REPORT_PILOT_SCHEDULE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "heading_0008",
+    "display_name": "일정",
+    "reason_codes": [
+      "paragraph_concept_match"
+    ],
+    "reason_text_ko": "요청 의미와 문서 문단 주제가 일치합니다.",
+    "evidence": [
+      "일정"
+    ],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "general_report_v1.schedule",
+    "document_id": "REPORT_PILOT_SCHEDULE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "general_report_v1.schedule",
+    "display_name": "일정",
+    "reason_codes": [
+      "aligned_template_section_eval_candidate",
+      "template_document_aligned"
+    ],
+    "reason_text_ko": "검토가 필요한 항목입니다 (사유 코드: aligned_template_section_eval_candidate). 검토가 필요한 항목입니다 (사유 코드: template_document_aligned).",
+    "evidence": [],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "SCH-table_00",
+    "document_id": "REPORT_PILOT_SCHEDULE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "table_00",
+    "display_name": "단계 기간",
+    "reason_codes": [
+      "PATCH_FORBIDDEN_TABLE_OR_SCHEDULE_ONLY",
+      "table_structure",
+      "time_unit_table",
+      "schedule_table_ambiguous"
+    ],
+    "reason_text_ko": "검토가 필요한 항목입니다 (사유 코드: PATCH_FORBIDDEN_TABLE_OR_SCHEDULE_ONLY). 검토가 필요한 항목입니다 (사유 코드: table_structure). 검토가 필요한 항목입니다 (사유 코드: time_unit_table). 검토가 필요한 항목입니다 (사유 코드: schedule_table_ambiguous).",
+    "evidence": [],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  }
+]

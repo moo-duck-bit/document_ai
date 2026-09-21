@@ -1,0 +1,201 @@
+[
+  {
+    "signal_id": "fn_633e9f4a",
+    "document_source_id": "REPORT_EN_HEADINGS",
+    "signal_type": "FILENAME_TOKEN",
+    "signal_value": "report_en_headings.docx",
+    "normalized_value": "REPORT",
+    "confidence": 0.45,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "filename_hint:REPORT",
+      "filename_not_sufficient_alone"
+    ],
+    "independent_group": "filename"
+  },
+  {
+    "signal_id": "fnrole_3417dabb",
+    "document_source_id": "REPORT_EN_HEADINGS",
+    "signal_type": "DOCUMENT_ROLE_HINT",
+    "signal_value": "general_report",
+    "normalized_value": "general_report",
+    "confidence": 0.4,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "filename_role_hint"
+    ],
+    "independent_group": "filename"
+  },
+  {
+    "signal_id": "fmt_b7215393",
+    "document_source_id": "REPORT_EN_HEADINGS",
+    "signal_type": "FILE_FORMAT",
+    "signal_value": ".docx",
+    "normalized_value": "docx",
+    "confidence": 0.2,
+    "source": "filename",
+    "source_locator": {},
+    "reason_codes": [
+      "file_format"
+    ],
+    "independent_group": "format"
+  },
+  {
+    "signal_id": "hd_b0612868",
+    "document_source_id": "REPORT_EN_HEADINGS",
+    "signal_type": "DOCUMENT_TITLE",
+    "signal_value": "Methodology",
+    "normalized_value": "methodology",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 0
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_1b88c37c",
+    "document_source_id": "REPORT_EN_HEADINGS",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "Methodology 본문 내용입니다.",
+    "normalized_value": "methodology 본문 내용입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 1
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_8e5c3926",
+    "document_source_id": "REPORT_EN_HEADINGS",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "Results",
+    "normalized_value": "results",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 2
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_ee3f6b2c",
+    "document_source_id": "REPORT_EN_HEADINGS",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "Results 본문 내용입니다.",
+    "normalized_value": "results 본문 내용입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 3
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_646de306",
+    "document_source_id": "REPORT_EN_HEADINGS",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "Conclusion",
+    "normalized_value": "conclusion",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 4
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_57589d6c",
+    "document_source_id": "REPORT_EN_HEADINGS",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "Conclusion 본문 내용입니다.",
+    "normalized_value": "conclusion 본문 내용입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 5
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_526d6d8a",
+    "document_source_id": "REPORT_EN_HEADINGS",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "Schedule",
+    "normalized_value": "schedule",
+    "confidence": 0.55,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 6
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "hd_c50cd953",
+    "document_source_id": "REPORT_EN_HEADINGS",
+    "signal_type": "HEADING_TEXT",
+    "signal_value": "Schedule 본문 내용입니다.",
+    "normalized_value": "schedule 본문 내용입니다.",
+    "confidence": 0.5,
+    "source": "content",
+    "source_locator": {
+      "paragraph_index": 7
+    },
+    "reason_codes": [
+      "heading_or_title"
+    ],
+    "independent_group": "heading"
+  },
+  {
+    "signal_id": "concept_47d293b5",
+    "document_source_id": "REPORT_EN_HEADINGS",
+    "signal_type": "CONTENT_CONCEPT",
+    "signal_value": "general_report",
+    "normalized_value": "general_report",
+    "confidence": 0.6,
+    "source": "content",
+    "source_locator": {},
+    "reason_codes": [
+      "report_heading_concepts"
+    ],
+    "independent_group": "template_structure"
+  },
+  {
+    "signal_id": "concept_22bf2bf3",
+    "document_source_id": "REPORT_EN_HEADINGS",
+    "signal_type": "CONTENT_CONCEPT",
+    "signal_value": "business_proposal",
+    "normalized_value": "business_proposal",
+    "confidence": 0.6,
+    "source": "content",
+    "source_locator": {},
+    "reason_codes": [
+      "proposal_heading_concepts"
+    ],
+    "independent_group": "template_structure"
+  }
+]

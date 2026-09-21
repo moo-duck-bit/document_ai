@@ -1,0 +1,23 @@
+{
+  "case_id": "ec_sw_empty_row_context",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "빈 식별자 행에 대한 정리",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/MDTM.docx",
+      "filename": "MDTM.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM"
+  ],
+  "expected_status": "SAFE_FAILURE",
+  "tags": [
+    "ambiguous"
+  ],
+  "difficulty": "hard",
+  "notes": "Empty-row style request",
+  "source_type": "fixture"
+}

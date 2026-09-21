@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://document-ai.local/schemas/trial_manifest.schema.json",
+  "title": "TrialManifest",
+  "type": "object",
+  "required": [
+    "trial_id",
+    "case_id",
+    "trial_type",
+    "system_version",
+    "system_commit",
+    "document_types",
+    "status"
+  ],
+  "properties": {
+    "trial_id": { "type": "string", "minLength": 1 },
+    "case_id": { "type": "string", "minLength": 1 },
+    "case_dir": { "type": "string" },
+    "trial_type": {
+      "type": "string",
+      "enum": ["new_document_generation", "change_update"]
+    },
+    "system_version": { "type": "string" },
+    "system_commit": { "type": "string" },
+    "document_types": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["MDSR", "MDDR", "XXCS"] },
+      "minItems": 1
+    },
+    "domain": { "type": "string" },
+    "started_at": { "type": "string" },
+    "input_cutoff": { "type": "string" },
+    "human_baseline_available": { "type": "boolean" },
+    "reviewer_count": { "type": "integer", "minimum": 0 },
+    "status": {
+      "type": "string",
+      "enum": ["prepared", "generated", "review_pending", "reviewed", "completed"]
+    },
+    "data_leakage_checked": { "type": "boolean" },
+    "data_leakage_clean": { "type": "boolean" },
+    "synthetic": { "type": "boolean" }
+  },
+  "additionalProperties": true
+}

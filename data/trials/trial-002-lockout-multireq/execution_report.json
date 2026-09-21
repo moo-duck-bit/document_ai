@@ -1,0 +1,65 @@
+{
+  "trial_id": "trial-002-lockout-multireq",
+  "scenario": "A1_lockout_multireq",
+  "phase": "implementation_validation",
+  "trial_2_freeze": true,
+  "frozen_at": "2026-07-22T22:13:01Z",
+  "overall_result": "PASS",
+  "reason": "Acceptance Criteria Met",
+  "pass_meaning_scope": "NL CR on existing docs: find related req candidates, separate impact vs conflict judgment, safe MDSR->MDDR propagation — verified for this lockout multi-req scenario only",
+  "do_not_modify": true,
+  "canonical_evidence": {
+    "input/change_request.txt": {
+      "sha256": "36d1d685ecaf7323ec473566afafae014829b9f9ba17bc7be510dd336c488305",
+      "size": 408,
+      "exists": true
+    },
+    "retrieval/lexical_baseline/candidates.json": {
+      "sha256": "d176eb5e137b2efd1ac778fb248db0cdd939438c60e450fd43e6e6e6a1972c00",
+      "size": 19313,
+      "exists": true
+    },
+    "retrieval/hybrid/comparison.json": {
+      "sha256": "7ff2b9a1be9c49a21cbb4d58a343b938ca38dba1a4203b8ab61ddc47538348e4",
+      "size": 105637,
+      "exists": true
+    },
+    "validation/impact_judgment/decisions.json": {
+      "sha256": "7fe9db2ce53d41d064feeb83eeaf4e63eaa323ee5fd00cba004b24b8293967ba",
+      "size": 36286,
+      "exists": true
+    },
+    "validation/semantic_consistency/consistency_decisions.json": {
+      "sha256": "fd7b506449902fc5962911a7810408a34210b49ffc19a526aa92d8b2ab58eb0a",
+      "size": 17317,
+      "exists": true
+    },
+    "validation/propagation/propagation_trace.json": {
+      "sha256": "9566277449373bd13fd7835925c01e1ed1d9971859a326cb3f18d18de1fd9fcb",
+      "size": 6697,
+      "exists": true
+    },
+    "validation/propagation/patch_diffs.json": {
+      "sha256": "a27d77026c4e423bb8e9caee68042391d661315c19b80391c887295deb781cee",
+      "size": 5254,
+      "exists": true
+    },
+    "validation/propagation/AC_STATUS.json": {
+      "sha256": "37cb8bc3aca30a3491ceed5d782c5f5649741be030023cd8ddf1f48fbb5408b9",
+      "size": 1478,
+      "exists": true
+    },
+    "generated/patched_mdsr/output_mdsr.docx": {
+      "sha256": "b2e10d1d9c6a9b217e1ff72e0fa9303bdae77f2cd21a437726bc0ac72c09eb50",
+      "size": 1968360,
+      "exists": true
+    },
+    "generated/patched_mddr/output_mddr.docx": {
+      "sha256": "60971565a8588fa55116dd95644079db6c6a3018ad0f752b8f70b22286727d70",
+      "size": 2629746,
+      "exists": true
+    }
+  },
+  "ac_status_path": "validation/propagation/AC_STATUS.json",
+  "final_report": "FINAL_TRIAL_REPORT.md"
+}

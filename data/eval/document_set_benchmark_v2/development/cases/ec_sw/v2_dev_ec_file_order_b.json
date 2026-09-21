@@ -1,0 +1,33 @@
+{
+  "case_id": "v2_dev_ec_file_order_b",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "Req. 10 갱신",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/copy_b.docx",
+      "filename": "copy_b.docx",
+      "role": "traceability"
+    },
+    {
+      "path": "fixtures/ec_sw/copy_a.docx",
+      "filename": "copy_a.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "COPY_B"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "file_order"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": "file_order",
+  "base_case_id": "v2_dev_ec_file_order_a",
+  "fixture_fingerprint": "1375c1ec2ed9ecfe2db33000585be70dc227949d05b08c7dcefb74b79de9e057",
+  "sanitization_status": "N/A"
+}

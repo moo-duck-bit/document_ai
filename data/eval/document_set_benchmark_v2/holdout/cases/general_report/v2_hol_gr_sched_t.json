@@ -1,0 +1,29 @@
+{
+  "case_id": "v2_hol_gr_sched_t",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "일정 표 수정",
+  "split": "holdout",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_schedule_table.docx",
+      "filename": "report_schedule_table.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_SCHEDULE_TABLE"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "holdout",
+    "schedule"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "66ce830e5a0546b0c78d6e30a515f672137d5aedd039b7860d8d1d76cbabbcf8",
+  "sanitization_status": "N/A"
+}

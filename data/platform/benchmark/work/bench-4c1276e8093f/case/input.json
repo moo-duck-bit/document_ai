@@ -1,0 +1,40 @@
+{
+  "case_id": "mindrium_xa",
+  "document_set": "ec_sw",
+  "product_name": "Mindrium",
+  "product_code": "XA",
+  "domain": "medical_device_software",
+  "standards": [
+    "IEC 62304:2015",
+    "ISO 14971:2019"
+  ],
+  "templates_in_set": [
+    "spec_requirements",
+    "spec_design",
+    "report_security_verification"
+  ],
+  "facts": {
+    "product_name": "Mindrium",
+    "model_name": "Mindrium",
+    "software_name": "Mindrium",
+    "product_code": "XA",
+    "document_version": "1.0",
+    "author_org": "Mindrium",
+    "code_language": "Dart/Flutter",
+    "platform": "Android Studio, X code",
+    "editor": "Microsoft VS Code",
+    "approval_date": "2025.02.07"
+  },
+  "free_text_hints": {
+    "system_overview": "환자는 모바일 앱으로 인지행동치료(CBT)를 수행. 앱↔서버 통신으로 치료 데이터 교환, 의사 모니터링.",
+    "architecture_narrative": "모바일(iOS/Android) + 서버(Next.js, TypeScript) 구조"
+  },
+  "source_documents": [
+    "data/examples/ec_sw/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+    "data/examples/ec_sw/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+    "data/examples/ec_sw/report_xxcs_EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서.docx"
+  ],
+  "intake_channel": "completed_corpus_import",
+  "confirmed": true,
+  "confirmed_at": "2026-06-30"
+}

@@ -1,0 +1,21 @@
+{
+  "raw_change_request": "시험 TC-11 검토",
+  "requirement_ids": [],
+  "design_ids": [],
+  "test_ids": [
+    "TC-11"
+  ],
+  "identifier_status": "SINGLE",
+  "primary_identifier_type": "TEST",
+  "secondary_identifier_types": [],
+  "semantic_terms": [
+    "시험",
+    "tc",
+    "11"
+  ],
+  "ambiguity": false,
+  "reason_codes": [
+    "primary_test",
+    "single_identifier"
+  ]
+}

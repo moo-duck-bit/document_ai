@@ -1,0 +1,21 @@
+{
+  "raw_change_request": "Req. 10 갱신",
+  "requirement_ids": [
+    "Req. 10"
+  ],
+  "design_ids": [],
+  "test_ids": [],
+  "identifier_status": "SINGLE",
+  "primary_identifier_type": "REQUIREMENT",
+  "secondary_identifier_types": [],
+  "semantic_terms": [
+    "req",
+    "10",
+    "갱신"
+  ],
+  "ambiguity": false,
+  "reason_codes": [
+    "primary_requirement",
+    "single_identifier"
+  ]
+}

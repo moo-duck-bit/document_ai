@@ -1,0 +1,58 @@
+[
+  {
+    "item_id": "REPORT_PILOT_BASE.p0002",
+    "document_id": "REPORT_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "heading_0002",
+    "display_name": "방법론",
+    "reason_codes": [
+      "paragraph_concept_match"
+    ],
+    "reason_text_ko": "요청 의미와 문서 문단 주제가 일치합니다.",
+    "evidence": [
+      "방법론"
+    ],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "REPORT_PILOT_BASE.p0003",
+    "document_id": "REPORT_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "heading_0003",
+    "display_name": "방법론 본문 내용입니다.",
+    "reason_codes": [
+      "paragraph_concept_match"
+    ],
+    "reason_text_ko": "요청 의미와 문서 문단 주제가 일치합니다.",
+    "evidence": [
+      "방법론"
+    ],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "general_report_v1.methodology",
+    "document_id": "REPORT_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "general_report_v1.methodology",
+    "display_name": "방법론",
+    "reason_codes": [
+      "aligned_template_section_eval_candidate",
+      "template_document_aligned"
+    ],
+    "reason_text_ko": "검토가 필요한 항목입니다 (사유 코드: aligned_template_section_eval_candidate). 검토가 필요한 항목입니다 (사유 코드: template_document_aligned).",
+    "evidence": [],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  }
+]

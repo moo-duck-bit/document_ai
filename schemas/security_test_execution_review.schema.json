@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://document-ai.local/schemas/security_test_execution_review.schema.json",
+  "title": "SecurityTestExecutionReview",
+  "description": "Human review decision for an imported security test execution. Does not mutate the original execution archive.",
+  "type": "object",
+  "required": ["case_id", "execution_id", "reviewer", "reviewed_at", "overall_status", "test_reviews"],
+  "additionalProperties": true,
+  "properties": {
+    "case_id": { "type": "string", "minLength": 1 },
+    "execution_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^exec-[A-Za-z0-9._-]+$"
+    },
+    "reviewer": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": true,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "role": { "type": "string" }
+      }
+    },
+    "reviewed_at": { "type": "string", "format": "date-time" },
+    "overall_status": {
+      "type": "string",
+      "enum": [
+        "imported",
+        "review_pending",
+        "reviewer_verified",
+        "rejected",
+        "superseded",
+        "test_fixture_verified"
+      ]
+    },
+    "synthetic_acknowledged": { "type": "boolean" },
+    "verification_scope": {
+      "type": "string",
+      "enum": ["full_execution", "partial_tests", "fixture_only"]
+    },
+    "supersedes_execution_id": { "type": "string" },
+    "note": { "type": "string" },
+    "test_reviews": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/testReview" }
+    }
+  },
+  "$defs": {
+    "testReview": {
+      "type": "object",
+      "required": ["security_test_id", "status"],
+      "additionalProperties": true,
+      "properties": {
+        "security_test_id": { "type": "string", "minLength": 1 },
+        "status": {
+          "type": "string",
+          "enum": [
+            "imported",
+            "review_pending",
+            "reviewer_verified",
+            "rejected",
+            "superseded",
+            "test_fixture_verified"
+          ]
+        },
+        "result_status_confirmed": { "type": "boolean" },
+        "evidence_confirmed": { "type": "boolean" },
+        "selected_for_report": { "type": "boolean" },
+        "evidence_hash_verified": { "type": "boolean" },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

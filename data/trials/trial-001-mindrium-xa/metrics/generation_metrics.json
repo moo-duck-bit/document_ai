@@ -1,0 +1,21 @@
+{
+  "quality": {
+    "status": "FAIL",
+    "scores": {
+      "structure": 36.0,
+      "terminology": 100.0,
+      "completeness": 78.4,
+      "consistency": 0.0,
+      "traceability": 100.0,
+      "residual_text": 0.0,
+      "overall": 52.9
+    }
+  },
+  "duration_seconds": 14.87,
+  "apply_seconds": 0.246,
+  "outputs": {
+    "MDSR": "data/trials/trial-001-mindrium-xa/generated/output_mdsr.docx",
+    "MDDR": "data/trials/trial-001-mindrium-xa/generated/output_mddr.docx",
+    "XXCS": "data/trials/trial-001-mindrium-xa/generated/output_xxcs.docx"
+  }
+}

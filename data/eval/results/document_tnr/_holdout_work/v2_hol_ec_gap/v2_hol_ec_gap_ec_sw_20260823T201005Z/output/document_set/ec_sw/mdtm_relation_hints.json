@@ -1,0 +1,74 @@
+[
+  {
+    "relation_hint_id": "RH-0001",
+    "source_node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+    "relation_type": "TRACE_ROW_CONTAINS",
+    "target_identifiers": [
+      {
+        "type": "requirement",
+        "value": "Req. 11"
+      },
+      {
+        "type": "design",
+        "value": "5.1.2"
+      },
+      {
+        "type": "test",
+        "value": "TC-11"
+      },
+      {
+        "type": "test",
+        "value": "5.1.2"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "relation_hint_id": "RH-0002",
+    "source_node_id": "ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+    "relation_type": "TRACE_ROW_CONTAINS",
+    "target_identifiers": [
+      {
+        "type": "requirement",
+        "value": "Req. 12"
+      },
+      {
+        "type": "design",
+        "value": "5.1.3"
+      },
+      {
+        "type": "test",
+        "value": "TC-12"
+      },
+      {
+        "type": "test",
+        "value": "5.1.3"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "relation_hint_id": "RH-0003",
+    "source_node_id": "ec_sw_v1.mdtm.table_00.row_0004.7ea5ab0d5d",
+    "relation_type": "TRACE_ROW_CONTAINS",
+    "target_identifiers": [
+      {
+        "type": "requirement",
+        "value": "Req. 101"
+      },
+      {
+        "type": "design",
+        "value": "6.0.1"
+      },
+      {
+        "type": "test",
+        "value": "TC-101"
+      },
+      {
+        "type": "test",
+        "value": "6.0.1"
+      }
+    ],
+    "metadata": {}
+  }
+]

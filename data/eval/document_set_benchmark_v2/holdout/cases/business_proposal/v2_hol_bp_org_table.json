@@ -1,0 +1,31 @@
+{
+  "case_id": "v2_hol_bp_org_table",
+  "domain": "business_proposal",
+  "document_set_id": "business_proposal",
+  "change_request": "수행 조직 역할표 변경",
+  "split": "holdout",
+  "input_documents": [
+    {
+      "path": "fixtures/business_proposal/proposal_org_table.docx",
+      "filename": "proposal_org_table.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "PROPOSAL_ORG_TABLE"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "org_table",
+    "organization",
+    "table",
+    "holdout"
+  ],
+  "difficulty": "medium",
+  "notes": "cycle6_business_proposal_node_gold",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "25e63b854a15fd4aae4a5f4c9fde06556aaf3390ad853b71795ec9a234dd9bba",
+  "sanitization_status": "N/A"
+}

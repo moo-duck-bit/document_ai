@@ -1,0 +1,53 @@
+{
+  "case_id": "case_016",
+  "schema_version": "0.1.0",
+  "original_files": [
+    {
+      "document_id": "MDSR_v1",
+      "path": "input/MDSR_v1.docx",
+      "must_remain_byte_identical": true,
+      "check": "sha256_vs_fp"
+    },
+    {
+      "document_id": "MDDR_v1",
+      "path": "input/MDDR_v1.docx",
+      "must_remain_byte_identical": true,
+      "check": "sha256_vs_fp"
+    }
+  ],
+  "untouched_nodes": [
+    {
+      "node_id": "REQ_001_DESC",
+      "document_id": "MDSR_v1",
+      "reason": "Unrelated requirement; CR does not mention login/auth."
+    },
+    {
+      "node_id": "REQ_006_DESC",
+      "document_id": "MDSR_v1",
+      "reason": "Unrelated requirement."
+    },
+    {
+      "node_id": "DI_001_PARAM",
+      "document_id": "MDDR_v1",
+      "reason": "Design item not linked to Req. 7."
+    },
+    {
+      "node_id": "TRACE_ROW_REQ_001",
+      "document_id": "MDSR_v1",
+      "reason": "Traceability row for unrelated req must not be rewritten."
+    }
+  ],
+  "writer_expectations": {
+    "should_write_original": false,
+    "expected_result_status": "GATED",
+    "writes_only_to_copy": true,
+    "requires_human_approval": true,
+    "format_preservation_required": true
+  },
+  "mu_mapping": {
+    "touching_untouched_node": "false_patch",
+    "writing_without_approval": "unapproved_write",
+    "mutating_original_file": "original_broken",
+    "bypassing_activation_policy": "unsafe_write"
+  }
+}

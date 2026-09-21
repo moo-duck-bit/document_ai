@@ -1,0 +1,28 @@
+{
+  "case_id": "v2_hol_gr_dup",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "결과 중복 헤딩 정리",
+  "split": "holdout",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_dup_results.docx",
+      "filename": "report_dup_results.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_DUP_RESULTS"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "holdout"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "953eb2a1ad53b48d4ae7de56c183a9fb97d813c8be23ebe1effd3411dc26702a",
+  "sanitization_status": "N/A"
+}

@@ -1,0 +1,8 @@
+{
+  "action": "reapply_change_after_harness_regenerate",
+  "reason": "Full harness.generate overwrote apply-patched MDSR; Req.6 extractor previously saw label-only text",
+  "change_path": "data/trials/trial-001-mindrium-xa/workdir/case/changes/chg-20260718-4b8f6d.json",
+  "req6_description_after_reapply": "기준",
+  "mdsr_sha256": "acbfae40e4be5c1a0f0aa0def8be8494a3728b1df94d98a49c3056b9298d0fde",
+  "mddr_sha256": "9cdb817bb28495f575116614c0b2fd85dd1c39a69d7789b50030c9b7d9768a15"
+}

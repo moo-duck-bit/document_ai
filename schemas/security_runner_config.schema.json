@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://document-ai.local/schemas/security_runner_config.schema.json",
+  "title": "ReadOnlySecurityRunnerConfig",
+  "type": "object",
+  "required": ["case_id", "environment", "target", "policy", "checks"],
+  "additionalProperties": true,
+  "properties": {
+    "case_id": { "type": "string", "minLength": 1 },
+    "environment": { "type": "string", "minLength": 1 },
+    "synthetic": { "type": "boolean" },
+    "timeout_seconds": { "type": "number", "exclusiveMinimum": 0, "maximum": 60 },
+    "retry_count": { "type": "integer", "minimum": 0, "maximum": 1 },
+    "max_redirects": { "type": "integer", "minimum": 0, "maximum": 5 },
+    "max_body_bytes": { "type": "integer", "minimum": 0, "maximum": 1048576 },
+    "min_request_interval_ms": { "type": "integer", "minimum": 0, "maximum": 10000 },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "base_url": { "type": "string" },
+        "host": { "type": "string" },
+        "port": { "type": "integer", "minimum": 1, "maximum": 65535 }
+      }
+    },
+    "policy": {
+      "type": "object",
+      "required": ["allowed_hosts", "allowed_urls", "allowed_ports"],
+      "additionalProperties": true,
+      "properties": {
+        "allowed_hosts": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "allowed_urls": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^https?://" }
+        },
+        "allowed_ports": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1, "maximum": 65535 }
+        },
+        "allow_private_network": { "type": "boolean" },
+        "allow_https_downgrade": { "type": "boolean" }
+      }
+    },
+    "checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["security_test_id", "runner", "enabled", "expected"],
+        "additionalProperties": true,
+        "properties": {
+          "check_id": { "type": "string" },
+          "security_test_id": { "type": "string", "minLength": 1 },
+          "runner": {
+            "type": "string",
+            "enum": [
+              "tls_check",
+              "http_header_check",
+              "api_health_check",
+              "port_connectivity_check"
+            ]
+          },
+          "enabled": { "type": "boolean" },
+          "method": { "type": "string", "enum": ["GET", "HEAD"] },
+          "endpoint": { "type": "string" },
+          "ssl_verify": { "type": "boolean" },
+          "expected": { "type": "object" },
+          "fixture": { "type": "object" }
+        }
+      }
+    }
+  }
+}

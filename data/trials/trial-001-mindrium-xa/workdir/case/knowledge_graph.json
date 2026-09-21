@@ -1,0 +1,2935 @@
+{
+  "schema_version": "1.0",
+  "case_id": "mindrium_xa",
+  "document_set_hint": "ec_sw",
+  "built_at": "2026-07-03T09:00:25.966199+00:00",
+  "source_files": [
+    "data/cases/mindrium_xa/requirements.json"
+  ],
+  "stats": {
+    "node_count": 73,
+    "edge_count": 204,
+    "orphan_count": 15
+  },
+  "nodes": [
+    {
+      "id": "mindrium_xa:requirement:Req. 1",
+      "type": "Requirement",
+      "label": "Req. 1",
+      "normalized_id": "Req. 1",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 2",
+      "type": "Requirement",
+      "label": "Req. 2",
+      "normalized_id": "Req. 2",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": "회원가입 과정에서 인가되지 않은 사용 금지 및 사용 기록 감사 가능성을 사용자에게 안내해야 한다.\n직접 식별정보는 저장 및 제공 목적에 따라 인증 및 권한 기반 접근 통제를 통해 보호하며, 권한 없는 사용자가 해당 정보만으로 사용자를 식별할 수 없도록 관리되어야 한다."
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 3",
+      "type": "Requirement",
+      "label": "Req. 3",
+      "normalized_id": "Req. 3",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 4",
+      "type": "Requirement",
+      "label": "Req. 4",
+      "normalized_id": "Req. 4",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 5",
+      "type": "Requirement",
+      "label": "Req. 5",
+      "normalized_id": "Req. 5",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 6",
+      "type": "Requirement",
+      "label": "Req. 6",
+      "normalized_id": "Req. 6",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 7",
+      "type": "Requirement",
+      "label": "Req. 7",
+      "normalized_id": "Req. 7",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 8",
+      "type": "Requirement",
+      "label": "Req. 8",
+      "normalized_id": "Req. 8",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 9",
+      "type": "Requirement",
+      "label": "Req. 9",
+      "normalized_id": "Req. 9",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 10",
+      "type": "Requirement",
+      "label": "Req. 10",
+      "normalized_id": "Req. 10",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 11",
+      "type": "Requirement",
+      "label": "Req. 11",
+      "normalized_id": "Req. 11",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 12",
+      "type": "Requirement",
+      "label": "Req. 12",
+      "normalized_id": "Req. 12",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 13",
+      "type": "Requirement",
+      "label": "Req. 13",
+      "normalized_id": "Req. 13",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 14",
+      "type": "Requirement",
+      "label": "Req. 14",
+      "normalized_id": "Req. 14",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 15",
+      "type": "Requirement",
+      "label": "Req. 15",
+      "normalized_id": "Req. 15",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 16",
+      "type": "Requirement",
+      "label": "Req. 16",
+      "normalized_id": "Req. 16",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 17",
+      "type": "Requirement",
+      "label": "Req. 17",
+      "normalized_id": "Req. 17",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 18",
+      "type": "Requirement",
+      "label": "Req. 18",
+      "normalized_id": "Req. 18",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 100",
+      "type": "Requirement",
+      "label": "Req. 100",
+      "normalized_id": "Req. 100",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 101",
+      "type": "Requirement",
+      "label": "Req. 101",
+      "normalized_id": "Req. 101",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": "최소 권한 원칙을 적용하여 사용자에게 필요한 범위 내에서만 시스템 접근을 허용하고, 무단 접근 및 데이터 유출을 방지하기 위함이다."
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 102",
+      "type": "Requirement",
+      "label": "Req. 102",
+      "normalized_id": "Req. 102",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 103",
+      "type": "Requirement",
+      "label": "Req. 103",
+      "normalized_id": "Req. 103",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 104",
+      "type": "Requirement",
+      "label": "Req. 104",
+      "normalized_id": "Req. 104",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 105",
+      "type": "Requirement",
+      "label": "Req. 105",
+      "normalized_id": "Req. 105",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 106",
+      "type": "Requirement",
+      "label": "Req. 106",
+      "normalized_id": "Req. 106",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 107",
+      "type": "Requirement",
+      "label": "Req. 107",
+      "normalized_id": "Req. 107",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 108",
+      "type": "Requirement",
+      "label": "Req. 108",
+      "normalized_id": "Req. 108",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 109",
+      "type": "Requirement",
+      "label": "Req. 109",
+      "normalized_id": "Req. 109",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 110",
+      "type": "Requirement",
+      "label": "Req. 110",
+      "normalized_id": "Req. 110",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 200",
+      "type": "Requirement",
+      "label": "Req. 200",
+      "normalized_id": "Req. 200",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 201",
+      "type": "Requirement",
+      "label": "Req. 201",
+      "normalized_id": "Req. 201",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 202",
+      "type": "Requirement",
+      "label": "Req. 202",
+      "normalized_id": "Req. 202",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 203",
+      "type": "Requirement",
+      "label": "Req. 203",
+      "normalized_id": "Req. 203",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": "처방받은 환자를 시스템에 등록하고, 등록된 환자의 정보에 접근할 수 있도록 하기 위함이다."
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 204",
+      "type": "Requirement",
+      "label": "Req. 204",
+      "normalized_id": "Req. 204",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 205",
+      "type": "Requirement",
+      "label": "Req. 205",
+      "normalized_id": "Req. 205",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 206",
+      "type": "Requirement",
+      "label": "Req. 206",
+      "normalized_id": "Req. 206",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 207",
+      "type": "Requirement",
+      "label": "Req. 207",
+      "normalized_id": "Req. 207",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {
+        "description": ""
+      },
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:IA-01",
+      "type": "SecurityControl",
+      "label": "IA-01",
+      "normalized_id": "IA-01",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req. 2, Req. 102, Req.201"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:IA-02",
+      "type": "SecurityControl",
+      "label": "IA-02",
+      "normalized_id": "IA-02",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.2, Req.102, Req.202"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:IA-03",
+      "type": "SecurityControl",
+      "label": "IA-03",
+      "normalized_id": "IA-03",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.2, Req.100, Req.102, Req.202, Req.203"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:IA-04",
+      "type": "SecurityControl",
+      "label": "IA-04",
+      "normalized_id": "IA-04",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.2, Req.5, Req.6, Req.12, Req.100, Req.102, Req.201, Req.202"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:IA-05",
+      "type": "SecurityControl",
+      "label": "IA-05",
+      "normalized_id": "IA-05",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.2, Req.102, Req.202"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:IA-06",
+      "type": "SecurityControl",
+      "label": "IA-06",
+      "normalized_id": "IA-06",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.2, Req.6, Req.102, Req.201"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:IA-07",
+      "type": "SecurityControl",
+      "label": "IA-07",
+      "normalized_id": "IA-07",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.6, Req.102, Req.105, Req.201"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:IA-08",
+      "type": "SecurityControl",
+      "label": "IA-08",
+      "normalized_id": "IA-08",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.2, Req.201"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:UC-01",
+      "type": "SecurityControl",
+      "label": "UC-01",
+      "normalized_id": "UC-01",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.101, Req.109, Req.110, Req.201, Req.204"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:UC-02",
+      "type": "SecurityControl",
+      "label": "UC-02",
+      "normalized_id": "UC-02",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "N/A"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:UC-03",
+      "type": "SecurityControl",
+      "label": "UC-03",
+      "normalized_id": "UC-03",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.12, Req.102, Req.206"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:UC-04",
+      "type": "SecurityControl",
+      "label": "UC-04",
+      "normalized_id": "UC-04",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.100, Req.101, Req.102, Req.103, Req.105, Req.110"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:UC-05",
+      "type": "SecurityControl",
+      "label": "UC-05",
+      "normalized_id": "UC-05",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.103"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:UC-06",
+      "type": "SecurityControl",
+      "label": "UC-06",
+      "normalized_id": "UC-06",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.103"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:UC-07",
+      "type": "SecurityControl",
+      "label": "UC-07",
+      "normalized_id": "UC-07",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.103, Req.110"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:SI-01",
+      "type": "SecurityControl",
+      "label": "SI-01",
+      "normalized_id": "SI-01",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.5, Req.104, Req.205"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:SI-02",
+      "type": "SecurityControl",
+      "label": "SI-02",
+      "normalized_id": "SI-02",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.1"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:SI-03",
+      "type": "SecurityControl",
+      "label": "SI-03",
+      "normalized_id": "SI-03",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.5, Req.104, Req.206, Req.207, Req.208"
+    },
+    {
+      "id": "mindrium_xa:requirement:Req. 208",
+      "type": "Requirement",
+      "label": "Req. 208",
+      "normalized_id": "Req. 208",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": null
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:SI-04",
+      "type": "SecurityControl",
+      "label": "SI-04",
+      "normalized_id": "SI-04",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.1"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:SI-05",
+      "type": "SecurityControl",
+      "label": "SI-05",
+      "normalized_id": "SI-05",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.2, Req.14, Req.15, Req.202, Req.203, Req.207"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:SI-06",
+      "type": "SecurityControl",
+      "label": "SI-06",
+      "normalized_id": "SI-06",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.4, Req.6, Req.7, Req.208"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:SI-07",
+      "type": "SecurityControl",
+      "label": "SI-07",
+      "normalized_id": "SI-07",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.4, Req.6, Req.7, Req.208"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:SI-08",
+      "type": "SecurityControl",
+      "label": "SI-08",
+      "normalized_id": "SI-08",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.1"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:SI-09",
+      "type": "SecurityControl",
+      "label": "SI-09",
+      "normalized_id": "SI-09",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.1"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:SI-10",
+      "type": "SecurityControl",
+      "label": "SI-10",
+      "normalized_id": "SI-10",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "N/A"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:SI-11",
+      "type": "SecurityControl",
+      "label": "SI-11",
+      "normalized_id": "SI-11",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "N/A"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:DC-01",
+      "type": "SecurityControl",
+      "label": "DC-01",
+      "normalized_id": "DC-01",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.2, Req.5, Req.6, Req.12, Req.15, Req.18, Req.104, Req.109, Req.205"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:DC-02",
+      "type": "SecurityControl",
+      "label": "DC-02",
+      "normalized_id": "DC-02",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.2"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:DC-03",
+      "type": "SecurityControl",
+      "label": "DC-03",
+      "normalized_id": "DC-03",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.2, Req.5, Req.100, Req.102, Req.104, Req.205"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:RA-01",
+      "type": "SecurityControl",
+      "label": "RA-01",
+      "normalized_id": "RA-01",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.105"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:RA-02",
+      "type": "SecurityControl",
+      "label": "RA-02",
+      "normalized_id": "RA-02",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.106"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:RA-03",
+      "type": "SecurityControl",
+      "label": "RA-03",
+      "normalized_id": "RA-03",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.106"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:RA-04",
+      "type": "SecurityControl",
+      "label": "RA-04",
+      "normalized_id": "RA-04",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.5, Req.104, Req.105, Req.205"
+    },
+    {
+      "id": "mindrium_xa:securitycontrol:RA-05",
+      "type": "SecurityControl",
+      "label": "RA-05",
+      "normalized_id": "RA-05",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": "Req.5, Req.104, Req.205"
+    },
+    {
+      "id": "mindrium_xa:document:spec_requirements",
+      "type": "Document",
+      "label": "spec_requirements",
+      "normalized_id": "spec_requirements",
+      "case_id": "mindrium_xa",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "document_type": "spec_requirements",
+      "metadata": {},
+      "raw_text": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "mindrium_xa:requirement:Req. 1",
+      "target": "mindrium_xa:securitycontrol:SI-02",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-02 -> Req. 1",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 1",
+      "target": "mindrium_xa:securitycontrol:SI-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-04 -> Req. 1",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 1",
+      "target": "mindrium_xa:securitycontrol:SI-08",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-08 -> Req. 1",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 1",
+      "target": "mindrium_xa:securitycontrol:SI-09",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-09 -> Req. 1",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 2",
+      "target": "mindrium_xa:securitycontrol:IA-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-01 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 2",
+      "target": "mindrium_xa:securitycontrol:IA-02",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-02 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 2",
+      "target": "mindrium_xa:securitycontrol:IA-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-03 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 2",
+      "target": "mindrium_xa:securitycontrol:IA-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 2",
+      "target": "mindrium_xa:securitycontrol:IA-05",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-05 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 2",
+      "target": "mindrium_xa:securitycontrol:IA-06",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-06 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 2",
+      "target": "mindrium_xa:securitycontrol:IA-08",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-08 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 2",
+      "target": "mindrium_xa:securitycontrol:SI-05",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-05 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 2",
+      "target": "mindrium_xa:securitycontrol:DC-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 2",
+      "target": "mindrium_xa:securitycontrol:DC-02",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-02 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 2",
+      "target": "mindrium_xa:securitycontrol:DC-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-03 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 4",
+      "target": "mindrium_xa:securitycontrol:SI-06",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-06 -> Req. 4",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 4",
+      "target": "mindrium_xa:securitycontrol:SI-07",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-07 -> Req. 4",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 5",
+      "target": "mindrium_xa:securitycontrol:IA-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 5",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 5",
+      "target": "mindrium_xa:securitycontrol:SI-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-01 -> Req. 5",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 5",
+      "target": "mindrium_xa:securitycontrol:SI-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-03 -> Req. 5",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 5",
+      "target": "mindrium_xa:securitycontrol:DC-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 5",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 5",
+      "target": "mindrium_xa:securitycontrol:DC-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-03 -> Req. 5",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 5",
+      "target": "mindrium_xa:securitycontrol:RA-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-04 -> Req. 5",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 5",
+      "target": "mindrium_xa:securitycontrol:RA-05",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-05 -> Req. 5",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 6",
+      "target": "mindrium_xa:securitycontrol:IA-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 6",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 6",
+      "target": "mindrium_xa:securitycontrol:IA-06",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-06 -> Req. 6",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 6",
+      "target": "mindrium_xa:securitycontrol:IA-07",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-07 -> Req. 6",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 6",
+      "target": "mindrium_xa:securitycontrol:SI-06",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-06 -> Req. 6",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 6",
+      "target": "mindrium_xa:securitycontrol:SI-07",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-07 -> Req. 6",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 6",
+      "target": "mindrium_xa:securitycontrol:DC-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 6",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 7",
+      "target": "mindrium_xa:securitycontrol:SI-06",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-06 -> Req. 7",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 7",
+      "target": "mindrium_xa:securitycontrol:SI-07",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-07 -> Req. 7",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 12",
+      "target": "mindrium_xa:securitycontrol:IA-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 12",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 12",
+      "target": "mindrium_xa:securitycontrol:UC-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-03 -> Req. 12",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 12",
+      "target": "mindrium_xa:securitycontrol:DC-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 12",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 14",
+      "target": "mindrium_xa:securitycontrol:SI-05",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-05 -> Req. 14",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 15",
+      "target": "mindrium_xa:securitycontrol:SI-05",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-05 -> Req. 15",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 15",
+      "target": "mindrium_xa:securitycontrol:DC-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 15",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 18",
+      "target": "mindrium_xa:securitycontrol:DC-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 18",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 100",
+      "target": "mindrium_xa:securitycontrol:IA-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-03 -> Req. 100",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 100",
+      "target": "mindrium_xa:securitycontrol:IA-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 100",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 100",
+      "target": "mindrium_xa:securitycontrol:UC-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-04 -> Req. 100",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 100",
+      "target": "mindrium_xa:securitycontrol:DC-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-03 -> Req. 100",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 101",
+      "target": "mindrium_xa:securitycontrol:UC-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-01 -> Req. 101",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 101",
+      "target": "mindrium_xa:securitycontrol:UC-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-04 -> Req. 101",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 102",
+      "target": "mindrium_xa:securitycontrol:IA-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-01 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 102",
+      "target": "mindrium_xa:securitycontrol:IA-02",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-02 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 102",
+      "target": "mindrium_xa:securitycontrol:IA-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-03 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 102",
+      "target": "mindrium_xa:securitycontrol:IA-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 102",
+      "target": "mindrium_xa:securitycontrol:IA-05",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-05 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 102",
+      "target": "mindrium_xa:securitycontrol:IA-06",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-06 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 102",
+      "target": "mindrium_xa:securitycontrol:IA-07",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-07 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 102",
+      "target": "mindrium_xa:securitycontrol:UC-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-03 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 102",
+      "target": "mindrium_xa:securitycontrol:UC-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-04 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 102",
+      "target": "mindrium_xa:securitycontrol:DC-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-03 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 103",
+      "target": "mindrium_xa:securitycontrol:UC-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-04 -> Req. 103",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 103",
+      "target": "mindrium_xa:securitycontrol:UC-05",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-05 -> Req. 103",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 103",
+      "target": "mindrium_xa:securitycontrol:UC-06",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-06 -> Req. 103",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 103",
+      "target": "mindrium_xa:securitycontrol:UC-07",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-07 -> Req. 103",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 104",
+      "target": "mindrium_xa:securitycontrol:SI-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-01 -> Req. 104",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 104",
+      "target": "mindrium_xa:securitycontrol:SI-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-03 -> Req. 104",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 104",
+      "target": "mindrium_xa:securitycontrol:DC-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 104",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 104",
+      "target": "mindrium_xa:securitycontrol:DC-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-03 -> Req. 104",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 104",
+      "target": "mindrium_xa:securitycontrol:RA-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-04 -> Req. 104",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 104",
+      "target": "mindrium_xa:securitycontrol:RA-05",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-05 -> Req. 104",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 105",
+      "target": "mindrium_xa:securitycontrol:IA-07",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-07 -> Req. 105",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 105",
+      "target": "mindrium_xa:securitycontrol:UC-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-04 -> Req. 105",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 105",
+      "target": "mindrium_xa:securitycontrol:RA-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-01 -> Req. 105",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 105",
+      "target": "mindrium_xa:securitycontrol:RA-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-04 -> Req. 105",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 106",
+      "target": "mindrium_xa:securitycontrol:RA-02",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-02 -> Req. 106",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 106",
+      "target": "mindrium_xa:securitycontrol:RA-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-03 -> Req. 106",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 109",
+      "target": "mindrium_xa:securitycontrol:UC-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-01 -> Req. 109",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 109",
+      "target": "mindrium_xa:securitycontrol:DC-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 109",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 110",
+      "target": "mindrium_xa:securitycontrol:UC-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-01 -> Req. 110",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 110",
+      "target": "mindrium_xa:securitycontrol:UC-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-04 -> Req. 110",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 110",
+      "target": "mindrium_xa:securitycontrol:UC-07",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-07 -> Req. 110",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 201",
+      "target": "mindrium_xa:securitycontrol:IA-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-01 -> Req. 201",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 201",
+      "target": "mindrium_xa:securitycontrol:IA-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 201",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 201",
+      "target": "mindrium_xa:securitycontrol:IA-06",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-06 -> Req. 201",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 201",
+      "target": "mindrium_xa:securitycontrol:IA-07",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-07 -> Req. 201",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 201",
+      "target": "mindrium_xa:securitycontrol:IA-08",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-08 -> Req. 201",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 201",
+      "target": "mindrium_xa:securitycontrol:UC-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-01 -> Req. 201",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 202",
+      "target": "mindrium_xa:securitycontrol:IA-02",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-02 -> Req. 202",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 202",
+      "target": "mindrium_xa:securitycontrol:IA-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-03 -> Req. 202",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 202",
+      "target": "mindrium_xa:securitycontrol:IA-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 202",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 202",
+      "target": "mindrium_xa:securitycontrol:IA-05",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-05 -> Req. 202",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 202",
+      "target": "mindrium_xa:securitycontrol:SI-05",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-05 -> Req. 202",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 203",
+      "target": "mindrium_xa:securitycontrol:IA-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-03 -> Req. 203",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 203",
+      "target": "mindrium_xa:securitycontrol:SI-05",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-05 -> Req. 203",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 204",
+      "target": "mindrium_xa:securitycontrol:UC-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-01 -> Req. 204",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 205",
+      "target": "mindrium_xa:securitycontrol:SI-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-01 -> Req. 205",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 205",
+      "target": "mindrium_xa:securitycontrol:DC-01",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 205",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 205",
+      "target": "mindrium_xa:securitycontrol:DC-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-03 -> Req. 205",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 205",
+      "target": "mindrium_xa:securitycontrol:RA-04",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-04 -> Req. 205",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 205",
+      "target": "mindrium_xa:securitycontrol:RA-05",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-05 -> Req. 205",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 206",
+      "target": "mindrium_xa:securitycontrol:UC-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-03 -> Req. 206",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 206",
+      "target": "mindrium_xa:securitycontrol:SI-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-03 -> Req. 206",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 207",
+      "target": "mindrium_xa:securitycontrol:SI-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-03 -> Req. 207",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 207",
+      "target": "mindrium_xa:securitycontrol:SI-05",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-05 -> Req. 207",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-01",
+      "target": "mindrium_xa:requirement:Req. 2",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-01 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-01",
+      "target": "mindrium_xa:requirement:Req. 102",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-01 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-01",
+      "target": "mindrium_xa:requirement:Req. 201",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-01 -> Req. 201",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-02",
+      "target": "mindrium_xa:requirement:Req. 2",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-02 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-02",
+      "target": "mindrium_xa:requirement:Req. 102",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-02 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-02",
+      "target": "mindrium_xa:requirement:Req. 202",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-02 -> Req. 202",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-03",
+      "target": "mindrium_xa:requirement:Req. 2",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-03 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-03",
+      "target": "mindrium_xa:requirement:Req. 100",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-03 -> Req. 100",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-03",
+      "target": "mindrium_xa:requirement:Req. 102",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-03 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-03",
+      "target": "mindrium_xa:requirement:Req. 202",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-03 -> Req. 202",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-03",
+      "target": "mindrium_xa:requirement:Req. 203",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-03 -> Req. 203",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-04",
+      "target": "mindrium_xa:requirement:Req. 2",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-04",
+      "target": "mindrium_xa:requirement:Req. 5",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 5",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-04",
+      "target": "mindrium_xa:requirement:Req. 6",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 6",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-04",
+      "target": "mindrium_xa:requirement:Req. 12",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 12",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-04",
+      "target": "mindrium_xa:requirement:Req. 100",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 100",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-04",
+      "target": "mindrium_xa:requirement:Req. 102",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-04",
+      "target": "mindrium_xa:requirement:Req. 201",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 201",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-04",
+      "target": "mindrium_xa:requirement:Req. 202",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-04 -> Req. 202",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-05",
+      "target": "mindrium_xa:requirement:Req. 2",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-05 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-05",
+      "target": "mindrium_xa:requirement:Req. 102",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-05 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-05",
+      "target": "mindrium_xa:requirement:Req. 202",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-05 -> Req. 202",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-06",
+      "target": "mindrium_xa:requirement:Req. 2",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-06 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-06",
+      "target": "mindrium_xa:requirement:Req. 6",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-06 -> Req. 6",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-06",
+      "target": "mindrium_xa:requirement:Req. 102",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-06 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-06",
+      "target": "mindrium_xa:requirement:Req. 201",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-06 -> Req. 201",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-07",
+      "target": "mindrium_xa:requirement:Req. 6",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-07 -> Req. 6",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-07",
+      "target": "mindrium_xa:requirement:Req. 102",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-07 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-07",
+      "target": "mindrium_xa:requirement:Req. 105",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-07 -> Req. 105",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-07",
+      "target": "mindrium_xa:requirement:Req. 201",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-07 -> Req. 201",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-08",
+      "target": "mindrium_xa:requirement:Req. 2",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-08 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:IA-08",
+      "target": "mindrium_xa:requirement:Req. 201",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability IA-08 -> Req. 201",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-01",
+      "target": "mindrium_xa:requirement:Req. 101",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-01 -> Req. 101",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-01",
+      "target": "mindrium_xa:requirement:Req. 109",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-01 -> Req. 109",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-01",
+      "target": "mindrium_xa:requirement:Req. 110",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-01 -> Req. 110",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-01",
+      "target": "mindrium_xa:requirement:Req. 201",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-01 -> Req. 201",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-01",
+      "target": "mindrium_xa:requirement:Req. 204",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-01 -> Req. 204",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-03",
+      "target": "mindrium_xa:requirement:Req. 12",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-03 -> Req. 12",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-03",
+      "target": "mindrium_xa:requirement:Req. 102",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-03 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-03",
+      "target": "mindrium_xa:requirement:Req. 206",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-03 -> Req. 206",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-04",
+      "target": "mindrium_xa:requirement:Req. 100",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-04 -> Req. 100",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-04",
+      "target": "mindrium_xa:requirement:Req. 101",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-04 -> Req. 101",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-04",
+      "target": "mindrium_xa:requirement:Req. 102",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-04 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-04",
+      "target": "mindrium_xa:requirement:Req. 103",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-04 -> Req. 103",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-04",
+      "target": "mindrium_xa:requirement:Req. 105",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-04 -> Req. 105",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-04",
+      "target": "mindrium_xa:requirement:Req. 110",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-04 -> Req. 110",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-05",
+      "target": "mindrium_xa:requirement:Req. 103",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-05 -> Req. 103",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-06",
+      "target": "mindrium_xa:requirement:Req. 103",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-06 -> Req. 103",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-07",
+      "target": "mindrium_xa:requirement:Req. 103",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-07 -> Req. 103",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:UC-07",
+      "target": "mindrium_xa:requirement:Req. 110",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability UC-07 -> Req. 110",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-01",
+      "target": "mindrium_xa:requirement:Req. 5",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-01 -> Req. 5",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-01",
+      "target": "mindrium_xa:requirement:Req. 104",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-01 -> Req. 104",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-01",
+      "target": "mindrium_xa:requirement:Req. 205",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-01 -> Req. 205",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-02",
+      "target": "mindrium_xa:requirement:Req. 1",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-02 -> Req. 1",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-03",
+      "target": "mindrium_xa:requirement:Req. 5",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-03 -> Req. 5",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-03",
+      "target": "mindrium_xa:requirement:Req. 104",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-03 -> Req. 104",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-03",
+      "target": "mindrium_xa:requirement:Req. 206",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-03 -> Req. 206",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-03",
+      "target": "mindrium_xa:requirement:Req. 207",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-03 -> Req. 207",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-03",
+      "target": "mindrium_xa:requirement:Req. 208",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-03 -> Req. 208",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 208",
+      "target": "mindrium_xa:securitycontrol:SI-03",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-03 -> Req. 208",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 208",
+      "target": "mindrium_xa:securitycontrol:SI-06",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-06 -> Req. 208",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:requirement:Req. 208",
+      "target": "mindrium_xa:securitycontrol:SI-07",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-07 -> Req. 208",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {
+        "bidirectional": true
+      }
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-04",
+      "target": "mindrium_xa:requirement:Req. 1",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-04 -> Req. 1",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-05",
+      "target": "mindrium_xa:requirement:Req. 2",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-05 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-05",
+      "target": "mindrium_xa:requirement:Req. 14",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-05 -> Req. 14",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-05",
+      "target": "mindrium_xa:requirement:Req. 15",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-05 -> Req. 15",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-05",
+      "target": "mindrium_xa:requirement:Req. 202",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-05 -> Req. 202",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-05",
+      "target": "mindrium_xa:requirement:Req. 203",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-05 -> Req. 203",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-05",
+      "target": "mindrium_xa:requirement:Req. 207",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-05 -> Req. 207",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-06",
+      "target": "mindrium_xa:requirement:Req. 4",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-06 -> Req. 4",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-06",
+      "target": "mindrium_xa:requirement:Req. 6",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-06 -> Req. 6",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-06",
+      "target": "mindrium_xa:requirement:Req. 7",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-06 -> Req. 7",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-06",
+      "target": "mindrium_xa:requirement:Req. 208",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-06 -> Req. 208",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-07",
+      "target": "mindrium_xa:requirement:Req. 4",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-07 -> Req. 4",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-07",
+      "target": "mindrium_xa:requirement:Req. 6",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-07 -> Req. 6",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-07",
+      "target": "mindrium_xa:requirement:Req. 7",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-07 -> Req. 7",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-07",
+      "target": "mindrium_xa:requirement:Req. 208",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-07 -> Req. 208",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-08",
+      "target": "mindrium_xa:requirement:Req. 1",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-08 -> Req. 1",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:SI-09",
+      "target": "mindrium_xa:requirement:Req. 1",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability SI-09 -> Req. 1",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-01",
+      "target": "mindrium_xa:requirement:Req. 2",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-01",
+      "target": "mindrium_xa:requirement:Req. 5",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 5",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-01",
+      "target": "mindrium_xa:requirement:Req. 6",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 6",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-01",
+      "target": "mindrium_xa:requirement:Req. 12",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 12",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-01",
+      "target": "mindrium_xa:requirement:Req. 15",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 15",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-01",
+      "target": "mindrium_xa:requirement:Req. 18",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 18",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-01",
+      "target": "mindrium_xa:requirement:Req. 104",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 104",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-01",
+      "target": "mindrium_xa:requirement:Req. 109",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 109",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-01",
+      "target": "mindrium_xa:requirement:Req. 205",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-01 -> Req. 205",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-02",
+      "target": "mindrium_xa:requirement:Req. 2",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-02 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-03",
+      "target": "mindrium_xa:requirement:Req. 2",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-03 -> Req. 2",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-03",
+      "target": "mindrium_xa:requirement:Req. 5",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-03 -> Req. 5",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-03",
+      "target": "mindrium_xa:requirement:Req. 100",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-03 -> Req. 100",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-03",
+      "target": "mindrium_xa:requirement:Req. 102",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-03 -> Req. 102",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-03",
+      "target": "mindrium_xa:requirement:Req. 104",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-03 -> Req. 104",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:DC-03",
+      "target": "mindrium_xa:requirement:Req. 205",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability DC-03 -> Req. 205",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:RA-01",
+      "target": "mindrium_xa:requirement:Req. 105",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-01 -> Req. 105",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:RA-02",
+      "target": "mindrium_xa:requirement:Req. 106",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-02 -> Req. 106",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:RA-03",
+      "target": "mindrium_xa:requirement:Req. 106",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-03 -> Req. 106",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:RA-04",
+      "target": "mindrium_xa:requirement:Req. 5",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-04 -> Req. 5",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:RA-04",
+      "target": "mindrium_xa:requirement:Req. 104",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-04 -> Req. 104",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:RA-04",
+      "target": "mindrium_xa:requirement:Req. 105",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-04 -> Req. 105",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:RA-04",
+      "target": "mindrium_xa:requirement:Req. 205",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-04 -> Req. 205",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:RA-05",
+      "target": "mindrium_xa:requirement:Req. 5",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-05 -> Req. 5",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:RA-05",
+      "target": "mindrium_xa:requirement:Req. 104",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-05 -> Req. 104",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    },
+    {
+      "source": "mindrium_xa:securitycontrol:RA-05",
+      "target": "mindrium_xa:requirement:Req. 205",
+      "type": "TRACES_TO",
+      "confidence": 1.0,
+      "evidence": "traceability RA-05 -> Req. 205",
+      "source_file": "data/cases/mindrium_xa/requirements.json",
+      "metadata": {}
+    }
+  ]
+}

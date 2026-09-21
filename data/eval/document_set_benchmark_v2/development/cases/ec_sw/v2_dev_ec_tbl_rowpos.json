@@ -1,0 +1,29 @@
+{
+  "case_id": "v2_dev_ec_tbl_rowpos",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "Req. 11 추적성 행 갱신",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/mdtm_row_shuffle.docx",
+      "filename": "mdtm_row_shuffle.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM_ROW_SHUFFLE"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "table_structure",
+    "row_position"
+  ],
+  "difficulty": "medium",
+  "notes": "row position metamorphic",
+  "source_type": "GENERATED",
+  "transformation": "table_row_position",
+  "base_case_id": "v2_dev_ec_req11_exact",
+  "fixture_fingerprint": "5238d507ca5f95ca36511ad068a112ce13c7842e298329425bd871079dd08254",
+  "sanitization_status": "N/A"
+}

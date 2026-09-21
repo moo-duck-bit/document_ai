@@ -1,0 +1,210 @@
+{
+  "query_intent": {
+    "raw_change_request": "Results section update",
+    "canonical_concepts": [
+      "RESULTS"
+    ],
+    "requested_operation": "UPDATE",
+    "requested_node_roles": [
+      "PARAGRAPH_BODY",
+      "DOCUMENT_HEADING",
+      "TEMPLATE_SECTION",
+      "SECTION_CONTAINER"
+    ],
+    "target_section_concepts": [
+      "RESULTS"
+    ],
+    "intent_label": "SECTION_UPDATE",
+    "table_intent": false,
+    "list_intent": false,
+    "add_intent": false,
+    "update_intent": true,
+    "delete_intent": false,
+    "document_level": false,
+    "ambiguity": false,
+    "confidence": 0.8999999999999999,
+    "reason_codes": [
+      "op_update",
+      "intent:SECTION_UPDATE"
+    ]
+  },
+  "structural_match_matrix": [
+    {
+      "candidate_node_id": "heading_0002",
+      "concept_match": 1.0,
+      "section_match": 1.0,
+      "heading_match": 1.0,
+      "node_role_match": 0.88,
+      "operation_role_match": 0.9,
+      "parent_context_match": 0.8,
+      "table_structure_match": 0.0,
+      "paragraph_specificity": 0.45,
+      "template_alignment_score": 0.85,
+      "physical_editability_score": 1.0,
+      "virtual_target_penalty": 0.0,
+      "document_context_penalty": 0.0,
+      "ambiguity_penalty": 0.0,
+      "reason_codes": [
+        "section_concept_hit",
+        "role_pref:DOCUMENT_HEADING",
+        "direct_child_match",
+        "eval_equivalent_alignment"
+      ]
+    },
+    {
+      "candidate_node_id": "heading_0003",
+      "concept_match": 1.0,
+      "section_match": 1.0,
+      "heading_match": 1.0,
+      "node_role_match": 0.88,
+      "operation_role_match": 0.9,
+      "parent_context_match": 0.8,
+      "table_structure_match": 0.0,
+      "paragraph_specificity": 0.45,
+      "template_alignment_score": 0.85,
+      "physical_editability_score": 1.0,
+      "virtual_target_penalty": 0.0,
+      "document_context_penalty": 0.0,
+      "ambiguity_penalty": 0.0,
+      "reason_codes": [
+        "section_concept_hit",
+        "role_pref:DOCUMENT_HEADING",
+        "direct_child_match",
+        "eval_equivalent_alignment"
+      ]
+    },
+    {
+      "candidate_node_id": "general_report_v1.results",
+      "concept_match": 1.0,
+      "section_match": 1.0,
+      "heading_match": 0.0,
+      "node_role_match": 1.0,
+      "operation_role_match": 0.95,
+      "parent_context_match": 0.0,
+      "table_structure_match": 0.0,
+      "paragraph_specificity": 0.4,
+      "template_alignment_score": 0.85,
+      "physical_editability_score": 0.25,
+      "virtual_target_penalty": 0.0,
+      "document_context_penalty": 0.0,
+      "ambiguity_penalty": 0.0,
+      "reason_codes": [
+        "section_concept_hit",
+        "role_pref:TEMPLATE_SECTION",
+        "update_template_section_eval",
+        "eval_equivalent_alignment"
+      ]
+    }
+  ],
+  "ranking_results": {
+    "ranked_node_ids": [
+      "heading_0002",
+      "heading_0003",
+      "general_report_v1.results"
+    ],
+    "n_ranked": 3
+  },
+  "ranking_candidates": [
+    {
+      "node_id": "heading_0002",
+      "status": "REVIEW_REQUIRED",
+      "rank_tier": 0,
+      "final_score": 228.69,
+      "structural_role": "DOCUMENT_HEADING",
+      "score_components": {
+        "tier_base": 120.0,
+        "concept_match": 25.0,
+        "section_match": 10.0,
+        "heading_match": 8.0,
+        "node_role_match": 15.84,
+        "operation_role_match": 18.0,
+        "parent_context_match": 9.600000000000001,
+        "table_structure_match": 0.0,
+        "paragraph_specificity": 4.5,
+        "template_alignment_score": 12.75,
+        "physical_editability_score": 5.0,
+        "virtual_target_penalty": -0.0,
+        "document_context_penalty": -0.0,
+        "ambiguity_penalty": -0.0
+      },
+      "reason_codes": [
+        "section_concept_hit",
+        "role_pref:DOCUMENT_HEADING",
+        "direct_child_match",
+        "eval_equivalent_alignment",
+        "RANK_TIER_0"
+      ],
+      "rank": 1
+    },
+    {
+      "node_id": "heading_0003",
+      "status": "REVIEW_REQUIRED",
+      "rank_tier": 0,
+      "final_score": 228.69,
+      "structural_role": "DOCUMENT_HEADING",
+      "score_components": {
+        "tier_base": 120.0,
+        "concept_match": 25.0,
+        "section_match": 10.0,
+        "heading_match": 8.0,
+        "node_role_match": 15.84,
+        "operation_role_match": 18.0,
+        "parent_context_match": 9.600000000000001,
+        "table_structure_match": 0.0,
+        "paragraph_specificity": 4.5,
+        "template_alignment_score": 12.75,
+        "physical_editability_score": 5.0,
+        "virtual_target_penalty": -0.0,
+        "document_context_penalty": -0.0,
+        "ambiguity_penalty": -0.0
+      },
+      "reason_codes": [
+        "section_concept_hit",
+        "role_pref:DOCUMENT_HEADING",
+        "direct_child_match",
+        "eval_equivalent_alignment",
+        "RANK_TIER_0"
+      ],
+      "rank": 2
+    },
+    {
+      "node_id": "general_report_v1.results",
+      "status": "REVIEW_REQUIRED",
+      "rank_tier": 1,
+      "final_score": 190.0,
+      "structural_role": "TEMPLATE_SECTION",
+      "score_components": {
+        "tier_base": 100.0,
+        "concept_match": 25.0,
+        "section_match": 10.0,
+        "heading_match": 0.0,
+        "node_role_match": 18.0,
+        "operation_role_match": 19.0,
+        "parent_context_match": 0.0,
+        "table_structure_match": 0.0,
+        "paragraph_specificity": 4.0,
+        "template_alignment_score": 12.75,
+        "physical_editability_score": 1.25,
+        "virtual_target_penalty": -0.0,
+        "document_context_penalty": -0.0,
+        "ambiguity_penalty": -0.0
+      },
+      "reason_codes": [
+        "section_concept_hit",
+        "role_pref:TEMPLATE_SECTION",
+        "update_template_section_eval",
+        "eval_equivalent_alignment",
+        "RANK_TIER_1",
+        "exact_section_concept_template"
+      ],
+      "rank": 3
+    }
+  ],
+  "validation": {
+    "operation_role_rank_consistent": true,
+    "virtual_target_only_for_add": true,
+    "table_intent_prefers_table_structure": true,
+    "generic_ranking_deterministic": true,
+    "issues": []
+  }
+}

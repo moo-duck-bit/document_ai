@@ -1,0 +1,36 @@
+[
+  {
+    "candidate_id": "icand_ddf64eb1d6",
+    "source_document_id": "PROPOSAL_BASE",
+    "canonical_document_id": "GENERIC_BUSINESS_PROPOSAL",
+    "short_id": "PROPOSAL",
+    "document_type": "BUSINESS_PROPOSAL",
+    "document_role": "business_proposal",
+    "domain_pack_id": "generic_document_v1",
+    "template_id": "business_proposal_v1",
+    "score": 51.65,
+    "rank": 1,
+    "rank_tier": 3,
+    "status": "CANDIDATE",
+    "reason_codes": [
+      "filename_hint:PROPOSAL",
+      "filename_role_hint",
+      "heading_or_title",
+      "proposal_heading_concepts"
+    ],
+    "evidence_ids": [
+      "fn_3eee49c6",
+      "fnrole_61c412f1",
+      "hd_ca4bdd52",
+      "hd_0bc2477a",
+      "hd_ec49007c",
+      "hd_7e7bb3a4",
+      "hd_1290585c",
+      "concept_22bf2bf3"
+    ],
+    "conflicts": [],
+    "metadata": {
+      "profile": "PROPOSAL"
+    }
+  }
+]

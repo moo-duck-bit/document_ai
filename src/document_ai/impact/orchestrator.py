@@ -11,7 +11,6 @@ from document_ai.impact.change import (
     merge_design_item_changes,
     merge_requirement_changes,
 )
-from document_ai.impact.graph import TraceabilityGraph
 from document_ai.learn.extract_design_items import DesignItemIndex, load_design_items, save_design_items
 from document_ai.learn.extract_requirements import save_case_requirements
 from document_ai.learn.extract_security_tests import load_security_tests
@@ -25,21 +24,33 @@ DEFAULT_OUTPUTS = {
 }
 
 
-def compute_impact(case_dir: Path, change: dict[str, Any]) -> dict[str, Any]:
+def compute_impact(
+    case_dir: Path,
+    change: dict[str, Any],
+    *,
+    knowledge_graph: Any | None = None,
+) -> dict[str, Any]:
     req_path = case_dir / "requirements.json"
     if not req_path.exists():
         raise FileNotFoundError(f"Missing {req_path} — run extract-requirements first")
 
     payload = json.loads(req_path.read_text(encoding="utf-8"))
-    graph = TraceabilityGraph(payload.get("traceability", []))
 
     design_index = None
     design_path = case_dir / "design_items.json"
     if design_path.exists():
         design_index = DesignItemIndex(load_design_items(design_path).get("items", []))
 
+    from document_ai.platform.memory.impact_engine import resolve_impact_engine
+
+    engine = resolve_impact_engine(
+        case_dir,
+        payload.get("traceability", []),
+        design_index=design_index,
+        knowledge_graph=knowledge_graph,
+    )
     req_ids = changed_req_ids(change)
-    impact = graph.impact(req_ids, design_index=design_index)
+    impact = engine.impact(req_ids, design_index=design_index)
 
     return {
         "change_id": change.get("change_id"),

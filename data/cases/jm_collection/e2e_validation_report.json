@@ -1,0 +1,54 @@
+{
+  "case_id": "jm_collection",
+  "case_dir": "data\\cases\\jm_collection",
+  "project_type": "ec_sw",
+  "display_name": "jm_collection",
+  "status": "PASS",
+  "harness": {
+    "ok": true,
+    "report": {
+      "ok": true,
+      "skipped": true,
+      "reason": "outputs already present"
+    }
+  },
+  "quality": {
+    "status": "PASS",
+    "scores": {
+      "structure": 100.0,
+      "terminology": 100.0,
+      "completeness": 100.0,
+      "consistency": 100.0,
+      "traceability": 100.0,
+      "residual_text": 84.0,
+      "overall": 96.8
+    },
+    "report_path": "data\\cases\\jm_collection\\quality_report.md"
+  },
+  "validation": {
+    "status": "PASS",
+    "scores": {
+      "overall": 87.5,
+      "docx_overall": 86.2,
+      "mdsr": 100.0,
+      "mddr": 92.0,
+      "xxcs": 66.7,
+      "semantic": 95.0
+    },
+    "report_paths": {
+      "markdown": "data\\cases\\jm_collection\\validation_report.md",
+      "json": "data\\cases\\jm_collection\\validation_report.json",
+      "human_review_checklist": "data\\cases\\jm_collection\\human_review_checklist.md"
+    },
+    "gold_paths": {
+      "mdsr": "data\\gold\\mdsr\\jm_collection.docx",
+      "mddr": "data\\gold\\mddr\\jm_collection.docx"
+    }
+  },
+  "expectations": {},
+  "checks": {
+    "harness_ok": true,
+    "quality_pass": true,
+    "validation_pass": true
+  }
+}

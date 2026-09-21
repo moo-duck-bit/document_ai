@@ -1,0 +1,132 @@
+{
+  "safety_first_order": [
+    "mu_zero_rate",
+    "mean_mu_sum",
+    "mean_false_patch",
+    "mean_unsafe_write",
+    "mean_original_broken",
+    "mean_unapproved_write",
+    "mean_recall_at_3",
+    "mean_cell_f1",
+    "mean_field_f1"
+  ],
+  "holdout_split": {
+    "seed": "document-tnr-small-a-holdout-v1",
+    "holdout_case_ids": [
+      "case_001",
+      "case_011",
+      "case_017",
+      "case_012",
+      "case_015",
+      "case_016",
+      "case_008"
+    ],
+    "dev_case_ids": [
+      "case_006",
+      "case_026",
+      "case_023",
+      "case_010",
+      "case_003",
+      "case_014",
+      "case_021",
+      "case_005",
+      "case_019",
+      "case_000",
+      "case_002",
+      "case_013",
+      "case_004",
+      "case_007",
+      "case_009",
+      "case_018",
+      "case_025",
+      "case_022",
+      "case_024",
+      "case_020"
+    ]
+  },
+  "splits": {
+    "full": {
+      "demo_safe": {
+        "n": 27,
+        "mu_zero_rate": 1.0,
+        "mean_mu_sum": 0.0,
+        "mean_false_patch": 0.0,
+        "mean_unsafe_write": 0.0,
+        "mean_original_broken": 0.0,
+        "mean_unapproved_write": 0.0,
+        "mean_recall_at_3": 0.9907407407407407,
+        "mean_cell_f1": 1.0,
+        "mean_field_f1": 1.0
+      },
+      "live": {
+        "n": 27,
+        "mu_zero_rate": 1.0,
+        "mean_mu_sum": 0.0,
+        "mean_false_patch": 0.0,
+        "mean_unsafe_write": 0.0,
+        "mean_original_broken": 0.0,
+        "mean_unapproved_write": 0.0,
+        "mean_recall_at_3": 0.9907407407407407,
+        "mean_cell_f1": 1.0,
+        "mean_field_f1": 1.0
+      }
+    },
+    "holdout": {
+      "demo_safe": {
+        "n": 7,
+        "mu_zero_rate": 1.0,
+        "mean_mu_sum": 0.0,
+        "mean_false_patch": 0.0,
+        "mean_unsafe_write": 0.0,
+        "mean_original_broken": 0.0,
+        "mean_unapproved_write": 0.0,
+        "mean_recall_at_3": 1.0,
+        "mean_cell_f1": 1.0,
+        "mean_field_f1": 1.0
+      },
+      "live": {
+        "n": 7,
+        "mu_zero_rate": 1.0,
+        "mean_mu_sum": 0.0,
+        "mean_false_patch": 0.0,
+        "mean_unsafe_write": 0.0,
+        "mean_original_broken": 0.0,
+        "mean_unapproved_write": 0.0,
+        "mean_recall_at_3": 1.0,
+        "mean_cell_f1": 1.0,
+        "mean_field_f1": 1.0
+      }
+    },
+    "dev": {
+      "demo_safe": {
+        "n": 20,
+        "mu_zero_rate": 1.0,
+        "mean_mu_sum": 0.0,
+        "mean_false_patch": 0.0,
+        "mean_unsafe_write": 0.0,
+        "mean_original_broken": 0.0,
+        "mean_unapproved_write": 0.0,
+        "mean_recall_at_3": 0.9875,
+        "mean_cell_f1": 1.0,
+        "mean_field_f1": 1.0
+      },
+      "live": {
+        "n": 20,
+        "mu_zero_rate": 1.0,
+        "mean_mu_sum": 0.0,
+        "mean_false_patch": 0.0,
+        "mean_unsafe_write": 0.0,
+        "mean_original_broken": 0.0,
+        "mean_unapproved_write": 0.0,
+        "mean_recall_at_3": 0.9875,
+        "mean_cell_f1": 1.0,
+        "mean_field_f1": 1.0
+      }
+    }
+  },
+  "notes": {
+    "primary": "Safety (μ=0 rate) first; R@3 / cell F1 / field F1 are secondary.",
+    "holdout": "Sealed by seed — do not tune on holdout.",
+    "field_f1": "Secondary Form Fill signal on structured cells only (Small-A)."
+  }
+}

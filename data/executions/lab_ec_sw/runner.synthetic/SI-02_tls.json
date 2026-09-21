@@ -1,0 +1,24 @@
+{
+  "check": "tls_check",
+  "expected": {
+    "minimum_certificate_days_remaining": 30,
+    "minimum_tls_version": "TLSv1.2"
+  },
+  "failures": [
+    "TLSv1.0 is below required TLSv1.2"
+  ],
+  "observation": {
+    "certificate_days_remaining": 1263,
+    "certificate_issuer": "CN=fixture-ca",
+    "certificate_not_after": "2030-01-01T00:00:00Z",
+    "certificate_subject": "CN=fixture",
+    "connected": true,
+    "host": "fixture.example.com",
+    "hostname_matches": true,
+    "negotiated_tls_version": "TLSv1.0",
+    "port": 443,
+    "transport": "mock"
+  },
+  "ssl_verification_enabled": true,
+  "uncertain": []
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "item_id": "business_proposal_v1.risks",
+    "document_id": "PROPOSAL_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "business_proposal_v1.risks",
+    "display_name": "위험 관리",
+    "reason_codes": [
+      "aligned_template_section_eval_candidate",
+      "template_document_aligned"
+    ],
+    "reason_text_ko": "검토가 필요한 항목입니다 (사유 코드: aligned_template_section_eval_candidate). 검토가 필요한 항목입니다 (사유 코드: template_document_aligned).",
+    "evidence": [],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "PROPOSAL_PILOT_BASE.p0006",
+    "document_id": "PROPOSAL_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "heading_0006",
+    "display_name": "위험 관리",
+    "reason_codes": [
+      "paragraph_concept_match"
+    ],
+    "reason_text_ko": "요청 의미와 문서 문단 주제가 일치합니다.",
+    "evidence": [
+      "위험"
+    ],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  },
+  {
+    "item_id": "PROPOSAL_PILOT_BASE.p0007",
+    "document_id": "PROPOSAL_PILOT_BASE",
+    "kind": "REVIEW_REQUIRED",
+    "node_id": "heading_0007",
+    "display_name": "위험 관리에 대한 설명입니다.",
+    "reason_codes": [
+      "paragraph_concept_match"
+    ],
+    "reason_text_ko": "요청 의미와 문서 문단 주제가 일치합니다.",
+    "evidence": [
+      "위험"
+    ],
+    "decision": "PENDING",
+    "edited_text": null,
+    "notes": "",
+    "decided_by": null,
+    "decided_at": null
+  }
+]

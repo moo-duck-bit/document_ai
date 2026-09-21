@@ -1,0 +1,96 @@
+[
+  {
+    "decision_id": "idec_68105be29062",
+    "source_document_id": "MDTM_BASE",
+    "canonical_document_id": "EC_SW_MDTM",
+    "short_id": "MDTM",
+    "document_type": "MDTM",
+    "document_role": "traceability",
+    "domain_pack_id": "ec_sw_v1",
+    "template_id": "ec_sw_mdtm",
+    "decision_status": "AUTO_SELECTED",
+    "top_score": 136.45,
+    "second_score": 51.3,
+    "score_margin": 85.15,
+    "rank_tier": 1,
+    "reason_codes": [
+      "filename_hint:MDTM",
+      "filename_role_hint",
+      "heading_or_title",
+      "req_with_design_or_test_same_row",
+      "requirement_id_density",
+      "traceability_matrix_structure",
+      "tier1_mdtm_structure",
+      "auto_selected_strong_evidence"
+    ],
+    "evidence": [
+      {
+        "signal_id": "fn_b1421df0",
+        "type": "FILENAME_TOKEN",
+        "value": "mdtm_base.docx"
+      },
+      {
+        "signal_id": "fnrole_5a58248c",
+        "type": "DOCUMENT_ROLE_HINT",
+        "value": "traceability"
+      },
+      {
+        "signal_id": "fmt_d0630222",
+        "type": "FILE_FORMAT",
+        "value": ".docx"
+      },
+      {
+        "signal_id": "hd_1c56e19e",
+        "type": "DOCUMENT_TITLE",
+        "value": "Traceability Matrix"
+      },
+      {
+        "signal_id": "tbln_fb14700f",
+        "type": "TEMPLATE_STRUCTURE",
+        "value": "tables:1"
+      },
+      {
+        "signal_id": "th_e89a04f9",
+        "type": "TABLE_HEADER",
+        "value": "requirement design test note"
+      },
+      {
+        "signal_id": "idrow_7fd2db91",
+        "type": "IDENTIFIER_PATTERN",
+        "value": "Req. 10,5.1.1,TC-10,5.1.1"
+      },
+      {
+        "signal_id": "idrow_a02cf053",
+        "type": "IDENTIFIER_PATTERN",
+        "value": "Req. 11,5.1.2,TC-11,5.1.2"
+      },
+      {
+        "signal_id": "idrow_70934097",
+        "type": "IDENTIFIER_PATTERN",
+        "value": "Req. 12,5.1.3,TC-12,5.1.3"
+      },
+      {
+        "signal_id": "idrow_abac91b6",
+        "type": "IDENTIFIER_PATTERN",
+        "value": "Req. 101,6.0.1,TC-101,6.0.1"
+      },
+      {
+        "signal_id": "reqc_19737955",
+        "type": "IDENTIFIER_PATTERN",
+        "value": "requirement_count:4"
+      },
+      {
+        "signal_id": "mtx_1e2a6ef9",
+        "type": "TEMPLATE_STRUCTURE",
+        "value": "traceability_matrix"
+      }
+    ],
+    "human_review_required": false,
+    "auto_selected": true,
+    "metadata": {
+      "temporary_source_id": "MDTM_BASE",
+      "canonical_id_deterministic": true,
+      "filename_only": false
+    }
+  }
+]

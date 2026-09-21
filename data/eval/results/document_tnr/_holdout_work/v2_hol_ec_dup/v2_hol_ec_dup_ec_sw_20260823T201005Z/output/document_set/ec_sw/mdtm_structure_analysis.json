@@ -1,0 +1,142 @@
+{
+  "document_id": "MDTM",
+  "source_path": "/workspace/data/eval/document_set_benchmark_v2/fixtures/ec_sw/mdtm_base.docx",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "rows": 5,
+      "cols": 4,
+      "merged_cell_count": 0,
+      "req_like_cells": 5,
+      "header_candidates": [
+        {
+          "row_index": 0,
+          "cells": [
+            "Requirement",
+            "Design",
+            "Test",
+            "Note"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Req. 10",
+            "5.1.1",
+            "TC-10",
+            ""
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Req. 11",
+            "5.1.2",
+            "TC-11",
+            ""
+          ]
+        }
+      ],
+      "column_role_candidates": [
+        {
+          "column_index": 0,
+          "header": "Req. 10",
+          "role": "requirement",
+          "status": "CONFIRMED",
+          "evidence": [
+            "marker:req"
+          ]
+        },
+        {
+          "column_index": 1,
+          "header": "5.1.1",
+          "role": "UNKNOWN",
+          "status": "UNKNOWN",
+          "evidence": []
+        },
+        {
+          "column_index": 2,
+          "header": "TC-10",
+          "role": "UNKNOWN",
+          "status": "UNKNOWN",
+          "evidence": []
+        },
+        {
+          "column_index": 3,
+          "header": "",
+          "role": "UNKNOWN",
+          "status": "UNKNOWN",
+          "evidence": []
+        }
+      ]
+    }
+  ],
+  "header_candidates": [
+    {
+      "row_index": 0,
+      "cells": [
+        "Requirement",
+        "Design",
+        "Test",
+        "Note"
+      ]
+    },
+    {
+      "row_index": 1,
+      "cells": [
+        "Req. 10",
+        "5.1.1",
+        "TC-10",
+        ""
+      ]
+    },
+    {
+      "row_index": 2,
+      "cells": [
+        "Req. 11",
+        "5.1.2",
+        "TC-11",
+        ""
+      ]
+    }
+  ],
+  "column_role_candidates": [
+    {
+      "column_index": 0,
+      "header": "Req. 10",
+      "role": "requirement",
+      "status": "CONFIRMED",
+      "evidence": [
+        "marker:req"
+      ]
+    },
+    {
+      "column_index": 1,
+      "header": "5.1.1",
+      "role": "UNKNOWN",
+      "status": "UNKNOWN",
+      "evidence": []
+    },
+    {
+      "column_index": 2,
+      "header": "TC-10",
+      "role": "UNKNOWN",
+      "status": "UNKNOWN",
+      "evidence": []
+    },
+    {
+      "column_index": 3,
+      "header": "",
+      "role": "UNKNOWN",
+      "status": "UNKNOWN",
+      "evidence": []
+    }
+  ],
+  "merged_cell_count": 0,
+  "empty_cell_ratio": 0.2,
+  "duplicate_identifier_counts": {},
+  "analysis_status": "OK",
+  "warnings": [],
+  "primary_table_index": 0
+}

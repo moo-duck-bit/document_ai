@@ -96,17 +96,27 @@ def apply_labelled_rows(doc: Document, facts: dict[str, Any]) -> list[str]:
     return applied
 
 
+def _uses_rich_content(facts: dict[str, Any]) -> bool:
+    return bool(facts.get("mdsr_content") or facts.get("mddr_content"))
+
+
 def merge_content_facts(
     facts: dict[str, Any],
     content_payload: dict[str, Any] | None,
 ) -> dict[str, Any]:
     merged = dict(facts)
+    rich_content = _uses_rich_content(facts)
     if not content_payload:
         return merged
 
     for key, value in content_payload.get("fields", {}).items():
         if key not in merged and value:
+            if rich_content and (key.startswith("paragraph_") or key.startswith("table1_")):
+                continue
             merged[key] = value
+
+    if rich_content:
+        return merged
 
     standards = facts.get("standards")
     if isinstance(standards, list):
@@ -209,6 +219,8 @@ def fill_from_facts(
     out_path.parent.mkdir(parents=True, exist_ok=True)
     tmp_out = Path(tempfile.gettempdir()) / f"document_ai_out_{out_path.name}"
     doc.save(str(tmp_out))
+    if out_path.exists():
+        out_path.unlink()
     shutil.copy2(tmp_out, out_path)
     return {
         "applied": applied,

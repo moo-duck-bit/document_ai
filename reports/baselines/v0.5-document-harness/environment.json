@@ -1,0 +1,11 @@
+{
+  "python_version": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "cwd": ".",
+  "project_root": ".",
+  "env_markers": {
+    "CI": "",
+    "VIRTUAL_ENV": ""
+  },
+  "collected_at": "2026-07-17T17:12:46Z"
+}

@@ -1,0 +1,178 @@
+{
+  "role": "secondary_form_fill_signal",
+  "note": "Small-A structured cells only (PARAM + exact DESC). Not North Star full form-fill.",
+  "split": "holdout",
+  "holdout_case_ids": [
+    "case_001",
+    "case_011",
+    "case_017",
+    "case_012",
+    "case_015",
+    "case_016",
+    "case_008"
+  ],
+  "mean_field_f1": 1.0,
+  "by_case": [
+    {
+      "case_id": "case_001",
+      "mode": "live",
+      "field_f1": 1.0,
+      "field_count": 2,
+      "matched_count": 2,
+      "fields": [
+        {
+          "node_id": "DI_012_PARAM",
+          "value_type": "structured",
+          "expected": "diary_input_frequency=2_per_week",
+          "actual": "diary_input_frequency=2_per_week",
+          "matched": true
+        },
+        {
+          "node_id": "REQ_007_DESC",
+          "value_type": "free_text_structured",
+          "expected": "사용자는 혈압일기를 주 2회 입력할 수 있어야 한다.",
+          "actual": "사용자는 혈압일기를 주 2회 입력할 수 있어야 한다.",
+          "matched": true
+        }
+      ]
+    },
+    {
+      "case_id": "case_011",
+      "mode": "live",
+      "field_f1": 1.0,
+      "field_count": 2,
+      "matched_count": 2,
+      "fields": [
+        {
+          "node_id": "DI_012_PARAM",
+          "value_type": "structured",
+          "expected": "diary_input_frequency=2_per_week",
+          "actual": "diary_input_frequency=2_per_week",
+          "matched": true
+        },
+        {
+          "node_id": "REQ_007_DESC",
+          "value_type": "free_text_structured",
+          "expected": "사용자는 증상 일기를 주 2회 입력할 수 있어야 한다.",
+          "actual": "사용자는 증상 일기를 주 2회 입력할 수 있어야 한다.",
+          "matched": true
+        }
+      ]
+    },
+    {
+      "case_id": "case_017",
+      "mode": "live",
+      "field_f1": 1.0,
+      "field_count": 2,
+      "matched_count": 2,
+      "fields": [
+        {
+          "node_id": "DI_012_PARAM",
+          "value_type": "structured",
+          "expected": "diary_input_frequency=4_per_week",
+          "actual": "diary_input_frequency=4_per_week",
+          "matched": true
+        },
+        {
+          "node_id": "REQ_007_DESC",
+          "value_type": "free_text_structured",
+          "expected": "사용자는 항암 부작용 일기를 주 4회 입력할 수 있어야 한다.",
+          "actual": "사용자는 항암 부작용 일기를 주 4회 입력할 수 있어야 한다.",
+          "matched": true
+        }
+      ]
+    },
+    {
+      "case_id": "case_012",
+      "mode": "live",
+      "field_f1": 1.0,
+      "field_count": 2,
+      "matched_count": 2,
+      "fields": [
+        {
+          "node_id": "DI_012_PARAM",
+          "value_type": "structured",
+          "expected": "diary_input_frequency=3_per_week",
+          "actual": "diary_input_frequency=3_per_week",
+          "matched": true
+        },
+        {
+          "node_id": "REQ_007_DESC",
+          "value_type": "free_text_structured",
+          "expected": "사용자는 재활 운동 일기를 주 3회 입력할 수 있어야 한다.",
+          "actual": "사용자는 재활 운동 일기를 주 3회 입력할 수 있어야 한다.",
+          "matched": true
+        }
+      ]
+    },
+    {
+      "case_id": "case_015",
+      "mode": "live",
+      "field_f1": 1.0,
+      "field_count": 2,
+      "matched_count": 2,
+      "fields": [
+        {
+          "node_id": "DI_012_PARAM",
+          "value_type": "structured",
+          "expected": "diary_input_frequency=2_per_week",
+          "actual": "diary_input_frequency=2_per_week",
+          "matched": true
+        },
+        {
+          "node_id": "REQ_007_DESC",
+          "value_type": "free_text_structured",
+          "expected": "사용자는 장 증상 일기를 주 2회 입력할 수 있어야 한다.",
+          "actual": "사용자는 장 증상 일기를 주 2회 입력할 수 있어야 한다.",
+          "matched": true
+        }
+      ]
+    },
+    {
+      "case_id": "case_016",
+      "mode": "live",
+      "field_f1": 1.0,
+      "field_count": 2,
+      "matched_count": 2,
+      "fields": [
+        {
+          "node_id": "DI_012_PARAM",
+          "value_type": "structured",
+          "expected": "diary_input_frequency=3_per_week",
+          "actual": "diary_input_frequency=3_per_week",
+          "matched": true
+        },
+        {
+          "node_id": "REQ_007_DESC",
+          "value_type": "free_text_structured",
+          "expected": "사용자는 수면 일기를 주 3회 입력할 수 있어야 한다.",
+          "actual": "사용자는 수면 일기를 주 3회 입력할 수 있어야 한다.",
+          "matched": true
+        }
+      ]
+    },
+    {
+      "case_id": "case_008",
+      "mode": "live",
+      "field_f1": 1.0,
+      "field_count": 2,
+      "matched_count": 2,
+      "fields": [
+        {
+          "node_id": "DI_012_PARAM",
+          "value_type": "structured",
+          "expected": "diary_input_frequency=3_per_week",
+          "actual": "diary_input_frequency=3_per_week",
+          "matched": true
+        },
+        {
+          "node_id": "REQ_007_DESC",
+          "value_type": "free_text_structured",
+          "expected": "사용자는 호흡 일기를 주 3회 입력할 수 있어야 한다.",
+          "actual": "사용자는 호흡 일기를 주 3회 입력할 수 있어야 한다.",
+          "matched": true
+        }
+      ]
+    }
+  ]
+}

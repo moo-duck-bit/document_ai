@@ -1,0 +1,59 @@
+{
+  "plan_id": "plan-b887cb5aac9f",
+  "intent": "document_change",
+  "hybrid": true,
+  "workflow_template": "hybrid_workflow",
+  "harness_sequence": [
+    "document",
+    "operation"
+  ],
+  "task_graph": {
+    "graph_id": "tg-platform-plan",
+    "tasks": [
+      {
+        "task_id": "task-document-change-pipeline",
+        "name": "Run document change pipeline",
+        "harness": "document",
+        "action": "run_change_pipeline",
+        "state": "pending",
+        "dependencies": [],
+        "agent_assignment": "document_harness",
+        "metadata": {
+          "case_dir": "data\\cases\\mindrium_xa",
+          "dry_run": true,
+          "apply": false,
+          "planner_intent": "document_change",
+          "workflow_template": "hybrid_workflow",
+          "intent_action": "run_change_pipeline"
+        }
+      },
+      {
+        "task_id": "task-operation-incident-analysis",
+        "name": "Analyze GPU server incident samples",
+        "harness": "operation",
+        "action": "analyze_incidents",
+        "state": "pending",
+        "dependencies": [
+          "task-document-change-pipeline"
+        ],
+        "agent_assignment": "operation_harness",
+        "metadata": {
+          "case_dir": "data\\cases\\mindrium_xa",
+          "dry_run": true,
+          "apply": false,
+          "planner_intent": "document_change",
+          "workflow_template": "hybrid_workflow",
+          "sample_dir": "data/ops/samples",
+          "intent_action": "run_change_pipeline"
+        }
+      }
+    ],
+    "metadata": {
+      "mode": "change_request",
+      "workflow_template": "hybrid_workflow",
+      "planner_intent": "document_change"
+    }
+  },
+  "execution_strategy": "sequential",
+  "estimated_steps": 2
+}

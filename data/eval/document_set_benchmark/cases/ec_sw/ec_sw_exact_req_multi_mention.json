@@ -1,0 +1,23 @@
+{
+  "case_id": "ec_sw_exact_req_multi_mention",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "Req. 2 및 동일 Req. 2 재확인",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/MDTM.docx",
+      "filename": "MDTM.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM"
+  ],
+  "expected_status": "PARTIAL",
+  "tags": [
+    "exact_id"
+  ],
+  "difficulty": "easy",
+  "notes": "Same Req mentioned twice still one row",
+  "source_type": "fixture"
+}

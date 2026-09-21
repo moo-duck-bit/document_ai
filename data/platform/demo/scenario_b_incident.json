@@ -1,0 +1,408 @@
+{
+  "harness": "operation",
+  "sample_dir": "data\\ops\\samples",
+  "gpu_status": [
+    {
+      "gpu_id": 0,
+      "name": "NVIDIA A100-SXM4-40GB",
+      "memory_used_mib": 38912,
+      "memory_total_mib": 40960,
+      "memory_used_percent": 95.0,
+      "utilization_percent": 100,
+      "temperature_c": 82,
+      "processes": [
+        {
+          "pid": "1234567",
+          "process_name": "python train_lab_model.py",
+          "gpu_memory": "38400MiB"
+        },
+        {
+          "pid": "1234999",
+          "process_name": "python eval_runner.py",
+          "gpu_memory": "512MiB"
+        }
+      ]
+    },
+    {
+      "gpu_id": 1,
+      "name": "NVIDIA A100-SXM4-40GB",
+      "memory_used_mib": 512,
+      "memory_total_mib": 40960,
+      "memory_used_percent": 1.2,
+      "utilization_percent": 2,
+      "temperature_c": 45,
+      "processes": []
+    }
+  ],
+  "docker_status": [
+    {
+      "container_id": "a1b2c3d4e5f6",
+      "name": "lab-trainer",
+      "image": "pytorch/pytorch:2.1.0",
+      "status": "Up 3 hours",
+      "restart_count": 0,
+      "unhealthy": false
+    },
+    {
+      "container_id": "f6e5d4c3b2a1",
+      "name": "tensorboard-svc",
+      "image": "tensorflow/tensorflow",
+      "status": "Up 2 days",
+      "restart_count": 0,
+      "unhealthy": false
+    },
+    {
+      "container_id": "9a8b7c6d5e4f",
+      "name": "data-pipeline",
+      "image": "custom/etl:latest",
+      "status": "Restarting (5) 2 minutes ago",
+      "restart_count": 5,
+      "unhealthy": true
+    },
+    {
+      "container_id": "1a2b3c4d5e6f",
+      "name": "redis-cache",
+      "image": "redis:7-alpine",
+      "status": "Up 5 days",
+      "restart_count": 0,
+      "unhealthy": false
+    }
+  ],
+  "log_events": [
+    {
+      "event_type": "oom",
+      "source": "docker_logs_sample.txt",
+      "line": "2026-07-02T14:18:55.901Z ERROR torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 GiB",
+      "line_number": 3
+    },
+    {
+      "event_type": "cuda_error",
+      "source": "docker_logs_sample.txt",
+      "line": "2026-07-02T14:18:56.002Z ERROR Training worker crashed with CUDA error: an illegal memory access was encountered",
+      "line_number": 4
+    },
+    {
+      "event_type": "restart_loop",
+      "source": "docker_logs_sample.txt",
+      "line": "2026-07-02T14:19:01.331Z INFO  Back-off restarting failed container data-pipeline",
+      "line_number": 5
+    },
+    {
+      "event_type": "restart_loop",
+      "source": "docker_logs_sample.txt",
+      "line": "2026-07-02T14:19:01.332Z WARN  restart loop detected for data-pipeline",
+      "line_number": 6
+    },
+    {
+      "event_type": "permission_denied",
+      "source": "docker_logs_sample.txt",
+      "line": "2026-07-02T14:20:10.004Z ERROR permission denied while trying to connect to the docker API at unix:///var/run/docker.sock",
+      "line_number": 7
+    },
+    {
+      "event_type": "nvidia_xid",
+      "source": "dmesg_sample.txt",
+      "line": "[  512.338912] NVRM: Xid (PCI:0000:00:04.0): 79, GPU has fallen off the bus.",
+      "line_number": 1
+    },
+    {
+      "event_type": "cuda_error",
+      "source": "dmesg_sample.txt",
+      "line": "[  514.118002] CUDA error on device 0 - resetting",
+      "line_number": 4
+    },
+    {
+      "event_type": "disk_full",
+      "source": "disk_usage_sample.txt",
+      "line": "df: /mnt/lab-share: No space left on device",
+      "line_number": 6
+    },
+    {
+      "event_type": "disk_full",
+      "source": "disk_usage_sample.txt",
+      "line": "write error: disk full on /var/log/training",
+      "line_number": 7
+    }
+  ],
+  "incidents": [
+    {
+      "incident_id": "inc-565b15d9",
+      "severity": "critical",
+      "title": "GPU or host out-of-memory condition detected",
+      "suspected_causes": [
+        "GPU memory exhaustion",
+        "Large batch size or memory leak"
+      ],
+      "affected_resources": [
+        "gpu",
+        "workload"
+      ],
+      "recommended_actions": [
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Review active GPU processes and reduce batch size or free GPU memory",
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may inspect offending process before any manual termination — kill not executed"
+      ],
+      "evidence": [
+        "2026-07-02T14:18:55.901Z ERROR torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 GiB"
+      ],
+      "safety_notes": [
+        "Operation Harness does not execute server commands. All recommended actions require human review and manual execution.",
+        "This recommendation references a potentially disruptive action and was not executed."
+      ]
+    },
+    {
+      "incident_id": "inc-f30146ad",
+      "severity": "high",
+      "title": "CUDA runtime error detected in logs",
+      "suspected_causes": [
+        "Invalid kernel launch",
+        "Driver/runtime mismatch",
+        "GPU resource contention"
+      ],
+      "affected_resources": [
+        "gpu",
+        "application"
+      ],
+      "recommended_actions": [
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Review application stack trace and CUDA driver version compatibility"
+      ],
+      "evidence": [
+        "2026-07-02T14:18:56.002Z ERROR Training worker crashed with CUDA error: an illegal memory access was encountered"
+      ],
+      "safety_notes": [
+        "Operation Harness does not execute server commands. All recommended actions require human review and manual execution."
+      ]
+    },
+    {
+      "incident_id": "inc-209581c2",
+      "severity": "high",
+      "title": "Container restart loop detected",
+      "suspected_causes": [
+        "Application crash on startup",
+        "Missing dependency",
+        "Resource limits"
+      ],
+      "affected_resources": [
+        "docker"
+      ],
+      "recommended_actions": [
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Inspect container logs and exit codes before any restart action",
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may review docker restart only after root-cause analysis — restart not executed"
+      ],
+      "evidence": [
+        "2026-07-02T14:19:01.331Z INFO  Back-off restarting failed container data-pipeline"
+      ],
+      "safety_notes": [
+        "Operation Harness does not execute server commands. All recommended actions require human review and manual execution.",
+        "This recommendation references a potentially disruptive action and was not executed."
+      ]
+    },
+    {
+      "incident_id": "inc-19070cd1",
+      "severity": "high",
+      "title": "Container restart loop detected",
+      "suspected_causes": [
+        "Application crash on startup",
+        "Missing dependency",
+        "Resource limits"
+      ],
+      "affected_resources": [
+        "docker"
+      ],
+      "recommended_actions": [
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Inspect container logs and exit codes before any restart action",
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may review docker restart only after root-cause analysis — restart not executed"
+      ],
+      "evidence": [
+        "2026-07-02T14:19:01.332Z WARN  restart loop detected for data-pipeline"
+      ],
+      "safety_notes": [
+        "Operation Harness does not execute server commands. All recommended actions require human review and manual execution.",
+        "This recommendation references a potentially disruptive action and was not executed."
+      ]
+    },
+    {
+      "incident_id": "inc-bac3b040",
+      "severity": "low",
+      "title": "Permission denied error detected",
+      "suspected_causes": [
+        "Insufficient file or device permissions",
+        "Wrong user context"
+      ],
+      "affected_resources": [
+        "filesystem",
+        "service"
+      ],
+      "recommended_actions": [
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Verify service user permissions and volume mount ownership"
+      ],
+      "evidence": [
+        "2026-07-02T14:20:10.004Z ERROR permission denied while trying to connect to the docker API at unix:///var/run/docker.sock"
+      ],
+      "safety_notes": [
+        "Operation Harness does not execute server commands. All recommended actions require human review and manual execution."
+      ]
+    },
+    {
+      "incident_id": "inc-ab5f16b0",
+      "severity": "critical",
+      "title": "NVIDIA Xid hardware/driver error detected",
+      "suspected_causes": [
+        "GPU driver fault",
+        "Hardware instability",
+        "ECC or PCIe issue"
+      ],
+      "affected_resources": [
+        "gpu"
+      ],
+      "recommended_actions": [
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Collect dmesg and nvidia-bug-report.log for operator review",
+        "[RECOMMENDATION ONLY - NOT EXECUTED] If approved by operator, node reboot may be considered — reboot not executed"
+      ],
+      "evidence": [
+        "[  512.338912] NVRM: Xid (PCI:0000:00:04.0): 79, GPU has fallen off the bus."
+      ],
+      "safety_notes": [
+        "Operation Harness does not execute server commands. All recommended actions require human review and manual execution.",
+        "This recommendation references a potentially disruptive action and was not executed."
+      ]
+    },
+    {
+      "incident_id": "inc-6129de72",
+      "severity": "high",
+      "title": "CUDA runtime error detected in logs",
+      "suspected_causes": [
+        "Invalid kernel launch",
+        "Driver/runtime mismatch",
+        "GPU resource contention"
+      ],
+      "affected_resources": [
+        "gpu",
+        "application"
+      ],
+      "recommended_actions": [
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Review application stack trace and CUDA driver version compatibility"
+      ],
+      "evidence": [
+        "[  514.118002] CUDA error on device 0 - resetting"
+      ],
+      "safety_notes": [
+        "Operation Harness does not execute server commands. All recommended actions require human review and manual execution."
+      ]
+    },
+    {
+      "incident_id": "inc-480f91fb",
+      "severity": "high",
+      "title": "Disk space exhaustion detected",
+      "suspected_causes": [
+        "Log growth",
+        "Artifact accumulation",
+        "Dataset cache overflow"
+      ],
+      "affected_resources": [
+        "disk",
+        "host"
+      ],
+      "recommended_actions": [
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Review disk usage and archive or remove non-essential artifacts manually",
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may run cleanup commands manually — rm not executed by harness"
+      ],
+      "evidence": [
+        "df: /mnt/lab-share: No space left on device"
+      ],
+      "safety_notes": [
+        "Operation Harness does not execute server commands. All recommended actions require human review and manual execution."
+      ]
+    },
+    {
+      "incident_id": "inc-e8236ae0",
+      "severity": "high",
+      "title": "Disk space exhaustion detected",
+      "suspected_causes": [
+        "Log growth",
+        "Artifact accumulation",
+        "Dataset cache overflow"
+      ],
+      "affected_resources": [
+        "disk",
+        "host"
+      ],
+      "recommended_actions": [
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Review disk usage and archive or remove non-essential artifacts manually",
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may run cleanup commands manually — rm not executed by harness"
+      ],
+      "evidence": [
+        "write error: disk full on /var/log/training"
+      ],
+      "safety_notes": [
+        "Operation Harness does not execute server commands. All recommended actions require human review and manual execution."
+      ]
+    },
+    {
+      "incident_id": "inc-021da16d",
+      "severity": "high",
+      "title": "GPU 0 memory critically high",
+      "suspected_causes": [
+        "Memory leak",
+        "Oversubscribed workloads",
+        "Large resident model"
+      ],
+      "affected_resources": [
+        "gpu:0"
+      ],
+      "recommended_actions": [
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Review processes on GPU 0 (38912/40960 MiB)"
+      ],
+      "evidence": [
+        "GPU 0 memory 38912/40960 MiB, util 100%"
+      ],
+      "safety_notes": [
+        "Operation Harness does not execute server commands. All recommended actions require human review and manual execution."
+      ]
+    },
+    {
+      "incident_id": "inc-4457768e",
+      "severity": "high",
+      "title": "Unstable container: data-pipeline",
+      "suspected_causes": [
+        "Health check failure",
+        "Crash loop",
+        "Dependency unavailable"
+      ],
+      "affected_resources": [
+        "container:data-pipeline"
+      ],
+      "recommended_actions": [
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Inspect logs for container data-pipeline (status: Restarting (5) 2 minutes ago)",
+        "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may review restart for data-pipeline after diagnosis — restart not executed"
+      ],
+      "evidence": [
+        "data-pipeline status=Restarting (5) 2 minutes ago, restarts=5"
+      ],
+      "safety_notes": [
+        "Operation Harness does not execute server commands. All recommended actions require human review and manual execution.",
+        "This recommendation references a potentially disruptive action and was not executed."
+      ]
+    }
+  ],
+  "severity": "critical",
+  "summary": "Detected 11 incident(s) at critical severity: GPU or host out-of-memory condition detected, CUDA runtime error detected in logs, Container restart loop detected (+8 more)",
+  "recommended_actions": [
+    "[RECOMMENDATION ONLY - NOT EXECUTED] Review active GPU processes and reduce batch size or free GPU memory",
+    "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may inspect offending process before any manual termination — kill not executed",
+    "[RECOMMENDATION ONLY - NOT EXECUTED] Review application stack trace and CUDA driver version compatibility",
+    "[RECOMMENDATION ONLY - NOT EXECUTED] Inspect container logs and exit codes before any restart action",
+    "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may review docker restart only after root-cause analysis — restart not executed",
+    "[RECOMMENDATION ONLY - NOT EXECUTED] Verify service user permissions and volume mount ownership",
+    "[RECOMMENDATION ONLY - NOT EXECUTED] Collect dmesg and nvidia-bug-report.log for operator review",
+    "[RECOMMENDATION ONLY - NOT EXECUTED] If approved by operator, node reboot may be considered — reboot not executed",
+    "[RECOMMENDATION ONLY - NOT EXECUTED] Review disk usage and archive or remove non-essential artifacts manually",
+    "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may run cleanup commands manually — rm not executed by harness",
+    "[RECOMMENDATION ONLY - NOT EXECUTED] Review processes on GPU 0 (38912/40960 MiB)",
+    "[RECOMMENDATION ONLY - NOT EXECUTED] Inspect logs for container data-pipeline (status: Restarting (5) 2 minutes ago)",
+    "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may review restart for data-pipeline after diagnosis — restart not executed"
+  ],
+  "safety_notes": [
+    "Operation Harness does not execute server commands. All recommended actions require human review and manual execution.",
+    "This recommendation references a potentially disruptive action and was not executed."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "change_id": "chg-20260718-4b8f6d",
+  "summary": "Req. 6 로그인 시도 제한 정책 기입(update/fill)",
+  "impact": {
+    "changed_req_ids": [
+      "Req. 6"
+    ],
+    "linked_downstream_ids": [
+      "DC-01",
+      "IA-04",
+      "IA-06",
+      "IA-07",
+      "SI-06",
+      "SI-07"
+    ],
+    "linked_security_ids": [
+      "DC-01",
+      "IA-04",
+      "IA-06",
+      "IA-07",
+      "SI-06",
+      "SI-07"
+    ],
+    "linked_test_ids": [],
+    "document_set_hint": "ec_sw",
+    "documents": {
+      "spec_requirements": {
+        "action": "patch",
+        "req_ids": [
+          "Req. 6"
+        ]
+      },
+      "spec_design": {
+        "action": "skip",
+        "req_ids": [],
+        "reason": "MDDR / design blocks not indexed"
+      },
+      "report_security_verification": {
+        "action": "patch",
+        "security_req_ids": [
+          "IA-04",
+          "IA-06",
+          "IA-07",
+          "SI-06",
+          "SI-07"
+        ]
+      },
+      "test_cases": {
+        "action": "skip",
+        "test_ids": [],
+        "reason": "SRS RTM — update linked test cases (TC-xx) manually or via test spec DOCX when available"
+      }
+    }
+  },
+  "outputs": {
+    "spec_requirements": "data\\trials\\trial-001-mindrium-xa\\workdir\\case_noretrieval\\output_mdsr.docx",
+    "spec_design": "data\\trials\\trial-001-mindrium-xa\\workdir\\case_noretrieval\\output_mddr.docx",
+    "report_security_verification": "data\\trials\\trial-001-mindrium-xa\\workdir\\case_noretrieval\\output_xxcs.docx"
+  },
+  "patches": {
+    "spec_requirements": {
+      "path": "data\\trials\\trial-001-mindrium-xa\\workdir\\case_noretrieval\\output_mdsr.docx",
+      "req_ids_patched": [
+        "Req. 6"
+      ]
+    },
+    "report_security_verification": {
+      "skipped": true,
+      "reason": "Missing output_xxcs.docx",
+      "security_req_ids": [
+        "IA-04",
+        "IA-06",
+        "IA-07",
+        "SI-06",
+        "SI-07"
+      ]
+    },
+    "requirements_json": {
+      "updated_req_ids": [
+        "Req. 6"
+      ]
+    }
+  }
+}

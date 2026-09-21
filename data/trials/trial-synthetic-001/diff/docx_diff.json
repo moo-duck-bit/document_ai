@@ -1,0 +1,23 @@
+{
+  "documents": {
+    "MDSR": {
+      "status": "SKIPPED",
+      "reason": "missing generated or human_revised DOCX",
+      "generated": "data\\trials\\trial-synthetic-001\\generated\\output_mdsr.docx",
+      "revised": ""
+    },
+    "MDDR": {
+      "status": "SKIPPED",
+      "reason": "missing generated or human_revised DOCX",
+      "generated": "data\\trials\\trial-synthetic-001\\generated\\output_mddr.docx",
+      "revised": ""
+    },
+    "XXCS": {
+      "status": "SKIPPED",
+      "reason": "missing generated or human_revised DOCX",
+      "generated": "data\\trials\\trial-synthetic-001\\generated\\output_xxcs.docx",
+      "revised": ""
+    }
+  },
+  "error_candidates": []
+}

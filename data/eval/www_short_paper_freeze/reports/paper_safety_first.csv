@@ -1,0 +1,7 @@
+split,mode,n,mu_zero_rate,mean_mu_sum,mean_false_patch,mean_unsafe_write,mean_original_broken,mean_unapproved_write,mean_recall_at_3,mean_cell_f1,mean_field_f1
+full,demo_safe,27,1.0,0.0,0.0,0.0,0.0,0.0,0.9907407407407407,1.0,1.0
+full,live,27,1.0,0.0,0.0,0.0,0.0,0.0,0.9907407407407407,1.0,1.0
+holdout,demo_safe,7,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0
+holdout,live,7,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0
+dev,demo_safe,20,1.0,0.0,0.0,0.0,0.0,0.0,0.9875,1.0,1.0
+dev,live,20,1.0,0.0,0.0,0.0,0.0,0.0,0.9875,1.0,1.0

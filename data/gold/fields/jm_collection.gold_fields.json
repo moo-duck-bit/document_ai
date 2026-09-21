@@ -1,0 +1,744 @@
+{
+  "version": "1.0",
+  "case_id": "jm_collection",
+  "product_name": "JM COLLECTION",
+  "domain": "ecommerce_b2c",
+  "source": "case_output_bootstrap",
+  "approval_status": "provisional",
+  "section_titles": [],
+  "requirement_ids": [
+    "Req. 1",
+    "Req. 2",
+    "Req. 3",
+    "Req. 4",
+    "Req. 5",
+    "Req. 6",
+    "Req. 7",
+    "Req. 8",
+    "Req. 9",
+    "Req. 10",
+    "Req. 11",
+    "Req. 12",
+    "Req. 13",
+    "Req. 14",
+    "Req. 15",
+    "Req. 16",
+    "Req. 17",
+    "Req. 18",
+    "Req. 100",
+    "Req. 101",
+    "Req. 102",
+    "Req. 103",
+    "Req. 104",
+    "Req. 105",
+    "Req. 106",
+    "Req. 107",
+    "Req. 108",
+    "Req. 109",
+    "Req. 110",
+    "Req. 200",
+    "Req. 201",
+    "Req. 202",
+    "Req. 203",
+    "Req. 204",
+    "Req. 205",
+    "Req. 206",
+    "Req. 207"
+  ],
+  "requirements": [
+    {
+      "req_id": "Req. 1",
+      "requirement_text": "회원/비회원 상품탐색·주문·결제·배송조회·반품 E2E 시나리오 통과"
+    },
+    {
+      "req_id": "Req. 2",
+      "requirement_text": "약관·개인정보·마케팅 동의 UI 및 동의 이력 저장·조회 검증"
+    },
+    {
+      "req_id": "Req. 3",
+      "requirement_text": "이메일/SMS/OAuth 로그인 성공·실패 케이스 및 세션 발급 검증"
+    },
+    {
+      "req_id": "Req. 4",
+      "requirement_text": "비밀번호 정책·재설정 OTP·재사용 금지(3회) 검증"
+    },
+    {
+      "req_id": "Req. 5",
+      "requirement_text": "카테고리·기획전 노출 및 품절 상품 구매 차단 검증"
+    },
+    {
+      "req_id": "Req. 6",
+      "requirement_text": "자동완성·fuzzy match·필터·정렬 1.5초 이내(95p) 및 0건 대안 제안 검증"
+    },
+    {
+      "req_id": "Req. 7",
+      "requirement_text": "PDP 이미지·옵션·재고·가격·포인트 표시 검증"
+    },
+    {
+      "req_id": "Req. 8",
+      "requirement_text": "장바구니 CRUD·회원 병합·선택 결제 검증"
+    },
+    {
+      "req_id": "Req. 9",
+      "requirement_text": "주문서 배송지·쿠폰/포인트·재고 차단 검증"
+    },
+    {
+      "req_id": "Req. 10",
+      "requirement_text": "PG 토큰 결제·PAN 미저장·PCI 통제 검증"
+    },
+    {
+      "req_id": "Req. 11",
+      "requirement_text": "주문 알림·마이페이지 상태 FSM 검증"
+    },
+    {
+      "req_id": "Req. 12",
+      "requirement_text": "취소·반품 7일·환불 상태 추적 검증"
+    },
+    {
+      "req_id": "Req. 13",
+      "requirement_text": "FAQ·1:1 문의·답변 알림 검증"
+    },
+    {
+      "req_id": "Req. 14",
+      "requirement_text": "주문/프로모션 알림 및 마케팅 수신 거부 준수 검증"
+    },
+    {
+      "req_id": "Req. 15",
+      "requirement_text": "위시리스트·최근 본 상품·재입고 알림 검증"
+    },
+    {
+      "req_id": "Req. 16",
+      "requirement_text": "쿠폰/할인 규칙·조건부 적용 검증"
+    },
+    {
+      "req_id": "Req. 17",
+      "requirement_text": "등급별 적립·포인트 만료 알림 검증"
+    },
+    {
+      "req_id": "Req. 18",
+      "requirement_text": "구매 확정 후 리뷰·신고·블라인드 검증"
+    },
+    {
+      "req_id": "Req. 100",
+      "requirement_text": "개인정보보호법 제17조~36조, OWASP ASVS V8"
+    },
+    {
+      "req_id": "Req. 101",
+      "requirement_text": "OWASP ASVS V4.1 Access Control"
+    },
+    {
+      "req_id": "Req. 102",
+      "requirement_text": "OWASP ASVS V3 Session Management"
+    },
+    {
+      "req_id": "Req. 103",
+      "requirement_text": "OWASP ASVS V7.1 Audit Logging"
+    },
+    {
+      "req_id": "Req. 104",
+      "requirement_text": "PCI DSS Req 3·4, OWASP ASVS V6 Cryptography"
+    },
+    {
+      "req_id": "Req. 105",
+      "requirement_text": "OWASP ASVS V2.2 Brute-force / Rate Limiting"
+    },
+    {
+      "req_id": "Req. 106",
+      "requirement_text": "OWASP Top 10 2021, ASVS V5 Validation"
+    },
+    {
+      "req_id": "Req. 107",
+      "requirement_text": "OWASP ASVS V11.1 Backup, RPO/RTO 내부 SLA"
+    },
+    {
+      "req_id": "Req. 108",
+      "requirement_text": "PCI DSS Req 8.3, OWASP ASVS V13 API Security"
+    },
+    {
+      "req_id": "Req. 109",
+      "requirement_text": "OWASP ASVS V14 Security Testing"
+    },
+    {
+      "req_id": "Req. 110",
+      "requirement_text": "OWASP ASVS V1.2 Admin Access Control"
+    },
+    {
+      "req_id": "Req. 200",
+      "requirement_text": "명세된 비기능 목표·측정 기준을 성능/가용성/호환성 시험에서 검증 가능해야 한다."
+    },
+    {
+      "req_id": "Req. 201",
+      "requirement_text": "명세된 비기능 목표·측정 기준을 성능/가용성/호환성 시험에서 검증 가능해야 한다."
+    },
+    {
+      "req_id": "Req. 202",
+      "requirement_text": "명세된 비기능 목표·측정 기준을 성능/가용성/호환성 시험에서 검증 가능해야 한다."
+    },
+    {
+      "req_id": "Req. 203",
+      "requirement_text": "명세된 비기능 목표·측정 기준을 성능/가용성/호환성 시험에서 검증 가능해야 한다."
+    },
+    {
+      "req_id": "Req. 204",
+      "requirement_text": "명세된 비기능 목표·측정 기준을 성능/가용성/호환성 시험에서 검증 가능해야 한다."
+    },
+    {
+      "req_id": "Req. 205",
+      "requirement_text": "명세된 비기능 목표·측정 기준을 성능/가용성/호환성 시험에서 검증 가능해야 한다."
+    },
+    {
+      "req_id": "Req. 206",
+      "requirement_text": "명세된 비기능 목표·측정 기준을 성능/가용성/호환성 시험에서 검증 가능해야 한다."
+    },
+    {
+      "req_id": "Req. 207",
+      "requirement_text": "명세된 비기능 목표·측정 기준을 성능/가용성/호환성 시험에서 검증 가능해야 한다."
+    }
+  ],
+  "design_ids": [
+    "Req. 1",
+    "Req. 2",
+    "Req. 3",
+    "Req. 4",
+    "Req. 5",
+    "Req. 6",
+    "Req. 7",
+    "Req. 8",
+    "Req. 9",
+    "Req. 10",
+    "Req. 11",
+    "Req. 12",
+    "Req. 13",
+    "Req. 14",
+    "Req. 15",
+    "Req. 16",
+    "Req. 17",
+    "Req. 18",
+    "Req. 100",
+    "Req. 101",
+    "Req. 102",
+    "Req. 103",
+    "Req. 104",
+    "Req. 105",
+    "Req. 106",
+    "Req. 107",
+    "Req. 108",
+    "Req. 109",
+    "Req. 110",
+    "Req. 111",
+    "Req. 200",
+    "Req. 201",
+    "Req. 202",
+    "Req. 203",
+    "Req. 204",
+    "Req. 205",
+    "Req. 206",
+    "Req. 207"
+  ],
+  "design_items": [
+    {
+      "design_id": "Req. 1",
+      "req_id": "Req. 1",
+      "design_text": "JM COLLECTION은 3계층 구조(JM-web / JM-api / JM-admin)로 설계한다. JM-web은 React 18 SPA로 상품·주문·마이페이지 UI를 제공하고, JM-api는 Node.js(TypeScript) 기반 REST API로 회원·상품·주문·결제·배송 도메인을 분리한다. JM-admin은 RBAC 기반 백오피스로 상품·프로모션·주문·CS를 운영한다. 데이터는 PostgreSQL(거래), Redis(세션·장바구니), S3(이미지)에 저장하며 CloudFront로 정적 자산을 배포한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 2",
+      "req_id": "Req. 2",
+      "design_text": "회원가입 플로우는 약관·개인정보·마케팅 동의 체크박스를 순차 검증한다. JM-api `POST /members/signup`에서 동의 이력(terms_version, privacy_version, marketing_opt_in)을 `member_consents` 테이블에 append-only 저장한다. JM-web은 미동의 시 제출을 차단하고 수집 항목·보유 기간을 모달로 고지한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 3",
+      "req_id": "Req. 3",
+      "design_text": "인증은 Local(email/password), SMS OTP, OAuth 2.0(카카오·네이버·Google) 전략 패턴으로 구현한다. JM-api AuthService가 JWT access(15분) + refresh(7일) 토큰을 발급하고, OAuth callback은 state/nonce 검증 후 기존 계정과 provider_id를 매핑한다. 실패 코드(401/403/429)별 사용자 메시지는 i18n 리소스로 분리한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 4",
+      "req_id": "Req. 4",
+      "design_text": "비밀번호 정책은 서버·클라이언트 이중 검증(최소 8자, 2종류 조합)을 적용한다. 저장은 bcrypt(cost 12) 해시, `password_history`에 최근 3개 해시를 보관하여 재사용을 거부한다. 재설정은 이메일/SMS OTP 검증 후 `PATCH /members/password`로 처리하며 OTP는 5분 TTL Redis에 저장한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 5",
+      "req_id": "Req. 5",
+      "design_text": "상품 카탈로그는 `categories`(3-depth), `products`, `product_skus` 스키마로 모델링한다. JM-admin에서 기획전·베스트·신상 노출 슬롯을 `merchandising_slots`로 관리하고, JM-api `GET /catalog`는 품절·판매중지 SKU를 `availability` 필드로 구분 반환한다. JM-web 목록 카드는 재고 0일 때 '품절' 배지 및 CTA 비활성화를 적용한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 6",
+      "req_id": "Req. 6",
+      "design_text": "검색은 OpenSearch(또는 PostgreSQL FTS)에 상품명·브랜드·태그를 색인하고, `GET /search/suggest`로 최근·인기 키워드 자동완성을 제공한다. 본 검색 `GET /search?q=&filters=`는 fuzzy(Levenshtein 1~2)와 facet sort를 지원하며 Redis 캐시(60s)로 인기 쿼리를 가속한다. 95 percentile 1.5초는 API autoscaling·쿼리 limit·suggest 캐시로 달성하고, 0건 시 `recommended_products` API로 대안 상품을 반환한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 7",
+      "req_id": "Req. 7",
+      "design_text": "상품 상세는 JM-web PDP 컴포넌트(ProductGallery, OptionPicker, PriceBlock)로 구성한다. JM-api `GET /products/{id}`는 images[], options[], stock_by_sku, related[]를 반환하고 할인가·정가·적립 포인트는 pricing 서비스에서 계산한다. 배송·교환·반품 정책은 CMS 블록으로 관리하여 SKU 카테고리별 override가 가능하다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 8",
+      "req_id": "Req. 8",
+      "design_text": "장바구니는 `cart_items(member_id|session_id, sku_id, qty)`로 저장한다. 비회원은 HttpOnly session cookie, 회원은 DB 영구 저장; 로그인 시 merge API로 충돌 SKU는 수량 합산한다. JM-web CartPage는 선택 결제(checkbox)와 수량 stepper를 제공하고, JM-api는 재고 선점(soft reservation, 15분 TTL)을 Redis에 기록한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 9",
+      "req_id": "Req. 9",
+      "design_text": "주문서는 CheckoutWizard(배송지→쿠폰/포인트→결제)로 설계한다. `POST /orders/draft`에서 재고·쿠폰 유효성을 검증하고, 부족 시 409와 대체 안내를 반환한다. 배송지는 `addresses` 다중 저장, 쿠폰·포인트는 pricing 모듈에서 원자적 차감 후 최종 금액을 확정한다.\nJM-api (백엔드 서버)\nFigure 3. JM-api 서버 구조",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 10",
+      "req_id": "Req. 10",
+      "design_text": "결제는 PG사(토스페이먼츠/이니시스) 서버-서버 연동으로 설계한다. 카드 PAN은 PG 토큰화만 허용하며 JM-api는 `payment_tokens`와 승인 transaction_id만 저장(PCI DSS). `POST /payments/confirm`은 idempotency-key로 중복 승인을 방지하고, 실패·타임아웃 시 주문 상태를 PAYMENT_PENDING으로 유지한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 11",
+      "req_id": "Req. 11",
+      "design_text": "주문 완료 후 NotificationService가 이메일/SMS(마케팅 동의 시)를 비동기 발송한다. 주문 상태는 `orders.status` FSM(결제완료→상품준비→배송중→배송완료)으로 관리하고 마이페이지 `GET /orders`에서 타임라인 UI로 노출한다. 영수증 PDF는 S3 presigned URL로 제공한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 12",
+      "req_id": "Req. 12",
+      "design_text": "취소·반품·교환은 `return_requests` 워크플로로 모델링한다. 배송 전 취소는 재고 복원 + PG void, 수령 후 7일 이내 반품은 CS 승인 후 환불 API를 호출한다. 상태(접수→수거→검수→환불완료)는 JM-web·JM-admin 양쪽에서 동기화 표시한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 13",
+      "req_id": "Req. 13",
+      "design_text": "CS 모듈은 FAQ·공지(`boards`), 1:1 문의(`inquiries`)로 구성한다. JM-api는 문의 등록 시 ticket_id를 발급하고, JM-admin 답변 시 webhook으로 알림 큐에 적재한다. 욕설·PII 필터는 저장 전 moderation 서비스를 통과한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 14",
+      "req_id": "Req. 14",
+      "design_text": "알림은 NotificationService + message queue(SQS)로 이메일·SMS·웹푸시 채널을 추상화한다. 템플릿은 주문/배송/프로모션/쿠폰만료 유형별로 분리하고, marketing_opt_in=false 회원에게 광고성 알림 발송을 API 레벨에서 차단한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 15",
+      "req_id": "Req. 15",
+      "design_text": "위시리스트는 `wishlists(member_id, sku_id)`와 `recent_views` Redis sorted set으로 구현한다. 가격 변동·재입고 알림은 sku 단위 subscription을 저장하고, 배치 job이 변경 감지 시 NotificationService를 호출한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 16",
+      "req_id": "Req. 16",
+      "design_text": "프로모션 엔진은 `promotions`, `coupons`, `rules`(정액/정률/묶음/무료배송)로 설계한다. JM-admin에서 기간·회원등급·카테고리·최소주문 조건을 rule DSL로 설정하고, checkout 시 pricing 서비스가 stackable 여부를 평가한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 17",
+      "req_id": "Req. 17",
+      "design_text": "등급·포인트는 `member_tiers`, `point_ledger` 이중부기 원장으로 관리한다. 구매 확정 시 등급별 1~5% 적립, 12개월 expiry; 만료 30일 전 cron 알림을 발송한다. 포인트 사용은 주문 결제 트랜잭션 내 원자적 차감한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 18",
+      "req_id": "Req. 18",
+      "design_text": "리뷰는 `reviews(order_item_id, rating, body, photos[])`로 저장하고 구매 확정 후에만 작성 가능하다. 신고 시 moderation queue로 이동, JM-admin 검수 후 blind 플래그를 설정한다. 욕설·연락처 regex 필터를 API gateway에서 1차 적용한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 100",
+      "req_id": "Req. 100",
+      "design_text": "【보안 설계 — 개인정보는 수집 목적에 필요한 최소 항목만 수집하고, 목적 달성 후 지체 없이 파기해야 한다】 개인정보는 수집 목적에 필요한 최소 항목만 수집하고, 목적 달성 후 지체 없이 파기해야 한다. 마이페이지에서 개인정보 열람·수정·삭제(회원 탈퇴)를 지원해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·PCI DSS·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 101",
+      "req_id": "Req. 101",
+      "design_text": "【보안 설계 — 관리자 기능은 RBAC(최고관리자, 운영, CS, 물류) 기반 권한으로 분리해야 한다】 관리자 기능은 RBAC(최고관리자, 운영, CS, 물류) 기반 권한으로 분리해야 한다. 권한 없는 메뉴 접근 시 거부하고, 시도 이력을 로그에 기록해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·PCI DSS·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 102",
+      "req_id": "Req. 102",
+      "design_text": "【보안 설계 — 로그인 세션은 JWT 또는 secure cookie 기반으로 관리하고, HttpOnly·Secure·SameSite 속성을 적용해야 한다】 로그인 세션은 JWT 또는 secure cookie 기반으로 관리하고, HttpOnly·Secure·SameSite 속성을 적용해야 한다. 동시 세션 수 제한(기본 3대) 및 원격 로그아웃 기능을 제공할 수 있어야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·PCI DSS·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.\n【보안 설계 — 로그인 세션은 JWT 또는 secure cookie 기반으로 관리하고, HttpOnly·Secure·SameSite 속성을 적용해야 한다】 로그인 세션은 JWT 또는 secure cookie 기반으로 관리하고, HttpOnly·Secure·SameSite 속성을 적용해야 한다. 동시 세션 수 제한(기본 3대) 및 원격 로그아웃 기능을 제공할 수 있어야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·PCI DSS·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.\nFigure 4. JM-admin 운영 화면",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 103",
+      "req_id": "Req. 103",
+      "design_text": "【보안 설계 — 주문·결제·로그인·관리자 작업에 대한 감사 로그를 1년 이상 보관해야 한다】 주문·결제·로그인·관리자 작업에 대한 감사 로그를 1년 이상 보관해야 한다. 로그는 변조 방지를 위해 append-only 저장소 또는 WORM 정책을 적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·PCI DSS·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 104",
+      "req_id": "Req. 104",
+      "design_text": "【보안 설계 — 결제 및 개인정보 처리 구간은 TLS 1】 결제 및 개인정보 처리 구간은 TLS 1.2 이상으로 암호화하고, 저장 데이터는 AES-256 등 강력한 알고리즘으로 암호화해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·PCI DSS·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 105",
+      "req_id": "Req. 105",
+      "design_text": "【보안 설계 — 로그인·API 엔드포인트에 rate limiting을 적용하여 brute force 및 DDoS를 완화해야 한다】 로그인·API 엔드포인트에 rate limiting을 적용하여 brute force 및 DDoS를 완화해야 한다. 연속 로그인 실패 5회 시 15분 계정 잠금을 적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·PCI DSS·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 106",
+      "req_id": "Req. 106",
+      "design_text": "【보안 설계 — OWASP Top 10(XSS, CSRF, SQL Injection) 대응을 위해 입력 검증, 출력 인코딩, parameterized query, CSRF 토큰을 적용해야 한다】 OWASP Top 10(XSS, CSRF, SQL Injection) 대응을 위해 입력 검증, 출력 인코딩, parameterized query, CSRF 토큰을 적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·PCI DSS·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 107",
+      "req_id": "Req. 107",
+      "design_text": "【보안 설계 — 일일 전체 DB 백업 및 트랜잭션 로그 백업을 수행하고, RPO 24시간, RTO 4시간 이내 복구를 목표로 한다】 일일 전체 DB 백업 및 트랜잭션 로그 백업을 수행하고, RPO 24시간, RTO 4시간 이내 복구를 목표로 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·PCI DSS·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 108",
+      "req_id": "Req. 108",
+      "design_text": "【보안 설계 — PG, SMS, 배송 추적 등 외부 API 연동 시 API Key는 secrets manager에 저장하고, IP 화이트리스트·키 로테이션 정책을 적용해야 한다】 PG, SMS, 배송 추적 등 외부 API 연동 시 API Key는 secrets manager에 저장하고, IP 화이트리스트·키 로테이션 정책을 적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·PCI DSS·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 109",
+      "req_id": "Req. 109",
+      "design_text": "【보안 설계 — 분기 1회 이상 취약점 스캔(SAST/DAST) 및 의존성(CVE) 점검을 수행하고, Critical/High 취약점은 30일 이내 조치해야 한다】 분기 1회 이상 취약점 스캔(SAST/DAST) 및 의존성(CVE) 점검을 수행하고, Critical/High 취약점은 30일 이내 조치해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·PCI DSS·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 110",
+      "req_id": "Req. 110",
+      "design_text": "【보안 설계 — 관리자·CS 페이지 접근은 사내 VPN 또는 IP 제한 및 2FA(MFA)를 권장/적용해야 한다】 관리자·CS 페이지 접근은 사내 VPN 또는 IP 제한 및 2FA(MFA)를 권장/적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·PCI DSS·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 111",
+      "req_id": "Req. 111",
+      "design_text": "위시리스트는 `wishlists(member_id, sku_id)`와 `recent_views` Redis sorted set으로 구현한다. 가격 변동·재입고 알림은 sku 단위 subscription을 저장하고, 배치 job이 변경 감지 시 NotificationService를 호출한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 200",
+      "req_id": "Req. 200",
+      "design_text": "【비기능 설계 — 메인 페이지 및 상품 목록은 3G 환경 기준 LCP 3초 이내를 목표로 하며, CDN을 통해 정적 자산을 제공해야 한다】 메인 페이지 및 상품 목록은 3G 환경 기준 LCP 3초 이내를 목표로 하며, CDN을 통해 정적 자산을 제공해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 201",
+      "req_id": "Req. 201",
+      "design_text": "【비기능 설계 — 서비스 가용성은 월 99】 서비스 가용성은 월 99.9% 이상을 목표로 하며, 장애 시 상태 페이지 또는 공지를 통해 사용자에게 안내해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 202",
+      "req_id": "Req. 202",
+      "design_text": "【비기능 설계 — UI는 모바일(320px~)·태블릿·데스크톱에 반응형으로 동작해야 하며, 터치·키보드 접근성(WCAG 2】 UI는 모바일(320px~)·태블릿·데스크톱에 반응형으로 동작해야 하며, 터치·키보드 접근성(WCAG 2.1 AA)을 준수해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 203",
+      "req_id": "Req. 203",
+      "design_text": "【비기능 설계 — 최신 2버전 Chrome, Safari, Edge, Firefox 및 iOS/Android 기본 브라우저를 지원해야 한다】 최신 2버전 Chrome, Safari, Edge, Firefox 및 iOS/Android 기본 브라우저를 지원해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 204",
+      "req_id": "Req. 204",
+      "design_text": "【비기능 설계 — 관리자 대시보드에서 일·주·월 매출, 주문 건수, 인기 상품, 재고 부족 알림을 조회할 수 있어야 한다】 관리자 대시보드에서 일·주·월 매출, 주문 건수, 인기 상품, 재고 부족 알림을 조회할 수 있어야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 205",
+      "req_id": "Req. 205",
+      "design_text": "【비기능 설계 — 모든 사용자·관리자 통신은 HTTPS(TLS 1】 모든 사용자·관리자 통신은 HTTPS(TLS 1.2+)를 강제하고, HSTS 헤더를 적용해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 206",
+      "req_id": "Req. 206",
+      "design_text": "【비기능 설계 — 사용자 세션은 30분 비활성 시 자동 만료되며, 만료 5분 전 연장 안내를 표시할 수 있어야 한다】 사용자 세션은 30분 비활성 시 자동 만료되며, 만료 5분 전 연장 안내를 표시할 수 있어야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "block_kind": "paragraph"
+    },
+    {
+      "design_id": "Req. 207",
+      "req_id": "Req. 207",
+      "design_text": "【비기능 설계 — 휴면 계정(1년 미접속)은 별도 분리 보관하고, 재접속 시 본인 인증 후 복구해야 한다】 휴면 계정(1년 미접속)은 별도 분리 보관하고, 재접속 시 본인 인증 후 복구해야 한다. 탈퇴 회원 개인정보는 30일 이내 파기(법령 보존 예외 제외)해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "block_kind": "paragraph"
+    }
+  ],
+  "linked_reqs": [
+    {
+      "requirement": "IA-01 사용자 식별 및 인증",
+      "linked_reqs": "Req. 2, Req. 3, Req. 102, Req. 201"
+    },
+    {
+      "requirement": "IA-02 계정 관리",
+      "linked_reqs": "Req. 2, Req. 3, Req. 102, Req. 202"
+    },
+    {
+      "requirement": "IA-03 식별정보 관리",
+      "linked_reqs": "Req. 2, Req. 100, Req. 102, Req. 207"
+    },
+    {
+      "requirement": "IA-04 인증정보 관리",
+      "linked_reqs": "Req. 3, Req. 4, Req. 102, Req. 105, Req. 205"
+    },
+    {
+      "requirement": "IA-05 비밀번호 강도 설정",
+      "linked_reqs": "Req. 4, Req. 102, Req. 202"
+    },
+    {
+      "requirement": "IA-06 인증정보에 대한 피드백",
+      "linked_reqs": "Req. 4, Req. 102, Req. 201"
+    },
+    {
+      "requirement": "IA-07 연속적인 로그인 시도 실패 시 로그인 제한",
+      "linked_reqs": "Req. 4, Req. 105, Req. 201"
+    },
+    {
+      "requirement": "IA-08 시스템 사용 알림 메시지",
+      "linked_reqs": "Req. 2, Req. 14, Req. 201"
+    },
+    {
+      "requirement": "UC-01 권한 부여",
+      "linked_reqs": "Req. 101, Req. 110, Req. 204"
+    },
+    {
+      "requirement": "UC-02 모바일 코드 사용 통제",
+      "linked_reqs": "N/A"
+    },
+    {
+      "requirement": "UC-03 세션 잠금",
+      "linked_reqs": "Req. 102, Req. 206"
+    },
+    {
+      "requirement": "UC-04 감사기록 생성",
+      "linked_reqs": "Req. 100, Req. 103, Req. 110"
+    },
+    {
+      "requirement": "UC-05 감사 처리 실패 대응",
+      "linked_reqs": "Req. 103, Req. 107"
+    },
+    {
+      "requirement": "UC-06 타임스탬프",
+      "linked_reqs": "Req. 103"
+    },
+    {
+      "requirement": "UC-07 부인 방지",
+      "linked_reqs": "Req. 103, Req. 110"
+    },
+    {
+      "requirement": "SI-01 통신에 대한 무결성 보장",
+      "linked_reqs": "Req. 104, Req. 205"
+    },
+    {
+      "requirement": "SI-02 악성코드로부터 보호",
+      "linked_reqs": "Req. 106, Req. 109"
+    },
+    {
+      "requirement": "SI-03 보안 기능 검증",
+      "linked_reqs": "Req. 106, Req. 109, Req. 205"
+    },
+    {
+      "requirement": "SI-04 입력값 검증",
+      "linked_reqs": "Req. 1"
+    },
+    {
+      "requirement": "SI-05 오류 처리",
+      "linked_reqs": "Req. 2, Req. 14, Req. 100, Req. 207"
+    },
+    {
+      "requirement": "SI-06 메모리 관리",
+      "linked_reqs": "Req. 6, Req. 7, Req. 106"
+    },
+    {
+      "requirement": "SI-07 설정 관리",
+      "linked_reqs": "Req. 8, Req. 9, Req. 106"
+    },
+    {
+      "requirement": "SI-08 자원 관리",
+      "linked_reqs": "Req. 1"
+    },
+    {
+      "requirement": "SI-09 시스템 무결성 보장",
+      "linked_reqs": "Req. 1"
+    },
+    {
+      "requirement": "SI-10 보호 메커니즘 우회 방지",
+      "linked_reqs": "N/A"
+    },
+    {
+      "requirement": "SI-11 보안 기능 접근 통제",
+      "linked_reqs": "N/A"
+    },
+    {
+      "requirement": "DC-01 데이터 기밀성",
+      "linked_reqs": "Req. 10, Req. 11, Req. 12, Req. 104, Req. 108"
+    },
+    {
+      "requirement": "DC-02 데이터 무결성",
+      "linked_reqs": "Req. 2, Req. 3"
+    },
+    {
+      "requirement": "DC-03 데이터 가용성",
+      "linked_reqs": "Req. 100, Req. 102, Req. 104, Req. 205"
+    },
+    {
+      "requirement": "RA-01 DoS 공격 방어",
+      "linked_reqs": "Req. 105"
+    },
+    {
+      "requirement": "RA-02 자원 관리",
+      "linked_reqs": "Req. 107"
+    },
+    {
+      "requirement": "RA-03 시스템 백업",
+      "linked_reqs": "Req. 107"
+    },
+    {
+      "requirement": "RA-04 통신 보호",
+      "linked_reqs": "Req. 104, Req. 205"
+    },
+    {
+      "requirement": "RA-05 네트워크 보호",
+      "linked_reqs": "Req. 104, Req. 205"
+    }
+  ],
+  "traceability_rows": [
+    {
+      "requirement": "IA-01 사용자 식별 및 인증",
+      "linked_reqs": "Req. 2, Req. 3, Req. 102, Req. 201"
+    },
+    {
+      "requirement": "IA-02 계정 관리",
+      "linked_reqs": "Req. 2, Req. 3, Req. 102, Req. 202"
+    },
+    {
+      "requirement": "IA-03 식별정보 관리",
+      "linked_reqs": "Req. 2, Req. 100, Req. 102, Req. 207"
+    },
+    {
+      "requirement": "IA-04 인증정보 관리",
+      "linked_reqs": "Req. 3, Req. 4, Req. 102, Req. 105, Req. 205"
+    },
+    {
+      "requirement": "IA-05 비밀번호 강도 설정",
+      "linked_reqs": "Req. 4, Req. 102, Req. 202"
+    },
+    {
+      "requirement": "IA-06 인증정보에 대한 피드백",
+      "linked_reqs": "Req. 4, Req. 102, Req. 201"
+    },
+    {
+      "requirement": "IA-07 연속적인 로그인 시도 실패 시 로그인 제한",
+      "linked_reqs": "Req. 4, Req. 105, Req. 201"
+    },
+    {
+      "requirement": "IA-08 시스템 사용 알림 메시지",
+      "linked_reqs": "Req. 2, Req. 14, Req. 201"
+    },
+    {
+      "requirement": "UC-01 권한 부여",
+      "linked_reqs": "Req. 101, Req. 110, Req. 204"
+    },
+    {
+      "requirement": "UC-02 모바일 코드 사용 통제",
+      "linked_reqs": "N/A"
+    },
+    {
+      "requirement": "UC-03 세션 잠금",
+      "linked_reqs": "Req. 102, Req. 206"
+    },
+    {
+      "requirement": "UC-04 감사기록 생성",
+      "linked_reqs": "Req. 100, Req. 103, Req. 110"
+    },
+    {
+      "requirement": "UC-05 감사 처리 실패 대응",
+      "linked_reqs": "Req. 103, Req. 107"
+    },
+    {
+      "requirement": "UC-06 타임스탬프",
+      "linked_reqs": "Req. 103"
+    },
+    {
+      "requirement": "UC-07 부인 방지",
+      "linked_reqs": "Req. 103, Req. 110"
+    },
+    {
+      "requirement": "SI-01 통신에 대한 무결성 보장",
+      "linked_reqs": "Req. 104, Req. 205"
+    },
+    {
+      "requirement": "SI-02 악성코드로부터 보호",
+      "linked_reqs": "Req. 106, Req. 109"
+    },
+    {
+      "requirement": "SI-03 보안 기능 검증",
+      "linked_reqs": "Req. 106, Req. 109, Req. 205"
+    },
+    {
+      "requirement": "SI-04 입력값 검증",
+      "linked_reqs": "Req. 1"
+    },
+    {
+      "requirement": "SI-05 오류 처리",
+      "linked_reqs": "Req. 2, Req. 14, Req. 100, Req. 207"
+    },
+    {
+      "requirement": "SI-06 메모리 관리",
+      "linked_reqs": "Req. 6, Req. 7, Req. 106"
+    },
+    {
+      "requirement": "SI-07 설정 관리",
+      "linked_reqs": "Req. 8, Req. 9, Req. 106"
+    },
+    {
+      "requirement": "SI-08 자원 관리",
+      "linked_reqs": "Req. 1"
+    },
+    {
+      "requirement": "SI-09 시스템 무결성 보장",
+      "linked_reqs": "Req. 1"
+    },
+    {
+      "requirement": "SI-10 보호 메커니즘 우회 방지",
+      "linked_reqs": "N/A"
+    },
+    {
+      "requirement": "SI-11 보안 기능 접근 통제",
+      "linked_reqs": "N/A"
+    },
+    {
+      "requirement": "DC-01 데이터 기밀성",
+      "linked_reqs": "Req. 10, Req. 11, Req. 12, Req. 104, Req. 108"
+    },
+    {
+      "requirement": "DC-02 데이터 무결성",
+      "linked_reqs": "Req. 2, Req. 3"
+    },
+    {
+      "requirement": "DC-03 데이터 가용성",
+      "linked_reqs": "Req. 100, Req. 102, Req. 104, Req. 205"
+    },
+    {
+      "requirement": "RA-01 DoS 공격 방어",
+      "linked_reqs": "Req. 105"
+    },
+    {
+      "requirement": "RA-02 자원 관리",
+      "linked_reqs": "Req. 107"
+    },
+    {
+      "requirement": "RA-03 시스템 백업",
+      "linked_reqs": "Req. 107"
+    },
+    {
+      "requirement": "RA-04 통신 보호",
+      "linked_reqs": "Req. 104, Req. 205"
+    },
+    {
+      "requirement": "RA-05 네트워크 보호",
+      "linked_reqs": "Req. 104, Req. 205"
+    }
+  ]
+}

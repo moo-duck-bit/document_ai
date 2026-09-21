@@ -1,0 +1,2840 @@
+{
+  "workflow_id": "v2_hol_bp_budget_business_proposal_20260823T201005Z",
+  "document_set": "business_proposal",
+  "state": "COMPLETED",
+  "change_request": "예산 장비비 수정",
+  "created_at": "2026-08-23T20:10:05Z",
+  "updated_at": "2026-08-23T20:10:05Z",
+  "documents": [
+    {
+      "document_id": "PROPOSAL_BASE",
+      "source_document_id": "PROPOSAL_BASE",
+      "filename": "proposal_base.docx",
+      "role": "business_proposal",
+      "path": "data/eval/results/document_tnr/_holdout_work/v2_hol_bp_budget/v2_hol_bp_budget_business_proposal_20260823T201005Z/input/proposal_base.docx",
+      "copy_path": "data/eval/results/document_tnr/_holdout_work/v2_hol_bp_budget/v2_hol_bp_budget_business_proposal_20260823T201005Z/copies/proposal_base.docx",
+      "user_hints": null,
+      "canonical_document_id": "GENERIC_BUSINESS_PROPOSAL",
+      "short_id": "PROPOSAL",
+      "document_type": "BUSINESS_PROPOSAL",
+      "document_role": "business_proposal",
+      "domain_pack_id": "generic_document_v1",
+      "template_id": "business_proposal_v1",
+      "identity_status": "REVIEW_REQUIRED",
+      "identity_auto_selected": false,
+      "identity_score": 51.65,
+      "identity_reasons": [
+        "filename_hint:PROPOSAL",
+        "filename_role_hint",
+        "heading_or_title",
+        "proposal_heading_concepts",
+        "insufficient_margin_or_tier"
+      ],
+      "routing_status": "ROUTED",
+      "selected_pack_id": "generic_document_v1",
+      "recommended_document_set": "business_proposal",
+      "registry_document_id": "PROPOSAL"
+    }
+  ],
+  "impacted_documents": [
+    "PROPOSAL_BASE"
+  ],
+  "review_required": [
+    {
+      "item_id": "business_proposal_v1.budget",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "business_proposal_v1.budget",
+      "status": "REVIEW_REQUIRED",
+      "display_name": "예산",
+      "reason_codes": [
+        "aligned_template_section_eval_candidate",
+        "template_document_aligned"
+      ],
+      "human_review_required": true,
+      "source_stage": "generic_template_alignment",
+      "metadata": {
+        "structural_role": "PROPOSAL_SECTION",
+        "physical": false,
+        "editable": false,
+        "virtual": false,
+        "virtual_target": false,
+        "writer_executable": false,
+        "template_only": false,
+        "supports_patch": false,
+        "target_exists": true,
+        "canonical_concepts": [
+          "BUDGET"
+        ],
+        "alignment_confidence": 0.8,
+        "evaluation_equivalent": true,
+        "aligned_document_node_id": "heading_0004",
+        "content_specificity": 0.4,
+        "proposal_structural_role": "PROPOSAL_SECTION",
+        "domain": "business_proposal",
+        "overlap": 205.44,
+        "final_score": 205.44,
+        "template_alignment": true,
+        "rank_tier": 1,
+        "score_components": {
+          "tier_base": 105.0,
+          "primary_concept_match": 28.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 21.56,
+          "structural_role_match": 18.0,
+          "template_node_match": 18.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 14.08,
+          "physical_editability": 0.8,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.0
+        },
+        "structural_score_components": {
+          "candidate_node_id": "business_proposal_v1.budget",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.98,
+          "structural_role_match": 0.9,
+          "template_node_match": 1.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 0.2,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:PROPOSAL_SECTION",
+            "update_template_section_eval",
+            "preferred_template_node",
+            "eval_equivalent_alignment"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_1",
+          "eval_equivalent_alignment",
+          "exact_section_concept_template",
+          "preferred_template_node",
+          "primary_concept_hit",
+          "role_pref:PROPOSAL_SECTION",
+          "update_template_section_eval"
+        ],
+        "query_intent": "BUDGET_UPDATE",
+        "rank": 1,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0004",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 4
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0005",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 5
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0003",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "table_00",
+            "alignment_type": "TABLE_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {},
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET",
+              "TABLE"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "PROPOSAL_BASE:budget",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_ids": [
+              "business_proposal_v1.budget"
+            ],
+            "document_node_ids": [
+              "heading_0004",
+              "heading_0005",
+              "table_00"
+            ],
+            "section_id": "budget",
+            "concepts": [
+              "BUDGET",
+              "COST",
+              "TABLE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      },
+      "overlap": 1.25
+    },
+    {
+      "item_id": "BP-TBL-table_00",
+      "candidate_id": "BP-TBL-table_00",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "table_00",
+      "status": "REVIEW_REQUIRED",
+      "overlap": 0.8,
+      "display_name": "항목 금액",
+      "reason_codes": [
+        "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+        "budget_table_structure",
+        "proposal_table_ambiguous"
+      ],
+      "human_review_required": true,
+      "source_stage": "proposal_table_retrieval",
+      "metadata": {
+        "overlap": 232.98,
+        "evidence_type": "TABLE_STRUCTURE",
+        "supports_patch": false,
+        "supports_review": true,
+        "table_role": "BUDGET_TABLE",
+        "canonical_concepts": [
+          "BUDGET",
+          "COST"
+        ],
+        "structural_role": "BUDGET_TABLE",
+        "proposal_structural_role": "BUDGET_TABLE",
+        "editable": true,
+        "physical": true,
+        "virtual": false,
+        "content_specificity": 0.75,
+        "reason_codes": [
+          "role_proposal_table",
+          "table_role:BUDGET_TABLE"
+        ],
+        "writer_executable": false,
+        "domain": "business_proposal",
+        "alignment_confidence": 0.8,
+        "evaluation_equivalent": true,
+        "template_node_id": "business_proposal_v1.budget",
+        "alignment_ids": [
+          "NA-0003"
+        ],
+        "rank_tier": 1,
+        "final_score": 232.98,
+        "score_components": {
+          "tier_base": 105.0,
+          "primary_concept_match": 28.0,
+          "secondary_concept_match": 4.0,
+          "operation_role_match": 19.8,
+          "structural_role_match": 20.0,
+          "template_node_match": 15.299999999999999,
+          "parent_section_match": 0.0,
+          "table_header_match": 22.799999999999997,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 14.08,
+          "physical_editability": 4.0,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.0
+        },
+        "structural_score_components": {
+          "candidate_node_id": "table_00",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.5,
+          "operation_role_match": 0.9,
+          "structural_role_match": 1.0,
+          "template_node_match": 0.85,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.95,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:BUDGET_TABLE",
+            "aligned_preferred_template",
+            "table_header_role_match",
+            "eval_equivalent_alignment"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_1",
+          "aligned_preferred_template",
+          "eval_equivalent_alignment",
+          "primary_concept_hit",
+          "role_pref:BUDGET_TABLE",
+          "table_header_role_match"
+        ],
+        "query_intent": "BUDGET_UPDATE",
+        "rank": 2,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0004",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 4
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0005",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 5
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0003",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "table_00",
+            "alignment_type": "TABLE_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {},
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET",
+              "TABLE"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "PROPOSAL_BASE:budget",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_ids": [
+              "business_proposal_v1.budget"
+            ],
+            "document_node_ids": [
+              "heading_0004",
+              "heading_0005",
+              "table_00"
+            ],
+            "section_id": "budget",
+            "concepts": [
+              "BUDGET",
+              "COST",
+              "TABLE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "PROPOSAL_BASE.p0004",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "heading_0004",
+      "status": "REVIEW_REQUIRED",
+      "display_name": "예산",
+      "evidence": [
+        "예산"
+      ],
+      "reason_codes": [
+        "paragraph_concept_match"
+      ],
+      "human_review_required": true,
+      "source_locator": {
+        "paragraph_index": 4
+      },
+      "source_stage": "document_paragraph",
+      "metadata": {
+        "supports_patch": false,
+        "target_exists": true,
+        "structural_role": "DOCUMENT_HEADING",
+        "physical": true,
+        "editable": true,
+        "virtual": false,
+        "canonical_concepts": [
+          "BUDGET"
+        ],
+        "content_specificity": 0.45,
+        "parent_section_id": null,
+        "direct_match": true,
+        "inherited_match": false,
+        "parent_context_match": 0.8,
+        "section_context": "BUDGET",
+        "writer_executable": false,
+        "alignment_confidence": 0.8,
+        "evaluation_equivalent": true,
+        "template_node_id": "business_proposal_v1.budget",
+        "alignment_ids": [
+          "NA-0001"
+        ],
+        "domain": "business_proposal",
+        "proposal_structural_role": "DOCUMENT_HEADING",
+        "rank_tier": 2,
+        "final_score": 191.58,
+        "score_components": {
+          "tier_base": 82.0,
+          "primary_concept_match": 28.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 19.8,
+          "structural_role_match": 12.0,
+          "template_node_match": 15.299999999999999,
+          "parent_section_match": 8.0,
+          "table_header_match": 8.399999999999999,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 14.08,
+          "physical_editability": 4.0,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.0
+        },
+        "structural_score_components": {
+          "candidate_node_id": "heading_0004",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.9,
+          "structural_role_match": 0.6,
+          "template_node_match": 0.85,
+          "parent_section_match": 0.8,
+          "table_header_match": 0.35,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_2",
+          "aligned_preferred_template",
+          "eval_equivalent_alignment",
+          "primary_concept_hit",
+          "role_pref:DOCUMENT_HEADING"
+        ],
+        "overlap": 191.58,
+        "query_intent": "BUDGET_UPDATE",
+        "rank": 3,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0004",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 4
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0005",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 5
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0003",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "table_00",
+            "alignment_type": "TABLE_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {},
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET",
+              "TABLE"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "PROPOSAL_BASE:budget",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_ids": [
+              "business_proposal_v1.budget"
+            ],
+            "document_node_ids": [
+              "heading_0004",
+              "heading_0005",
+              "table_00"
+            ],
+            "section_id": "budget",
+            "concepts": [
+              "BUDGET",
+              "COST",
+              "TABLE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "PROPOSAL_BASE.p0005",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "heading_0005",
+      "status": "REVIEW_REQUIRED",
+      "display_name": "예산에 대한 설명입니다.",
+      "evidence": [],
+      "reason_codes": [
+        "paragraph_concept_match"
+      ],
+      "human_review_required": true,
+      "source_locator": {
+        "paragraph_index": 5
+      },
+      "source_stage": "document_paragraph",
+      "metadata": {
+        "supports_patch": false,
+        "target_exists": true,
+        "structural_role": "DOCUMENT_HEADING",
+        "physical": true,
+        "editable": true,
+        "virtual": false,
+        "canonical_concepts": [
+          "BUDGET"
+        ],
+        "content_specificity": 0.45,
+        "parent_section_id": null,
+        "direct_match": true,
+        "inherited_match": false,
+        "parent_context_match": 0.8,
+        "section_context": "BUDGET",
+        "writer_executable": false,
+        "alignment_confidence": 0.8,
+        "evaluation_equivalent": true,
+        "template_node_id": "business_proposal_v1.budget",
+        "alignment_ids": [
+          "NA-0002"
+        ],
+        "domain": "business_proposal",
+        "proposal_structural_role": "DOCUMENT_HEADING",
+        "rank_tier": 2,
+        "final_score": 191.58,
+        "score_components": {
+          "tier_base": 82.0,
+          "primary_concept_match": 28.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 19.8,
+          "structural_role_match": 12.0,
+          "template_node_match": 15.299999999999999,
+          "parent_section_match": 8.0,
+          "table_header_match": 8.399999999999999,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 14.08,
+          "physical_editability": 4.0,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.0
+        },
+        "structural_score_components": {
+          "candidate_node_id": "heading_0005",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.9,
+          "structural_role_match": 0.6,
+          "template_node_match": 0.85,
+          "parent_section_match": 0.8,
+          "table_header_match": 0.35,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_2",
+          "aligned_preferred_template",
+          "eval_equivalent_alignment",
+          "primary_concept_hit",
+          "role_pref:DOCUMENT_HEADING"
+        ],
+        "overlap": 191.58,
+        "query_intent": "BUDGET_UPDATE",
+        "rank": 4,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0004",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 4
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0005",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 5
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0003",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "table_00",
+            "alignment_type": "TABLE_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {},
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET",
+              "TABLE"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "PROPOSAL_BASE:budget",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_ids": [
+              "business_proposal_v1.budget"
+            ],
+            "document_node_ids": [
+              "heading_0004",
+              "heading_0005",
+              "table_00"
+            ],
+            "section_id": "budget",
+            "concepts": [
+              "BUDGET",
+              "COST",
+              "TABLE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "BP-TBL-heading_0001",
+      "candidate_id": "BP-TBL-heading_0001",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "heading_0001",
+      "status": "REVIEW_REQUIRED",
+      "overlap": 0.5,
+      "display_name": "실행 일정",
+      "reason_codes": [
+        "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+        "schedule_concept_heading",
+        "proposal_table_ambiguous"
+      ],
+      "human_review_required": true,
+      "source_stage": "proposal_table_retrieval",
+      "metadata": {
+        "overlap": 37.34,
+        "evidence_type": "TABLE_CONTEXT",
+        "supports_patch": false,
+        "supports_review": true,
+        "table_role": "SCHEDULE_TABLE",
+        "canonical_concepts": [
+          "SCHEDULE"
+        ],
+        "structural_role": "DOCUMENT_HEADING",
+        "proposal_structural_role": "DOCUMENT_HEADING",
+        "editable": true,
+        "physical": true,
+        "virtual": false,
+        "content_specificity": 0.45,
+        "reason_codes": [
+          "role_proposal_heading"
+        ],
+        "writer_executable": false,
+        "domain": "business_proposal",
+        "rank_tier": 6,
+        "final_score": 37.34,
+        "score_components": {
+          "tier_base": 4.0,
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 9.9,
+          "structural_role_match": 12.0,
+          "template_node_match": 0.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 8.399999999999999,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.0,
+          "physical_editability": 4.0,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.96
+        },
+        "structural_score_components": {
+          "candidate_node_id": "heading_0001",
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.45,
+          "structural_role_match": 0.6,
+          "template_node_match": 0.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.35,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.0,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.12,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "role_pref:DOCUMENT_HEADING"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_6",
+          "role_pref:DOCUMENT_HEADING"
+        ],
+        "query_intent": "BUDGET_UPDATE",
+        "rank": 5,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0004",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 4
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0005",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 5
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0003",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "table_00",
+            "alignment_type": "TABLE_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {},
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET",
+              "TABLE"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "PROPOSAL_BASE:budget",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_ids": [
+              "business_proposal_v1.budget"
+            ],
+            "document_node_ids": [
+              "heading_0004",
+              "heading_0005",
+              "table_00"
+            ],
+            "section_id": "budget",
+            "concepts": [
+              "BUDGET",
+              "COST",
+              "TABLE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "BP-TBL-heading_0002",
+      "candidate_id": "BP-TBL-heading_0002",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "heading_0002",
+      "status": "REVIEW_REQUIRED",
+      "overlap": 0.5,
+      "display_name": "실행 일정에 대한 설명입니다.",
+      "reason_codes": [
+        "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+        "schedule_concept_heading",
+        "proposal_table_ambiguous"
+      ],
+      "human_review_required": true,
+      "source_stage": "proposal_table_retrieval",
+      "metadata": {
+        "overlap": 37.34,
+        "evidence_type": "TABLE_CONTEXT",
+        "supports_patch": false,
+        "supports_review": true,
+        "table_role": "SCHEDULE_TABLE",
+        "canonical_concepts": [
+          "SCHEDULE"
+        ],
+        "structural_role": "DOCUMENT_HEADING",
+        "proposal_structural_role": "DOCUMENT_HEADING",
+        "editable": true,
+        "physical": true,
+        "virtual": false,
+        "content_specificity": 0.45,
+        "reason_codes": [
+          "role_proposal_heading"
+        ],
+        "writer_executable": false,
+        "domain": "business_proposal",
+        "rank_tier": 6,
+        "final_score": 37.34,
+        "score_components": {
+          "tier_base": 4.0,
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 9.9,
+          "structural_role_match": 12.0,
+          "template_node_match": 0.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 8.399999999999999,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.0,
+          "physical_editability": 4.0,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.96
+        },
+        "structural_score_components": {
+          "candidate_node_id": "heading_0002",
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.45,
+          "structural_role_match": 0.6,
+          "template_node_match": 0.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.35,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.0,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.12,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "role_pref:DOCUMENT_HEADING"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_6",
+          "role_pref:DOCUMENT_HEADING"
+        ],
+        "query_intent": "BUDGET_UPDATE",
+        "rank": 6,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0004",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 4
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0005",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 5
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0003",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "table_00",
+            "alignment_type": "TABLE_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {},
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET",
+              "TABLE"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "PROPOSAL_BASE:budget",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_ids": [
+              "business_proposal_v1.budget"
+            ],
+            "document_node_ids": [
+              "heading_0004",
+              "heading_0005",
+              "table_00"
+            ],
+            "section_id": "budget",
+            "concepts": [
+              "BUDGET",
+              "COST",
+              "TABLE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "BP-TBL-heading_0008",
+      "candidate_id": "BP-TBL-heading_0008",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "heading_0008",
+      "status": "REVIEW_REQUIRED",
+      "overlap": 0.4,
+      "display_name": "수행 조직",
+      "reason_codes": [
+        "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+        "proposal_table_ambiguous"
+      ],
+      "human_review_required": true,
+      "source_stage": "proposal_table_retrieval",
+      "metadata": {
+        "overlap": 37.34,
+        "evidence_type": "TABLE_CONTEXT",
+        "supports_patch": false,
+        "supports_review": true,
+        "table_role": "ORGANIZATION_SECTION",
+        "canonical_concepts": [
+          "ORGANIZATION"
+        ],
+        "structural_role": "DOCUMENT_HEADING",
+        "proposal_structural_role": "DOCUMENT_HEADING",
+        "editable": true,
+        "physical": true,
+        "virtual": false,
+        "content_specificity": 0.45,
+        "reason_codes": [
+          "role_proposal_heading"
+        ],
+        "writer_executable": false,
+        "domain": "business_proposal",
+        "rank_tier": 6,
+        "final_score": 37.34,
+        "score_components": {
+          "tier_base": 4.0,
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 9.9,
+          "structural_role_match": 12.0,
+          "template_node_match": 0.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 8.399999999999999,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.0,
+          "physical_editability": 4.0,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.96
+        },
+        "structural_score_components": {
+          "candidate_node_id": "heading_0008",
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.45,
+          "structural_role_match": 0.6,
+          "template_node_match": 0.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.35,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.0,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.12,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "role_pref:DOCUMENT_HEADING"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_6",
+          "role_pref:DOCUMENT_HEADING"
+        ],
+        "query_intent": "BUDGET_UPDATE",
+        "rank": 7,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0004",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 4
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0005",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 5
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0003",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "table_00",
+            "alignment_type": "TABLE_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {},
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET",
+              "TABLE"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "PROPOSAL_BASE:budget",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_ids": [
+              "business_proposal_v1.budget"
+            ],
+            "document_node_ids": [
+              "heading_0004",
+              "heading_0005",
+              "table_00"
+            ],
+            "section_id": "budget",
+            "concepts": [
+              "BUDGET",
+              "COST",
+              "TABLE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "BP-TBL-heading_0009",
+      "candidate_id": "BP-TBL-heading_0009",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "heading_0009",
+      "status": "REVIEW_REQUIRED",
+      "overlap": 0.4,
+      "display_name": "수행 조직에 대한 설명입니다.",
+      "reason_codes": [
+        "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+        "proposal_table_ambiguous"
+      ],
+      "human_review_required": true,
+      "source_stage": "proposal_table_retrieval",
+      "metadata": {
+        "overlap": 37.34,
+        "evidence_type": "TABLE_CONTEXT",
+        "supports_patch": false,
+        "supports_review": true,
+        "table_role": "ORGANIZATION_SECTION",
+        "canonical_concepts": [
+          "ORGANIZATION"
+        ],
+        "structural_role": "DOCUMENT_HEADING",
+        "proposal_structural_role": "DOCUMENT_HEADING",
+        "editable": true,
+        "physical": true,
+        "virtual": false,
+        "content_specificity": 0.45,
+        "reason_codes": [
+          "role_proposal_heading"
+        ],
+        "writer_executable": false,
+        "domain": "business_proposal",
+        "rank_tier": 6,
+        "final_score": 37.34,
+        "score_components": {
+          "tier_base": 4.0,
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 9.9,
+          "structural_role_match": 12.0,
+          "template_node_match": 0.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 8.399999999999999,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.0,
+          "physical_editability": 4.0,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.96
+        },
+        "structural_score_components": {
+          "candidate_node_id": "heading_0009",
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.45,
+          "structural_role_match": 0.6,
+          "template_node_match": 0.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.35,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.0,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.12,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "role_pref:DOCUMENT_HEADING"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_6",
+          "role_pref:DOCUMENT_HEADING"
+        ],
+        "query_intent": "BUDGET_UPDATE",
+        "rank": 8,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0004",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 4
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "heading_0005",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {
+              "paragraph_index": 5
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0003",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_id": "business_proposal_v1.budget",
+            "document_node_id": "table_00",
+            "alignment_type": "TABLE_TO_SECTION",
+            "section_id": "budget",
+            "source_locator": {},
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "BUDGET",
+            "canonical_concepts": [
+              "BUDGET",
+              "TABLE"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "PROPOSAL_BASE:budget",
+            "document_id": "PROPOSAL_BASE",
+            "template_node_ids": [
+              "business_proposal_v1.budget"
+            ],
+            "document_node_ids": [
+              "heading_0004",
+              "heading_0005",
+              "table_00"
+            ],
+            "section_id": "budget",
+            "concepts": [
+              "BUDGET",
+              "COST",
+              "TABLE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "patch_candidates": [],
+  "approvals": [
+    {
+      "item_id": "business_proposal_v1.budget",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "business_proposal_v1.budget",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:05Z"
+    },
+    {
+      "item_id": "BP-TBL-table_00",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "table_00",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:05Z"
+    },
+    {
+      "item_id": "PROPOSAL_BASE.p0004",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "heading_0004",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:05Z"
+    },
+    {
+      "item_id": "PROPOSAL_BASE.p0005",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "heading_0005",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:05Z"
+    },
+    {
+      "item_id": "BP-TBL-heading_0001",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "heading_0001",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:05Z"
+    },
+    {
+      "item_id": "BP-TBL-heading_0002",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "heading_0002",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:05Z"
+    },
+    {
+      "item_id": "BP-TBL-heading_0008",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "heading_0008",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:05Z"
+    },
+    {
+      "item_id": "BP-TBL-heading_0009",
+      "document_id": "PROPOSAL_BASE",
+      "node_id": "heading_0009",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:05Z"
+    }
+  ],
+  "writer_result": {
+    "status": "COMPLETED_PREVIEW",
+    "applied": 0,
+    "skipped": 8,
+    "rejected": 0,
+    "blocked": 0,
+    "enable_write": false,
+    "details": [
+      {
+        "item_id": "business_proposal_v1.budget",
+        "document_id": "PROPOSAL_BASE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "BP-TBL-table_00",
+        "document_id": "PROPOSAL_BASE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "PROPOSAL_BASE.p0004",
+        "document_id": "PROPOSAL_BASE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "PROPOSAL_BASE.p0005",
+        "document_id": "PROPOSAL_BASE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "BP-TBL-heading_0001",
+        "document_id": "PROPOSAL_BASE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "BP-TBL-heading_0002",
+        "document_id": "PROPOSAL_BASE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "BP-TBL-heading_0008",
+        "document_id": "PROPOSAL_BASE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "BP-TBL-heading_0009",
+        "document_id": "PROPOSAL_BASE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      }
+    ],
+    "by_document": {
+      "PROPOSAL_BASE": {
+        "applied": 0,
+        "rejected": 0,
+        "blocked": 0,
+        "skipped": 8,
+        "pending": 0
+      }
+    },
+    "controlled_writer_invoked": false
+  },
+  "validation": {
+    "status": "VALID",
+    "ok": true,
+    "issues": [],
+    "warnings": [],
+    "checks": {
+      "valid_state": true,
+      "terminal_state_immutable": true,
+      "no_duplicate_terminal_event": true,
+      "no_duplicate_document_id": true,
+      "no_duplicate_filename": true,
+      "writer_not_invoked_without_gate": true
+    },
+    "can_transition_sample": {
+      "UPLOADED->ANALYZING": true,
+      "COMPLETED->WRITING": false
+    }
+  },
+  "timeline": [
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "CREATED",
+      "event": "created",
+      "detail": "document_set=business_proposal;routing_mode=explicit"
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "UPLOADED",
+      "event": "uploaded",
+      "detail": "files=1"
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "ANALYZING",
+      "event": "analysis_started",
+      "detail": ""
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "REVIEW_READY",
+      "event": "analysis_completed",
+      "detail": "impacted=1"
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "WAITING_APPROVAL",
+      "event": "waiting_approval",
+      "detail": ""
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "WAITING_APPROVAL",
+      "event": "approval_updated",
+      "detail": "approved=8"
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "WRITING",
+      "event": "writer_started",
+      "detail": "enable_write=False"
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "VALIDATING",
+      "event": "writer_completed",
+      "detail": "applied=0"
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "COMPLETED",
+      "event": "completed",
+      "detail": ""
+    }
+  ],
+  "result_rows": [
+    {
+      "document_id": "PROPOSAL_BASE",
+      "status": "APPROVED_PENDING_WRITE",
+      "review": "Y",
+      "applied": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "validation": "PASS",
+      "diff_available": false,
+      "download": "data/eval/results/document_tnr/_holdout_work/v2_hol_bp_budget/v2_hol_bp_budget_business_proposal_20260823T201005Z/copies/proposal_base.docx",
+      "skipped": 8,
+      "pending": 0
+    }
+  ],
+  "errors": [],
+  "metadata": {
+    "legacy_pair_untouched": true,
+    "writer_enabled_default": false,
+    "document_routing_mode": "explicit",
+    "requested_document_set": "business_proposal",
+    "identity_summary": {
+      "ok": true,
+      "per_document": [
+        {
+          "ok": true,
+          "checks": {
+            "no_filename_only_auto_route": true,
+            "canonical_id_deterministic": true,
+            "temporary_and_canonical_id_separated": true,
+            "conflict_requires_review": true,
+            "routed_pack_matches_decision": true,
+            "wrong_route_never_writes": true
+          },
+          "reasons": [],
+          "invariants": [
+            "no_filename_only_auto_route",
+            "canonical_id_deterministic",
+            "temporary_and_canonical_id_separated",
+            "conflict_requires_review",
+            "routed_pack_matches_decision",
+            "wrong_route_never_writes"
+          ]
+        }
+      ]
+    },
+    "needs_identity_confirmation": false,
+    "identity_decisions": [
+      {
+        "decision_id": "idec_ddf64eb1d690",
+        "source_document_id": "PROPOSAL_BASE",
+        "canonical_document_id": "GENERIC_BUSINESS_PROPOSAL",
+        "short_id": "PROPOSAL",
+        "document_type": "BUSINESS_PROPOSAL",
+        "document_role": "business_proposal",
+        "domain_pack_id": "generic_document_v1",
+        "template_id": "business_proposal_v1",
+        "decision_status": "REVIEW_REQUIRED",
+        "top_score": 51.65,
+        "second_score": 0.0,
+        "score_margin": 51.65,
+        "rank_tier": 3,
+        "reason_codes": [
+          "filename_hint:PROPOSAL",
+          "filename_role_hint",
+          "heading_or_title",
+          "proposal_heading_concepts",
+          "insufficient_margin_or_tier"
+        ],
+        "evidence": [
+          {
+            "signal_id": "fn_3eee49c6",
+            "type": "FILENAME_TOKEN",
+            "value": "proposal_base.docx"
+          },
+          {
+            "signal_id": "fnrole_61c412f1",
+            "type": "DOCUMENT_ROLE_HINT",
+            "value": "business_proposal"
+          },
+          {
+            "signal_id": "fmt_219843f0",
+            "type": "FILE_FORMAT",
+            "value": ".docx"
+          },
+          {
+            "signal_id": "hd_ca4bdd52",
+            "type": "DOCUMENT_TITLE",
+            "value": "사업 제안서"
+          },
+          {
+            "signal_id": "hd_0bc2477a",
+            "type": "HEADING_TEXT",
+            "value": "실행 일정"
+          },
+          {
+            "signal_id": "hd_ec49007c",
+            "type": "HEADING_TEXT",
+            "value": "실행 일정에 대한 설명입니다."
+          },
+          {
+            "signal_id": "hd_aac04395",
+            "type": "HEADING_TEXT",
+            "value": "2026-Q3 착수, 2026-Q4 완료"
+          },
+          {
+            "signal_id": "hd_7e7bb3a4",
+            "type": "HEADING_TEXT",
+            "value": "예산"
+          },
+          {
+            "signal_id": "hd_1290585c",
+            "type": "HEADING_TEXT",
+            "value": "예산에 대한 설명입니다."
+          },
+          {
+            "signal_id": "hd_68a26d45",
+            "type": "HEADING_TEXT",
+            "value": "위험 관리"
+          },
+          {
+            "signal_id": "hd_4c6b5438",
+            "type": "HEADING_TEXT",
+            "value": "위험 관리에 대한 설명입니다."
+          },
+          {
+            "signal_id": "hd_6a31c93a",
+            "type": "HEADING_TEXT",
+            "value": "수행 조직"
+          }
+        ],
+        "human_review_required": true,
+        "auto_selected": false,
+        "metadata": {
+          "temporary_source_id": "PROPOSAL_BASE",
+          "canonical_id_deterministic": true,
+          "filename_only": false
+        }
+      }
+    ],
+    "pack_routings": [
+      {
+        "routing_id": "route_e463c797bf",
+        "source_document_id": "PROPOSAL_BASE",
+        "selected_pack_id": "generic_document_v1",
+        "candidate_pack_ids": [
+          "generic_document_v1"
+        ],
+        "routing_status": "ROUTED",
+        "score": 51.65,
+        "score_margin": 51.65,
+        "reason_codes": [
+          "filename_hint:PROPOSAL",
+          "filename_role_hint",
+          "heading_or_title",
+          "proposal_heading_concepts",
+          "insufficient_margin_or_tier",
+          "explicit_user_pack"
+        ],
+        "human_review_required": false,
+        "actual_pack_invoked": "generic_document_v1",
+        "metadata": {
+          "routing_mode": "explicit",
+          "identity_status": "REVIEW_REQUIRED",
+          "document_set_hint": "business_proposal"
+        }
+      }
+    ],
+    "analysis": {
+      "engine": "business_proposal_pack",
+      "ok": true,
+      "note": "Business proposal pack: proposal intent/table retrieval/ranking; PATCH disabled."
+    },
+    "document_impact_decisions": [
+      {
+        "document_id": "PROPOSAL_BASE",
+        "predicted_status": "REVIEW_REQUIRED",
+        "substantive_evidence_count": 9,
+        "role_evidence_count": 2,
+        "exact_identifier_count": 0,
+        "normalized_identifier_count": 0,
+        "semantic_evidence_count": 0,
+        "malformed_identifier_count": 0,
+        "reason_codes": [
+          "substantive_review_evidence"
+        ],
+        "source_stages": [
+          "catalog",
+          "document_paragraph",
+          "generic_template_sections",
+          "proposal_table_retrieval",
+          "upload"
+        ],
+        "top_evidence": [
+          {
+            "evidence_type": "EXACT_HEADING_MATCH",
+            "evidence_value": "예산",
+            "node_id": "heading_0004",
+            "confidence": 0.7,
+            "source_stage": "document_paragraph",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "paragraph_concept_match"
+            ]
+          },
+          {
+            "evidence_type": "EXACT_HEADING_MATCH",
+            "evidence_value": "예산에 대한 설명입니다.",
+            "node_id": "heading_0005",
+            "confidence": 0.7,
+            "source_stage": "document_paragraph",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "paragraph_concept_match"
+            ]
+          },
+          {
+            "evidence_type": "TABLE_HEADER_MATCH",
+            "evidence_value": "항목 금액",
+            "node_id": "table_00",
+            "confidence": 0.8,
+            "source_stage": "proposal_table_retrieval",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+              "budget_table_structure",
+              "proposal_table_ambiguous"
+            ]
+          },
+          {
+            "evidence_type": "STRUCTURAL_BLOCK_MATCH",
+            "evidence_value": "예산",
+            "node_id": "heading_0004",
+            "confidence": 0.6,
+            "source_stage": "proposal_table_retrieval",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+              "proposal_table_ambiguous"
+            ]
+          },
+          {
+            "evidence_type": "STRUCTURAL_BLOCK_MATCH",
+            "evidence_value": "예산에 대한 설명입니다.",
+            "node_id": "heading_0005",
+            "confidence": 0.6,
+            "source_stage": "proposal_table_retrieval",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+              "proposal_table_ambiguous"
+            ]
+          }
+        ],
+        "human_review_required": true,
+        "target_status": "EXISTS_EXACT",
+        "validation": {
+          "no_presence_only_impacted": true,
+          "no_template_compatibility_only_impacted": true,
+          "impacted_requires_specific_node_or_addable_target": true,
+          "missing_unsupported_not_impacted": true,
+          "unrelated_request_not_reviewed_without_evidence": true
+        }
+      }
+    ],
+    "node_alignments": [
+      {
+        "alignment_id": "NA-0001",
+        "document_id": "PROPOSAL_BASE",
+        "template_node_id": "business_proposal_v1.budget",
+        "document_node_id": "heading_0004",
+        "alignment_type": "HEADING_TO_SECTION",
+        "section_id": "budget",
+        "source_locator": {
+          "paragraph_index": 4
+        },
+        "confidence": 0.8,
+        "reason_codes": [
+          "concept_or_token_bridge",
+          "section_name_hit",
+          "shared_canonical_concept"
+        ],
+        "equivalent_for_evaluation": true,
+        "equivalent_for_patch": false,
+        "canonical_concept": "BUDGET",
+        "canonical_concepts": [
+          "BUDGET"
+        ],
+        "evaluation_equivalence": true,
+        "patch_equivalence": false
+      },
+      {
+        "alignment_id": "NA-0002",
+        "document_id": "PROPOSAL_BASE",
+        "template_node_id": "business_proposal_v1.budget",
+        "document_node_id": "heading_0005",
+        "alignment_type": "HEADING_TO_SECTION",
+        "section_id": "budget",
+        "source_locator": {
+          "paragraph_index": 5
+        },
+        "confidence": 0.8,
+        "reason_codes": [
+          "concept_or_token_bridge",
+          "section_name_hit",
+          "shared_canonical_concept"
+        ],
+        "equivalent_for_evaluation": true,
+        "equivalent_for_patch": false,
+        "canonical_concept": "BUDGET",
+        "canonical_concepts": [
+          "BUDGET"
+        ],
+        "evaluation_equivalence": true,
+        "patch_equivalence": false
+      },
+      {
+        "alignment_id": "NA-0003",
+        "document_id": "PROPOSAL_BASE",
+        "template_node_id": "business_proposal_v1.budget",
+        "document_node_id": "table_00",
+        "alignment_type": "TABLE_TO_SECTION",
+        "section_id": "budget",
+        "source_locator": {},
+        "confidence": 0.8,
+        "reason_codes": [
+          "concept_or_token_bridge",
+          "section_name_hit",
+          "shared_canonical_concept"
+        ],
+        "equivalent_for_evaluation": true,
+        "equivalent_for_patch": false,
+        "canonical_concept": "BUDGET",
+        "canonical_concepts": [
+          "BUDGET",
+          "TABLE"
+        ],
+        "evaluation_equivalence": true,
+        "patch_equivalence": false
+      }
+    ],
+    "structural_equivalence_groups": [
+      {
+        "group_id": "PROPOSAL_BASE:budget",
+        "document_id": "PROPOSAL_BASE",
+        "template_node_ids": [
+          "business_proposal_v1.budget"
+        ],
+        "document_node_ids": [
+          "heading_0004",
+          "heading_0005",
+          "table_00"
+        ],
+        "section_id": "budget",
+        "concepts": [
+          "BUDGET",
+          "COST",
+          "TABLE"
+        ],
+        "evaluation_equivalent": true,
+        "patch_equivalent": false,
+        "reason_codes": [
+          "structural_equivalence"
+        ]
+      }
+    ],
+    "generic_query_intent": {
+      "raw_change_request": "예산 장비비 수정",
+      "canonical_concepts": [
+        "BUDGET",
+        "COST",
+        "REQUIREMENT_INTENT"
+      ],
+      "requested_operation": "UPDATE",
+      "requested_node_roles": [
+        "BUDGET_TABLE",
+        "TABLE",
+        "PROPOSAL_SECTION",
+        "DOCUMENT_HEADING"
+      ],
+      "target_section_concepts": [
+        "BUDGET",
+        "COST",
+        "REQUIREMENT_INTENT"
+      ],
+      "intent_label": "BUDGET_UPDATE",
+      "table_intent": true,
+      "list_intent": false,
+      "add_intent": false,
+      "update_intent": true,
+      "delete_intent": false,
+      "document_level": false,
+      "ambiguity": true,
+      "confidence": 0.8999999999999999,
+      "reason_codes": [
+        "op_update",
+        "intent_budget",
+        "ambiguous_multi_concept",
+        "intent:BUDGET_UPDATE"
+      ]
+    },
+    "generic_ranking": {
+      "query_intent": {
+        "raw_change_request": "예산 장비비 수정",
+        "requested_operation": "UPDATE",
+        "primary_concept": "BUDGET",
+        "secondary_concepts": [
+          "COST",
+          "REQUIREMENT_INTENT"
+        ],
+        "requested_node_roles": [
+          "BUDGET_TABLE",
+          "TABLE",
+          "PROPOSAL_SECTION",
+          "DOCUMENT_HEADING"
+        ],
+        "table_intent": true,
+        "section_intent": true,
+        "paragraph_intent": false,
+        "add_intent": false,
+        "update_intent": true,
+        "review_intent": false,
+        "ambiguity": true,
+        "confidence": 0.8999999999999999,
+        "reason_codes": [
+          "op_update",
+          "intent_budget",
+          "ambiguous_multi_concept",
+          "intent:BUDGET_UPDATE"
+        ],
+        "canonical_concepts": [
+          "BUDGET",
+          "COST",
+          "REQUIREMENT_INTENT"
+        ],
+        "intent_label": "BUDGET_UPDATE",
+        "preferred_template_node_id": "business_proposal_v1.budget"
+      },
+      "structural_match_matrix": [
+        {
+          "candidate_node_id": "heading_0004",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.9,
+          "structural_role_match": 0.6,
+          "template_node_match": 0.85,
+          "parent_section_match": 0.8,
+          "table_header_match": 0.35,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment"
+          ]
+        },
+        {
+          "candidate_node_id": "heading_0005",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.9,
+          "structural_role_match": 0.6,
+          "template_node_match": 0.85,
+          "parent_section_match": 0.8,
+          "table_header_match": 0.35,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment"
+          ]
+        },
+        {
+          "candidate_node_id": "table_00",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.5,
+          "operation_role_match": 0.9,
+          "structural_role_match": 1.0,
+          "template_node_match": 0.85,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.95,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:BUDGET_TABLE",
+            "aligned_preferred_template",
+            "table_header_role_match",
+            "eval_equivalent_alignment"
+          ]
+        },
+        {
+          "candidate_node_id": "heading_0001",
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.45,
+          "structural_role_match": 0.6,
+          "template_node_match": 0.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.35,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.0,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.12,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "role_pref:DOCUMENT_HEADING"
+          ]
+        },
+        {
+          "candidate_node_id": "heading_0002",
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.45,
+          "structural_role_match": 0.6,
+          "template_node_match": 0.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.35,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.0,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.12,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "role_pref:DOCUMENT_HEADING"
+          ]
+        },
+        {
+          "candidate_node_id": "heading_0008",
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.45,
+          "structural_role_match": 0.6,
+          "template_node_match": 0.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.35,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.0,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.12,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "role_pref:DOCUMENT_HEADING"
+          ]
+        },
+        {
+          "candidate_node_id": "heading_0009",
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.45,
+          "structural_role_match": 0.6,
+          "template_node_match": 0.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.35,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.0,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.12,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "role_pref:DOCUMENT_HEADING"
+          ]
+        },
+        {
+          "candidate_node_id": "business_proposal_v1.budget",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.98,
+          "structural_role_match": 0.9,
+          "template_node_match": 1.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 0.2,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:PROPOSAL_SECTION",
+            "update_template_section_eval",
+            "preferred_template_node",
+            "eval_equivalent_alignment"
+          ]
+        }
+      ],
+      "ranking_results": {
+        "ranked_node_ids": [
+          "business_proposal_v1.budget",
+          "table_00",
+          "heading_0004",
+          "heading_0005",
+          "heading_0001",
+          "heading_0002",
+          "heading_0008",
+          "heading_0009"
+        ],
+        "n_ranked": 8,
+        "preferred_template_node_id": "business_proposal_v1.budget"
+      },
+      "ranking_candidates": [
+        {
+          "node_id": "business_proposal_v1.budget",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 1,
+          "final_score": 205.44,
+          "structural_role": "PROPOSAL_SECTION",
+          "proposal_structural_role": "PROPOSAL_SECTION",
+          "score_components": {
+            "tier_base": 105.0,
+            "primary_concept_match": 28.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 21.56,
+            "structural_role_match": 18.0,
+            "template_node_match": 18.0,
+            "parent_section_match": 0.0,
+            "table_header_match": 0.0,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 14.08,
+            "physical_editability": 0.8,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.0
+          },
+          "structural_score_components": {
+            "candidate_node_id": "business_proposal_v1.budget",
+            "primary_concept_match": 1.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 0.98,
+            "structural_role_match": 0.9,
+            "template_node_match": 1.0,
+            "parent_section_match": 0.0,
+            "table_header_match": 0.0,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.88,
+            "physical_editability": 0.2,
+            "virtual_target_penalty": 0.0,
+            "ambiguity_penalty": 0.0,
+            "document_context_penalty": 0.0,
+            "reason_codes": [
+              "primary_concept_hit",
+              "role_pref:PROPOSAL_SECTION",
+              "update_template_section_eval",
+              "preferred_template_node",
+              "eval_equivalent_alignment"
+            ]
+          },
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:PROPOSAL_SECTION",
+            "update_template_section_eval",
+            "preferred_template_node",
+            "eval_equivalent_alignment",
+            "RANK_TIER_1",
+            "exact_section_concept_template"
+          ],
+          "rank": 1
+        },
+        {
+          "node_id": "table_00",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 1,
+          "final_score": 232.98,
+          "structural_role": "BUDGET_TABLE",
+          "proposal_structural_role": "BUDGET_TABLE",
+          "score_components": {
+            "tier_base": 105.0,
+            "primary_concept_match": 28.0,
+            "secondary_concept_match": 4.0,
+            "operation_role_match": 19.8,
+            "structural_role_match": 20.0,
+            "template_node_match": 15.299999999999999,
+            "parent_section_match": 0.0,
+            "table_header_match": 22.799999999999997,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 14.08,
+            "physical_editability": 4.0,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.0
+          },
+          "structural_score_components": {
+            "candidate_node_id": "table_00",
+            "primary_concept_match": 1.0,
+            "secondary_concept_match": 0.5,
+            "operation_role_match": 0.9,
+            "structural_role_match": 1.0,
+            "template_node_match": 0.85,
+            "parent_section_match": 0.0,
+            "table_header_match": 0.95,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.88,
+            "physical_editability": 1.0,
+            "virtual_target_penalty": 0.0,
+            "ambiguity_penalty": 0.0,
+            "document_context_penalty": 0.0,
+            "reason_codes": [
+              "primary_concept_hit",
+              "role_pref:BUDGET_TABLE",
+              "aligned_preferred_template",
+              "table_header_role_match",
+              "eval_equivalent_alignment"
+            ]
+          },
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:BUDGET_TABLE",
+            "aligned_preferred_template",
+            "table_header_role_match",
+            "eval_equivalent_alignment",
+            "RANK_TIER_1"
+          ],
+          "rank": 2
+        },
+        {
+          "node_id": "heading_0004",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 2,
+          "final_score": 191.58,
+          "structural_role": "DOCUMENT_HEADING",
+          "proposal_structural_role": "DOCUMENT_HEADING",
+          "score_components": {
+            "tier_base": 82.0,
+            "primary_concept_match": 28.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 19.8,
+            "structural_role_match": 12.0,
+            "template_node_match": 15.299999999999999,
+            "parent_section_match": 8.0,
+            "table_header_match": 8.399999999999999,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 14.08,
+            "physical_editability": 4.0,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.0
+          },
+          "structural_score_components": {
+            "candidate_node_id": "heading_0004",
+            "primary_concept_match": 1.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 0.9,
+            "structural_role_match": 0.6,
+            "template_node_match": 0.85,
+            "parent_section_match": 0.8,
+            "table_header_match": 0.35,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.88,
+            "physical_editability": 1.0,
+            "virtual_target_penalty": 0.0,
+            "ambiguity_penalty": 0.0,
+            "document_context_penalty": 0.0,
+            "reason_codes": [
+              "primary_concept_hit",
+              "role_pref:DOCUMENT_HEADING",
+              "aligned_preferred_template",
+              "eval_equivalent_alignment"
+            ]
+          },
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment",
+            "RANK_TIER_2"
+          ],
+          "rank": 3
+        },
+        {
+          "node_id": "heading_0005",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 2,
+          "final_score": 191.58,
+          "structural_role": "DOCUMENT_HEADING",
+          "proposal_structural_role": "DOCUMENT_HEADING",
+          "score_components": {
+            "tier_base": 82.0,
+            "primary_concept_match": 28.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 19.8,
+            "structural_role_match": 12.0,
+            "template_node_match": 15.299999999999999,
+            "parent_section_match": 8.0,
+            "table_header_match": 8.399999999999999,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 14.08,
+            "physical_editability": 4.0,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.0
+          },
+          "structural_score_components": {
+            "candidate_node_id": "heading_0005",
+            "primary_concept_match": 1.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 0.9,
+            "structural_role_match": 0.6,
+            "template_node_match": 0.85,
+            "parent_section_match": 0.8,
+            "table_header_match": 0.35,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.88,
+            "physical_editability": 1.0,
+            "virtual_target_penalty": 0.0,
+            "ambiguity_penalty": 0.0,
+            "document_context_penalty": 0.0,
+            "reason_codes": [
+              "primary_concept_hit",
+              "role_pref:DOCUMENT_HEADING",
+              "aligned_preferred_template",
+              "eval_equivalent_alignment"
+            ]
+          },
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment",
+            "RANK_TIER_2"
+          ],
+          "rank": 4
+        },
+        {
+          "node_id": "heading_0001",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 6,
+          "final_score": 37.34,
+          "structural_role": "DOCUMENT_HEADING",
+          "proposal_structural_role": "DOCUMENT_HEADING",
+          "score_components": {
+            "tier_base": 4.0,
+            "primary_concept_match": 0.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 9.9,
+            "structural_role_match": 12.0,
+            "template_node_match": 0.0,
+            "parent_section_match": 0.0,
+            "table_header_match": 8.399999999999999,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.0,
+            "physical_editability": 4.0,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.96
+          },
+          "structural_score_components": {
+            "candidate_node_id": "heading_0001",
+            "primary_concept_match": 0.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 0.45,
+            "structural_role_match": 0.6,
+            "template_node_match": 0.0,
+            "parent_section_match": 0.0,
+            "table_header_match": 0.35,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.0,
+            "physical_editability": 1.0,
+            "virtual_target_penalty": 0.0,
+            "ambiguity_penalty": 0.12,
+            "document_context_penalty": 0.0,
+            "reason_codes": [
+              "role_pref:DOCUMENT_HEADING"
+            ]
+          },
+          "reason_codes": [
+            "role_pref:DOCUMENT_HEADING",
+            "RANK_TIER_6"
+          ],
+          "rank": 5
+        },
+        {
+          "node_id": "heading_0002",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 6,
+          "final_score": 37.34,
+          "structural_role": "DOCUMENT_HEADING",
+          "proposal_structural_role": "DOCUMENT_HEADING",
+          "score_components": {
+            "tier_base": 4.0,
+            "primary_concept_match": 0.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 9.9,
+            "structural_role_match": 12.0,
+            "template_node_match": 0.0,
+            "parent_section_match": 0.0,
+            "table_header_match": 8.399999999999999,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.0,
+            "physical_editability": 4.0,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.96
+          },
+          "structural_score_components": {
+            "candidate_node_id": "heading_0002",
+            "primary_concept_match": 0.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 0.45,
+            "structural_role_match": 0.6,
+            "template_node_match": 0.0,
+            "parent_section_match": 0.0,
+            "table_header_match": 0.35,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.0,
+            "physical_editability": 1.0,
+            "virtual_target_penalty": 0.0,
+            "ambiguity_penalty": 0.12,
+            "document_context_penalty": 0.0,
+            "reason_codes": [
+              "role_pref:DOCUMENT_HEADING"
+            ]
+          },
+          "reason_codes": [
+            "role_pref:DOCUMENT_HEADING",
+            "RANK_TIER_6"
+          ],
+          "rank": 6
+        },
+        {
+          "node_id": "heading_0008",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 6,
+          "final_score": 37.34,
+          "structural_role": "DOCUMENT_HEADING",
+          "proposal_structural_role": "DOCUMENT_HEADING",
+          "score_components": {
+            "tier_base": 4.0,
+            "primary_concept_match": 0.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 9.9,
+            "structural_role_match": 12.0,
+            "template_node_match": 0.0,
+            "parent_section_match": 0.0,
+            "table_header_match": 8.399999999999999,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.0,
+            "physical_editability": 4.0,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.96
+          },
+          "structural_score_components": {
+            "candidate_node_id": "heading_0008",
+            "primary_concept_match": 0.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 0.45,
+            "structural_role_match": 0.6,
+            "template_node_match": 0.0,
+            "parent_section_match": 0.0,
+            "table_header_match": 0.35,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.0,
+            "physical_editability": 1.0,
+            "virtual_target_penalty": 0.0,
+            "ambiguity_penalty": 0.12,
+            "document_context_penalty": 0.0,
+            "reason_codes": [
+              "role_pref:DOCUMENT_HEADING"
+            ]
+          },
+          "reason_codes": [
+            "role_pref:DOCUMENT_HEADING",
+            "RANK_TIER_6"
+          ],
+          "rank": 7
+        },
+        {
+          "node_id": "heading_0009",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 6,
+          "final_score": 37.34,
+          "structural_role": "DOCUMENT_HEADING",
+          "proposal_structural_role": "DOCUMENT_HEADING",
+          "score_components": {
+            "tier_base": 4.0,
+            "primary_concept_match": 0.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 9.9,
+            "structural_role_match": 12.0,
+            "template_node_match": 0.0,
+            "parent_section_match": 0.0,
+            "table_header_match": 8.399999999999999,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.0,
+            "physical_editability": 4.0,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.96
+          },
+          "structural_score_components": {
+            "candidate_node_id": "heading_0009",
+            "primary_concept_match": 0.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 0.45,
+            "structural_role_match": 0.6,
+            "template_node_match": 0.0,
+            "parent_section_match": 0.0,
+            "table_header_match": 0.35,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.0,
+            "physical_editability": 1.0,
+            "virtual_target_penalty": 0.0,
+            "ambiguity_penalty": 0.12,
+            "document_context_penalty": 0.0,
+            "reason_codes": [
+              "role_pref:DOCUMENT_HEADING"
+            ]
+          },
+          "reason_codes": [
+            "role_pref:DOCUMENT_HEADING",
+            "RANK_TIER_6"
+          ],
+          "rank": 8
+        }
+      ],
+      "validation": {
+        "proposal_concept_rank_consistent": true,
+        "proposal_table_role_consistent": true,
+        "proposal_alignment_valid": true,
+        "virtual_target_only_for_add": true,
+        "business_proposal_not_general_report_fallback": true,
+        "writer_scope_unchanged": true,
+        "issues": []
+      }
+    }
+  }
+}

@@ -1,0 +1,1467 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="evidence" attr.type="string"/>
+<key id="d5" for="edge" attr.name="confidence" attr.type="double"/>
+<key id="d4" for="edge" attr.name="type" attr.type="string"/>
+<key id="d3" for="node" attr.name="case_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="normalized_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="label" attr.type="string"/>
+<key id="d0" for="node" attr.name="type" attr.type="string"/>
+<graph edgedefault="directed"><node id="case:requirement:Req. 1">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 1</data>
+  <data key="d2">Req. 1</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 2">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 2</data>
+  <data key="d2">Req. 2</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 3">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 3</data>
+  <data key="d2">Req. 3</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 4">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 4</data>
+  <data key="d2">Req. 4</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 5">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 5</data>
+  <data key="d2">Req. 5</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 6">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 6</data>
+  <data key="d2">Req. 6</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 7">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 7</data>
+  <data key="d2">Req. 7</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 8">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 8</data>
+  <data key="d2">Req. 8</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 9">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 9</data>
+  <data key="d2">Req. 9</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 10">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 10</data>
+  <data key="d2">Req. 10</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 11">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 11</data>
+  <data key="d2">Req. 11</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 12">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 12</data>
+  <data key="d2">Req. 12</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 13">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 13</data>
+  <data key="d2">Req. 13</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 14">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 14</data>
+  <data key="d2">Req. 14</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 15">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 15</data>
+  <data key="d2">Req. 15</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 16">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 16</data>
+  <data key="d2">Req. 16</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 17">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 17</data>
+  <data key="d2">Req. 17</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 18">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 18</data>
+  <data key="d2">Req. 18</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 100">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 100</data>
+  <data key="d2">Req. 100</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 101">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 101</data>
+  <data key="d2">Req. 101</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 102">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 102</data>
+  <data key="d2">Req. 102</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 103">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 103</data>
+  <data key="d2">Req. 103</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 104">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 104</data>
+  <data key="d2">Req. 104</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 105">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 105</data>
+  <data key="d2">Req. 105</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 106">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 106</data>
+  <data key="d2">Req. 106</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 107">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 107</data>
+  <data key="d2">Req. 107</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 108">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 108</data>
+  <data key="d2">Req. 108</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 109">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 109</data>
+  <data key="d2">Req. 109</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 110">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 110</data>
+  <data key="d2">Req. 110</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 200">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 200</data>
+  <data key="d2">Req. 200</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 201">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 201</data>
+  <data key="d2">Req. 201</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 202">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 202</data>
+  <data key="d2">Req. 202</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 203">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 203</data>
+  <data key="d2">Req. 203</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 204">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 204</data>
+  <data key="d2">Req. 204</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 205">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 205</data>
+  <data key="d2">Req. 205</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 206">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 206</data>
+  <data key="d2">Req. 206</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 207">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 207</data>
+  <data key="d2">Req. 207</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:IA-01">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">IA-01</data>
+  <data key="d2">IA-01</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:IA-02">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">IA-02</data>
+  <data key="d2">IA-02</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:IA-03">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">IA-03</data>
+  <data key="d2">IA-03</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:IA-04">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">IA-04</data>
+  <data key="d2">IA-04</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:IA-05">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">IA-05</data>
+  <data key="d2">IA-05</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:IA-06">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">IA-06</data>
+  <data key="d2">IA-06</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:IA-07">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">IA-07</data>
+  <data key="d2">IA-07</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:IA-08">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">IA-08</data>
+  <data key="d2">IA-08</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:UC-01">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">UC-01</data>
+  <data key="d2">UC-01</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:UC-02">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">UC-02</data>
+  <data key="d2">UC-02</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:UC-03">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">UC-03</data>
+  <data key="d2">UC-03</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:UC-04">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">UC-04</data>
+  <data key="d2">UC-04</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:UC-05">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">UC-05</data>
+  <data key="d2">UC-05</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:UC-06">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">UC-06</data>
+  <data key="d2">UC-06</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:UC-07">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">UC-07</data>
+  <data key="d2">UC-07</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:SI-01">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">SI-01</data>
+  <data key="d2">SI-01</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:SI-02">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">SI-02</data>
+  <data key="d2">SI-02</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:SI-03">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">SI-03</data>
+  <data key="d2">SI-03</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:requirement:Req. 208">
+  <data key="d0">Requirement</data>
+  <data key="d1">Req. 208</data>
+  <data key="d2">Req. 208</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:SI-04">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">SI-04</data>
+  <data key="d2">SI-04</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:SI-05">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">SI-05</data>
+  <data key="d2">SI-05</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:SI-06">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">SI-06</data>
+  <data key="d2">SI-06</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:SI-07">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">SI-07</data>
+  <data key="d2">SI-07</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:SI-08">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">SI-08</data>
+  <data key="d2">SI-08</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:SI-09">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">SI-09</data>
+  <data key="d2">SI-09</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:SI-10">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">SI-10</data>
+  <data key="d2">SI-10</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:SI-11">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">SI-11</data>
+  <data key="d2">SI-11</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:DC-01">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">DC-01</data>
+  <data key="d2">DC-01</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:DC-02">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">DC-02</data>
+  <data key="d2">DC-02</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:DC-03">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">DC-03</data>
+  <data key="d2">DC-03</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:RA-01">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">RA-01</data>
+  <data key="d2">RA-01</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:RA-02">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">RA-02</data>
+  <data key="d2">RA-02</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:RA-03">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">RA-03</data>
+  <data key="d2">RA-03</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:RA-04">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">RA-04</data>
+  <data key="d2">RA-04</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:securitycontrol:RA-05">
+  <data key="d0">SecurityControl</data>
+  <data key="d1">RA-05</data>
+  <data key="d2">RA-05</data>
+  <data key="d3">case</data>
+</node>
+<node id="case:document:spec_requirements">
+  <data key="d0">Document</data>
+  <data key="d1">spec_requirements</data>
+  <data key="d2">spec_requirements</data>
+  <data key="d3">case</data>
+</node>
+<edge source="case:requirement:Req. 1" target="case:securitycontrol:SI-02">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-02 -&gt; Req. 1</data>
+</edge>
+<edge source="case:requirement:Req. 1" target="case:securitycontrol:SI-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-04 -&gt; Req. 1</data>
+</edge>
+<edge source="case:requirement:Req. 1" target="case:securitycontrol:SI-08">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-08 -&gt; Req. 1</data>
+</edge>
+<edge source="case:requirement:Req. 1" target="case:securitycontrol:SI-09">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-09 -&gt; Req. 1</data>
+</edge>
+<edge source="case:requirement:Req. 2" target="case:securitycontrol:IA-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-01 -&gt; Req. 2</data>
+</edge>
+<edge source="case:requirement:Req. 2" target="case:securitycontrol:IA-02">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-02 -&gt; Req. 2</data>
+</edge>
+<edge source="case:requirement:Req. 2" target="case:securitycontrol:IA-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-03 -&gt; Req. 2</data>
+</edge>
+<edge source="case:requirement:Req. 2" target="case:securitycontrol:IA-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 2</data>
+</edge>
+<edge source="case:requirement:Req. 2" target="case:securitycontrol:IA-05">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-05 -&gt; Req. 2</data>
+</edge>
+<edge source="case:requirement:Req. 2" target="case:securitycontrol:IA-06">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-06 -&gt; Req. 2</data>
+</edge>
+<edge source="case:requirement:Req. 2" target="case:securitycontrol:IA-08">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-08 -&gt; Req. 2</data>
+</edge>
+<edge source="case:requirement:Req. 2" target="case:securitycontrol:SI-05">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-05 -&gt; Req. 2</data>
+</edge>
+<edge source="case:requirement:Req. 2" target="case:securitycontrol:DC-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 2</data>
+</edge>
+<edge source="case:requirement:Req. 2" target="case:securitycontrol:DC-02">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-02 -&gt; Req. 2</data>
+</edge>
+<edge source="case:requirement:Req. 2" target="case:securitycontrol:DC-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-03 -&gt; Req. 2</data>
+</edge>
+<edge source="case:requirement:Req. 4" target="case:securitycontrol:SI-06">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-06 -&gt; Req. 4</data>
+</edge>
+<edge source="case:requirement:Req. 4" target="case:securitycontrol:SI-07">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-07 -&gt; Req. 4</data>
+</edge>
+<edge source="case:requirement:Req. 5" target="case:securitycontrol:IA-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 5</data>
+</edge>
+<edge source="case:requirement:Req. 5" target="case:securitycontrol:SI-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-01 -&gt; Req. 5</data>
+</edge>
+<edge source="case:requirement:Req. 5" target="case:securitycontrol:SI-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-03 -&gt; Req. 5</data>
+</edge>
+<edge source="case:requirement:Req. 5" target="case:securitycontrol:DC-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 5</data>
+</edge>
+<edge source="case:requirement:Req. 5" target="case:securitycontrol:DC-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-03 -&gt; Req. 5</data>
+</edge>
+<edge source="case:requirement:Req. 5" target="case:securitycontrol:RA-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-04 -&gt; Req. 5</data>
+</edge>
+<edge source="case:requirement:Req. 5" target="case:securitycontrol:RA-05">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-05 -&gt; Req. 5</data>
+</edge>
+<edge source="case:requirement:Req. 6" target="case:securitycontrol:IA-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 6</data>
+</edge>
+<edge source="case:requirement:Req. 6" target="case:securitycontrol:IA-06">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-06 -&gt; Req. 6</data>
+</edge>
+<edge source="case:requirement:Req. 6" target="case:securitycontrol:IA-07">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-07 -&gt; Req. 6</data>
+</edge>
+<edge source="case:requirement:Req. 6" target="case:securitycontrol:SI-06">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-06 -&gt; Req. 6</data>
+</edge>
+<edge source="case:requirement:Req. 6" target="case:securitycontrol:SI-07">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-07 -&gt; Req. 6</data>
+</edge>
+<edge source="case:requirement:Req. 6" target="case:securitycontrol:DC-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 6</data>
+</edge>
+<edge source="case:requirement:Req. 7" target="case:securitycontrol:SI-06">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-06 -&gt; Req. 7</data>
+</edge>
+<edge source="case:requirement:Req. 7" target="case:securitycontrol:SI-07">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-07 -&gt; Req. 7</data>
+</edge>
+<edge source="case:requirement:Req. 12" target="case:securitycontrol:IA-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 12</data>
+</edge>
+<edge source="case:requirement:Req. 12" target="case:securitycontrol:UC-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-03 -&gt; Req. 12</data>
+</edge>
+<edge source="case:requirement:Req. 12" target="case:securitycontrol:DC-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 12</data>
+</edge>
+<edge source="case:requirement:Req. 14" target="case:securitycontrol:SI-05">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-05 -&gt; Req. 14</data>
+</edge>
+<edge source="case:requirement:Req. 15" target="case:securitycontrol:SI-05">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-05 -&gt; Req. 15</data>
+</edge>
+<edge source="case:requirement:Req. 15" target="case:securitycontrol:DC-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 15</data>
+</edge>
+<edge source="case:requirement:Req. 18" target="case:securitycontrol:DC-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 18</data>
+</edge>
+<edge source="case:requirement:Req. 100" target="case:securitycontrol:IA-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-03 -&gt; Req. 100</data>
+</edge>
+<edge source="case:requirement:Req. 100" target="case:securitycontrol:IA-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 100</data>
+</edge>
+<edge source="case:requirement:Req. 100" target="case:securitycontrol:UC-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-04 -&gt; Req. 100</data>
+</edge>
+<edge source="case:requirement:Req. 100" target="case:securitycontrol:DC-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-03 -&gt; Req. 100</data>
+</edge>
+<edge source="case:requirement:Req. 101" target="case:securitycontrol:UC-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-01 -&gt; Req. 101</data>
+</edge>
+<edge source="case:requirement:Req. 101" target="case:securitycontrol:UC-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-04 -&gt; Req. 101</data>
+</edge>
+<edge source="case:requirement:Req. 102" target="case:securitycontrol:IA-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-01 -&gt; Req. 102</data>
+</edge>
+<edge source="case:requirement:Req. 102" target="case:securitycontrol:IA-02">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-02 -&gt; Req. 102</data>
+</edge>
+<edge source="case:requirement:Req. 102" target="case:securitycontrol:IA-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-03 -&gt; Req. 102</data>
+</edge>
+<edge source="case:requirement:Req. 102" target="case:securitycontrol:IA-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 102</data>
+</edge>
+<edge source="case:requirement:Req. 102" target="case:securitycontrol:IA-05">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-05 -&gt; Req. 102</data>
+</edge>
+<edge source="case:requirement:Req. 102" target="case:securitycontrol:IA-06">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-06 -&gt; Req. 102</data>
+</edge>
+<edge source="case:requirement:Req. 102" target="case:securitycontrol:IA-07">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-07 -&gt; Req. 102</data>
+</edge>
+<edge source="case:requirement:Req. 102" target="case:securitycontrol:UC-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-03 -&gt; Req. 102</data>
+</edge>
+<edge source="case:requirement:Req. 102" target="case:securitycontrol:UC-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-04 -&gt; Req. 102</data>
+</edge>
+<edge source="case:requirement:Req. 102" target="case:securitycontrol:DC-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-03 -&gt; Req. 102</data>
+</edge>
+<edge source="case:requirement:Req. 103" target="case:securitycontrol:UC-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-04 -&gt; Req. 103</data>
+</edge>
+<edge source="case:requirement:Req. 103" target="case:securitycontrol:UC-05">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-05 -&gt; Req. 103</data>
+</edge>
+<edge source="case:requirement:Req. 103" target="case:securitycontrol:UC-06">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-06 -&gt; Req. 103</data>
+</edge>
+<edge source="case:requirement:Req. 103" target="case:securitycontrol:UC-07">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-07 -&gt; Req. 103</data>
+</edge>
+<edge source="case:requirement:Req. 104" target="case:securitycontrol:SI-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-01 -&gt; Req. 104</data>
+</edge>
+<edge source="case:requirement:Req. 104" target="case:securitycontrol:SI-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-03 -&gt; Req. 104</data>
+</edge>
+<edge source="case:requirement:Req. 104" target="case:securitycontrol:DC-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 104</data>
+</edge>
+<edge source="case:requirement:Req. 104" target="case:securitycontrol:DC-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-03 -&gt; Req. 104</data>
+</edge>
+<edge source="case:requirement:Req. 104" target="case:securitycontrol:RA-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-04 -&gt; Req. 104</data>
+</edge>
+<edge source="case:requirement:Req. 104" target="case:securitycontrol:RA-05">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-05 -&gt; Req. 104</data>
+</edge>
+<edge source="case:requirement:Req. 105" target="case:securitycontrol:IA-07">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-07 -&gt; Req. 105</data>
+</edge>
+<edge source="case:requirement:Req. 105" target="case:securitycontrol:UC-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-04 -&gt; Req. 105</data>
+</edge>
+<edge source="case:requirement:Req. 105" target="case:securitycontrol:RA-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-01 -&gt; Req. 105</data>
+</edge>
+<edge source="case:requirement:Req. 105" target="case:securitycontrol:RA-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-04 -&gt; Req. 105</data>
+</edge>
+<edge source="case:requirement:Req. 106" target="case:securitycontrol:RA-02">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-02 -&gt; Req. 106</data>
+</edge>
+<edge source="case:requirement:Req. 106" target="case:securitycontrol:RA-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-03 -&gt; Req. 106</data>
+</edge>
+<edge source="case:requirement:Req. 109" target="case:securitycontrol:UC-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-01 -&gt; Req. 109</data>
+</edge>
+<edge source="case:requirement:Req. 109" target="case:securitycontrol:DC-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 109</data>
+</edge>
+<edge source="case:requirement:Req. 110" target="case:securitycontrol:UC-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-01 -&gt; Req. 110</data>
+</edge>
+<edge source="case:requirement:Req. 110" target="case:securitycontrol:UC-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-04 -&gt; Req. 110</data>
+</edge>
+<edge source="case:requirement:Req. 110" target="case:securitycontrol:UC-07">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-07 -&gt; Req. 110</data>
+</edge>
+<edge source="case:requirement:Req. 201" target="case:securitycontrol:IA-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-01 -&gt; Req. 201</data>
+</edge>
+<edge source="case:requirement:Req. 201" target="case:securitycontrol:IA-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 201</data>
+</edge>
+<edge source="case:requirement:Req. 201" target="case:securitycontrol:IA-06">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-06 -&gt; Req. 201</data>
+</edge>
+<edge source="case:requirement:Req. 201" target="case:securitycontrol:IA-07">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-07 -&gt; Req. 201</data>
+</edge>
+<edge source="case:requirement:Req. 201" target="case:securitycontrol:IA-08">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-08 -&gt; Req. 201</data>
+</edge>
+<edge source="case:requirement:Req. 201" target="case:securitycontrol:UC-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-01 -&gt; Req. 201</data>
+</edge>
+<edge source="case:requirement:Req. 202" target="case:securitycontrol:IA-02">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-02 -&gt; Req. 202</data>
+</edge>
+<edge source="case:requirement:Req. 202" target="case:securitycontrol:IA-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-03 -&gt; Req. 202</data>
+</edge>
+<edge source="case:requirement:Req. 202" target="case:securitycontrol:IA-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 202</data>
+</edge>
+<edge source="case:requirement:Req. 202" target="case:securitycontrol:IA-05">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-05 -&gt; Req. 202</data>
+</edge>
+<edge source="case:requirement:Req. 202" target="case:securitycontrol:SI-05">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-05 -&gt; Req. 202</data>
+</edge>
+<edge source="case:requirement:Req. 203" target="case:securitycontrol:IA-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-03 -&gt; Req. 203</data>
+</edge>
+<edge source="case:requirement:Req. 203" target="case:securitycontrol:SI-05">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-05 -&gt; Req. 203</data>
+</edge>
+<edge source="case:requirement:Req. 204" target="case:securitycontrol:UC-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-01 -&gt; Req. 204</data>
+</edge>
+<edge source="case:requirement:Req. 205" target="case:securitycontrol:SI-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-01 -&gt; Req. 205</data>
+</edge>
+<edge source="case:requirement:Req. 205" target="case:securitycontrol:DC-01">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 205</data>
+</edge>
+<edge source="case:requirement:Req. 205" target="case:securitycontrol:DC-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-03 -&gt; Req. 205</data>
+</edge>
+<edge source="case:requirement:Req. 205" target="case:securitycontrol:RA-04">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-04 -&gt; Req. 205</data>
+</edge>
+<edge source="case:requirement:Req. 205" target="case:securitycontrol:RA-05">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-05 -&gt; Req. 205</data>
+</edge>
+<edge source="case:requirement:Req. 206" target="case:securitycontrol:UC-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-03 -&gt; Req. 206</data>
+</edge>
+<edge source="case:requirement:Req. 206" target="case:securitycontrol:SI-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-03 -&gt; Req. 206</data>
+</edge>
+<edge source="case:requirement:Req. 207" target="case:securitycontrol:SI-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-03 -&gt; Req. 207</data>
+</edge>
+<edge source="case:requirement:Req. 207" target="case:securitycontrol:SI-05">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-05 -&gt; Req. 207</data>
+</edge>
+<edge source="case:securitycontrol:IA-01" target="case:requirement:Req. 2">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-01 -&gt; Req. 2</data>
+</edge>
+<edge source="case:securitycontrol:IA-01" target="case:requirement:Req. 102">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-01 -&gt; Req. 102</data>
+</edge>
+<edge source="case:securitycontrol:IA-01" target="case:requirement:Req. 201">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-01 -&gt; Req. 201</data>
+</edge>
+<edge source="case:securitycontrol:IA-02" target="case:requirement:Req. 2">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-02 -&gt; Req. 2</data>
+</edge>
+<edge source="case:securitycontrol:IA-02" target="case:requirement:Req. 102">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-02 -&gt; Req. 102</data>
+</edge>
+<edge source="case:securitycontrol:IA-02" target="case:requirement:Req. 202">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-02 -&gt; Req. 202</data>
+</edge>
+<edge source="case:securitycontrol:IA-03" target="case:requirement:Req. 2">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-03 -&gt; Req. 2</data>
+</edge>
+<edge source="case:securitycontrol:IA-03" target="case:requirement:Req. 100">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-03 -&gt; Req. 100</data>
+</edge>
+<edge source="case:securitycontrol:IA-03" target="case:requirement:Req. 102">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-03 -&gt; Req. 102</data>
+</edge>
+<edge source="case:securitycontrol:IA-03" target="case:requirement:Req. 202">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-03 -&gt; Req. 202</data>
+</edge>
+<edge source="case:securitycontrol:IA-03" target="case:requirement:Req. 203">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-03 -&gt; Req. 203</data>
+</edge>
+<edge source="case:securitycontrol:IA-04" target="case:requirement:Req. 2">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 2</data>
+</edge>
+<edge source="case:securitycontrol:IA-04" target="case:requirement:Req. 5">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 5</data>
+</edge>
+<edge source="case:securitycontrol:IA-04" target="case:requirement:Req. 6">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 6</data>
+</edge>
+<edge source="case:securitycontrol:IA-04" target="case:requirement:Req. 12">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 12</data>
+</edge>
+<edge source="case:securitycontrol:IA-04" target="case:requirement:Req. 100">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 100</data>
+</edge>
+<edge source="case:securitycontrol:IA-04" target="case:requirement:Req. 102">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 102</data>
+</edge>
+<edge source="case:securitycontrol:IA-04" target="case:requirement:Req. 201">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 201</data>
+</edge>
+<edge source="case:securitycontrol:IA-04" target="case:requirement:Req. 202">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-04 -&gt; Req. 202</data>
+</edge>
+<edge source="case:securitycontrol:IA-05" target="case:requirement:Req. 2">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-05 -&gt; Req. 2</data>
+</edge>
+<edge source="case:securitycontrol:IA-05" target="case:requirement:Req. 102">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-05 -&gt; Req. 102</data>
+</edge>
+<edge source="case:securitycontrol:IA-05" target="case:requirement:Req. 202">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-05 -&gt; Req. 202</data>
+</edge>
+<edge source="case:securitycontrol:IA-06" target="case:requirement:Req. 2">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-06 -&gt; Req. 2</data>
+</edge>
+<edge source="case:securitycontrol:IA-06" target="case:requirement:Req. 6">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-06 -&gt; Req. 6</data>
+</edge>
+<edge source="case:securitycontrol:IA-06" target="case:requirement:Req. 102">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-06 -&gt; Req. 102</data>
+</edge>
+<edge source="case:securitycontrol:IA-06" target="case:requirement:Req. 201">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-06 -&gt; Req. 201</data>
+</edge>
+<edge source="case:securitycontrol:IA-07" target="case:requirement:Req. 6">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-07 -&gt; Req. 6</data>
+</edge>
+<edge source="case:securitycontrol:IA-07" target="case:requirement:Req. 102">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-07 -&gt; Req. 102</data>
+</edge>
+<edge source="case:securitycontrol:IA-07" target="case:requirement:Req. 105">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-07 -&gt; Req. 105</data>
+</edge>
+<edge source="case:securitycontrol:IA-07" target="case:requirement:Req. 201">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-07 -&gt; Req. 201</data>
+</edge>
+<edge source="case:securitycontrol:IA-08" target="case:requirement:Req. 2">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-08 -&gt; Req. 2</data>
+</edge>
+<edge source="case:securitycontrol:IA-08" target="case:requirement:Req. 201">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability IA-08 -&gt; Req. 201</data>
+</edge>
+<edge source="case:securitycontrol:UC-01" target="case:requirement:Req. 101">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-01 -&gt; Req. 101</data>
+</edge>
+<edge source="case:securitycontrol:UC-01" target="case:requirement:Req. 109">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-01 -&gt; Req. 109</data>
+</edge>
+<edge source="case:securitycontrol:UC-01" target="case:requirement:Req. 110">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-01 -&gt; Req. 110</data>
+</edge>
+<edge source="case:securitycontrol:UC-01" target="case:requirement:Req. 201">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-01 -&gt; Req. 201</data>
+</edge>
+<edge source="case:securitycontrol:UC-01" target="case:requirement:Req. 204">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-01 -&gt; Req. 204</data>
+</edge>
+<edge source="case:securitycontrol:UC-03" target="case:requirement:Req. 12">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-03 -&gt; Req. 12</data>
+</edge>
+<edge source="case:securitycontrol:UC-03" target="case:requirement:Req. 102">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-03 -&gt; Req. 102</data>
+</edge>
+<edge source="case:securitycontrol:UC-03" target="case:requirement:Req. 206">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-03 -&gt; Req. 206</data>
+</edge>
+<edge source="case:securitycontrol:UC-04" target="case:requirement:Req. 100">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-04 -&gt; Req. 100</data>
+</edge>
+<edge source="case:securitycontrol:UC-04" target="case:requirement:Req. 101">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-04 -&gt; Req. 101</data>
+</edge>
+<edge source="case:securitycontrol:UC-04" target="case:requirement:Req. 102">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-04 -&gt; Req. 102</data>
+</edge>
+<edge source="case:securitycontrol:UC-04" target="case:requirement:Req. 103">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-04 -&gt; Req. 103</data>
+</edge>
+<edge source="case:securitycontrol:UC-04" target="case:requirement:Req. 105">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-04 -&gt; Req. 105</data>
+</edge>
+<edge source="case:securitycontrol:UC-04" target="case:requirement:Req. 110">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-04 -&gt; Req. 110</data>
+</edge>
+<edge source="case:securitycontrol:UC-05" target="case:requirement:Req. 103">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-05 -&gt; Req. 103</data>
+</edge>
+<edge source="case:securitycontrol:UC-06" target="case:requirement:Req. 103">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-06 -&gt; Req. 103</data>
+</edge>
+<edge source="case:securitycontrol:UC-07" target="case:requirement:Req. 103">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-07 -&gt; Req. 103</data>
+</edge>
+<edge source="case:securitycontrol:UC-07" target="case:requirement:Req. 110">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability UC-07 -&gt; Req. 110</data>
+</edge>
+<edge source="case:securitycontrol:SI-01" target="case:requirement:Req. 5">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-01 -&gt; Req. 5</data>
+</edge>
+<edge source="case:securitycontrol:SI-01" target="case:requirement:Req. 104">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-01 -&gt; Req. 104</data>
+</edge>
+<edge source="case:securitycontrol:SI-01" target="case:requirement:Req. 205">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-01 -&gt; Req. 205</data>
+</edge>
+<edge source="case:securitycontrol:SI-02" target="case:requirement:Req. 1">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-02 -&gt; Req. 1</data>
+</edge>
+<edge source="case:securitycontrol:SI-03" target="case:requirement:Req. 5">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-03 -&gt; Req. 5</data>
+</edge>
+<edge source="case:securitycontrol:SI-03" target="case:requirement:Req. 104">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-03 -&gt; Req. 104</data>
+</edge>
+<edge source="case:securitycontrol:SI-03" target="case:requirement:Req. 206">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-03 -&gt; Req. 206</data>
+</edge>
+<edge source="case:securitycontrol:SI-03" target="case:requirement:Req. 207">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-03 -&gt; Req. 207</data>
+</edge>
+<edge source="case:securitycontrol:SI-03" target="case:requirement:Req. 208">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-03 -&gt; Req. 208</data>
+</edge>
+<edge source="case:requirement:Req. 208" target="case:securitycontrol:SI-03">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-03 -&gt; Req. 208</data>
+</edge>
+<edge source="case:requirement:Req. 208" target="case:securitycontrol:SI-06">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-06 -&gt; Req. 208</data>
+</edge>
+<edge source="case:requirement:Req. 208" target="case:securitycontrol:SI-07">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-07 -&gt; Req. 208</data>
+</edge>
+<edge source="case:securitycontrol:SI-04" target="case:requirement:Req. 1">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-04 -&gt; Req. 1</data>
+</edge>
+<edge source="case:securitycontrol:SI-05" target="case:requirement:Req. 2">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-05 -&gt; Req. 2</data>
+</edge>
+<edge source="case:securitycontrol:SI-05" target="case:requirement:Req. 14">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-05 -&gt; Req. 14</data>
+</edge>
+<edge source="case:securitycontrol:SI-05" target="case:requirement:Req. 15">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-05 -&gt; Req. 15</data>
+</edge>
+<edge source="case:securitycontrol:SI-05" target="case:requirement:Req. 202">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-05 -&gt; Req. 202</data>
+</edge>
+<edge source="case:securitycontrol:SI-05" target="case:requirement:Req. 203">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-05 -&gt; Req. 203</data>
+</edge>
+<edge source="case:securitycontrol:SI-05" target="case:requirement:Req. 207">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-05 -&gt; Req. 207</data>
+</edge>
+<edge source="case:securitycontrol:SI-06" target="case:requirement:Req. 4">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-06 -&gt; Req. 4</data>
+</edge>
+<edge source="case:securitycontrol:SI-06" target="case:requirement:Req. 6">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-06 -&gt; Req. 6</data>
+</edge>
+<edge source="case:securitycontrol:SI-06" target="case:requirement:Req. 7">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-06 -&gt; Req. 7</data>
+</edge>
+<edge source="case:securitycontrol:SI-06" target="case:requirement:Req. 208">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-06 -&gt; Req. 208</data>
+</edge>
+<edge source="case:securitycontrol:SI-07" target="case:requirement:Req. 4">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-07 -&gt; Req. 4</data>
+</edge>
+<edge source="case:securitycontrol:SI-07" target="case:requirement:Req. 6">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-07 -&gt; Req. 6</data>
+</edge>
+<edge source="case:securitycontrol:SI-07" target="case:requirement:Req. 7">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-07 -&gt; Req. 7</data>
+</edge>
+<edge source="case:securitycontrol:SI-07" target="case:requirement:Req. 208">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-07 -&gt; Req. 208</data>
+</edge>
+<edge source="case:securitycontrol:SI-08" target="case:requirement:Req. 1">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-08 -&gt; Req. 1</data>
+</edge>
+<edge source="case:securitycontrol:SI-09" target="case:requirement:Req. 1">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability SI-09 -&gt; Req. 1</data>
+</edge>
+<edge source="case:securitycontrol:DC-01" target="case:requirement:Req. 2">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 2</data>
+</edge>
+<edge source="case:securitycontrol:DC-01" target="case:requirement:Req. 5">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 5</data>
+</edge>
+<edge source="case:securitycontrol:DC-01" target="case:requirement:Req. 6">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 6</data>
+</edge>
+<edge source="case:securitycontrol:DC-01" target="case:requirement:Req. 12">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 12</data>
+</edge>
+<edge source="case:securitycontrol:DC-01" target="case:requirement:Req. 15">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 15</data>
+</edge>
+<edge source="case:securitycontrol:DC-01" target="case:requirement:Req. 18">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 18</data>
+</edge>
+<edge source="case:securitycontrol:DC-01" target="case:requirement:Req. 104">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 104</data>
+</edge>
+<edge source="case:securitycontrol:DC-01" target="case:requirement:Req. 109">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 109</data>
+</edge>
+<edge source="case:securitycontrol:DC-01" target="case:requirement:Req. 205">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-01 -&gt; Req. 205</data>
+</edge>
+<edge source="case:securitycontrol:DC-02" target="case:requirement:Req. 2">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-02 -&gt; Req. 2</data>
+</edge>
+<edge source="case:securitycontrol:DC-03" target="case:requirement:Req. 2">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-03 -&gt; Req. 2</data>
+</edge>
+<edge source="case:securitycontrol:DC-03" target="case:requirement:Req. 5">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-03 -&gt; Req. 5</data>
+</edge>
+<edge source="case:securitycontrol:DC-03" target="case:requirement:Req. 100">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-03 -&gt; Req. 100</data>
+</edge>
+<edge source="case:securitycontrol:DC-03" target="case:requirement:Req. 102">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-03 -&gt; Req. 102</data>
+</edge>
+<edge source="case:securitycontrol:DC-03" target="case:requirement:Req. 104">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-03 -&gt; Req. 104</data>
+</edge>
+<edge source="case:securitycontrol:DC-03" target="case:requirement:Req. 205">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability DC-03 -&gt; Req. 205</data>
+</edge>
+<edge source="case:securitycontrol:RA-01" target="case:requirement:Req. 105">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-01 -&gt; Req. 105</data>
+</edge>
+<edge source="case:securitycontrol:RA-02" target="case:requirement:Req. 106">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-02 -&gt; Req. 106</data>
+</edge>
+<edge source="case:securitycontrol:RA-03" target="case:requirement:Req. 106">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-03 -&gt; Req. 106</data>
+</edge>
+<edge source="case:securitycontrol:RA-04" target="case:requirement:Req. 5">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-04 -&gt; Req. 5</data>
+</edge>
+<edge source="case:securitycontrol:RA-04" target="case:requirement:Req. 104">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-04 -&gt; Req. 104</data>
+</edge>
+<edge source="case:securitycontrol:RA-04" target="case:requirement:Req. 105">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-04 -&gt; Req. 105</data>
+</edge>
+<edge source="case:securitycontrol:RA-04" target="case:requirement:Req. 205">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-04 -&gt; Req. 205</data>
+</edge>
+<edge source="case:securitycontrol:RA-05" target="case:requirement:Req. 5">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-05 -&gt; Req. 5</data>
+</edge>
+<edge source="case:securitycontrol:RA-05" target="case:requirement:Req. 104">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-05 -&gt; Req. 104</data>
+</edge>
+<edge source="case:securitycontrol:RA-05" target="case:requirement:Req. 205">
+  <data key="d4">TRACES_TO</data>
+  <data key="d5">1.0</data>
+  <data key="d6">traceability RA-05 -&gt; Req. 205</data>
+</edge>
+</graph></graphml>

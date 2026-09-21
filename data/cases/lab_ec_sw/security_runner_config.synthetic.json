@@ -1,0 +1,176 @@
+{
+  "case_id": "lab_ec_sw",
+  "environment": "synthetic_fixture",
+  "synthetic": true,
+  "target": {
+    "base_url": "https://fixture.example.com",
+    "host": "fixture.example.com",
+    "port": 443
+  },
+  "policy": {
+    "allowed_hosts": ["fixture.example.com"],
+    "allowed_urls": ["https://fixture.example.com"],
+    "allowed_ports": [443],
+    "allow_private_network": false,
+    "allow_https_downgrade": false
+  },
+  "timeout_seconds": 2,
+  "retry_count": 1,
+  "max_redirects": 2,
+  "max_body_bytes": 4096,
+  "min_request_interval_ms": 0,
+  "checks": [
+    {
+      "check_id": "tls-pass",
+      "security_test_id": "SI-01",
+      "runner": "tls_check",
+      "enabled": true,
+      "ssl_verify": true,
+      "expected": {
+        "minimum_tls_version": "TLSv1.2",
+        "minimum_certificate_days_remaining": 30
+      },
+      "fixture": {
+        "connected": true,
+        "negotiated_tls_version": "TLSv1.3",
+        "certificate_not_after": "2030-01-01T00:00:00Z",
+        "hostname_matches": true
+      }
+    },
+    {
+      "check_id": "tls-version-fail",
+      "security_test_id": "SI-02",
+      "runner": "tls_check",
+      "enabled": true,
+      "expected": {
+        "minimum_tls_version": "TLSv1.2",
+        "minimum_certificate_days_remaining": 30
+      },
+      "fixture": {
+        "connected": true,
+        "negotiated_tls_version": "TLSv1.0",
+        "certificate_not_after": "2030-01-01T00:00:00Z",
+        "hostname_matches": true
+      }
+    },
+    {
+      "check_id": "headers-pass",
+      "security_test_id": "SI-03",
+      "runner": "http_header_check",
+      "enabled": true,
+      "method": "HEAD",
+      "expected": {
+        "status_codes": [200],
+        "frame_protection_required": true
+      },
+      "fixture": {
+        "status": 200,
+        "headers": {
+          "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+          "Content-Security-Policy": "default-src 'self'; frame-ancestors 'none'",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "strict-origin-when-cross-origin",
+          "Set-Cookie": "session=secret"
+        }
+      }
+    },
+    {
+      "check_id": "hsts-fail",
+      "security_test_id": "SI-04",
+      "runner": "http_header_check",
+      "enabled": true,
+      "method": "GET",
+      "expected": {
+        "status_codes": [200],
+        "headers": {
+          "strict-transport-security": { "required": true },
+          "content-security-policy": { "required": false }
+        },
+        "frame_protection_required": false
+      },
+      "fixture": {
+        "status": 200,
+        "headers": {
+          "X-Content-Type-Options": "nosniff"
+        }
+      }
+    },
+    {
+      "check_id": "timeout-review",
+      "security_test_id": "SI-05",
+      "runner": "http_header_check",
+      "enabled": true,
+      "method": "HEAD",
+      "expected": {
+        "status_codes": [200]
+      },
+      "fixture": {
+        "error": "synthetic timeout"
+      }
+    },
+    {
+      "check_id": "api-pass",
+      "security_test_id": "SI-06",
+      "runner": "api_health_check",
+      "enabled": true,
+      "method": "GET",
+      "endpoint": "/health",
+      "expected": {
+        "status_code": 200,
+        "maximum_response_time_ms": 500,
+        "content_type": "application/json",
+        "json_keys": ["status", "service.name"]
+      },
+      "fixture": {
+        "status": 200,
+        "elapsed_ms": 25,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "status": "ok",
+          "service": { "name": "fixture" }
+        }
+      }
+    },
+    {
+      "check_id": "api-status-fail",
+      "security_test_id": "SI-07",
+      "runner": "api_health_check",
+      "enabled": true,
+      "method": "GET",
+      "endpoint": "/health",
+      "expected": {
+        "status_code": 200,
+        "content_type": "application/json"
+      },
+      "fixture": {
+        "status": 503,
+        "elapsed_ms": 20,
+        "headers": { "Content-Type": "application/json" },
+        "body": { "status": "degraded" }
+      }
+    },
+    {
+      "check_id": "port-pass",
+      "security_test_id": "SI-08",
+      "runner": "port_connectivity_check",
+      "enabled": true,
+      "expected": { "connectivity": true },
+      "fixture": {
+        "connected": true,
+        "elapsed_ms": 2
+      }
+    },
+    {
+      "check_id": "port-timeout",
+      "security_test_id": "SI-09",
+      "runner": "port_connectivity_check",
+      "enabled": true,
+      "expected": { "connectivity": true },
+      "fixture": {
+        "error": "synthetic connection timeout"
+      }
+    }
+  ]
+}

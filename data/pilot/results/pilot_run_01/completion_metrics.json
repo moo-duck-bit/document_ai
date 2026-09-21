@@ -1,0 +1,13 @@
+{
+  "n_sessions": 9,
+  "completed": 9,
+  "pass": 8,
+  "partial": 1,
+  "failed": 0,
+  "session_completion_rate": 1.0,
+  "by_domain": {
+    "ec_sw": 3,
+    "general_report": 3,
+    "business_proposal": 3
+  }
+}

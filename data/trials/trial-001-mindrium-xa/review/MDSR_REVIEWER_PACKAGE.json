@@ -1,0 +1,68 @@
+{
+  "document_type": "MDSR",
+  "reference_path": "data/trials/trial-001-mindrium-xa/reference/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+  "generated_path": "data/trials/trial-001-mindrium-xa/generated_patch_preserving/output_mdsr.docx",
+  "change_target_req_id": "Req. 6",
+  "table_location": {
+    "table_index": 12,
+    "human_readable": "MDSR requirement table index 12 (0-based among doc.tables)"
+  },
+  "cells": {
+    "label_cell": {
+      "row": 1,
+      "col": 0,
+      "reference_text": "",
+      "generated_text": "",
+      "changed": false
+    },
+    "description_value_cell": {
+      "row": 1,
+      "col": 1,
+      "reference_text": "",
+      "generated_text": "연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다.\n잠금 해제는 관리자 승인 또는 일정 시간 경과 후 자동 해제 중 하나를 지원해야 한다.",
+      "changed": true
+    }
+  },
+  "label_diff_analysis": {
+    "previous_allowed_two_diffs_meaning": "이전 실행은 빈 라벨 셀(r1c0='')에 '설명' 문자열을 새로 기입했고, 값 셀(r1c1)에 CR description을 기입했다. 즉 OOXML run 허상 diff가 아니라 실제 라벨 텍스트 변경이었다.",
+    "correction": "라벨 셀은 원본대로 공란 유지, description 값 셀만 수정하도록 preserve_patch 보정 후 재생성.",
+    "reference_r1c0": "",
+    "output_r1c0": "",
+    "reference_r1c1": "",
+    "output_r1c1": "연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다.\n잠금 해제는 관리자 승인 또는 일정 시간 경과 후 자동 해제 중 하나를 지원해야 한다."
+  },
+  "allowed_change_count": 1,
+  "unexpected_text_diff_count": 0,
+  "text_diffs": [
+    {
+      "location": "t:12/r:1/c:1",
+      "before": "",
+      "after": "연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다.\n잠금 해제는 관리자 승인 또는 일정 시간 경과 후 자동 해제 중 하나를 지원해야 한다."
+    }
+  ],
+  "unexpected_diffs": [],
+  "structure_compare": {
+    "ooxml_reference": {
+      "drawing_like": 2,
+      "sectPr": 1,
+      "tbl": 46,
+      "p": 889
+    },
+    "ooxml_generated": {
+      "drawing_like": 2,
+      "sectPr": 1,
+      "tbl": 46,
+      "p": 889
+    },
+    "styles_reference": 58,
+    "styles_generated": 58,
+    "size_reference": 1968688,
+    "size_generated": 1968231,
+    "sha256_reference": "cd70f942ab8534c22887782b61d2319fd026e61f97744bde8f985c6484a3652d",
+    "sha256_generated": "e7761b5cda6a7929493abea200b35fecd88a089639c3e8d46c1a97e6cc995cf7",
+    "pages_reference": 29,
+    "pages_generated": 29
+  },
+  "patch_ok": true,
+  "errors": []
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "v2_dev_ec_no_impact",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "마케팅 브로슈어 문구 변경",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/mdtm_base.docx",
+      "filename": "mdtm_base.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM_BASE"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "no_impact"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "1375c1ec2ed9ecfe2db33000585be70dc227949d05b08c7dcefb74b79de9e057",
+  "sanitization_status": "N/A"
+}

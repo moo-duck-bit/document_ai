@@ -1,0 +1,59 @@
+{
+  "trial_id": "trial-001-mindrium-xa",
+  "generated_at": "2026-07-17T22:11:21Z",
+  "duration_seconds": 14.87,
+  "apply_seconds": 0.246,
+  "synthetic": false,
+  "source_case_dir": "data/cases/mindrium_xa",
+  "work_case_dir": "data/trials/trial-001-mindrium-xa/workdir/case",
+  "change_path": "data/trials/trial-001-mindrium-xa/workdir/case/changes/chg-20260718-4b8f6d.json",
+  "source_case_output_hashes": {
+    "case/output_mdsr.docx": "652a4a98dee685b6411b39311432be7d4e71235f1fc83417f64235a598b3e629",
+    "case/output_mddr.docx": "426fa451e219074129282fe77e94f0aa23557c47a6c38f4d3d9c2781c2a05159"
+  },
+  "outputs": {
+    "MDSR": "data/trials/trial-001-mindrium-xa/generated_clean_mindrium/output_mdsr.docx",
+    "MDDR": "data/trials/trial-001-mindrium-xa/generated_clean_mindrium/output_mddr.docx",
+    "XXCS": "data/trials/trial-001-mindrium-xa/generated_clean_mindrium/output_xxcs.docx"
+  },
+  "output_hashes": {
+    "MDSR": "7f77399284518b28434b7c150ee94a2abade9ec07d509a0e4eef8a3929df3b5f",
+    "MDDR": "64a407aeafc3281fe2b34f5fe3f7f48a177f0b5bba4418383783a2b3d696e634",
+    "XXCS": "185a0c0625ed4e6f3279facb363791949a8a646c7c186032f8af509b772cb782"
+  },
+  "harness": {
+    "ok": false,
+    "skipped": false,
+    "review_failed_other_empty_reqs": 16
+  },
+  "quality": {
+    "status": "FAIL",
+    "scores": {
+      "structure": 36.0,
+      "terminology": 100.0,
+      "completeness": 78.4,
+      "consistency": 0.0,
+      "traceability": 100.0,
+      "residual_text": 0.0,
+      "overall": 52.9
+    }
+  },
+  "xxcs_in_generation_scope": false,
+  "overwrite_source_case": false,
+  "commands": [
+    "draft-change (workdir output only)",
+    "impact --case workdir/case",
+    "apply-change --case workdir/case",
+    "DocumentHarness.generate(workdir/case)"
+  ],
+  "note": "trial-generate was not used after apply because it recopies source case and would wipe workdir patches",
+  "xxcs_note": "Declared document_types were MDSR/MDDR only. Apply initially skipped XXCS (missing). Harness.generate produced output_xxcs.docx; post-harness re-apply patched linked IA/SI rows. Treat XXCS as opportunistic/out-of-declared-scope for this trial.",
+  "req6_verification": {
+    "requirements_json_filled": true,
+    "mdsr_table_description_filled": true,
+    "mdsr_description_text": "연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다.\n잠금 해제는 관리자 승인 또는 일정 시간 경과 후 자동 해제 중 하나를 지원해야 한다.",
+    "extractor_bug_note": "extract_requirements_docx may report last label cell (기준); table_matrix 설명 row is authoritative"
+  },
+  "canonical_generated_dir": "data/trials/trial-001-mindrium-xa/generated_clean_mindrium",
+  "retrieval_disabled": true
+}

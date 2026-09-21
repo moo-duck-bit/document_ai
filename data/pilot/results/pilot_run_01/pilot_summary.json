@@ -1,0 +1,104 @@
+{
+  "pilot_run_id": "pilot_run_01",
+  "verdict": "REAL_USER_PILOT_RUN_01_COMPLETE",
+  "participant_id": "P001",
+  "generated_at": "2026-08-01T23:47:40Z",
+  "n_sessions": 9,
+  "domains": {
+    "ec_sw": 3,
+    "general_report": 3,
+    "business_proposal": 3
+  },
+  "completion": {
+    "n_sessions": 9,
+    "completed": 9,
+    "pass": 8,
+    "partial": 1,
+    "failed": 0,
+    "session_completion_rate": 1.0,
+    "by_domain": {
+      "ec_sw": 3,
+      "general_report": 3,
+      "business_proposal": 3
+    }
+  },
+  "accuracy": {
+    "human_document_agreement": 0.889,
+    "human_node_agreement": 0.889,
+    "proposal_acceptance_rate": 0.222,
+    "review_agreement_rate": 1.0
+  },
+  "usability": {
+    "mean_trust_score": 3.778,
+    "mean_usability_score": 4.0,
+    "mean_scores_by_dimension": {
+      "understanding": 5.0,
+      "document_impact": 4.667,
+      "node_accuracy": 4.667,
+      "proposal_accuracy": 3.111,
+      "review_reason": 3.889,
+      "diff_readability": 3.889,
+      "no_unnecessary_change": 5.0,
+      "format_preservation": 5.0,
+      "trust": 3.778,
+      "usability": 4.0
+    }
+  },
+  "timing": {
+    "mean_completion_ms": 1957.0,
+    "median_completion_ms": 1825.0,
+    "max_completion_ms": 2729.0,
+    "reanalysis_request_rate": 0.0
+  },
+  "safety": {
+    "original_changed_count": 0,
+    "unauthorized_writer_count": 0,
+    "wrong_document_count": 0,
+    "wrong_node_write_count": 0,
+    "path_escape_count": 0,
+    "auto_approve_count": 0,
+    "writer_executions": 0,
+    "safety_status": "PASS"
+  },
+  "errors": {
+    "total": 1,
+    "critical": 0,
+    "major": 1,
+    "minor": 0,
+    "bug_candidates": [
+      {
+        "session_id": "pilot_ec_semantic_P001_20260801T234726405728",
+        "domain": "ec_sw",
+        "document": "data/pilot/real_user_document_pilot/scenarios/fixtures/ec_sw/mdtm_pilot_base.docx",
+        "change_request": "사용자 인증 정책 강화가 필요하니 관련 요구/설계를 찾아 검토한다.",
+        "expected": [
+          "semantic candidates",
+          "REVIEW_REQUIRED"
+        ],
+        "actual": {
+          "n_review_items": 0,
+          "node_agreement": false,
+          "document_agreement": false,
+          "verdict": "PARTIAL"
+        },
+        "severity": "major",
+        "reproducibility": "high",
+        "screenshot_path": null,
+        "related_artifact": "data/pilot/results/pilot_run_01/pilot_ec_semantic_P001_20260801T234726405728/review_items.json",
+        "recommended_investigation": "Inspect locator/ranking candidates for this change request; do not tune holdout gold."
+      }
+    ],
+    "most_frequent_issue": "empty_or_weak_node_candidates"
+  },
+  "session_ids": [
+    "pilot_ec_req_single_P001_20260801T234722148675",
+    "pilot_ec_design_review_P001_20260801T234724300820",
+    "pilot_ec_semantic_P001_20260801T234726405728",
+    "pilot_gr_methodology_P001_20260801T234728293004",
+    "pilot_gr_schedule_table_P001_20260801T234730054519",
+    "pilot_gr_conclusion_P001_20260801T234731766032",
+    "pilot_bp_budget_P001_20260801T234733594109",
+    "pilot_bp_schedule_P001_20260801T234736340403",
+    "pilot_bp_risk_P001_20260801T234738596194"
+  ]
+}

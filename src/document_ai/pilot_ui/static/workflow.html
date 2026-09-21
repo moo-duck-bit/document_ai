@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document Set Workflow</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>Generic Document Set Workflow</h1>
+      <p class="sub">Upload → Analyze → Review → Approve → Writer → Result</p>
+    </div>
+    <div>
+      <a class="badge" href="/">← Legacy Pilot</a>
+      <span class="badge">PR-27 · E2E</span>
+    </div>
+  </header>
+
+  <nav class="tabs" id="wizard-tabs">
+    <button type="button" class="tab active" data-step="1">1. Document Set</button>
+    <button type="button" class="tab" data-step="2">2. Change Request</button>
+    <button type="button" class="tab" data-step="3">3. Analyze</button>
+    <button type="button" class="tab" data-step="4">4. Review</button>
+    <button type="button" class="tab" data-step="5">5. Approval</button>
+    <button type="button" class="tab" data-step="6">6. Result</button>
+  </nav>
+
+  <main>
+    <section class="panel active" id="step-1">
+      <h2>Step 1 — Document Set &amp; Upload</h2>
+      <label>Document Set
+        <select id="document_set"></select>
+      </label>
+      <p id="set-desc" class="hint"></p>
+      <label>Routing mode
+        <select id="routing_mode">
+          <option value="assisted" selected>assisted (추천 확인)</option>
+          <option value="auto">auto</option>
+          <option value="explicit">explicit (선택한 Pack 고정)</option>
+        </select>
+      </label>
+      <label>Files (docx)
+        <input type="file" id="files" accept=".docx" multiple />
+      </label>
+      <label>Workflow name
+        <input id="wf-name" value="e2e-run" />
+      </label>
+      <button type="button" id="btn-next-1">Next</button>
+    </section>
+
+    <section class="panel" id="step-2">
+      <h2>Step 2 — Change Request</h2>
+      <label>Change request
+        <textarea id="change_request" rows="8" placeholder="예: Req. 101 권한관리 반영"></textarea>
+      </label>
+      <button type="button" id="btn-create">Create Workflow</button>
+      <p id="create-status" class="status"></p>
+      <h3>Document Identity / Pack Routing</h3>
+      <div id="identity-panel" class="box tall">업로드 후 추천이 표시됩니다.</div>
+      <div class="row">
+        <button type="button" id="btn-accept-identity" class="secondary" disabled>추천대로 사용</button>
+        <button type="button" id="btn-hold-review" class="secondary" disabled>REVIEW로 보류</button>
+      </div>
+    </section>
+
+    <section class="panel" id="step-3">
+      <h2>Step 3 — Analyze</h2>
+      <p>Workflow: <code id="wf-id">-</code></p>
+      <button type="button" id="btn-analyze">Run Analysis</button>
+      <pre id="analyze-out" class="box tall"></pre>
+    </section>
+
+    <section class="panel" id="step-4">
+      <h2>Step 4 — Review</h2>
+      <div class="grid2">
+        <div>
+          <h3>Impacted Documents</h3>
+          <pre id="rev-impacted" class="box"></pre>
+          <h3>Patch Candidates</h3>
+          <pre id="rev-patch" class="box"></pre>
+        </div>
+        <div>
+          <h3>Review Required</h3>
+          <pre id="rev-review" class="box tall"></pre>
+        </div>
+      </div>
+      <button type="button" id="btn-to-approve">Go to Approval</button>
+    </section>
+
+    <section class="panel" id="step-5">
+      <h2>Step 5 — Approval</h2>
+      <p class="hint">문서/항목별 승인. 기본 버튼은 pending 전부 APPROVED.</p>
+      <button type="button" id="btn-approve-all">Approve all pending</button>
+      <button type="button" id="btn-writer" class="secondary">Run Writer (preview / gated)</button>
+      <pre id="approve-out" class="box tall"></pre>
+    </section>
+
+    <section class="panel" id="step-6">
+      <h2>Step 6 — Result</h2>
+      <button type="button" id="btn-result">Refresh Result</button>
+      <table class="result-table" id="result-table">
+        <thead>
+          <tr>
+            <th>Document</th>
+            <th>Status</th>
+            <th>Review</th>
+            <th>Applied</th>
+            <th>Rejected</th>
+            <th>Blocked</th>
+            <th>Validation</th>
+            <th>Diff</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <pre id="result-out" class="box"></pre>
+    </section>
+  </main>
+
+  <script src="/static/workflow.js"></script>
+</body>
+</html>

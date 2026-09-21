@@ -1,0 +1,1196 @@
+{
+  "workflow_id": "wf-tg-bench-hybrid",
+  "correlation_id": "corr-bench-hybrid",
+  "case_id": "case",
+  "task_graph_id": "tg-bench-hybrid",
+  "status": "COMPLETED",
+  "reasoning_id": "rsn-2c30e41154a7",
+  "started_at": "2026-07-03T09:13:03.024508+00:00",
+  "completed_at": "2026-07-03T09:13:03.362343+00:00",
+  "task_graph": {
+    "graph_id": "tg-bench-hybrid",
+    "tasks": [
+      {
+        "task_id": "task-document-change-pipeline",
+        "name": "Run document change pipeline",
+        "harness": "document",
+        "action": "run_change_pipeline",
+        "state": "PENDING",
+        "dependencies": [],
+        "agent_assignment": "document_harness",
+        "reasoning_id": "",
+        "result": null,
+        "metadata": {
+          "case_dir": "data\\platform\\benchmark\\work\\bench-4c1276e8093f\\case",
+          "dry_run": true,
+          "apply": false,
+          "planner_intent": "document_change",
+          "workflow_template": "hybrid_workflow",
+          "intent_action": "run_change_pipeline"
+        }
+      },
+      {
+        "task_id": "task-operation-incident-analysis",
+        "name": "Analyze GPU server incident samples",
+        "harness": "operation",
+        "action": "analyze_incidents",
+        "state": "PENDING",
+        "dependencies": [
+          "task-document-change-pipeline"
+        ],
+        "agent_assignment": "operation_harness",
+        "reasoning_id": "",
+        "result": null,
+        "metadata": {
+          "case_dir": "data\\platform\\benchmark\\work\\bench-4c1276e8093f\\case",
+          "dry_run": true,
+          "apply": false,
+          "planner_intent": "document_change",
+          "workflow_template": "hybrid_workflow",
+          "sample_dir": "data/ops/samples",
+          "intent_action": "run_change_pipeline"
+        }
+      }
+    ],
+    "metadata": {
+      "mode": "change_request",
+      "workflow_template": "hybrid_workflow",
+      "planner_intent": "document_change"
+    }
+  },
+  "tasks": {
+    "task-document-change-pipeline": {
+      "task_id": "task-document-change-pipeline",
+      "name": "Run document change pipeline",
+      "harness": "document",
+      "action": "run_change_pipeline",
+      "state": "COMPLETED",
+      "dependencies": [],
+      "agent_assignment": "document_harness",
+      "reasoning_id": "rsn-2c30e41154a7",
+      "result": {
+        "case_dir": "data\\platform\\benchmark\\work\\bench-4c1276e8093f\\case",
+        "change_id": "chg-req6-login-limit",
+        "summary": "Req. 6 로그인 시도 제한 정책 강화",
+        "mode": "dry-run",
+        "dry_run": true,
+        "pipeline": [
+          {
+            "agent_id": "requirement",
+            "status": "ok",
+            "data": {
+              "change_id": "chg-req6-login-limit",
+              "summary": "Req. 6 로그인 시도 제한 정책 강화",
+              "req_ids": [
+                "Req. 6"
+              ],
+              "requirement_changes": [
+                {
+                  "req_id": "Req. 6",
+                  "description": "연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다. 잠금 해제는 관리자 승인 또는 일정 시간 경과 후 자동 해제 중 하나를 지원해야 한다.",
+                  "purpose": null,
+                  "criteria": null
+                }
+              ],
+              "confidence": null,
+              "clarifying_questions": [],
+              "confirmed": true
+            },
+            "issues": []
+          },
+          {
+            "agent_id": "traceability",
+            "status": "ok",
+            "data": {
+              "changed_req_ids": [
+                "Req. 6"
+              ],
+              "linked_security_ids": [
+                "DC-01",
+                "IA-04",
+                "IA-06",
+                "IA-07",
+                "SI-06",
+                "SI-07"
+              ],
+              "linked_test_ids": [],
+              "linked_design_req_ids": [],
+              "xxcs_security_req_ids": [
+                "IA-04",
+                "IA-06",
+                "IA-07",
+                "SI-06",
+                "SI-07"
+              ],
+              "document_set_hint": "ec_sw",
+              "documents": {
+                "spec_requirements": {
+                  "action": "patch",
+                  "req_ids": [
+                    "Req. 6"
+                  ]
+                },
+                "spec_design": {
+                  "action": "skip",
+                  "req_ids": [],
+                  "reason": "MDDR / design blocks not indexed"
+                },
+                "report_security_verification": {
+                  "action": "patch",
+                  "security_req_ids": [
+                    "IA-04",
+                    "IA-06",
+                    "IA-07",
+                    "SI-06",
+                    "SI-07"
+                  ]
+                },
+                "test_cases": {
+                  "action": "skip",
+                  "test_ids": [],
+                  "reason": "SRS RTM — update linked test cases (TC-xx) manually or via test spec DOCX when available"
+                }
+              },
+              "impact": {
+                "changed_req_ids": [
+                  "Req. 6"
+                ],
+                "linked_downstream_ids": [
+                  "DC-01",
+                  "IA-04",
+                  "IA-06",
+                  "IA-07",
+                  "SI-06",
+                  "SI-07"
+                ],
+                "linked_security_ids": [
+                  "DC-01",
+                  "IA-04",
+                  "IA-06",
+                  "IA-07",
+                  "SI-06",
+                  "SI-07"
+                ],
+                "linked_test_ids": [],
+                "document_set_hint": "ec_sw",
+                "documents": {
+                  "spec_requirements": {
+                    "action": "patch",
+                    "req_ids": [
+                      "Req. 6"
+                    ]
+                  },
+                  "spec_design": {
+                    "action": "skip",
+                    "req_ids": [],
+                    "reason": "MDDR / design blocks not indexed"
+                  },
+                  "report_security_verification": {
+                    "action": "patch",
+                    "security_req_ids": [
+                      "IA-04",
+                      "IA-06",
+                      "IA-07",
+                      "SI-06",
+                      "SI-07"
+                    ]
+                  },
+                  "test_cases": {
+                    "action": "skip",
+                    "test_ids": [],
+                    "reason": "SRS RTM — update linked test cases (TC-xx) manually or via test spec DOCX when available"
+                  }
+                }
+              }
+            },
+            "issues": []
+          },
+          {
+            "agent_id": "design",
+            "status": "ok",
+            "data": {
+              "linked_design_req_ids": [],
+              "indexed_req_ids": [],
+              "patch_candidates": [],
+              "mddr_action": "skip"
+            },
+            "issues": []
+          },
+          {
+            "agent_id": "test",
+            "status": "ok",
+            "data": {
+              "linked_test_ids": [],
+              "xxcs_security_req_ids": [
+                "IA-04",
+                "IA-06",
+                "IA-07",
+                "SI-06",
+                "SI-07"
+              ],
+              "xxcs_patch_candidates": [
+                {
+                  "req_id": "IA-04",
+                  "has_security_tests_json": false,
+                  "review_only": true
+                },
+                {
+                  "req_id": "IA-06",
+                  "has_security_tests_json": false,
+                  "review_only": true
+                },
+                {
+                  "req_id": "IA-07",
+                  "has_security_tests_json": false,
+                  "review_only": true
+                },
+                {
+                  "req_id": "SI-06",
+                  "has_security_tests_json": false,
+                  "review_only": true
+                },
+                {
+                  "req_id": "SI-07",
+                  "has_security_tests_json": false,
+                  "review_only": true
+                }
+              ],
+              "rtm_review_candidates": [],
+              "xxcs_action": "patch",
+              "test_case_action": "skip",
+              "output_path": "data\\platform\\benchmark\\work\\bench-4c1276e8093f\\case\\output_xxcs.docx"
+            },
+            "issues": []
+          },
+          {
+            "agent_id": "document_review",
+            "status": "warning",
+            "data": {
+              "issue_count": 1,
+              "checks_run": [
+                "requirement_descriptions",
+                "requirements_json_membership",
+                "traceability_downstream",
+                "design_patch_readiness",
+                "security_tests_readiness"
+              ]
+            },
+            "issues": [
+              "XXCS patch planned but security_tests.json is missing"
+            ]
+          }
+        ],
+        "agents": {
+          "requirement": {
+            "agent_id": "requirement",
+            "status": "ok",
+            "data": {
+              "change_id": "chg-req6-login-limit",
+              "summary": "Req. 6 로그인 시도 제한 정책 강화",
+              "req_ids": [
+                "Req. 6"
+              ],
+              "requirement_changes": [
+                {
+                  "req_id": "Req. 6",
+                  "description": "연속 로그인 실패 시 계정 잠금 및 관리자 알림을 수행해야 한다. 잠금 해제는 관리자 승인 또는 일정 시간 경과 후 자동 해제 중 하나를 지원해야 한다.",
+                  "purpose": null,
+                  "criteria": null
+                }
+              ],
+              "confidence": null,
+              "clarifying_questions": [],
+              "confirmed": true
+            },
+            "issues": []
+          },
+          "traceability": {
+            "agent_id": "traceability",
+            "status": "ok",
+            "data": {
+              "changed_req_ids": [
+                "Req. 6"
+              ],
+              "linked_security_ids": [
+                "DC-01",
+                "IA-04",
+                "IA-06",
+                "IA-07",
+                "SI-06",
+                "SI-07"
+              ],
+              "linked_test_ids": [],
+              "linked_design_req_ids": [],
+              "xxcs_security_req_ids": [
+                "IA-04",
+                "IA-06",
+                "IA-07",
+                "SI-06",
+                "SI-07"
+              ],
+              "document_set_hint": "ec_sw",
+              "documents": {
+                "spec_requirements": {
+                  "action": "patch",
+                  "req_ids": [
+                    "Req. 6"
+                  ]
+                },
+                "spec_design": {
+                  "action": "skip",
+                  "req_ids": [],
+                  "reason": "MDDR / design blocks not indexed"
+                },
+                "report_security_verification": {
+                  "action": "patch",
+                  "security_req_ids": [
+                    "IA-04",
+                    "IA-06",
+                    "IA-07",
+                    "SI-06",
+                    "SI-07"
+                  ]
+                },
+                "test_cases": {
+                  "action": "skip",
+                  "test_ids": [],
+                  "reason": "SRS RTM — update linked test cases (TC-xx) manually or via test spec DOCX when available"
+                }
+              },
+              "impact": {
+                "changed_req_ids": [
+                  "Req. 6"
+                ],
+                "linked_downstream_ids": [
+                  "DC-01",
+                  "IA-04",
+                  "IA-06",
+                  "IA-07",
+                  "SI-06",
+                  "SI-07"
+                ],
+                "linked_security_ids": [
+                  "DC-01",
+                  "IA-04",
+                  "IA-06",
+                  "IA-07",
+                  "SI-06",
+                  "SI-07"
+                ],
+                "linked_test_ids": [],
+                "document_set_hint": "ec_sw",
+                "documents": {
+                  "spec_requirements": {
+                    "action": "patch",
+                    "req_ids": [
+                      "Req. 6"
+                    ]
+                  },
+                  "spec_design": {
+                    "action": "skip",
+                    "req_ids": [],
+                    "reason": "MDDR / design blocks not indexed"
+                  },
+                  "report_security_verification": {
+                    "action": "patch",
+                    "security_req_ids": [
+                      "IA-04",
+                      "IA-06",
+                      "IA-07",
+                      "SI-06",
+                      "SI-07"
+                    ]
+                  },
+                  "test_cases": {
+                    "action": "skip",
+                    "test_ids": [],
+                    "reason": "SRS RTM — update linked test cases (TC-xx) manually or via test spec DOCX when available"
+                  }
+                }
+              }
+            },
+            "issues": []
+          },
+          "design": {
+            "agent_id": "design",
+            "status": "ok",
+            "data": {
+              "linked_design_req_ids": [],
+              "indexed_req_ids": [],
+              "patch_candidates": [],
+              "mddr_action": "skip"
+            },
+            "issues": []
+          },
+          "test": {
+            "agent_id": "test",
+            "status": "ok",
+            "data": {
+              "linked_test_ids": [],
+              "xxcs_security_req_ids": [
+                "IA-04",
+                "IA-06",
+                "IA-07",
+                "SI-06",
+                "SI-07"
+              ],
+              "xxcs_patch_candidates": [
+                {
+                  "req_id": "IA-04",
+                  "has_security_tests_json": false,
+                  "review_only": true
+                },
+                {
+                  "req_id": "IA-06",
+                  "has_security_tests_json": false,
+                  "review_only": true
+                },
+                {
+                  "req_id": "IA-07",
+                  "has_security_tests_json": false,
+                  "review_only": true
+                },
+                {
+                  "req_id": "SI-06",
+                  "has_security_tests_json": false,
+                  "review_only": true
+                },
+                {
+                  "req_id": "SI-07",
+                  "has_security_tests_json": false,
+                  "review_only": true
+                }
+              ],
+              "rtm_review_candidates": [],
+              "xxcs_action": "patch",
+              "test_case_action": "skip",
+              "output_path": "data\\platform\\benchmark\\work\\bench-4c1276e8093f\\case\\output_xxcs.docx"
+            },
+            "issues": []
+          },
+          "document_review": {
+            "agent_id": "document_review",
+            "status": "warning",
+            "data": {
+              "issue_count": 1,
+              "checks_run": [
+                "requirement_descriptions",
+                "requirements_json_membership",
+                "traceability_downstream",
+                "design_patch_readiness",
+                "security_tests_readiness"
+              ]
+            },
+            "issues": [
+              "XXCS patch planned but security_tests.json is missing"
+            ]
+          }
+        },
+        "impact": {
+          "changed_req_ids": [
+            "Req. 6"
+          ],
+          "linked_downstream_ids": [
+            "DC-01",
+            "IA-04",
+            "IA-06",
+            "IA-07",
+            "SI-06",
+            "SI-07"
+          ],
+          "linked_security_ids": [
+            "DC-01",
+            "IA-04",
+            "IA-06",
+            "IA-07",
+            "SI-06",
+            "SI-07"
+          ],
+          "linked_test_ids": [],
+          "document_set_hint": "ec_sw",
+          "documents": {
+            "spec_requirements": {
+              "action": "patch",
+              "req_ids": [
+                "Req. 6"
+              ]
+            },
+            "spec_design": {
+              "action": "skip",
+              "req_ids": [],
+              "reason": "MDDR / design blocks not indexed"
+            },
+            "report_security_verification": {
+              "action": "patch",
+              "security_req_ids": [
+                "IA-04",
+                "IA-06",
+                "IA-07",
+                "SI-06",
+                "SI-07"
+              ]
+            },
+            "test_cases": {
+              "action": "skip",
+              "test_ids": [],
+              "reason": "SRS RTM — update linked test cases (TC-xx) manually or via test spec DOCX when available"
+            }
+          }
+        },
+        "outputs": {
+          "spec_requirements": "data\\platform\\benchmark\\work\\bench-4c1276e8093f\\case\\output_mdsr.docx",
+          "spec_design": "data\\platform\\benchmark\\work\\bench-4c1276e8093f\\case\\output_mddr.docx",
+          "report_security_verification": "data\\platform\\benchmark\\work\\bench-4c1276e8093f\\case\\output_xxcs.docx"
+        },
+        "design_patch_candidates": [],
+        "test_patch_candidates": [
+          {
+            "req_id": "IA-04",
+            "has_security_tests_json": false,
+            "review_only": true
+          },
+          {
+            "req_id": "IA-06",
+            "has_security_tests_json": false,
+            "review_only": true
+          },
+          {
+            "req_id": "IA-07",
+            "has_security_tests_json": false,
+            "review_only": true
+          },
+          {
+            "req_id": "SI-06",
+            "has_security_tests_json": false,
+            "review_only": true
+          },
+          {
+            "req_id": "SI-07",
+            "has_security_tests_json": false,
+            "review_only": true
+          }
+        ],
+        "review": {
+          "status": "warning",
+          "issues": [
+            "XXCS patch planned but security_tests.json is missing"
+          ]
+        },
+        "patches": {},
+        "impact_report": "data\\platform\\benchmark\\work\\bench-4c1276e8093f\\case\\impact_report.json"
+      },
+      "metadata": {
+        "case_dir": "data\\platform\\benchmark\\work\\bench-4c1276e8093f\\case",
+        "dry_run": true,
+        "apply": false,
+        "planner_intent": "document_change",
+        "workflow_template": "hybrid_workflow",
+        "intent_action": "run_change_pipeline"
+      }
+    },
+    "task-operation-incident-analysis": {
+      "task_id": "task-operation-incident-analysis",
+      "name": "Analyze GPU server incident samples",
+      "harness": "operation",
+      "action": "analyze_incidents",
+      "state": "COMPLETED",
+      "dependencies": [
+        "task-document-change-pipeline"
+      ],
+      "agent_assignment": "operation_harness",
+      "reasoning_id": "rsn-2c30e41154a7",
+      "result": {
+        "mode": "operation",
+        "dry_run": true,
+        "harness": "operation",
+        "incident_report": {
+          "harness": "operation",
+          "sample_dir": "data\\ops\\samples",
+          "gpu_status": [
+            {
+              "gpu_id": 0,
+              "name": "NVIDIA A100-SXM4-40GB",
+              "memory_used_mib": 38912,
+              "memory_total_mib": 40960,
+              "memory_used_percent": 95.0,
+              "utilization_percent": 100,
+              "temperature_c": 82,
+              "processes": [
+                {
+                  "pid": "1234567",
+                  "process_name": "python train_lab_model.py",
+                  "gpu_memory": "38400MiB"
+                },
+                {
+                  "pid": "1234999",
+                  "process_name": "python eval_runner.py",
+                  "gpu_memory": "512MiB"
+                }
+              ]
+            },
+            {
+              "gpu_id": 1,
+              "name": "NVIDIA A100-SXM4-40GB",
+              "memory_used_mib": 512,
+              "memory_total_mib": 40960,
+              "memory_used_percent": 1.2,
+              "utilization_percent": 2,
+              "temperature_c": 45,
+              "processes": []
+            }
+          ],
+          "docker_status": [
+            {
+              "container_id": "a1b2c3d4e5f6",
+              "name": "lab-trainer",
+              "image": "pytorch/pytorch:2.1.0",
+              "status": "Up 3 hours",
+              "restart_count": 0,
+              "unhealthy": false
+            },
+            {
+              "container_id": "f6e5d4c3b2a1",
+              "name": "tensorboard-svc",
+              "image": "tensorflow/tensorflow",
+              "status": "Up 2 days",
+              "restart_count": 0,
+              "unhealthy": false
+            },
+            {
+              "container_id": "9a8b7c6d5e4f",
+              "name": "data-pipeline",
+              "image": "custom/etl:latest",
+              "status": "Restarting (5) 2 minutes ago",
+              "restart_count": 5,
+              "unhealthy": true
+            },
+            {
+              "container_id": "1a2b3c4d5e6f",
+              "name": "redis-cache",
+              "image": "redis:7-alpine",
+              "status": "Up 5 days",
+              "restart_count": 0,
+              "unhealthy": false
+            }
+          ],
+          "log_events": [
+            {
+              "event_type": "oom",
+              "source": "docker_logs_sample.txt",
+              "line": "2026-07-02T14:18:55.901Z ERROR torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 GiB",
+              "line_number": 3
+            },
+            {
+              "event_type": "cuda_error",
+              "source": "docker_logs_sample.txt",
+              "line": "2026-07-02T14:18:56.002Z ERROR Training worker crashed with CUDA error: an illegal memory access was encountered",
+              "line_number": 4
+            },
+            {
+              "event_type": "restart_loop",
+              "source": "docker_logs_sample.txt",
+              "line": "2026-07-02T14:19:01.331Z INFO  Back-off restarting failed container data-pipeline",
+              "line_number": 5
+            },
+            {
+              "event_type": "restart_loop",
+              "source": "docker_logs_sample.txt",
+              "line": "2026-07-02T14:19:01.332Z WARN  restart loop detected for data-pipeline",
+              "line_number": 6
+            },
+            {
+              "event_type": "permission_denied",
+              "source": "docker_logs_sample.txt",
+              "line": "2026-07-02T14:20:10.004Z ERROR permission denied while trying to connect to the docker API at unix:///var/run/docker.sock",
+              "line_number": 7
+            },
+            {
+              "event_type": "nvidia_xid",
+              "source": "dmesg_sample.txt",
+              "line": "[  512.338912] NVRM: Xid (PCI:0000:00:04.0): 79, GPU has fallen off the bus.",
+              "line_number": 1
+            },
+            {
+              "event_type": "cuda_error",
+              "source": "dmesg_sample.txt",
+              "line": "[  514.118002] CUDA error on device 0 - resetting",
+              "line_number": 4
+            },
+            {
+              "event_type": "disk_full",
+              "source": "disk_usage_sample.txt",
+              "line": "df: /mnt/lab-share: No space left on device",
+              "line_number": 6
+            },
+            {
+              "event_type": "disk_full",
+              "source": "disk_usage_sample.txt",
+              "line": "write error: disk full on /var/log/training",
+              "line_number": 7
+            }
+          ],
+          "incidents": [
+            {
+              "incident_id": "inc-194463a6",
+              "severity": "critical",
+              "title": "GPU or host out-of-memory condition detected",
+              "suspected_causes": [
+                "GPU memory exhaustion",
+                "Large batch size or memory leak"
+              ],
+              "affected_resources": [
+                "gpu",
+                "workload"
+              ],
+              "recommended_actions": [
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Review active GPU processes and reduce batch size or free GPU memory",
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may inspect offending process before any manual termination — kill not executed"
+              ],
+              "evidence": [
+                "2026-07-02T14:18:55.901Z ERROR torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 GiB"
+              ],
+              "safety_notes": [
+                "Operation Harness does not execute server commands. All recommended actions require human review and manual execution.",
+                "This recommendation references a potentially disruptive action and was not executed."
+              ]
+            },
+            {
+              "incident_id": "inc-84c11c03",
+              "severity": "high",
+              "title": "CUDA runtime error detected in logs",
+              "suspected_causes": [
+                "Invalid kernel launch",
+                "Driver/runtime mismatch",
+                "GPU resource contention"
+              ],
+              "affected_resources": [
+                "gpu",
+                "application"
+              ],
+              "recommended_actions": [
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Review application stack trace and CUDA driver version compatibility"
+              ],
+              "evidence": [
+                "2026-07-02T14:18:56.002Z ERROR Training worker crashed with CUDA error: an illegal memory access was encountered"
+              ],
+              "safety_notes": [
+                "Operation Harness does not execute server commands. All recommended actions require human review and manual execution."
+              ]
+            },
+            {
+              "incident_id": "inc-758a61ce",
+              "severity": "high",
+              "title": "Container restart loop detected",
+              "suspected_causes": [
+                "Application crash on startup",
+                "Missing dependency",
+                "Resource limits"
+              ],
+              "affected_resources": [
+                "docker"
+              ],
+              "recommended_actions": [
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Inspect container logs and exit codes before any restart action",
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may review docker restart only after root-cause analysis — restart not executed"
+              ],
+              "evidence": [
+                "2026-07-02T14:19:01.331Z INFO  Back-off restarting failed container data-pipeline"
+              ],
+              "safety_notes": [
+                "Operation Harness does not execute server commands. All recommended actions require human review and manual execution.",
+                "This recommendation references a potentially disruptive action and was not executed."
+              ]
+            },
+            {
+              "incident_id": "inc-568bd562",
+              "severity": "high",
+              "title": "Container restart loop detected",
+              "suspected_causes": [
+                "Application crash on startup",
+                "Missing dependency",
+                "Resource limits"
+              ],
+              "affected_resources": [
+                "docker"
+              ],
+              "recommended_actions": [
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Inspect container logs and exit codes before any restart action",
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may review docker restart only after root-cause analysis — restart not executed"
+              ],
+              "evidence": [
+                "2026-07-02T14:19:01.332Z WARN  restart loop detected for data-pipeline"
+              ],
+              "safety_notes": [
+                "Operation Harness does not execute server commands. All recommended actions require human review and manual execution.",
+                "This recommendation references a potentially disruptive action and was not executed."
+              ]
+            },
+            {
+              "incident_id": "inc-91122d14",
+              "severity": "low",
+              "title": "Permission denied error detected",
+              "suspected_causes": [
+                "Insufficient file or device permissions",
+                "Wrong user context"
+              ],
+              "affected_resources": [
+                "filesystem",
+                "service"
+              ],
+              "recommended_actions": [
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Verify service user permissions and volume mount ownership"
+              ],
+              "evidence": [
+                "2026-07-02T14:20:10.004Z ERROR permission denied while trying to connect to the docker API at unix:///var/run/docker.sock"
+              ],
+              "safety_notes": [
+                "Operation Harness does not execute server commands. All recommended actions require human review and manual execution."
+              ]
+            },
+            {
+              "incident_id": "inc-3412edb5",
+              "severity": "critical",
+              "title": "NVIDIA Xid hardware/driver error detected",
+              "suspected_causes": [
+                "GPU driver fault",
+                "Hardware instability",
+                "ECC or PCIe issue"
+              ],
+              "affected_resources": [
+                "gpu"
+              ],
+              "recommended_actions": [
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Collect dmesg and nvidia-bug-report.log for operator review",
+                "[RECOMMENDATION ONLY - NOT EXECUTED] If approved by operator, node reboot may be considered — reboot not executed"
+              ],
+              "evidence": [
+                "[  512.338912] NVRM: Xid (PCI:0000:00:04.0): 79, GPU has fallen off the bus."
+              ],
+              "safety_notes": [
+                "Operation Harness does not execute server commands. All recommended actions require human review and manual execution.",
+                "This recommendation references a potentially disruptive action and was not executed."
+              ]
+            },
+            {
+              "incident_id": "inc-7bd33006",
+              "severity": "high",
+              "title": "CUDA runtime error detected in logs",
+              "suspected_causes": [
+                "Invalid kernel launch",
+                "Driver/runtime mismatch",
+                "GPU resource contention"
+              ],
+              "affected_resources": [
+                "gpu",
+                "application"
+              ],
+              "recommended_actions": [
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Review application stack trace and CUDA driver version compatibility"
+              ],
+              "evidence": [
+                "[  514.118002] CUDA error on device 0 - resetting"
+              ],
+              "safety_notes": [
+                "Operation Harness does not execute server commands. All recommended actions require human review and manual execution."
+              ]
+            },
+            {
+              "incident_id": "inc-b14bc713",
+              "severity": "high",
+              "title": "Disk space exhaustion detected",
+              "suspected_causes": [
+                "Log growth",
+                "Artifact accumulation",
+                "Dataset cache overflow"
+              ],
+              "affected_resources": [
+                "disk",
+                "host"
+              ],
+              "recommended_actions": [
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Review disk usage and archive or remove non-essential artifacts manually",
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may run cleanup commands manually — rm not executed by harness"
+              ],
+              "evidence": [
+                "df: /mnt/lab-share: No space left on device"
+              ],
+              "safety_notes": [
+                "Operation Harness does not execute server commands. All recommended actions require human review and manual execution."
+              ]
+            },
+            {
+              "incident_id": "inc-87d20064",
+              "severity": "high",
+              "title": "Disk space exhaustion detected",
+              "suspected_causes": [
+                "Log growth",
+                "Artifact accumulation",
+                "Dataset cache overflow"
+              ],
+              "affected_resources": [
+                "disk",
+                "host"
+              ],
+              "recommended_actions": [
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Review disk usage and archive or remove non-essential artifacts manually",
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may run cleanup commands manually — rm not executed by harness"
+              ],
+              "evidence": [
+                "write error: disk full on /var/log/training"
+              ],
+              "safety_notes": [
+                "Operation Harness does not execute server commands. All recommended actions require human review and manual execution."
+              ]
+            },
+            {
+              "incident_id": "inc-ff389137",
+              "severity": "high",
+              "title": "GPU 0 memory critically high",
+              "suspected_causes": [
+                "Memory leak",
+                "Oversubscribed workloads",
+                "Large resident model"
+              ],
+              "affected_resources": [
+                "gpu:0"
+              ],
+              "recommended_actions": [
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Review processes on GPU 0 (38912/40960 MiB)"
+              ],
+              "evidence": [
+                "GPU 0 memory 38912/40960 MiB, util 100%"
+              ],
+              "safety_notes": [
+                "Operation Harness does not execute server commands. All recommended actions require human review and manual execution."
+              ]
+            },
+            {
+              "incident_id": "inc-a688e8cd",
+              "severity": "high",
+              "title": "Unstable container: data-pipeline",
+              "suspected_causes": [
+                "Health check failure",
+                "Crash loop",
+                "Dependency unavailable"
+              ],
+              "affected_resources": [
+                "container:data-pipeline"
+              ],
+              "recommended_actions": [
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Inspect logs for container data-pipeline (status: Restarting (5) 2 minutes ago)",
+                "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may review restart for data-pipeline after diagnosis — restart not executed"
+              ],
+              "evidence": [
+                "data-pipeline status=Restarting (5) 2 minutes ago, restarts=5"
+              ],
+              "safety_notes": [
+                "Operation Harness does not execute server commands. All recommended actions require human review and manual execution.",
+                "This recommendation references a potentially disruptive action and was not executed."
+              ]
+            }
+          ],
+          "severity": "critical",
+          "summary": "Detected 11 incident(s) at critical severity: GPU or host out-of-memory condition detected, CUDA runtime error detected in logs, Container restart loop detected (+8 more)",
+          "recommended_actions": [
+            "[RECOMMENDATION ONLY - NOT EXECUTED] Review active GPU processes and reduce batch size or free GPU memory",
+            "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may inspect offending process before any manual termination — kill not executed",
+            "[RECOMMENDATION ONLY - NOT EXECUTED] Review application stack trace and CUDA driver version compatibility",
+            "[RECOMMENDATION ONLY - NOT EXECUTED] Inspect container logs and exit codes before any restart action",
+            "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may review docker restart only after root-cause analysis — restart not executed",
+            "[RECOMMENDATION ONLY - NOT EXECUTED] Verify service user permissions and volume mount ownership",
+            "[RECOMMENDATION ONLY - NOT EXECUTED] Collect dmesg and nvidia-bug-report.log for operator review",
+            "[RECOMMENDATION ONLY - NOT EXECUTED] If approved by operator, node reboot may be considered — reboot not executed",
+            "[RECOMMENDATION ONLY - NOT EXECUTED] Review disk usage and archive or remove non-essential artifacts manually",
+            "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may run cleanup commands manually — rm not executed by harness",
+            "[RECOMMENDATION ONLY - NOT EXECUTED] Review processes on GPU 0 (38912/40960 MiB)",
+            "[RECOMMENDATION ONLY - NOT EXECUTED] Inspect logs for container data-pipeline (status: Restarting (5) 2 minutes ago)",
+            "[RECOMMENDATION ONLY - NOT EXECUTED] Operator may review restart for data-pipeline after diagnosis — restart not executed"
+          ],
+          "safety_notes": [
+            "Operation Harness does not execute server commands. All recommended actions require human review and manual execution.",
+            "This recommendation references a potentially disruptive action and was not executed."
+          ]
+        },
+        "pipeline": [
+          {
+            "agent_id": "gpu_monitor",
+            "status": "ok",
+            "data": {
+              "device_count": 2
+            },
+            "issues": []
+          },
+          {
+            "agent_id": "docker_monitor",
+            "status": "ok",
+            "data": {
+              "container_count": 4
+            },
+            "issues": []
+          },
+          {
+            "agent_id": "log_analyzer",
+            "status": "error",
+            "data": {
+              "event_count": 9
+            },
+            "issues": [
+              "GPU or host out-of-memory condition detected",
+              "CUDA runtime error detected in logs",
+              "Container restart loop detected",
+              "Container restart loop detected",
+              "Permission denied error detected",
+              "NVIDIA Xid hardware/driver error detected",
+              "CUDA runtime error detected in logs",
+              "Disk space exhaustion detected",
+              "Disk space exhaustion detected",
+              "GPU 0 memory critically high",
+              "Unstable container: data-pipeline"
+            ]
+          },
+          {
+            "agent_id": "incident_reporter",
+            "status": "error",
+            "data": {
+              "severity": "critical",
+              "incident_count": 11
+            },
+            "issues": [
+              "GPU or host out-of-memory condition detected",
+              "CUDA runtime error detected in logs",
+              "Container restart loop detected",
+              "Container restart loop detected",
+              "Permission denied error detected",
+              "NVIDIA Xid hardware/driver error detected",
+              "CUDA runtime error detected in logs",
+              "Disk space exhaustion detected",
+              "Disk space exhaustion detected",
+              "GPU 0 memory critically high",
+              "Unstable container: data-pipeline"
+            ]
+          }
+        ],
+        "review": {
+          "status": "error",
+          "issues": [
+            "GPU or host out-of-memory condition detected",
+            "CUDA runtime error detected in logs",
+            "Container restart loop detected",
+            "Container restart loop detected",
+            "Permission denied error detected",
+            "NVIDIA Xid hardware/driver error detected",
+            "CUDA runtime error detected in logs",
+            "Disk space exhaustion detected",
+            "Disk space exhaustion detected",
+            "GPU 0 memory critically high",
+            "Unstable container: data-pipeline"
+          ]
+        },
+        "change_id": null,
+        "summary": "Detected 11 incident(s) at critical severity: GPU or host out-of-memory condition detected, CUDA runtime error detected in logs, Container restart loop detected (+8 more)"
+      },
+      "metadata": {
+        "case_dir": "data\\platform\\benchmark\\work\\bench-4c1276e8093f\\case",
+        "dry_run": true,
+        "apply": false,
+        "planner_intent": "document_change",
+        "workflow_template": "hybrid_workflow",
+        "sample_dir": "data/ops/samples",
+        "intent_action": "run_change_pipeline"
+      }
+    }
+  },
+  "execution_order": [
+    "task-document-change-pipeline",
+    "task-operation-incident-analysis"
+  ],
+  "snapshots": [
+    {
+      "snapshot_id": "snap-de48969a4e0e",
+      "timestamp": "2026-07-03T09:13:03.037033+00:00",
+      "trigger": "workflow_started",
+      "workflow_status": "RUNNING",
+      "task_states": {
+        "task-document-change-pipeline": "PENDING",
+        "task-operation-incident-analysis": "PENDING"
+      }
+    },
+    {
+      "snapshot_id": "snap-47f02023e0ec",
+      "timestamp": "2026-07-03T09:13:03.056561+00:00",
+      "trigger": "task_updated",
+      "workflow_status": "RUNNING",
+      "task_states": {
+        "task-document-change-pipeline": "RUNNING",
+        "task-operation-incident-analysis": "PENDING"
+      }
+    },
+    {
+      "snapshot_id": "snap-2075e3fb1ec5",
+      "timestamp": "2026-07-03T09:13:03.080703+00:00",
+      "trigger": "task_updated",
+      "workflow_status": "RUNNING",
+      "task_states": {
+        "task-document-change-pipeline": "COMPLETED",
+        "task-operation-incident-analysis": "PENDING"
+      }
+    },
+    {
+      "snapshot_id": "snap-e05c7de2efc9",
+      "timestamp": "2026-07-03T09:13:03.107294+00:00",
+      "trigger": "task_updated",
+      "workflow_status": "RUNNING",
+      "task_states": {
+        "task-document-change-pipeline": "COMPLETED",
+        "task-operation-incident-analysis": "RUNNING"
+      }
+    },
+    {
+      "snapshot_id": "snap-1b9a5aeb4ba1",
+      "timestamp": "2026-07-03T09:13:03.134326+00:00",
+      "trigger": "task_updated",
+      "workflow_status": "RUNNING",
+      "task_states": {
+        "task-document-change-pipeline": "COMPLETED",
+        "task-operation-incident-analysis": "COMPLETED"
+      }
+    },
+    {
+      "snapshot_id": "snap-832ff828bd13",
+      "timestamp": "2026-07-03T09:13:03.313749+00:00",
+      "trigger": "task_updated",
+      "workflow_status": "RUNNING",
+      "task_states": {
+        "task-document-change-pipeline": "COMPLETED",
+        "task-operation-incident-analysis": "COMPLETED"
+      }
+    },
+    {
+      "snapshot_id": "snap-c95bce527844",
+      "timestamp": "2026-07-03T09:13:03.347826+00:00",
+      "trigger": "task_updated",
+      "workflow_status": "RUNNING",
+      "task_states": {
+        "task-document-change-pipeline": "COMPLETED",
+        "task-operation-incident-analysis": "COMPLETED"
+      }
+    },
+    {
+      "snapshot_id": "snap-0c0ba2374edd",
+      "timestamp": "2026-07-03T09:13:03.377349+00:00",
+      "trigger": "workflow_completed",
+      "workflow_status": "COMPLETED",
+      "task_states": {
+        "task-document-change-pipeline": "COMPLETED",
+        "task-operation-incident-analysis": "COMPLETED"
+      }
+    }
+  ],
+  "metadata": {
+    "request_mode": "change_request",
+    "executed_tasks": [
+      "task-document-change-pipeline",
+      "task-operation-incident-analysis"
+    ]
+  }
+}

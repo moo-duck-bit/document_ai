@@ -1,0 +1,66 @@
+{
+  "paths": {
+    "json": "data/eval/www_short_paper_freeze/reports/sandbox_ablation_mu.json",
+    "md": "data/eval/www_short_paper_freeze/reports/sandbox_ablation_mu.md",
+    "csv": "data/eval/www_short_paper_freeze/reports/sandbox_ablation_mu.csv"
+  },
+  "summary": {
+    "n_cases": 27,
+    "variants": {
+      "full": {
+        "n": 27,
+        "mu_zero_rate": 1.0,
+        "mean_mu_sum": 0.0,
+        "expected_hit_rate": 1.0,
+        "mean_false_patch": 0.0,
+        "mean_unsafe_write": 0.0,
+        "mean_original_broken": 0.0,
+        "mean_unapproved_write": 0.0
+      },
+      "no_gate": {
+        "n": 27,
+        "mu_zero_rate": 0.0,
+        "mean_mu_sum": 2.0,
+        "expected_hit_rate": 1.0,
+        "mean_false_patch": 0.0,
+        "mean_unsafe_write": 1.0,
+        "mean_original_broken": 0.0,
+        "mean_unapproved_write": 1.0
+      },
+      "no_copy_only": {
+        "n": 27,
+        "mu_zero_rate": 0.0,
+        "mean_mu_sum": 2.0,
+        "expected_hit_rate": 1.0,
+        "mean_false_patch": 0.0,
+        "mean_unsafe_write": 1.0,
+        "mean_original_broken": 1.0,
+        "mean_unapproved_write": 0.0
+      },
+      "no_closure": {
+        "n": 27,
+        "mu_zero_rate": 0.0,
+        "mean_mu_sum": 2.0,
+        "expected_hit_rate": 1.0,
+        "mean_false_patch": 1.0,
+        "mean_unsafe_write": 1.0,
+        "mean_original_broken": 0.0,
+        "mean_unapproved_write": 0.0
+      }
+    },
+    "ablation_mu_map": {
+      "no_gate": [
+        "unapproved_write",
+        "unsafe_write"
+      ],
+      "no_copy_only": [
+        "original_broken"
+      ],
+      "no_closure": [
+        "false_patch"
+      ]
+    },
+    "label": "sandbox_counterfactual",
+    "disclaimer": "Sandbox dry-run / counterfactual only. Do not describe as live execution with safety devices disabled."
+  }
+}

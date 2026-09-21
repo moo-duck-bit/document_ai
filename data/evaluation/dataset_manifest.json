@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "description": "Document Harness evaluation dataset roles for Trial/holdout separation",
+  "baseline_system_version": "v0.5-document-harness",
+  "baseline_commit": "d73fc18",
+  "cases": [
+    {
+      "case_id": "lab_ec_sw",
+      "domain": "medical_software",
+      "role": "development",
+      "document_types": [
+        "MDSR",
+        "MDDR",
+        "XXCS"
+      ],
+      "gold_status": "plan_gold",
+      "human_review_status": "pending",
+      "case_dir": "data/cases/lab_ec_sw"
+    },
+    {
+      "case_id": "jm_collection",
+      "domain": "ecommerce_b2c",
+      "role": "reference",
+      "document_types": [
+        "MDSR",
+        "MDDR",
+        "XXCS"
+      ],
+      "gold_status": "plan_gold",
+      "human_review_status": "pending",
+      "case_dir": "data/cases/jm_collection"
+    },
+    {
+      "case_id": "inventory_mgmt",
+      "domain": "general_software",
+      "role": "validation",
+      "document_types": [
+        "MDSR",
+        "MDDR"
+      ],
+      "gold_status": "provisional",
+      "human_review_status": "pending",
+      "case_dir": "data/cases/inventory_mgmt"
+    },
+    {
+      "case_id": "hospital_reservation",
+      "domain": "general_software",
+      "role": "holdout",
+      "document_types": [
+        "MDSR",
+        "MDDR"
+      ],
+      "gold_status": "frozen",
+      "human_review_status": "prepared",
+      "case_dir": "data/cases/hospital_reservation"
+    }
+  ]
+}

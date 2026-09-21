@@ -1,0 +1,52 @@
+{
+  "baseline": {
+    "sources": [
+      "data/eval/harness_benchmark/harness_benchmark_report.json",
+      "data/cases/lab_ec_sw/e2e_validation_report.json"
+    ],
+    "harness_benchmark": {
+      "overall_score": 92.8,
+      "cases_run": 4,
+      "passed": 4,
+      "train": {
+        "cases_run": 3,
+        "passed": 3,
+        "warning": 0,
+        "failed": 0,
+        "overall_score": 92.2
+      },
+      "holdout": {
+        "cases_run": 1,
+        "passed": 1,
+        "warning": 0,
+        "failed": 0,
+        "overall_score": 94.3
+      },
+      "path": "data/eval/harness_benchmark/harness_benchmark_report.json"
+    },
+    "lab_ec_sw_e2e": {
+      "status": "PASS",
+      "quality_overall": 96.8,
+      "validation_overall": 90.5,
+      "path": "data/cases/lab_ec_sw/e2e_validation_report.json"
+    }
+  },
+  "trial_quality": {
+    "structure": 100.0,
+    "terminology": 100.0,
+    "completeness": 100.0,
+    "consistency": 100.0,
+    "traceability": 100.0,
+    "residual_text": 84.0,
+    "overall": 96.8
+  },
+  "trial_validation": {
+    "overall": 90.5,
+    "docx_overall": 89.7,
+    "mdsr": 100.0,
+    "mddr": 92.0,
+    "xxcs": 77.1,
+    "semantic": 95.0
+  },
+  "human_overall": null
+}

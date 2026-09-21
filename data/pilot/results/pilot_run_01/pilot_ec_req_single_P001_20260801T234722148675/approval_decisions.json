@@ -1,0 +1,17 @@
+{
+  "decisions": [
+    {
+      "item_id": "MC-0000",
+      "decision": "APPROVE"
+    }
+  ],
+  "agreement": {
+    "human_document_agreement": true,
+    "human_node_agreement": true,
+    "proposal_accepted": true,
+    "n_approve": 1,
+    "n_hold": 0,
+    "n_reject": 0,
+    "n_items": 1
+  }
+}

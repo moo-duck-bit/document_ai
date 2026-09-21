@@ -1,5 +1,6 @@
 """Copy blank EC-SW templates and diff vs filled examples."""
 import json
+import os
 import shutil
 import unicodedata
 from pathlib import Path
@@ -9,7 +10,7 @@ from docx.oxml.ns import qn
 from docx.table import Table
 from docx.text.paragraph import Paragraph
 
-DOWNLOADS = Path(r"c:\Users\hsh71\Downloads")
+DOWNLOADS = Path(os.environ.get("EC_SW_TEMPLATE_DIR") or Path.home() / "Downloads")
 PROJECT = Path(__file__).resolve().parents[1]
 TEMPLATES = PROJECT / "data" / "templates" / "ec_sw"
 EXAMPLES = PROJECT / "data" / "examples" / "ec_sw"

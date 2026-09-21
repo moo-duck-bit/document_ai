@@ -1,0 +1,44 @@
+[
+  {
+    "candidate_node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+    "query_requirement_ids": [
+      "Req. 11"
+    ],
+    "query_design_ids": [],
+    "query_test_ids": [],
+    "row_requirement_ids": [
+      "Req. 11"
+    ],
+    "row_design_ids": [
+      "5.1.2"
+    ],
+    "row_test_ids": [
+      "TC-11",
+      "5.1.2"
+    ],
+    "exact_requirement_matches": [
+      "Req. 11"
+    ],
+    "exact_design_matches": [],
+    "exact_test_matches": [],
+    "normalized_requirement_matches": [],
+    "normalized_design_matches": [],
+    "normalized_test_matches": [],
+    "mismatched_identifier_types": [],
+    "identifier_match_score": 12.0,
+    "primary_identifier_match": true,
+    "secondary_identifier_match": false,
+    "reason_codes": [
+      "PRIMARY_IDENTIFIER_EXACT",
+      "RANK_TIER_0",
+      "STABLE_BASE_AND_INSTANCE"
+    ],
+    "evidence_scope": "ROW_LOCAL",
+    "identifier_origins": {
+      "requirement:Req. 11": "LOCAL_CELL",
+      "design:5.1.2": "LOCAL_CELL",
+      "test:TC-11": "LOCAL_CELL",
+      "test:5.1.2": "LOCAL_CELL"
+    }
+  }
+]

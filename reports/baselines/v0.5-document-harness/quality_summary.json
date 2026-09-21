@@ -1,0 +1,52 @@
+{
+  "cases": {
+    "lab_ec_sw": {
+      "status": "PASS",
+      "quality": {
+        "structure": 100.0,
+        "terminology": 100.0,
+        "completeness": 100.0,
+        "consistency": 100.0,
+        "traceability": 100.0,
+        "residual_text": 84.0,
+        "overall": 96.8
+      }
+    },
+    "inventory_mgmt": {
+      "status": "PASS",
+      "quality": {
+        "structure": 100.0,
+        "terminology": 100.0,
+        "completeness": 100.0,
+        "consistency": 100.0,
+        "traceability": 100.0,
+        "residual_text": 84.0,
+        "overall": 96.8
+      }
+    },
+    "hospital_reservation": {
+      "status": "PASS",
+      "quality": {
+        "structure": 100.0,
+        "terminology": 90.0,
+        "completeness": 100.0,
+        "consistency": 100.0,
+        "traceability": 100.0,
+        "residual_text": 84.0,
+        "overall": 95.3
+      }
+    },
+    "jm_collection": {
+      "status": "PASS",
+      "quality": {
+        "structure": 100.0,
+        "terminology": 100.0,
+        "completeness": 100.0,
+        "consistency": 100.0,
+        "traceability": 100.0,
+        "residual_text": 84.0,
+        "overall": 96.8
+      }
+    }
+  }
+}

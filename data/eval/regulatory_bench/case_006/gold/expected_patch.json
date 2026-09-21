@@ -1,0 +1,35 @@
+{
+  "case_id": "case_006",
+  "schema_version": "0.1.0",
+  "patches": [
+    {
+      "node_id": "REQ_007_DESC",
+      "document_id": "MDSR_v1",
+      "operation": "REPLACE_CELL",
+      "before": "사용자는 천식 증상 일기를 매일 입력할 수 있어야 한다.",
+      "after": "사용자는 천식 증상 일기를 주 5회 입력할 수 있어야 한다.",
+      "value_type": "free_text_structured",
+      "must_match_exactly": true
+    },
+    {
+      "node_id": "DI_012_PARAM",
+      "document_id": "MDDR_v1",
+      "operation": "REPLACE_CELL",
+      "before": "diary_input_frequency=daily",
+      "after": "diary_input_frequency=5_per_week",
+      "value_type": "structured",
+      "must_match_exactly": true
+    },
+    {
+      "node_id": "DI_012_NOTIFY",
+      "document_id": "MDDR_v1",
+      "operation": "REPLACE_CELL",
+      "before": "매일 07:30 입력 알림",
+      "after": "주 5회 07:30 입력 알림",
+      "value_type": "free_text",
+      "must_match_exactly": false,
+      "accept_regex": "주\\s*5\\s*회.*알림"
+    }
+  ],
+  "notes": "Fill before/after from generated docs with hidden IDs. Placeholder strings for schema review only."
+}

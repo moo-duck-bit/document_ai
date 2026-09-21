@@ -1,0 +1,18 @@
+{
+  "raw_change_request": "접근통제 강화 요청",
+  "requirement_ids": [],
+  "design_ids": [],
+  "test_ids": [],
+  "identifier_status": "NONE",
+  "primary_identifier_type": "NONE",
+  "secondary_identifier_types": [],
+  "semantic_terms": [
+    "접근통제",
+    "강화",
+    "요청"
+  ],
+  "ambiguity": false,
+  "reason_codes": [
+    "no_identifier"
+  ]
+}

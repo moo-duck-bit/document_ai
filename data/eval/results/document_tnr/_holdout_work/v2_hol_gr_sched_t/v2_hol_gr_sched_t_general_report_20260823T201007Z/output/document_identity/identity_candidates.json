@@ -1,0 +1,65 @@
+[
+  {
+    "candidate_id": "icand_5c5c20e0cd",
+    "source_document_id": "REPORT_SCHEDULE_TABLE",
+    "canonical_document_id": "GENERIC_GENERAL_REPORT",
+    "short_id": "REPORT",
+    "document_type": "GENERAL_REPORT",
+    "document_role": "general_report",
+    "domain_pack_id": "generic_document_v1",
+    "template_id": "general_report_v1",
+    "score": 26.048,
+    "rank": 1,
+    "rank_tier": 3,
+    "status": "CONFLICTED",
+    "reason_codes": [
+      "filename_hint:REPORT",
+      "filename_role_hint",
+      "heading_or_title",
+      "report_heading_concepts",
+      "conflict_penalty"
+    ],
+    "evidence_ids": [
+      "fn_cabc989b",
+      "fnrole_5cfcbed8",
+      "hd_51a724cd",
+      "hd_91d5f910",
+      "concept_47d293b5"
+    ],
+    "conflicts": [
+      "REPORT_PROPOSAL_AMBIGUOUS"
+    ],
+    "metadata": {
+      "profile": "REPORT"
+    }
+  },
+  {
+    "candidate_id": "icand_34d34ace22",
+    "source_document_id": "REPORT_SCHEDULE_TABLE",
+    "canonical_document_id": "GENERIC_BUSINESS_PROPOSAL",
+    "short_id": "PROPOSAL",
+    "document_type": "BUSINESS_PROPOSAL",
+    "document_role": "business_proposal",
+    "domain_pack_id": "generic_document_v1",
+    "template_id": "business_proposal_v1",
+    "score": 21.675,
+    "rank": 2,
+    "rank_tier": 3,
+    "status": "CONFLICTED",
+    "reason_codes": [
+      "heading_or_title",
+      "proposal_heading_concepts",
+      "conflict_penalty"
+    ],
+    "evidence_ids": [
+      "hd_dbafe0b6",
+      "concept_22bf2bf3"
+    ],
+    "conflicts": [
+      "REPORT_PROPOSAL_AMBIGUOUS"
+    ],
+    "metadata": {
+      "profile": "PROPOSAL"
+    }
+  }
+]

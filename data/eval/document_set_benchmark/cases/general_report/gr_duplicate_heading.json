@@ -1,0 +1,24 @@
+{
+  "case_id": "gr_duplicate_heading",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "결과 섹션 중복 heading 정리",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_dup_heading.docx",
+      "filename": "report_dup_heading.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_DUP_HEADING"
+  ],
+  "expected_status": "PARTIAL",
+  "tags": [
+    "ambiguous",
+    "duplicate_reference"
+  ],
+  "difficulty": "hard",
+  "notes": "Duplicate heading fixture",
+  "source_type": "fixture"
+}

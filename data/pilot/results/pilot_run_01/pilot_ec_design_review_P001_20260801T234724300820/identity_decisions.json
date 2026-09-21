@@ -1,0 +1,157 @@
+{
+  "routings": [
+    {
+      "routing_id": "route_089fce8541",
+      "source_document_id": "MDTM_PILOT_BASE",
+      "selected_pack_id": "ec_sw_v1",
+      "candidate_pack_ids": [
+        "ec_sw_v1"
+      ],
+      "routing_status": "ROUTED",
+      "score": 125.85,
+      "score_margin": 125.85,
+      "reason_codes": [
+        "filename_hint:MDTM",
+        "filename_role_hint",
+        "heading_or_title",
+        "req_with_design_or_test_same_row",
+        "requirement_id_density",
+        "traceability_matrix_structure",
+        "assisted_user_confirmed"
+      ],
+      "human_review_required": false,
+      "actual_pack_invoked": "ec_sw_v1",
+      "metadata": {
+        "routing_mode": "assisted",
+        "identity_status": "AUTO_SELECTED",
+        "document_set_hint": "ec_sw"
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "idec_e01e0d68f2b6",
+      "source_document_id": "MDTM_PILOT_BASE",
+      "canonical_document_id": "EC_SW_MDTM",
+      "short_id": "MDTM",
+      "document_type": "MDTM",
+      "document_role": "traceability",
+      "domain_pack_id": "ec_sw_v1",
+      "template_id": "ec_sw_mdtm",
+      "decision_status": "AUTO_SELECTED",
+      "top_score": 125.85,
+      "second_score": 56.0,
+      "score_margin": 69.85,
+      "rank_tier": 1,
+      "reason_codes": [
+        "filename_hint:MDTM",
+        "filename_role_hint",
+        "heading_or_title",
+        "req_with_design_or_test_same_row",
+        "requirement_id_density",
+        "traceability_matrix_structure",
+        "explicit_user_hint",
+        "tier1_mdtm_structure",
+        "auto_selected_strong_evidence"
+      ],
+      "evidence": [
+        {
+          "signal_id": "fn_c260eefb",
+          "type": "FILENAME_TOKEN",
+          "value": "mdtm_pilot_base.docx"
+        },
+        {
+          "signal_id": "fnrole_d387ede7",
+          "type": "DOCUMENT_ROLE_HINT",
+          "value": "traceability"
+        },
+        {
+          "signal_id": "fmt_ef8c3a1a",
+          "type": "FILE_FORMAT",
+          "value": ".docx"
+        },
+        {
+          "signal_id": "hd_9dccde8c",
+          "type": "DOCUMENT_TITLE",
+          "value": "Traceability Matrix (Pilot)"
+        },
+        {
+          "signal_id": "tbln_fb14700f",
+          "type": "TEMPLATE_STRUCTURE",
+          "value": "tables:1"
+        },
+        {
+          "signal_id": "th_e89a04f9",
+          "type": "TABLE_HEADER",
+          "value": "requirement design test note"
+        },
+        {
+          "signal_id": "idrow_7fd2db91",
+          "type": "IDENTIFIER_PATTERN",
+          "value": "Req. 10,5.1.1,TC-10,5.1.1"
+        },
+        {
+          "signal_id": "idrow_a02cf053",
+          "type": "IDENTIFIER_PATTERN",
+          "value": "Req. 11,5.1.2,TC-11,5.1.2"
+        },
+        {
+          "signal_id": "idrow_70934097",
+          "type": "IDENTIFIER_PATTERN",
+          "value": "Req. 12,5.1.3,TC-12,5.1.3"
+        },
+        {
+          "signal_id": "reqc_be3f6708",
+          "type": "IDENTIFIER_PATTERN",
+          "value": "requirement_count:3"
+        },
+        {
+          "signal_id": "mtx_1e2a6ef9",
+          "type": "TEMPLATE_STRUCTURE",
+          "value": "traceability_matrix"
+        },
+        {
+          "signal_id": "uh_4fae4120",
+          "type": "EXPLICIT_USER_HINT",
+          "value": "traceability"
+        }
+      ],
+      "human_review_required": false,
+      "auto_selected": true,
+      "metadata": {
+        "temporary_source_id": "MDTM_PILOT_BASE",
+        "canonical_id_deterministic": true,
+        "filename_only": false
+      }
+    }
+  ],
+  "duplicates": [],
+  "validation": {
+    "ok": true,
+    "per_document": [
+      {
+        "ok": true,
+        "checks": {
+          "no_filename_only_auto_route": true,
+          "canonical_id_deterministic": true,
+          "temporary_and_canonical_id_separated": true,
+          "conflict_requires_review": true,
+          "routed_pack_matches_decision": true,
+          "wrong_route_never_writes": true
+        },
+        "reasons": [],
+        "invariants": [
+          "no_filename_only_auto_route",
+          "canonical_id_deterministic",
+          "temporary_and_canonical_id_separated",
+          "conflict_requires_review",
+          "routed_pack_matches_decision",
+          "wrong_route_never_writes"
+        ]
+      }
+    ]
+  },
+  "recommended_document_set": "ec_sw",
+  "needs_user_confirmation": false,
+  "routing_mode": "assisted"
+}

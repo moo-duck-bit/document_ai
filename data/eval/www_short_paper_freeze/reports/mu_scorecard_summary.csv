@@ -1,0 +1,3 @@
+mode,n,mu_zero_rate,mean_mu_sum,mean_false_patch,mean_unsafe_write,mean_original_broken,mean_unapproved_write,mean_recall_at_3,mean_cell_f1,mean_field_f1,consistency_stub_pass_rate
+demo_safe,27,1.0,0.0,0.0,0.0,0.0,0.0,0.9907407407407407,1.0,1.0,1.0
+live,27,1.0,0.0,0.0,0.0,0.0,0.0,0.9907407407407407,1.0,1.0,1.0

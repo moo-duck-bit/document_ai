@@ -1,0 +1,33 @@
+{
+  "case_id": "inventory_mgmt",
+  "document_set": "ec_sw",
+  "domain": "inventory_b2b",
+  "templates_in_set": [
+    "spec_requirements",
+    "spec_design",
+    "report_security_verification"
+  ],
+  "facts": {
+    "product_name": "Inventory Management System",
+    "model_name": "IMS-Warehouse-001",
+    "product_code": "IMS",
+    "document_version": "1.0",
+    "author_org": "Acme Logistics Co., Ltd.",
+    "code_language": "TypeScript / Node.js, React",
+    "platform": "AWS (ECS, RDS PostgreSQL, S3)",
+    "approval_date": "2026.07.09"
+  },
+  "standards": [
+    "ISO 27001 Information Security Management",
+    "개인정보보호법 (대한민국)",
+    "OWASP ASVS v4.0 Application Security Verification Standard"
+  ],
+  "free_text_hints": {
+    "system_overview": "Inventory Management System은 창고·유통센터 재고를 실시간 관리하는 B2B 재고관리 소프트웨어이다.",
+    "architecture_narrative": "웹 포털, REST API, 운영 콘솔 3계층 구조이며 ERP·WMS 연동을 지원한다."
+  },
+  "source_documents": [],
+  "intake_channel": "harness_minimal_input",
+  "confirmed": true,
+  "confirmed_at": "2026-07-09"
+}

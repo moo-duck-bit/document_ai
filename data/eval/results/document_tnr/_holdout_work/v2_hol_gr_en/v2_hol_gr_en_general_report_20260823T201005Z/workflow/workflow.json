@@ -1,0 +1,1171 @@
+{
+  "workflow_id": "v2_hol_gr_en_general_report_20260823T201005Z",
+  "document_set": "general_report",
+  "state": "COMPLETED",
+  "change_request": "Results section update",
+  "created_at": "2026-08-23T20:10:05Z",
+  "updated_at": "2026-08-23T20:10:05Z",
+  "documents": [
+    {
+      "document_id": "REPORT_EN_HEADINGS",
+      "source_document_id": "REPORT_EN_HEADINGS",
+      "filename": "report_en_headings.docx",
+      "role": "general_report",
+      "path": "data/eval/results/document_tnr/_holdout_work/v2_hol_gr_en/v2_hol_gr_en_general_report_20260823T201005Z/input/report_en_headings.docx",
+      "copy_path": "data/eval/results/document_tnr/_holdout_work/v2_hol_gr_en/v2_hol_gr_en_general_report_20260823T201005Z/copies/report_en_headings.docx",
+      "user_hints": null,
+      "canonical_document_id": "GENERIC_GENERAL_REPORT",
+      "short_id": "REPORT",
+      "document_type": "GENERAL_REPORT",
+      "document_role": "general_report",
+      "domain_pack_id": "generic_document_v1",
+      "template_id": "general_report_v1",
+      "identity_status": "REVIEW_REQUIRED",
+      "identity_auto_selected": false,
+      "identity_score": 26.048,
+      "identity_reasons": [
+        "filename_hint:REPORT",
+        "filename_role_hint",
+        "heading_or_title",
+        "report_heading_concepts",
+        "conflict_penalty",
+        "conflict_requires_review"
+      ],
+      "routing_status": "ROUTED",
+      "selected_pack_id": "generic_document_v1",
+      "recommended_document_set": "general_report",
+      "registry_document_id": "REPORT"
+    }
+  ],
+  "impacted_documents": [
+    "REPORT_EN_HEADINGS"
+  ],
+  "review_required": [
+    {
+      "item_id": "REPORT_EN_HEADINGS.p0002",
+      "document_id": "REPORT_EN_HEADINGS",
+      "node_id": "heading_0002",
+      "status": "REVIEW_REQUIRED",
+      "display_name": "Results",
+      "evidence": [
+        "results"
+      ],
+      "reason_codes": [
+        "paragraph_concept_match"
+      ],
+      "human_review_required": true,
+      "source_locator": {
+        "paragraph_index": 2
+      },
+      "source_stage": "document_paragraph",
+      "metadata": {
+        "supports_patch": false,
+        "target_exists": true,
+        "structural_role": "DOCUMENT_HEADING",
+        "physical": true,
+        "editable": true,
+        "virtual": false,
+        "canonical_concepts": [
+          "RESULTS"
+        ],
+        "content_specificity": 0.45,
+        "parent_section_id": null,
+        "direct_match": true,
+        "inherited_match": false,
+        "parent_context_match": 0.8,
+        "section_context": "RESULTS",
+        "writer_executable": false,
+        "alignment_confidence": 0.8,
+        "evaluation_equivalent": true,
+        "template_node_id": "general_report_v1.results",
+        "alignment_ids": [
+          "NA-0001"
+        ],
+        "rank_tier": 0,
+        "final_score": 228.69,
+        "score_components": {
+          "tier_base": 120.0,
+          "concept_match": 25.0,
+          "section_match": 10.0,
+          "heading_match": 8.0,
+          "node_role_match": 15.84,
+          "operation_role_match": 18.0,
+          "parent_context_match": 9.600000000000001,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 4.5,
+          "template_alignment_score": 12.75,
+          "physical_editability_score": 5.0,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.0
+        },
+        "structural_score_components": {
+          "candidate_node_id": "heading_0002",
+          "concept_match": 1.0,
+          "section_match": 1.0,
+          "heading_match": 1.0,
+          "node_role_match": 0.88,
+          "operation_role_match": 0.9,
+          "parent_context_match": 0.8,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 0.45,
+          "template_alignment_score": 0.85,
+          "physical_editability_score": 1.0,
+          "virtual_target_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "direct_child_match",
+            "eval_equivalent_alignment"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_0",
+          "direct_child_match",
+          "eval_equivalent_alignment",
+          "role_pref:DOCUMENT_HEADING",
+          "section_concept_hit"
+        ],
+        "overlap": 228.69,
+        "query_intent": "SECTION_UPDATE",
+        "rank": 1,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "REPORT_EN_HEADINGS",
+            "template_node_id": "general_report_v1.results",
+            "document_node_id": "heading_0002",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "results",
+            "source_locator": {
+              "paragraph_index": 2
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "REPORT_EN_HEADINGS",
+            "template_node_id": "general_report_v1.results",
+            "document_node_id": "heading_0003",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "results",
+            "source_locator": {
+              "paragraph_index": 3
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "REPORT_EN_HEADINGS:results",
+            "document_id": "REPORT_EN_HEADINGS",
+            "template_node_ids": [
+              "general_report_v1.results"
+            ],
+            "document_node_ids": [
+              "heading_0002",
+              "heading_0003"
+            ],
+            "section_id": "results",
+            "concepts": [
+              "RESULTS"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "REPORT_EN_HEADINGS.p0003",
+      "document_id": "REPORT_EN_HEADINGS",
+      "node_id": "heading_0003",
+      "status": "REVIEW_REQUIRED",
+      "display_name": "Results 본문 내용입니다.",
+      "evidence": [
+        "results"
+      ],
+      "reason_codes": [
+        "paragraph_concept_match"
+      ],
+      "human_review_required": true,
+      "source_locator": {
+        "paragraph_index": 3
+      },
+      "source_stage": "document_paragraph",
+      "metadata": {
+        "supports_patch": false,
+        "target_exists": true,
+        "structural_role": "DOCUMENT_HEADING",
+        "physical": true,
+        "editable": true,
+        "virtual": false,
+        "canonical_concepts": [
+          "RESULTS"
+        ],
+        "content_specificity": 0.45,
+        "parent_section_id": null,
+        "direct_match": true,
+        "inherited_match": false,
+        "parent_context_match": 0.8,
+        "section_context": "RESULTS",
+        "writer_executable": false,
+        "alignment_confidence": 0.8,
+        "evaluation_equivalent": true,
+        "template_node_id": "general_report_v1.results",
+        "alignment_ids": [
+          "NA-0002"
+        ],
+        "rank_tier": 0,
+        "final_score": 228.69,
+        "score_components": {
+          "tier_base": 120.0,
+          "concept_match": 25.0,
+          "section_match": 10.0,
+          "heading_match": 8.0,
+          "node_role_match": 15.84,
+          "operation_role_match": 18.0,
+          "parent_context_match": 9.600000000000001,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 4.5,
+          "template_alignment_score": 12.75,
+          "physical_editability_score": 5.0,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.0
+        },
+        "structural_score_components": {
+          "candidate_node_id": "heading_0003",
+          "concept_match": 1.0,
+          "section_match": 1.0,
+          "heading_match": 1.0,
+          "node_role_match": 0.88,
+          "operation_role_match": 0.9,
+          "parent_context_match": 0.8,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 0.45,
+          "template_alignment_score": 0.85,
+          "physical_editability_score": 1.0,
+          "virtual_target_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "direct_child_match",
+            "eval_equivalent_alignment"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_0",
+          "direct_child_match",
+          "eval_equivalent_alignment",
+          "role_pref:DOCUMENT_HEADING",
+          "section_concept_hit"
+        ],
+        "overlap": 228.69,
+        "query_intent": "SECTION_UPDATE",
+        "rank": 2,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "REPORT_EN_HEADINGS",
+            "template_node_id": "general_report_v1.results",
+            "document_node_id": "heading_0002",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "results",
+            "source_locator": {
+              "paragraph_index": 2
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "REPORT_EN_HEADINGS",
+            "template_node_id": "general_report_v1.results",
+            "document_node_id": "heading_0003",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "results",
+            "source_locator": {
+              "paragraph_index": 3
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "REPORT_EN_HEADINGS:results",
+            "document_id": "REPORT_EN_HEADINGS",
+            "template_node_ids": [
+              "general_report_v1.results"
+            ],
+            "document_node_ids": [
+              "heading_0002",
+              "heading_0003"
+            ],
+            "section_id": "results",
+            "concepts": [
+              "RESULTS"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "general_report_v1.results",
+      "document_id": "REPORT_EN_HEADINGS",
+      "node_id": "general_report_v1.results",
+      "status": "REVIEW_REQUIRED",
+      "display_name": "결과",
+      "reason_codes": [
+        "aligned_template_section_eval_candidate",
+        "template_document_aligned"
+      ],
+      "human_review_required": true,
+      "source_stage": "generic_template_alignment",
+      "metadata": {
+        "structural_role": "TEMPLATE_SECTION",
+        "physical": false,
+        "editable": false,
+        "virtual": false,
+        "virtual_target": false,
+        "writer_executable": false,
+        "template_only": false,
+        "supports_patch": false,
+        "target_exists": true,
+        "canonical_concepts": [
+          "RESULTS"
+        ],
+        "alignment_confidence": 0.8,
+        "evaluation_equivalent": true,
+        "aligned_document_node_id": "heading_0002",
+        "content_specificity": 0.4,
+        "overlap": 190.0,
+        "final_score": 190.0,
+        "template_alignment": true,
+        "rank_tier": 1,
+        "score_components": {
+          "tier_base": 100.0,
+          "concept_match": 25.0,
+          "section_match": 10.0,
+          "heading_match": 0.0,
+          "node_role_match": 18.0,
+          "operation_role_match": 19.0,
+          "parent_context_match": 0.0,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 4.0,
+          "template_alignment_score": 12.75,
+          "physical_editability_score": 1.25,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.0
+        },
+        "structural_score_components": {
+          "candidate_node_id": "general_report_v1.results",
+          "concept_match": 1.0,
+          "section_match": 1.0,
+          "heading_match": 0.0,
+          "node_role_match": 1.0,
+          "operation_role_match": 0.95,
+          "parent_context_match": 0.0,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 0.4,
+          "template_alignment_score": 0.85,
+          "physical_editability_score": 0.25,
+          "virtual_target_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:TEMPLATE_SECTION",
+            "update_template_section_eval",
+            "eval_equivalent_alignment"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_1",
+          "eval_equivalent_alignment",
+          "exact_section_concept_template",
+          "role_pref:TEMPLATE_SECTION",
+          "section_concept_hit",
+          "update_template_section_eval"
+        ],
+        "query_intent": "SECTION_UPDATE",
+        "rank": 3,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "REPORT_EN_HEADINGS",
+            "template_node_id": "general_report_v1.results",
+            "document_node_id": "heading_0002",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "results",
+            "source_locator": {
+              "paragraph_index": 2
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "REPORT_EN_HEADINGS",
+            "template_node_id": "general_report_v1.results",
+            "document_node_id": "heading_0003",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "results",
+            "source_locator": {
+              "paragraph_index": 3
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "REPORT_EN_HEADINGS:results",
+            "document_id": "REPORT_EN_HEADINGS",
+            "template_node_ids": [
+              "general_report_v1.results"
+            ],
+            "document_node_ids": [
+              "heading_0002",
+              "heading_0003"
+            ],
+            "section_id": "results",
+            "concepts": [
+              "RESULTS"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      },
+      "overlap": 1.25
+    }
+  ],
+  "patch_candidates": [],
+  "approvals": [
+    {
+      "item_id": "REPORT_EN_HEADINGS.p0002",
+      "document_id": "REPORT_EN_HEADINGS",
+      "node_id": "heading_0002",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:05Z"
+    },
+    {
+      "item_id": "REPORT_EN_HEADINGS.p0003",
+      "document_id": "REPORT_EN_HEADINGS",
+      "node_id": "heading_0003",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:05Z"
+    },
+    {
+      "item_id": "general_report_v1.results",
+      "document_id": "REPORT_EN_HEADINGS",
+      "node_id": "general_report_v1.results",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:05Z"
+    }
+  ],
+  "writer_result": {
+    "status": "COMPLETED_PREVIEW",
+    "applied": 0,
+    "skipped": 3,
+    "rejected": 0,
+    "blocked": 0,
+    "enable_write": false,
+    "details": [
+      {
+        "item_id": "REPORT_EN_HEADINGS.p0002",
+        "document_id": "REPORT_EN_HEADINGS",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "REPORT_EN_HEADINGS.p0003",
+        "document_id": "REPORT_EN_HEADINGS",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "general_report_v1.results",
+        "document_id": "REPORT_EN_HEADINGS",
+        "status": "SKIPPED_REVIEW_ITEM"
+      }
+    ],
+    "by_document": {
+      "REPORT_EN_HEADINGS": {
+        "applied": 0,
+        "rejected": 0,
+        "blocked": 0,
+        "skipped": 3,
+        "pending": 0
+      }
+    },
+    "controlled_writer_invoked": false
+  },
+  "validation": {
+    "status": "VALID",
+    "ok": true,
+    "issues": [],
+    "warnings": [],
+    "checks": {
+      "valid_state": true,
+      "terminal_state_immutable": true,
+      "no_duplicate_terminal_event": true,
+      "no_duplicate_document_id": true,
+      "no_duplicate_filename": true,
+      "writer_not_invoked_without_gate": true
+    },
+    "can_transition_sample": {
+      "UPLOADED->ANALYZING": true,
+      "COMPLETED->WRITING": false
+    }
+  },
+  "timeline": [
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "CREATED",
+      "event": "created",
+      "detail": "document_set=general_report;routing_mode=explicit"
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "UPLOADED",
+      "event": "uploaded",
+      "detail": "files=1"
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "ANALYZING",
+      "event": "analysis_started",
+      "detail": ""
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "REVIEW_READY",
+      "event": "analysis_completed",
+      "detail": "impacted=1"
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "WAITING_APPROVAL",
+      "event": "waiting_approval",
+      "detail": ""
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "WAITING_APPROVAL",
+      "event": "approval_updated",
+      "detail": "approved=3"
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "WRITING",
+      "event": "writer_started",
+      "detail": "enable_write=False"
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "VALIDATING",
+      "event": "writer_completed",
+      "detail": "applied=0"
+    },
+    {
+      "at": "2026-08-23T20:10:05Z",
+      "state": "COMPLETED",
+      "event": "completed",
+      "detail": ""
+    }
+  ],
+  "result_rows": [
+    {
+      "document_id": "REPORT_EN_HEADINGS",
+      "status": "APPROVED_PENDING_WRITE",
+      "review": "Y",
+      "applied": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "validation": "PASS",
+      "diff_available": false,
+      "download": "data/eval/results/document_tnr/_holdout_work/v2_hol_gr_en/v2_hol_gr_en_general_report_20260823T201005Z/copies/report_en_headings.docx",
+      "skipped": 3,
+      "pending": 0
+    }
+  ],
+  "errors": [],
+  "metadata": {
+    "legacy_pair_untouched": true,
+    "writer_enabled_default": false,
+    "document_routing_mode": "explicit",
+    "requested_document_set": "general_report",
+    "identity_summary": {
+      "ok": true,
+      "per_document": [
+        {
+          "ok": true,
+          "checks": {
+            "no_filename_only_auto_route": true,
+            "canonical_id_deterministic": true,
+            "temporary_and_canonical_id_separated": true,
+            "conflict_requires_review": true,
+            "routed_pack_matches_decision": true,
+            "wrong_route_never_writes": true
+          },
+          "reasons": [],
+          "invariants": [
+            "no_filename_only_auto_route",
+            "canonical_id_deterministic",
+            "temporary_and_canonical_id_separated",
+            "conflict_requires_review",
+            "routed_pack_matches_decision",
+            "wrong_route_never_writes"
+          ]
+        }
+      ]
+    },
+    "needs_identity_confirmation": false,
+    "identity_decisions": [
+      {
+        "decision_id": "idec_37bb4cefc8cf",
+        "source_document_id": "REPORT_EN_HEADINGS",
+        "canonical_document_id": "GENERIC_GENERAL_REPORT",
+        "short_id": "REPORT",
+        "document_type": "GENERAL_REPORT",
+        "document_role": "general_report",
+        "domain_pack_id": "generic_document_v1",
+        "template_id": "general_report_v1",
+        "decision_status": "REVIEW_REQUIRED",
+        "top_score": 26.048,
+        "second_score": 23.325,
+        "score_margin": 2.723,
+        "rank_tier": 3,
+        "reason_codes": [
+          "filename_hint:REPORT",
+          "filename_role_hint",
+          "heading_or_title",
+          "report_heading_concepts",
+          "conflict_penalty",
+          "conflict_requires_review"
+        ],
+        "evidence": [
+          {
+            "signal_id": "fn_633e9f4a",
+            "type": "FILENAME_TOKEN",
+            "value": "report_en_headings.docx"
+          },
+          {
+            "signal_id": "fnrole_3417dabb",
+            "type": "DOCUMENT_ROLE_HINT",
+            "value": "general_report"
+          },
+          {
+            "signal_id": "fmt_b7215393",
+            "type": "FILE_FORMAT",
+            "value": ".docx"
+          },
+          {
+            "signal_id": "hd_b0612868",
+            "type": "DOCUMENT_TITLE",
+            "value": "Methodology"
+          },
+          {
+            "signal_id": "hd_1b88c37c",
+            "type": "HEADING_TEXT",
+            "value": "Methodology 본문 내용입니다."
+          },
+          {
+            "signal_id": "hd_8e5c3926",
+            "type": "HEADING_TEXT",
+            "value": "Results"
+          },
+          {
+            "signal_id": "hd_ee3f6b2c",
+            "type": "HEADING_TEXT",
+            "value": "Results 본문 내용입니다."
+          },
+          {
+            "signal_id": "hd_646de306",
+            "type": "HEADING_TEXT",
+            "value": "Conclusion"
+          },
+          {
+            "signal_id": "hd_57589d6c",
+            "type": "HEADING_TEXT",
+            "value": "Conclusion 본문 내용입니다."
+          },
+          {
+            "signal_id": "hd_526d6d8a",
+            "type": "HEADING_TEXT",
+            "value": "Schedule"
+          },
+          {
+            "signal_id": "hd_c50cd953",
+            "type": "HEADING_TEXT",
+            "value": "Schedule 본문 내용입니다."
+          },
+          {
+            "signal_id": "concept_47d293b5",
+            "type": "CONTENT_CONCEPT",
+            "value": "general_report"
+          }
+        ],
+        "human_review_required": true,
+        "auto_selected": false,
+        "metadata": {
+          "temporary_source_id": "REPORT_EN_HEADINGS",
+          "canonical_id_deterministic": true,
+          "filename_only": false
+        }
+      }
+    ],
+    "pack_routings": [
+      {
+        "routing_id": "route_5a7fcf2b33",
+        "source_document_id": "REPORT_EN_HEADINGS",
+        "selected_pack_id": "generic_document_v1",
+        "candidate_pack_ids": [
+          "generic_document_v1"
+        ],
+        "routing_status": "ROUTED",
+        "score": 26.048,
+        "score_margin": 26.048,
+        "reason_codes": [
+          "filename_hint:REPORT",
+          "filename_role_hint",
+          "heading_or_title",
+          "report_heading_concepts",
+          "conflict_penalty",
+          "conflict_requires_review",
+          "explicit_user_pack"
+        ],
+        "human_review_required": false,
+        "actual_pack_invoked": "generic_document_v1",
+        "metadata": {
+          "routing_mode": "explicit",
+          "identity_status": "REVIEW_REQUIRED",
+          "document_set_hint": "general_report"
+        }
+      }
+    ],
+    "analysis": {
+      "engine": "generic_template_sections",
+      "ok": true,
+      "note": "Generic packs: structural ranking + no-impact policy; auto PATCH disabled; virtual/template eval nodes not writer-executable."
+    },
+    "document_impact_decisions": [
+      {
+        "document_id": "REPORT_EN_HEADINGS",
+        "predicted_status": "REVIEW_REQUIRED",
+        "substantive_evidence_count": 2,
+        "role_evidence_count": 2,
+        "exact_identifier_count": 0,
+        "normalized_identifier_count": 0,
+        "semantic_evidence_count": 0,
+        "malformed_identifier_count": 0,
+        "reason_codes": [
+          "substantive_review_evidence"
+        ],
+        "source_stages": [
+          "catalog",
+          "document_paragraph",
+          "generic_template_sections",
+          "upload"
+        ],
+        "top_evidence": [
+          {
+            "evidence_type": "EXACT_HEADING_MATCH",
+            "evidence_value": "Results",
+            "node_id": "heading_0002",
+            "confidence": 0.7,
+            "source_stage": "document_paragraph",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "paragraph_concept_match"
+            ]
+          },
+          {
+            "evidence_type": "EXACT_HEADING_MATCH",
+            "evidence_value": "Results 본문 내용입니다.",
+            "node_id": "heading_0003",
+            "confidence": 0.7,
+            "source_stage": "document_paragraph",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "paragraph_concept_match"
+            ]
+          }
+        ],
+        "human_review_required": true,
+        "target_status": "EXISTS_EXACT",
+        "validation": {
+          "no_presence_only_impacted": true,
+          "no_template_compatibility_only_impacted": true,
+          "impacted_requires_specific_node_or_addable_target": true,
+          "missing_unsupported_not_impacted": true,
+          "unrelated_request_not_reviewed_without_evidence": true
+        }
+      }
+    ],
+    "node_alignments": [
+      {
+        "alignment_id": "NA-0001",
+        "document_id": "REPORT_EN_HEADINGS",
+        "template_node_id": "general_report_v1.results",
+        "document_node_id": "heading_0002",
+        "alignment_type": "HEADING_TO_SECTION",
+        "section_id": "results",
+        "source_locator": {
+          "paragraph_index": 2
+        },
+        "confidence": 0.8,
+        "reason_codes": [
+          "concept_or_token_bridge",
+          "section_name_hit",
+          "shared_canonical_concept"
+        ],
+        "equivalent_for_evaluation": true,
+        "equivalent_for_patch": false
+      },
+      {
+        "alignment_id": "NA-0002",
+        "document_id": "REPORT_EN_HEADINGS",
+        "template_node_id": "general_report_v1.results",
+        "document_node_id": "heading_0003",
+        "alignment_type": "HEADING_TO_SECTION",
+        "section_id": "results",
+        "source_locator": {
+          "paragraph_index": 3
+        },
+        "confidence": 0.8,
+        "reason_codes": [
+          "concept_or_token_bridge",
+          "section_name_hit",
+          "shared_canonical_concept"
+        ],
+        "equivalent_for_evaluation": true,
+        "equivalent_for_patch": false
+      }
+    ],
+    "structural_equivalence_groups": [
+      {
+        "group_id": "REPORT_EN_HEADINGS:results",
+        "document_id": "REPORT_EN_HEADINGS",
+        "template_node_ids": [
+          "general_report_v1.results"
+        ],
+        "document_node_ids": [
+          "heading_0002",
+          "heading_0003"
+        ],
+        "section_id": "results",
+        "concepts": [
+          "RESULTS"
+        ],
+        "evaluation_equivalent": true,
+        "patch_equivalent": false,
+        "reason_codes": [
+          "structural_equivalence"
+        ]
+      }
+    ],
+    "generic_query_intent": {
+      "raw_change_request": "Results section update",
+      "canonical_concepts": [
+        "RESULTS"
+      ],
+      "requested_operation": "UPDATE",
+      "requested_node_roles": [
+        "PARAGRAPH_BODY",
+        "DOCUMENT_HEADING",
+        "TEMPLATE_SECTION",
+        "SECTION_CONTAINER"
+      ],
+      "target_section_concepts": [
+        "RESULTS"
+      ],
+      "intent_label": "SECTION_UPDATE",
+      "table_intent": false,
+      "list_intent": false,
+      "add_intent": false,
+      "update_intent": true,
+      "delete_intent": false,
+      "document_level": false,
+      "ambiguity": false,
+      "confidence": 0.8999999999999999,
+      "reason_codes": [
+        "op_update",
+        "intent:SECTION_UPDATE"
+      ]
+    },
+    "generic_ranking": {
+      "query_intent": {
+        "raw_change_request": "Results section update",
+        "canonical_concepts": [
+          "RESULTS"
+        ],
+        "requested_operation": "UPDATE",
+        "requested_node_roles": [
+          "PARAGRAPH_BODY",
+          "DOCUMENT_HEADING",
+          "TEMPLATE_SECTION",
+          "SECTION_CONTAINER"
+        ],
+        "target_section_concepts": [
+          "RESULTS"
+        ],
+        "intent_label": "SECTION_UPDATE",
+        "table_intent": false,
+        "list_intent": false,
+        "add_intent": false,
+        "update_intent": true,
+        "delete_intent": false,
+        "document_level": false,
+        "ambiguity": false,
+        "confidence": 0.8999999999999999,
+        "reason_codes": [
+          "op_update",
+          "intent:SECTION_UPDATE"
+        ]
+      },
+      "structural_match_matrix": [
+        {
+          "candidate_node_id": "heading_0002",
+          "concept_match": 1.0,
+          "section_match": 1.0,
+          "heading_match": 1.0,
+          "node_role_match": 0.88,
+          "operation_role_match": 0.9,
+          "parent_context_match": 0.8,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 0.45,
+          "template_alignment_score": 0.85,
+          "physical_editability_score": 1.0,
+          "virtual_target_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "direct_child_match",
+            "eval_equivalent_alignment"
+          ]
+        },
+        {
+          "candidate_node_id": "heading_0003",
+          "concept_match": 1.0,
+          "section_match": 1.0,
+          "heading_match": 1.0,
+          "node_role_match": 0.88,
+          "operation_role_match": 0.9,
+          "parent_context_match": 0.8,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 0.45,
+          "template_alignment_score": 0.85,
+          "physical_editability_score": 1.0,
+          "virtual_target_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "direct_child_match",
+            "eval_equivalent_alignment"
+          ]
+        },
+        {
+          "candidate_node_id": "general_report_v1.results",
+          "concept_match": 1.0,
+          "section_match": 1.0,
+          "heading_match": 0.0,
+          "node_role_match": 1.0,
+          "operation_role_match": 0.95,
+          "parent_context_match": 0.0,
+          "table_structure_match": 0.0,
+          "paragraph_specificity": 0.4,
+          "template_alignment_score": 0.85,
+          "physical_editability_score": 0.25,
+          "virtual_target_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:TEMPLATE_SECTION",
+            "update_template_section_eval",
+            "eval_equivalent_alignment"
+          ]
+        }
+      ],
+      "ranking_results": {
+        "ranked_node_ids": [
+          "heading_0002",
+          "heading_0003",
+          "general_report_v1.results"
+        ],
+        "n_ranked": 3
+      },
+      "ranking_candidates": [
+        {
+          "node_id": "heading_0002",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 0,
+          "final_score": 228.69,
+          "structural_role": "DOCUMENT_HEADING",
+          "score_components": {
+            "tier_base": 120.0,
+            "concept_match": 25.0,
+            "section_match": 10.0,
+            "heading_match": 8.0,
+            "node_role_match": 15.84,
+            "operation_role_match": 18.0,
+            "parent_context_match": 9.600000000000001,
+            "table_structure_match": 0.0,
+            "paragraph_specificity": 4.5,
+            "template_alignment_score": 12.75,
+            "physical_editability_score": 5.0,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.0
+          },
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "direct_child_match",
+            "eval_equivalent_alignment",
+            "RANK_TIER_0"
+          ],
+          "rank": 1
+        },
+        {
+          "node_id": "heading_0003",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 0,
+          "final_score": 228.69,
+          "structural_role": "DOCUMENT_HEADING",
+          "score_components": {
+            "tier_base": 120.0,
+            "concept_match": 25.0,
+            "section_match": 10.0,
+            "heading_match": 8.0,
+            "node_role_match": 15.84,
+            "operation_role_match": 18.0,
+            "parent_context_match": 9.600000000000001,
+            "table_structure_match": 0.0,
+            "paragraph_specificity": 4.5,
+            "template_alignment_score": 12.75,
+            "physical_editability_score": 5.0,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.0
+          },
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:DOCUMENT_HEADING",
+            "direct_child_match",
+            "eval_equivalent_alignment",
+            "RANK_TIER_0"
+          ],
+          "rank": 2
+        },
+        {
+          "node_id": "general_report_v1.results",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 1,
+          "final_score": 190.0,
+          "structural_role": "TEMPLATE_SECTION",
+          "score_components": {
+            "tier_base": 100.0,
+            "concept_match": 25.0,
+            "section_match": 10.0,
+            "heading_match": 0.0,
+            "node_role_match": 18.0,
+            "operation_role_match": 19.0,
+            "parent_context_match": 0.0,
+            "table_structure_match": 0.0,
+            "paragraph_specificity": 4.0,
+            "template_alignment_score": 12.75,
+            "physical_editability_score": 1.25,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.0
+          },
+          "reason_codes": [
+            "section_concept_hit",
+            "role_pref:TEMPLATE_SECTION",
+            "update_template_section_eval",
+            "eval_equivalent_alignment",
+            "RANK_TIER_1",
+            "exact_section_concept_template"
+          ],
+          "rank": 3
+        }
+      ],
+      "validation": {
+        "operation_role_rank_consistent": true,
+        "virtual_target_only_for_add": true,
+        "table_intent_prefers_table_structure": true,
+        "generic_ranking_deterministic": true,
+        "issues": []
+      }
+    }
+  }
+}

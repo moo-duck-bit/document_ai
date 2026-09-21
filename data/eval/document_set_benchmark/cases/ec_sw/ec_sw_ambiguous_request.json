@@ -1,0 +1,23 @@
+{
+  "case_id": "ec_sw_ambiguous_request",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "관련 항목을 적절히 수정해 주세요",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/MDTM.docx",
+      "filename": "MDTM.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM"
+  ],
+  "expected_status": "PARTIAL",
+  "tags": [
+    "ambiguous"
+  ],
+  "difficulty": "hard",
+  "notes": "Ambiguous; acceptable UNRELATED or REVIEW",
+  "source_type": "fixture"
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "gr_no_impact",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "사무실 화분 배치 변경 XYZABC",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_base.docx",
+      "filename": "report_base.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_BASE"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "no_impact"
+  ],
+  "difficulty": "easy",
+  "notes": "No impact",
+  "source_type": "fixture"
+}

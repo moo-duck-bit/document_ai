@@ -1,0 +1,59 @@
+{
+  "case_id": "lab_ec_sw",
+  "execution_id": "exec-20260717-synthetic-001",
+  "reviewer": {
+    "name": "Document AI Fixture Reviewer",
+    "role": "pipeline_test"
+  },
+  "reviewed_at": "2026-07-17T15:35:00Z",
+  "overall_status": "test_fixture_verified",
+  "synthetic_acknowledged": true,
+  "verification_scope": "fixture_only",
+  "note": "Synthetic demonstration package. Acknowledged as fixture only. selected_for_report=false. Not human-approved execution gold.",
+  "test_reviews": [
+    {
+      "security_test_id": "SI-01",
+      "plan_security_test_id": "SI-01-T01",
+      "execution_status": "PASS",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": true,
+      "evidence_confirmed": true,
+      "evidence_hash_verified": false,
+      "selected_for_report": false,
+      "note": "SYNTHETIC fixture — not for real gold"
+    },
+    {
+      "security_test_id": "IA-01-T01",
+      "plan_security_test_id": "IA-01-T01",
+      "execution_status": "FAIL",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": true,
+      "evidence_confirmed": true,
+      "evidence_hash_verified": false,
+      "selected_for_report": false,
+      "note": "SYNTHETIC fixture — not for real gold"
+    },
+    {
+      "security_test_id": "UC-01",
+      "plan_security_test_id": "UC-01-T01",
+      "execution_status": "NOT_EXECUTED",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": true,
+      "evidence_confirmed": false,
+      "evidence_hash_verified": false,
+      "selected_for_report": false,
+      "note": "SYNTHETIC fixture — not for real gold"
+    },
+    {
+      "security_test_id": "DC-01",
+      "plan_security_test_id": "DC-01-T01",
+      "execution_status": "REVIEW_REQUIRED",
+      "status": "test_fixture_verified",
+      "result_status_confirmed": true,
+      "evidence_confirmed": true,
+      "evidence_hash_verified": false,
+      "selected_for_report": false,
+      "note": "SYNTHETIC fixture — REVIEW_REQUIRED resolved as fixture only"
+    }
+  ]
+}

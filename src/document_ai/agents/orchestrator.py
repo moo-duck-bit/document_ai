@@ -61,6 +61,7 @@ def run_change_pipeline(
     apply: bool = False,
     report_path: Path | None = None,
     change_path: Path | None = None,
+    knowledge_graph: Any | None = None,
 ) -> dict[str, Any]:
     """Run multi-agent impact analysis; optionally apply patches."""
     case_dir = Path(case_dir)
@@ -87,7 +88,7 @@ def run_change_pipeline(
         pipeline.append(result.to_dict())
         ctx.prior[result.agent_id] = result.data
 
-    legacy = compute_impact(case_dir, change)
+    legacy = compute_impact(case_dir, change, knowledge_graph=knowledge_graph)
 
     report: dict[str, Any] = {
         "case_dir": str(case_dir),

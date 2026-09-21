@@ -1,0 +1,29 @@
+[
+  {
+    "routing_id": "route_a7926b2d86",
+    "source_document_id": "MDTM_DUP_REQ",
+    "selected_pack_id": "ec_sw_v1",
+    "candidate_pack_ids": [
+      "ec_sw_v1"
+    ],
+    "routing_status": "ROUTED",
+    "score": 104.05,
+    "score_margin": 104.05,
+    "reason_codes": [
+      "filename_hint:MDTM",
+      "filename_role_hint",
+      "heading_or_title",
+      "req_with_design_or_test_same_row",
+      "requirement_id_density",
+      "traceability_matrix_structure",
+      "explicit_user_pack"
+    ],
+    "human_review_required": false,
+    "actual_pack_invoked": "ec_sw_v1",
+    "metadata": {
+      "routing_mode": "explicit",
+      "identity_status": "AUTO_SELECTED",
+      "document_set_hint": "ec_sw"
+    }
+  }
+]

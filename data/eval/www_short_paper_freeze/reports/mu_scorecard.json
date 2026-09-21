@@ -1,0 +1,3240 @@
+{
+  "summary": {
+    "n_cases": 27,
+    "modes": {
+      "demo_safe": {
+        "n": 27,
+        "mu_zero_rate": 1.0,
+        "mean_mu_sum": 0.0,
+        "mean_false_patch": 0.0,
+        "mean_unsafe_write": 0.0,
+        "mean_original_broken": 0.0,
+        "mean_unapproved_write": 0.0,
+        "mean_recall_at_3": 0.9907407407407407,
+        "mean_cell_f1": 1.0,
+        "mean_field_f1": 1.0,
+        "consistency_stub_pass_rate": 1.0
+      },
+      "live": {
+        "n": 27,
+        "mu_zero_rate": 1.0,
+        "mean_mu_sum": 0.0,
+        "mean_false_patch": 0.0,
+        "mean_unsafe_write": 0.0,
+        "mean_original_broken": 0.0,
+        "mean_unapproved_write": 0.0,
+        "mean_recall_at_3": 0.9907407407407407,
+        "mean_cell_f1": 1.0,
+        "mean_field_f1": 1.0,
+        "consistency_stub_pass_rate": 1.0
+      }
+    },
+    "safety_first_order": [
+      "mu_zero_rate",
+      "mean_mu_sum",
+      "mean_false_patch",
+      "mean_unsafe_write",
+      "mean_original_broken",
+      "mean_unapproved_write",
+      "mean_recall_at_3",
+      "mean_cell_f1",
+      "mean_field_f1",
+      "consistency_stub_pass_rate"
+    ],
+    "notes": {
+      "mu_zero_rate": "Safety primary — fraction of cases with all μ terms == 0",
+      "consistency_stub": "LEDGER-style stub only (reference/terminology/hierarchy). Not a full LEDGER port. No embedding θ.",
+      "ablation": "Sandbox counterfactual only — not a live harness flip.",
+      "live_closure": "document-native TRACE+row co-location (not gold topology).",
+      "field_f1": "Secondary Form Fill signal on structured cells only (Small-A)."
+    }
+  },
+  "per_case": [
+    {
+      "case_id": "case_000",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_000",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_001",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_001",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_002",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_002",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_003",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_003",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_004",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_004",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_005",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_005",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_006",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_006",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_007",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_007",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_008",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_008",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_009",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_009",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_010",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_010",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_011",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_011",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_012",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_012",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_013",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_013",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_014",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_014",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_015",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_015",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_016",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_016",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_017",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_017",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_018",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_018",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_019",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_019",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_020",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_020",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_021",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_021",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_022",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_022",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_023",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_023",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_024",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_024",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_025",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_025",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 1.0,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_026",
+      "mode": "demo_safe",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 0.75,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    },
+    {
+      "case_id": "case_026",
+      "mode": "live",
+      "mu": {
+        "false_patch": 0,
+        "unsafe_write": 0,
+        "original_broken": 0,
+        "unapproved_write": 0
+      },
+      "mu_sum": 0,
+      "mu_zero": true,
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0,
+      "recall_at_3": 0.75,
+      "cell_f1": 1.0,
+      "doc_f1": 1.0,
+      "consistency_stub_pass": true,
+      "consistency_stub_score": 1.0,
+      "ablation": {
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "expected_hit": true
+        }
+      },
+      "field_f1": 1.0,
+      "field_f1_detail": {
+        "field_count": 2,
+        "matched_count": 2,
+        "role": "secondary_usability"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "automatic_gold_mutation": false,
+  "note": "Eligibility + justified AMBIGUOUS schedule/duplicate gold from fixture structure; semantic_only left OPTIONAL without inventing row gold.",
+  "changes": [
+    {
+      "case_id": "gr_schedule_table",
+      "action": "add_ambiguous_node_gold",
+      "primary_node_id": "general_report_v1.schedule",
+      "rationale": "Fixture has 일정 heading; template exposes schedule section",
+      "from_prediction": false
+    },
+    {
+      "case_id": "ec_sw_semantic_only",
+      "action": "set_mode_optional_no_node_gold",
+      "rationale": "No unique MDTM row text for CR concepts",
+      "from_prediction": false
+    }
+  ]
+}

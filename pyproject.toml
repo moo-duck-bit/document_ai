@@ -5,10 +5,12 @@ description = "Form-fill agent for EC-SW DOCX documents"
 requires-python = ">=3.11"
 dependencies = [
   "python-docx>=1.1.0",
+  "networkx>=3.0",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
+ui = ["fastapi>=0.110", "uvicorn>=0.27", "python-multipart>=0.0.9"]
 
 [project.scripts]
 document-ai = "document_ai.cli:main"

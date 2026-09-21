@@ -1,0 +1,12 @@
+{
+  "decisions": [],
+  "agreement": {
+    "human_document_agreement": false,
+    "human_node_agreement": false,
+    "proposal_accepted": false,
+    "n_approve": 0,
+    "n_hold": 0,
+    "n_reject": 0,
+    "n_items": 0
+  }
+}

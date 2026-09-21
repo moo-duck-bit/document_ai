@@ -1,0 +1,23 @@
+{
+  "raw_change_request": "참고문헌 DOI 추가",
+  "canonical_concepts": [],
+  "requested_operation": "ADD",
+  "requested_node_roles": [
+    "DOCUMENT_CONTEXT",
+    "PARAGRAPH_BODY"
+  ],
+  "target_section_concepts": [],
+  "intent_label": "UNKNOWN",
+  "table_intent": false,
+  "list_intent": false,
+  "add_intent": true,
+  "update_intent": false,
+  "delete_intent": false,
+  "document_level": false,
+  "ambiguity": false,
+  "confidence": 0.55,
+  "reason_codes": [
+    "op_add",
+    "intent:UNKNOWN"
+  ]
+}

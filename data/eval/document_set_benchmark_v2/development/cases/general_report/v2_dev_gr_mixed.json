@@ -1,0 +1,28 @@
+{
+  "case_id": "v2_dev_gr_mixed",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "방법론 Methodology 보완",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_mixed.docx",
+      "filename": "report_mixed.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_MIXED"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "heading_mixed"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "9af4d8043e1a622c86c6ab1253b7122f90fbb5319984b5de0746847ddc535a22",
+  "sanitization_status": "N/A"
+}

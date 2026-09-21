@@ -1,0 +1,11 @@
+{
+  "document_count": 1,
+  "impacted": 1,
+  "review_required": 0,
+  "unrelated": 0,
+  "valid_requirement_ids": [
+    "Req. 12"
+  ],
+  "malformed_count": 0,
+  "validation_ok": true
+}

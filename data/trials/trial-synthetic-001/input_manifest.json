@@ -1,0 +1,44 @@
+{
+  "trial_id": "trial-synthetic-001",
+  "status": "checked",
+  "files": [
+    {
+      "path": "data/trials/trial-synthetic-001/input/design_items.json",
+      "name": "design_items.json",
+      "sha256": "22c2ec823e527fcb9a3730468c6e4fec93ca3d854e9df8436f7993fdb489ed6d",
+      "size_bytes": 51267
+    },
+    {
+      "path": "data/trials/trial-synthetic-001/input/input.json",
+      "name": "input.json",
+      "sha256": "f7c05b9d29ba32074ddf48ad0e243660d55fbccbe6653e94e506ab1a39e840c2",
+      "size_bytes": 1562
+    },
+    {
+      "path": "data/trials/trial-synthetic-001/input/README_INPUTS.md",
+      "name": "README_INPUTS.md",
+      "sha256": "85508347f0a3d2eb950cb547c37e9dc2056450fc659f65096e495c34307dbf38",
+      "size_bytes": 132
+    },
+    {
+      "path": "data/trials/trial-synthetic-001/input/requirements.json",
+      "name": "requirements.json",
+      "sha256": "86b45dfcdac51c5b06de985127bbe8854c838e715a13969d8fbc8fd6d7b37cfc",
+      "size_bytes": 22504
+    },
+    {
+      "path": "data/trials/trial-synthetic-001/input/security_tests.json",
+      "name": "security_tests.json",
+      "sha256": "071a9d27209d3ba342b63817a758ff2aaef7b9961c35f663e9ca7d911f82e486",
+      "size_bytes": 78307
+    }
+  ],
+  "check": {
+    "ok": true,
+    "findings": [],
+    "warnings": [
+      "change_update trial has no change request file yet"
+    ]
+  },
+  "synthetic": true
+}

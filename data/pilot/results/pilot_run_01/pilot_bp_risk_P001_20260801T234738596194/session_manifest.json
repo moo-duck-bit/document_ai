@@ -1,0 +1,17 @@
+{
+  "pilot_run_id": "pilot_run_01",
+  "case_id": "pr01_bp_03",
+  "session_id": "pilot_bp_risk_P001_20260801T234738596194",
+  "participant_id": "P001",
+  "domain": "business_proposal",
+  "scenario_id": "pilot_bp_risk",
+  "document_paths": [
+    "data/pilot/real_user_document_pilot/scenarios/fixtures/business_proposal/proposal_pilot_base.docx"
+  ],
+  "change_request": "위험 대응 방안 문단을 보강한다.",
+  "writer_enabled": false,
+  "expected_review_scope": [
+    "위험관리"
+  ],
+  "created_at": "2026-08-01T23:47:40Z"
+}

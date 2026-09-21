@@ -1,0 +1,21 @@
+{
+  "case_id": "lab_ec_sw",
+  "project_type": "real_ec_sw_lab",
+  "display_name": "JM COLLECTION (Lab EC-SW Project)",
+  "description": "연구실 실제 EC-SW 프로젝트 — JM COLLECTION B2C 전자상거래 문서 세트",
+  "domain": "ecommerce_b2c",
+  "reference_case": "jm_collection",
+  "gold": {
+    "mdsr": "gold_mdsr.docx",
+    "mddr": "gold_mddr.docx"
+  },
+  "gold_fallback": {
+    "mdsr": "../jm_collection/output_mdsr.docx",
+    "mddr": "../jm_collection/output_mddr.docx"
+  },
+  "benchmark": {
+    "min_quality_overall": 85,
+    "min_validation_overall": 70,
+    "require_harness_ok": true
+  }
+}

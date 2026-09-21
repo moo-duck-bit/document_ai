@@ -1,0 +1,22 @@
+{
+  "raw_change_request": "Req. 11 중복 확인",
+  "requirement_ids": [
+    "Req. 11"
+  ],
+  "design_ids": [],
+  "test_ids": [],
+  "identifier_status": "SINGLE",
+  "primary_identifier_type": "REQUIREMENT",
+  "secondary_identifier_types": [],
+  "semantic_terms": [
+    "req",
+    "11",
+    "중복",
+    "확인"
+  ],
+  "ambiguity": false,
+  "reason_codes": [
+    "primary_requirement",
+    "single_identifier"
+  ]
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "node_id": "table_00",
+    "status": "REVIEW_REQUIRED",
+    "rank_tier": 3,
+    "final_score": 147.05,
+    "structural_role": "TABLE",
+    "score_components": {
+      "tier_base": 60.0,
+      "concept_match": 13.750000000000002,
+      "section_match": 5.5,
+      "heading_match": 0.0,
+      "node_role_match": 18.0,
+      "operation_role_match": 18.0,
+      "parent_context_match": 0.0,
+      "table_structure_match": 19.8,
+      "paragraph_specificity": 7.0,
+      "template_alignment_score": 0.0,
+      "physical_editability_score": 5.0,
+      "virtual_target_penalty": -0.0,
+      "document_context_penalty": -0.0,
+      "ambiguity_penalty": -0.0
+    },
+    "reason_codes": [
+      "generic_concept_hit",
+      "role_pref:TABLE",
+      "table_intent_table_role",
+      "RANK_TIER_3",
+      "table_structure"
+    ],
+    "rank": 3
+  }
+]

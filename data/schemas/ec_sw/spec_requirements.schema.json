@@ -4,9 +4,9 @@
   "blank_path": "data/templates/ec_sw/template_mdsr.docx",
   "filled_example_path": "data/examples/ec_sw/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
   "stats": {
-    "field_count": 11,
-    "repeating_entity_count": 2,
-    "blank_blocks": 47,
+    "field_count": 15,
+    "repeating_entity_count": 5,
+    "blank_blocks": 44,
     "filled_blocks": 49
   },
   "fields": [
@@ -59,7 +59,7 @@
         "row": 1,
         "col": 1
       },
-      "blank_value": "Mindrium",
+      "blank_value": "",
       "example_value": "2026.02.07"
     },
     {
@@ -113,12 +113,64 @@
       "example_value": "Microsoft VS Code"
     },
     {
-      "field_id": "Editor_3_1",
-      "label": "Editor",
+      "field_id": "Code_language_1_1",
+      "label": "Code language",
       "type": "string",
       "location": {
         "type": "table_cell",
         "table_index": 3,
+        "row": 1,
+        "col": 1
+      },
+      "blank_value": "",
+      "example_value": "Python 3.13.1"
+    },
+    {
+      "field_id": "Platform_2_1",
+      "label": "Platform",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 3,
+        "row": 2,
+        "col": 1
+      },
+      "blank_value": "",
+      "example_value": "Microsoft VS Code"
+    },
+    {
+      "field_id": "Code_language_1_1",
+      "label": "Code language",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 4,
+        "row": 1,
+        "col": 1
+      },
+      "blank_value": "",
+      "example_value": "React"
+    },
+    {
+      "field_id": "Editor_2_1",
+      "label": "Editor",
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 4,
+        "row": 2,
+        "col": 1
+      },
+      "blank_value": "",
+      "example_value": "Microsoft VS Code"
+    },
+    {
+      "field_id": "table6_r3_c1",
+      "label": null,
+      "type": "string",
+      "location": {
+        "type": "table_cell",
+        "table_index": 6,
         "row": 3,
         "col": 1
       },
@@ -126,12 +178,12 @@
       "example_value": "회원가입 과정에서 인가되지 않은 사용 금지 및 사용 기록 감사 가능성을 사용자에게 안내해야 한다.\n직접 식별정보는 저장 및 제공 목적에 따라 인증 및 권한 기반 접근 통제를 통해 보호하며, 권한 없는 사용자가 해당 정보만으로 사용자를 식별할 수 없도록 관리되어야 한다."
     },
     {
-      "field_id": "table21_r2_c1",
+      "field_id": "table24_r2_c1",
       "label": null,
       "type": "string",
       "location": {
         "type": "table_cell",
-        "table_index": 21,
+        "table_index": 24,
         "row": 2,
         "col": 1
       },
@@ -139,12 +191,12 @@
       "example_value": "최소 권한 원칙을 적용하여 사용자에게 필요한 범위 내에서만 시스템 접근을 허용하고, 무단 접근 및 데이터 유출을 방지하기 위함이다."
     },
     {
-      "field_id": "table34_r2_c1",
-      "label": null,
+      "field_id": "IA01",
+      "label": "IA-01",
       "type": "string",
       "location": {
         "type": "table_cell",
-        "table_index": 34,
+        "table_index": 37,
         "row": 2,
         "col": 1
       },
@@ -157,6 +209,45 @@
       "entity": "requirement",
       "table_index": 38,
       "example_ids": [
+        "Req. 204"
+      ],
+      "rows": 4,
+      "cols": 2,
+      "sample_header": [
+        "Req. 204",
+        ""
+      ]
+    },
+    {
+      "entity": "requirement",
+      "table_index": 39,
+      "example_ids": [
+        "Req. 205"
+      ],
+      "rows": 4,
+      "cols": 2,
+      "sample_header": [
+        "Req. 205",
+        ""
+      ]
+    },
+    {
+      "entity": "requirement",
+      "table_index": 40,
+      "example_ids": [
+        "Req. 206"
+      ],
+      "rows": 4,
+      "cols": 2,
+      "sample_header": [
+        "Req. 206",
+        ""
+      ]
+    },
+    {
+      "entity": "requirement",
+      "table_index": 41,
+      "example_ids": [
         "Req. 207"
       ],
       "rows": 4,
@@ -168,7 +259,7 @@
     },
     {
       "entity": "extra_table",
-      "table_index": 39,
+      "table_index": 42,
       "rows": 37,
       "sample_first_row": [
         "",

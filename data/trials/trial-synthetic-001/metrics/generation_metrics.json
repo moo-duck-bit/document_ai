@@ -1,0 +1,31 @@
+{
+  "quality": {
+    "status": "PASS",
+    "scores": {
+      "structure": 100.0,
+      "terminology": 100.0,
+      "completeness": 100.0,
+      "consistency": 100.0,
+      "traceability": 100.0,
+      "residual_text": 84.0,
+      "overall": 96.8
+    }
+  },
+  "validation": {
+    "status": "PASS",
+    "scores": {
+      "overall": 90.5,
+      "docx_overall": 89.7,
+      "mdsr": 100.0,
+      "mddr": 92.0,
+      "xxcs": 77.1,
+      "semantic": 95.0
+    }
+  },
+  "duration_seconds": 9.694,
+  "outputs": {
+    "MDSR": "data/trials/trial-synthetic-001/generated/output_mdsr.docx",
+    "MDDR": "data/trials/trial-synthetic-001/generated/output_mddr.docx",
+    "XXCS": "data/trials/trial-synthetic-001/generated/output_xxcs.docx"
+  }
+}

@@ -1,0 +1,209 @@
+[
+  {
+    "candidate_id": "MC-0000",
+    "node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+    "document_id": "MDTM",
+    "status": "UNRELATED",
+    "matched_requirement_ids": [],
+    "evidence": [],
+    "reason_codes": [
+      "no_match"
+    ],
+    "human_review_required": true,
+    "patch_preview": null,
+    "metadata": {
+      "display_name": "Req. 11",
+      "design_hits": [],
+      "test_hits": [],
+      "overlap": 0.0,
+      "row_text": "Req. 11 | 5.1.2 | TC-11 | ",
+      "row_requirement_ids": [
+        "Req. 11"
+      ],
+      "row_design_ids": [
+        "5.1.2"
+      ],
+      "row_test_ids": [
+        "TC-11",
+        "5.1.2"
+      ],
+      "identifier_origins": {
+        "requirement:Req. 11": "LOCAL_CELL",
+        "design:5.1.2": "LOCAL_CELL",
+        "test:TC-11": "LOCAL_CELL",
+        "test:5.1.2": "LOCAL_CELL"
+      },
+      "table_index": 0,
+      "row_index": 2,
+      "source_identifiers": {
+        "requirement_ids": [
+          "Req. 11"
+        ],
+        "design_ids": [
+          "5.1.2"
+        ],
+        "test_ids": [
+          "TC-11",
+          "5.1.2"
+        ]
+      },
+      "evidence_scopes": [
+        "ROW_LOCAL",
+        "CELL_LOCAL"
+      ],
+      "legacy_node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+      "stable_node_id": "stablev2.table_row.6193b46f84264517",
+      "stable_node_id_base": "stablev2.table_row.6193b46f84264517",
+      "stable_node_id_v1": "stable.table_row.aa624105423ac0db",
+      "stable_node_id_v2": "stablev2.table_row.6193b46f84264517",
+      "instance_signature": "",
+      "duplicate_instance_key": null,
+      "identity_status": "STABLE",
+      "identifier_values": [
+        "Req. 11",
+        "5.1.2",
+        "TC-11"
+      ],
+      "logical_identity_resolved": true,
+      "writer_executable": false
+    }
+  },
+  {
+    "candidate_id": "MC-0001",
+    "node_id": "ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+    "document_id": "MDTM",
+    "status": "UNRELATED",
+    "matched_requirement_ids": [],
+    "evidence": [],
+    "reason_codes": [
+      "no_match"
+    ],
+    "human_review_required": true,
+    "patch_preview": null,
+    "metadata": {
+      "display_name": "Req. 12",
+      "design_hits": [],
+      "test_hits": [],
+      "overlap": 0.0,
+      "row_text": "Req. 12 | 5.1.3 | TC-12 | ",
+      "row_requirement_ids": [
+        "Req. 12"
+      ],
+      "row_design_ids": [
+        "5.1.3"
+      ],
+      "row_test_ids": [
+        "TC-12",
+        "5.1.3"
+      ],
+      "identifier_origins": {
+        "requirement:Req. 12": "LOCAL_CELL",
+        "design:5.1.3": "LOCAL_CELL",
+        "test:TC-12": "LOCAL_CELL",
+        "test:5.1.3": "LOCAL_CELL"
+      },
+      "table_index": 0,
+      "row_index": 3,
+      "source_identifiers": {
+        "requirement_ids": [
+          "Req. 12"
+        ],
+        "design_ids": [
+          "5.1.3"
+        ],
+        "test_ids": [
+          "TC-12",
+          "5.1.3"
+        ]
+      },
+      "evidence_scopes": [
+        "ROW_LOCAL",
+        "CELL_LOCAL"
+      ],
+      "legacy_node_id": "ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+      "stable_node_id": "stablev2.table_row.95fadaf652f56515",
+      "stable_node_id_base": "stablev2.table_row.95fadaf652f56515",
+      "stable_node_id_v1": "stable.table_row.9a618659d9fae44d",
+      "stable_node_id_v2": "stablev2.table_row.95fadaf652f56515",
+      "instance_signature": "",
+      "duplicate_instance_key": null,
+      "identity_status": "STABLE",
+      "identifier_values": [
+        "Req. 12",
+        "5.1.3",
+        "TC-12"
+      ],
+      "logical_identity_resolved": true,
+      "writer_executable": false
+    }
+  },
+  {
+    "candidate_id": "MC-0002",
+    "node_id": "ec_sw_v1.mdtm.table_00.row_0004.7ea5ab0d5d",
+    "document_id": "MDTM",
+    "status": "UNRELATED",
+    "matched_requirement_ids": [],
+    "evidence": [],
+    "reason_codes": [
+      "no_match"
+    ],
+    "human_review_required": true,
+    "patch_preview": null,
+    "metadata": {
+      "display_name": "Req. 101",
+      "design_hits": [],
+      "test_hits": [],
+      "overlap": 0.0,
+      "row_text": "Req. 101 | 6.0.1 | TC-101 | ",
+      "row_requirement_ids": [
+        "Req. 101"
+      ],
+      "row_design_ids": [
+        "6.0.1"
+      ],
+      "row_test_ids": [
+        "TC-101",
+        "6.0.1"
+      ],
+      "identifier_origins": {
+        "requirement:Req. 101": "LOCAL_CELL",
+        "design:6.0.1": "LOCAL_CELL",
+        "test:TC-101": "LOCAL_CELL",
+        "test:6.0.1": "LOCAL_CELL"
+      },
+      "table_index": 0,
+      "row_index": 4,
+      "source_identifiers": {
+        "requirement_ids": [
+          "Req. 101"
+        ],
+        "design_ids": [
+          "6.0.1"
+        ],
+        "test_ids": [
+          "TC-101",
+          "6.0.1"
+        ]
+      },
+      "evidence_scopes": [
+        "ROW_LOCAL",
+        "CELL_LOCAL"
+      ],
+      "legacy_node_id": "ec_sw_v1.mdtm.table_00.row_0004.7ea5ab0d5d",
+      "stable_node_id": "stablev2.table_row.cda6dea751fdc367",
+      "stable_node_id_base": "stablev2.table_row.cda6dea751fdc367",
+      "stable_node_id_v1": "stable.table_row.e313b663ce812208",
+      "stable_node_id_v2": "stablev2.table_row.cda6dea751fdc367",
+      "instance_signature": "",
+      "duplicate_instance_key": null,
+      "identity_status": "STABLE",
+      "identifier_values": [
+        "Req. 101",
+        "6.0.1",
+        "TC-101"
+      ],
+      "logical_identity_resolved": true,
+      "writer_executable": false
+    }
+  }
+]

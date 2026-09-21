@@ -1,0 +1,82 @@
+[
+  {
+    "document_id": "MDTM",
+    "short_id": "matrix_mdtm",
+    "document_type": "MDTM",
+    "document_role": "traceability",
+    "source_path": "/workspace/data/eval/document_set_benchmark_v2/fixtures/ec_sw/mdtm_base.docx",
+    "source_format": "docx",
+    "template_id": null,
+    "domain_pack_id": "ec_sw_v1",
+    "priority": 1,
+    "enabled": true,
+    "metadata": {
+      "doc_code": "EC-SW-MDTM",
+      "status": "registered",
+      "agent_support": null,
+      "relative_path": "data/eval/document_set_benchmark_v2/fixtures/ec_sw/mdtm_base.docx",
+      "indexable": true,
+      "blank_template": null
+    }
+  },
+  {
+    "document_id": "MDSR",
+    "short_id": "spec_mdsr",
+    "document_type": "MDSR",
+    "document_role": "requirements",
+    "source_path": "/workspace/data/examples/ec_sw/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+    "source_format": "docx",
+    "template_id": null,
+    "domain_pack_id": "ec_sw_v1",
+    "priority": 10,
+    "enabled": true,
+    "metadata": {
+      "doc_code": "EC-SW-MDSR",
+      "status": "registered",
+      "agent_support": null,
+      "relative_path": "data/examples/ec_sw/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+      "indexable": false,
+      "blank_template": null
+    }
+  },
+  {
+    "document_id": "MDDR",
+    "short_id": "spec_mddr",
+    "document_type": "MDDR",
+    "document_role": "design",
+    "source_path": "/workspace/data/examples/ec_sw/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+    "source_format": "docx",
+    "template_id": null,
+    "domain_pack_id": "ec_sw_v1",
+    "priority": 20,
+    "enabled": true,
+    "metadata": {
+      "doc_code": "EC-SW-MDDR",
+      "status": "registered",
+      "agent_support": null,
+      "relative_path": "data/examples/ec_sw/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+      "indexable": false,
+      "blank_template": null
+    }
+  },
+  {
+    "document_id": "XXCS",
+    "short_id": "report_xxcs",
+    "document_type": "XXCS",
+    "document_role": "security_verification_report",
+    "source_path": "/workspace/data/examples/ec_sw/report_xxcs_EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서.docx",
+    "source_format": "docx",
+    "template_id": null,
+    "domain_pack_id": "ec_sw_v1",
+    "priority": 30,
+    "enabled": true,
+    "metadata": {
+      "doc_code": "EC-SW-XXCS",
+      "status": "registered",
+      "agent_support": null,
+      "relative_path": "data/examples/ec_sw/report_xxcs_EC-SW-XXCS(XA) 소프트웨어 보안 검증 보고서.docx",
+      "indexable": false,
+      "blank_template": null
+    }
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "legacy_node_id": "ec_sw_v1.mdtm.table_00.row_0002.48fb6d6f92",
+    "stable_node_id_v1": "stable.table_row.5fcf631b80569318",
+    "stable_node_id_v2": "stablev2.table_row.6193b46f84264517",
+    "stable_node_id_base": "stablev2.table_row.6193b46f84264517",
+    "logical_key": "REQ[REQ-11]|DESIGN[5.1.2]|TEST[5.1.2,TC-11]"
+  },
+  {
+    "legacy_node_id": "ec_sw_v1.mdtm.table_00.row_0003.816a639298",
+    "stable_node_id_v1": "stable.table_row.35c73ea15403f95b",
+    "stable_node_id_v2": "stablev2.table_row.95fadaf652f56515",
+    "stable_node_id_base": "stablev2.table_row.95fadaf652f56515",
+    "logical_key": "REQ[REQ-12]|DESIGN[5.1.3]|TEST[5.1.3,TC-12]"
+  },
+  {
+    "legacy_node_id": "ec_sw_v1.mdtm.table_00.row_0004.7ea5ab0d5d",
+    "stable_node_id_v1": "stable.table_row.eab9a89220e7c683",
+    "stable_node_id_v2": "stablev2.table_row.cda6dea751fdc367",
+    "stable_node_id_base": "stablev2.table_row.cda6dea751fdc367",
+    "logical_key": "REQ[REQ-101]|DESIGN[6.0.1]|TEST[6.0.1,TC-101]"
+  }
+]

@@ -1,0 +1,228 @@
+{
+  "cover_product_line": "JM COLLECTION Co., Ltd.",
+  "standards": [
+    "PCI DSS v4.0 Payment Card Industry Data Security Standard",
+    "개인정보보호법 (대한민국)",
+    "OWASP ASVS v4.0 Application Security Verification Standard"
+  ],
+  "document_title": "EC-SW-MDSR(JM) JM COLLECTION 소프트웨어 요구사항명세서",
+  "document_version_line": "Ver 1.0 / 문서번호 JM-SRS-10",
+  "narrative": [
+    "JM COLLECTION은 패션·잡화 전문 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영·CS 백오피스(JM-admin)로 구성된다. 회원·비회원 모두 상품 탐색, 장바구니, 주문, PG 결제, 배송 추적, 반품/환불, 1:1 문의를 이용할 수 있으며, 운영자는 상품·프로모션·주문·회원·재고를 통합 관리한다.",
+    "시스템은 React SPA + Node.js(TypeScript) 마이크로서비스 + PostgreSQL/Redis/S3/CloudFront 아키텍처를 따른다. 결제는 PG사 토큰화 연동, 개인정보·결제 데이터는 AES-256 저장 및 TLS 1.2+ 전송, OWASP Top 10 대응 및 RBAC 기반 운영자 접근 통제를 적용한다.",
+    "본 문서는 JM COLLECTION 소프트웨어의 기능·보안·비기능 요구사항과 PCI DSS·OWASP ASVS·개인정보보호법 추적성 매트릭스를 정의한다."
+  ],
+  "paragraphs": [
+    "Software Requirement Specification",
+    "PCI DSS v4.0 Payment Card Industry Data Security Standard",
+    "개인정보보호법 (대한민국) / OWASP ASVS v4.0 Application Security Verification Standard",
+    "EC-SW-MDSR(JM) JM COLLECTION 소프트웨어 요구사항명세서",
+    "Ver 1.0 / 문서번호 JM-SRS-10",
+    "JM COLLECTION은 패션·잡화 전문 B2C 온라인 쇼핑몰 소프트웨어이다. 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영·CS 백오피스(JM-admin)로 구성된다. 회원·비회원 모두 상품 탐색, 장바구니, 주문, PG 결제, 배송 추적, 반품/환불, 1:1 문의를 이용할 수 있으며, 운영자는 상품·프로모션·주문·회원·재고를 통합 관리한다.",
+    "시스템은 React SPA + Node.js(TypeScript) 마이크로서비스 + PostgreSQL/Redis/S3/CloudFront 아키텍처를 따른다. 결제는 PG사 토큰화 연동, 개인정보·결제 데이터는 AES-256 저장 및 TLS 1.2+ 전송, OWASP Top 10 대응 및 RBAC 기반 운영자 접근 통제를 적용한다.",
+    "본 문서는 JM COLLECTION 소프트웨어의 기능·보안·비기능 요구사항과 PCI DSS·OWASP ASVS·개인정보보호법 추적성 매트릭스를 정의한다."
+  ],
+  "approval": {
+    "date": "2026.03.20",
+    "people": {
+      "승인자": {
+        "name": "김준호",
+        "title": "대표이사"
+      },
+      "검토자": {
+        "name": "이서연",
+        "title": "보안책임자(CISO)"
+      },
+      "작성자": {
+        "name": "박민재",
+        "title": "SI팀장"
+      }
+    }
+  },
+  "revision": {
+    "number": "0",
+    "date": "2026.03.20",
+    "summary": "JM COLLECTION 쇼핑몰 요구사항명세서 최초 제정",
+    "author": "박민재"
+  },
+  "product_matrix": [
+    [
+      "제품명",
+      "JM COLLECTION",
+      "JM COLLECTION",
+      "JM COLLECTION"
+    ],
+    [
+      "모델명",
+      "JM-COLLECTION-Mall",
+      "JM-COLLECTION-Mall",
+      "JM-COLLECTION-Mall"
+    ],
+    [
+      "소프트웨어명",
+      "JM-web",
+      "JM-api",
+      "JM-admin"
+    ],
+    [
+      "소프트웨어명",
+      "JM-web",
+      "JM-api",
+      "JM-admin"
+    ],
+    [
+      "안전성 등급",
+      "A",
+      "A",
+      "A"
+    ],
+    [
+      "제조자",
+      "JM COLLECTION Co., Ltd.",
+      "JM COLLECTION Co., Ltd.",
+      "JM COLLECTION Co., Ltd."
+    ]
+  ],
+  "component_detail_rows": [
+    [
+      "",
+      "JM-web",
+      "JM-api",
+      "JM-admin"
+    ],
+    [
+      "버전",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0"
+    ],
+    [
+      "Code language",
+      "TypeScript / React 18",
+      "TypeScript / Node.js 20",
+      "TypeScript / React 18"
+    ],
+    [
+      "Platform",
+      "AWS CloudFront, S3",
+      "AWS ECS, RDS PostgreSQL",
+      "AWS ECS (VPC)"
+    ],
+    [
+      "Editor",
+      "VS Code",
+      "VS Code",
+      "VS Code"
+    ],
+    [
+      "운영 환경",
+      "AWS Cloud (ECS, RDS, Redis, S3, CloudFront)",
+      "AWS ECS Fargate, RDS PostgreSQL, ElastiCache Redis",
+      "AWS ECS (내부 VPC)"
+    ]
+  ],
+  "tech_stacks": [
+    {
+      "header": "JM-web (고객몰)",
+      "code_language": "TypeScript / React 18",
+      "platform": "AWS CloudFront, S3 (정적 호스팅)",
+      "editor": "VS Code"
+    },
+    {
+      "header": "JM-api (주문·결제·회원 API)",
+      "code_language": "TypeScript / Node.js 20 LTS",
+      "platform": "AWS ECS Fargate, API Gateway, RDS PostgreSQL, ElastiCache Redis",
+      "editor": "VS Code"
+    },
+    {
+      "header": "JM-admin (운영 백오피스)",
+      "code_language": "TypeScript / React 18",
+      "platform": "AWS ECS (내부 VPC), RBAC, MFA",
+      "editor": "VS Code"
+    }
+  ],
+  "product_overview": {
+    "operating_principle": "JM COLLECTION은 B2C 패션·잡화 온라인 쇼핑몰 소프트웨어로, 고객용 웹·모바일 몰(JM-web), 주문·결제·재고 API(JM-api), 운영 백오피스(JM-admin)가 REST API와 이벤트 기반으로 연동된다. 고객은 상품 탐색·장바구니·주문·PG 결제·배송 추적·반품/환불을 이용하고, 운영자는 상품·프로모션·주문·회원·재고를 통합 관리한다.",
+    "usage_purpose": "패션·잡화 B2C 전자상거래 서비스 제공, 회원·비회원 주문·결제 처리, 운영자의 상품·주문·CS·재고 관리, PCI DSS 및 개인정보보호법 준수를 위한 보안·감사 추적.",
+    "composition": "JM-web(React SPA, CloudFront/S3), JM-api(Node.js 마이크로서비스, ECS/RDS/Redis), JM-admin(React SPA, 내부 VPC), PostgreSQL·Redis·S3·CloudFront·API Gateway·PG사 연동으로 구성된다.",
+    "figure_caption": "그림 1. JM COLLECTION 소프트웨어 상호 관계도",
+    "product_characteristics": "본 소프트웨어는 고객몰·API·백오피스를 통해 상품 탐색, 장바구니, 주문, PG 토큰 결제, 배송·반품 처리, 1:1 문의, 프로모션·쿠폰, 재고 연동을 제공한다. TLS 1.2+ 전송, AES-256 저장, RBAC·MFA 기반 운영자 접근 통제를 적용한다.",
+    "user_characteristics": "JM-web 사용자는 일반 소비자(회원·비회원)이다. JM-admin 사용자는 JM COLLECTION 운영·CS·물류 담당자이며 RBAC 역할(관리자·상품·주문·CS)에 따라 접근 권한이 부여된다.",
+    "general_constraints": "규제: PCI DSS v4.0, 개인정보보호법, OWASP ASVS v4.0. 하드웨어: HTML5 지원 브라우저 및 HTTPS 네트워크. 운영: AWS ap-northeast-2 리전, RDS Multi-AZ, CloudWatch 모니터링.",
+    "assumptions_dependencies": "PG사·택배사·이메일/SMS 게이트웨이 API 가용, AWS 인프라 SLA, 고객 단말 TLS 1.2+ 지원, 운영자 MFA 등록 완료를 전제한다.",
+    "system_attributes": "가용성 99.9% 목표, 주문·결제 API p95 500ms 이내, 결제·개인정보 AES-256 저장, 감사 로그 1년 보존, OWASP Top 10 대응, RBAC·세션 타임아웃·비밀번호 정책 적용."
+  },
+  "unique_requirements": {
+    "execution_environment": {
+      "jm_web": [
+        "OS: Chrome 80+, Safari 13+, Edge 80+ (모바일·데스크톱 웹 브라우저)",
+        "Hardware: HTML5 지원 스마트폰·태블릿·PC",
+        "네트워크: HTTPS(TLS 1.2+) 필수, Wi-Fi 또는 LTE/5G",
+        "해상도: 반응형 레이아웃(320px~1920px)"
+      ],
+      "jm_api": [
+        "OS: Amazon Linux 2023 (AWS ECS Fargate 컨테이너)",
+        "Runtime: Node.js 20 LTS, TypeScript",
+        "자원: vCPU 2+, 메모리 4GB+ (서비스별 Auto Scaling)",
+        "Platform: AWS ECS, RDS PostgreSQL 15, ElastiCache Redis, S3",
+        "배포: ECS Fargate Blue/Green, CloudWatch 모니터링"
+      ],
+      "jm_admin": [
+        "OS: Chrome 80+, Safari 13+, Edge 80+ (내부망/VPN 접속)",
+        "웹 브라우저: Chrome 80.0.3987 이상",
+        "Safari 13.1.2 이상, Edge 80.0.361 이상",
+        "접근: RBAC + MFA 필수, IP allowlist(VPN) 권장",
+        "세션: 30분 비활성 타임아웃"
+      ]
+    },
+    "communication_interface": "HTTPS REST API(JSON) 및 WebSocket(실시간 주문·재고 알림). CloudFront→ALB→ECS, API Gateway rate limiting. PG사·택배·알림은 TLS 1.2+ 외부 API 연동.",
+    "development_environment": {
+      "jm_web": [
+        "Language: TypeScript, React 18, Vite",
+        "Editor: VS Code, ESLint, Prettier",
+        "CI/CD: GitHub Actions → S3/CloudFront 배포"
+      ],
+      "jm_api": [
+        "Language: TypeScript, Node.js 20, Express/Fastify",
+        "Editor: VS Code, Jest, Supertest",
+        "CI/CD: GitHub Actions → ECR → ECS Blue/Green"
+      ],
+      "jm_admin": [
+        "Language: TypeScript, React 18",
+        "Editor: VS Code",
+        "CI/CD: GitHub Actions → 내부 ECS (VPC)"
+      ]
+    },
+    "performance": [
+      "주문·결제 API: p95 응답 500ms 이내, 동시 1,000 TPS 목표",
+      "상품 목록·검색: p95 300ms 이내 (Redis 캐시)",
+      "주문·결제·배송 상태는 JM-admin 대시보드에서 실시간 조회 가능해야 한다."
+    ],
+    "database_sections": {
+      "structure": "PostgreSQL 스키마: 회원, 상품, 주문, 결제(토큰·마스킹), 배송, 반품, 쿠폰, 재고, 감사로그. 카드 PAN/CVC는 저장하지 않으며 PG 토큰만 보관한다.",
+      "integrity": [
+        "주문·결제·재고 변경은 트랜잭션 및 낙관적 잠금으로 무결성을 보장한다.",
+        "입력값은 서버 측 스키마 검증(Zod) 및 중복 주문 방지(idempotency key)를 적용한다."
+      ],
+      "encryption": [
+        "개인정보·결제 토큰은 AES-256 저장, 전송은 TLS 1.2+.",
+        "DB 접근은 IAM·Secrets Manager·VPC 보안그룹으로 제한하며 운영자 RBAC를 적용한다."
+      ],
+      "backup": [
+        "RDS 자동 백업(35일), S3 버전관리, Cross-Region 복제.",
+        "RTO 4시간, RPO 1시간 목표의 재해 복구 Runbook을 유지한다."
+      ],
+      "integration": [
+        "PG사·택배·알림 API는 표준 REST/Webhook으로 연동한다.",
+        "주문·재고 이벤트는 JSON 메시지로 내부 서비스 간 전달한다."
+      ],
+      "audit": [
+        "주문·결제·개인정보 접근·권한 변경에 대한 감사 로그를 1년 보존한다.",
+        "PCI DSS·개인정보보호법 요구에 따른 접근 기록 및 정기 검토를 수행한다."
+      ]
+    },
+    "cybersecurity_intro": "PCI DSS v4.0 및 OWASP ASVS v4.0 기본 원칙과 [표3. 사이버 보안 요구사항]을 충족하여야 하며, 카드 데이터 보호·접근 통제·취약점 관리·침해 대응 요구사항은 본 문서 및 추적성 매트릭스에 따라 관리한다."
+  },
+  "document_title_sdp": "EC-SW-SDP(JM) JM COLLECTION 소프트웨어 개발 계획서",
+  "domain": "ecommerce_b2c"
+}

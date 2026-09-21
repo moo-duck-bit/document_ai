@@ -1,0 +1,23 @@
+{
+  "case_id": "ec_sw_no_impact",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "마케팅 슬로건 XYZABCQUUX 변경",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/MDTM.docx",
+      "filename": "MDTM.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "no_impact"
+  ],
+  "difficulty": "easy",
+  "notes": "No-impact marketing phrase",
+  "source_type": "fixture"
+}

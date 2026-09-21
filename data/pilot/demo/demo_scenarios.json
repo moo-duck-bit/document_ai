@@ -1,0 +1,101 @@
+{
+  "count": 12,
+  "demos": [
+    {
+      "demo_id": "demo_ec_req11",
+      "scenario_id": "pilot_ec_req_single",
+      "domain": "ec_sw",
+      "title": "EC-SW · Req.11 변경",
+      "talk_track": "요구사항 ID가 있는 추적성 행을 찾아 검토·승인 후 복사본을 남긴다.",
+      "flagship": true
+    },
+    {
+      "demo_id": "demo_ec_multi_req",
+      "scenario_id": "pilot_ec_design_review",
+      "domain": "ec_sw",
+      "title": "EC-SW · 복수 Req 영향",
+      "talk_track": "여러 요구사항 ID가 함께 언급될 때 후보를 나란히 검토한다.",
+      "flagship": false
+    },
+    {
+      "demo_id": "demo_ec_semantic",
+      "scenario_id": "pilot_ec_semantic",
+      "domain": "ec_sw",
+      "title": "EC-SW · 의미 기반 요청",
+      "talk_track": "ID 없이 정책 문구만 있을 때 REVIEW가 뜨는 흐름을 보여준다.",
+      "flagship": false
+    },
+    {
+      "demo_id": "demo_ec_no_impact",
+      "scenario_id": "pilot_ec_no_impact",
+      "domain": "ec_sw",
+      "title": "EC-SW · 무관 요청",
+      "talk_track": "문서와 무관한 요청은 영향이 없거나 Writer가 막혀야 한다.",
+      "flagship": false
+    },
+    {
+      "demo_id": "demo_gr_methodology",
+      "scenario_id": "pilot_gr_methodology",
+      "domain": "general_report",
+      "title": "일반보고서 · 방법론 수정",
+      "talk_track": "방법론 섹션을 찾아 데이터 출처 보강 요청을 검토한다.",
+      "flagship": true
+    },
+    {
+      "demo_id": "demo_gr_schedule",
+      "scenario_id": "pilot_gr_schedule_table",
+      "domain": "general_report",
+      "title": "일반보고서 · 일정표 변경",
+      "talk_track": "일정 표 셀을 대상으로 하는 변경을 보여준다.",
+      "flagship": false
+    },
+    {
+      "demo_id": "demo_gr_conclusion",
+      "scenario_id": "pilot_gr_conclusion",
+      "domain": "general_report",
+      "title": "일반보고서 · 결론 추가",
+      "talk_track": "결론·향후 계획 문단 후보를 검토한다.",
+      "flagship": false
+    },
+    {
+      "demo_id": "demo_gr_no_impact",
+      "scenario_id": "pilot_gr_no_impact",
+      "domain": "general_report",
+      "title": "일반보고서 · No-impact",
+      "talk_track": "표지 색상처럼 본문과 무관한 요청의 대조 케이스.",
+      "flagship": false
+    },
+    {
+      "demo_id": "demo_bp_budget",
+      "scenario_id": "pilot_bp_budget",
+      "domain": "business_proposal",
+      "title": "사업제안서 · 예산 변경",
+      "talk_track": "예산 표·인건비 항목을 찾아 승인 후 복사본을 만든다.",
+      "flagship": true
+    },
+    {
+      "demo_id": "demo_bp_schedule",
+      "scenario_id": "pilot_bp_schedule",
+      "domain": "business_proposal",
+      "title": "사업제안서 · 수행 일정",
+      "talk_track": "수행 일정 문구·표 후보를 검토한다.",
+      "flagship": false
+    },
+    {
+      "demo_id": "demo_bp_risk",
+      "scenario_id": "pilot_bp_risk",
+      "domain": "business_proposal",
+      "title": "사업제안서 · 위험관리 보강",
+      "talk_track": "위험 대응 문단을 찾아 보강 요청을 검토한다.",
+      "flagship": false
+    },
+    {
+      "demo_id": "demo_bp_labor_cell",
+      "scenario_id": "pilot_bp_no_impact",
+      "domain": "business_proposal",
+      "title": "사업제안서 · 인건비 셀(고위험)",
+      "talk_track": "셀 단위 고위험 변경은 자동 승인 없이 REVIEW/차단을 강조한다.",
+      "flagship": false
+    }
+  ]
+}

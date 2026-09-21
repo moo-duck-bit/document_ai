@@ -1,0 +1,16 @@
+{
+  "mean_trust_score": 3.778,
+  "mean_usability_score": 4.0,
+  "mean_scores_by_dimension": {
+    "understanding": 5.0,
+    "document_impact": 4.667,
+    "node_accuracy": 4.667,
+    "proposal_accuracy": 3.111,
+    "review_reason": 3.889,
+    "diff_readability": 3.889,
+    "no_unnecessary_change": 5.0,
+    "format_preservation": 5.0,
+    "trust": 3.778,
+    "usability": 4.0
+  }
+}

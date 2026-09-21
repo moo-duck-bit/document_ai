@@ -1,0 +1,28 @@
+{
+  "case_id": "v2_dev_bp_deliverable",
+  "domain": "business_proposal",
+  "document_set_id": "business_proposal",
+  "change_request": "산출물 목록 수정",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/business_proposal/proposal_deliverables.docx",
+      "filename": "proposal_deliverables.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "PROPOSAL_DELIVERABLES"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "deliverable"
+  ],
+  "difficulty": "medium",
+  "notes": "cycle6_business_proposal_node_gold",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "ce05bb938c2e66bfdc8dc2675df7c49f5a8a7d72d284811fd082888286636b8b",
+  "sanitization_status": "N/A"
+}

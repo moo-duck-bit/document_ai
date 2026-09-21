@@ -1,0 +1,52 @@
+{
+  "evaluation_id": "eval-4bd25ae2188b",
+  "correlation_id": "corr-demo-live",
+  "workflow_id": "wf-tg-demo-live",
+  "reasoning_id": "rsn-70418969fe06",
+  "case_id": "mindrium_xa",
+  "status": "completed",
+  "started_at": "2026-07-03T09:00:24.870193+00:00",
+  "completed_at": "2026-07-03T09:00:24.879715+00:00",
+  "metrics": {
+    "workflow_completed": true,
+    "task_success_rate": 1.0,
+    "issue_count": 1,
+    "has_review_issues": true,
+    "has_runtime_error": false,
+    "event_count": 8,
+    "reasoning_step_count": 5
+  },
+  "review_summary": {
+    "status": "warning",
+    "issues": [
+      "XXCS patch planned but security_tests.json is missing"
+    ]
+  },
+  "issue_count": 1,
+  "task_summary": {
+    "tasks": {
+      "task-document-change-pipeline": "COMPLETED"
+    },
+    "completed_count": 1,
+    "total_count": 1,
+    "success_rate": 1.0
+  },
+  "event_refs": [
+    "evt-9c22273d0623",
+    "evt-0716524455f9",
+    "evt-3e08cb57c6f7",
+    "evt-62da25f31a40",
+    "evt-202404129366",
+    "evt-14ac65aa19b7",
+    "evt-732c17d8b9ac",
+    "evt-ca4a43d24322"
+  ],
+  "knowledge_refs": [
+    "data\\cases\\mindrium_xa\\knowledge_graph.json",
+    "req:Req. 6",
+    "query:Req. 6"
+  ],
+  "metadata": {
+    "change_id": "chg-req6-login-limit"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "document_set_mode": "registry",
+  "document_set": "ec_sw",
+  "descriptor_count": 4,
+  "enabled_count": 4,
+  "packs": [
+    "ec_sw_v1"
+  ],
+  "mdtm_included": true,
+  "newly_supported": [
+    "MDTM"
+  ],
+  "note": "Observational path only; MDSR/MDDR actual path unchanged."
+}

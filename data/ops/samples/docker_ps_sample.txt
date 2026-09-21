@@ -1,0 +1,5 @@
+CONTAINER ID   NAME                 IMAGE                    STATUS
+a1b2c3d4e5f6   lab-trainer          pytorch/pytorch:2.1.0    Up 3 hours
+f6e5d4c3b2a1   tensorboard-svc      tensorflow/tensorflow    Up 2 days (healthy)
+9a8b7c6d5e4f   data-pipeline        custom/etl:latest        Restarting (5) 2 minutes ago (unhealthy)
+1a2b3c4d5e6f   redis-cache          redis:7-alpine           Up 5 days

@@ -1,0 +1,155 @@
+{
+  "routings": [
+    {
+      "routing_id": "route_f582dc5296",
+      "source_document_id": "REPORT_PILOT_SCHEDULE",
+      "selected_pack_id": "generic_document_v1",
+      "candidate_pack_ids": [
+        "generic_document_v1"
+      ],
+      "routing_status": "ROUTED",
+      "score": 35.453,
+      "score_margin": 35.453,
+      "reason_codes": [
+        "filename_hint:REPORT",
+        "filename_role_hint",
+        "heading_or_title",
+        "report_heading_concepts",
+        "explicit_user_hint",
+        "conflict_penalty",
+        "assisted_user_confirmed"
+      ],
+      "human_review_required": false,
+      "actual_pack_invoked": "generic_document_v1",
+      "metadata": {
+        "routing_mode": "assisted",
+        "identity_status": "REVIEW_REQUIRED",
+        "document_set_hint": "general_report"
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "idec_8ab776a98281",
+      "source_document_id": "REPORT_PILOT_SCHEDULE",
+      "canonical_document_id": "GENERIC_GENERAL_REPORT",
+      "short_id": "REPORT",
+      "document_type": "GENERAL_REPORT",
+      "document_role": "general_report",
+      "domain_pack_id": "generic_document_v1",
+      "template_id": "general_report_v1",
+      "decision_status": "REVIEW_REQUIRED",
+      "top_score": 35.453,
+      "second_score": 24.755,
+      "score_margin": 10.698,
+      "rank_tier": 3,
+      "reason_codes": [
+        "filename_hint:REPORT",
+        "filename_role_hint",
+        "heading_or_title",
+        "report_heading_concepts",
+        "explicit_user_hint",
+        "conflict_penalty",
+        "conflict_requires_review"
+      ],
+      "evidence": [
+        {
+          "signal_id": "fn_e02982f5",
+          "type": "FILENAME_TOKEN",
+          "value": "report_pilot_schedule.docx"
+        },
+        {
+          "signal_id": "fnrole_1661b153",
+          "type": "DOCUMENT_ROLE_HINT",
+          "value": "general_report"
+        },
+        {
+          "signal_id": "fmt_07f317ad",
+          "type": "FILE_FORMAT",
+          "value": ".docx"
+        },
+        {
+          "signal_id": "hd_38f1bf1d",
+          "type": "DOCUMENT_TITLE",
+          "value": "요약"
+        },
+        {
+          "signal_id": "hd_047c8b3d",
+          "type": "HEADING_TEXT",
+          "value": "요약 본문 내용입니다."
+        },
+        {
+          "signal_id": "hd_186d0b63",
+          "type": "HEADING_TEXT",
+          "value": "방법론"
+        },
+        {
+          "signal_id": "hd_725f1702",
+          "type": "HEADING_TEXT",
+          "value": "방법론 본문 내용입니다."
+        },
+        {
+          "signal_id": "hd_0781cdf2",
+          "type": "HEADING_TEXT",
+          "value": "결과"
+        },
+        {
+          "signal_id": "hd_f1269048",
+          "type": "HEADING_TEXT",
+          "value": "결과 본문 내용입니다."
+        },
+        {
+          "signal_id": "hd_0cf95c36",
+          "type": "HEADING_TEXT",
+          "value": "결론"
+        },
+        {
+          "signal_id": "hd_e7637305",
+          "type": "HEADING_TEXT",
+          "value": "결론 본문 내용입니다."
+        },
+        {
+          "signal_id": "hd_6922996b",
+          "type": "HEADING_TEXT",
+          "value": "일정"
+        }
+      ],
+      "human_review_required": true,
+      "auto_selected": false,
+      "metadata": {
+        "temporary_source_id": "REPORT_PILOT_SCHEDULE",
+        "canonical_id_deterministic": true,
+        "filename_only": false
+      }
+    }
+  ],
+  "duplicates": [],
+  "validation": {
+    "ok": true,
+    "per_document": [
+      {
+        "ok": true,
+        "checks": {
+          "no_filename_only_auto_route": true,
+          "canonical_id_deterministic": true,
+          "temporary_and_canonical_id_separated": true,
+          "conflict_requires_review": true,
+          "routed_pack_matches_decision": true,
+          "wrong_route_never_writes": true
+        },
+        "reasons": [],
+        "invariants": [
+          "no_filename_only_auto_route",
+          "canonical_id_deterministic",
+          "temporary_and_canonical_id_separated",
+          "conflict_requires_review",
+          "routed_pack_matches_decision",
+          "wrong_route_never_writes"
+        ]
+      }
+    ]
+  },
+  "recommended_document_set": "general_report",
+  "needs_user_confirmation": false,
+  "routing_mode": "assisted"
+}

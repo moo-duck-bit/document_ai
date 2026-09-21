@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "cases": [
+    {
+      "case_id": "lab_ec_sw",
+      "split": "train",
+      "domain": "ecommerce_b2c",
+      "product_name": "JM COLLECTION",
+      "status": "provisional",
+      "case_dir": "data\\cases\\lab_ec_sw",
+      "gold_mdsr": "mdsr/lab_ec_sw.docx",
+      "gold_mddr": "mddr/lab_ec_sw.docx",
+      "gold_fields": "fields/lab_ec_sw.gold_fields.json",
+      "notes": "Bootstrapped from case outputs; treat provisional until human-approved."
+    },
+    {
+      "case_id": "inventory_mgmt",
+      "split": "train",
+      "domain": "inventory_b2b",
+      "product_name": "Inventory Management System",
+      "status": "provisional",
+      "case_dir": "data\\cases\\inventory_mgmt",
+      "gold_mdsr": "mdsr/inventory_mgmt.docx",
+      "gold_mddr": "mddr/inventory_mgmt.docx",
+      "gold_fields": "fields/inventory_mgmt.gold_fields.json",
+      "notes": "Bootstrapped from case outputs; treat provisional until human-approved."
+    },
+    {
+      "case_id": "hospital_reservation",
+      "split": "holdout",
+      "domain": "hospital_reservation",
+      "product_name": "Hospital Reservation System",
+      "status": "provisional",
+      "case_dir": "data\\cases\\hospital_reservation",
+      "gold_mdsr": "mdsr/hospital_reservation.docx",
+      "gold_mddr": "mddr/hospital_reservation.docx",
+      "gold_fields": "fields/hospital_reservation.gold_fields.json",
+      "notes": "Bootstrapped from case outputs; treat provisional until human-approved."
+    },
+    {
+      "case_id": "jm_collection",
+      "split": "train",
+      "domain": "ecommerce_b2c",
+      "product_name": "JM COLLECTION",
+      "status": "provisional",
+      "case_dir": "data\\cases\\jm_collection",
+      "gold_mdsr": "mdsr/jm_collection.docx",
+      "gold_mddr": "mddr/jm_collection.docx",
+      "gold_fields": "fields/jm_collection.gold_fields.json",
+      "notes": "Bootstrapped from case outputs; treat provisional until human-approved."
+    }
+  ]
+}

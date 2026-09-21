@@ -1,0 +1,42 @@
+{
+  "seed": "document-tnr-small-a-holdout-v1",
+  "holdout_frac": 0.25,
+  "n_total": 27,
+  "n_holdout": 7,
+  "n_dev": 20,
+  "holdout_case_ids": [
+    "case_001",
+    "case_011",
+    "case_017",
+    "case_012",
+    "case_015",
+    "case_016",
+    "case_008"
+  ],
+  "dev_case_ids": [
+    "case_006",
+    "case_026",
+    "case_023",
+    "case_010",
+    "case_003",
+    "case_014",
+    "case_021",
+    "case_005",
+    "case_019",
+    "case_000",
+    "case_002",
+    "case_013",
+    "case_004",
+    "case_007",
+    "case_009",
+    "case_018",
+    "case_025",
+    "case_022",
+    "case_024",
+    "case_020"
+  ],
+  "protocol": {
+    "sealed": true,
+    "note": "Holdout IDs are fixed by seed. Do not tune on holdout metrics. Paper Safety-first tables should report holdout (and optionally full) splits."
+  }
+}

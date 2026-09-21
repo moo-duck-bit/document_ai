@@ -1,0 +1,50 @@
+[
+  {
+    "column_index": 0,
+    "header_text": "Req. 10",
+    "canonical_role": "REQUIREMENT_ID",
+    "confidence": 0.9,
+    "reason_codes": [
+      "header:req",
+      "header_body_agree"
+    ],
+    "used_for_base_identity": true,
+    "used_for_instance_identity": false
+  },
+  {
+    "column_index": 1,
+    "header_text": "5.1.1",
+    "canonical_role": "DESIGN_ID",
+    "confidence": 0.95,
+    "reason_codes": [
+      "no_header_marker",
+      "body_distribution:DESIGN_ID:1.00"
+    ],
+    "used_for_base_identity": true,
+    "used_for_instance_identity": false
+  },
+  {
+    "column_index": 2,
+    "header_text": "TC-10",
+    "canonical_role": "TEST_ID",
+    "confidence": 0.9,
+    "reason_codes": [
+      "header:tc-",
+      "header_body_agree"
+    ],
+    "used_for_base_identity": true,
+    "used_for_instance_identity": false
+  },
+  {
+    "column_index": 3,
+    "header_text": "",
+    "canonical_role": "OPTIONAL_KEY",
+    "confidence": 0.1,
+    "reason_codes": [
+      "empty_header",
+      "low_confidence_review"
+    ],
+    "used_for_base_identity": false,
+    "used_for_instance_identity": true
+  }
+]

@@ -1,2 +1,21 @@
-{"case_id": "golden_001", "template_id": "contract_service", "field_id": "party_a_name", "expected_value": "주식회사 A", "input_facts": {"party_a_name": "주식회사 A", "party_b_name": "주식회사 B", "contract_amount": "50000000"}}
-{"case_id": "golden_001", "template_id": "contract_service", "field_id": "contract_amount", "expected_value": "50,000,000원", "input_facts": {"party_a_name": "주식회사 A", "party_b_name": "주식회사 B", "contract_amount": "50000000"}}
+{"case_id": "hospital_reservation", "field_id": "input.facts.product_name", "expected_value": "Hospital Reservation System", "exact_match": false, "source": "input.json"}
+{"case_id": "hospital_reservation", "field_id": "input.facts.model_name", "expected_value": "HRS-Clinic-001", "exact_match": true, "source": "input.json"}
+{"case_id": "hospital_reservation", "field_id": "input.facts.product_code", "expected_value": "HRS", "exact_match": true, "source": "input.json"}
+{"case_id": "hospital_reservation", "field_id": "input.facts.document_version", "expected_value": "1.0", "exact_match": false, "source": "input.json"}
+{"case_id": "hospital_reservation", "field_id": "input.facts.author_org", "expected_value": "Sample Medical IT Co., Ltd.", "exact_match": false, "source": "input.json"}
+{"case_id": "hospital_reservation", "field_id": "input.facts.code_language", "expected_value": "TypeScript / Node.js, React", "exact_match": false, "source": "input.json"}
+{"case_id": "hospital_reservation", "field_id": "input.facts.platform", "expected_value": "AWS (ECS, RDS PostgreSQL, S3)", "exact_match": false, "source": "input.json"}
+{"case_id": "hospital_reservation", "field_id": "input.facts.approval_date", "expected_value": "2026.07.09", "exact_match": true, "source": "input.json"}
+{"case_id": "hospital_reservation", "field_id": "mdsr.cover_product_line", "expected_value": "Sample Medical IT Co., Ltd.", "exact_match": false, "source": "mdsr_content.json"}
+{"case_id": "hospital_reservation", "field_id": "mdsr.document_title", "expected_value": "Hospital Reservation System", "exact_match": false, "source": "mdsr_content.json"}
+{"case_id": "hospital_reservation", "field_id": "requirements.Req. 1.description", "expected_value": "Hospital Reservation System 병원 예약·접수 시스템은 병원 예약 플랫폼으로, 환자·보호자 환자에게 진료과 탐색, 예약, 수납, 방문/진료 일정 조회, 예약 취소/변경 기능을 제공해야 한다. 본 ", "exact_match": false, "source": "requirements.json"}
+{"case_id": "mindrium_xa", "field_id": "input.facts.product_name", "expected_value": "Mindrium", "exact_match": false, "source": "input.json"}
+{"case_id": "mindrium_xa", "field_id": "input.facts.model_name", "expected_value": "Mindrium", "exact_match": true, "source": "input.json"}
+{"case_id": "mindrium_xa", "field_id": "input.facts.software_name", "expected_value": "Mindrium", "exact_match": false, "source": "input.json"}
+{"case_id": "mindrium_xa", "field_id": "input.facts.product_code", "expected_value": "XA", "exact_match": true, "source": "input.json"}
+{"case_id": "mindrium_xa", "field_id": "input.facts.document_version", "expected_value": "1.0", "exact_match": false, "source": "input.json"}
+{"case_id": "mindrium_xa", "field_id": "input.facts.author_org", "expected_value": "Mindrium", "exact_match": false, "source": "input.json"}
+{"case_id": "mindrium_xa", "field_id": "input.facts.code_language", "expected_value": "Dart/Flutter", "exact_match": false, "source": "input.json"}
+{"case_id": "mindrium_xa", "field_id": "input.facts.platform", "expected_value": "Android Studio, X code", "exact_match": false, "source": "input.json"}
+{"case_id": "mindrium_xa", "field_id": "input.facts.editor", "expected_value": "Microsoft VS Code", "exact_match": false, "source": "input.json"}
+{"case_id": "mindrium_xa", "field_id": "input.facts.approval_date", "expected_value": "2025.02.07", "exact_match": true, "source": "input.json"}

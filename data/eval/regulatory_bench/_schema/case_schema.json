@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "regulatory_bench_case_meta_v0.1",
+  "title": "Regulatory document-set benchmark case meta",
+  "type": "object",
+  "required": [
+    "case_id",
+    "profile",
+    "edit_type",
+    "documents",
+    "change_request",
+    "gold",
+    "fingerprints",
+    "safety_contract"
+  ],
+  "properties": {
+    "case_id": { "type": "string", "pattern": "^case_[0-9]{3}$" },
+    "benchmark": { "type": "string" },
+    "version": { "type": "string" },
+    "profile": {
+      "type": "object",
+      "required": ["profile_id", "domain"],
+      "properties": {
+        "profile_id": { "type": "string" },
+        "product_name": { "type": "string" },
+        "domain": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "edit_type": {
+      "type": "object",
+      "required": ["type_id", "name", "cross_document"],
+      "properties": {
+        "type_id": {
+          "type": "string",
+          "enum": ["T1", "T2", "T3", "T4", "T5", "T6", "T7"]
+        },
+        "name": { "type": "string" },
+        "ledger_analogue": { "type": ["string", "null"] },
+        "cross_document": { "type": "boolean" },
+        "description": { "type": "string" }
+      }
+    },
+    "documents": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["document_id", "role", "path"],
+        "properties": {
+          "document_id": { "type": "string" },
+          "role": {
+            "type": "string",
+            "enum": [
+              "requirements",
+              "design",
+              "risk",
+              "verification",
+              "traceability",
+              "other"
+            ]
+          },
+          "path": { "type": "string" },
+          "template_source": { "type": "string" }
+        }
+      }
+    },
+    "change_request": {
+      "type": "object",
+      "required": ["path"],
+      "properties": {
+        "path": { "type": "string" },
+        "language": { "type": "string" },
+        "n_sentences": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "gold": {
+      "type": "object",
+      "required": ["impact_nodes", "expected_patch", "must_not_touch"],
+      "properties": {
+        "impact_nodes": { "type": "string" },
+        "expected_patch": { "type": "string" },
+        "must_not_touch": { "type": "string" }
+      }
+    },
+    "fingerprints": {
+      "type": "object",
+      "required": ["path", "algorithm"],
+      "properties": {
+        "path": { "type": "string" },
+        "algorithm": { "type": "string", "const": "sha256" }
+      }
+    },
+    "annotation": { "type": "object" },
+    "scoring": { "type": "object" },
+    "safety_contract": {
+      "type": "object",
+      "required": [
+        "mu",
+        "original_must_remain_unchanged",
+        "writes_only_to_copy",
+        "requires_human_approval"
+      ],
+      "properties": {
+        "mu": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "false_patch",
+              "unsafe_write",
+              "original_broken",
+              "unapproved_write"
+            ]
+          }
+        },
+        "writer_expectation": { "type": "string" },
+        "original_must_remain_unchanged": { "type": "boolean" },
+        "writes_only_to_copy": { "type": "boolean" },
+        "requires_human_approval": { "type": "boolean" }
+      }
+    },
+    "n_impact_nodes": { "type": "integer", "minimum": 0 },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "created_by": { "type": "string" },
+    "created_at": { "type": "string" }
+  }
+}

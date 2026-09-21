@@ -1,0 +1,29 @@
+{
+  "check": "api_health_check",
+  "elapsed_ms": 25,
+  "expected": {
+    "content_type": "application/json",
+    "json_keys": [
+      "status",
+      "service.name"
+    ],
+    "maximum_response_time_ms": 500,
+    "status_code": 200
+  },
+  "failures": [],
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "method": "GET",
+  "redirect_chain": [],
+  "response": {
+    "body_stored": false,
+    "bytes_observed": 48,
+    "content_type": "application/json",
+    "sha256": "0d879c1b971ed2098f8c488b33470a94cf54296bdc501c0081cdf126a95d8321",
+    "truncated": false
+  },
+  "status": 200,
+  "uncertain": [],
+  "url": "https://fixture.example.com/health"
+}

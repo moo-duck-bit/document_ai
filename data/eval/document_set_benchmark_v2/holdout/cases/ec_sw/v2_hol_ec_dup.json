@@ -1,0 +1,29 @@
+{
+  "case_id": "v2_hol_ec_dup",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "Req. 11 중복 확인",
+  "split": "holdout",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/mdtm_dup_req.docx",
+      "filename": "mdtm_dup_req.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM_DUP_REQ"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "duplicate",
+    "holdout"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "6b06cc827d76921f109bc2d50719e055dee0aaf4eeb0c6b5403928b0b7d90ee3",
+  "sanitization_status": "N/A"
+}

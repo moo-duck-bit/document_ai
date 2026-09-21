@@ -1,0 +1,1710 @@
+{
+  "summary": {
+    "n_cases": 27,
+    "variants": {
+      "full": {
+        "n": 27,
+        "mu_zero_rate": 1.0,
+        "mean_mu_sum": 0.0,
+        "expected_hit_rate": 1.0,
+        "mean_false_patch": 0.0,
+        "mean_unsafe_write": 0.0,
+        "mean_original_broken": 0.0,
+        "mean_unapproved_write": 0.0
+      },
+      "no_gate": {
+        "n": 27,
+        "mu_zero_rate": 0.0,
+        "mean_mu_sum": 2.0,
+        "expected_hit_rate": 1.0,
+        "mean_false_patch": 0.0,
+        "mean_unsafe_write": 1.0,
+        "mean_original_broken": 0.0,
+        "mean_unapproved_write": 1.0
+      },
+      "no_copy_only": {
+        "n": 27,
+        "mu_zero_rate": 0.0,
+        "mean_mu_sum": 1.0,
+        "expected_hit_rate": 1.0,
+        "mean_false_patch": 0.0,
+        "mean_unsafe_write": 0.0,
+        "mean_original_broken": 1.0,
+        "mean_unapproved_write": 0.0
+      },
+      "no_closure": {
+        "n": 27,
+        "mu_zero_rate": 0.0,
+        "mean_mu_sum": 1.0,
+        "expected_hit_rate": 1.0,
+        "mean_false_patch": 1.0,
+        "mean_unsafe_write": 0.0,
+        "mean_original_broken": 0.0,
+        "mean_unapproved_write": 0.0
+      }
+    },
+    "ablation_mu_map": {
+      "no_gate": [
+        "unapproved_write",
+        "unsafe_write"
+      ],
+      "no_copy_only": [
+        "original_broken"
+      ],
+      "no_closure": [
+        "false_patch"
+      ]
+    },
+    "label": "sandbox_counterfactual",
+    "disclaimer": "Sandbox dry-run / counterfactual only. Do not describe as live execution with safety devices disabled."
+  },
+  "per_case": [
+    {
+      "case_id": "case_000",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_001",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_002",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_003",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_004",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_005",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_006",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_007",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_008",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_009",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_010",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_011",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_012",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_013",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_014",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_015",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_016",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_017",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_018",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_019",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_020",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_021",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_022",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_023",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_024",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_025",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    },
+    {
+      "case_id": "case_026",
+      "disclaimer": "Sandbox dry-run / counterfactual only. Not a live execution with safety devices disabled on the original corpus.",
+      "by_variant": {
+        "full": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 0,
+          "mu_zero": true,
+          "expected_mu_keys": [],
+          "expected_hit": true
+        },
+        "no_gate": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 1,
+            "original_broken": 0,
+            "unapproved_write": 1
+          },
+          "mu_sum": 2,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "unapproved_write",
+            "unsafe_write"
+          ],
+          "expected_hit": true
+        },
+        "no_copy_only": {
+          "mu": {
+            "false_patch": 0,
+            "unsafe_write": 0,
+            "original_broken": 1,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "original_broken"
+          ],
+          "expected_hit": true
+        },
+        "no_closure": {
+          "mu": {
+            "false_patch": 1,
+            "unsafe_write": 0,
+            "original_broken": 0,
+            "unapproved_write": 0
+          },
+          "mu_sum": 1,
+          "mu_zero": false,
+          "expected_mu_keys": [
+            "false_patch"
+          ],
+          "expected_hit": true
+        }
+      }
+    }
+  ]
+}

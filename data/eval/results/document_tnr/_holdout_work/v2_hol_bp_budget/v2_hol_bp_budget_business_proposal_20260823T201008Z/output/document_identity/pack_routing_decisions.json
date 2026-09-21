@@ -1,0 +1,28 @@
+[
+  {
+    "routing_id": "route_e463c797bf",
+    "source_document_id": "PROPOSAL_BASE",
+    "selected_pack_id": "generic_document_v1",
+    "candidate_pack_ids": [
+      "generic_document_v1"
+    ],
+    "routing_status": "ROUTED",
+    "score": 51.65,
+    "score_margin": 51.65,
+    "reason_codes": [
+      "filename_hint:PROPOSAL",
+      "filename_role_hint",
+      "heading_or_title",
+      "proposal_heading_concepts",
+      "insufficient_margin_or_tier",
+      "explicit_user_pack"
+    ],
+    "human_review_required": false,
+    "actual_pack_invoked": "generic_document_v1",
+    "metadata": {
+      "routing_mode": "explicit",
+      "identity_status": "REVIEW_REQUIRED",
+      "document_set_hint": "business_proposal"
+    }
+  }
+]

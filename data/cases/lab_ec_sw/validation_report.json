@@ -1,0 +1,1133 @@
+{
+  "case": "data\\cases\\lab_ec_sw",
+  "case_id": "lab_ec_sw",
+  "domain": "ecommerce_b2c",
+  "product_name": "JM COLLECTION",
+  "status": "PASS",
+  "scores": {
+    "overall": 90.5,
+    "docx_overall": 89.7,
+    "mdsr": 100.0,
+    "mddr": 92.0,
+    "xxcs": 77.1,
+    "semantic": 95.0
+  },
+  "metrics": {
+    "section_coverage": 1.0,
+    "paragraph_similarity": 1.0,
+    "requirement_count_match": 1.0,
+    "requirement_text_similarity": 1.0,
+    "requirement_completeness": 1.0,
+    "traceability_coverage": 1.0,
+    "traceability_row_match": 1.0,
+    "residual_placeholder_count": 1.0,
+    "domain_mismatch_count": 0.0,
+    "gold_requirement_count": 37,
+    "generated_requirement_count": 37,
+    "missing_in_generated": [],
+    "extra_in_generated": [],
+    "per_requirement": [
+      {
+        "req_id": "Req. 1",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 247,
+        "gold_len": 247
+      },
+      {
+        "req_id": "Req. 2",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 201,
+        "gold_len": 201
+      },
+      {
+        "req_id": "Req. 3",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 189,
+        "gold_len": 189
+      },
+      {
+        "req_id": "Req. 4",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 172,
+        "gold_len": 172
+      },
+      {
+        "req_id": "Req. 5",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 166,
+        "gold_len": 166
+      },
+      {
+        "req_id": "Req. 6",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 292,
+        "gold_len": 292
+      },
+      {
+        "req_id": "Req. 7",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 161,
+        "gold_len": 161
+      },
+      {
+        "req_id": "Req. 8",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 148,
+        "gold_len": 148
+      },
+      {
+        "req_id": "Req. 9",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 151,
+        "gold_len": 151
+      },
+      {
+        "req_id": "Req. 10",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 184,
+        "gold_len": 184
+      },
+      {
+        "req_id": "Req. 11",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 162,
+        "gold_len": 162
+      },
+      {
+        "req_id": "Req. 12",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 156,
+        "gold_len": 156
+      },
+      {
+        "req_id": "Req. 13",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 118,
+        "gold_len": 118
+      },
+      {
+        "req_id": "Req. 14",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 155,
+        "gold_len": 155
+      },
+      {
+        "req_id": "Req. 15",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 150,
+        "gold_len": 150
+      },
+      {
+        "req_id": "Req. 16",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 148,
+        "gold_len": 148
+      },
+      {
+        "req_id": "Req. 17",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 151,
+        "gold_len": 151
+      },
+      {
+        "req_id": "Req. 18",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 135,
+        "gold_len": 135
+      },
+      {
+        "req_id": "Req. 100",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 165,
+        "gold_len": 165
+      },
+      {
+        "req_id": "Req. 101",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 161,
+        "gold_len": 161
+      },
+      {
+        "req_id": "Req. 102",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 198,
+        "gold_len": 198
+      },
+      {
+        "req_id": "Req. 103",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 165,
+        "gold_len": 165
+      },
+      {
+        "req_id": "Req. 104",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 161,
+        "gold_len": 161
+      },
+      {
+        "req_id": "Req. 105",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 184,
+        "gold_len": 184
+      },
+      {
+        "req_id": "Req. 106",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 179,
+        "gold_len": 179
+      },
+      {
+        "req_id": "Req. 107",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 146,
+        "gold_len": 146
+      },
+      {
+        "req_id": "Req. 108",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 177,
+        "gold_len": 177
+      },
+      {
+        "req_id": "Req. 109",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 156,
+        "gold_len": 156
+      },
+      {
+        "req_id": "Req. 110",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 133,
+        "gold_len": 133
+      },
+      {
+        "req_id": "Req. 200",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 143,
+        "gold_len": 143
+      },
+      {
+        "req_id": "Req. 201",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 141,
+        "gold_len": 141
+      },
+      {
+        "req_id": "Req. 202",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 150,
+        "gold_len": 150
+      },
+      {
+        "req_id": "Req. 203",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 144,
+        "gold_len": 144
+      },
+      {
+        "req_id": "Req. 204",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 134,
+        "gold_len": 134
+      },
+      {
+        "req_id": "Req. 205",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 131,
+        "gold_len": 131
+      },
+      {
+        "req_id": "Req. 206",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 131,
+        "gold_len": 131
+      },
+      {
+        "req_id": "Req. 207",
+        "text_similarity": 1.0,
+        "completeness": 1.0,
+        "generated_len": 166,
+        "gold_len": 166
+      }
+    ],
+    "gold_traceability_coverage": 1.0,
+    "gold_traceability_count": 34,
+    "generated_traceability_count": 34,
+    "linked_req_mismatches": [],
+    "design_block_coverage": 1.0,
+    "design_block_content_fill_rate": 1.0,
+    "design_block_count_match": 1.0,
+    "design_block_text_similarity": 1.0,
+    "gold_design_block_count": 38,
+    "generated_design_block_count": 38,
+    "matched_design_block_count": 38,
+    "security_coverage": 1.0,
+    "security_id_count_match": 1.0,
+    "test_text_similarity": 0.416,
+    "test_item_completeness": 0.647,
+    "plan_test_completeness": 0.471,
+    "execution_test_completeness": 0.824,
+    "test_method_completeness": 0.471,
+    "procedure_completeness": 0.471,
+    "expected_result_completeness": 0.471,
+    "actual_result_completeness": 1.0,
+    "satisfaction_completeness": 0.471,
+    "evidence_completeness": 1.0,
+    "linked_requirement_coverage": 1.0,
+    "linked_design_coverage": 0.382,
+    "gold_security_id_count": 34,
+    "generated_security_id_count": 34,
+    "gold_test_count": 34,
+    "generated_test_count": 34,
+    "execution_coverage": 0.235,
+    "evidence_coverage": 0.235,
+    "executed_result_completeness": 0.235,
+    "pass_with_evidence_ratio": 1.0,
+    "fail_with_evidence_ratio": 1.0,
+    "unresolved_review_required_count": 3,
+    "stale_execution_count": 2,
+    "execution_readiness": 0.235,
+    "plan_test_count": 34,
+    "executed_test_count": 8,
+    "real_execution_coverage": 0.0,
+    "synthetic_execution_count": 8,
+    "real_execution_count": 0,
+    "reviewer_verified_execution_coverage": 0.0,
+    "selected_result_coverage": 0.0,
+    "verified_evidence_coverage": 0.0,
+    "unresolved_review_count": 0,
+    "synthetic_result_count": 13,
+    "fixture_verified_count": 13,
+    "final_report_readiness": true,
+    "final_report_readiness_score": 1.0,
+    "final_report_blockers": [],
+    "plan_score": 77.1,
+    "execution_import_score": 0.0,
+    "semantic_requirement_id_coverage": 1.0,
+    "semantic_design_id_coverage": 1.0,
+    "semantic_requirement_text_similarity": 1.0,
+    "semantic_design_text_similarity": 1.0,
+    "semantic_section_coverage": 0.0,
+    "semantic_traceability_coverage": 1.0,
+    "semantic_product_name_match": 1.0,
+    "semantic_overall": 95.0
+  },
+  "mdsr": {
+    "label": "mdsr",
+    "generated": "data\\cases\\lab_ec_sw\\output_mdsr.docx",
+    "gold": "data\\gold\\mdsr\\lab_ec_sw.docx",
+    "score": 100.0,
+    "metrics": {
+      "section_coverage": 1.0,
+      "paragraph_similarity": 1.0,
+      "requirement_count_match": 1.0,
+      "requirement_text_similarity": 1.0,
+      "requirement_completeness": 1.0,
+      "traceability_coverage": 1.0,
+      "traceability_row_match": 1.0,
+      "residual_placeholder_count": 0,
+      "domain_mismatch_count": 0,
+      "gold_requirement_count": 37,
+      "generated_requirement_count": 37,
+      "missing_in_generated": [],
+      "extra_in_generated": [],
+      "per_requirement": [
+        {
+          "req_id": "Req. 1",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 247,
+          "gold_len": 247
+        },
+        {
+          "req_id": "Req. 2",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 201,
+          "gold_len": 201
+        },
+        {
+          "req_id": "Req. 3",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 189,
+          "gold_len": 189
+        },
+        {
+          "req_id": "Req. 4",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 172,
+          "gold_len": 172
+        },
+        {
+          "req_id": "Req. 5",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 166,
+          "gold_len": 166
+        },
+        {
+          "req_id": "Req. 6",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 292,
+          "gold_len": 292
+        },
+        {
+          "req_id": "Req. 7",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 161,
+          "gold_len": 161
+        },
+        {
+          "req_id": "Req. 8",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 148,
+          "gold_len": 148
+        },
+        {
+          "req_id": "Req. 9",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 151,
+          "gold_len": 151
+        },
+        {
+          "req_id": "Req. 10",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 184,
+          "gold_len": 184
+        },
+        {
+          "req_id": "Req. 11",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 162,
+          "gold_len": 162
+        },
+        {
+          "req_id": "Req. 12",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 156,
+          "gold_len": 156
+        },
+        {
+          "req_id": "Req. 13",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 118,
+          "gold_len": 118
+        },
+        {
+          "req_id": "Req. 14",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 155,
+          "gold_len": 155
+        },
+        {
+          "req_id": "Req. 15",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 150,
+          "gold_len": 150
+        },
+        {
+          "req_id": "Req. 16",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 148,
+          "gold_len": 148
+        },
+        {
+          "req_id": "Req. 17",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 151,
+          "gold_len": 151
+        },
+        {
+          "req_id": "Req. 18",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 135,
+          "gold_len": 135
+        },
+        {
+          "req_id": "Req. 100",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 165,
+          "gold_len": 165
+        },
+        {
+          "req_id": "Req. 101",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 161,
+          "gold_len": 161
+        },
+        {
+          "req_id": "Req. 102",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 198,
+          "gold_len": 198
+        },
+        {
+          "req_id": "Req. 103",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 165,
+          "gold_len": 165
+        },
+        {
+          "req_id": "Req. 104",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 161,
+          "gold_len": 161
+        },
+        {
+          "req_id": "Req. 105",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 184,
+          "gold_len": 184
+        },
+        {
+          "req_id": "Req. 106",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 179,
+          "gold_len": 179
+        },
+        {
+          "req_id": "Req. 107",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 146,
+          "gold_len": 146
+        },
+        {
+          "req_id": "Req. 108",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 177,
+          "gold_len": 177
+        },
+        {
+          "req_id": "Req. 109",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 156,
+          "gold_len": 156
+        },
+        {
+          "req_id": "Req. 110",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 133,
+          "gold_len": 133
+        },
+        {
+          "req_id": "Req. 200",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 143,
+          "gold_len": 143
+        },
+        {
+          "req_id": "Req. 201",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 141,
+          "gold_len": 141
+        },
+        {
+          "req_id": "Req. 202",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 150,
+          "gold_len": 150
+        },
+        {
+          "req_id": "Req. 203",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 144,
+          "gold_len": 144
+        },
+        {
+          "req_id": "Req. 204",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 134,
+          "gold_len": 134
+        },
+        {
+          "req_id": "Req. 205",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 131,
+          "gold_len": 131
+        },
+        {
+          "req_id": "Req. 206",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 131,
+          "gold_len": 131
+        },
+        {
+          "req_id": "Req. 207",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 166,
+          "gold_len": 166
+        }
+      ],
+      "gold_traceability_coverage": 1.0,
+      "gold_traceability_count": 34,
+      "generated_traceability_count": 34,
+      "linked_req_mismatches": []
+    },
+    "sections": {
+      "section_coverage": 1.0,
+      "gold_section_count": 0,
+      "generated_section_count": 0,
+      "matched_section_count": 0,
+      "missing_in_generated": [],
+      "extra_in_generated": [],
+      "gold_sections": [],
+      "generated_sections": []
+    },
+    "requirements": {
+      "requirement_count_match": 1.0,
+      "gold_requirement_count": 37,
+      "generated_requirement_count": 37,
+      "requirement_text_similarity": 1.0,
+      "requirement_completeness": 1.0,
+      "missing_in_generated": [],
+      "extra_in_generated": [],
+      "per_requirement": [
+        {
+          "req_id": "Req. 1",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 247,
+          "gold_len": 247
+        },
+        {
+          "req_id": "Req. 2",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 201,
+          "gold_len": 201
+        },
+        {
+          "req_id": "Req. 3",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 189,
+          "gold_len": 189
+        },
+        {
+          "req_id": "Req. 4",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 172,
+          "gold_len": 172
+        },
+        {
+          "req_id": "Req. 5",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 166,
+          "gold_len": 166
+        },
+        {
+          "req_id": "Req. 6",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 292,
+          "gold_len": 292
+        },
+        {
+          "req_id": "Req. 7",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 161,
+          "gold_len": 161
+        },
+        {
+          "req_id": "Req. 8",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 148,
+          "gold_len": 148
+        },
+        {
+          "req_id": "Req. 9",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 151,
+          "gold_len": 151
+        },
+        {
+          "req_id": "Req. 10",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 184,
+          "gold_len": 184
+        },
+        {
+          "req_id": "Req. 11",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 162,
+          "gold_len": 162
+        },
+        {
+          "req_id": "Req. 12",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 156,
+          "gold_len": 156
+        },
+        {
+          "req_id": "Req. 13",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 118,
+          "gold_len": 118
+        },
+        {
+          "req_id": "Req. 14",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 155,
+          "gold_len": 155
+        },
+        {
+          "req_id": "Req. 15",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 150,
+          "gold_len": 150
+        },
+        {
+          "req_id": "Req. 16",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 148,
+          "gold_len": 148
+        },
+        {
+          "req_id": "Req. 17",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 151,
+          "gold_len": 151
+        },
+        {
+          "req_id": "Req. 18",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 135,
+          "gold_len": 135
+        },
+        {
+          "req_id": "Req. 100",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 165,
+          "gold_len": 165
+        },
+        {
+          "req_id": "Req. 101",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 161,
+          "gold_len": 161
+        },
+        {
+          "req_id": "Req. 102",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 198,
+          "gold_len": 198
+        },
+        {
+          "req_id": "Req. 103",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 165,
+          "gold_len": 165
+        },
+        {
+          "req_id": "Req. 104",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 161,
+          "gold_len": 161
+        },
+        {
+          "req_id": "Req. 105",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 184,
+          "gold_len": 184
+        },
+        {
+          "req_id": "Req. 106",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 179,
+          "gold_len": 179
+        },
+        {
+          "req_id": "Req. 107",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 146,
+          "gold_len": 146
+        },
+        {
+          "req_id": "Req. 108",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 177,
+          "gold_len": 177
+        },
+        {
+          "req_id": "Req. 109",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 156,
+          "gold_len": 156
+        },
+        {
+          "req_id": "Req. 110",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 133,
+          "gold_len": 133
+        },
+        {
+          "req_id": "Req. 200",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 143,
+          "gold_len": 143
+        },
+        {
+          "req_id": "Req. 201",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 141,
+          "gold_len": 141
+        },
+        {
+          "req_id": "Req. 202",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 150,
+          "gold_len": 150
+        },
+        {
+          "req_id": "Req. 203",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 144,
+          "gold_len": 144
+        },
+        {
+          "req_id": "Req. 204",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 134,
+          "gold_len": 134
+        },
+        {
+          "req_id": "Req. 205",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 131,
+          "gold_len": 131
+        },
+        {
+          "req_id": "Req. 206",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 131,
+          "gold_len": 131
+        },
+        {
+          "req_id": "Req. 207",
+          "text_similarity": 1.0,
+          "completeness": 1.0,
+          "generated_len": 166,
+          "gold_len": 166
+        }
+      ],
+      "high_risk": []
+    },
+    "traceability": {
+      "traceability_coverage": 1.0,
+      "gold_traceability_coverage": 1.0,
+      "traceability_row_match": 1.0,
+      "gold_traceability_count": 34,
+      "generated_traceability_count": 34,
+      "missing_in_generated": [],
+      "extra_in_generated": [],
+      "linked_req_mismatches": [],
+      "high_risk": []
+    },
+    "summary": {
+      "generated": "data\\cases\\lab_ec_sw\\output_mdsr.docx",
+      "gold": "data\\gold\\mdsr\\lab_ec_sw.docx",
+      "field_similarity": 1.0,
+      "paragraph_similarity": 1.0,
+      "requirement_counts": {
+        "generated": {
+          "filled": 37,
+          "total": 37
+        },
+        "gold": {
+          "filled": 37,
+          "total": 37
+        }
+      },
+      "requirement_count_match": 1.0,
+      "requirement_coverage": 1.0,
+      "traceability_counts": {
+        "generated": {
+          "filled": 34,
+          "total": 34
+        },
+        "gold": {
+          "filled": 34,
+          "total": 34
+        }
+      },
+      "traceability_coverage": 1.0,
+      "residual_placeholder_count": 0,
+      "domain_mismatch_count": 0
+    }
+  },
+  "mddr": {
+    "label": "mddr",
+    "generated": "data\\cases\\lab_ec_sw\\output_mddr.docx",
+    "gold": "data\\gold\\mddr\\lab_ec_sw.docx",
+    "score": 92.0,
+    "metrics": {
+      "section_coverage": 1.0,
+      "paragraph_similarity": 1.0,
+      "design_block_coverage": 1.0,
+      "requirement_count_match": 1.0,
+      "requirement_text_similarity": 1.0,
+      "residual_placeholder_count": 2,
+      "domain_mismatch_count": 0,
+      "design_block_content_fill_rate": 1.0,
+      "design_block_count_match": 1.0,
+      "design_block_text_similarity": 1.0,
+      "gold_design_block_count": 38,
+      "generated_design_block_count": 38,
+      "matched_design_block_count": 38,
+      "missing_in_generated": [],
+      "extra_in_generated": []
+    },
+    "sections": {
+      "section_coverage": 1.0,
+      "gold_section_count": 0,
+      "generated_section_count": 0,
+      "matched_section_count": 0,
+      "missing_in_generated": [],
+      "extra_in_generated": [],
+      "gold_sections": [],
+      "generated_sections": []
+    },
+    "design_blocks": {
+      "design_block_coverage": 1.0,
+      "design_block_content_fill_rate": 1.0,
+      "design_block_count_match": 1.0,
+      "design_block_text_similarity": 1.0,
+      "gold_design_block_count": 38,
+      "generated_design_block_count": 38,
+      "matched_design_block_count": 38,
+      "missing_in_generated": [],
+      "extra_in_generated": [],
+      "high_risk": []
+    },
+    "summary": {
+      "generated": "data\\cases\\lab_ec_sw\\output_mddr.docx",
+      "gold": "data\\gold\\mddr\\lab_ec_sw.docx",
+      "field_similarity": 1.0,
+      "paragraph_similarity": 1.0,
+      "requirement_counts": {
+        "generated": {
+          "filled": 0,
+          "total": 0
+        },
+        "gold": {
+          "filled": 0,
+          "total": 0
+        }
+      },
+      "requirement_count_match": 1.0,
+      "requirement_coverage": 1.0,
+      "traceability_counts": {
+        "generated": {
+          "filled": 0,
+          "total": 0
+        },
+        "gold": {
+          "filled": 0,
+          "total": 0
+        }
+      },
+      "traceability_coverage": 1.0,
+      "residual_placeholder_count": 2,
+      "domain_mismatch_count": 0
+    }
+  },
+  "xxcs": {
+    "label": "xxcs",
+    "generated": "data\\cases\\lab_ec_sw\\output_xxcs.docx",
+    "gold": "data\\gold\\xxcs\\lab_ec_sw.docx",
+    "score": 77.1,
+    "plan_score": 77.1,
+    "metrics": {
+      "security_coverage": 1.0,
+      "security_id_count_match": 1.0,
+      "test_text_similarity": 0.416,
+      "test_item_completeness": 0.647,
+      "plan_test_completeness": 0.471,
+      "execution_test_completeness": 0.824,
+      "test_method_completeness": 0.471,
+      "procedure_completeness": 0.471,
+      "expected_result_completeness": 0.471,
+      "actual_result_completeness": 1.0,
+      "satisfaction_completeness": 0.471,
+      "evidence_completeness": 1.0,
+      "linked_requirement_coverage": 1.0,
+      "linked_design_coverage": 0.382,
+      "gold_security_id_count": 34,
+      "generated_security_id_count": 34,
+      "missing_in_generated": [],
+      "extra_in_generated": [],
+      "gold_test_count": 34,
+      "generated_test_count": 34,
+      "execution_coverage": 0.235,
+      "evidence_coverage": 0.235,
+      "executed_result_completeness": 0.235,
+      "pass_with_evidence_ratio": 1.0,
+      "fail_with_evidence_ratio": 1.0,
+      "unresolved_review_required_count": 3,
+      "stale_execution_count": 2,
+      "execution_readiness": 0.235,
+      "plan_test_count": 34,
+      "executed_test_count": 8,
+      "real_execution_coverage": 0.0,
+      "synthetic_execution_count": 8,
+      "real_execution_count": 0,
+      "reviewer_verified_execution_coverage": 0.0,
+      "selected_result_coverage": 0.0,
+      "verified_evidence_coverage": 0.0,
+      "unresolved_review_count": 0,
+      "synthetic_result_count": 13,
+      "fixture_verified_count": 13,
+      "final_report_readiness": true,
+      "final_report_readiness_score": 1.0,
+      "final_report_blockers": [],
+      "plan_score": 77.1,
+      "execution_import_score": 0.0
+    },
+    "execution_state": {
+      "has_execution_overlay": true,
+      "accepted_execution_id": "exec-20260718-runner-synthetic-001",
+      "execution_count": 2,
+      "import_warning_count": 0,
+      "final_report_readiness": true,
+      "gold_type": "plan"
+    }
+  },
+  "semantic": {
+    "semantic_requirement_id_coverage": 1.0,
+    "semantic_design_id_coverage": 1.0,
+    "semantic_requirement_text_similarity": 1.0,
+    "semantic_design_text_similarity": 1.0,
+    "semantic_section_coverage": 0.0,
+    "semantic_traceability_coverage": 1.0,
+    "semantic_product_name_match": 1.0,
+    "gold_requirement_count": 37,
+    "generated_requirement_count": 37,
+    "gold_design_count": 38,
+    "generated_design_count": 38,
+    "missing_requirement_ids": [],
+    "missing_design_ids": [],
+    "semantic_overall": 95.0
+  },
+  "high_risk_differences": [],
+  "generated_paths": {
+    "mdsr": "data\\cases\\lab_ec_sw\\output_mdsr.docx",
+    "mddr": "data\\cases\\lab_ec_sw\\output_mddr.docx",
+    "xxcs": "data\\cases\\lab_ec_sw\\output_xxcs.docx"
+  },
+  "gold_paths": {
+    "mdsr": "data\\gold\\mdsr\\lab_ec_sw.docx",
+    "mddr": "data\\gold\\mddr\\lab_ec_sw.docx",
+    "xxcs": "data\\gold\\xxcs\\lab_ec_sw.docx",
+    "fields": "data\\gold\\fields\\lab_ec_sw.gold_fields.json"
+  },
+  "human_review_checklist": [
+    "Replace remaining XX-XX-XXXX or placeholder tokens in generated documents.",
+    "Verify imported security test statuses match actual evidence (PASS/FAIL/REVIEW_REQUIRED).",
+    "Confirm PASS/FAIL judgments have sufficient justification and reviewer can approve imported results.",
+    "Resolve 3 REVIEW_REQUIRED execution result(s).",
+    "Confirm sensitive data or large logs were not copied verbatim into the XXCS DOCX."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "case_id": "v2_dev_bp_kpi",
+  "domain": "business_proposal",
+  "document_set_id": "business_proposal",
+  "change_request": "KPI 표를 수정",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/business_proposal/proposal_kpi.docx",
+      "filename": "proposal_kpi.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "PROPOSAL_KPI"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "kpi",
+    "table"
+  ],
+  "difficulty": "medium",
+  "notes": "cycle6_business_proposal_node_gold",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "52205018a1097905308ab86e5d9ec58dcb6bb9608abb18ff5bfd40a68d92218c",
+  "sanitization_status": "N/A"
+}

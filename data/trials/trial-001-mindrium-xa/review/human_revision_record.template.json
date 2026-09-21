@@ -1,0 +1,72 @@
+{
+  "trial_id": "trial-001-mindrium-xa",
+  "canonical_dir": "data/trials/trial-001-mindrium-xa/generated_patch_preserving",
+  "xxcs_in_scope": false,
+  "reviews": [
+    {
+      "reviewer": "",
+      "review_started_at": "",
+      "review_finished_at": "",
+      "document_type": "MDSR",
+      "reference_path": "data/trials/trial-001-mindrium-xa/reference/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+      "generated_path": "data/trials/trial-001-mindrium-xa/generated_patch_preserving/output_mdsr.docx",
+      "expected_changes": [
+        {
+          "req_id": "Req. 6",
+          "location": "table_index=12/row=1/col=1",
+          "description": "description value cell filled with CR text; label cell remains blank"
+        }
+      ],
+      "accepted_changes": [],
+      "unexpected_changes": [],
+      "missing_changes": [],
+      "formatting_issues": [],
+      "traceability_issues": [],
+      "manual_edits": [],
+      "manual_edit_minutes": null,
+      "reviewer_decision": "",
+      "reviewer_comments": "",
+      "rating": {
+        "content_accuracy": null,
+        "completeness": null,
+        "format_compliance": null,
+        "traceability": null,
+        "language_quality": null,
+        "practical_usability": null
+      }
+    },
+    {
+      "reviewer": "",
+      "review_started_at": "",
+      "review_finished_at": "",
+      "document_type": "MDDR",
+      "reference_path": "data/trials/trial-001-mindrium-xa/reference/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+      "generated_path": "data/trials/trial-001-mindrium-xa/generated_patch_preserving/output_mddr.docx",
+      "expected_changes": [],
+      "accepted_changes": [],
+      "unexpected_changes": [],
+      "missing_changes": [],
+      "formatting_issues": [],
+      "traceability_issues": [],
+      "manual_edits": [],
+      "manual_edit_minutes": null,
+      "reviewer_decision": "",
+      "reviewer_comments": "Expect identical to reference (no design patch). Do not treat as successful design propagation.",
+      "rating": {
+        "content_accuracy": null,
+        "completeness": null,
+        "format_compliance": null,
+        "traceability": null,
+        "language_quality": null,
+        "practical_usability": null
+      }
+    }
+  ],
+  "reviewer_decision_allowed_values": [
+    "accept",
+    "accept_with_minor_revision",
+    "reject"
+  ],
+  "manual_baseline_minutes": null,
+  "human_revision_minutes": null
+}

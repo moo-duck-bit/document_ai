@@ -1,0 +1,14 @@
+{
+  "sealed_at": "2026-08-01T18:53:56.817520+00:00",
+  "sealed_labels_dir": "data/eval/document_set_benchmark_v2/holdout/sealed_labels",
+  "holdout_dir": "data/eval/document_set_benchmark_v2/holdout",
+  "label_file_hashes": {
+    "document_impacts.jsonl": "413c61d34d7df9e3053109c1aecdc51aade0066c3abc7bc7f05b49eb644d285d",
+    "node_evaluation_eligibility.jsonl": "1796a33092a0c94a844aaa7d09eb197d1ba98a8887f56a4b1b00086456db96b4",
+    "node_impacts.jsonl": "db17d99f492984f6303353edfc47955a7687ecc01c8cb59d9dcbb212e71c4cc6",
+    "patch_expectations.jsonl": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "writer_expectations.jsonl": "972129de41a7f1294d617df2b13e68184901df6231295d207a3ae37407e770a2"
+  },
+  "aggregate_hash": "d5480aa55e3f75f69dde04330de0256baa9d8a0ab70ac25a6988511040660c94",
+  "status": "SEALED"
+}

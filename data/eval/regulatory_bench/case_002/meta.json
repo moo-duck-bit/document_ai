@@ -1,0 +1,100 @@
+{
+  "$schema": "./_schema/case_schema.json",
+  "case_id": "case_002",
+  "benchmark": "regulatory_document_set_v0",
+  "version": "0.1.0",
+  "profile": {
+    "profile_id": "P3_adhd_dtx",
+    "product_name": "FocusPath ADHD Aid (synthetic)",
+    "domain": "digital_therapeutic_sw",
+    "notes": "Synthetic profile for benchmark only. Not a real cleared product."
+  },
+  "edit_type": {
+    "type_id": "T2",
+    "name": "value_change_with_propagation",
+    "ledger_analogue": "Cross-Reference Dependent Edits",
+    "cross_document": true,
+    "description": "Change one MDSR parameter; propagate to linked MDDR design items via traceability."
+  },
+  "documents": [
+    {
+      "document_id": "MDSR_v1",
+      "role": "requirements",
+      "path": "input/MDSR_v1.docx",
+      "template_source": "mfds_sw_requirements_form"
+    },
+    {
+      "document_id": "MDDR_v1",
+      "role": "design",
+      "path": "input/MDDR_v1.docx",
+      "template_source": "mfds_sw_design_form"
+    }
+  ],
+  "change_request": {
+    "path": "input/change_request.txt",
+    "language": "ko",
+    "n_sentences": 2
+  },
+  "gold": {
+    "impact_nodes": "gold/impact_nodes.json",
+    "expected_patch": "gold/expected_patch.json",
+    "must_not_touch": "gold/must_not_touch.json"
+  },
+  "fingerprints": {
+    "path": "fp/originals.sha256",
+    "algorithm": "sha256"
+  },
+  "annotation": {
+    "annotators": [
+      "A",
+      "B"
+    ],
+    "status": "draft_materialized",
+    "cohen_kappa_impact_nodes": null,
+    "agreement_notes": "Fill after independent labeling. If κ < 0.7, adjudicate and revise CR wording if needed.",
+    "labeled_at": null
+  },
+  "scoring": {
+    "primary": [
+      "mu_zero_rate",
+      "original_fingerprint_unchanged"
+    ],
+    "impact": [
+      "doc_f1",
+      "node_recall_at_3"
+    ],
+    "consistency": [
+      "trace_ref_validity",
+      "terminology",
+      "structure"
+    ],
+    "correctness": [
+      "cell_f1"
+    ],
+    "secondary": [
+      "field_f1",
+      "quality_rules"
+    ]
+  },
+  "safety_contract": {
+    "mu": [
+      "false_patch",
+      "unsafe_write",
+      "original_broken",
+      "unapproved_write"
+    ],
+    "writer_expectation": "GATED",
+    "original_must_remain_unchanged": true,
+    "writes_only_to_copy": true,
+    "requires_human_approval": true
+  },
+  "n_impact_nodes": 3,
+  "tags": [
+    "T2",
+    "mdsr_mddr",
+    "synthetic",
+    "materialized"
+  ],
+  "created_by": "team",
+  "created_at": "2026-09-09"
+}

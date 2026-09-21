@@ -1,0 +1,38 @@
+{
+  "mu_keys": [
+    "false_patch",
+    "unsafe_write",
+    "original_broken",
+    "unapproved_write"
+  ],
+  "pilot_to_mu": {
+    "false_patch": [
+      "false_patch_count",
+      "wrong_node_write_count",
+      "wrong_document_count"
+    ],
+    "unsafe_write": [
+      "unsafe_auto_patch_count",
+      "auto_approve_count",
+      "path_escape_count",
+      "path_security_violation_count",
+      "path_traversal_attempt_count",
+      "external_path_access_count"
+    ],
+    "original_broken": [
+      "source_original_changed_count",
+      "original_changed_count",
+      "examples_original_changed_count",
+      "freeze_changed_count"
+    ],
+    "unapproved_write": [
+      "writer_without_approval_count",
+      "write_without_approval_count",
+      "unauthorized_writer_attempt_count",
+      "unauthorized_writer_count",
+      "unauthorized_write_count"
+    ]
+  },
+  "statement": "RQ1 (plain): after a document-set write, μ=(false_patch, unsafe_write, original_broken, unapproved_write) stays zero and every source original still matches baseline fingerprint b.",
+  "mapper": "map_safety_scorecard_to_mu"
+}

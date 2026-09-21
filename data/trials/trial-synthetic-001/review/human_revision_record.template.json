@@ -1,0 +1,78 @@
+{
+  "trial_id": "trial-synthetic-001",
+  "reviewer": {
+    "name": "",
+    "role": ""
+  },
+  "review_started_at": "",
+  "review_completed_at": "",
+  "manual_baseline_minutes": null,
+  "manual_baseline_source": "unknown",
+  "harness_generation_minutes": null,
+  "human_revision_minutes": null,
+  "document_reviews": [
+    {
+      "document_type": "MDSR",
+      "usable_without_change": false,
+      "internal_review_ready": false,
+      "external_delivery_ready": false,
+      "major_issue_count": 0,
+      "minor_issue_count": 0,
+      "unchanged_section_count": 0,
+      "modified_section_count": 0,
+      "deleted_section_count": 0,
+      "added_section_count": 0,
+      "rating": {
+        "content_accuracy": 0,
+        "completeness": 0,
+        "format_compliance": 0,
+        "traceability": 0,
+        "language_quality": 0,
+        "practical_usability": 0
+      },
+      "notes": ""
+    },
+    {
+      "document_type": "MDDR",
+      "usable_without_change": false,
+      "internal_review_ready": false,
+      "external_delivery_ready": false,
+      "major_issue_count": 0,
+      "minor_issue_count": 0,
+      "unchanged_section_count": 0,
+      "modified_section_count": 0,
+      "deleted_section_count": 0,
+      "added_section_count": 0,
+      "rating": {
+        "content_accuracy": 0,
+        "completeness": 0,
+        "format_compliance": 0,
+        "traceability": 0,
+        "language_quality": 0,
+        "practical_usability": 0
+      },
+      "notes": ""
+    },
+    {
+      "document_type": "XXCS",
+      "usable_without_change": false,
+      "internal_review_ready": false,
+      "external_delivery_ready": false,
+      "major_issue_count": 0,
+      "minor_issue_count": 0,
+      "unchanged_section_count": 0,
+      "modified_section_count": 0,
+      "deleted_section_count": 0,
+      "added_section_count": 0,
+      "rating": {
+        "content_accuracy": 0,
+        "completeness": 0,
+        "format_compliance": 0,
+        "traceability": 0,
+        "language_quality": 0,
+        "practical_usability": 0
+      },
+      "notes": ""
+    }
+  ]
+}

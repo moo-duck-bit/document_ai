@@ -1,0 +1,29 @@
+{
+  "case_id": "v2_dev_bp_en",
+  "domain": "business_proposal",
+  "document_set_id": "business_proposal",
+  "change_request": "Budget table update",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/business_proposal/proposal_en.docx",
+      "filename": "proposal_en.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "PROPOSAL_EN"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "en",
+    "budget"
+  ],
+  "difficulty": "medium",
+  "notes": "",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "4a0e819037d49b404fa0a231dd871b8c5bff6c5ccb8fe566ebd0ad3bfeb870f2",
+  "sanitization_status": "N/A"
+}

@@ -1,0 +1,4 @@
+# sha256 fingerprints of immutable inputs
+# FORMAT: <sha256>  <relative_path>
+d9296cba8f8a15cdacd030c8d7e9224db9815141eb81e5968439b53c9ec85c62  input/MDSR_v1.docx
+b8ccd5f36d8fd41561784cab119ef724db1f2bab95968681eb2ff91ecc1a7578  input/MDDR_v1.docx

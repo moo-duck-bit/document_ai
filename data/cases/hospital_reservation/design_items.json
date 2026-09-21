@@ -1,0 +1,346 @@
+{
+  "source": "scripts/build_jm_collection_mddr.py",
+  "items": [
+    {
+      "req_id": "Req. 1",
+      "block_kind": "table",
+      "design_description": "Hospital Reservation System은 3계층 구조(HRS-web / HRS-api / HRS-admin)로 설계한다. HRS-web은 React 18 SPA로 진료과·예약·마이페이지 UI를 제공하고, HRS-api는 Node.js(TypeScript) 기반 REST API로 회원·진료과·예약·수납·진료일정 도메인을 분리한다. HRS-admin은 RBAC 기반 병원 운영 콘솔로 진료과·환자 안내·예약·CS를 운영한다. 데이터는 PostgreSQL(거래), Redis(세션·예약 신청), S3(이미지)에 저장하며 CloudFront로 정적 자산을 배포한다.",
+      "fields": {
+        "설명": "Hospital Reservation System은 3계층 구조(HRS-web / HRS-api / HRS-admin)로 설계한다. HRS-web은 React 18 SPA로 진료과·예약·마이페이지 UI를 제공하고, HRS-api는 Node.js(TypeScript) 기반 REST API로 회원·진료과·예약·수납·진료일정 도메인을 분리한다. HRS-admin은 RBAC 기반 병원 운영 콘솔로 진료과·환자 안내·예약·CS를 운영한다. 데이터는 PostgreSQL(거래), Redis(세션·예약 신청), S3(이미지)에 저장하며 CloudFront로 정적 자산을 배포한다.",
+        "목적": "Hospital Reservation System 병원 예약·접수 시스템은 병원 예약 플랫폼으로, 환자·보호자 환자에게 진료과 탐색, 예약, 수납, 방문/진료 일정 조회, 예약 취소/변경 기능을 제공해야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 2",
+      "block_kind": "table",
+      "design_description": "회원가입 플로우는 약관·개인정보·마케팅 동의 체크박스를 순차 검증한다. HRS-api `POST /members/signup`에서 동의 이력(terms_version, privacy_version, marketing_opt_in)을 `member_consents` 테이블에 append-only 저장한다. HRS-web은 미동의 시 제출을 차단하고 수집 항목·보유 기간을 모달로 고지한다.",
+      "fields": {
+        "설명": "회원가입 플로우는 약관·개인정보·마케팅 동의 체크박스를 순차 검증한다. HRS-api `POST /members/signup`에서 동의 이력(terms_version, privacy_version, marketing_opt_in)을 `member_consents` 테이블에 append-only 저장한다. HRS-web은 미동의 시 제출을 차단하고 수집 항목·보유 기간을 모달로 고지한다.",
+        "목적": "회원가입 시 이용약관, 개인정보 처리방침, 마케팅 수신 동의(선택)를 명시적으로 확인받아야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 3",
+      "block_kind": "table",
+      "design_description": "인증은 Local(email/password), SMS OTP, OAuth 2.0(카카오·네이버·Google) 전략 패턴으로 구현한다. HRS-api AuthService가 JWT access(15분) + refresh(7일) 토큰을 발급하고, OAuth callback은 state/nonce 검증 후 기존 계정과 provider_id를 매핑한다. 실패 코드(401/403/429)별 사용자 메시지는 i18n 리소스로 분리한다.",
+      "fields": {
+        "설명": "인증은 Local(email/password), SMS OTP, OAuth 2.0(카카오·네이버·Google) 전략 패턴으로 구현한다. HRS-api AuthService가 JWT access(15분) + refresh(7일) 토큰을 발급하고, OAuth callback은 state/nonce 검증 후 기존 계정과 provider_id를 매핑한다. 실패 코드(401/403/429)별 사용자 메시지는 i18n 리소스로 분리한다.",
+        "목적": "사용자는 이메일 또는 휴대전화 인증을 통해 로그인할 수 있어야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 4",
+      "block_kind": "table",
+      "design_description": "비밀번호 정책은 서버·클라이언트 이중 검증(최소 8자, 2종류 조합)을 적용한다. 저장은 bcrypt(cost 12) 해시, `password_history`에 최근 3개 해시를 보관하여 재사용을 거부한다. 재설정은 이메일/SMS OTP 검증 후 `PATCH /members/password`로 처리하며 OTP는 5분 TTL Redis에 저장한다.",
+      "fields": {
+        "설명": "비밀번호 정책은 서버·클라이언트 이중 검증(최소 8자, 2종류 조합)을 적용한다. 저장은 bcrypt(cost 12) 해시, `password_history`에 최근 3개 해시를 보관하여 재사용을 거부한다. 재설정은 이메일/SMS OTP 검증 후 `PATCH /members/password`로 처리하며 OTP는 5분 TTL Redis에 저장한다.",
+        "목적": "비밀번호는 최소 8자, 영문·숫자·특수문자 중 2종류 이상 조합을 요구해야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 5",
+      "block_kind": "table",
+      "design_description": "진료과 카탈로그는 `categories`(3-depth), `products`, `product_skus` 스키마로 모델링한다. HRS-admin에서 기획전·베스트·신상 노출 슬롯을 `merchandising_slots`로 관리하고, HRS-api `GET /catalog`는 품절·판매중지 SKU를 `availability` 필드로 구분 반환한다. HRS-web 목록 카드는 예약 슬롯 0일 때 '품절' 배지 및 CTA 비활성화를 적용한다.",
+      "fields": {
+        "설명": "진료과 카탈로그는 `categories`(3-depth), `products`, `product_skus` 스키마로 모델링한다. HRS-admin에서 기획전·베스트·신상 노출 슬롯을 `merchandising_slots`로 관리하고, HRS-api `GET /catalog`는 품절·판매중지 SKU를 `availability` 필드로 구분 반환한다. HRS-web 목록 카드는 예약 슬롯 0일 때 '품절' 배지 및 CTA 비활성화를 적용한다.",
+        "목적": "진료과은 카테고리(대·중·소)별로 탐색 가능해야 하며, 메인·기획전·신상·베스트 영역에 노출할 수 있어야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 6",
+      "block_kind": "table",
+      "design_description": "검색은 OpenSearch(또는 PostgreSQL FTS)에 진료과명·브랜드·태그를 색인하고, `GET /search/suggest`로 최근·인기 키워드 자동완성을 제공한다. 본 검색 `GET /search?q=&filters=`는 fuzzy(Levenshtein 1~2)와 facet sort를 지원하며 Redis 캐시(60s)로 인기 쿼리를 가속한다. 95 percentile 1.5초는 API autoscaling·쿼리 limit·suggest 캐시로 달성하고, 0건 시 `recommended_products` API로 대안 진료과을 반환한다.",
+      "fields": {
+        "설명": "검색은 OpenSearch(또는 PostgreSQL FTS) 인덱스에 진료과명·브랜드·태그를 색인한다. `GET /search?q=&filters=`는 facet(카테고리·가격·색상·사이즈·브랜드)과 sort를 지원하며 Redis 캐시(60s)로 인기 쿼리를 가속한다. 95 percentile 2초 목표는 CDN·API autoscaling·쿼리 limit으로 달성하고, 0건 시 `recommended_products` API로 대안 진료과을 반환한다.",
+        "목적": "키워드 검색, 카테고리·가격·색상·사이즈·브랜드 필터 및 정렬(인기, 신상, 가격순)을 지원해야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 7",
+      "block_kind": "table",
+      "design_description": "진료과 상세는 HRS-web PDP 컴포넌트(ProductGallery, OptionPicker, PriceBlock)로 구성한다. HRS-api `GET /products/{id}`는 images[], options[], stock_by_sku, related[]를 반환하고 할인가·정가·적립 예약 이력는 pricing 서비스에서 계산한다. 방문/진료 일정·교환·예약 취소 정책은 CMS 블록으로 관리하여 SKU 카테고리별 override가 가능하다.",
+      "fields": {
+        "설명": "진료과 상세는 HRS-web PDP 컴포넌트(ProductGallery, OptionPicker, PriceBlock)로 구성한다. HRS-api `GET /products/{id}`는 images[], options[], stock_by_sku, related[]를 반환하고 할인가·정가·적립 예약 이력는 pricing 서비스에서 계산한다. 방문/진료 일정·교환·예약 취소 정책은 CMS 블록으로 관리하여 SKU 카테고리별 override가 가능하다.",
+        "목적": "진료과 상세 페이지는 다중 이미지, 옵션(색상/사이즈), 예약 슬롯 수량, 방문/진료 일정·교환·예약 취소 안내, 관련 진료과을 표시해야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 8",
+      "block_kind": "table",
+      "design_description": "예약 신청는 `cart_items(member_id|session_id, sku_id, qty)`로 저장한다. 비회원은 HttpOnly session cookie, 회원은 DB 영구 저장; 로그인 시 merge API로 충돌 SKU는 수량 합산한다. HRS-web CartPage는 선택 수납(checkbox)와 수량 stepper를 제공하고, HRS-api는 예약 슬롯 선점(soft reservation, 15분 TTL)을 Redis에 기록한다.",
+      "fields": {
+        "설명": "예약 신청는 `cart_items(member_id|session_id, sku_id, qty)`로 저장한다. 비회원은 HttpOnly session cookie, 회원은 DB 영구 저장; 로그인 시 merge API로 충돌 SKU는 수량 합산한다. HRS-web CartPage는 선택 수납(checkbox)와 수량 stepper를 제공하고, HRS-api는 예약 슬롯 선점(soft reservation, 15분 TTL)을 Redis에 기록한다.",
+        "목적": "예약 신청 목록에 진료과·의료진을 선택하고, 일정 변경·취소·확정 수납을 지원해야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 9",
+      "block_kind": "table",
+      "design_description": "예약서는 ReservationWizard(방문/진료 일정지→환자 안내/예약 이력→수납)로 설계한다. `POST /appointments/draft`에서 예약 슬롯·환자 안내 유효성을 검증하고, 부족 시 409와 대체 안내를 반환한다. 방문/진료 일정지는 `addresses` 다중 저장, 환자 안내·예약 이력는 pricing 모듈에서 원자적 차감 후 최종 금액을 확정한다.",
+      "fields": {
+        "설명": "예약서는 ReservationWizard(방문/진료 일정지→환자 안내/예약 이력→수납)로 설계한다. `POST /appointments/draft`에서 예약 슬롯·환자 안내 유효성을 검증하고, 부족 시 409와 대체 안내를 반환한다. 방문/진료 일정지는 `addresses` 다중 저장, 환자 안내·예약 이력는 pricing 모듈에서 원자적 차감 후 최종 금액을 확정한다.",
+        "목적": "예약서 작성 시 방문/진료 일정지 입력(다중 방문/진료 일정지 저장), 방문/진료 일정 메시지, 환자 안내/예약 이력 적용, 최종 수납 금액 확인을 제공해야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 10",
+      "block_kind": "table",
+      "design_description": "수납는 수납 시스템(토스페이먼츠/이니시스) 서버-서버 연동으로 설계한다. 카드 PAN은 수납 연동 토큰화만 허용하며 HRS-api는 `payment_tokens`와 승인 transaction_id만 저장(개인정보보호법). `POST /payments/confirm`은 idempotency-key로 중복 승인을 방지하고, 실패·타임아웃 시 예약 상태를 PAYMENT_PENDING으로 유지한다.",
+      "fields": {
+        "설명": "수납는 수납 시스템(토스페이먼츠/이니시스) 서버-서버 연동으로 설계한다. 카드 PAN은 수납 연동 토큰화만 허용하며 HRS-api는 `payment_tokens`와 승인 transaction_id만 저장(개인정보보호법). `POST /payments/confirm`은 idempotency-key로 중복 승인을 방지하고, 실패·타임아웃 시 예약 상태를 PAYMENT_PENDING으로 유지한다.",
+        "목적": "수납는 수납 시스템(토스페이먼츠/이니시스 등) 연동을 통해 신용카드, 계좌이체, 간편수납를 지원해야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 11",
+      "block_kind": "table",
+      "design_description": "예약 완료 후 NotificationService가 이메일/SMS(마케팅 동의 시)를 비동기 발송한다. 예약 상태는 `orders.status` FSM(수납완료→진료과준비→방문/진료 일정중→방문/진료 일정완료)으로 관리하고 마이페이지 `GET /orders`에서 타임라인 UI로 노출한다. 영수증 PDF는 S3 presigned URL로 제공한다.",
+      "fields": {
+        "설명": "예약 완료 후 NotificationService가 이메일/SMS(마케팅 동의 시)를 비동기 발송한다. 예약 상태는 `orders.status` FSM(수납완료→진료과준비→방문/진료 일정중→방문/진료 일정완료)으로 관리하고 마이페이지 `GET /orders`에서 타임라인 UI로 노출한다. 영수증 PDF는 S3 presigned URL로 제공한다.",
+        "목적": "예약 완료 후 예약번호, 수납 영수증, 예상 방문/진료 일정일을 이메일·SMS(동의 시)로 발송해야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 12",
+      "block_kind": "table",
+      "design_description": "취소·예약 취소·교환은 `return_requests` 워크플로로 모델링한다. 방문/진료 일정 전 취소는 예약 슬롯 복원 + PG void, 수령 후 7일 이내 예약 취소은 CS 승인 후 환불 API를 호출한다. 상태(접수→수거→검수→환불완료)는 HRS-web·HRS-admin 양쪽에서 동기화 표시한다.",
+      "fields": {
+        "설명": "취소·예약 취소·교환은 `return_requests` 워크플로로 모델링한다. 방문/진료 일정 전 취소는 예약 슬롯 복원 + PG void, 수령 후 7일 이내 예약 취소은 CS 승인 후 환불 API를 호출한다. 상태(접수→수거→검수→환불완료)는 HRS-web·HRS-admin 양쪽에서 동기화 표시한다.",
+        "목적": "예약 취소는 방문/진료 일정 시작 전까지 가능해야 하며, 예약 취소·교환은 수령 후 7일 이내 신청을 허용해야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 13",
+      "block_kind": "table",
+      "design_description": "CS 모듈은 FAQ·공지(`boards`), 1:1 문의(`inquiries`)로 구성한다. HRS-api는 문의 등록 시 ticket_id를 발급하고, HRS-admin 답변 시 webhook으로 알림 큐에 적재한다. 욕설·PII 필터는 저장 전 moderation 서비스를 통과한다.",
+      "fields": {
+        "설명": "CS 모듈은 FAQ·공지(`boards`), 1:1 문의(`inquiries`)로 구성한다. HRS-api는 문의 등록 시 ticket_id를 발급하고, HRS-admin 답변 시 webhook으로 알림 큐에 적재한다. 욕설·PII 필터는 저장 전 moderation 서비스를 통과한다.",
+        "목적": "1:1 문의, FAQ, 공지사항 게시판을 제공해야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 14",
+      "block_kind": "table",
+      "design_description": "알림은 NotificationService + message queue(SQS)로 이메일·SMS·웹푸시 채널을 추상화한다. 템플릿은 예약/방문/진료 일정/환자 안내/환자 안내만료 유형별로 분리하고, marketing_opt_in=false 회원에게 광고성 알림 발송을 API 레벨에서 차단한다.",
+      "fields": {
+        "설명": "알림은 NotificationService + message queue(SQS)로 이메일·SMS·웹푸시 채널을 추상화한다. 템플릿은 예약/방문/진료 일정/환자 안내/환자 안내만료 유형별로 분리하고, marketing_opt_in=false 회원에게 광고성 알림 발송을 API 레벨에서 차단한다.",
+        "목적": "예약·방문/진료 일정·환자 안내 만료 알림을 이메일, SMS, 웹 푸시(선택)로 발송할 수 있어야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 15",
+      "block_kind": "table",
+      "design_description": "위시리스트는 `wishlists(member_id, sku_id)`와 `recent_views` Redis sorted set으로 구현한다. 가격 변동·재입고 알림은 sku 단위 subscription을 저장하고, 배치 job이 변경 감지 시 NotificationService를 호출한다.",
+      "fields": {
+        "설명": "위시리스트는 `wishlists(member_id, sku_id)`와 `recent_views` Redis sorted set으로 구현한다. 가격 변동·재입고 알림은 sku 단위 subscription을 저장하고, 배치 job이 변경 감지 시 NotificationService를 호출한다.",
+        "목적": "회원은 관심 진료과(위시리스트)을 저장하고, 최근 본 진료과 목록을 조회할 수 있어야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 16",
+      "block_kind": "table",
+      "design_description": "환자 안내 엔진은 `patient_notices`, `appointment_rules`, `rules`(정액/정률/묶음/무료방문/진료 일정)로 설계한다. HRS-admin에서 기간·환자 등급·카테고리·최소예약 조건을 rule DSL로 설정하고, checkout 시 pricing 서비스가 stackable 여부를 평가한다.",
+      "fields": {
+        "설명": "환자 안내 엔진은 `patient_notices`, `appointment_rules`, `rules`(정액/정률/묶음/무료방문/진료 일정)로 설계한다. HRS-admin에서 기간·환자 등급·카테고리·최소예약 조건을 rule DSL로 설정하고, checkout 시 pricing 서비스가 stackable 여부를 평가한다.",
+        "목적": "관리자는 환자 안내(정액/정률), 기간 한정 할인, 묶음 할인, 무료방문/진료 일정 환자 안내을 생성·적용할 수 있어야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 17",
+      "block_kind": "table",
+      "design_description": "등급·예약 이력는 `member_tiers`, `point_ledger` 이중부기 원장으로 관리한다. 구매 확정 시 등급별 1~5% 적립, 12개월 expiry; 만료 30일 전 cron 알림을 발송한다. 예약 이력 사용은 예약 수납 트랜잭션 내 원자적 차감한다.",
+      "fields": {
+        "설명": "등급·예약 이력는 `member_tiers`, `point_ledger` 이중부기 원장으로 관리한다. 구매 확정 시 등급별 1~5% 적립, 12개월 expiry; 만료 30일 전 cron 알림을 발송한다. 예약 이력 사용은 예약 수납 트랜잭션 내 원자적 차감한다.",
+        "목적": "회원 등급(일반·실버·골드·VIP)과 구매 적립 예약 이력(수납 금액의 1~5%)를 운영할 수 있어야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 18",
+      "block_kind": "table",
+      "design_description": "만족도는 `reviews(order_item_id, rating, body, photos[])`로 저장하고 구매 확정 후에만 작성 가능하다. 신고 시 moderation queue로 이동, HRS-admin 검수 후 blind 플래그를 설정한다. 욕설·연락처 regex 필터를 API gateway에서 1차 적용한다.",
+      "fields": {
+        "설명": "만족도는 `reviews(order_item_id, rating, body, photos[])`로 저장하고 구매 확정 후에만 작성 가능하다. 신고 시 moderation queue로 이동, HRS-admin 검수 후 blind 플래그를 설정한다. 욕설·연락처 regex 필터를 API gateway에서 1차 적용한다.",
+        "목적": "구매 확정 후 진료과 만족도(별점, 텍스트, 사진) 작성을 허용해야 한다 기능을 안정적으로 제공하여 Hospital Reservation System 고객의 구매 경험과 매출 전환율을 제고하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 100",
+      "block_kind": "table",
+      "design_description": "【보안 설계 — 개인정보는 수집 목적에 필요한 최소 항목만 수집하고, 목적 달성 후 지체 없이 파기해야 한다】 개인정보는 수집 목적에 필요한 최소 항목만 수집하고, 목적 달성 후 지체 없이 파기해야 한다. 마이페이지에서 개인정보 열람·수정·삭제(회원 탈퇴)를 지원해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "fields": {
+        "설명": "【보안 설계 — 개인정보는 수집 목적에 필요한 최소 항목만 수집하고, 목적 달성 후 지체 없이 파기해야 한다】 개인정보는 수집 목적에 필요한 최소 항목만 수집하고, 목적 달성 후 지체 없이 파기해야 한다. 마이페이지에서 개인정보 열람·수정·삭제(회원 탈퇴)를 지원해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+        "목적": "개인정보는 수집 목적에 필요한 최소 항목만 수집하고, 목적 달성 후 지체 없이 파기해야 한다 요구를 충족하여 개인정보·수납·운영 데이터를 보호하고 법규 및 보안 표준을 준수하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 101",
+      "block_kind": "table",
+      "design_description": "【보안 설계 — 관리자 기능은 RBAC(최고관리자, 운영, CS, 물류) 기반 권한으로 분리해야 한다】 관리자 기능은 RBAC(최고관리자, 운영, CS, 물류) 기반 권한으로 분리해야 한다. 권한 없는 메뉴 접근 시 거부하고, 시도 이력을 로그에 기록해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "fields": {
+        "설명": "【보안 설계 — 관리자 기능은 RBAC(최고관리자, 운영, CS, 물류) 기반 권한으로 분리해야 한다】 관리자 기능은 RBAC(최고관리자, 운영, CS, 물류) 기반 권한으로 분리해야 한다. 권한 없는 메뉴 접근 시 거부하고, 시도 이력을 로그에 기록해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+        "목적": "관리자 기능은 RBAC(최고관리자, 운영, CS, 물류) 기반 권한으로 분리해야 한다 요구를 충족하여 개인정보·수납·운영 데이터를 보호하고 법규 및 보안 표준을 준수하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 102",
+      "block_kind": "table",
+      "design_description": "【보안 설계 — 로그인 세션은 JWT 또는 secure cookie 기반으로 관리하고, HttpOnly·Secure·SameSite 속성을 적용해야 한다】 로그인 세션은 JWT 또는 secure cookie 기반으로 관리하고, HttpOnly·Secure·SameSite 속성을 적용해야 한다. 동시 세션 수 제한(기본 3대) 및 원격 로그아웃 기능을 제공할 수 있어야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "fields": {
+        "설명": "【보안 설계 — 로그인 세션은 JWT 또는 secure cookie 기반으로 관리하고, HttpOnly·Secure·SameSite 속성을 적용해야 한다】 로그인 세션은 JWT 또는 secure cookie 기반으로 관리하고, HttpOnly·Secure·SameSite 속성을 적용해야 한다. 동시 세션 수 제한(기본 3대) 및 원격 로그아웃 기능을 제공할 수 있어야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+        "목적": "로그인 세션은 JWT 또는 secure cookie 기반으로 관리하고, HttpOnly·Secure·SameSite 속성을 적용해야 한다 요구를 충족하여 개인정보·수납·운영 데이터를 보호하고 법규 및 보안 표준을 준수하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 103",
+      "block_kind": "table",
+      "design_description": "【보안 설계 — 예약·수납·로그인·관리자 작업에 대한 감사 로그를 1년 이상 보관해야 한다】 예약·수납·로그인·관리자 작업에 대한 감사 로그를 1년 이상 보관해야 한다. 로그는 변조 방지를 위해 append-only 저장소 또는 WORM 정책을 적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "fields": {
+        "설명": "【보안 설계 — 예약·수납·로그인·관리자 작업에 대한 감사 로그를 1년 이상 보관해야 한다】 예약·수납·로그인·관리자 작업에 대한 감사 로그를 1년 이상 보관해야 한다. 로그는 변조 방지를 위해 append-only 저장소 또는 WORM 정책을 적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+        "목적": "예약·수납·로그인·관리자 작업에 대한 감사 로그를 1년 이상 보관해야 한다 요구를 충족하여 개인정보·수납·운영 데이터를 보호하고 법규 및 보안 표준을 준수하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 104",
+      "block_kind": "table",
+      "design_description": "【보안 설계 — 수납 및 개인정보 처리 구간은 TLS 1】 수납 및 개인정보 처리 구간은 TLS 1.2 이상으로 암호화하고, 저장 데이터는 AES-256 등 강력한 알고리즘으로 암호화해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "fields": {
+        "설명": "【보안 설계 — 수납 및 개인정보 처리 구간은 TLS 1】 수납 및 개인정보 처리 구간은 TLS 1.2 이상으로 암호화하고, 저장 데이터는 AES-256 등 강력한 알고리즘으로 암호화해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+        "목적": "수납 및 개인정보 처리 구간은 TLS 1 요구를 충족하여 개인정보·수납·운영 데이터를 보호하고 법규 및 보안 표준을 준수하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 105",
+      "block_kind": "table",
+      "design_description": "【보안 설계 — 로그인·API 엔드예약 이력에 rate limiting을 적용하여 brute force 및 DDoS를 완화해야 한다】 로그인·API 엔드예약 이력에 rate limiting을 적용하여 brute force 및 DDoS를 완화해야 한다. 연속 로그인 실패 5회 시 15분 계정 잠금을 적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "fields": {
+        "설명": "【보안 설계 — 로그인·API 엔드예약 이력에 rate limiting을 적용하여 brute force 및 DDoS를 완화해야 한다】 로그인·API 엔드예약 이력에 rate limiting을 적용하여 brute force 및 DDoS를 완화해야 한다. 연속 로그인 실패 5회 시 15분 계정 잠금을 적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+        "목적": "로그인·API 엔드예약 이력에 rate limiting을 적용하여 brute force 및 DDoS를 완화해야 한다 요구를 충족하여 개인정보·수납·운영 데이터를 보호하고 법규 및 보안 표준을 준수하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 106",
+      "block_kind": "table",
+      "design_description": "【보안 설계 — OWASP Top 10(XSS, CSRF, SQL Injection) 대응을 위해 입력 검증, 출력 인코딩, parameterized query, CSRF 토큰을 적용해야 한다】 OWASP Top 10(XSS, CSRF, SQL Injection) 대응을 위해 입력 검증, 출력 인코딩, parameterized query, CSRF 토큰을 적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "fields": {
+        "설명": "【보안 설계 — OWASP Top 10(XSS, CSRF, SQL Injection) 대응을 위해 입력 검증, 출력 인코딩, parameterized query, CSRF 토큰을 적용해야 한다】 OWASP Top 10(XSS, CSRF, SQL Injection) 대응을 위해 입력 검증, 출력 인코딩, parameterized query, CSRF 토큰을 적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+        "목적": "OWASP Top 10(XSS, CSRF, SQL Injection) 대응을 위해 입력 검증, 출력 인코딩, parameterized query, CSRF 토큰을 적용해야 한다 요구를 충족하여 개인정보·수납·운영 데이터를 보호하고 법규 및 보안 표준을 준수하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 107",
+      "block_kind": "table",
+      "design_description": "【보안 설계 — 일일 전체 DB 백업 및 트랜잭션 로그 백업을 수행하고, RPO 24시간, RTO 4시간 이내 복구를 목표로 한다】 일일 전체 DB 백업 및 트랜잭션 로그 백업을 수행하고, RPO 24시간, RTO 4시간 이내 복구를 목표로 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "fields": {
+        "설명": "【보안 설계 — 일일 전체 DB 백업 및 트랜잭션 로그 백업을 수행하고, RPO 24시간, RTO 4시간 이내 복구를 목표로 한다】 일일 전체 DB 백업 및 트랜잭션 로그 백업을 수행하고, RPO 24시간, RTO 4시간 이내 복구를 목표로 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+        "목적": "일일 전체 DB 백업 및 트랜잭션 로그 백업을 수행하고, RPO 24시간, RTO 4시간 이내 복구를 목표로 한다 요구를 충족하여 개인정보·수납·운영 데이터를 보호하고 법규 및 보안 표준을 준수하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 108",
+      "block_kind": "table",
+      "design_description": "【보안 설계 — PG, SMS, 방문 일정 확인 등 외부 API 연동 시 API Key는 secrets manager에 저장하고, IP 화이트리스트·키 로테이션 정책을 적용해야 한다】 PG, SMS, 방문 일정 확인 등 외부 API 연동 시 API Key는 secrets manager에 저장하고, IP 화이트리스트·키 로테이션 정책을 적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "fields": {
+        "설명": "【보안 설계 — PG, SMS, 방문 일정 확인 등 외부 API 연동 시 API Key는 secrets manager에 저장하고, IP 화이트리스트·키 로테이션 정책을 적용해야 한다】 PG, SMS, 방문 일정 확인 등 외부 API 연동 시 API Key는 secrets manager에 저장하고, IP 화이트리스트·키 로테이션 정책을 적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+        "목적": "PG, SMS, 방문 일정 확인 등 외부 API 연동 시 API Key는 secrets manager에 저장하고, IP 화이트리스트·키 로테이션 정책을 적용해야 한다 요구를 충족하여 개인정보·수납·운영 데이터를 보호하고 법규 및 보안 표준을 준수하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 109",
+      "block_kind": "table",
+      "design_description": "【보안 설계 — 분기 1회 이상 취약점 스캔(SAST/DAST) 및 의존성(CVE) 점검을 수행하고, Critical/High 취약점은 30일 이내 조치해야 한다】 분기 1회 이상 취약점 스캔(SAST/DAST) 및 의존성(CVE) 점검을 수행하고, Critical/High 취약점은 30일 이내 조치해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "fields": {
+        "설명": "【보안 설계 — 분기 1회 이상 취약점 스캔(SAST/DAST) 및 의존성(CVE) 점검을 수행하고, Critical/High 취약점은 30일 이내 조치해야 한다】 분기 1회 이상 취약점 스캔(SAST/DAST) 및 의존성(CVE) 점검을 수행하고, Critical/High 취약점은 30일 이내 조치해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+        "목적": "분기 1회 이상 취약점 스캔(SAST/DAST) 및 의존성(CVE) 점검을 수행하고, Critical/High 취약점은 30일 이내 조치해야 한다 요구를 충족하여 개인정보·수납·운영 데이터를 보호하고 법규 및 보안 표준을 준수하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 110",
+      "block_kind": "table",
+      "design_description": "【보안 설계 — 관리자·CS 페이지 접근은 사내 VPN 또는 IP 제한 및 2FA(MFA)를 권장/적용해야 한다】 관리자·CS 페이지 접근은 사내 VPN 또는 IP 제한 및 2FA(MFA)를 권장/적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+      "fields": {
+        "설명": "【보안 설계 — 관리자·CS 페이지 접근은 사내 VPN 또는 IP 제한 및 2FA(MFA)를 권장/적용해야 한다】 관리자·CS 페이지 접근은 사내 VPN 또는 IP 제한 및 2FA(MFA)를 권장/적용해야 한다. 인증·인가 미들웨어(JWT/RBAC), AWS Secrets Manager 키 보관, TLS 1.2+ 종단 간 암호화, AES-256 저장 암호화, WAF·rate limit, append-only 감사 로그(CloudWatch/S3)로 구현한다. OWASP ASVS·개인정보보호법·개인정보보호법 통제 항목과의 매핑은 요구사항명세서 추적성 매트릭스를 따른다.",
+        "목적": "관리자·CS 페이지 접근은 사내 VPN 또는 IP 제한 및 2FA(MFA)를 권장/적용해야 한다 요구를 충족하여 개인정보·수납·운영 데이터를 보호하고 법규 및 보안 표준을 준수하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 111",
+      "block_kind": "table",
+      "design_description": "위시리스트는 `wishlists(member_id, sku_id)`와 `recent_views` Redis sorted set으로 구현한다. 가격 변동·재입고 알림은 sku 단위 subscription을 저장하고, 배치 job이 변경 감지 시 NotificationService를 호출한다.",
+      "fields": {
+        "설명": "위시리스트는 `wishlists(member_id, sku_id)`와 `recent_views` Redis sorted set으로 구현한다. 가격 변동·재입고 알림은 sku 단위 subscription을 저장하고, 배치 job이 변경 감지 시 NotificationService를 호출한다."
+      }
+    },
+    {
+      "req_id": "Req. 200",
+      "block_kind": "table",
+      "design_description": "【비기능 설계 — 메인 페이지 및 진료과 목록은 3G 환경 기준 LCP 3초 이내를 목표로 하며, CDN을 통해 정적 자산을 제공해야 한다】 메인 페이지 및 진료과 목록은 3G 환경 기준 LCP 3초 이내를 목표로 하며, CDN을 통해 정적 자산을 제공해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "fields": {
+        "설명": "【비기능 설계 — 메인 페이지 및 진료과 목록은 3G 환경 기준 LCP 3초 이내를 목표로 하며, CDN을 통해 정적 자산을 제공해야 한다】 메인 페이지 및 진료과 목록은 3G 환경 기준 LCP 3초 이내를 목표로 하며, CDN을 통해 정적 자산을 제공해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+        "목적": "메인 페이지 및 진료과 목록은 3G 환경 기준 LCP 3초 이내를 목표로 하며, CDN을 통해 정적 자산을 제공해야 한다 요구를 충족하여 병원 예약 시스템 서비스의 성능·가용성·접근성을 확보하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 201",
+      "block_kind": "table",
+      "design_description": "【비기능 설계 — 서비스 가용성은 월 99】 서비스 가용성은 월 99.9% 이상을 목표로 하며, 장애 시 상태 페이지 또는 공지를 통해 사용자에게 안내해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "fields": {
+        "설명": "【비기능 설계 — 서비스 가용성은 월 99】 서비스 가용성은 월 99.9% 이상을 목표로 하며, 장애 시 상태 페이지 또는 공지를 통해 사용자에게 안내해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+        "목적": "서비스 가용성은 월 99 요구를 충족하여 병원 예약 시스템 서비스의 성능·가용성·접근성을 확보하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 202",
+      "block_kind": "table",
+      "design_description": "【비기능 설계 — UI는 모바일(320px~)·태블릿·데스크톱에 반응형으로 동작해야 하며, 터치·키보드 접근성(WCAG 2】 UI는 모바일(320px~)·태블릿·데스크톱에 반응형으로 동작해야 하며, 터치·키보드 접근성(WCAG 2.1 AA)을 준수해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "fields": {
+        "설명": "【비기능 설계 — UI는 모바일(320px~)·태블릿·데스크톱에 반응형으로 동작해야 하며, 터치·키보드 접근성(WCAG 2】 UI는 모바일(320px~)·태블릿·데스크톱에 반응형으로 동작해야 하며, 터치·키보드 접근성(WCAG 2.1 AA)을 준수해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+        "목적": "UI는 모바일(320px~)·태블릿·데스크톱에 반응형으로 동작해야 하며, 터치·키보드 접근성(WCAG 2 요구를 충족하여 병원 예약 시스템 서비스의 성능·가용성·접근성을 확보하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 203",
+      "block_kind": "table",
+      "design_description": "【비기능 설계 — 최신 2버전 Chrome, Safari, Edge, Firefox 및 iOS/Android 기본 브라우저를 지원해야 한다】 최신 2버전 Chrome, Safari, Edge, Firefox 및 iOS/Android 기본 브라우저를 지원해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "fields": {
+        "설명": "【비기능 설계 — 최신 2버전 Chrome, Safari, Edge, Firefox 및 iOS/Android 기본 브라우저를 지원해야 한다】 최신 2버전 Chrome, Safari, Edge, Firefox 및 iOS/Android 기본 브라우저를 지원해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+        "목적": "최신 2버전 Chrome, Safari, Edge, Firefox 및 iOS/Android 기본 브라우저를 지원해야 한다 요구를 충족하여 병원 예약 시스템 서비스의 성능·가용성·접근성을 확보하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 204",
+      "block_kind": "table",
+      "design_description": "【비기능 설계 — 관리자 대시보드에서 일·주·월 매출, 예약 건수, 인기 진료과, 예약 슬롯 부족 알림을 조회할 수 있어야 한다】 관리자 대시보드에서 일·주·월 매출, 예약 건수, 인기 진료과, 예약 슬롯 부족 알림을 조회할 수 있어야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "fields": {
+        "설명": "【비기능 설계 — 관리자 대시보드에서 일·주·월 매출, 예약 건수, 인기 진료과, 예약 슬롯 부족 알림을 조회할 수 있어야 한다】 관리자 대시보드에서 일·주·월 매출, 예약 건수, 인기 진료과, 예약 슬롯 부족 알림을 조회할 수 있어야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+        "목적": "관리자 대시보드에서 일·주·월 매출, 예약 건수, 인기 진료과, 예약 슬롯 부족 알림을 조회할 수 있어야 한다 요구를 충족하여 병원 예약 시스템 서비스의 성능·가용성·접근성을 확보하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 205",
+      "block_kind": "table",
+      "design_description": "【비기능 설계 — 모든 사용자·관리자 통신은 HTTPS(TLS 1】 모든 사용자·관리자 통신은 HTTPS(TLS 1.2+)를 강제하고, HSTS 헤더를 적용해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "fields": {
+        "설명": "【비기능 설계 — 모든 사용자·관리자 통신은 HTTPS(TLS 1】 모든 사용자·관리자 통신은 HTTPS(TLS 1.2+)를 강제하고, HSTS 헤더를 적용해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+        "목적": "모든 사용자·관리자 통신은 HTTPS(TLS 1 요구를 충족하여 병원 예약 시스템 서비스의 성능·가용성·접근성을 확보하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 206",
+      "block_kind": "table",
+      "design_description": "【비기능 설계 — 사용자 세션은 30분 비활성 시 자동 만료되며, 만료 5분 전 연장 안내를 표시할 수 있어야 한다】 사용자 세션은 30분 비활성 시 자동 만료되며, 만료 5분 전 연장 안내를 표시할 수 있어야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "fields": {
+        "설명": "【비기능 설계 — 사용자 세션은 30분 비활성 시 자동 만료되며, 만료 5분 전 연장 안내를 표시할 수 있어야 한다】 사용자 세션은 30분 비활성 시 자동 만료되며, 만료 5분 전 연장 안내를 표시할 수 있어야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+        "목적": "사용자 세션은 30분 비활성 시 자동 만료되며, 만료 5분 전 연장 안내를 표시할 수 있어야 한다 요구를 충족하여 병원 예약 시스템 서비스의 성능·가용성·접근성을 확보하기 위함이다."
+      }
+    },
+    {
+      "req_id": "Req. 207",
+      "block_kind": "table",
+      "design_description": "【비기능 설계 — 휴면 계정(1년 미접속)은 별도 분리 보관하고, 재접속 시 본인 인증 후 복구해야 한다】 휴면 계정(1년 미접속)은 별도 분리 보관하고, 재접속 시 본인 인증 후 복구해야 한다. 탈퇴 회원 개인정보는 30일 이내 파기(법령 보존 예외 제외)해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+      "fields": {
+        "설명": "【비기능 설계 — 휴면 계정(1년 미접속)은 별도 분리 보관하고, 재접속 시 본인 인증 후 복구해야 한다】 휴면 계정(1년 미접속)은 별도 분리 보관하고, 재접속 시 본인 인증 후 복구해야 한다. 탈퇴 회원 개인정보는 30일 이내 파기(법령 보존 예외 제외)해야 한다. AWS ECS Fargate autoscaling, RDS Multi-AZ, ElastiCache Redis, CloudFront CDN, Route53 health check, CloudWatch 대시보드·알람으로 운영한다. 성능·가용성·접근성 목표는 부하 테스트 및 Lighthouse/WCAG 점검으로 검증한다.",
+        "목적": "휴면 계정(1년 미접속)은 별도 분리 보관하고, 재접속 시 본인 인증 후 복구해야 한다 요구를 충족하여 병원 예약 시스템 서비스의 성능·가용성·접근성을 확보하기 위함이다."
+      }
+    }
+  ]
+}

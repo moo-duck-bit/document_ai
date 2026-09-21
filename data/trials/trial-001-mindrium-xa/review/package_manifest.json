@@ -1,0 +1,16 @@
+{
+  "trial_id": "trial-001-mindrium-xa",
+  "prepared_at": "2026-07-18T02:38:28Z",
+  "canonical_dir": "data/trials/trial-001-mindrium-xa/generated_patch_preserving",
+  "documents": [
+    "MDSR",
+    "MDDR"
+  ],
+  "xxcs_excluded": true,
+  "files": [
+    "data/trials/trial-001-mindrium-xa/review/MDSR_REVIEWER_PACKAGE.md",
+    "data/trials/trial-001-mindrium-xa/review/MDDR_REVIEWER_PACKAGE.md",
+    "data/trials/trial-001-mindrium-xa/review/HUMAN_REVIEW_CHECKLIST.md",
+    "data/trials/trial-001-mindrium-xa/review/human_revision_record.template.json"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "source_original_changed_count": 0,
+  "false_patch_count": 0,
+  "unsafe_auto_patch_count": 0,
+  "writer_without_approval_count": 0,
+  "unauthorized_writer_attempt_count": 0,
+  "pipeline_error_count": 0,
+  "case_count": 23,
+  "writer_disabled": true,
+  "safety_status": "PASS"
+}

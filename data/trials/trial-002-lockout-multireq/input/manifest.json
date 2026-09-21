@@ -1,0 +1,11 @@
+{
+  "trial_id": "trial-002-lockout-multireq",
+  "scenario": "A1_lockout_multireq",
+  "source_trial1_cr": "data/trials/trial-001-mindrium-xa/input/change_request.txt",
+  "notes": [
+    "No Exact-ID in request text — retrieval must surface related Reqs",
+    "Admin mode product feature is out of scope; admin notify/approve appear only as policy sentences",
+    "expected_impact is evaluation criterion, not injected ground truth for the model"
+  ],
+  "request_text_file": "input/change_request.txt"
+}

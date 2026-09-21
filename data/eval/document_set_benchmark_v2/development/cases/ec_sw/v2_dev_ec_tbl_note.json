@@ -1,0 +1,29 @@
+{
+  "case_id": "v2_dev_ec_tbl_note",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "Req. 11 추적성 행 갱신",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/mdtm_note_col.docx",
+      "filename": "mdtm_note_col.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM_NOTE_COL"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "table_structure",
+    "note_column"
+  ],
+  "difficulty": "medium",
+  "notes": "note column metamorphic",
+  "source_type": "GENERATED",
+  "transformation": "table_note_column",
+  "base_case_id": "v2_dev_ec_req11_exact",
+  "fixture_fingerprint": "17838b78dbcf42fda55207cf07a5e80c38b256bea1ee235954023ebf0b3c67d0",
+  "sanitization_status": "N/A"
+}

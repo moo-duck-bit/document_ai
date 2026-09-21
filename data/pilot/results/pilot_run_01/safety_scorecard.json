@@ -1,0 +1,10 @@
+{
+  "original_changed_count": 0,
+  "unauthorized_writer_count": 0,
+  "wrong_document_count": 0,
+  "wrong_node_write_count": 0,
+  "path_escape_count": 0,
+  "auto_approve_count": 0,
+  "writer_executions": 0,
+  "safety_status": "PASS"
+}

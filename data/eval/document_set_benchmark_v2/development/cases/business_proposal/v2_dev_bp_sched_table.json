@@ -1,0 +1,30 @@
+{
+  "case_id": "v2_dev_bp_sched_table",
+  "domain": "business_proposal",
+  "document_set_id": "business_proposal",
+  "change_request": "수행 일정 표를 수정",
+  "split": "development",
+  "input_documents": [
+    {
+      "path": "fixtures/business_proposal/proposal_schedule_table.docx",
+      "filename": "proposal_schedule_table.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "PROPOSAL_SCHEDULE_TABLE"
+  ],
+  "expected_status": "SUCCESS",
+  "tags": [
+    "sched_table",
+    "schedule",
+    "table"
+  ],
+  "difficulty": "medium",
+  "notes": "cycle6_business_proposal_node_gold",
+  "source_type": "GENERATED",
+  "transformation": null,
+  "base_case_id": null,
+  "fixture_fingerprint": "c332ed6b1c3f4c4b707bae4a421f5032b56e7706ea29092e9a09fdb6d17de181",
+  "sanitization_status": "N/A"
+}

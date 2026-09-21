@@ -1,0 +1,30 @@
+{
+  "case_id": "ec_sw_mdtm_only_multi_doc",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "Req. 2 MDTM만 영향",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/MDTM.docx",
+      "filename": "MDTM.docx",
+      "role": "traceability"
+    },
+    {
+      "path": "fixtures/ec_sw/MDSR_stub.docx",
+      "filename": "MDSR_stub.docx",
+      "role": "requirements"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM",
+    "MDSR_STUB"
+  ],
+  "expected_status": "PARTIAL",
+  "tags": [
+    "multi_document",
+    "exact_id"
+  ],
+  "difficulty": "medium",
+  "notes": "MDTM IMPACTED; MDSR stub UNRELATED",
+  "source_type": "fixture"
+}

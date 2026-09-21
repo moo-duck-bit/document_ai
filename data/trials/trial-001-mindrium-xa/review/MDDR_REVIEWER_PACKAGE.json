@@ -1,0 +1,26 @@
+{
+  "document_type": "MDDR",
+  "reference_path": "data/trials/trial-001-mindrium-xa/reference/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+  "generated_path": "data/trials/trial-001-mindrium-xa/generated_patch_preserving/output_mddr.docx",
+  "sha256_reference": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf",
+  "sha256_generated": "dff76e279aeeef1f2f13dda70770edfedfdfa6908407924812d7c9bcf9ebe0bf",
+  "sha256_identical": true,
+  "automatic_design_impact_identified": false,
+  "design_candidates": 0,
+  "design_candidates_detail": [],
+  "no_design_patch_applied": true,
+  "reference_preserved": true,
+  "strategy": "no_automatic_design_patch (Option 1)",
+  "structure_compare": {
+    "size_reference": 2630162,
+    "size_generated": 2630162,
+    "pages_reference": 18,
+    "pages_generated": 18
+  },
+  "statements": [
+    "automatic design impact not identified",
+    "design_candidates=0",
+    "no design patch applied",
+    "reference preserved"
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "alignment_id": "NA-0001",
+    "document_id": "REPORT_STD",
+    "template_node_id": "general_report_v1.conclusion",
+    "document_node_id": "heading_0006",
+    "alignment_type": "HEADING_TO_SECTION",
+    "section_id": "conclusion",
+    "source_locator": {
+      "paragraph_index": 6
+    },
+    "confidence": 0.8,
+    "reason_codes": [
+      "concept_or_token_bridge",
+      "section_name_hit",
+      "shared_canonical_concept"
+    ],
+    "equivalent_for_evaluation": true,
+    "equivalent_for_patch": false
+  },
+  {
+    "alignment_id": "NA-0002",
+    "document_id": "REPORT_STD",
+    "template_node_id": "general_report_v1.conclusion",
+    "document_node_id": "heading_0007",
+    "alignment_type": "HEADING_TO_SECTION",
+    "section_id": "conclusion",
+    "source_locator": {
+      "paragraph_index": 7
+    },
+    "confidence": 0.8,
+    "reason_codes": [
+      "concept_or_token_bridge",
+      "section_name_hit",
+      "shared_canonical_concept"
+    ],
+    "equivalent_for_evaluation": true,
+    "equivalent_for_patch": false
+  }
+]

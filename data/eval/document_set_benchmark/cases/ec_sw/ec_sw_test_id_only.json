@@ -1,0 +1,23 @@
+{
+  "case_id": "ec_sw_test_id_only",
+  "domain": "ec_sw",
+  "document_set_id": "ec_sw",
+  "change_request": "시험 ID 4.1.1.2 결과 반영",
+  "input_documents": [
+    {
+      "path": "fixtures/ec_sw/MDTM.docx",
+      "filename": "MDTM.docx",
+      "role": "traceability"
+    }
+  ],
+  "enabled_documents": [
+    "MDTM"
+  ],
+  "expected_status": "SAFE_FAILURE",
+  "tags": [
+    "semantic_only"
+  ],
+  "difficulty": "hard",
+  "notes": "Test-id only via CR text",
+  "source_type": "fixture"
+}

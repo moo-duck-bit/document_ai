@@ -1,0 +1,101 @@
+{
+  "case_id": "lab_ec_sw",
+  "generated_at": "2026-07-17T16:10:46Z",
+  "executions": [
+    {
+      "execution_id": "exec-20260717-synthetic-001",
+      "executed_at": "2026-07-17T14:30:00Z",
+      "executor": {
+        "type": "script",
+        "name": "document-ai-synthetic-fixture",
+        "version": "1.0.0"
+      },
+      "environment": {
+        "target": "JM COLLECTION staging (synthetic)",
+        "base_url": "https://staging.jm-collection.example",
+        "host": "staging.jm-collection.example",
+        "notes": "SYNTHETIC SAMPLE — for Document Harness integration testing only. Not real penetration test output."
+      },
+      "synthetic": true,
+      "source_file": "executions\\exec-20260717-synthetic-001.json",
+      "imported_at": "2026-07-17T15:04:34Z",
+      "result_count": 4
+    },
+    {
+      "execution_id": "exec-20260718-runner-synthetic-001",
+      "executed_at": "2026-07-17T16:08:10Z",
+      "executor": {
+        "type": "script",
+        "name": "document-ai-security-runner",
+        "version": "0.1.0"
+      },
+      "environment": {
+        "target": "synthetic_fixture",
+        "base_url": "https://fixture.example.com",
+        "host": "fixture.example.com",
+        "notes": "Synthetic fixture execution; no network requests performed."
+      },
+      "synthetic": true,
+      "source_file": "executions\\exec-20260718-runner-synthetic-001.json",
+      "imported_at": "2026-07-17T16:09:03Z",
+      "result_count": 9
+    }
+  ],
+  "execution_reviews": [
+    {
+      "execution_id": "exec-20260717-synthetic-001",
+      "overall_status": "test_fixture_verified",
+      "reviewer": {
+        "name": "Document AI Fixture Reviewer",
+        "role": "pipeline_test"
+      },
+      "reviewed_at": "2026-07-17T15:35:00Z",
+      "synthetic": true,
+      "test_review_count": 4,
+      "selected_tests": []
+    },
+    {
+      "execution_id": "exec-20260718-runner-synthetic-001",
+      "overall_status": "test_fixture_verified",
+      "reviewer": {
+        "name": "Document AI Fixture Reviewer",
+        "role": "pipeline_test"
+      },
+      "reviewed_at": "2026-07-17T16:12:00Z",
+      "synthetic": true,
+      "test_review_count": 9,
+      "selected_tests": []
+    }
+  ],
+  "selected_results": {},
+  "status_counts": {
+    "PASS": 5,
+    "FAIL": 4,
+    "REVIEW_REQUIRED": 3,
+    "NOT_EXECUTED": 1,
+    "other": 0
+  },
+  "metrics": {
+    "reviewer_verified_execution_coverage": 0.0,
+    "selected_result_coverage": 0.0,
+    "verified_evidence_coverage": 0.0,
+    "unresolved_review_count": 0,
+    "synthetic_result_count": 13,
+    "real_execution_count": 0,
+    "fixture_verified_count": 13,
+    "final_report_readiness": true,
+    "final_report_readiness_score": 1.0,
+    "final_report_blockers": []
+  },
+  "final_report_readiness": {
+    "ready": true,
+    "score": 1.0,
+    "blockers": [],
+    "selected_count": 0,
+    "mode": "plan_only"
+  },
+  "notes": [
+    "Synthetic results are excluded from real execution metrics and gold promotion.",
+    "Plan gold and execution gold remain separate."
+  ]
+}

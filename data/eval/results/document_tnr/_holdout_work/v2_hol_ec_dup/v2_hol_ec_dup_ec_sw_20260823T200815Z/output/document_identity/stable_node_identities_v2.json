@@ -1,0 +1,113 @@
+[
+  {
+    "stable_node_id": "stablev2.table_row.1c1bc207239bdff3",
+    "document_identity": "EC_SW_MDTM_DUP_REQ",
+    "node_type": "TABLE_ROW",
+    "logical_key": "REQ[REQ-11]|DESIGN[5.1]|TEST[5.1]",
+    "canonical_identifiers": {
+      "requirement_ids": [
+        "REQ-11"
+      ],
+      "design_ids": [
+        "5.1"
+      ],
+      "test_ids": [
+        "5.1"
+      ]
+    },
+    "canonical_content_signature": "426e1eddc477aea8",
+    "structural_role": "traceability_row",
+    "source_locator": {
+      "table_index": 0,
+      "row_index": 2,
+      "column_count": 4
+    },
+    "fingerprint": "stablev2.table_row.1c1bc207239bdff3",
+    "identity_version": "stable_node_identity_v2",
+    "confidence": 1.0,
+    "reason_codes": [
+      "mdtm_identifier_set_key_v2",
+      "column_order_independent",
+      "row_index_excluded",
+      "document_id_excluded_from_base",
+      "filename_excluded"
+    ],
+    "legacy_node_id": "ec_sw_v1.mdtm.table_00.row_0002.2f1b098a19",
+    "duplicate_instance_key": "stablev2.table_row.1c1bc207239bdff3#inst:426e1eddc4",
+    "physical_location_resolved": true,
+    "writer_executable": false,
+    "metadata": {
+      "logical_identity_resolved": true,
+      "physical_location_resolved": true,
+      "writer_executable": false
+    },
+    "stable_node_id_base": "stablev2.table_row.1c1bc207239bdff3",
+    "stable_node_id_v1": "stable.table_row.fa220563a2bf6bc0",
+    "stable_node_id_v2": "stablev2.table_row.1c1bc207239bdff3+426e1edd",
+    "identity_core_signature": "488e98f3a10a0cb7",
+    "instance_signature": "426e1eddc477aea8",
+    "duplicate_group_id": "stablev2.table_row.1c1bc207239bdff3",
+    "identity_status": "STABLE",
+    "identity_confidence": 1.0,
+    "domain_pack_id": "ec_sw_v1",
+    "document_role": "traceability",
+    "canonical_key_fields": [
+      {
+        "column_index": 0,
+        "header_text": "Req. 11",
+        "canonical_role": "REQUIREMENT_ID",
+        "confidence": 0.9,
+        "reason_codes": [
+          "header:req",
+          "header_body_agree"
+        ],
+        "used_for_base_identity": true,
+        "used_for_instance_identity": false
+      },
+      {
+        "column_index": 1,
+        "header_text": "5.1.2",
+        "canonical_role": "DESIGN_ID",
+        "confidence": 0.95,
+        "reason_codes": [
+          "no_header_marker",
+          "body_distribution:DESIGN_ID:1.00"
+        ],
+        "used_for_base_identity": true,
+        "used_for_instance_identity": false
+      },
+      {
+        "column_index": 2,
+        "header_text": "TC-11",
+        "canonical_role": "TEST_ID",
+        "confidence": 0.65,
+        "reason_codes": [
+          "header:tc-"
+        ],
+        "used_for_base_identity": true,
+        "used_for_instance_identity": false
+      },
+      {
+        "column_index": 3,
+        "header_text": "",
+        "canonical_role": "OPTIONAL_KEY",
+        "confidence": 0.1,
+        "reason_codes": [
+          "empty_header",
+          "low_confidence_review"
+        ],
+        "used_for_base_identity": false,
+        "used_for_instance_identity": true
+      }
+    ],
+    "provenance": {
+      "legacy_node_id": "ec_sw_v1.mdtm.table_00.row_0002.2f1b098a19",
+      "source_locator": {
+        "table_index": 0,
+        "row_index": 2,
+        "column_count": 4
+      },
+      "note_excluded_from_base": true
+    }
+  }
+]

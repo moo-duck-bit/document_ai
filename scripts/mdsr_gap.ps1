@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-$Root = 'c:\Users\hsh71\OneDrive\Desktop\SKKU\fighting\document_AI'
+$Root = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $Out = Join-Path $Root 'data\cases\jm_collection\gap_analysis.txt'
 $docs = @(
     @{ n='template'; f='data\templates\ec_sw\template_mdsr.docx' },

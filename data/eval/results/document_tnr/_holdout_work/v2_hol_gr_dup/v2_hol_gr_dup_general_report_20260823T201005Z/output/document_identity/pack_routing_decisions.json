@@ -1,0 +1,28 @@
+[
+  {
+    "routing_id": "route_7327a5fd78",
+    "source_document_id": "REPORT_DUP_RESULTS",
+    "selected_pack_id": "generic_document_v1",
+    "candidate_pack_ids": [
+      "generic_document_v1"
+    ],
+    "routing_status": "ROUTED",
+    "score": 55.05,
+    "score_margin": 55.05,
+    "reason_codes": [
+      "filename_hint:REPORT",
+      "filename_role_hint",
+      "heading_or_title",
+      "report_heading_concepts",
+      "insufficient_margin_or_tier",
+      "explicit_user_pack"
+    ],
+    "human_review_required": false,
+    "actual_pack_invoked": "generic_document_v1",
+    "metadata": {
+      "routing_mode": "explicit",
+      "identity_status": "REVIEW_REQUIRED",
+      "document_set_hint": "general_report"
+    }
+  }
+]

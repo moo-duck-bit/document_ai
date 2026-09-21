@@ -1,0 +1,46 @@
+{
+  "case_id": "case_022",
+  "schema_version": "0.1.0",
+  "units": "cell_or_row_with_hidden_id",
+  "impact_nodes": [
+    {
+      "node_id": "REQ_007_DESC",
+      "document_id": "MDSR_v1",
+      "kind": "requirement_cell",
+      "req_id": "Req. 7",
+      "link_type": "explicit_seed",
+      "rationale": "CR directly changes sleep-diary input frequency stated in Req. 7 description."
+    },
+    {
+      "node_id": "DI_012_PARAM",
+      "document_id": "MDDR_v1",
+      "kind": "design_parameter_cell",
+      "design_id": "DI-12",
+      "link_type": "explicit_trace",
+      "trace_from": "Req. 7",
+      "rationale": "Traceability table links Req. 7 to DI-12 notification/schedule parameter."
+    },
+    {
+      "node_id": "DI_012_NOTIFY",
+      "document_id": "MDDR_v1",
+      "kind": "design_cell",
+      "design_id": "DI-12",
+      "link_type": "semantic_assoc",
+      "rationale": "Same frequency value used in notification copy; not a separate trace row but must stay consistent."
+    }
+  ],
+  "document_impacts": [
+    {
+      "document_id": "MDSR_v1",
+      "gold_status": "PATCH_CANDIDATE"
+    },
+    {
+      "document_id": "MDDR_v1",
+      "gold_status": "PATCH_CANDIDATE"
+    }
+  ],
+  "notes": {
+    "explicit_vs_semantic": "explicit_seed/explicit_trace can be auto-suggested from traceability; semantic_assoc requires human label.",
+    "placeholder": true
+  }
+}

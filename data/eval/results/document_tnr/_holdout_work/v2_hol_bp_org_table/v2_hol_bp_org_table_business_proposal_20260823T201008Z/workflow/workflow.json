@@ -1,0 +1,2398 @@
+{
+  "workflow_id": "v2_hol_bp_org_table_business_proposal_20260823T201008Z",
+  "document_set": "business_proposal",
+  "state": "COMPLETED",
+  "change_request": "수행 조직 역할표 변경",
+  "created_at": "2026-08-23T20:10:08Z",
+  "updated_at": "2026-08-23T20:10:08Z",
+  "documents": [
+    {
+      "document_id": "PROPOSAL_ORG_TABLE",
+      "source_document_id": "PROPOSAL_ORG_TABLE",
+      "filename": "proposal_org_table.docx",
+      "role": "business_proposal",
+      "path": "data/eval/results/document_tnr/_holdout_work/v2_hol_bp_org_table/v2_hol_bp_org_table_business_proposal_20260823T201008Z/input/proposal_org_table.docx",
+      "copy_path": "data/eval/results/document_tnr/_holdout_work/v2_hol_bp_org_table/v2_hol_bp_org_table_business_proposal_20260823T201008Z/copies/proposal_org_table.docx",
+      "user_hints": null,
+      "canonical_document_id": "GENERIC_BUSINESS_PROPOSAL",
+      "short_id": "PROPOSAL",
+      "document_type": "BUSINESS_PROPOSAL",
+      "document_role": "business_proposal",
+      "domain_pack_id": "generic_document_v1",
+      "template_id": "business_proposal_v1",
+      "identity_status": "REVIEW_REQUIRED",
+      "identity_auto_selected": false,
+      "identity_score": 39.05,
+      "identity_reasons": [
+        "filename_hint:PROPOSAL",
+        "filename_role_hint",
+        "heading_or_title",
+        "proposal_heading_concepts",
+        "insufficient_margin_or_tier"
+      ],
+      "routing_status": "ROUTED",
+      "selected_pack_id": "generic_document_v1",
+      "recommended_document_set": "business_proposal",
+      "registry_document_id": "PROPOSAL"
+    }
+  ],
+  "impacted_documents": [
+    "PROPOSAL_ORG_TABLE"
+  ],
+  "review_required": [
+    {
+      "item_id": "business_proposal_v1.organization",
+      "document_id": "PROPOSAL_ORG_TABLE",
+      "node_id": "business_proposal_v1.organization",
+      "status": "REVIEW_REQUIRED",
+      "display_name": "조직",
+      "reason_codes": [
+        "aligned_template_section_eval_candidate",
+        "template_document_aligned"
+      ],
+      "human_review_required": true,
+      "source_stage": "generic_template_alignment",
+      "metadata": {
+        "structural_role": "PROPOSAL_SECTION",
+        "physical": false,
+        "editable": false,
+        "virtual": false,
+        "virtual_target": false,
+        "writer_executable": false,
+        "template_only": false,
+        "supports_patch": false,
+        "target_exists": true,
+        "canonical_concepts": [
+          "ORGANIZATION"
+        ],
+        "alignment_confidence": 0.8,
+        "evaluation_equivalent": true,
+        "aligned_document_node_id": "heading_0001",
+        "content_specificity": 0.4,
+        "proposal_structural_role": "PROPOSAL_SECTION",
+        "domain": "business_proposal",
+        "overlap": 205.44,
+        "final_score": 205.44,
+        "template_alignment": true,
+        "rank_tier": 1,
+        "score_components": {
+          "tier_base": 105.0,
+          "primary_concept_match": 28.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 21.56,
+          "structural_role_match": 18.0,
+          "template_node_match": 18.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 14.08,
+          "physical_editability": 0.8,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.0
+        },
+        "structural_score_components": {
+          "candidate_node_id": "business_proposal_v1.organization",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.98,
+          "structural_role_match": 0.9,
+          "template_node_match": 1.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 0.2,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:PROPOSAL_SECTION",
+            "update_template_section_eval",
+            "preferred_template_node",
+            "eval_equivalent_alignment"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_1",
+          "eval_equivalent_alignment",
+          "exact_section_concept_template",
+          "preferred_template_node",
+          "primary_concept_hit",
+          "role_pref:PROPOSAL_SECTION",
+          "update_template_section_eval"
+        ],
+        "query_intent": "ORGANIZATION_UPDATE",
+        "rank": 1,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.execution_plan",
+            "document_node_id": "heading_0001",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "execution_plan",
+            "source_locator": {
+              "paragraph_index": 1
+            },
+            "confidence": 0.55,
+            "reason_codes": [
+              "concept_or_token_bridge"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": null,
+            "canonical_concepts": [],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.execution_plan",
+            "document_node_id": "heading_0002",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "execution_plan",
+            "source_locator": {
+              "paragraph_index": 2
+            },
+            "confidence": 0.55,
+            "reason_codes": [
+              "concept_or_token_bridge"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": null,
+            "canonical_concepts": [],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0003",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "heading_0001",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {
+              "paragraph_index": 1
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0004",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "heading_0002",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {
+              "paragraph_index": 2
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0005",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "table_00",
+            "alignment_type": "TABLE_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {},
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION",
+              "TABLE"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "PROPOSAL_ORG_TABLE:execution_plan",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_ids": [
+              "business_proposal_v1.execution_plan"
+            ],
+            "document_node_ids": [
+              "heading_0001",
+              "heading_0002"
+            ],
+            "section_id": "execution_plan",
+            "concepts": [
+              "EXECUTION_PLAN",
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          },
+          {
+            "group_id": "PROPOSAL_ORG_TABLE:organization",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_ids": [
+              "business_proposal_v1.organization"
+            ],
+            "document_node_ids": [
+              "heading_0001",
+              "heading_0002",
+              "table_00"
+            ],
+            "section_id": "organization",
+            "concepts": [
+              "ORGANIZATION",
+              "RESPONSIBILITY",
+              "TABLE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      },
+      "overlap": 1.25
+    },
+    {
+      "item_id": "BP-TBL-table_00",
+      "candidate_id": "BP-TBL-table_00",
+      "document_id": "PROPOSAL_ORG_TABLE",
+      "node_id": "table_00",
+      "status": "REVIEW_REQUIRED",
+      "overlap": 0.75,
+      "display_name": "조직 역할 담당",
+      "reason_codes": [
+        "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+        "organization_table_structure",
+        "proposal_table_ambiguous"
+      ],
+      "human_review_required": true,
+      "source_stage": "proposal_table_retrieval",
+      "metadata": {
+        "overlap": 215.18,
+        "evidence_type": "TABLE_STRUCTURE",
+        "supports_patch": false,
+        "supports_review": true,
+        "table_role": "ORGANIZATION_SECTION",
+        "canonical_concepts": [
+          "ORGANIZATION",
+          "RESPONSIBILITY"
+        ],
+        "structural_role": "ORGANIZATION_SECTION",
+        "proposal_structural_role": "ORGANIZATION_SECTION",
+        "editable": true,
+        "physical": true,
+        "virtual": false,
+        "content_specificity": 0.75,
+        "reason_codes": [
+          "role_proposal_table",
+          "table_role:ORGANIZATION_SECTION"
+        ],
+        "writer_executable": false,
+        "domain": "business_proposal",
+        "alignment_confidence": 0.8,
+        "evaluation_equivalent": true,
+        "template_node_id": "business_proposal_v1.organization",
+        "alignment_ids": [
+          "NA-0005"
+        ],
+        "rank_tier": 1,
+        "final_score": 215.18,
+        "score_components": {
+          "tier_base": 105.0,
+          "primary_concept_match": 28.0,
+          "secondary_concept_match": 4.0,
+          "operation_role_match": 19.8,
+          "structural_role_match": 20.0,
+          "template_node_match": 15.299999999999999,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 5.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 14.08,
+          "physical_editability": 4.0,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.0
+        },
+        "structural_score_components": {
+          "candidate_node_id": "table_00",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.5,
+          "operation_role_match": 0.9,
+          "structural_role_match": 1.0,
+          "template_node_match": 0.85,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.5,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:ORGANIZATION_SECTION",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_1",
+          "aligned_preferred_template",
+          "eval_equivalent_alignment",
+          "primary_concept_hit",
+          "role_pref:ORGANIZATION_SECTION"
+        ],
+        "query_intent": "ORGANIZATION_UPDATE",
+        "rank": 2,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.execution_plan",
+            "document_node_id": "heading_0001",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "execution_plan",
+            "source_locator": {
+              "paragraph_index": 1
+            },
+            "confidence": 0.55,
+            "reason_codes": [
+              "concept_or_token_bridge"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": null,
+            "canonical_concepts": [],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.execution_plan",
+            "document_node_id": "heading_0002",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "execution_plan",
+            "source_locator": {
+              "paragraph_index": 2
+            },
+            "confidence": 0.55,
+            "reason_codes": [
+              "concept_or_token_bridge"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": null,
+            "canonical_concepts": [],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0003",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "heading_0001",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {
+              "paragraph_index": 1
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0004",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "heading_0002",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {
+              "paragraph_index": 2
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0005",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "table_00",
+            "alignment_type": "TABLE_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {},
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION",
+              "TABLE"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "PROPOSAL_ORG_TABLE:execution_plan",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_ids": [
+              "business_proposal_v1.execution_plan"
+            ],
+            "document_node_ids": [
+              "heading_0001",
+              "heading_0002"
+            ],
+            "section_id": "execution_plan",
+            "concepts": [
+              "EXECUTION_PLAN",
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          },
+          {
+            "group_id": "PROPOSAL_ORG_TABLE:organization",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_ids": [
+              "business_proposal_v1.organization"
+            ],
+            "document_node_ids": [
+              "heading_0001",
+              "heading_0002",
+              "table_00"
+            ],
+            "section_id": "organization",
+            "concepts": [
+              "ORGANIZATION",
+              "RESPONSIBILITY",
+              "TABLE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "PROPOSAL_ORG_TABLE.p0001",
+      "document_id": "PROPOSAL_ORG_TABLE",
+      "node_id": "heading_0001",
+      "status": "REVIEW_REQUIRED",
+      "display_name": "수행 조직",
+      "evidence": [
+        "수행",
+        "조직"
+      ],
+      "reason_codes": [
+        "paragraph_token_overlap"
+      ],
+      "human_review_required": true,
+      "source_locator": {
+        "paragraph_index": 1
+      },
+      "source_stage": "document_paragraph",
+      "metadata": {
+        "supports_patch": false,
+        "target_exists": true,
+        "structural_role": "DOCUMENT_HEADING",
+        "physical": true,
+        "editable": true,
+        "virtual": false,
+        "canonical_concepts": [
+          "ORGANIZATION"
+        ],
+        "content_specificity": 0.45,
+        "parent_section_id": null,
+        "direct_match": true,
+        "inherited_match": false,
+        "parent_context_match": 0.8,
+        "section_context": "ORGANIZATION",
+        "writer_executable": false,
+        "alignment_confidence": 0.8,
+        "evaluation_equivalent": true,
+        "template_node_id": "business_proposal_v1.organization",
+        "alignment_ids": [
+          "NA-0003"
+        ],
+        "domain": "business_proposal",
+        "proposal_structural_role": "DOCUMENT_HEADING",
+        "rank_tier": 2,
+        "final_score": 173.58,
+        "score_components": {
+          "tier_base": 82.0,
+          "primary_concept_match": 28.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 19.8,
+          "structural_role_match": 2.4,
+          "template_node_match": 15.299999999999999,
+          "parent_section_match": 8.0,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 14.08,
+          "physical_editability": 4.0,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.0
+        },
+        "structural_score_components": {
+          "candidate_node_id": "heading_0001",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.9,
+          "structural_role_match": 0.12,
+          "template_node_match": 0.85,
+          "parent_section_match": 0.8,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_2",
+          "aligned_preferred_template",
+          "eval_equivalent_alignment",
+          "primary_concept_hit"
+        ],
+        "overlap": 173.58,
+        "query_intent": "ORGANIZATION_UPDATE",
+        "rank": 3,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.execution_plan",
+            "document_node_id": "heading_0001",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "execution_plan",
+            "source_locator": {
+              "paragraph_index": 1
+            },
+            "confidence": 0.55,
+            "reason_codes": [
+              "concept_or_token_bridge"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": null,
+            "canonical_concepts": [],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.execution_plan",
+            "document_node_id": "heading_0002",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "execution_plan",
+            "source_locator": {
+              "paragraph_index": 2
+            },
+            "confidence": 0.55,
+            "reason_codes": [
+              "concept_or_token_bridge"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": null,
+            "canonical_concepts": [],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0003",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "heading_0001",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {
+              "paragraph_index": 1
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0004",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "heading_0002",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {
+              "paragraph_index": 2
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0005",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "table_00",
+            "alignment_type": "TABLE_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {},
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION",
+              "TABLE"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "PROPOSAL_ORG_TABLE:execution_plan",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_ids": [
+              "business_proposal_v1.execution_plan"
+            ],
+            "document_node_ids": [
+              "heading_0001",
+              "heading_0002"
+            ],
+            "section_id": "execution_plan",
+            "concepts": [
+              "EXECUTION_PLAN",
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          },
+          {
+            "group_id": "PROPOSAL_ORG_TABLE:organization",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_ids": [
+              "business_proposal_v1.organization"
+            ],
+            "document_node_ids": [
+              "heading_0001",
+              "heading_0002",
+              "table_00"
+            ],
+            "section_id": "organization",
+            "concepts": [
+              "ORGANIZATION",
+              "RESPONSIBILITY",
+              "TABLE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "PROPOSAL_ORG_TABLE.p0002",
+      "document_id": "PROPOSAL_ORG_TABLE",
+      "node_id": "heading_0002",
+      "status": "REVIEW_REQUIRED",
+      "display_name": "본 사업의 수행 조직 구성은 다음과 같습니다.",
+      "evidence": [
+        "수행",
+        "조직"
+      ],
+      "reason_codes": [
+        "paragraph_token_overlap"
+      ],
+      "human_review_required": true,
+      "source_locator": {
+        "paragraph_index": 2
+      },
+      "source_stage": "document_paragraph",
+      "metadata": {
+        "supports_patch": false,
+        "target_exists": true,
+        "structural_role": "DOCUMENT_HEADING",
+        "physical": true,
+        "editable": true,
+        "virtual": false,
+        "canonical_concepts": [
+          "ORGANIZATION"
+        ],
+        "content_specificity": 0.45,
+        "parent_section_id": null,
+        "direct_match": true,
+        "inherited_match": false,
+        "parent_context_match": 0.8,
+        "section_context": "ORGANIZATION",
+        "writer_executable": false,
+        "alignment_confidence": 0.8,
+        "evaluation_equivalent": true,
+        "template_node_id": "business_proposal_v1.organization",
+        "alignment_ids": [
+          "NA-0004"
+        ],
+        "domain": "business_proposal",
+        "proposal_structural_role": "DOCUMENT_HEADING",
+        "rank_tier": 2,
+        "final_score": 173.58,
+        "score_components": {
+          "tier_base": 82.0,
+          "primary_concept_match": 28.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 19.8,
+          "structural_role_match": 2.4,
+          "template_node_match": 15.299999999999999,
+          "parent_section_match": 8.0,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 14.08,
+          "physical_editability": 4.0,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.0
+        },
+        "structural_score_components": {
+          "candidate_node_id": "heading_0002",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.9,
+          "structural_role_match": 0.12,
+          "template_node_match": 0.85,
+          "parent_section_match": 0.8,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_2",
+          "aligned_preferred_template",
+          "eval_equivalent_alignment",
+          "primary_concept_hit"
+        ],
+        "overlap": 173.58,
+        "query_intent": "ORGANIZATION_UPDATE",
+        "rank": 4,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.execution_plan",
+            "document_node_id": "heading_0001",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "execution_plan",
+            "source_locator": {
+              "paragraph_index": 1
+            },
+            "confidence": 0.55,
+            "reason_codes": [
+              "concept_or_token_bridge"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": null,
+            "canonical_concepts": [],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.execution_plan",
+            "document_node_id": "heading_0002",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "execution_plan",
+            "source_locator": {
+              "paragraph_index": 2
+            },
+            "confidence": 0.55,
+            "reason_codes": [
+              "concept_or_token_bridge"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": null,
+            "canonical_concepts": [],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0003",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "heading_0001",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {
+              "paragraph_index": 1
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0004",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "heading_0002",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {
+              "paragraph_index": 2
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0005",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "table_00",
+            "alignment_type": "TABLE_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {},
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION",
+              "TABLE"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "PROPOSAL_ORG_TABLE:execution_plan",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_ids": [
+              "business_proposal_v1.execution_plan"
+            ],
+            "document_node_ids": [
+              "heading_0001",
+              "heading_0002"
+            ],
+            "section_id": "execution_plan",
+            "concepts": [
+              "EXECUTION_PLAN",
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          },
+          {
+            "group_id": "PROPOSAL_ORG_TABLE:organization",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_ids": [
+              "business_proposal_v1.organization"
+            ],
+            "document_node_ids": [
+              "heading_0001",
+              "heading_0002",
+              "table_00"
+            ],
+            "section_id": "organization",
+            "concepts": [
+              "ORGANIZATION",
+              "RESPONSIBILITY",
+              "TABLE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "business_proposal_v1.execution_plan",
+      "document_id": "PROPOSAL_ORG_TABLE",
+      "node_id": "business_proposal_v1.execution_plan",
+      "status": "REVIEW_REQUIRED",
+      "display_name": "수행 계획",
+      "reason_codes": [
+        "aligned_template_section_eval_candidate"
+      ],
+      "human_review_required": true,
+      "source_stage": "generic_template_alignment",
+      "metadata": {
+        "structural_role": "PROPOSAL_SECTION",
+        "physical": false,
+        "editable": false,
+        "virtual": false,
+        "virtual_target": false,
+        "writer_executable": false,
+        "template_only": false,
+        "supports_patch": false,
+        "target_exists": true,
+        "canonical_concepts": [
+          "EXECUTION_PLAN"
+        ],
+        "alignment_confidence": 0.55,
+        "evaluation_equivalent": true,
+        "aligned_document_node_id": "heading_0001",
+        "content_specificity": 0.4,
+        "proposal_structural_role": "PROPOSAL_SECTION",
+        "domain": "business_proposal",
+        "rank_tier": 5,
+        "final_score": 61.22,
+        "score_components": {
+          "tier_base": 14.0,
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.0,
+          "structural_role_match": 18.0,
+          "template_node_match": 15.299999999999999,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 14.08,
+          "physical_editability": 0.8,
+          "virtual_target_penalty": -0.0,
+          "document_context_penalty": -0.0,
+          "ambiguity_penalty": -0.96
+        },
+        "structural_score_components": {
+          "candidate_node_id": "business_proposal_v1.execution_plan",
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.0,
+          "structural_role_match": 0.9,
+          "template_node_match": 0.85,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 0.2,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.12,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "role_pref:PROPOSAL_SECTION",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment"
+          ]
+        },
+        "ranking_reason_codes": [
+          "RANK_TIER_5",
+          "aligned_preferred_template",
+          "eval_equivalent_alignment",
+          "role_pref:PROPOSAL_SECTION"
+        ],
+        "overlap": 61.22,
+        "query_intent": "ORGANIZATION_UPDATE",
+        "rank": 5,
+        "node_alignments": [
+          {
+            "alignment_id": "NA-0001",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.execution_plan",
+            "document_node_id": "heading_0001",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "execution_plan",
+            "source_locator": {
+              "paragraph_index": 1
+            },
+            "confidence": 0.55,
+            "reason_codes": [
+              "concept_or_token_bridge"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": null,
+            "canonical_concepts": [],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0002",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.execution_plan",
+            "document_node_id": "heading_0002",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "execution_plan",
+            "source_locator": {
+              "paragraph_index": 2
+            },
+            "confidence": 0.55,
+            "reason_codes": [
+              "concept_or_token_bridge"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": null,
+            "canonical_concepts": [],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0003",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "heading_0001",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {
+              "paragraph_index": 1
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0004",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "heading_0002",
+            "alignment_type": "HEADING_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {
+              "paragraph_index": 2
+            },
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          },
+          {
+            "alignment_id": "NA-0005",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_id": "business_proposal_v1.organization",
+            "document_node_id": "table_00",
+            "alignment_type": "TABLE_TO_SECTION",
+            "section_id": "organization",
+            "source_locator": {},
+            "confidence": 0.8,
+            "reason_codes": [
+              "concept_or_token_bridge",
+              "section_name_hit",
+              "shared_canonical_concept"
+            ],
+            "equivalent_for_evaluation": true,
+            "equivalent_for_patch": false,
+            "canonical_concept": "ORGANIZATION",
+            "canonical_concepts": [
+              "ORGANIZATION",
+              "TABLE"
+            ],
+            "evaluation_equivalence": true,
+            "patch_equivalence": false
+          }
+        ],
+        "structural_equivalence_groups": [
+          {
+            "group_id": "PROPOSAL_ORG_TABLE:execution_plan",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_ids": [
+              "business_proposal_v1.execution_plan"
+            ],
+            "document_node_ids": [
+              "heading_0001",
+              "heading_0002"
+            ],
+            "section_id": "execution_plan",
+            "concepts": [
+              "EXECUTION_PLAN",
+              "ORGANIZATION"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          },
+          {
+            "group_id": "PROPOSAL_ORG_TABLE:organization",
+            "document_id": "PROPOSAL_ORG_TABLE",
+            "template_node_ids": [
+              "business_proposal_v1.organization"
+            ],
+            "document_node_ids": [
+              "heading_0001",
+              "heading_0002",
+              "table_00"
+            ],
+            "section_id": "organization",
+            "concepts": [
+              "ORGANIZATION",
+              "RESPONSIBILITY",
+              "TABLE"
+            ],
+            "evaluation_equivalent": true,
+            "patch_equivalent": false,
+            "reason_codes": [
+              "structural_equivalence"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "patch_candidates": [],
+  "approvals": [
+    {
+      "item_id": "business_proposal_v1.organization",
+      "document_id": "PROPOSAL_ORG_TABLE",
+      "node_id": "business_proposal_v1.organization",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:08Z"
+    },
+    {
+      "item_id": "BP-TBL-table_00",
+      "document_id": "PROPOSAL_ORG_TABLE",
+      "node_id": "table_00",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:08Z"
+    },
+    {
+      "item_id": "PROPOSAL_ORG_TABLE.p0001",
+      "document_id": "PROPOSAL_ORG_TABLE",
+      "node_id": "heading_0001",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:08Z"
+    },
+    {
+      "item_id": "PROPOSAL_ORG_TABLE.p0002",
+      "document_id": "PROPOSAL_ORG_TABLE",
+      "node_id": "heading_0002",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:08Z"
+    },
+    {
+      "item_id": "business_proposal_v1.execution_plan",
+      "document_id": "PROPOSAL_ORG_TABLE",
+      "node_id": "business_proposal_v1.execution_plan",
+      "decision": "APPROVED",
+      "reason": "",
+      "decided_by": "pilot",
+      "decided_at": "2026-08-23T20:10:08Z"
+    }
+  ],
+  "writer_result": {
+    "status": "COMPLETED_PREVIEW",
+    "applied": 0,
+    "skipped": 5,
+    "rejected": 0,
+    "blocked": 0,
+    "enable_write": false,
+    "details": [
+      {
+        "item_id": "business_proposal_v1.organization",
+        "document_id": "PROPOSAL_ORG_TABLE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "BP-TBL-table_00",
+        "document_id": "PROPOSAL_ORG_TABLE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "PROPOSAL_ORG_TABLE.p0001",
+        "document_id": "PROPOSAL_ORG_TABLE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "PROPOSAL_ORG_TABLE.p0002",
+        "document_id": "PROPOSAL_ORG_TABLE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      },
+      {
+        "item_id": "business_proposal_v1.execution_plan",
+        "document_id": "PROPOSAL_ORG_TABLE",
+        "status": "SKIPPED_REVIEW_ITEM"
+      }
+    ],
+    "by_document": {
+      "PROPOSAL_ORG_TABLE": {
+        "applied": 0,
+        "rejected": 0,
+        "blocked": 0,
+        "skipped": 5,
+        "pending": 0
+      }
+    },
+    "controlled_writer_invoked": false
+  },
+  "validation": {
+    "status": "VALID",
+    "ok": true,
+    "issues": [],
+    "warnings": [],
+    "checks": {
+      "valid_state": true,
+      "terminal_state_immutable": true,
+      "no_duplicate_terminal_event": true,
+      "no_duplicate_document_id": true,
+      "no_duplicate_filename": true,
+      "writer_not_invoked_without_gate": true
+    },
+    "can_transition_sample": {
+      "UPLOADED->ANALYZING": true,
+      "COMPLETED->WRITING": false
+    }
+  },
+  "timeline": [
+    {
+      "at": "2026-08-23T20:10:08Z",
+      "state": "CREATED",
+      "event": "created",
+      "detail": "document_set=business_proposal;routing_mode=explicit"
+    },
+    {
+      "at": "2026-08-23T20:10:08Z",
+      "state": "UPLOADED",
+      "event": "uploaded",
+      "detail": "files=1"
+    },
+    {
+      "at": "2026-08-23T20:10:08Z",
+      "state": "ANALYZING",
+      "event": "analysis_started",
+      "detail": ""
+    },
+    {
+      "at": "2026-08-23T20:10:08Z",
+      "state": "REVIEW_READY",
+      "event": "analysis_completed",
+      "detail": "impacted=1"
+    },
+    {
+      "at": "2026-08-23T20:10:08Z",
+      "state": "WAITING_APPROVAL",
+      "event": "waiting_approval",
+      "detail": ""
+    },
+    {
+      "at": "2026-08-23T20:10:08Z",
+      "state": "WAITING_APPROVAL",
+      "event": "approval_updated",
+      "detail": "approved=5"
+    },
+    {
+      "at": "2026-08-23T20:10:08Z",
+      "state": "WRITING",
+      "event": "writer_started",
+      "detail": "enable_write=False"
+    },
+    {
+      "at": "2026-08-23T20:10:08Z",
+      "state": "VALIDATING",
+      "event": "writer_completed",
+      "detail": "applied=0"
+    },
+    {
+      "at": "2026-08-23T20:10:08Z",
+      "state": "COMPLETED",
+      "event": "completed",
+      "detail": ""
+    }
+  ],
+  "result_rows": [
+    {
+      "document_id": "PROPOSAL_ORG_TABLE",
+      "status": "APPROVED_PENDING_WRITE",
+      "review": "Y",
+      "applied": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "validation": "PASS",
+      "diff_available": false,
+      "download": "data/eval/results/document_tnr/_holdout_work/v2_hol_bp_org_table/v2_hol_bp_org_table_business_proposal_20260823T201008Z/copies/proposal_org_table.docx",
+      "skipped": 5,
+      "pending": 0
+    }
+  ],
+  "errors": [],
+  "metadata": {
+    "legacy_pair_untouched": true,
+    "writer_enabled_default": false,
+    "document_routing_mode": "explicit",
+    "requested_document_set": "business_proposal",
+    "identity_summary": {
+      "ok": true,
+      "per_document": [
+        {
+          "ok": true,
+          "checks": {
+            "no_filename_only_auto_route": true,
+            "canonical_id_deterministic": true,
+            "temporary_and_canonical_id_separated": true,
+            "conflict_requires_review": true,
+            "routed_pack_matches_decision": true,
+            "wrong_route_never_writes": true
+          },
+          "reasons": [],
+          "invariants": [
+            "no_filename_only_auto_route",
+            "canonical_id_deterministic",
+            "temporary_and_canonical_id_separated",
+            "conflict_requires_review",
+            "routed_pack_matches_decision",
+            "wrong_route_never_writes"
+          ]
+        }
+      ]
+    },
+    "needs_identity_confirmation": false,
+    "identity_decisions": [
+      {
+        "decision_id": "idec_86411e1f997e",
+        "source_document_id": "PROPOSAL_ORG_TABLE",
+        "canonical_document_id": "GENERIC_BUSINESS_PROPOSAL",
+        "short_id": "PROPOSAL",
+        "document_type": "BUSINESS_PROPOSAL",
+        "document_role": "business_proposal",
+        "domain_pack_id": "generic_document_v1",
+        "template_id": "business_proposal_v1",
+        "decision_status": "REVIEW_REQUIRED",
+        "top_score": 39.05,
+        "second_score": 0.0,
+        "score_margin": 39.05,
+        "rank_tier": 3,
+        "reason_codes": [
+          "filename_hint:PROPOSAL",
+          "filename_role_hint",
+          "heading_or_title",
+          "proposal_heading_concepts",
+          "insufficient_margin_or_tier"
+        ],
+        "evidence": [
+          {
+            "signal_id": "fn_bae6b95d",
+            "type": "FILENAME_TOKEN",
+            "value": "proposal_org_table.docx"
+          },
+          {
+            "signal_id": "fnrole_c3212e6c",
+            "type": "DOCUMENT_ROLE_HINT",
+            "value": "business_proposal"
+          },
+          {
+            "signal_id": "fmt_fdd5c34d",
+            "type": "FILE_FORMAT",
+            "value": ".docx"
+          },
+          {
+            "signal_id": "hd_ca4bdd52",
+            "type": "DOCUMENT_TITLE",
+            "value": "사업 제안서"
+          },
+          {
+            "signal_id": "hd_d85b8186",
+            "type": "HEADING_TEXT",
+            "value": "수행 조직"
+          },
+          {
+            "signal_id": "hd_a119fc49",
+            "type": "HEADING_TEXT",
+            "value": "본 사업의 수행 조직 구성은 다음과 같습니다."
+          },
+          {
+            "signal_id": "concept_22bf2bf3",
+            "type": "CONTENT_CONCEPT",
+            "value": "business_proposal"
+          },
+          {
+            "signal_id": "tbln_fb14700f",
+            "type": "TEMPLATE_STRUCTURE",
+            "value": "tables:1"
+          },
+          {
+            "signal_id": "th_6816104f",
+            "type": "TABLE_HEADER",
+            "value": "조직 역할 담당"
+          }
+        ],
+        "human_review_required": true,
+        "auto_selected": false,
+        "metadata": {
+          "temporary_source_id": "PROPOSAL_ORG_TABLE",
+          "canonical_id_deterministic": true,
+          "filename_only": false
+        }
+      }
+    ],
+    "pack_routings": [
+      {
+        "routing_id": "route_d159b2d948",
+        "source_document_id": "PROPOSAL_ORG_TABLE",
+        "selected_pack_id": "generic_document_v1",
+        "candidate_pack_ids": [
+          "generic_document_v1"
+        ],
+        "routing_status": "ROUTED",
+        "score": 39.05,
+        "score_margin": 39.05,
+        "reason_codes": [
+          "filename_hint:PROPOSAL",
+          "filename_role_hint",
+          "heading_or_title",
+          "proposal_heading_concepts",
+          "insufficient_margin_or_tier",
+          "explicit_user_pack"
+        ],
+        "human_review_required": false,
+        "actual_pack_invoked": "generic_document_v1",
+        "metadata": {
+          "routing_mode": "explicit",
+          "identity_status": "REVIEW_REQUIRED",
+          "document_set_hint": "business_proposal"
+        }
+      }
+    ],
+    "analysis": {
+      "engine": "business_proposal_pack",
+      "ok": true,
+      "note": "Business proposal pack: proposal intent/table retrieval/ranking; PATCH disabled."
+    },
+    "document_impact_decisions": [
+      {
+        "document_id": "PROPOSAL_ORG_TABLE",
+        "predicted_status": "REVIEW_REQUIRED",
+        "substantive_evidence_count": 5,
+        "role_evidence_count": 2,
+        "exact_identifier_count": 0,
+        "normalized_identifier_count": 0,
+        "semantic_evidence_count": 0,
+        "malformed_identifier_count": 0,
+        "reason_codes": [
+          "substantive_review_evidence"
+        ],
+        "source_stages": [
+          "catalog",
+          "document_paragraph",
+          "generic_template_sections",
+          "proposal_table_retrieval",
+          "upload"
+        ],
+        "top_evidence": [
+          {
+            "evidence_type": "EXACT_HEADING_MATCH",
+            "evidence_value": "수행 조직",
+            "node_id": "heading_0001",
+            "confidence": 0.7,
+            "source_stage": "document_paragraph",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "paragraph_token_overlap"
+            ]
+          },
+          {
+            "evidence_type": "EXACT_HEADING_MATCH",
+            "evidence_value": "본 사업의 수행 조직 구성은 다음과 같습니다.",
+            "node_id": "heading_0002",
+            "confidence": 0.7,
+            "source_stage": "document_paragraph",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "paragraph_token_overlap"
+            ]
+          },
+          {
+            "evidence_type": "TABLE_HEADER_MATCH",
+            "evidence_value": "조직 역할 담당",
+            "node_id": "table_00",
+            "confidence": 0.75,
+            "source_stage": "proposal_table_retrieval",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+              "organization_table_structure",
+              "proposal_table_ambiguous"
+            ]
+          },
+          {
+            "evidence_type": "STRUCTURAL_BLOCK_MATCH",
+            "evidence_value": "수행 조직",
+            "node_id": "heading_0001",
+            "confidence": 0.55,
+            "source_stage": "proposal_table_retrieval",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+              "proposal_table_ambiguous"
+            ]
+          },
+          {
+            "evidence_type": "STRUCTURAL_BLOCK_MATCH",
+            "evidence_value": "본 사업의 수행 조직 구성은 다음과 같습니다.",
+            "node_id": "heading_0002",
+            "confidence": 0.55,
+            "source_stage": "proposal_table_retrieval",
+            "supports_impacted": false,
+            "supports_review": true,
+            "reason_codes": [
+              "PATCH_FORBIDDEN_PROPOSAL_TABLE",
+              "proposal_table_ambiguous"
+            ]
+          }
+        ],
+        "human_review_required": true,
+        "target_status": "EXISTS_EXACT",
+        "validation": {
+          "no_presence_only_impacted": true,
+          "no_template_compatibility_only_impacted": true,
+          "impacted_requires_specific_node_or_addable_target": true,
+          "missing_unsupported_not_impacted": true,
+          "unrelated_request_not_reviewed_without_evidence": true
+        }
+      }
+    ],
+    "node_alignments": [
+      {
+        "alignment_id": "NA-0001",
+        "document_id": "PROPOSAL_ORG_TABLE",
+        "template_node_id": "business_proposal_v1.execution_plan",
+        "document_node_id": "heading_0001",
+        "alignment_type": "HEADING_TO_SECTION",
+        "section_id": "execution_plan",
+        "source_locator": {
+          "paragraph_index": 1
+        },
+        "confidence": 0.55,
+        "reason_codes": [
+          "concept_or_token_bridge"
+        ],
+        "equivalent_for_evaluation": true,
+        "equivalent_for_patch": false,
+        "canonical_concept": null,
+        "canonical_concepts": [],
+        "evaluation_equivalence": true,
+        "patch_equivalence": false
+      },
+      {
+        "alignment_id": "NA-0002",
+        "document_id": "PROPOSAL_ORG_TABLE",
+        "template_node_id": "business_proposal_v1.execution_plan",
+        "document_node_id": "heading_0002",
+        "alignment_type": "HEADING_TO_SECTION",
+        "section_id": "execution_plan",
+        "source_locator": {
+          "paragraph_index": 2
+        },
+        "confidence": 0.55,
+        "reason_codes": [
+          "concept_or_token_bridge"
+        ],
+        "equivalent_for_evaluation": true,
+        "equivalent_for_patch": false,
+        "canonical_concept": null,
+        "canonical_concepts": [],
+        "evaluation_equivalence": true,
+        "patch_equivalence": false
+      },
+      {
+        "alignment_id": "NA-0003",
+        "document_id": "PROPOSAL_ORG_TABLE",
+        "template_node_id": "business_proposal_v1.organization",
+        "document_node_id": "heading_0001",
+        "alignment_type": "HEADING_TO_SECTION",
+        "section_id": "organization",
+        "source_locator": {
+          "paragraph_index": 1
+        },
+        "confidence": 0.8,
+        "reason_codes": [
+          "concept_or_token_bridge",
+          "section_name_hit",
+          "shared_canonical_concept"
+        ],
+        "equivalent_for_evaluation": true,
+        "equivalent_for_patch": false,
+        "canonical_concept": "ORGANIZATION",
+        "canonical_concepts": [
+          "ORGANIZATION"
+        ],
+        "evaluation_equivalence": true,
+        "patch_equivalence": false
+      },
+      {
+        "alignment_id": "NA-0004",
+        "document_id": "PROPOSAL_ORG_TABLE",
+        "template_node_id": "business_proposal_v1.organization",
+        "document_node_id": "heading_0002",
+        "alignment_type": "HEADING_TO_SECTION",
+        "section_id": "organization",
+        "source_locator": {
+          "paragraph_index": 2
+        },
+        "confidence": 0.8,
+        "reason_codes": [
+          "concept_or_token_bridge",
+          "section_name_hit",
+          "shared_canonical_concept"
+        ],
+        "equivalent_for_evaluation": true,
+        "equivalent_for_patch": false,
+        "canonical_concept": "ORGANIZATION",
+        "canonical_concepts": [
+          "ORGANIZATION"
+        ],
+        "evaluation_equivalence": true,
+        "patch_equivalence": false
+      },
+      {
+        "alignment_id": "NA-0005",
+        "document_id": "PROPOSAL_ORG_TABLE",
+        "template_node_id": "business_proposal_v1.organization",
+        "document_node_id": "table_00",
+        "alignment_type": "TABLE_TO_SECTION",
+        "section_id": "organization",
+        "source_locator": {},
+        "confidence": 0.8,
+        "reason_codes": [
+          "concept_or_token_bridge",
+          "section_name_hit",
+          "shared_canonical_concept"
+        ],
+        "equivalent_for_evaluation": true,
+        "equivalent_for_patch": false,
+        "canonical_concept": "ORGANIZATION",
+        "canonical_concepts": [
+          "ORGANIZATION",
+          "TABLE"
+        ],
+        "evaluation_equivalence": true,
+        "patch_equivalence": false
+      }
+    ],
+    "structural_equivalence_groups": [
+      {
+        "group_id": "PROPOSAL_ORG_TABLE:execution_plan",
+        "document_id": "PROPOSAL_ORG_TABLE",
+        "template_node_ids": [
+          "business_proposal_v1.execution_plan"
+        ],
+        "document_node_ids": [
+          "heading_0001",
+          "heading_0002"
+        ],
+        "section_id": "execution_plan",
+        "concepts": [
+          "EXECUTION_PLAN",
+          "ORGANIZATION"
+        ],
+        "evaluation_equivalent": true,
+        "patch_equivalent": false,
+        "reason_codes": [
+          "structural_equivalence"
+        ]
+      },
+      {
+        "group_id": "PROPOSAL_ORG_TABLE:organization",
+        "document_id": "PROPOSAL_ORG_TABLE",
+        "template_node_ids": [
+          "business_proposal_v1.organization"
+        ],
+        "document_node_ids": [
+          "heading_0001",
+          "heading_0002",
+          "table_00"
+        ],
+        "section_id": "organization",
+        "concepts": [
+          "ORGANIZATION",
+          "RESPONSIBILITY",
+          "TABLE"
+        ],
+        "evaluation_equivalent": true,
+        "patch_equivalent": false,
+        "reason_codes": [
+          "structural_equivalence"
+        ]
+      }
+    ],
+    "generic_query_intent": {
+      "raw_change_request": "수행 조직 역할표 변경",
+      "canonical_concepts": [
+        "ORGANIZATION",
+        "REQUIREMENT_INTENT",
+        "RESPONSIBILITY"
+      ],
+      "requested_operation": "UPDATE",
+      "requested_node_roles": [
+        "ORGANIZATION_SECTION",
+        "PROPOSAL_SECTION",
+        "TABLE",
+        "PARAGRAPH_BODY"
+      ],
+      "target_section_concepts": [
+        "ORGANIZATION",
+        "REQUIREMENT_INTENT",
+        "RESPONSIBILITY"
+      ],
+      "intent_label": "ORGANIZATION_UPDATE",
+      "table_intent": true,
+      "list_intent": false,
+      "add_intent": false,
+      "update_intent": true,
+      "delete_intent": false,
+      "document_level": false,
+      "ambiguity": true,
+      "confidence": 0.8999999999999999,
+      "reason_codes": [
+        "op_update",
+        "intent_organization",
+        "ambiguous_multi_concept",
+        "intent:ORGANIZATION_UPDATE"
+      ]
+    },
+    "generic_ranking": {
+      "query_intent": {
+        "raw_change_request": "수행 조직 역할표 변경",
+        "requested_operation": "UPDATE",
+        "primary_concept": "ORGANIZATION",
+        "secondary_concepts": [
+          "REQUIREMENT_INTENT",
+          "RESPONSIBILITY"
+        ],
+        "requested_node_roles": [
+          "ORGANIZATION_SECTION",
+          "PROPOSAL_SECTION",
+          "TABLE",
+          "PARAGRAPH_BODY"
+        ],
+        "table_intent": true,
+        "section_intent": true,
+        "paragraph_intent": true,
+        "add_intent": false,
+        "update_intent": true,
+        "review_intent": false,
+        "ambiguity": true,
+        "confidence": 0.8999999999999999,
+        "reason_codes": [
+          "op_update",
+          "intent_organization",
+          "ambiguous_multi_concept",
+          "intent:ORGANIZATION_UPDATE"
+        ],
+        "canonical_concepts": [
+          "ORGANIZATION",
+          "REQUIREMENT_INTENT",
+          "RESPONSIBILITY"
+        ],
+        "intent_label": "ORGANIZATION_UPDATE",
+        "preferred_template_node_id": "business_proposal_v1.organization"
+      },
+      "structural_match_matrix": [
+        {
+          "candidate_node_id": "heading_0001",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.9,
+          "structural_role_match": 0.12,
+          "template_node_match": 0.85,
+          "parent_section_match": 0.8,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment"
+          ]
+        },
+        {
+          "candidate_node_id": "heading_0002",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.9,
+          "structural_role_match": 0.12,
+          "template_node_match": 0.85,
+          "parent_section_match": 0.8,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment"
+          ]
+        },
+        {
+          "candidate_node_id": "table_00",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.5,
+          "operation_role_match": 0.9,
+          "structural_role_match": 1.0,
+          "template_node_match": 0.85,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.5,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 1.0,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:ORGANIZATION_SECTION",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment"
+          ]
+        },
+        {
+          "candidate_node_id": "business_proposal_v1.execution_plan",
+          "primary_concept_match": 0.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.0,
+          "structural_role_match": 0.9,
+          "template_node_match": 0.85,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 0.2,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.12,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "role_pref:PROPOSAL_SECTION",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment"
+          ]
+        },
+        {
+          "candidate_node_id": "business_proposal_v1.organization",
+          "primary_concept_match": 1.0,
+          "secondary_concept_match": 0.0,
+          "operation_role_match": 0.98,
+          "structural_role_match": 0.9,
+          "template_node_match": 1.0,
+          "parent_section_match": 0.0,
+          "table_header_match": 0.0,
+          "paragraph_content_match": 0.0,
+          "list_content_match": 0.0,
+          "alignment_confidence": 0.88,
+          "physical_editability": 0.2,
+          "virtual_target_penalty": 0.0,
+          "ambiguity_penalty": 0.0,
+          "document_context_penalty": 0.0,
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:PROPOSAL_SECTION",
+            "update_template_section_eval",
+            "preferred_template_node",
+            "eval_equivalent_alignment"
+          ]
+        }
+      ],
+      "ranking_results": {
+        "ranked_node_ids": [
+          "business_proposal_v1.organization",
+          "table_00",
+          "heading_0001",
+          "heading_0002",
+          "business_proposal_v1.execution_plan"
+        ],
+        "n_ranked": 5,
+        "preferred_template_node_id": "business_proposal_v1.organization"
+      },
+      "ranking_candidates": [
+        {
+          "node_id": "business_proposal_v1.organization",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 1,
+          "final_score": 205.44,
+          "structural_role": "PROPOSAL_SECTION",
+          "proposal_structural_role": "PROPOSAL_SECTION",
+          "score_components": {
+            "tier_base": 105.0,
+            "primary_concept_match": 28.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 21.56,
+            "structural_role_match": 18.0,
+            "template_node_match": 18.0,
+            "parent_section_match": 0.0,
+            "table_header_match": 0.0,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 14.08,
+            "physical_editability": 0.8,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.0
+          },
+          "structural_score_components": {
+            "candidate_node_id": "business_proposal_v1.organization",
+            "primary_concept_match": 1.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 0.98,
+            "structural_role_match": 0.9,
+            "template_node_match": 1.0,
+            "parent_section_match": 0.0,
+            "table_header_match": 0.0,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.88,
+            "physical_editability": 0.2,
+            "virtual_target_penalty": 0.0,
+            "ambiguity_penalty": 0.0,
+            "document_context_penalty": 0.0,
+            "reason_codes": [
+              "primary_concept_hit",
+              "role_pref:PROPOSAL_SECTION",
+              "update_template_section_eval",
+              "preferred_template_node",
+              "eval_equivalent_alignment"
+            ]
+          },
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:PROPOSAL_SECTION",
+            "update_template_section_eval",
+            "preferred_template_node",
+            "eval_equivalent_alignment",
+            "RANK_TIER_1",
+            "exact_section_concept_template"
+          ],
+          "rank": 1
+        },
+        {
+          "node_id": "table_00",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 1,
+          "final_score": 215.18,
+          "structural_role": "ORGANIZATION_SECTION",
+          "proposal_structural_role": "ORGANIZATION_SECTION",
+          "score_components": {
+            "tier_base": 105.0,
+            "primary_concept_match": 28.0,
+            "secondary_concept_match": 4.0,
+            "operation_role_match": 19.8,
+            "structural_role_match": 20.0,
+            "template_node_match": 15.299999999999999,
+            "parent_section_match": 0.0,
+            "table_header_match": 0.0,
+            "paragraph_content_match": 5.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 14.08,
+            "physical_editability": 4.0,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.0
+          },
+          "structural_score_components": {
+            "candidate_node_id": "table_00",
+            "primary_concept_match": 1.0,
+            "secondary_concept_match": 0.5,
+            "operation_role_match": 0.9,
+            "structural_role_match": 1.0,
+            "template_node_match": 0.85,
+            "parent_section_match": 0.0,
+            "table_header_match": 0.0,
+            "paragraph_content_match": 0.5,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.88,
+            "physical_editability": 1.0,
+            "virtual_target_penalty": 0.0,
+            "ambiguity_penalty": 0.0,
+            "document_context_penalty": 0.0,
+            "reason_codes": [
+              "primary_concept_hit",
+              "role_pref:ORGANIZATION_SECTION",
+              "aligned_preferred_template",
+              "eval_equivalent_alignment"
+            ]
+          },
+          "reason_codes": [
+            "primary_concept_hit",
+            "role_pref:ORGANIZATION_SECTION",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment",
+            "RANK_TIER_1"
+          ],
+          "rank": 2
+        },
+        {
+          "node_id": "heading_0001",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 2,
+          "final_score": 173.58,
+          "structural_role": "DOCUMENT_HEADING",
+          "proposal_structural_role": "DOCUMENT_HEADING",
+          "score_components": {
+            "tier_base": 82.0,
+            "primary_concept_match": 28.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 19.8,
+            "structural_role_match": 2.4,
+            "template_node_match": 15.299999999999999,
+            "parent_section_match": 8.0,
+            "table_header_match": 0.0,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 14.08,
+            "physical_editability": 4.0,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.0
+          },
+          "structural_score_components": {
+            "candidate_node_id": "heading_0001",
+            "primary_concept_match": 1.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 0.9,
+            "structural_role_match": 0.12,
+            "template_node_match": 0.85,
+            "parent_section_match": 0.8,
+            "table_header_match": 0.0,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.88,
+            "physical_editability": 1.0,
+            "virtual_target_penalty": 0.0,
+            "ambiguity_penalty": 0.0,
+            "document_context_penalty": 0.0,
+            "reason_codes": [
+              "primary_concept_hit",
+              "aligned_preferred_template",
+              "eval_equivalent_alignment"
+            ]
+          },
+          "reason_codes": [
+            "primary_concept_hit",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment",
+            "RANK_TIER_2"
+          ],
+          "rank": 3
+        },
+        {
+          "node_id": "heading_0002",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 2,
+          "final_score": 173.58,
+          "structural_role": "DOCUMENT_HEADING",
+          "proposal_structural_role": "DOCUMENT_HEADING",
+          "score_components": {
+            "tier_base": 82.0,
+            "primary_concept_match": 28.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 19.8,
+            "structural_role_match": 2.4,
+            "template_node_match": 15.299999999999999,
+            "parent_section_match": 8.0,
+            "table_header_match": 0.0,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 14.08,
+            "physical_editability": 4.0,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.0
+          },
+          "structural_score_components": {
+            "candidate_node_id": "heading_0002",
+            "primary_concept_match": 1.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 0.9,
+            "structural_role_match": 0.12,
+            "template_node_match": 0.85,
+            "parent_section_match": 0.8,
+            "table_header_match": 0.0,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.88,
+            "physical_editability": 1.0,
+            "virtual_target_penalty": 0.0,
+            "ambiguity_penalty": 0.0,
+            "document_context_penalty": 0.0,
+            "reason_codes": [
+              "primary_concept_hit",
+              "aligned_preferred_template",
+              "eval_equivalent_alignment"
+            ]
+          },
+          "reason_codes": [
+            "primary_concept_hit",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment",
+            "RANK_TIER_2"
+          ],
+          "rank": 4
+        },
+        {
+          "node_id": "business_proposal_v1.execution_plan",
+          "status": "REVIEW_REQUIRED",
+          "rank_tier": 5,
+          "final_score": 61.22,
+          "structural_role": "PROPOSAL_SECTION",
+          "proposal_structural_role": "PROPOSAL_SECTION",
+          "score_components": {
+            "tier_base": 14.0,
+            "primary_concept_match": 0.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 0.0,
+            "structural_role_match": 18.0,
+            "template_node_match": 15.299999999999999,
+            "parent_section_match": 0.0,
+            "table_header_match": 0.0,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 14.08,
+            "physical_editability": 0.8,
+            "virtual_target_penalty": -0.0,
+            "document_context_penalty": -0.0,
+            "ambiguity_penalty": -0.96
+          },
+          "structural_score_components": {
+            "candidate_node_id": "business_proposal_v1.execution_plan",
+            "primary_concept_match": 0.0,
+            "secondary_concept_match": 0.0,
+            "operation_role_match": 0.0,
+            "structural_role_match": 0.9,
+            "template_node_match": 0.85,
+            "parent_section_match": 0.0,
+            "table_header_match": 0.0,
+            "paragraph_content_match": 0.0,
+            "list_content_match": 0.0,
+            "alignment_confidence": 0.88,
+            "physical_editability": 0.2,
+            "virtual_target_penalty": 0.0,
+            "ambiguity_penalty": 0.12,
+            "document_context_penalty": 0.0,
+            "reason_codes": [
+              "role_pref:PROPOSAL_SECTION",
+              "aligned_preferred_template",
+              "eval_equivalent_alignment"
+            ]
+          },
+          "reason_codes": [
+            "role_pref:PROPOSAL_SECTION",
+            "aligned_preferred_template",
+            "eval_equivalent_alignment",
+            "RANK_TIER_5"
+          ],
+          "rank": 5
+        }
+      ],
+      "validation": {
+        "proposal_concept_rank_consistent": true,
+        "proposal_table_role_consistent": true,
+        "proposal_alignment_valid": false,
+        "virtual_target_only_for_add": true,
+        "business_proposal_not_general_report_fallback": true,
+        "writer_scope_unchanged": true,
+        "issues": [
+          "alignment_without_concept"
+        ]
+      }
+    }
+  }
+}

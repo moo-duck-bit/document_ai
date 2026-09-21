@@ -1,0 +1,4 @@
+[  512.338912] NVRM: Xid (PCI:0000:00:04.0): 79, GPU has fallen off the bus.
+[  512.339104] NVRM: GPU at PCI:0000:00:04.0 (GPU-0) has fallen off the bus.
+[  513.002211] nvidia-nvswitch1: fault detected on port 0
+[  514.118002] CUDA error on device 0 - resetting

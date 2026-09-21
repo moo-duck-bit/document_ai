@@ -1,0 +1,29 @@
+{
+  "raw_change_request": "Results section update",
+  "canonical_concepts": [
+    "RESULTS"
+  ],
+  "requested_operation": "UPDATE",
+  "requested_node_roles": [
+    "PARAGRAPH_BODY",
+    "DOCUMENT_HEADING",
+    "TEMPLATE_SECTION",
+    "SECTION_CONTAINER"
+  ],
+  "target_section_concepts": [
+    "RESULTS"
+  ],
+  "intent_label": "SECTION_UPDATE",
+  "table_intent": false,
+  "list_intent": false,
+  "add_intent": false,
+  "update_intent": true,
+  "delete_intent": false,
+  "document_level": false,
+  "ambiguity": false,
+  "confidence": 0.8999999999999999,
+  "reason_codes": [
+    "op_update",
+    "intent:SECTION_UPDATE"
+  ]
+}

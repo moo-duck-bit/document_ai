@@ -1,0 +1,9 @@
+[
+  {
+    "legacy_node_id": "ec_sw_v1.mdtm.table_00.row_0002.2f1b098a19",
+    "stable_node_id_v1": "stable.table_row.fa220563a2bf6bc0",
+    "stable_node_id_v2": "stablev2.table_row.1c1bc207239bdff3+426e1edd",
+    "stable_node_id_base": "stablev2.table_row.1c1bc207239bdff3",
+    "logical_key": "REQ[REQ-11]|DESIGN[5.1]|TEST[5.1]"
+  }
+]

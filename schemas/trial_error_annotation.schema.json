@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://document-ai.local/schemas/trial_error_annotation.schema.json",
+  "title": "TrialErrorAnnotations",
+  "type": "object",
+  "required": ["trial_id", "annotations"],
+  "properties": {
+    "trial_id": { "type": "string" },
+    "annotations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["document_type", "error_type", "severity"],
+        "properties": {
+          "document_type": { "type": "string" },
+          "location": { "type": "string" },
+          "error_type": {
+            "type": "string",
+            "enum": [
+              "FACT_ERROR",
+              "MISSING_CONTENT",
+              "UNSUPPORTED_ASSUMPTION",
+              "TRACEABILITY_ERROR",
+              "FORMAT_ERROR",
+              "TERMINOLOGY_ERROR",
+              "STYLE_EDIT",
+              "REDUNDANT_CONTENT",
+              "INCONSISTENT_CONTENT",
+              "WRONG_SECTION",
+              "NO_CHANGE_REQUIRED"
+            ]
+          },
+          "severity": {
+            "type": "string",
+            "enum": ["critical", "major", "minor", "style"]
+          },
+          "generated_text": { "type": "string" },
+          "revised_text": { "type": "string" },
+          "source_reference": { "type": "string" },
+          "note": { "type": "string" },
+          "verified": { "type": "boolean" },
+          "source": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

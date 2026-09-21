@@ -1,0 +1,31 @@
+{
+  "raw_change_request": "결론 권고사항 수정",
+  "canonical_concepts": [
+    "CONCLUSION",
+    "RECOMMENDATION",
+    "REQUIREMENT_INTENT"
+  ],
+  "requested_operation": "UPDATE",
+  "requested_node_roles": [
+    "PARAGRAPH_BODY",
+    "DOCUMENT_HEADING",
+    "TEMPLATE_SECTION"
+  ],
+  "target_section_concepts": [
+    "CONCLUSION",
+    "RECOMMENDATION"
+  ],
+  "intent_label": "CONCLUSION_UPDATE",
+  "table_intent": false,
+  "list_intent": false,
+  "add_intent": false,
+  "update_intent": true,
+  "delete_intent": false,
+  "document_level": false,
+  "ambiguity": false,
+  "confidence": 0.8999999999999999,
+  "reason_codes": [
+    "op_update",
+    "intent:CONCLUSION_UPDATE"
+  ]
+}

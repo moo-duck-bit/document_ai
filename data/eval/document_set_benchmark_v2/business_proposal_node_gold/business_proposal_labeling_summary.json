@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-08-01T18:53:53.878177+00:00",
+  "n_bp_cases_total": 22,
+  "n_sealed_rows": 22,
+  "n_excluded_disagreement": 0,
+  "n_excluded_validation_failed": 0,
+  "mode_counts": {
+    "REQUIRED": 14,
+    "AMBIGUOUS": 4,
+    "OPTIONAL": 2,
+    "NOT_APPLICABLE": 2
+  },
+  "agreement_metrics": {
+    "n_common_cases": 22,
+    "raw_agreement_rate": 1.0,
+    "mode_agreement_rate": 1.0,
+    "reference_agreement_rate": 1.0
+  },
+  "validation_status": "VALID",
+  "seal_manifest": {
+    "n_rows": 22,
+    "sealed_files": [
+      "business_proposal_node_gold_final.jsonl"
+    ],
+    "aggregate_hash": "3b6f3de9c8cefb1cf3af466b14330f0aa470dd4e256197910d7c6716eb94b705",
+    "status": "SEALED"
+  },
+  "new_fixtures": [
+    "data/eval/document_set_benchmark_v2/fixtures/business_proposal/proposal_schedule_table.docx",
+    "data/eval/document_set_benchmark_v2/fixtures/business_proposal/proposal_org_table.docx",
+    "data/eval/document_set_benchmark_v2/fixtures/business_proposal/proposal_kpi.docx",
+    "data/eval/document_set_benchmark_v2/fixtures/business_proposal/proposal_deliverables.docx"
+  ],
+  "new_dev_cases": [
+    "v2_dev_bp_sched_table",
+    "v2_dev_bp_labor_cell",
+    "v2_dev_bp_kpi",
+    "v2_dev_bp_deliverable",
+    "v2_dev_bp_market_add",
+    "v2_dev_bp_style_overall",
+    "v2_dev_bp_schedule_section"
+  ],
+  "new_holdout_cases": [
+    "v2_hol_bp_org_table",
+    "v2_hol_bp_effect_para",
+    "v2_hol_bp_risk_amb"
+  ],
+  "projection": {
+    "development_eligibility": "data/eval/document_set_benchmark_v2/development/labels/node_evaluation_eligibility.jsonl",
+    "development_node_impacts": "data/eval/document_set_benchmark_v2/development/labels/node_impacts.jsonl",
+    "holdout_eligibility": "data/eval/document_set_benchmark_v2/holdout/sealed_labels/node_evaluation_eligibility.jsonl",
+    "holdout_node_impacts": "data/eval/document_set_benchmark_v2/holdout/sealed_labels/node_impacts.jsonl",
+    "holdout_reseal_status": "SEALED",
+    "holdout_reseal_aggregate_hash": "d5480aa55e3f75f69dde04330de0256baa9d8a0ab70ac25a6988511040660c94"
+  },
+  "verdict": "READY_FOR_BUSINESS_PROPOSAL_BLIND_NODE_EVALUATION"
+}

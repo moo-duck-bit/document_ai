@@ -1,0 +1,58 @@
+{
+  "trial_id": "trial-002-lockout-multireq",
+  "scenario": "A1_lockout_multireq",
+  "usage": "evaluation_expected_impact_not_model_injection",
+  "requirements": [
+    {
+      "req_id": "Req. 6",
+      "document": "MDSR",
+      "semantic_role": "user_ux_lock_state_guidance",
+      "expected_judgment": "impacted",
+      "expected_action": "update_ux_fields_with_consistency_gate"
+    },
+    {
+      "req_id": "Req. 105",
+      "document": "MDSR",
+      "semantic_role": "login_failure_lockout_policy",
+      "expected_judgment": "impacted",
+      "expected_action": "update_policy_fields",
+      "retrieval_must_include": true,
+      "first_verification_point": true
+    },
+    {
+      "req_id": "Req. 103",
+      "document": "MDSR",
+      "semantic_role": "security_audit_events",
+      "expected_judgment": "impacted",
+      "expected_action": "extend_audit_event_scope_candidate"
+    },
+    {
+      "req_id": "Req. 201",
+      "document": "MDSR",
+      "semantic_role": "dashboard_auth",
+      "expected_judgment": "not_impacted",
+      "expected_action": "SKIPPED_WITH_REASON"
+    }
+  ],
+  "design": [
+    {
+      "req_id": "Req. 105",
+      "document": "MDDR",
+      "expected_judgment": "impacted",
+      "allowed_outcomes": ["PATCHED", "SKIPPED_WITH_REASON"]
+    },
+    {
+      "req_id": "Req. 103",
+      "document": "MDDR",
+      "expected_judgment": "impacted",
+      "allowed_outcomes": ["PATCHED", "SKIPPED_WITH_REASON"]
+    },
+    {
+      "req_id": "Req. 6",
+      "document": "MDDR",
+      "expected_judgment": "uncertain_or_impacted",
+      "allowed_outcomes": ["PATCHED", "SKIPPED_WITH_REASON"]
+    }
+  ],
+  "out_of_scope": ["XXCS", "admin_mode_feature", "form_fill_overhaul"]
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "gr_conclusion_recommendation",
+  "domain": "general_report",
+  "document_set_id": "general_report",
+  "change_request": "결론 권고사항 추가",
+  "input_documents": [
+    {
+      "path": "fixtures/general_report/report_base.docx",
+      "filename": "report_base.docx",
+      "role": "general_report"
+    }
+  ],
+  "enabled_documents": [
+    "REPORT_BASE"
+  ],
+  "expected_status": "PARTIAL",
+  "tags": [
+    "writer_update"
+  ],
+  "difficulty": "easy",
+  "notes": "Conclusion recommendation",
+  "source_type": "fixture"
+}

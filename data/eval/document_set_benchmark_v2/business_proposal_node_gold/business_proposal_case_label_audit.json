@@ -1,0 +1,261 @@
+{
+  "n_cases": 22,
+  "by_new_mode": {
+    "REQUIRED": 14,
+    "AMBIGUOUS": 4,
+    "OPTIONAL": 2,
+    "NOT_APPLICABLE": 2
+  },
+  "by_decision": {
+    "PROMOTE_TO_REQUIRED": 8,
+    "NEW_CASE_REQUIRED": 6,
+    "PROMOTE_TO_AMBIGUOUS": 2,
+    "NEW_CASE_OPTIONAL": 2,
+    "KEEP_NOT_APPLICABLE": 2,
+    "NEW_CASE_AMBIGUOUS": 2
+  },
+  "rows": [
+    {
+      "case_id": "v2_dev_bp_budget",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "OPTIONAL",
+      "new_mode": "REQUIRED",
+      "decision": "PROMOTE_TO_REQUIRED",
+      "expected_physical_node_type": "TABLE",
+      "expected_template_node_id": "business_proposal_v1.budget",
+      "label_confidence": 0.9,
+      "rationale_excerpt": "CR maps to concept 'BUDGET' with a unique matching physical node (table_00, type=TABLE) in section '예산'. Stable ref > Template > Physical priority: template section is used as the projected evaluation"
+    },
+    {
+      "case_id": "v2_dev_bp_deliverable",
+      "document_id": "PROPOSAL_DELIVERABLES",
+      "old_mode": "UNLABELED",
+      "new_mode": "REQUIRED",
+      "decision": "NEW_CASE_REQUIRED",
+      "expected_physical_node_type": "PARAGRAPH",
+      "expected_template_node_id": "business_proposal_v1.expected_outcomes",
+      "label_confidence": 0.9,
+      "rationale_excerpt": "CR maps to concept 'DELIVERABLE' with a unique matching physical node (paragraph_0002, type=PARAGRAPH) in section '산출물'. Stable ref > Template > Physical priority: template section is used as the proj"
+    },
+    {
+      "case_id": "v2_dev_bp_dup_sched",
+      "document_id": "PROPOSAL_DUP_SCHEDULE",
+      "old_mode": "OPTIONAL",
+      "new_mode": "AMBIGUOUS",
+      "decision": "PROMOTE_TO_AMBIGUOUS",
+      "expected_physical_node_type": "HEADING",
+      "expected_template_node_id": "business_proposal_v1.schedule",
+      "label_confidence": 0.75,
+      "rationale_excerpt": "'SCHEDULE' matches 2 distinct sections (heading_0001, heading_0006); the change request does not disambiguate which one is intended, so this is AMBIGUOUS across the section headings plus the template "
+    },
+    {
+      "case_id": "v2_dev_bp_effect",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "OPTIONAL",
+      "new_mode": "REQUIRED",
+      "decision": "PROMOTE_TO_REQUIRED",
+      "expected_physical_node_type": "PARAGRAPH",
+      "expected_template_node_id": "business_proposal_v1.expected_outcomes",
+      "label_confidence": 0.9,
+      "rationale_excerpt": "CR maps to concept 'EXPECTED_EFFECT' with a unique matching physical node (paragraph_0011, type=PARAGRAPH) in section '기대 효과'. Stable ref > Template > Physical priority: template section is used as th"
+    },
+    {
+      "case_id": "v2_dev_bp_en",
+      "document_id": "PROPOSAL_EN",
+      "old_mode": "OPTIONAL",
+      "new_mode": "REQUIRED",
+      "decision": "PROMOTE_TO_REQUIRED",
+      "expected_physical_node_type": "TABLE",
+      "expected_template_node_id": "business_proposal_v1.budget",
+      "label_confidence": 0.9,
+      "rationale_excerpt": "CR maps to concept 'BUDGET' with a unique matching physical node (table_00, type=TABLE) in section 'Budget'. Stable ref > Template > Physical priority: template section is used as the projected evalua"
+    },
+    {
+      "case_id": "v2_dev_bp_kpi",
+      "document_id": "PROPOSAL_KPI",
+      "old_mode": "UNLABELED",
+      "new_mode": "REQUIRED",
+      "decision": "NEW_CASE_REQUIRED",
+      "expected_physical_node_type": "TABLE",
+      "expected_template_node_id": "business_proposal_v1.expected_outcomes",
+      "label_confidence": 0.9,
+      "rationale_excerpt": "CR maps to concept 'KPI' with a unique matching physical node (table_00, type=TABLE) in section '기대 효과'. Stable ref > Template > Physical priority: template section is used as the projected evaluation"
+    },
+    {
+      "case_id": "v2_dev_bp_labor_cell",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "UNLABELED",
+      "new_mode": "REQUIRED",
+      "decision": "NEW_CASE_REQUIRED",
+      "expected_physical_node_type": "TABLE",
+      "expected_template_node_id": "business_proposal_v1.budget",
+      "label_confidence": 0.9,
+      "rationale_excerpt": "CR maps to concept 'COST' with a unique matching physical node (table_00, type=TABLE) in section '예산'. Stable ref > Template > Physical priority: template section is used as the projected evaluation p"
+    },
+    {
+      "case_id": "v2_dev_bp_market_add",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "UNLABELED",
+      "new_mode": "OPTIONAL",
+      "decision": "NEW_CASE_OPTIONAL",
+      "expected_physical_node_type": "NONE",
+      "expected_template_node_id": null,
+      "label_confidence": 0.7,
+      "rationale_excerpt": "Change request does not map to a canonical Business Proposal concept/template section (document-level or out-of-schema request); no gold node can be pinned without risking hallucinated structure."
+    },
+    {
+      "case_id": "v2_dev_bp_no_impact",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "NOT_APPLICABLE",
+      "new_mode": "NOT_APPLICABLE",
+      "decision": "KEEP_NOT_APPLICABLE",
+      "expected_physical_node_type": null,
+      "expected_template_node_id": null,
+      "label_confidence": 0.95,
+      "rationale_excerpt": "tag(s) ['no_impact'] indicate the change request has no structural counterpart in this document (off-topic / cover-only edit)."
+    },
+    {
+      "case_id": "v2_dev_bp_org",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "OPTIONAL",
+      "new_mode": "REQUIRED",
+      "decision": "PROMOTE_TO_REQUIRED",
+      "expected_physical_node_type": "PARAGRAPH",
+      "expected_template_node_id": "business_proposal_v1.organization",
+      "label_confidence": 0.9,
+      "rationale_excerpt": "CR maps to concept 'ORGANIZATION' with a unique matching physical node (paragraph_0009, type=PARAGRAPH) in section '수행 조직'. Stable ref > Template > Physical priority: template section is used as the p"
+    },
+    {
+      "case_id": "v2_dev_bp_risk",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "OPTIONAL",
+      "new_mode": "AMBIGUOUS",
+      "decision": "PROMOTE_TO_AMBIGUOUS",
+      "expected_physical_node_type": "PARAGRAPH",
+      "expected_template_node_id": "business_proposal_v1.risks",
+      "label_confidence": 0.75,
+      "rationale_excerpt": "CR uses ADD phrasing but the target section already exists physically: augmenting the existing 'RISK_MANAGEMENT' section vs. treating this as a fresh addition are both plausible, so this is AMBIGUOUS "
+    },
+    {
+      "case_id": "v2_dev_bp_sched_table",
+      "document_id": "PROPOSAL_SCHEDULE_TABLE",
+      "old_mode": "UNLABELED",
+      "new_mode": "REQUIRED",
+      "decision": "NEW_CASE_REQUIRED",
+      "expected_physical_node_type": "TABLE",
+      "expected_template_node_id": "business_proposal_v1.schedule",
+      "label_confidence": 0.9,
+      "rationale_excerpt": "CR maps to concept 'SCHEDULE' with a unique matching physical node (table_00, type=TABLE) in section '일정'. Stable ref > Template > Physical priority: template section is used as the projected evaluati"
+    },
+    {
+      "case_id": "v2_dev_bp_schedule",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "OPTIONAL",
+      "new_mode": "REQUIRED",
+      "decision": "PROMOTE_TO_REQUIRED",
+      "expected_physical_node_type": "PARAGRAPH",
+      "expected_template_node_id": "business_proposal_v1.schedule",
+      "label_confidence": 0.9,
+      "rationale_excerpt": "CR maps to concept 'SCHEDULE' with a unique matching physical node (paragraph_0003, type=PARAGRAPH) in section '실행 일정'. Stable ref > Template > Physical priority: template section is used as the proje"
+    },
+    {
+      "case_id": "v2_dev_bp_schedule_section",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "UNLABELED",
+      "new_mode": "AMBIGUOUS",
+      "decision": "NEW_CASE_AMBIGUOUS",
+      "expected_physical_node_type": "PARAGRAPH",
+      "expected_template_node_id": "business_proposal_v1.schedule",
+      "label_confidence": 0.75,
+      "rationale_excerpt": "case tagged as scope-ambiguous (whole-section edit vs. single physical node): augmenting the existing 'SCHEDULE' section vs. treating this as a fresh addition are both plausible, so this is AMBIGUOUS "
+    },
+    {
+      "case_id": "v2_dev_bp_style_overall",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "UNLABELED",
+      "new_mode": "OPTIONAL",
+      "decision": "NEW_CASE_OPTIONAL",
+      "expected_physical_node_type": "NONE",
+      "expected_template_node_id": null,
+      "label_confidence": 0.7,
+      "rationale_excerpt": "Change request does not map to a canonical Business Proposal concept/template section (document-level or out-of-schema request); no gold node can be pinned without risking hallucinated structure."
+    },
+    {
+      "case_id": "v2_hol_bp_budget",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "OPTIONAL",
+      "new_mode": "REQUIRED",
+      "decision": "PROMOTE_TO_REQUIRED",
+      "expected_physical_node_type": "TABLE",
+      "expected_template_node_id": "business_proposal_v1.budget",
+      "label_confidence": 0.9,
+      "rationale_excerpt": "CR maps to concept 'BUDGET' with a unique matching physical node (table_00, type=TABLE) in section '예산'. Stable ref > Template > Physical priority: template section is used as the projected evaluation"
+    },
+    {
+      "case_id": "v2_hol_bp_effect_para",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "UNLABELED",
+      "new_mode": "REQUIRED",
+      "decision": "NEW_CASE_REQUIRED",
+      "expected_physical_node_type": "PARAGRAPH",
+      "expected_template_node_id": "business_proposal_v1.expected_outcomes",
+      "label_confidence": 0.9,
+      "rationale_excerpt": "CR maps to concept 'EXPECTED_EFFECT' with a unique matching physical node (paragraph_0011, type=PARAGRAPH) in section '기대 효과'. Stable ref > Template > Physical priority: template section is used as th"
+    },
+    {
+      "case_id": "v2_hol_bp_no_impact",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "NOT_APPLICABLE",
+      "new_mode": "NOT_APPLICABLE",
+      "decision": "KEEP_NOT_APPLICABLE",
+      "expected_physical_node_type": null,
+      "expected_template_node_id": null,
+      "label_confidence": 0.95,
+      "rationale_excerpt": "tag(s) ['no_impact'] indicate the change request has no structural counterpart in this document (off-topic / cover-only edit)."
+    },
+    {
+      "case_id": "v2_hol_bp_org_table",
+      "document_id": "PROPOSAL_ORG_TABLE",
+      "old_mode": "UNLABELED",
+      "new_mode": "REQUIRED",
+      "decision": "NEW_CASE_REQUIRED",
+      "expected_physical_node_type": "TABLE",
+      "expected_template_node_id": "business_proposal_v1.organization",
+      "label_confidence": 0.9,
+      "rationale_excerpt": "CR maps to concept 'ORGANIZATION' with a unique matching physical node (table_00, type=TABLE) in section '수행 조직'. Stable ref > Template > Physical priority: template section is used as the projected e"
+    },
+    {
+      "case_id": "v2_hol_bp_risk",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "OPTIONAL",
+      "new_mode": "REQUIRED",
+      "decision": "PROMOTE_TO_REQUIRED",
+      "expected_physical_node_type": "PARAGRAPH",
+      "expected_template_node_id": "business_proposal_v1.risks",
+      "label_confidence": 0.9,
+      "rationale_excerpt": "CR maps to concept 'RISK_MANAGEMENT' with a unique matching physical node (paragraph_0007, type=PARAGRAPH) in section '위험 관리'. Stable ref > Template > Physical priority: template section is used as th"
+    },
+    {
+      "case_id": "v2_hol_bp_risk_amb",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "UNLABELED",
+      "new_mode": "AMBIGUOUS",
+      "decision": "NEW_CASE_AMBIGUOUS",
+      "expected_physical_node_type": "PARAGRAPH",
+      "expected_template_node_id": "business_proposal_v1.risks",
+      "label_confidence": 0.75,
+      "rationale_excerpt": "case tagged as scope-ambiguous (whole-section edit vs. single physical node): augmenting the existing 'RISK_MANAGEMENT' section vs. treating this as a fresh addition are both plausible, so this is AMB"
+    },
+    {
+      "case_id": "v2_hol_bp_sched",
+      "document_id": "PROPOSAL_BASE",
+      "old_mode": "OPTIONAL",
+      "new_mode": "REQUIRED",
+      "decision": "PROMOTE_TO_REQUIRED",
+      "expected_physical_node_type": "PARAGRAPH",
+      "expected_template_node_id": "business_proposal_v1.schedule",
+      "label_confidence": 0.9,
+      "rationale_excerpt": "CR maps to concept 'SCHEDULE' with a unique matching physical node (paragraph_0003, type=PARAGRAPH) in section '실행 일정'. Stable ref > Template > Physical priority: template section is used as the proje"
+    }
+  ]
+}

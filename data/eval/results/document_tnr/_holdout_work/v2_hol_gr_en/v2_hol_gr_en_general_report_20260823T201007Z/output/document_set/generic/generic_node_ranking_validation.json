@@ -1,0 +1,7 @@
+{
+  "operation_role_rank_consistent": true,
+  "virtual_target_only_for_add": true,
+  "table_intent_prefers_table_structure": true,
+  "generic_ranking_deterministic": true,
+  "issues": []
+}

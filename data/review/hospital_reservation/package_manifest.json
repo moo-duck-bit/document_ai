@@ -1,0 +1,16 @@
+{
+  "case_id": "hospital_reservation",
+  "case_dir": "data\\cases\\hospital_reservation",
+  "review_dir": "data\\review\\hospital_reservation",
+  "split": "holdout",
+  "prepared_at": "2026-07-14",
+  "files": {
+    "generated_mdsr.docx": "data\\review\\hospital_reservation\\generated_mdsr.docx",
+    "generated_mddr.docx": "data\\review\\hospital_reservation\\generated_mddr.docx",
+    "human_review_checklist.md": "data\\review\\hospital_reservation\\human_review_checklist.md",
+    "gold_fields_review.json": "data\\review\\hospital_reservation\\gold_fields_review.json",
+    "review_result.template.json": "data\\review\\hospital_reservation\\review_result.template.json",
+    "reviewer_instructions.md": "data\\review\\hospital_reservation\\reviewer_instructions.md"
+  },
+  "status": "ready_for_review"
+}

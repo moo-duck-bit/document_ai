@@ -1,0 +1,83 @@
+{
+  "freeze_id": "www_short_paper_v1",
+  "frozen_at": "2026-09-14T18:08:00.596169+00:00",
+  "venue": "WWW short paper",
+  "claim_mode": "B_then_A_fallback",
+  "claim_mode_note": "Primary narrative: Change Impact safety under Document-TNR; Form Fill appears as same-contract new-mode + secondary Field F1. If space/evidence insufficient, fall back to Change Impact only (A).",
+  "surviving_claim": "Multi-document Change Impact → writable scope → μ=(false_patch, unsafe_write, original_broken, unapproved_write) measured as one programmatic bench.",
+  "pilot_run": "data/pilot/results/pilot_run_01/safety_scorecard.json",
+  "pilot": {
+    "safety_scorecard": {
+      "original_changed_count": 0,
+      "unauthorized_writer_count": 0,
+      "wrong_document_count": 0,
+      "wrong_node_write_count": 0,
+      "path_escape_count": 0,
+      "auto_approve_count": 0,
+      "writer_executions": 0,
+      "safety_status": "PASS"
+    },
+    "mu": {
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0
+    },
+    "mu_zero": true,
+    "tnr_satisfied": true,
+    "components": {
+      "false_patch_ok": true,
+      "unsafe_write_ok": true,
+      "original_preserved": true,
+      "approved_write_only": true
+    }
+  },
+  "holdout_safety_scorecard": {
+    "path": "data/eval/results/document_tnr/holdout_safety_scorecard.json",
+    "mu": {
+      "false_patch": 0,
+      "unsafe_write": 0,
+      "original_broken": 0,
+      "unapproved_write": 0
+    },
+    "tnr_satisfied": true
+  },
+  "key_alignment": {
+    "mu_keys": [
+      "false_patch",
+      "unsafe_write",
+      "original_broken",
+      "unapproved_write"
+    ],
+    "pilot_to_mu": {
+      "false_patch": [
+        "false_patch_count",
+        "wrong_node_write_count",
+        "wrong_document_count"
+      ],
+      "unsafe_write": [
+        "unsafe_auto_patch_count",
+        "auto_approve_count",
+        "path_escape_count",
+        "path_security_violation_count",
+        "path_traversal_attempt_count",
+        "external_path_access_count"
+      ],
+      "original_broken": [
+        "source_original_changed_count",
+        "original_changed_count",
+        "examples_original_changed_count",
+        "freeze_changed_count"
+      ],
+      "unapproved_write": [
+        "writer_without_approval_count",
+        "write_without_approval_count",
+        "unauthorized_writer_attempt_count",
+        "unauthorized_writer_count",
+        "unauthorized_write_count"
+      ]
+    },
+    "statement": "RQ1 (plain): after a document-set write, μ=(false_patch, unsafe_write, original_broken, unapproved_write) stays zero and every source original still matches baseline fingerprint b.",
+    "mapper": "map_safety_scorecard_to_mu"
+  }
+}

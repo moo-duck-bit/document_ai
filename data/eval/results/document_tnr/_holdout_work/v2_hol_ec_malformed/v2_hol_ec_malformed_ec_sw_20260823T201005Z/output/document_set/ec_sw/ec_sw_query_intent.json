@@ -1,0 +1,19 @@
+{
+  "raw_change_request": "REQ11 잘못된 표기",
+  "requirement_ids": [],
+  "design_ids": [],
+  "test_ids": [],
+  "identifier_status": "NONE",
+  "primary_identifier_type": "NONE",
+  "secondary_identifier_types": [],
+  "semantic_terms": [
+    "req11",
+    "잘못된",
+    "표기"
+  ],
+  "ambiguity": false,
+  "reason_codes": [
+    "malformed_requirement_excluded",
+    "no_identifier"
+  ]
+}

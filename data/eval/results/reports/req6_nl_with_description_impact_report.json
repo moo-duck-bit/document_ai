@@ -1,6 +1,6 @@
 {
   "case_dir": "data\\cases\\mindrium_xa",
-  "change_id": "chg-20260702-d13c1e",
+  "change_id": "chg-20260709-c8a647",
   "summary": "Req. 6 변경",
   "mode": "dry-run",
   "dry_run": true,
@@ -9,7 +9,7 @@
       "agent_id": "requirement",
       "status": "ok",
       "data": {
-        "change_id": "chg-20260702-d13c1e",
+        "change_id": "chg-20260709-c8a647",
         "summary": "Req. 6 변경",
         "req_ids": [
           "Req. 6"
@@ -215,7 +215,7 @@
       "agent_id": "requirement",
       "status": "ok",
       "data": {
-        "change_id": "chg-20260702-d13c1e",
+        "change_id": "chg-20260709-c8a647",
         "summary": "Req. 6 변경",
         "req_ids": [
           "Req. 6"

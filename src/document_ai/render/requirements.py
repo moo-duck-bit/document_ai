@@ -82,17 +82,40 @@ def _ensure_req_row_labels(table: Table) -> bool:
     return changed
 
 
+def _short_req_title(req: dict[str, Any]) -> str:
+    if req.get("title") or req.get("summary"):
+        return str(req.get("title") or req.get("summary"))
+    description = (req.get("description") or "").strip()
+    if not description:
+        return ""
+    return description.split(".")[0].strip()[:80]
+
+
+def _default_criteria(req_id: str) -> str:
+    m = re.search(r"(\d+)", req_id)
+    num = int(m.group(1)) if m else 0
+    if num >= 200:
+        return "명세된 비기능 목표·측정 기준을 성능/가용성/호환성 시험에서 검증 가능해야 한다."
+    if num >= 100:
+        return "OWASP ASVS·PCI DSS·개인정보보호법 관련 통제를 보안 시험에서 검증 가능해야 한다."
+    return ""
+
+
 def _fill_req_table_full(table: Table, req: dict[str, Any], *, overwrite: bool = False) -> bool:
     description = req.get("description", "")
     purpose = req.get("purpose", "")
-    criteria = req.get("criteria", "")
-    if not any([description, purpose, criteria]):
+    criteria = req.get("criteria", "") or _default_criteria(_req_id_from_table(table) or "")
+    title = _short_req_title(req)
+    if not any([description, purpose, criteria, title]):
         return False
 
     req_id = _req_id_from_table(table) or ""
-    req_num = int(re.search(r"(\d+)", req_id).group(1)) if re.search(r"(\d+)", req_id) else 0
-    if req_num < 100:
-        _ensure_req_row_labels(table)
+    _ensure_req_row_labels(table)
+
+    if title and len(table.rows[0].cells) > 1:
+        cell = table.rows[0].cells[1]
+        if overwrite or not cell.text.strip():
+            cell.text = title
 
     filled = False
     unlabeled: list = []
@@ -185,6 +208,7 @@ def ensure_requirement_tables(doc: Document, req_ids: list[str]) -> list[str]:
             for cell in new_table.rows[ri].cells:
                 if cell.text.strip() and not re.match(r"^Req\.", cell.text.strip()):
                     cell.text = ""
+        _ensure_req_row_labels(new_table)
         existing.add(req_id)
         added.append(req_id)
 

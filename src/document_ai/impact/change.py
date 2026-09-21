@@ -38,12 +38,19 @@ def merge_requirement_changes(requirements_payload: dict[str, Any], change: dict
         req_id = normalize_requirement_id(item.get("req_id", ""))
         if not req_id:
             continue
-        description = item.get("description")
         if req_id in by_id:
-            if description is not None:
-                by_id[req_id]["description"] = description
+            row = by_id[req_id]
         else:
-            by_id[req_id] = {"req_id": req_id, "description": description or ""}
+            row = {"req_id": req_id}
+            by_id[req_id] = row
+
+        for field in ("description", "purpose", "criteria", "title", "summary"):
+            value = item.get(field)
+            if value is not None:
+                row[field] = value
+        if not row.get("description"):
+            row.setdefault("description", "")
+
         updated.append(req_id)
 
     requirements_payload["requirements"] = sorted(by_id.values(), key=lambda r: requirement_sort_key(r["req_id"]))

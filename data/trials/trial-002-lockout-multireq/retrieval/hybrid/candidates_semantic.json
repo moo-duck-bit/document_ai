@@ -1,0 +1,581 @@
+{
+  "method": "semantic",
+  "top_k": 15,
+  "expected_impact_used_in_retrieval": false,
+  "candidates": [
+    {
+      "candidate_id": "Req. 105",
+      "document": "MDDR",
+      "title": "API 요청 과다 방지 및 IP 차단",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+      "source_locator": "block_kind=paragraph;block_index=213",
+      "lexical_score": 0.49,
+      "semantic_score": 0.435211,
+      "hybrid_score": 1.0,
+      "rank": 1,
+      "matched_evidence": [
+        "감사",
+        "계정",
+        "기록으로",
+        "로그인",
+        "시간",
+        "실패",
+        "이벤트는",
+        "일정",
+        "잠금"
+      ],
+      "evidence_snippet": "…로그인 시도를 제한하도록 설계한다. 로그인 실패 및 계정 잠금 이벤트는 감사 기록으로 저장할 수 있도록 설계한다.",
+      "retrieval_reason": "method=semantic; lex=0.49; sem=0.435211; hybrid=1.0; doc=MDDR; tokens=['감사', '계정', '기록으로', '로그인', '시간', '실패', '이벤트는', '일정']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 9,
+          "query_token_count": 33,
+          "coverage": 0.2727,
+          "jaccard": 0.1636,
+          "keyword_boost": 0.25,
+          "title_boost": 0.0
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 1.0,
+        "semantic_norm": 1.0,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    },
+    {
+      "candidate_id": "Req. 103",
+      "document": "MDDR",
+      "title": "감사 기록 생성 및 관리",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+      "source_locator": "block_kind=paragraph;block_index=199",
+      "lexical_score": 0.305478,
+      "semantic_score": 0.15164,
+      "hybrid_score": 0.458427,
+      "rank": 2,
+      "matched_evidence": [
+        "감사",
+        "로그인",
+        "실패"
+      ],
+      "evidence_snippet": "감사 기록 생성 및 관리 로그인 성공, 실패, 의료진 환자 등록에 대해 감사 기록을 audit.log 파일에 JSON형식으로 저장하도록 설계한다. 감사 록 대상은 로그인 성공 여부, 의료진 환자 등록으로 한다. 감사 기록 저장 실패 시 stderr에 경고를 출력하고, 로그인·환자 등록 …",
+      "retrieval_reason": "method=semantic; lex=0.305478; sem=0.15164; hybrid=0.458427; doc=MDDR; tokens=['감사', '로그인', '실패']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 3,
+          "query_token_count": 33,
+          "coverage": 0.0909,
+          "jaccard": 0.0395,
+          "keyword_boost": 0.15000000000000002,
+          "title_boost": 0.08
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 0.623424,
+        "semantic_norm": 0.348429,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    },
+    {
+      "candidate_id": "Req. 103",
+      "document": "MDSR",
+      "title": "감사 기록 생성 및 관리",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+      "source_locator": "ooxml_req_block:22",
+      "lexical_score": 0.32697,
+      "semantic_score": 0.144504,
+      "hybrid_score": 0.466134,
+      "rank": 3,
+      "matched_evidence": [
+        "감사",
+        "기록으로",
+        "로그인",
+        "실패"
+      ],
+      "evidence_snippet": "감사 기록 생성 및 관리 설명 서버는 주요 보안 이벤트에 대한 감사기록을 생성하고 관리해야 한다. 목적 로그인 등 보안 관련 이벤트를 추적하여 비인가 접근 및 이상 행위 발생 시 원인 분석 및 대응이 가능록 하기 위함이다. 기준 로그인 성공 및 실패 이력은 감사 기록으로 생성되어야 한다…",
+      "retrieval_reason": "method=semantic; lex=0.32697; sem=0.144504; hybrid=0.466134; doc=MDSR; tokens=['감사', '기록으로', '로그인', '실패']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 4,
+          "query_token_count": 33,
+          "coverage": 0.1212,
+          "jaccard": 0.0404,
+          "keyword_boost": 0.15000000000000002,
+          "title_boost": 0.08
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 0.667286,
+        "semantic_norm": 0.332032,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    },
+    {
+      "candidate_id": "Req. 101",
+      "document": "MDSR",
+      "title": "권한에 따른 API 접근 통제",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+      "source_locator": "ooxml_req_block:20",
+      "lexical_score": 0.292399,
+      "semantic_score": 0.133009,
+      "hybrid_score": 0.422065,
+      "rank": 4,
+      "matched_evidence": [
+        "감사",
+        "기록으로",
+        "로그인",
+        "실패",
+        "이벤트는",
+        "하며"
+      ],
+      "evidence_snippet": "…적절한 오류 응답을 반환해야 한다. 로그인 성공,실패 등 인증 이벤트는 감사 기록으로 남긴다.",
+      "retrieval_reason": "method=semantic; lex=0.292399; sem=0.133009; hybrid=0.422065; doc=MDSR; tokens=['감사', '기록으로', '로그인', '실패', '이벤트는', '하며']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 6,
+          "query_token_count": 33,
+          "coverage": 0.1818,
+          "jaccard": 0.0504,
+          "keyword_boost": 0.15000000000000002,
+          "title_boost": 0.0
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 0.596733,
+        "semantic_norm": 0.30562,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    },
+    {
+      "candidate_id": "Req. 6",
+      "document": "MDSR",
+      "title": "서버와의 통신 중 인증 관련 에러 발생 시 사용자 안내",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+      "source_locator": "ooxml_req_block:6",
+      "lexical_score": 0.316128,
+      "semantic_score": 0.113937,
+      "hybrid_score": 0.415142,
+      "rank": 5,
+      "matched_evidence": [
+        "로그인",
+        "실패",
+        "안내해야",
+        "알림을",
+        "재시도"
+      ],
+      "evidence_snippet": "…애플리케이션 사용을 위한 구체적인 안내를 제공해야 한다. 이러한 에러는 로그인 실패, 세션 만료, 권한 부족 등 다양한 인증 문제를 포함할 수 있다. 에러 메시지는 사용자가 문제를 이해하고 적절한 조치를 취할 수 있도록 명확하고 이해하기 쉬운 언어로 제공되어야 한다.  목적 이 요구사항은 사용자가 인증 문제로 인해 혼란을 겪거나 애플리케이션 사용을 중단하지…",
+      "retrieval_reason": "method=semantic; lex=0.316128; sem=0.113937; hybrid=0.415142; doc=MDSR; tokens=['로그인', '실패', '안내해야', '알림을', '재시도']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 5,
+          "query_token_count": 33,
+          "coverage": 0.1515,
+          "jaccard": 0.0336,
+          "keyword_boost": 0.2,
+          "title_boost": 0.0
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 0.645159,
+        "semantic_norm": 0.261797,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    },
+    {
+      "candidate_id": "Req. 102",
+      "document": "MDDR",
+      "title": "서버 인증 및 토큰 관리 메커니즘",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+      "source_locator": "block_kind=paragraph;block_index=193",
+      "lexical_score": 0.253598,
+      "semantic_score": 0.110425,
+      "hybrid_score": 0.359255,
+      "rank": 6,
+      "matched_evidence": [
+        "감사",
+        "기록으로",
+        "로그인",
+        "실패"
+      ],
+      "evidence_snippet": "…증 상태를 무효화하도록 설계한다. 인증 실패 및 토큰 검증 실패 이력은 감사 기록으로 저장하도록 설계한다.",
+      "retrieval_reason": "method=semantic; lex=0.253598; sem=0.110425; hybrid=0.359255; doc=MDDR; tokens=['감사', '기록으로', '로그인', '실패']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 4,
+          "query_token_count": 33,
+          "coverage": 0.1212,
+          "jaccard": 0.0625,
+          "keyword_boost": 0.15000000000000002,
+          "title_boost": 0.0
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 0.517547,
+        "semantic_norm": 0.253728,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    },
+    {
+      "candidate_id": "Req. 110",
+      "document": "MDSR",
+      "title": "대시보드 데이터 제공 API",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+      "source_locator": "ooxml_req_block:29",
+      "lexical_score": 0.269822,
+      "semantic_score": 0.103607,
+      "hybrid_score": 0.3631,
+      "rank": 7,
+      "matched_evidence": [
+        "감사",
+        "계정",
+        "관리자",
+        "기록으로",
+        "남겨야"
+      ],
+      "evidence_snippet": "…사용자의 최신 활동 상태를 반영해야 한다. 대시보드 데이터 조회 이력은 감사 기록으로 남겨야 한다.  대시보드",
+      "retrieval_reason": "method=semantic; lex=0.269822; sem=0.103607; hybrid=0.3631; doc=MDSR; tokens=['감사', '계정', '관리자', '기록으로', '남겨야']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 5,
+          "query_token_count": 33,
+          "coverage": 0.1515,
+          "jaccard": 0.0459,
+          "keyword_boost": 0.15000000000000002,
+          "title_boost": 0.0
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 0.550657,
+        "semantic_norm": 0.238062,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    },
+    {
+      "candidate_id": "Req. 105",
+      "document": "MDSR",
+      "title": "API 요청 과다 방지 및 IP 차단",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+      "source_locator": "ooxml_req_block:24",
+      "lexical_score": 0.19748,
+      "semantic_score": 0.103604,
+      "hybrid_score": 0.304041,
+      "rank": 8,
+      "matched_evidence": [
+        "계정",
+        "로그인",
+        "시간",
+        "일정"
+      ],
+      "evidence_snippet": "… 요청 발생 시 요청을 제한해야 한다. 요청 제한은 IP 주소, 사용자 계정 또는 인증 토큰 단위로 적용할 수 있어야 한다. 로그인, 인증 관련 API에는 별도의 요청 제한 정책이 적용되어야 한다. 설정된 임계치를 초과한 요청은 일정 시간 동안 차단되어야 한다.",
+      "retrieval_reason": "method=semantic; lex=0.19748; sem=0.103604; hybrid=0.304041; doc=MDSR; tokens=['계정', '로그인', '시간', '일정']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 4,
+          "query_token_count": 33,
+          "coverage": 0.1212,
+          "jaccard": 0.0421,
+          "keyword_boost": 0.1,
+          "title_boost": 0.0
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 0.40302,
+        "semantic_norm": 0.238055,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    },
+    {
+      "candidate_id": "Req. 6",
+      "document": "MDDR",
+      "title": "서버와의 통신 중 인증 관련 에러 발생 시 사용자 안내",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+      "source_locator": "block_kind=paragraph;block_index=93",
+      "lexical_score": 0.149924,
+      "semantic_score": 0.102501,
+      "hybrid_score": 0.263699,
+      "rank": 9,
+      "matched_evidence": [
+        "로그인",
+        "실패"
+      ],
+      "evidence_snippet": "서버와의 통신 중 인증 관련 에러 발생 시 사용자 안내 로그인 실패, 세션 만료, 권한 부족 등 인증 오류 발생 시 사용자에게 일반화된 오류 메시지를 제공하도록 설계한다. 인증 토큰 만료 시 갱신 토큰을 사용하여 접근 토큰을 재발급하도록 설계한다. 토큰 재발급 실패 또는 인증 상태를 복구할 수 없는 경우 저장된 인증 정보를 삭제하고 재로그인…",
+      "retrieval_reason": "method=semantic; lex=0.149924; sem=0.102501; hybrid=0.263699; doc=MDDR; tokens=['로그인', '실패']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 2,
+          "query_token_count": 33,
+          "coverage": 0.0606,
+          "jaccard": 0.025,
+          "keyword_boost": 0.1,
+          "title_boost": 0.0
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 0.305967,
+        "semantic_norm": 0.23552,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    },
+    {
+      "candidate_id": "Req. 206",
+      "document": "MDSR",
+      "title": "세션 관리",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+      "source_locator": "ooxml_req_block:36",
+      "lexical_score": 0.149483,
+      "semantic_score": 0.092832,
+      "hybrid_score": 0.250009,
+      "rank": 10,
+      "matched_evidence": [
+        "로그인",
+        "시간",
+        "일정",
+        "하며"
+      ],
+      "evidence_snippet": "… 활동이 없을 경우 자동으로 만료되어야 한다. 세션 만료 시 사용자는 재로그인을 통해 다시 인증해야 한다. 인증 토큰 또는 세션 정보는 안전하게 저장 및 관리되어야 한다. 로그아웃 시 세션은 즉시 종료되어야 한다.",
+      "retrieval_reason": "method=semantic; lex=0.149483; sem=0.092832; hybrid=0.250009; doc=MDSR; tokens=['로그인', '시간', '일정', '하며']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 4,
+          "query_token_count": 33,
+          "coverage": 0.1212,
+          "jaccard": 0.0488,
+          "keyword_boost": 0.05,
+          "title_boost": 0.0
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 0.305067,
+        "semantic_norm": 0.213303,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    },
+    {
+      "candidate_id": "Req. 15",
+      "document": "MDSR",
+      "title": "알림 설정 및 알림 기반 활동 진입",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+      "source_locator": "ooxml_req_block:15",
+      "lexical_score": 0.122915,
+      "semantic_score": 0.091134,
+      "hybrid_score": 0.22598,
+      "rank": 11,
+      "matched_evidence": [
+        "시간",
+        "알림을",
+        "하며"
+      ],
+      "evidence_snippet": "… 후 치료 활동으로 즉시 진입할 수 있어야 한다. 목적 사용자가 설정한 시간 또는 위치에서 치료 활동에 참여할 수 있도록 유도하고, 불안 발생 상황에서 앱의 치료 기능을 활용할 수 있도록 하기 위함이다.  기준 알림 이름, 시간, 위치, 반복 요일을 설정하여 알림을 추가할 수 있어야 한다. 위치 기반 알림을 토글 버튼으로 켜고 끌 수 있어야 한다. 사용자가…",
+      "retrieval_reason": "method=semantic; lex=0.122915; sem=0.091134; hybrid=0.22598; doc=MDSR; tokens=['시간', '알림을', '하며']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 3,
+          "query_token_count": 33,
+          "coverage": 0.0909,
+          "jaccard": 0.0309,
+          "keyword_boost": 0.05,
+          "title_boost": 0.0
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 0.250847,
+        "semantic_norm": 0.209402,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    },
+    {
+      "candidate_id": "Req. 2",
+      "document": "MDSR",
+      "title": "사용자 등록 및 식별 지원",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+      "source_locator": "ooxml_req_block:2",
+      "lexical_score": 0.216335,
+      "semantic_score": 0.08787,
+      "hybrid_score": 0.297741,
+      "rank": 12,
+      "matched_evidence": [
+        "감사",
+        "계정",
+        "안내해야",
+        "지원해야",
+        "하며"
+      ],
+      "evidence_snippet": "…있어야 한다. 회원가입 과정에서 인가되지 않은 사용 금지 및 사용 기록 감사 가능성을 사용자에게 안내해야 한다. 직접 식별정보는 저장 및 제공 목적에 따라 인증 및 권한 기반 접근 통제를 통해 보호하며, 권한 없는 사용자가 해당 정보만으로 사용자를 식별할 수 없도록 관리되어야 한다.",
+      "retrieval_reason": "method=semantic; lex=0.216335; sem=0.08787; hybrid=0.297741; doc=MDSR; tokens=['감사', '계정', '안내해야', '지원해야', '하며']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 5,
+          "query_token_count": 33,
+          "coverage": 0.1515,
+          "jaccard": 0.0342,
+          "keyword_boost": 0.1,
+          "title_boost": 0.0
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 0.4415,
+        "semantic_norm": 0.201902,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    },
+    {
+      "candidate_id": "Req. 101",
+      "document": "MDDR",
+      "title": "권한에 따른 API 접근 통제",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+      "source_locator": "block_kind=paragraph;block_index=190",
+      "lexical_score": 0.199134,
+      "semantic_score": 0.081252,
+      "hybrid_score": 0.274576,
+      "rank": 13,
+      "matched_evidence": [
+        "감사",
+        "기록으로",
+        "실패",
+        "이벤트는"
+      ],
+      "evidence_snippet": "…이터에만 접근할 수 있도록 설계한다. 권한 검증 실패 및 인증 이벤트는 감사 기록으로 남기도록 설계한다.",
+      "retrieval_reason": "method=semantic; lex=0.199134; sem=0.081252; hybrid=0.274576; doc=MDDR; tokens=['감사', '기록으로', '실패', '이벤트는']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 4,
+          "query_token_count": 33,
+          "coverage": 0.1212,
+          "jaccard": 0.0476,
+          "keyword_boost": 0.1,
+          "title_boost": 0.0
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 0.406396,
+        "semantic_norm": 0.186696,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    },
+    {
+      "candidate_id": "Req. 206",
+      "document": "MDDR",
+      "title": "세션 관리",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mddr_EC-SW-MDDR(XA) 소프트웨어 설계 명세서.docx",
+      "source_locator": "block_kind=paragraph;block_index=286",
+      "lexical_score": 0.127273,
+      "semantic_score": 0.073639,
+      "hybrid_score": 0.205418,
+      "rank": 14,
+      "matched_evidence": [
+        "로그인",
+        "시간",
+        "일정"
+      ],
+      "evidence_snippet": "… 경우 세션을 만료 처리한다 세션 만료 시 저장된 인증정보를 삭제한 뒤 로그인 화면으로 이동하도록 설계한다. 세션 만료 기준 시간은 운영 정책에 따라 설정하며, 사용자가 다시 서비스를 이용하려면 재로그인을 수행하도록 설계한다.",
+      "retrieval_reason": "method=semantic; lex=0.127273; sem=0.073639; hybrid=0.205418; doc=MDDR; tokens=['로그인', '시간', '일정']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 3,
+          "query_token_count": 33,
+          "coverage": 0.0909,
+          "jaccard": 0.0455,
+          "keyword_boost": 0.05,
+          "title_boost": 0.0
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 0.259741,
+        "semantic_norm": 0.169203,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    },
+    {
+      "candidate_id": "Req. 102",
+      "document": "MDSR",
+      "title": "서버 인증 및 토큰 관리 메커니즘",
+      "source_path": "data/trials/trial-002-lockout-multireq/reference/spec_mdsr_EC-SW-MDSR(XA)_소프트웨어_요구사항명세서.docx",
+      "source_locator": "ooxml_req_block:21",
+      "lexical_score": 0.220206,
+      "semantic_score": 0.071276,
+      "hybrid_score": 0.278024,
+      "rank": 15,
+      "matched_evidence": [
+        "계정",
+        "관리자",
+        "로그인"
+      ],
+      "evidence_snippet": "…한다. 로그아웃은 클라이언트에 저장된 토큰을 삭제한다. 대시보드는 동일 계정 재로그인 시 session_version으로 기존 세션을 무효화한다. 대시보드는 동일 계정 재로그인 시 기존 세션을 무효화하고 사용자에게 안내한 후, 로그인 페이지로 리다이렉트된다. 서버는 사용자의 비밀번호 등 인증 정보 변경 요청을 처리할 수 있어야 한다.",
+      "retrieval_reason": "method=semantic; lex=0.220206; sem=0.071276; hybrid=0.278024; doc=MDSR; tokens=['계정', '관리자', '로그인']",
+      "method": "semantic",
+      "scoring": {
+        "lexical": {
+          "method": "lexical_overlap",
+          "overlap_count": 3,
+          "query_token_count": 33,
+          "coverage": 0.0909,
+          "jaccard": 0.0219,
+          "keyword_boost": 0.15000000000000002,
+          "title_boost": 0.0
+        },
+        "semantic_method": "tfidf_cosine",
+        "lexical_norm": 0.4494,
+        "semantic_norm": 0.163773,
+        "hybrid_weights": {
+          "lexical": 0.4,
+          "semantic": 0.6
+        }
+      }
+    }
+  ]
+}

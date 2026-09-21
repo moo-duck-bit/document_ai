@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document AI Pilot</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>Document AI Pilot</h1>
+      <p class="sub">변경요청 + MDSR/MDDR → 분석/패치 → 리뷰 → Controlled Writer</p>
+    </div>
+    <span class="badge">v1 · local</span>
+    <a class="badge" href="/workflow">Workflow E2E →</a>
+  </header>
+
+  <nav class="tabs">
+    <button type="button" class="tab active" data-tab="run">1. Run</button>
+    <button type="button" class="tab" data-tab="review">2. Review</button>
+    <button type="button" class="tab" data-tab="writer">3. Writer</button>
+  </nav>
+
+  <main>
+    <!-- RUN -->
+    <section id="tab-run" class="panel active">
+      <h2>실행</h2>
+      <form id="run-form">
+        <label>Scenario name
+          <input name="scenario_name" value="pilot-run" required />
+        </label>
+        <label>Change request
+          <textarea name="change_request" rows="6" required placeholder="변경 요청을 입력하세요"></textarea>
+        </label>
+        <div class="row">
+          <label>MDSR.docx
+            <input type="file" name="mdsr" accept=".docx" required />
+          </label>
+          <label>MDDR.docx
+            <input type="file" name="mddr" accept=".docx" required />
+          </label>
+        </div>
+        <div class="row">
+          <label>top-k
+            <input type="number" name="top_k" value="15" min="1" max="50" />
+          </label>
+          <label class="check">
+            <input type="checkbox" name="keep_output" /> keep previous output
+          </label>
+        </div>
+        <label>Document mode
+          <select name="document_set_mode">
+            <option value="legacy_pair" selected>MDSR/MDDR 기본</option>
+            <option value="registry">EC-SW document set (experimental)</option>
+          </select>
+        </label>
+        <p class="hint">experimental: registry 로드 + MDTM 인덱싱/영향 후보(관측). 신규 지원 문서=MDTM. Writer 기본 OFF.</p>
+        <button type="submit" id="btn-run">분석 실행</button>
+      </form>
+
+      <div class="divider">또는</div>
+
+      <form id="demo-form" class="demo">
+        <label>기존 시나리오 경로 (입력만 복사, freeze 원본 미수정)
+          <input name="source_scenario" value="data/user_scenarios/scenario-001" />
+        </label>
+        <button type="submit" class="secondary">데모 시나리오 복사 후 실행</button>
+      </form>
+
+      <p id="run-status" class="status"></p>
+      <div id="run-list" class="list"></div>
+    </section>
+
+    <!-- REVIEW -->
+    <section id="tab-review" class="panel">
+      <h2>리뷰</h2>
+      <div class="row">
+        <label>Run ID
+          <input id="review-run-id" placeholder="run id" />
+        </label>
+        <button type="button" id="btn-load-review" class="secondary">불러오기</button>
+      </div>
+      <div id="review-header" class="card muted">run을 선택하거나 불러오세요</div>
+      <div class="grid2">
+        <div>
+          <h3>Summary</h3>
+          <pre id="review-summary" class="box"></pre>
+          <h3>Artifacts</h3>
+          <ul id="review-artifacts"></ul>
+        </div>
+        <div>
+          <div class="seg">
+            <button type="button" data-doc="change_summary" class="seg-btn active">CHANGE_SUMMARY</button>
+            <button type="button" data-doc="review_required" class="seg-btn">REVIEW_REQUIRED</button>
+            <button type="button" data-doc="patch_diff" class="seg-btn">PATCH_DIFF</button>
+          </div>
+          <pre id="review-doc" class="box tall"></pre>
+          <h3>Document Set / MDTM (experimental)</h3>
+          <pre id="review-mdtm" class="box">legacy mode — MDTM section empty</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITER -->
+    <section id="tab-writer" class="panel">
+      <h2>Controlled Writer</h2>
+      <p class="hint">Approval 후 복사본 fixture Writer를 실행합니다. 원본 변경 0을 유지합니다.</p>
+      <div class="row">
+        <label>Run ID
+          <input id="writer-run-id" placeholder="run id" />
+        </label>
+      </div>
+      <div class="row">
+        <label>Decision
+          <select id="writer-decision">
+            <option value="APPROVED">APPROVED</option>
+            <option value="REJECTED">REJECTED</option>
+            <option value="AUTO_APPROVED">AUTO_APPROVED</option>
+          </select>
+        </label>
+        <label>Approved by
+          <input id="writer-by" value="pilot-user" />
+        </label>
+      </div>
+      <label>Reason
+        <input id="writer-reason" placeholder="optional" />
+      </label>
+      <div class="row">
+        <button type="button" id="btn-approve">승인 저장</button>
+        <button type="button" id="btn-writer" class="secondary">Writer 실행</button>
+      </div>
+      <pre id="writer-out" class="box tall"></pre>
+    </section>
+  </main>
+
+  <footer>
+    Pilot only · data/user_scenarios/_pilot · freeze paths are never written
+  </footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>
